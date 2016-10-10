@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>brege.org</title>
+    <link>https://brege.org/tags/site/index.xml</link>
+    <description>Recent content on brege.org</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016 Wyatt Brege</copyright>
+    <atom:link href="/tags/site/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Building brege.org</title>
+      <link>https://brege.org/post/building-brege/</link>
+      <pubDate>Mon, 10 Oct 2016 19:47:14 +0000</pubDate>
+      
+      <guid>https://brege.org/post/building-brege/</guid>
+      <description>&lt;p&gt;brege.org is deployed with the following services:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.namecheap.com/&#34;&gt;Namecheap&lt;/a&gt; - DNS Registrar&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://letsencrypt.org&#34;&gt;Let&amp;rsquo;s Encrypt&lt;/a&gt; - Free SSL certificates&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.digitalocean.com&#34;&gt;Digital Ocean&lt;/a&gt; - Droplets for $5 a month&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;brege.org makes use of the following tools:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://nginx.org&#34;&gt;Nginx&lt;/a&gt; - Fast reverse proxy&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://debian.org&#34;&gt;Debian Jessie&lt;/a&gt; - Operating system running on our DO droplet&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; - Static site generator&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
