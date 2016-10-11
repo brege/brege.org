@@ -27,7 +27,7 @@ favicon = "img/favicon.ico"
 
   # Date format (refer to Go's date format: http://flippinggodateformat.com )
   #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
-  date_format = "2016-01-02"
+  date_format = "2006-01-02"
 
   # Enable global LaTeX math rendering?
   #   If false, you can enable it locally on a per page basis.
@@ -65,21 +65,15 @@ favicon = "img/favicon.ico"
     icon_pack = "fa"
     link = "mailto:wyatt@brege.org"
 
-#  [[params.social]]
-#    icon = "twitter"
-#    icon_pack = "fa"
-#    link = "//twitter.com/GeorgeCushen"
-
   [[params.social]]
     icon = "google-plus"
-    icon_pack = "ai"
+    icon_pack = "fa"
     link = "https://plus.google.com/u/0/+WyattBrege"
 
   [[params.social]]
     icon = "github"
     icon_pack = "fa"
     link = "//github.com/brege"
-
 
 # Navigation Links
 #   The weight parameter defines the order that the links will appear in.
