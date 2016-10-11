@@ -19,12 +19,12 @@ brege.org makes use of the following tools:
 
 - [Nginx](https://nginx.org) - Fast reverse proxy 
 - [Debian Jessie](https://debian.org) - Operating system running on our DO droplet
-- [Hugo](https://gohugo.io) - Static site generator
+- [Hugo](https://gohugo.io) - Static site generator<!--more-->
 
 ## Hosting
 
 First thing I did was register my domain on Namecheap.
-It was around $12 to register brege.org.  
+It was around $12 to register brege.org.
 
 Next bit was deciding on a hosting provider.
 I gave Amazon S3 some consideration, since it's practically free for a static site, but after playing around with their tools it seemed far too confusing to use.
@@ -37,7 +37,7 @@ I selected the debian installation on the "Create Droplet" page and created a ne
 ``` bash
 ssh-keygen -t rsa -b 4096 -C "wyatt@brege.org"
 ```
-I like to have a different key for each remote service I use (GitHub, Clusters, Servers, etc).  
+I like to have a different key for each remote service I use (GitHub, Clusters, Servers, etc).
 So for the bit about saving the key, I just substituted the default `id_rsa` with `do_rsa`, chose a password to unlock my key, and uploaded `do_rsa.pub` in the DO web interface.
 
 This gets added to /root/.ssh/authorized_keys on your DO droplet.
@@ -48,7 +48,7 @@ ssh-copy-id -i ~/.ssh/do_rsa newuser@ip.of.my.droplet
 ```
 
 Next bit was getting the DNS settings right.
-When you create your droplet, DO will give you the settings to add to your records on your DNS registrar.  
+When you create your droplet, DO will give you the settings to add to your records on your DNS registrar.
 I copied and pasted what they told me on Namecheaps web interface and waited a little while for the changes to propogate.
 
 ### Nginx
@@ -184,7 +184,8 @@ hugo new post/hello-world.md
 
 2. Adding what I want to say with simple markdown format in `content/post/hellow-world.md` after the `+++ ... +++` front matter.
 
-3. Running `hugo --theme hugo-academic`, which creates all the files for you site.
+3. Running `hugo`, which creates all the files for your site.
+It may be wise to remove the `public/` directory and the `/usr/share/nginx/brege.org/*` subdirectories to prune any orphaned articles.
 
 4. Copying the generated `public/` folder over to the document root.
 ``` bash
@@ -193,4 +194,7 @@ sudo rsync -avP public/ /usr/share/nginx/brege.org/
 5. Visit brege.org in my browser.
 
 In fact, there is probably no need to run go/hugo on my DO droplet at all.
-The proper way is probably to do everything on a local machine, add a new article and check at localhost:1313, and rsync the contents of `public/` to your document root on your droplet.
+The proper way is probably to do everything on a local machine, add a new article and check at localhost:1313, then rsync the contents of `public/` to your document root on your droplet.  
+
+Putting the source of this site on github might be even better.
+I'm already keeping track of my changes with a local git repository, so I might as well make it available on GitHub.  Plus it seems worth it just for the sake of writing articles locally.
