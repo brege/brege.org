@@ -5,22 +5,12 @@ languageCode = "en-us"
 theme = "hugo-academic"
 favicon = "img/favicon.ico"
 
-# Enable comments by entering your Disqus shortname
-#disqusShortname = "spf13"
-
-# Enable analytics by entering your Google Analytics tracking ID
-#googleAnalytics = ""
-
-
 [params]
   name = "Wyatt Brege"
   role = "Doctoral Student in Computational Astrophysics"
   organization = "Washington State University"
   avatar = "portrait.png"
   email = "wyatt@brege.org"
-#  address = "Stanford AI Lab, Stanford University, California, 90210, USA."
-#  phone = "888 888 88 88"
-
 
   # Enable Keybase in Contact section by entering your keybase.io username.
   keybase = ""
@@ -68,7 +58,7 @@ favicon = "img/favicon.ico"
   [[params.social]]
     icon = "google-plus"
     icon_pack = "fa"
-    link = "https://plus.google.com/u/0/+WyattBrege"
+    link = "//plus.google.com/u/0/+WyattBrege"
 
   [[params.social]]
     icon = "github"
