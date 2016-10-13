@@ -11,8 +11,8 @@ title = "Nginx rewrite for RSS"
 Add the following to the main server block in your nginx config:
 
 ```
-    location ~ ^/(?:feed|rss)  {
-         rewrite ^ /index.xml;
+    location ~ ^/(?:feed|feeds|rss)  {
+         return 301 /post/index.xml;
     }
 ```
 Now people can go to https://brege.org/rss to find the RSS feed.
