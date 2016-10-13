@@ -1,6 +1,7 @@
 baseurl = "https://brege.org/"
 title = "brege.org"
-copyright = "&copy; 2016 Wyatt Brege"
+#copyright = "&copy; 2016 Wyatt Brege"
+copyright = "Copyright 2016 Wyatt Brege"
 languageCode = "en-us"
 theme = "hugo-academic"
 favicon = "img/favicon.ico"
@@ -54,6 +55,11 @@ favicon = "img/favicon.ico"
     icon = "envelope"
     icon_pack = "fa"
     link = "mailto:wyatt@brege.org"
+
+  [[params.social]]
+    icon = "rss"
+    icon_pack = "fa"
+    link = "/post/index.xml"
 
   [[params.social]]
     icon = "google-plus"
