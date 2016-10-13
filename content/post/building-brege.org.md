@@ -47,9 +47,7 @@ You can copy this key from your workstation to the user's home directory on your
 ssh-copy-id -i ~/.ssh/do_rsa newuser@ip.of.my.droplet
 ```
 
-Next bit was getting the DNS settings right.
-When you create your droplet, DO will give you the settings to add to your records on your DNS registrar.
-I copied and pasted what they told me on Namecheaps web interface and waited a little while for the changes to propogate.
+DNS settings can be confusing. Setting "Custom DNS" in Namecheap and setting the nameservers to DO's nameservers was simple enough.  Setting records on namecheap is kind of annoying.  On DO it is really intuitive to set up records.
 
 ### Nginx
 
@@ -115,7 +113,13 @@ You can split each `server{ ... }` block into its own config file if you like.
 One redirects all `*.brege.org` requests to `brege.org`, including `www.brege.org`.
 The second one redirects all requests from http://brege.org to https://brege.org.
 The third is the main configuration for the site.
-This is where you put reverse proxies that redirest internal ports to subdirectories on your site.
+This is where you put reverse proxies that redirect internal ports to subdirectories on your site.
+
+Link the new configuration file and restart nginx:
+```bash
+sudo ln -s /etc/nginx/sites-available/brege.org /etc/nginx/sites-enabled/
+sudo systemctl restart nginx.service
+```
 
 ### Let's Encrypt
 In `/etc/nginx/letsencrypt.conf`, I have:
