@@ -1,6 +1,5 @@
 baseurl = "https://brege.org/"
 title = "brege.org"
-#copyright = "&copy; 2016 Wyatt Brege"
 copyright = "Copyright 2016 Wyatt Brege"
 languageCode = "en-us"
 theme = "hugo-academic"
