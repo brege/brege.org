@@ -9,7 +9,7 @@ tags = ["gnome","firefox"
 +++
 
 Firefox Developer Edition has newer features than what was available from my distribution's package manager (Fedora).  Whereas I've been using it as my daily driver, I've had to do so through a terminal to launch it.  With an alias in my `/.bashrc` such as
-```
+``` bash
 dfox="~/Preview/firefox-developer/firefox --profile ~/.mozilla/firefox/7ahl24yk.default/'
 ```
 I was able to launch Firefox Developer quickly enough.  Unfortunately, I found it annoying that I couldn't just type [Super Key] + "Fire" in GNOME and be on my way to browsing the web.<!--more-->
@@ -25,7 +25,7 @@ I wanted to add a desktop entry/launcher icon for Firefox Developer.  I searched
 **Solution:** Create the .desktop file by hand.  (Also, probably submit a bug report.)
 
 In `~/.local/share/applications/firefox.desktop`, I added the following lines:
-```desktop
+``` ini
 [Desktop Entry]
 Comment=Browse the World Wide Web
 Terminal=false
@@ -46,7 +46,7 @@ I ran into an issue, however:
 I came acrossed a proper solution [here](https://askubuntu.com/questions/403766/duplicate-icons-for-manully-created-gnome-launcher-items#635839).  In short, I fired up Firefox Developer, ran `xprop WM_CLASS` in the terminal, clicked the Firefox window, and added the entry to `firefox.desktop`
 
 My final file looks like this: 
-```desktop
+``` ini
 [Desktop Entry]
 Comment=Browse the World Wide Web
 Terminal=false
@@ -73,7 +73,7 @@ StartupWMClass=Firefox
     * If you use Thunderbird already, determine your profile: `ls ~/.thunderbird/*.default`
 
 2. Create the desktop entry, `~/.local/share/applications/thunderbird.desktop`, with the following contents:
-```desktop
+``` ini
 [Desktop Entry]
 Name=Thunderbird
 Comment=Send and receive mail with Thunderbird
