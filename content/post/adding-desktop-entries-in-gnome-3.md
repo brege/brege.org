@@ -8,7 +8,7 @@ tags = ["gnome","firefox"
 
 +++
 
-Firefox Developer Edition has newer features than what was available from my distribution's package manager (Fedora).  Whereas I've been using it as my daily driver, I've had to do so through a terminal to launch it.  With an alias in my `/.bashrc` such as
+Firefox Developer Edition has newer features than what was available from my distribution's package manager ([Fedora](https://getfedora.org)).  Whereas I've been using it as my daily driver, I've had to do so through a terminal to launch it.  With an alias in my `~/.bashrc` such as
 ``` bash
 dfox="~/Preview/firefox-developer/firefox --profile ~/.mozilla/firefox/7ahl24yk.default/'
 ```
@@ -18,7 +18,7 @@ I was able to launch Firefox Developer quickly enough.  Unfortunately, I found i
 
 I wanted to add a desktop entry/launcher icon for Firefox Developer.  I searched and found the Alacarte package, which is the GUI-way of doing this.  Alas, adding entries in Alacarte led to the following problem:
 
-**Problem 1:** Alacarte didn't allow me to actually click "OK".  Both with the version from the Fedora repositories, `alacarte-3.11.91-4.fc24` via `sudo dnf install alacarte`, as well as a version built from source, `1bb265f7` via `git clone git://git.gnome.org/alacarte` did I have these issues.
+**Problem 1:** Alacarte didn't allow me to actually click "OK".  Both with the version from the Fedora repositories, `alacarte-3.11.91-4.fc24` via `sudo dnf install alacarte`, as well as a version built from source, `1bb265f7` via `git clone git://git.gnome.org/alacarte`, did I have these issues.
 
 {{< figure src="/img/Screenshot from 2016-10-17 14-10-49.png" >}}
 
@@ -60,17 +60,15 @@ StartupWMClass=Firefox
 
 ## Exercise - Repeating the process for Earlybird (Thunderbird Alpha)
 
-1. Go to the [Thunderbird Release Channel](https://www.mozilla.org/en-US/thunderbird/channel/)
-
+1. Go to the [Thunderbird Release Channel](https://www.mozilla.org/en-US/thunderbird/channel/) and grab the package for Earlybird (or the the Beta, if you choose):
     {{< figure src="/img/Screenshot from 2016-10-17 14-49-06.png" >}}
-
-    * `cd ~/Preview`
-
-    * `wget https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-aurora/thunderbird-51.0a2.en-US.linux-x86_64.tar.bz2`
-
-    * `tar -xvf thunderbird-51.0a2.en-US.linux-x86_64.tar.bz2 -C thunderbird`
-
-    * If you use Thunderbird already, determine your profile: `ls ~/.thunderbird/*.default`
+Or, from the command line:
+    ```
+    cd ~/Preview`
+    wget https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-aurora/thunderbird-51.0a2.en-US.linux-x86_64.tar.bz2`
+    tar -xvf thunderbird-51.0a2.en-US.linux-x86_64.tar.bz2 -C thunderbird
+    ```
+If you use Thunderbird already, determine your profile: `ls ~/.thunderbird/*.default`
 
 2. Create the desktop entry, `~/.local/share/applications/thunderbird.desktop`, with the following contents:
 ``` ini
@@ -87,4 +85,4 @@ Replace `xxxxxxxx.default` with your profile.
 
 {{< figure src="/img/Screenshot from 2016-10-17 15-16-18.png" >}}
 
-For any other application like this, I would just copy firefox.desktop to myapplication.desktop and adjust the contents to suit your needs.  Then, in general, launch the application and run `xprop WM_CLASS` to determine the value to put in the `StartupWMClass=` field. 
+For any other application like this, I would just copy `firefox.desktop` to `myapplication.desktop` and adjust the contents to suit your needs.  Then, in general, launch the application and run `xprop WM_CLASS` to determine the value to put in the `StartupWMClass=` field. 

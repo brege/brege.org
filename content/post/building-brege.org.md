@@ -202,3 +202,5 @@ The proper way is probably to do everything on a local machine, add a new articl
 
 Putting the source of this site on github might be even better.
 I'm already keeping track of my changes with a local git repository, so I might as well make it available on GitHub.  Plus it seems worth it just for the sake of writing articles locally.
+
+**Update**: I am getting closer to implementing my initial thoughts here: https://brege.org/post/new-way-forward-for-deploying-brege/
