@@ -10,7 +10,7 @@ title = "Nginx rewrite for RSS"
 
 Add the following to the main server block in your nginx config:
 
-```
+``` nginx
     location ~ ^/(?:feed|feeds|rss)  {
          return 301 /post/index.xml;
     }

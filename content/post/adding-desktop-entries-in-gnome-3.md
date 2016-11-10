@@ -63,7 +63,7 @@ StartupWMClass=Firefox
 1. Go to the [Thunderbird Release Channel](https://www.mozilla.org/en-US/thunderbird/channel/) and grab the package for Earlybird (or the the Beta, if you choose):
     {{< figure src="/img/Screenshot from 2016-10-17 14-49-06.png" >}}
 Or, from the command line:
-    ```
+    ``` bash
     cd ~/Preview`
     wget https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-aurora/thunderbird-51.0a2.en-US.linux-x86_64.tar.bz2`
     tar -xvf thunderbird-51.0a2.en-US.linux-x86_64.tar.bz2 -C thunderbird

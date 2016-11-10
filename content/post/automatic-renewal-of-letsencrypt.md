@@ -13,7 +13,7 @@ Let's Encrypt certificates need to be renewed every three months.
 
 * In `/etc/systemd/system/certbot.service`:
 
-``` 
+``` ini
 [Unit]
 Description=Let's Encrypt renewal
 
@@ -24,7 +24,7 @@ ExecStart=/usr/bin/certbot renew --quiet --agree-tos
 
 * In `/etc/systemd/system/certbot.timer`:
 
-``` 
+``` ini
 [Unit]
 Description=Daily renewal of Let's Encrypt's certificates
 

@@ -3,7 +3,7 @@ title = "brege.org"
 copyright = "Copyright 2016 Wyatt Brege"
 languageCode = "en-us"
 PygmentsCodeFences = true
-pygmentsStyle = "vim"
+pygmentsStyle = "emacs"
 
 theme = "hugo-academic"
 favicon = "img/favicon.ico"

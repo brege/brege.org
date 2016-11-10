@@ -70,7 +70,7 @@ rm /etc/nginx/sites-enabled/default
 ```
 I made a new configuration file `/etc/nginx/sites-available/brege.org` with the following settings:
 
-```
+``` nginx
 server {
     server_name *.brege.org;
     return http://brege.org/;
@@ -123,7 +123,7 @@ sudo systemctl restart nginx.service
 
 ### Let's Encrypt
 In `/etc/nginx/letsencrypt.conf`, I have:
-```
+``` nginx
 location ^~ /.well-known/acme-challenge {
     alias /var/lib/letsencrypt/.well-known/acme-challenge;
     default_type "text/plain";
