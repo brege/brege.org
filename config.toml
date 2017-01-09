@@ -6,7 +6,8 @@ PygmentsCodeFences = true
 pygmentsStyle = "emacs"
 
 theme = "hugo-academic"
-favicon = "img/favicon.ico"
+#favicon = "img/favicon.ico"
+favicon = "img/icon.png"
 
 [params]
   name = "Wyatt Brege"
