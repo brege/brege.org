@@ -1,5 +1,5 @@
 +++
-title = "Getting an A+ on the Mozilla's HTTP Observatory"
+title = "Getting an A+ on Mozilla's HTTP Observatory"
 image = ""
 math = false
 tags = ["nginx", "HTTPS", "observatory", "mozilla", "HSTS"
