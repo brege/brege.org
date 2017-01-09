@@ -12,7 +12,7 @@ After I learned about [Mozilla's tool](https://github.com/mozilla/http-observato
 
 After some trial & error and searching around, I came up with the following to be placed in my Nginx `server{...}` block:
 
-```
+``` nginx
     add_header Strict-Transport-Security "max-age=15768000; includeSubDomains; preload";
     add_header X-Frame-Options "SAMEORIGIN";
     add_header X-Content-Type-Options nosniff;
