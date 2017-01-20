@@ -74,6 +74,17 @@ favicon = "img/icon.png"
     icon_pack = "fa"
     link = "//github.com/brege"
 
+  [[params.social]]
+    icon = "arxiv"
+    icon_pack = "ai"
+    link = "//arxiv.org/find/astro-ph/1/au:+Brege_W"
+
+  [[params.social]]
+    icon = "google-scholar"
+    icon_pack = "ai"
+    link = "//scholar.google.com/citations?user=WsjvDuQAAAAJ"
+
+
 # Navigation Links
 #   The weight parameter defines the order that the links will appear in.
 
