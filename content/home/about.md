@@ -14,7 +14,10 @@ weight = 0
   title = "Interests"
   interests = [
     "Numerical Relativity",
-    "Hydrodynamics"
+    "Hydrodynamics",
+    "Compact Binaries",
+    "Gravitation",
+    "Mechanics"
   ]
 
 # List your qualifications (such as academic degrees).
