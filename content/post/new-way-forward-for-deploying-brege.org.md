@@ -1,10 +1,14 @@
 +++
 date = "2016-10-18T16:35:01-07:00"
 title = "New way forward for deploying brege.org"
-image = ""
 math = false
 tags = ["hugo","rsync","deployment"
 ]
+
+[header]
+image = ""
+caption = ""
+
 aliases = [
         "/post/new-way-forward-for-deploying-brege/",
         "/post/new-way-forward-for-developing-brege/"

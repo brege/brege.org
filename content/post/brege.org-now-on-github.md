@@ -1,10 +1,13 @@
 +++
-image = ""
 math = false
 tags = ["github",
 ]
 date = "2016-10-12T00:32:21Z"
 title = "brege.org now on GitHub"
+
+[header]
+image = ""
+caption = ""
 
 +++
 

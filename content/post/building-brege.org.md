@@ -1,9 +1,12 @@
 +++
-image = ""
 math = false
 tags = ["site", "building"]
 date = "2016-10-10T19:47:14Z"
 title = "Building brege.org"
+
+[header]
+image = ""
+caption = ""
 
 +++
 

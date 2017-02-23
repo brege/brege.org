@@ -1,10 +1,13 @@
 +++
 date = "2016-10-17T20:28:15Z"
 title = "Adding desktop entries in GNOME 3"
-image = ""
 math = false
 tags = ["gnome","firefox"
 ]
+
+[header]
+image = ""
+caption = ""
 
 +++
 

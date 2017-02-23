@@ -1,10 +1,13 @@
 +++
-image = ""
 math = false
 tags = ["certbot", "ssl", "https", "systemd"
 ]
 date = "2016-10-11T00:15:22Z"
 title = "Automatic renewal of Let's Encrypt Certificates"
+
+[header]
+image = ""
+caption = ""
 
 +++
 

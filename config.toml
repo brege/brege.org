@@ -9,6 +9,12 @@ theme = "hugo-academic"
 #favicon = "img/favicon.ico"
 favicon = "img/icon.png"
 
+footnotereturnlinkcontents = "<sup>^</sup>"
+
+# Default language to use (if you setup multilingual support)
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+
 [params]
   name = "Wyatt Brege"
   role = "Doctoral Student in Computational Astrophysics"
@@ -26,6 +32,9 @@ favicon = "img/icon.png"
   # Enable global LaTeX math rendering?
   #   If false, you can enable it locally on a per page basis.
   math = false
+ 
+  # Enable global source code highlighting
+  highlight = false
 
   # Enable native social sharing buttons?
   sharing = true
