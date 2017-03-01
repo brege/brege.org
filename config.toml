@@ -116,3 +116,8 @@ defaultContentLanguageInSubdir = false
   name = "Contact"
   url = "#contact"
   weight = 4
+
+[[menu.main]]
+  name = "CV"
+  url = "/brege-cv.pdf"
+  weight = 5
