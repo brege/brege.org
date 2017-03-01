@@ -21,9 +21,10 @@ defaultContentLanguageInSubdir = false
   organization = "Washington State University"
   avatar = "portrait.png"
   email = "wyatt@brege.org"
+#  pubkey = "C504 FC55 11E3 69C5 9B78  71F9 EB3F 25A8 C557 9EA6"
 
   # Enable Keybase in Contact section by entering your keybase.io username.
-  keybase = ""
+  keybase = "brege"
 
   # Date format (refer to Go's date format: http://flippinggodateformat.com )
   #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
