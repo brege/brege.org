@@ -1,0 +1,10 @@
+#!/bin/sh
+HOST=brege.org
+DIR=/usr/share/nginx/brege.org/
+
+rm -r public/ \
+	&& hugo \
+	&& rsync -avz --delete --exclude=".well-known" public/ \
+	${HOST}:${DIR}
+
+exit 0
