@@ -25,7 +25,7 @@ weight = 0
   title = "Education"
 
 [[education.courses]]
-  course = "PhD in Physics (in Progress)"
+  course = "PhD in Physics"
   institution = "Washington State University"
   year = 2017
 
