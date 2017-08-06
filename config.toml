@@ -17,7 +17,7 @@ defaultContentLanguageInSubdir = false
 
 [params]
   name = "Wyatt Brege"
-  role = "Doctoral Student in Computational Astrophysics"
+  role = "Researcher in Computational Astrophysics"
   organization = "Washington State University"
   avatar = "portrait.png"
   email = "wyatt@brege.org"
