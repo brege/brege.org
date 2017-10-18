@@ -1,21 +1,37 @@
 baseurl = "https://brege.org/"
 title = "brege.org"
-copyright = "Copyright 2016 Wyatt Brege"
-languageCode = "en-us"
+copyright = "Copyright 2016-2017 Wyatt Brege"
+
 PygmentsCodeFences = true
 pygmentsStyle = "emacs"
 
 theme = "hugo-academic"
-#favicon = "img/favicon.ico"
+enableEmoji = true
 favicon = "img/icon.png"
 
 footnotereturnlinkcontents = "<sup>^</sup>"
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+preserveTaxonomyNames = true
+paginate = 10
 
 # Default language to use (if you setup multilingual support)
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 
+[outputs]
+  home = [ "HTML", "CSS" ]
+
+# Configure BlackFriday Markdown rendering.
+#   See: https://gohugo.io/readfiles/bfconfig/
+[blackfriday]
+  hrefTargetBlank = true  # `true` opens external links in a new tab.
+  fractions = true  # `false` disables smart fractions (e.g. 5/12 formatted as a fraction).
+  smartypants = true  # `false` disables all smart punctuation substitutions (e.g. smart quotes, dashes, fractions).
+
 [params]
+  color_theme = "default"
+  fon = "default"
+
   name = "Wyatt Brege"
   role = "Researcher in Computational Astrophysics"
   organization = "Washington State University"
@@ -26,16 +42,30 @@ defaultContentLanguageInSubdir = false
   # Enable Keybase in Contact section by entering your keybase.io username.
   keybase = "brege"
 
+  logo = ""
+
+  google_maps_api_key = ""
+  latitude = ""
+  longitude = ""
+
+
   # Date format (refer to Go's date format: http://flippinggodateformat.com )
   #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
   date_format = "2006-01-02"
+
+  reading_time = true
+
+  section_pager = false
 
   # Enable global LaTeX math rendering?
   #   If false, you can enable it locally on a per page basis.
   math = false
  
   # Enable global source code highlighting
-  highlight = false
+#  highlight = false
+  highlight = true
+  highlight_languages = []
+  highlight_style = "github"
 
   # Enable native social sharing buttons?
   sharing = true
@@ -44,6 +74,22 @@ defaultContentLanguageInSubdir = false
   #   (relative to /static/css and /static/js respectively)
   custom_css = []
   custom_js  = []
+
+  # Publication types.
+  #   Used to categorize publications.
+  #   The index of the publication type in the list is used as its unique numerical identifier.
+  #   The numeric ID is used in a publication's frontmatter to categorize it.
+  #   The language can be edited below.
+  #   For multi-lingual sites, copy this block to each language section at the end of this file.
+  publication_types = [
+    'Uncategorized',  # 0
+    'Conference proceedings',  # 1
+    'Journal',  # 2
+    'Work in progress',  # 3
+    'Technical report',  # 4
+    'Book',  # 5
+    'Book chapter'  # 6
+  ]
 
 
   # Social/Academic Networking
@@ -122,3 +168,8 @@ defaultContentLanguageInSubdir = false
   name = "CV"
   url = "/brege-cv.pdf"
   weight = 5
+
+# Configure the English version of the website.
+[Languages.en]
+  languageCode = "en-us"
+
