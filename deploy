@@ -3,7 +3,7 @@ HOST=brege.org
 DIR=/usr/share/nginx/brege.org/
 
 rm -r public/ \
-	&& hugo \
+	&& hugo --buildDrafts=false \
 	&& rsync -avz --delete --exclude=".well-known" public/ \
 	${HOST}:${DIR}
 
