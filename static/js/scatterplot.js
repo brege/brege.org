@@ -2,7 +2,7 @@
 //d3.select("div.article-style").append("p").text("Yo my dude");
 //console.log(d3)
 
-var margin = {top: 20, right: 20, bottom: 30, left: 50},
+var margin = {top: 20, right: 20, bottom: 60, left: 60},
     width = 650 - margin.left - margin.right,
     height = 450 - margin.top - margin.bottom;
 
@@ -20,6 +20,9 @@ var cValue = function(d) { return d.Team;},
 var svg = d3.select("div#chart").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
+    //.call(d3.zoom().on("zoom", function () {
+    //  svg.attr("transform", d3.event.transform)
+    //}))
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
@@ -38,29 +41,33 @@ d3.csv("/data/NHL_PIT-DET-EDM_OGVT_2016-17.csv", type, function(error, data) {
 	.attr("class", "x axis")
 	.attr("transform", "translate(0," + height + ")")
 	.call(xAxis)
-    .append("text")
-	.attr("class", "label")
-	.attr("x", width)
-	.attr("y", -6)
-	.style("text-anchor", "end")
+
+  // text label for the x axis
+  svg.append("text")             
+	.attr("transform",
+              "translate(" + (width/2) + " ," + 
+                           (height + margin.top + 30) + ")")
+	.style("text-anchor", "middle")
+	.text("Date")
 	.text("Salary Cap Hit (1M USD)");
 
   svg.append("g")
       .attr("class", "y axis")
       .call(yAxis)
-    .append("text")
-      .attr("class", "axis-title")
-      .attr("transform", "rotate(-90)")
-      .attr("y", 0-height/2.)
-      .attr("dy", ".71em")
-      .style("text-anchor", "end")
-      .text("Forward Goals vs. Threshold");
 
+  // text label for the y axis
+  svg.append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 0 - margin.left)
+      .attr("x",0 - (height / 2))
+      .attr("dy", "0.7em")
+      .style("text-anchor", "middle")
+      .text("Offensive Goals vs. Threshold");
 
   svg.selectAll("dot")
       .data(data)
     .enter().append("circle")
-      .attr("r", 7)
+      .attr("r", "0.25em")
       .attr("cx",  function(d) { return x(d.CapHit); })
       .attr("cy",  function(d) { return y(d.OGVT); })
       .style("fill", function(d) { return color(cValue(d));})
@@ -90,7 +97,7 @@ d3.csv("/data/NHL_PIT-DET-EDM_OGVT_2016-17.csv", type, function(error, data) {
 
   // draw legend colored rectangles
   legend.append("rect")
-      .attr("x", width - 18)
+      .attr("x", width + margin.right)
       .attr("y", height - 80)
       .attr("width", 40)
       .attr("height", 14)
@@ -98,7 +105,7 @@ d3.csv("/data/NHL_PIT-DET-EDM_OGVT_2016-17.csv", type, function(error, data) {
 
   // draw legend text
   legend.append("text")
-      .attr("x", width - 24)
+      .attr("x", width + margin.right-4)
       .attr("y", height - 80 + 8)
       .attr("dy", ".35em")
       .style("text-anchor", "end")
@@ -108,6 +115,15 @@ d3.csv("/data/NHL_PIT-DET-EDM_OGVT_2016-17.csv", type, function(error, data) {
       .attr("text-anchor", "middle") 
       .attr("transform", "translate("+ (padding/2) +","+(height/2)+")rotate(-90)") 
       .text("OGVT")
+
+  function zoom() {
+    svg.select(".x.axis").call(xAxis);
+    svg.select(".y.axis").call(yAxis);
+
+    svg.selectAll(".dot")
+        .attr("transform", transform);
+  }
+
 });
 
 function type(d) {
