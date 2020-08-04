@@ -34,8 +34,8 @@ defaultContentLanguageInSubdir = false
   font = "default"
 
   name = "Wyatt Brege"
-  role = "Researcher in Computational Astrophysics"
-  organization = "Washington State University"
+  role = "Computational Astrophysicist - Chef"
+  organization = ""
   avatar = "portrait.png"
   email = "wyatt@brege.org"
 #  pubkey = "C504 FC55 11E3 69C5 9B78  71F9 EB3F 25A8 C557 9EA6"
@@ -62,7 +62,7 @@ defaultContentLanguageInSubdir = false
 
   # Enable global LaTeX math rendering?
   #   If false, you can enable it locally on a per page basis.
-  math = false
+  math = true
  
   # Enable global source code highlighting
 #  highlight = false
