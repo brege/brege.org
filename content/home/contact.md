@@ -1,19 +1,60 @@
-+++
-# Contact widget.
+---
+# An instance of the Contact widget.
+widget: contact
 
-date = "2016-04-20T00:00:00"
-draft = false
+# This file represents a page section.
+headless: true
 
-title = "Contact"
-subtitle = ""
-widget = "contact"
+# Order that this section appears on the page.
+weight: 130
 
-# Order that this section will appear in.
-weight = 60
+title: Contact
+subtitle:
 
-# Automatically link email and phone?
-autolink = true
+content:
+  # Automatically link email and phone or display as text?
+  autolink: true
 
-+++
+  # Email form provider
+  form:
+    provider: netlify
+    formspree:
+      id:
+    netlify:
+      # Enable CAPTCHA challenge to reduce spam?
+      captcha: false
 
-[Here is my public GPG key](/brege-gpg.txt) which you can also find on the [MIT keyserver](https://pgp.mit.edu/pks/lookup?search=0xEB3F25A8C5579EA6)
+  # Contact details (edit or remove options as required)
+  email: wyatt@brege.org
+  #phone: 888 888 88 88
+  #address:
+  #  street: 450 Serra Mall
+  #  city: Stanford
+  #  region: CA
+  #  postcode: '94305'
+  #  country: United States
+  #  country_code: US
+  #coordinates:
+  #  latitude: '37.4275'
+  #  longitude: '-122.1697'
+  #directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
+  #office_hours:
+  #  - 'Monday 10:00 to 13:00'
+  #  - 'Wednesday 09:00 to 10:00'
+  #appointment_url: 'https://calendly.com'
+  #contact_links:
+  #  - icon: twitter
+  #    icon_pack: fab
+  #    name: DM Me
+  #    link: 'https://twitter.com/Twitter'
+  #  - icon: video
+  #    icon_pack: fas
+  #    name: Zoom Me
+  #    link: 'https://zoom.com'
+
+design:
+  columns: '2'
+---
+
+[My public GPG key](/brege-gpg.txt) is available, which can also be found on the [MIT keyserver](https://pgp.mit.edu/pks/lookup?search=0xEB3F25A8C5579EA6).
+
