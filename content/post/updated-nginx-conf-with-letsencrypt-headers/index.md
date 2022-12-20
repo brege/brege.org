@@ -15,7 +15,7 @@ tags = ["nginx", "HSTS", "Let's Encrypt"
 I've added a new `security_headers.conf` file in `/etc/nginx/` to keep all the HTTPS headers in one place:
 <!--more-->
 
-```
+``` nginx
     ssl_session_timeout 1d;
     ssl_session_cache shared:SSL:50m;
     ssl_session_tickets off;
@@ -46,7 +46,7 @@ I've added a new `security_headers.conf` file in `/etc/nginx/` to keep all the H
 
 We include the headers we obtained in the [last post](/post/getting-an-a-plus-on-mozilla-observatory/) in here as well.  The main configuration file `/etc/nginx/brege.org` contains:
 
-```
+``` nginx
 server {
     server_name *.brege.org;
     return http://brege.org/;

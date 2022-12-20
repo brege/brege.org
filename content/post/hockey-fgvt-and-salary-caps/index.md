@@ -12,9 +12,10 @@ caption = ""
 
 +++
 
-This project [^1] is motivated by the "[WAR](https://en.wikipedia.org/wiki/Wins_Above_Replacement)" stat in baseball, where I have adopted the "Goals vs. Threshold" (GVT) statistic from [Tom Awad](https://web.archive.org/web/20130407214751/http://hockeyprospectus.com/article.php?articleid=236).  Here, I only consider the Offensive GVT for forward skaters and defensemen (OGVT).  I take as input the spreadsheet provided by [Robert Vollman](http://www.hockeyabstract.com/testimonials/nhl2016-17playerdata), which has not been updated with GVT data yet.  I made minor modifications to his spreadsheet in LibreOffice Calc to make it export to the CSV file format well.   The code calculates OGVT by player, which is weighted against his own team's Threshold Offensive Contribution by forwards ($TOC\_F$), or defensemen ($TOC\_D$), per minute, rather than league wide.  
-
+This project [^1] is motivated by the "[WAR](https://en.wikipedia.org/wiki/Wins_Above_Replacement)" stat in baseball, where I have adopted the "Goals vs. Threshold" (GVT) statistic from [Tom Awad](https://web.archive.org/web/20130407214751/http://hockeyprospectus.com/article.php?articleid=236).  Here, I only consider the Offensive GVT for forward skaters and defensemen (OGVT).  
 <!--more-->
+I take as input the spreadsheet provided by [Robert Vollman](http://www.hockeyabstract.com/testimonials/nhl2016-17playerdata), which has not been updated with GVT data yet.  I made minor modifications to his spreadsheet in LibreOffice Calc to make it export to the CSV file format well.   The code calculates OGVT by player, which is weighted against his own team's Threshold Offensive Contribution by forwards ($TOC\_F$), or defensemen ($TOC\_D$), per minute, rather than league wide.  
+
 
 To get an estimate of how good a goal is compared to an assist, we estimate that a goal scored contributes 1.5 times as much as an assist contributes to a goal.  Therefore, the calculated goal value (or assist) scored by an entity $x$ is 
 $$

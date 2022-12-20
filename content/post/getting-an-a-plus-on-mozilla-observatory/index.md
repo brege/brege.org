@@ -1,15 +1,13 @@
 +++
 title = "Getting an A+ on Mozilla's HTTP Observatory"
-image = ""
-math = false
-tags = ["nginx", "HTTPS", "observatory", "mozilla", "HSTS"
-]
-date = "2017-01-09T18:29:50-05:00"
+date = 2017-01-09T18:29:50-05:00
+math = true
+tags = ["nginx", "HTTPS", "observatory", "mozilla", "HSTS"]
+draft = false
 
 [header]
 image = ""
 caption = ""
-
 +++
 
 After I learned about [Mozilla's tool](https://github.com/mozilla/http-observatory) to test how secure your site is, I ran it on my site https://observatory.mozilla.org/analyze.html?host=brege.org and received an "**F**".  <!--more-->
@@ -29,3 +27,4 @@ After some trial & error and searching around, I came up with the following to b
 Now I am receiving an "**A+**" from the observatory!
 
 I also went to [Google's submission page](https://hstspreload.org/) to have your site put on the [HSTS](https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security) preloaded list, so that all users of Google Chrome access your site through HTTPS by default.
+
