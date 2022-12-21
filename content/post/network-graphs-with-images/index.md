@@ -29,7 +29,7 @@ projects: []
 ---
 
 This is a follow-up to the previous post [Network Graphs in Hugo](/post/network-graphs-in-hugo/).
-I'm feeling fruity.  These aren't *all* tree fruits, but a few clusters organized by tree grafting compatablity.  
+I'm feeling fruity.  These aren't *all* tree fruits, but a few clusters organized by tree grafting compatibility.
 
 {{< fruit-network nodesPath="/data/fruit/nodes.json" edgesPath="/data/fruit/edges.json" >}}
 
