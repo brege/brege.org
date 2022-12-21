@@ -1,0 +1,68 @@
+{{ $nodesPath := .Get "nodesPath" }}
+{{ $edgesPath := .Get "edgesPath" }}
+
+<div id="mynetwork" data-nodes-path={{ $nodesPath }} data-edges-path={{ $edgesPath }}></div>
+
+<script src="https://visjs.github.io/vis-network/standalone/umd/vis-network.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+  // define the node styles
+  const nodeStyles = {
+    nodes: {
+      color: {
+        background: '#eaeaea'
+      },
+      shape: 'box',
+      shapeProperties: {
+	borderRadius: 3
+      }
+    }
+  };
+
+  function highlightNodes(matchingNodes) {
+    // iterate over the matching nodes and set the background color to a light blue color
+    matchingNodes.forEach(node => {
+      $(`#${node.id}`).css('background-color', '#add8e6');
+    });
+  }
+
+  // define the network options
+  const options = {
+    width: "800px",
+    height: "500px",
+  };
+
+  // create a network
+  const container = document.getElementById("mynetwork");
+  const network = new vis.Network(container, {}, options);
+
+  // retrieve the data paths from the data attributes
+  const nodesPath = $("#mynetwork").data("nodes-path");
+  const edgesPath = $("#mynetwork").data("edges-path");
+
+  // fetch the data from the JSON files
+  $.getJSON(nodesPath, function(nodesData) {
+    $.getJSON(edgesPath, function(edgesData) {
+      // combine the nodes and edges data
+      const data = {
+	nodes: nodesData,
+	edges: edgesData
+      };
+
+      // update the data in the network
+      network.setData(data);
+      // apply the node styles
+      network.setOptions(nodeStyles);
+
+      // get the nodes in the network
+      const nodes = data.nodes;
+
+      network.on('select', function(params) {
+	const matchingNodes = nodes.filter(node => selectedResults.includes(node.label));
+	highlightNodes(matchingNodes);
+      });
+    });
+  });
+
+</script>

@@ -1,0 +1,202 @@
+[
+  {
+    "from": "basil",
+    "to": "garlic"
+  },
+  {
+    "from": "basil",
+    "to": "olive oil"
+  },
+  {
+    "from": "basil",
+    "to": "italian cuisine"
+  },
+  {
+    "from": "basil",
+    "to": "zucchini"
+  },
+  {
+    "from": "basil",
+    "to": "eggs and egg dishes"
+  },
+  {
+    "from": "basil",
+    "to": "chicken"
+  },
+  {
+    "from": "basil",
+    "to": "lamb"
+  },
+  {
+    "from": "basil",
+    "to": "mint"
+  },
+  {
+    "from": "basil",
+    "to": "eggplant"
+  },
+  {
+    "from": "basil",
+    "to": "mediterranean cuisine"
+  },
+  {
+    "from": "olive oil",
+    "to": "parmesan"
+  },
+  {
+    "from": "olive oil",
+    "to": "garlic"
+  },
+  {
+    "from": "italian cuisine",
+    "to": "parmesan"
+  },
+  {
+    "from": "chicken",
+    "to": "garlic"
+  },
+  {
+    "from": "lamb",
+    "to": "garlic"
+  },
+  {
+    "from": "parmesan",
+    "to": "garlic"
+  },
+  {
+    "from": "parmesan",
+    "to": "fennel"
+  },
+  {
+    "from": "parmesan",
+    "to": "pasta"
+  },
+  {
+    "from": "parmesan",
+    "to": "figs"
+  },
+  {
+    "from": "parmesan",
+    "to": "pears"
+  },
+  {
+    "from": "parmesan",
+    "to": "walnuts"
+  },
+  {
+    "from": "parmesan",
+    "to": "dates"
+  },
+  {
+    "from": "parmesan",
+    "to": "prosciutto"
+  },
+  {
+    "from": "garlic",
+    "to": "olive oil"
+  },
+  {
+    "from": "garlic",
+    "to": "pine nuts"
+  },
+  {
+    "from": "pasta",
+    "to": "olive oil"
+  },
+  {
+    "from": "garlic",
+    "to": "mushrooms"
+  },
+  {
+    "from": "garlic",
+    "to": "tomatoes and tomato sauce"
+  },
+  {
+    "from": "garlic",
+    "to": "mustard"
+  },
+  {
+    "from": "garlic",
+    "to": "onions"
+  },
+  {
+    "from": "garlic",
+    "to": "basil"
+  },
+  {
+    "from": "garlic",
+    "to": "parmesan"
+  },
+  {
+    "from": "garlic",
+    "to": "salt"
+  },
+  {
+    "from": "onions",
+    "to": "pine nuts"
+  },
+  {
+    "from": "olive oil",
+    "to": "fish"
+  },
+  {
+    "from": "olive oil",
+    "to": "almonds"
+  },
+  {
+    "from": "olive oil",
+    "to": "soups"
+  },
+  {
+    "from": "olive oil",
+    "to": "chickpeas"
+  },
+  {
+    "from": "olive oil",
+    "to": "middle eastern cuisine"
+  },
+  {
+    "from": "olive oil",
+    "to": "pepper, black"
+  },
+  {
+    "from": "olive oil",
+    "to": "thyme"
+  },
+  {
+    "from": "olive oil",
+    "to": "olives"
+  },
+  {
+    "from": "middle eastern cuisine",
+    "to": "pine nuts"
+  },
+  {
+    "from": "pine nuts",
+    "to": "bell peppers"
+  },
+  {
+    "from": "pine nuts",
+    "to": "rice"
+  },
+  {
+    "from": "pine nuts",
+    "to": "apples"
+  },
+  {
+    "from": "pine nuts",
+    "to": "cookies"
+  },
+  {
+    "from": "pine nuts",
+    "to": "eastern mediterranean cuisine"
+  },
+  {
+    "from": "pine nuts",
+    "to": "pesto (key ingredient)"
+  },
+  {
+    "from": "pine nuts",
+    "to": "italian cuisine, esp. southern"
+  }
+]

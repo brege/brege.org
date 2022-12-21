@@ -1,0 +1,158 @@
+[
+  {
+    "id": "olive oil",
+    "label": "olive oil"
+  },
+  {
+    "id": "italian cuisine",
+    "label": "italian cuisine"
+  },
+  {
+    "id": "zucchini",
+    "label": "zucchini"
+  },
+  {
+    "id": "eggs and egg dishes",
+    "label": "eggs and egg dishes"
+  },
+  {
+    "id": "chicken",
+    "label": "chicken"
+  },
+  {
+    "id": "lamb",
+    "label": "lamb"
+  },
+  {
+    "id": "mint",
+    "label": "mint"
+  },
+  {
+    "id": "eggplant",
+    "label": "eggplant"
+  },
+  {
+    "id": "mediterranean cuisine",
+    "label": "mediterranean cuisine"
+  },
+  {
+    "id": "parmesan",
+    "label": "parmesan"
+  },
+  {
+    "id": "garlic",
+    "label": "garlic"
+  },
+  {
+    "id": "fennel",
+    "label": "fennel"
+  },
+  {
+    "id": "pasta",
+    "label": "pasta"
+  },
+  {
+    "id": "figs",
+    "label": "figs"
+  },
+  {
+    "id": "pears",
+    "label": "pears"
+  },
+  {
+    "id": "walnuts",
+    "label": "walnuts"
+  },
+  {
+    "id": "dates",
+    "label": "dates"
+  },
+  {
+    "id": "prosciutto",
+    "label": "prosciutto"
+  },
+  {
+    "id": "mushrooms",
+    "label": "mushrooms"
+  },
+  {
+    "id": "tomatoes and tomato sauce",
+    "label": "tomatoes and tomato sauce"
+  },
+  {
+    "id": "mustard",
+    "label": "mustard"
+  },
+  {
+    "id": "onions",
+    "label": "onions"
+  },
+  {
+    "id": "basil",
+    "label": "basil"
+  },
+  {
+    "id": "salt",
+    "label": "salt"
+  },
+  {
+    "id": "fish",
+    "label": "fish"
+  },
+  {
+    "id": "almonds",
+    "label": "almonds"
+  },
+  {
+    "id": "soups",
+    "label": "soups"
+  },
+  {
+    "id": "chickpeas",
+    "label": "chickpeas"
+  },
+  {
+    "id": "middle eastern cuisine",
+    "label": "middle eastern cuisine"
+  },
+  {
+    "id": "pepper, black",
+    "label": "pepper, black"
+  },
+  {
+    "id": "thyme",
+    "label": "thyme"
+  },
+  {
+    "id": "pine nuts",
+    "label": "pine nuts"
+  },
+  {
+    "id": "bell peppers",
+    "label": "bell peppers"
+  },
+  {
+    "id": "rice",
+    "label": "rice"
+  },
+  {
+    "id": "apples",
+    "label": "apples"
+  },
+  {
+    "id": "cookies",
+    "label": "cookies"
+  },
+  {
+    "id": "eastern mediterranean cuisine",
+    "label": "eastern mediterranean cuisine"
+  },
+  {
+    "id": "pesto (key ingredient)",
+    "label": "pesto (key ingredient)"
+  },
+  {
+    "id": "italian cuisine, esp. southern",
+    "label": "italian cuisine, esp. southern"
+  }
+]

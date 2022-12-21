@@ -1,0 +1,19 @@
+<style>
+  .recipe {
+    padding: 0.25em 1.5em;
+    border-radius: 0.30em;
+    display: flex;
+    flex-direction: row;
+    background-color: #EBF4FB; /* pale blue */
+  }
+  .dark .recipe {
+    background-color: #323440; /* dark grey */
+  }
+</style>
+
+<div class="recipe border rounded">
+  <div class="content">
+    {{ .Inner }}
+  </div>
+</div>
+
