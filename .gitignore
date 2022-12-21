@@ -1,2 +1,14 @@
 themes/*
 public/
+assets/
+resources/
+*.swp
+go.???
+
+.editorconfig
+.github/
+academic.Rproj
+.hugo_build.lock
+
+
+
