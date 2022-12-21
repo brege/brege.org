@@ -1,0 +1,170 @@
+<style>
+
+  .form-margin {
+    margin: 1em 1em 4em 1em;
+  }
+
+  .search-form input {
+    flex: 1;
+    height: 2.5rem;
+    padding: 0 0.5rem 0 2.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    position: relative;
+    background-color: #f8f8f8;
+    font-size: 1rem;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  .search-form input::before {
+    content: "\f002";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 1.25rem;
+    position: absolute;
+    left: 0.5rem;
+  }
+
+  .search-form input:hover {
+    background-color: #EBF4FB;
+  }
+
+  .btn-primary {
+    color: #ffffff;
+    background-color: #2b7ce9;
+    border-color: #2b7ce9;
+    font-size: 1rem;
+    height: 2.5rem;
+    padding: 0 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .btn-primary:hover {
+    background-color: #444750;
+  }
+
+  .result-box {
+    display: inline-block;
+    border: 1px solid #4c4c4c; /* grey */
+    margin: 4px;
+    padding: 4px 8px;
+    background-color: #ffffff; /* white */
+    border-radius: 4px;
+  }
+
+  .result-box:hover {
+    background-color: #eaeaea; /* light grey */
+  }
+
+  .dark .result-box {
+    color: #ffffff; /* white */
+    background-color: #323440; /* dark grey */
+  }
+
+  .dark .result-box:hover {
+    background-color: #444750; /* dark grey */
+  }
+
+  .search-result {
+    list-style: none;
+    background-color: #f8f8f8;
+    padding: 4px 8px;
+    margin: 0;
+    cursor: pointer;
+  }
+
+  .search-result:hover {
+    background-color: #eaeaea; /* light grey */
+  }
+
+  .dark .search-result {
+    background-color: #323440; /* dark grey */
+  }
+
+  .dark .search-result:hover {
+    background-color: #444750; /* dark grey */
+  }
+
+  .search-result-spread {
+    list-style: none;
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+    padding: 4px 8px;
+    margin: 4px 0;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .dark .search-result-spread {
+    background-color: #323440; /* dark grey */
+  }
+
+</style>
+
+{{ $jsonPath := .Get "jsonPath" }}
+
+<div class="form-margin">
+  <form id="search-form" onsubmit="return false;">
+     <input type="text" name="search" id="search-input" class="form-control bg-highlight-color-7-10" placeholder="Search..." autofocus autocomplete="off">
+     <i class="" id="search-icon"></i>
+  </form>
+  <div id="search-results"></div>
+</div>
+
+<script>
+  // Get a reference to the search form and input field
+  const searchForm = document.getElementById('search-form');
+  const searchInput = document.getElementById('search-input');
+  const searchResults = document.getElementById('search-results');
+
+  // Add an input event listener to the input field
+  searchInput.addEventListener('input', event => {
+    const query = searchInput.value;
+
+    // Perform the search and display the results
+    searchJSON(query, '{{ $jsonPath }}');
+  });
+
+  searchInput.addEventListener('focus', event => {
+    searchInput.value = '';
+  });
+
+  async function searchJSON(query, jsonPath) {
+    const response = await fetch(jsonPath);
+    const json = await response.json();
+    const results = json.filter(node => node.id.toLowerCase().includes(query.toLowerCase())).slice(0, 5);
+  
+    // Display the search results as a list of ID's
+    searchResults.innerHTML = `<ul>${results.map(result => `<li class="search-result" onclick="handleResultClick('${result.id}')">${result.id}</li>`).join('')}</ul>`;}
+
+  let selectedResults = [];
+
+  function handleResultClick(resultId) {
+    // Update the search input value
+    searchInput.value = resultId;
+
+    // Check if the resultId is in the selectedResults array
+    if (!selectedResults.includes(resultId)) {
+      // Add the resultId to the selectedResults array
+      selectedResults.push(resultId);
+
+      // Create a new element to display the result
+      const resultBox = document.createElement('div');
+      resultBox.innerHTML = resultId;
+      resultBox.classList.add('result-box');
+      // Add an event listener to remove the result box when it is clicked
+      resultBox.addEventListener('click', event => {
+	resultBox.parentNode.removeChild(resultBox);
+	selectedResults = selectedResults.filter(id => id !== resultId);
+      });
+
+      // Insert the result box before the search form
+      searchForm.parentNode.insertBefore(resultBox, searchForm);
+    } else {
+      // Remove the resultId from the selectedResults array
+      selectedResults = selectedResults.filter(id => id !== resultId);
+    }
+  }
+
+</script>
