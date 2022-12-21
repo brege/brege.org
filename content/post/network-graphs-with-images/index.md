@@ -33,11 +33,7 @@ I'm feeling fruity.  These aren't *all* tree fruits, but a few clusters organize
 
 {{< fruit-network nodesPath="/data/fruit/nodes.json" edgesPath="/data/fruit/edges.json" >}}
 
-
-Relative to the root of the Hugo website directory, here's some basic files to make this interactive.
-Note that The JSON data and CSS is added inline here to make the scope of this tutorial focus on Hugo-specific structures.
-
-1. Data for the network is stored two separate JSON files, both located in `/static/data/fruit/`: 
+1. Data for the network is stored in two separate JSON files, both located in `/static/data/fruit/`: 
     - [`nodes.json`](/data/fruit/nodes.json)
     - [`edges.json`](/data/fruit/edges.json)
 
@@ -49,18 +45,10 @@ Note that The JSON data and CSS is added inline here to make the scope of this t
 
         <style>
           #mynetwork {
-            padding: 20px;
             background-color: #f5f5f5; /* a medium gray color */
             border-radius: 10px;
             border: 1px solid #cccccc;
             margin: 5px 0 40px 0;
-          }
-
-          .label-text {
-            color: #000000;
-          }
-          .dark .label-text {
-            color: #ffffff;
           }
         </style>
 
@@ -89,7 +77,7 @@ Note that The JSON data and CSS is added inline here to make the scope of this t
               shape: 'circularImage',
               size: 65,
               image: node => node.image,
-              label: node => `<span class="label-text">${node.label}</span>`,
+              label: node => node.label,
               font: {
                 size: 18,
                 color: '#000000',

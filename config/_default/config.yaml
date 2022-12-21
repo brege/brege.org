@@ -5,7 +5,7 @@
 
 debug: false
 
-title: brege.org # Website name
+title: 'brege.org' # Website name
 baseURL: 'https://brege.org/' # Website URL
 copyright: 'Copyright 2016-2022 Wyatt Brege'
 favicon: 'img/icon.png'
