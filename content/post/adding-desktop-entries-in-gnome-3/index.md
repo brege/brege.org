@@ -9,6 +9,11 @@ tags = ["gnome","firefox"
 image = ""
 caption = ""
 
+[image]
+caption = ""
+focal_point = ""
+preview_only = true
+
 +++
 
 Firefox Developer Edition has newer features than what was available from my distribution's package manager ([Fedora](https://getfedora.org)).  Whereas I've been using it as my daily driver, I've had to do so through a terminal to launch it.  With an alias in my `~/.bashrc` such as

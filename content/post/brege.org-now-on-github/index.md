@@ -9,6 +9,11 @@ title = "brege.org now on GitHub"
 image = ""
 caption = ""
 
+[image]
+caption = ""
+focal_point = ""
+preview_only = true
+
 +++
 
 Earlier I added the hugo source files for this website on GitHub.  Take a look! 

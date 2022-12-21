@@ -9,6 +9,11 @@ tags = ["hugo","rsync","deployment"
 image = ""
 caption = ""
 
+[image]
+caption = ""
+focal_point = ""
+preview_only = true
+
 aliases = [
         "/post/new-way-forward-for-deploying-brege/",
         "/post/new-way-forward-for-developing-brege/"

@@ -10,6 +10,10 @@ draft = false
 image = ""
 caption = ""
 
+[image]
+caption = ""
+focal_point = ""
+preview_only = true
 +++
 
 This project [^1] is motivated by the "[WAR](https://en.wikipedia.org/wiki/Wins_Above_Replacement)" stat in baseball, where I have adopted the "Goals vs. Threshold" (GVT) statistic from [Tom Awad](https://web.archive.org/web/20130407214751/http://hockeyprospectus.com/article.php?articleid=236).  Here, I only consider the Offensive GVT for forward skaters and defensemen (OGVT).  

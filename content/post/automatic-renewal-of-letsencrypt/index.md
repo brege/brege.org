@@ -9,6 +9,10 @@ title = "Automatic renewal of Let's Encrypt Certificates"
 image = ""
 caption = ""
 
+[image]
+caption = ""
+focal_point = ""
+preview_only = true
 +++
 
 Let's Encrypt certificates need to be renewed every three months.

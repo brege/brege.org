@@ -8,6 +8,11 @@ draft = false
 [header]
 image = ""
 caption = ""
+
+[image]
+caption = ""
+focal_point = ""
+preview_only = true
 +++
 
 After I learned about [Mozilla's tool](https://github.com/mozilla/http-observatory) to test how secure your site is, I ran it on my site https://observatory.mozilla.org/analyze.html?host=brege.org and received an "**F**".  <!--more-->

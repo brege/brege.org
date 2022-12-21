@@ -101,8 +101,8 @@ I'm fond of fermenting, pickling, brewing, smoking, and curing, as some things a
 {{% collapse title="More about me" %}}
 
 As I closed out my academic life at the end of 2017, I found a different path, yet still evermore envious of all of the incredibly mindful people I got to know along the way.
-I have great fortune to call David Austing, Milun Rakovic and Matthew Duez my advisors.
-You see, I enjoy teaching, working through the hardest problems, complex puzzles, reading, basically all of the things an academic does, but when I measured myself--my work ethic, imagination, drive--I never truly felt I had their same *gift*--I was a CPU living in a GPU world.
+I am forever grateful to call David Austin, Milun Rakovic and Matthew Duez advisors.
+I enjoy teaching, working through the hardest problems, complex puzzles, reading, basically all of the things an academic does, but when I measured myself--my work ethic, imagination, drive--I never truly felt I had their same *gift*--I was a CPU living in a GPU world.
 (It's worth stating that *gift* is not synonomous with 'less effort': archetypes in any discipline do not acheive without trying--you can't.  There are no *Will Hunting's* in this world.)
 It's this nascent difference between life on easy mode and the ability to work with ease. 
 The Italian word for this factor I admired in others academically, I've learned, is [sprezzatura](https://en.wikipedia.org/wiki/Sprezzatura).  

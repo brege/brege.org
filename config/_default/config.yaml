@@ -3,6 +3,8 @@
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
+debug: false
+
 title: brege.org # Website name
 baseURL: 'https://brege.org/' # Website URL
 copyright: 'Copyright 2016-2022 Wyatt Brege'
@@ -13,6 +15,7 @@ markup:
     startLevel: 1
     endLevel: 4
     ordered: true
+
 
 ############################
 ## LANGUAGE

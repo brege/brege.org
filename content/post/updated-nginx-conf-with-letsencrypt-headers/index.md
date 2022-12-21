@@ -10,6 +10,10 @@ tags = ["nginx", "HSTS", "Let's Encrypt"
   image = ""
   caption = ""
 
+[image]
+  caption = ""
+  focal_point = ""
+  preview_only = true
 +++
 
 I've added a new `security_headers.conf` file in `/etc/nginx/` to keep all the HTTPS headers in one place:

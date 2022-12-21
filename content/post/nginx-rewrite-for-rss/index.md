@@ -9,6 +9,11 @@ title = "Nginx rewrite for RSS"
 image = ""
 caption = ""
 
+[image]
+caption = ""
+focal_point = ""
+preview_only = true
+
 +++
 
 Add the following to the main server block in your nginx config:
