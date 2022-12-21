@@ -17,12 +17,12 @@ content:
 
   # Email form provider
   form:
-    provider: netlify
+    provider: formspree
     formspree:
-      id:
-    netlify:
+      id: mbjerkyw
+    #netlify:
       # Enable CAPTCHA challenge to reduce spam?
-      captcha: false
+    #  captcha: false
 
   # Contact details (edit or remove options as required)
   email: wyatt@brege.org
