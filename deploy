@@ -1,10 +1,28 @@
-#!/bin/sh
+#!/bin/bash
 HOST=brege.org
 DIR=/usr/share/nginx/brege.org/
 
-rm -r public/ \
-	&& hugo --buildDrafts=false \
-	&& rsync -avz --delete --exclude=".well-known" public/ \
-	${HOST}:${DIR}
+# Check for a valid Hugo installation
+if ! which hugo > /dev/null; then
+  echo "Error: Hugo not found"
+  exit 1
+fi
+
+# Check if the public directory exists
+if [ -d "public" ]; then
+  rm -rf public
+fi
+
+# build hguo site:
+hugo --buildDrafts=false 
+
+# Check if the build was successful
+if [ $? -ne 0 ]; then
+  echo "Error: Hugo build failed"
+  exit 1
+fi
+
+# Deploy to $HOST
+rsync -avz --delete --exclude=".well-known" public/ ${HOST}:${DIR}
 
 exit 0
