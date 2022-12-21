@@ -1,0 +1,45 @@
+<div class="hidden-toggle" onclick="toggleHidden()">
+  <i class="hidden-toggle__arrow fas fa-caret-right"></i>
+  <span class="hidden-toggle__title">{{ .Get "title" | default "Reveal Secret" }}</span>
+</div>
+
+<div class="hidden">
+  {{ .Inner | safeHTML }}
+</div>
+
+<style>
+  .hidden-toggle {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: 5px 0px 20px 0px;
+  }
+
+  .hidden-toggle__title {
+    line-height: 22px;
+    margin: 15px;
+  }
+
+  .hidden-toggle__arrow {
+    display: inline-block;
+  }
+
+  .hidden {
+    display: none;
+  }
+</style>
+
+<script>
+function toggleHidden() {
+  var hidden = document.querySelector('.hidden');
+  var arrow = document.querySelector('.hidden-toggle__arrow');
+  if (hidden.style.display === 'none') {
+    hidden.style.display = 'block';
+    arrow.classList.replace('fa-caret-down', 'fa-caret-up');
+  } else {
+    hidden.style.display = 'none';
+    arrow.classList.replace('fa-caret-up', 'fa-caret-down');
+  }
+}
+</script>
+
