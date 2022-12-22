@@ -10,7 +10,7 @@ const data = {
 
 // define the network options
 const options = {
-    width: "800px",
+    width: "100%",
     height: "500px"
 };
 
