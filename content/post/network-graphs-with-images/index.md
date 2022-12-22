@@ -37,7 +37,7 @@ I'm feeling fruity.  These aren't *all* tree fruits, but a few clusters organize
     - [`nodes.json`](/data/fruit/nodes.json)
     - [`edges.json`](/data/fruit/edges.json)
 
-2. The javascript and the shortcode become the same file: 
+2. The javascript and the shortcode, as one file: 
     - `fruit-network.html`
         ``` javascript
         {{ $nodesPath := .Get "nodesPath" }}
@@ -58,7 +58,7 @@ I'm feeling fruity.  These aren't *all* tree fruits, but a few clusters organize
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script>
           const options = {
-            width: "800px",
+            width: "100%",
             height: "500px",
           };
 
@@ -70,14 +70,8 @@ I'm feeling fruity.  These aren't *all* tree fruits, but a few clusters organize
 
           const nodeStyles = {
             nodes: {
-              color: {
-                background: '#eaeaea',
-                border: '#ffffff'
-              },
               shape: 'circularImage',
               size: 65,
-              image: node => node.image,
-              label: node => node.label,
               font: {
                 size: 18,
                 color: '#000000',
