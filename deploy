@@ -13,13 +13,20 @@ if [ -d "public" ]; then
   rm -rf public
 fi
 
-# build hguo site:
+# Build hugo site:
 hugo --buildDrafts=false 
 
 # Check if the build was successful
 if [ $? -ne 0 ]; then
   echo "Error: Hugo build failed"
   exit 1
+fi
+
+# Try to clean the whitespace left by hugo's
+if command -v tidy > /dev/null; then
+  find public/ -name "*.html" -exec tidy -i 2 -m {} \; > /dev/null
+else
+  echo "Warning: Tidy is not installed on this system."
 fi
 
 # Deploy to $HOST
