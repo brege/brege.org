@@ -121,12 +121,19 @@
   // Add an input event listener to the input field
   searchInput.addEventListener('input', event => {
     const query = searchInput.value;
-
+    // Check if the input field is empty
+    if (query.length === 0) {
+      // Clear the search results
+      searchResults.innerHTML = '';
+      return;
+    }
     // Perform the search and display the results
     searchJSON(query, '{{ $jsonPath }}');
   });
-
+    
+  // Add a focus event listener to the input field
   searchInput.addEventListener('focus', event => {
+    const query = searchInput.value;
     searchInput.value = '';
   });
 
@@ -136,10 +143,12 @@
     const results = json.filter(node => node.id.toLowerCase().includes(query.toLowerCase())).slice(0, 5);
   
     // Display the search results as a list of ID's
-    searchResults.innerHTML = `<ul>${results.map(result => `<li class="search-result" onclick="handleResultClick('${result.id}')">${result.id}</li>`).join('')}</ul>`;}
+    searchResults.innerHTML = `<ul>${results.map(result => `<li class="search-result" onclick="handleResultClick('${result.id}')">${result.id}</li>`).join('')}</ul>`;
+  }
 
   let selectedResults = [];
 
+  // Add a click event listener to the search results
   function handleResultClick(resultId) {
     // Update the search input value
     searchInput.value = resultId;
@@ -148,23 +157,41 @@
     if (!selectedResults.includes(resultId)) {
       // Add the resultId to the selectedResults array
       selectedResults.push(resultId);
-
       // Create a new element to display the result
       const resultBox = document.createElement('div');
       resultBox.innerHTML = resultId;
       resultBox.classList.add('result-box');
-      // Add an event listener to remove the result box when it is clicked
+      // Add an event listener to remove the result box when clicked
       resultBox.addEventListener('click', event => {
-	resultBox.parentNode.removeChild(resultBox);
-	selectedResults = selectedResults.filter(id => id !== resultId);
-      });
+        resultBox.parentNode.removeChild(resultBox);
+        selectedResults = selectedResults.filter(id => id !== resultId);
+        // Print the selected results to the console
+        console.log(selectedResults);
+        // Pass the selelected results to the filterNodesAndEdges function  
+        filterNodesAndEdges(selectedResults);
 
+      });
       // Insert the result box before the search form
       searchForm.parentNode.insertBefore(resultBox, searchForm);
     } else {
       // Remove the resultId from the selectedResults array
       selectedResults = selectedResults.filter(id => id !== resultId);
+      // Remove the result box from the DOM
+      document.querySelectorAll('.result-box').forEach(resultBox => {
+        if (resultBox.innerHTML === resultId) {
+          resultBox.parentNode.removeChild(resultBox);
+        }
+      });
     }
+
+    // If selectedResults is updated, filter the nodes and edges
+    filterNodesAndEdges(selectedResults);
+
+    // Clear the search results
+    searchResults.innerHTML = '';
+    // Clear the search input value
+    searchInput.value = '';
+
   }
 
 </script>

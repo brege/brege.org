@@ -15,7 +15,7 @@
       },
       shape: 'box',
       shapeProperties: {
-	borderRadius: 3
+	      borderRadius: 3
       }
     }
   };
@@ -46,8 +46,8 @@
     $.getJSON(edgesPath, function(edgesData) {
       // combine the nodes and edges data
       const data = {
-	nodes: nodesData,
-	edges: edgesData
+      	nodes: nodesData,
+	      edges: edgesData
       };
 
       // update the data in the network
@@ -59,8 +59,8 @@
       const nodes = data.nodes;
 
       network.on('select', function(params) {
-	const matchingNodes = nodes.filter(node => selectedResults.includes(node.label));
-	highlightNodes(matchingNodes);
+        const matchingNodes = nodes.filter(node => selectedResults.includes(node.label));
+          highlightNodes(matchingNodes);
       });
     });
   });

@@ -29,6 +29,6 @@ projects: []
 
 ---
 
-{{< pesto-network nodesPath="/data/pesto/nodes.json" edgesPath="/data/pesto/edges.json" >}}
+{{< devel-network nodesPath="/data/pesto/nodes.json" edgesPath="/data/pesto/edges.json" >}}
 {{< devel-json-search jsonPath="/data/pesto/nodes.json"  >}}
 

@@ -1,0 +1,83 @@
+{{ $nodesPath := .Get "nodesPath" }}
+{{ $edgesPath := .Get "edgesPath" }}
+
+<!-- Network graph container -->
+<div id="network"></div>
+
+<!-- Vis.js library -->
+<script src="https://visjs.github.io/vis-network/standalone/umd/vis-network.min.js"></script>
+
+<script>
+  // define the node styles
+  const nodeStyles = {
+    nodes: {
+      color: {
+        background: '#eaeaea'
+      },
+      shape: 'box',
+      shapeProperties: {
+	      borderRadius: 3
+      }
+    }
+  };
+  function highlightNodes(matchingNodes) {
+    // iterate over the matching nodes and set the background color to a light blue color
+    matchingNodes.forEach(node => {
+      $(`#${node.id}`).css('background-color', '#add8e6');
+  });
+  }
+  // define the network options
+  const options = {
+    width: "100%",
+    height: "500px",
+  };
+  
+  // Create a new network graph
+  const container = document.getElementById('network');
+  const network = new vis.Network(container, {}, options);
+  let nodes = [];
+  let edges = [];
+
+  // Load the data and display the graph
+  async function displayGraph() {
+    const nodesResponse = await fetch('{{ $nodesPath }}');
+    nodes = await nodesResponse.json();
+    const edgesResponse = await fetch('{{ $edgesPath }}');
+    edges = await edgesResponse.json();
+    // Display the graph with the nodes and edges data
+    network.setData({ nodes: nodes, edges: edges });
+    // Apply the node styles
+    network.setOptions(nodeStyles);
+  }
+  // Display the graph when the page loads
+  window.addEventListener('load', displayGraph);
+
+  // Listen whenever selected results change
+  document.addEventListener('selectedResultsChanged', function (e) {
+    // Get the selected results from the event
+    const selectedResults = e.detail;
+    // Filter the nodes and edges based on the selected results
+    filterNodesAndEdges(selectedResults);
+  });
+  
+  
+  
+  function filterNodesAndEdges(selectedResults) {
+    // Print the selected results to the console
+    console.log('selectedResults', selectedResults);
+    // From the selected results nodes, determine the list of every edge that connect to that node
+    const matchingEdges = edges.filter(edge => selectedResults.includes(edge.from) || selectedResults.includes(edge.to));
+    // From the matching edges, determine the list of every node that is connected to the selected results nodes
+    const matchingNodes = nodes.filter(node => matchingEdges.some(edge => edge.from === node.id || edge.to === node.id));
+    // Print the matching nodes and edges to the console
+    console.log('matchingNodes', matchingNodes);
+    console.log('matchingEdges', matchingEdges);
+    // Display the graph with the matching nodes and edges, 
+    network.setData({ nodes: matchingNodes, edges: matchingEdges });
+    // Apply the node styles
+    network.setOptions(nodeStyles);
+    // Highlight the matching nodes
+    highlightNodes(matchingNodes);
+
+}
+</script> 
