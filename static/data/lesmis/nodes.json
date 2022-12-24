@@ -1,0 +1,387 @@
+[
+  {
+    "id": "Myriel",
+    "group": 1,
+    "label": "Myriel"
+  },
+  {
+    "id": "Napoleon",
+    "group": 1,
+    "label": "Napoleon"
+  },
+  {
+    "id": "Mlle.Baptistine",
+    "group": 1,
+    "label": "Mlle.Baptistine"
+  },
+  {
+    "id": "Mme.Magloire",
+    "group": 1,
+    "label": "Mme.Magloire"
+  },
+  {
+    "id": "CountessdeLo",
+    "group": 1,
+    "label": "CountessdeLo"
+  },
+  {
+    "id": "Geborand",
+    "group": 1,
+    "label": "Geborand"
+  },
+  {
+    "id": "Champtercier",
+    "group": 1,
+    "label": "Champtercier"
+  },
+  {
+    "id": "Cravatte",
+    "group": 1,
+    "label": "Cravatte"
+  },
+  {
+    "id": "Count",
+    "group": 1,
+    "label": "Count"
+  },
+  {
+    "id": "OldMan",
+    "group": 1,
+    "label": "OldMan"
+  },
+  {
+    "id": "Labarre",
+    "group": 2,
+    "label": "Labarre"
+  },
+  {
+    "id": "Valjean",
+    "group": 2,
+    "label": "Valjean"
+  },
+  {
+    "id": "Marguerite",
+    "group": 3,
+    "label": "Marguerite"
+  },
+  {
+    "id": "Mme.deR",
+    "group": 2,
+    "label": "Mme.deR"
+  },
+  {
+    "id": "Isabeau",
+    "group": 2,
+    "label": "Isabeau"
+  },
+  {
+    "id": "Gervais",
+    "group": 2,
+    "label": "Gervais"
+  },
+  {
+    "id": "Tholomyes",
+    "group": 3,
+    "label": "Tholomyes"
+  },
+  {
+    "id": "Listolier",
+    "group": 3,
+    "label": "Listolier"
+  },
+  {
+    "id": "Fameuil",
+    "group": 3,
+    "label": "Fameuil"
+  },
+  {
+    "id": "Blacheville",
+    "group": 3,
+    "label": "Blacheville"
+  },
+  {
+    "id": "Favourite",
+    "group": 3,
+    "label": "Favourite"
+  },
+  {
+    "id": "Dahlia",
+    "group": 3,
+    "label": "Dahlia"
+  },
+  {
+    "id": "Zephine",
+    "group": 3,
+    "label": "Zephine"
+  },
+  {
+    "id": "Fantine",
+    "group": 3,
+    "label": "Fantine"
+  },
+  {
+    "id": "Mme.Thenardier",
+    "group": 4,
+    "label": "Mme.Thenardier"
+  },
+  {
+    "id": "Thenardier",
+    "group": 4,
+    "label": "Thenardier"
+  },
+  {
+    "id": "Cosette",
+    "group": 5,
+    "label": "Cosette"
+  },
+  {
+    "id": "Javert",
+    "group": 4,
+    "label": "Javert"
+  },
+  {
+    "id": "Fauchelevent",
+    "group": 0,
+    "label": "Fauchelevent"
+  },
+  {
+    "id": "Bamatabois",
+    "group": 2,
+    "label": "Bamatabois"
+  },
+  {
+    "id": "Perpetue",
+    "group": 3,
+    "label": "Perpetue"
+  },
+  {
+    "id": "Simplice",
+    "group": 2,
+    "label": "Simplice"
+  },
+  {
+    "id": "Scaufflaire",
+    "group": 2,
+    "label": "Scaufflaire"
+  },
+  {
+    "id": "Woman1",
+    "group": 2,
+    "label": "Woman1"
+  },
+  {
+    "id": "Judge",
+    "group": 2,
+    "label": "Judge"
+  },
+  {
+    "id": "Champmathieu",
+    "group": 2,
+    "label": "Champmathieu"
+  },
+  {
+    "id": "Brevet",
+    "group": 2,
+    "label": "Brevet"
+  },
+  {
+    "id": "Chenildieu",
+    "group": 2,
+    "label": "Chenildieu"
+  },
+  {
+    "id": "Cochepaille",
+    "group": 2,
+    "label": "Cochepaille"
+  },
+  {
+    "id": "Pontmercy",
+    "group": 4,
+    "label": "Pontmercy"
+  },
+  {
+    "id": "Boulatruelle",
+    "group": 6,
+    "label": "Boulatruelle"
+  },
+  {
+    "id": "Eponine",
+    "group": 4,
+    "label": "Eponine"
+  },
+  {
+    "id": "Anzelma",
+    "group": 4,
+    "label": "Anzelma"
+  },
+  {
+    "id": "Woman2",
+    "group": 5,
+    "label": "Woman2"
+  },
+  {
+    "id": "MotherInnocent",
+    "group": 0,
+    "label": "MotherInnocent"
+  },
+  {
+    "id": "Gribier",
+    "group": 0,
+    "label": "Gribier"
+  },
+  {
+    "id": "Jondrette",
+    "group": 7,
+    "label": "Jondrette"
+  },
+  {
+    "id": "Mme.Burgon",
+    "group": 7,
+    "label": "Mme.Burgon"
+  },
+  {
+    "id": "Gavroche",
+    "group": 8,
+    "label": "Gavroche"
+  },
+  {
+    "id": "Gillenormand",
+    "group": 5,
+    "label": "Gillenormand"
+  },
+  {
+    "id": "Magnon",
+    "group": 5,
+    "label": "Magnon"
+  },
+  {
+    "id": "Mlle.Gillenormand",
+    "group": 5,
+    "label": "Mlle.Gillenormand"
+  },
+  {
+    "id": "Mme.Pontmercy",
+    "group": 5,
+    "label": "Mme.Pontmercy"
+  },
+  {
+    "id": "Mlle.Vaubois",
+    "group": 5,
+    "label": "Mlle.Vaubois"
+  },
+  {
+    "id": "Lt.Gillenormand",
+    "group": 5,
+    "label": "Lt.Gillenormand"
+  },
+  {
+    "id": "Marius",
+    "group": 8,
+    "label": "Marius"
+  },
+  {
+    "id": "BaronessT",
+    "group": 5,
+    "label": "BaronessT"
+  },
+  {
+    "id": "Mabeuf",
+    "group": 8,
+    "label": "Mabeuf"
+  },
+  {
+    "id": "Enjolras",
+    "group": 8,
+    "label": "Enjolras"
+  },
+  {
+    "id": "Combeferre",
+    "group": 8,
+    "label": "Combeferre"
+  },
+  {
+    "id": "Prouvaire",
+    "group": 8,
+    "label": "Prouvaire"
+  },
+  {
+    "id": "Feuilly",
+    "group": 8,
+    "label": "Feuilly"
+  },
+  {
+    "id": "Courfeyrac",
+    "group": 8,
+    "label": "Courfeyrac"
+  },
+  {
+    "id": "Bahorel",
+    "group": 8,
+    "label": "Bahorel"
+  },
+  {
+    "id": "Bossuet",
+    "group": 8,
+    "label": "Bossuet"
+  },
+  {
+    "id": "Joly",
+    "group": 8,
+    "label": "Joly"
+  },
+  {
+    "id": "Grantaire",
+    "group": 8,
+    "label": "Grantaire"
+  },
+  {
+    "id": "MotherPlutarch",
+    "group": 9,
+    "label": "MotherPlutarch"
+  },
+  {
+    "id": "Gueulemer",
+    "group": 4,
+    "label": "Gueulemer"
+  },
+  {
+    "id": "Babet",
+    "group": 4,
+    "label": "Babet"
+  },
+  {
+    "id": "Claquesous",
+    "group": 4,
+    "label": "Claquesous"
+  },
+  {
+    "id": "Montparnasse",
+    "group": 4,
+    "label": "Montparnasse"
+  },
+  {
+    "id": "Toussaint",
+    "group": 5,
+    "label": "Toussaint"
+  },
+  {
+    "id": "Child1",
+    "group": 10,
+    "label": "Child1"
+  },
+  {
+    "id": "Child2",
+    "group": 10,
+    "label": "Child2"
+  },
+  {
+    "id": "Brujon",
+    "group": 4,
+    "label": "Brujon"
+  },
+  {
+    "id": "Mme.Hucheloup",
+    "group": 8,
+    "label": "Mme.Hucheloup"
+  }
+]

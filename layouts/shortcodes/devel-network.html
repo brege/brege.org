@@ -2,17 +2,14 @@
 {{ $edgesPath := .Get "edgesPath" }}
 
 <style>
-  /* make sure the graph container is always 60% of the window height */
-  #network {
-    height: 60vh;
-  }
+  #network { height: 60vh; } /* 60% of the viewport height */ 
 </style>
 
 <!-- Network graph container -->
 <div id="network"></div>
-
 <!-- Vis.js library -->
 <script src="https://visjs.github.io/vis-network/standalone/umd/vis-network.min.js"></script>
+<!-- Network graph script -->
 <script>
   // Define the color palettes
   // https://material.io/design/color/the-color-system.html#tools-for-picking-colors
@@ -79,7 +76,7 @@
   }
 
   const nodeStylesOrigin = generateNodeStyles(greyColorPalette);
-  const nodeStylesPrime = generateNodeStyles(blueColorPalette);
+  const nodeStylesPrime = generateNodeStyles(greenColorPalette);
   
 
   // define the network options

@@ -1,0 +1,1272 @@
+[
+    {
+        "from": "Napoleon",
+        "to": "Myriel",
+        "weight": 1
+    },
+    {
+        "from": "Mlle.Baptistine",
+        "to": "Myriel",
+        "weight": 8
+    },
+    {
+        "from": "Mme.Magloire",
+        "to": "Myriel",
+        "weight": 10
+    },
+    {
+        "from": "Mme.Magloire",
+        "to": "Mlle.Baptistine",
+        "weight": 6
+    },
+    {
+        "from": "CountessdeLo",
+        "to": "Myriel",
+        "weight": 1
+    },
+    {
+        "from": "Geborand",
+        "to": "Myriel",
+        "weight": 1
+    },
+    {
+        "from": "Champtercier",
+        "to": "Myriel",
+        "weight": 1
+    },
+    {
+        "from": "Cravatte",
+        "to": "Myriel",
+        "weight": 1
+    },
+    {
+        "from": "Count",
+        "to": "Myriel",
+        "weight": 2
+    },
+    {
+        "from": "OldMan",
+        "to": "Myriel",
+        "weight": 1
+    },
+    {
+        "from": "Valjean",
+        "to": "Labarre",
+        "weight": 1
+    },
+    {
+        "from": "Valjean",
+        "to": "Mme.Magloire",
+        "weight": 3
+    },
+    {
+        "from": "Valjean",
+        "to": "Mlle.Baptistine",
+        "weight": 3
+    },
+    {
+        "from": "Valjean",
+        "to": "Myriel",
+        "weight": 5
+    },
+    {
+        "from": "Marguerite",
+        "to": "Valjean",
+        "weight": 1
+    },
+    {
+        "from": "Mme.deR",
+        "to": "Valjean",
+        "weight": 1
+    },
+    {
+        "from": "Isabeau",
+        "to": "Valjean",
+        "weight": 1
+    },
+    {
+        "from": "Gervais",
+        "to": "Valjean",
+        "weight": 1
+    },
+    {
+        "from": "Listolier",
+        "to": "Tholomyes",
+        "weight": 4
+    },
+    {
+        "from": "Fameuil",
+        "to": "Tholomyes",
+        "weight": 4
+    },
+    {
+        "from": "Fameuil",
+        "to": "Listolier",
+        "weight": 4
+    },
+    {
+        "from": "Blacheville",
+        "to": "Tholomyes",
+        "weight": 4
+    },
+    {
+        "from": "Blacheville",
+        "to": "Listolier",
+        "weight": 4
+    },
+    {
+        "from": "Blacheville",
+        "to": "Fameuil",
+        "weight": 4
+    },
+    {
+        "from": "Favourite",
+        "to": "Tholomyes",
+        "weight": 3
+    },
+    {
+        "from": "Favourite",
+        "to": "Listolier",
+        "weight": 3
+    },
+    {
+        "from": "Favourite",
+        "to": "Fameuil",
+        "weight": 3
+    },
+    {
+        "from": "Favourite",
+        "to": "Blacheville",
+        "weight": 4
+    },
+    {
+        "from": "Dahlia",
+        "to": "Tholomyes",
+        "weight": 3
+    },
+    {
+        "from": "Dahlia",
+        "to": "Listolier",
+        "weight": 3
+    },
+    {
+        "from": "Dahlia",
+        "to": "Fameuil",
+        "weight": 3
+    },
+    {
+        "from": "Dahlia",
+        "to": "Blacheville",
+        "weight": 3
+    },
+    {
+        "from": "Dahlia",
+        "to": "Favourite",
+        "weight": 5
+    },
+    {
+        "from": "Zephine",
+        "to": "Tholomyes",
+        "weight": 3
+    },
+    {
+        "from": "Zephine",
+        "to": "Listolier",
+        "weight": 3
+    },
+    {
+        "from": "Zephine",
+        "to": "Fameuil",
+        "weight": 3
+    },
+    {
+        "from": "Zephine",
+        "to": "Blacheville",
+        "weight": 3
+    },
+    {
+        "from": "Zephine",
+        "to": "Favourite",
+        "weight": 4
+    },
+    {
+        "from": "Zephine",
+        "to": "Dahlia",
+        "weight": 4
+    },
+    {
+        "from": "Fantine",
+        "to": "Tholomyes",
+        "weight": 3
+    },
+    {
+        "from": "Fantine",
+        "to": "Listolier",
+        "weight": 3
+    },
+    {
+        "from": "Fantine",
+        "to": "Fameuil",
+        "weight": 3
+    },
+    {
+        "from": "Fantine",
+        "to": "Blacheville",
+        "weight": 3
+    },
+    {
+        "from": "Fantine",
+        "to": "Favourite",
+        "weight": 4
+    },
+    {
+        "from": "Fantine",
+        "to": "Dahlia",
+        "weight": 4
+    },
+    {
+        "from": "Fantine",
+        "to": "Zephine",
+        "weight": 4
+    },
+    {
+        "from": "Fantine",
+        "to": "Marguerite",
+        "weight": 2
+    },
+    {
+        "from": "Fantine",
+        "to": "Valjean",
+        "weight": 9
+    },
+    {
+        "from": "Mme.Thenardier",
+        "to": "Fantine",
+        "weight": 2
+    },
+    {
+        "from": "Mme.Thenardier",
+        "to": "Valjean",
+        "weight": 7
+    },
+    {
+        "from": "Thenardier",
+        "to": "Mme.Thenardier",
+        "weight": 13
+    },
+    {
+        "from": "Thenardier",
+        "to": "Fantine",
+        "weight": 1
+    },
+    {
+        "from": "Thenardier",
+        "to": "Valjean",
+        "weight": 12
+    },
+    {
+        "from": "Cosette",
+        "to": "Mme.Thenardier",
+        "weight": 4
+    },
+    {
+        "from": "Cosette",
+        "to": "Valjean",
+        "weight": 31
+    },
+    {
+        "from": "Cosette",
+        "to": "Tholomyes",
+        "weight": 1
+    },
+    {
+        "from": "Cosette",
+        "to": "Thenardier",
+        "weight": 1
+    },
+    {
+        "from": "Javert",
+        "to": "Valjean",
+        "weight": 17
+    },
+    {
+        "from": "Javert",
+        "to": "Fantine",
+        "weight": 5
+    },
+    {
+        "from": "Javert",
+        "to": "Thenardier",
+        "weight": 5
+    },
+    {
+        "from": "Javert",
+        "to": "Mme.Thenardier",
+        "weight": 1
+    },
+    {
+        "from": "Javert",
+        "to": "Cosette",
+        "weight": 1
+    },
+    {
+        "from": "Fauchelevent",
+        "to": "Valjean",
+        "weight": 8
+    },
+    {
+        "from": "Fauchelevent",
+        "to": "Javert",
+        "weight": 1
+    },
+    {
+        "from": "Bamatabois",
+        "to": "Fantine",
+        "weight": 1
+    },
+    {
+        "from": "Bamatabois",
+        "to": "Javert",
+        "weight": 1
+    },
+    {
+        "from": "Bamatabois",
+        "to": "Valjean",
+        "weight": 2
+    },
+    {
+        "from": "Perpetue",
+        "to": "Fantine",
+        "weight": 1
+    },
+    {
+        "from": "Simplice",
+        "to": "Perpetue",
+        "weight": 2
+    },
+    {
+        "from": "Simplice",
+        "to": "Valjean",
+        "weight": 3
+    },
+    {
+        "from": "Simplice",
+        "to": "Fantine",
+        "weight": 2
+    },
+    {
+        "from": "Simplice",
+        "to": "Javert",
+        "weight": 1
+    },
+    {
+        "from": "Scaufflaire",
+        "to": "Valjean",
+        "weight": 1
+    },
+    {
+        "from": "Woman1",
+        "to": "Valjean",
+        "weight": 2
+    },
+    {
+        "from": "Woman1",
+        "to": "Javert",
+        "weight": 1
+    },
+    {
+        "from": "Judge",
+        "to": "Valjean",
+        "weight": 3
+    },
+    {
+        "from": "Judge",
+        "to": "Bamatabois",
+        "weight": 2
+    },
+    {
+        "from": "Champmathieu",
+        "to": "Valjean",
+        "weight": 3
+    },
+    {
+        "from": "Champmathieu",
+        "to": "Judge",
+        "weight": 3
+    },
+    {
+        "from": "Champmathieu",
+        "to": "Bamatabois",
+        "weight": 2
+    },
+    {
+        "from": "Brevet",
+        "to": "Judge",
+        "weight": 2
+    },
+    {
+        "from": "Brevet",
+        "to": "Champmathieu",
+        "weight": 2
+    },
+    {
+        "from": "Brevet",
+        "to": "Valjean",
+        "weight": 2
+    },
+    {
+        "from": "Brevet",
+        "to": "Bamatabois",
+        "weight": 1
+    },
+    {
+        "from": "Chenildieu",
+        "to": "Judge",
+        "weight": 2
+    },
+    {
+        "from": "Chenildieu",
+        "to": "Champmathieu",
+        "weight": 2
+    },
+    {
+        "from": "Chenildieu",
+        "to": "Brevet",
+        "weight": 2
+    },
+    {
+        "from": "Chenildieu",
+        "to": "Valjean",
+        "weight": 2
+    },
+    {
+        "from": "Chenildieu",
+        "to": "Bamatabois",
+        "weight": 1
+    },
+    {
+        "from": "Cochepaille",
+        "to": "Judge",
+        "weight": 2
+    },
+    {
+        "from": "Cochepaille",
+        "to": "Champmathieu",
+        "weight": 2
+    },
+    {
+        "from": "Cochepaille",
+        "to": "Brevet",
+        "weight": 2
+    },
+    {
+        "from": "Cochepaille",
+        "to": "Chenildieu",
+        "weight": 2
+    },
+    {
+        "from": "Cochepaille",
+        "to": "Valjean",
+        "weight": 2
+    },
+    {
+        "from": "Cochepaille",
+        "to": "Bamatabois",
+        "weight": 1
+    },
+    {
+        "from": "Pontmercy",
+        "to": "Thenardier",
+        "weight": 1
+    },
+    {
+        "from": "Boulatruelle",
+        "to": "Thenardier",
+        "weight": 1
+    },
+    {
+        "from": "Eponine",
+        "to": "Mme.Thenardier",
+        "weight": 2
+    },
+    {
+        "from": "Eponine",
+        "to": "Thenardier",
+        "weight": 3
+    },
+    {
+        "from": "Anzelma",
+        "to": "Eponine",
+        "weight": 2
+    },
+    {
+        "from": "Anzelma",
+        "to": "Thenardier",
+        "weight": 2
+    },
+    {
+        "from": "Anzelma",
+        "to": "Mme.Thenardier",
+        "weight": 1
+    },
+    {
+        "from": "Woman2",
+        "to": "Valjean",
+        "weight": 3
+    },
+    {
+        "from": "Woman2",
+        "to": "Cosette",
+        "weight": 1
+    },
+    {
+        "from": "Woman2",
+        "to": "Javert",
+        "weight": 1
+    },
+    {
+        "from": "MotherInnocent",
+        "to": "Fauchelevent",
+        "weight": 3
+    },
+    {
+        "from": "MotherInnocent",
+        "to": "Valjean",
+        "weight": 1
+    },
+    {
+        "from": "Gribier",
+        "to": "Fauchelevent",
+        "weight": 2
+    },
+    {
+        "from": "Mme.Burgon",
+        "to": "Jondrette",
+        "weight": 1
+    },
+    {
+        "from": "Gavroche",
+        "to": "Mme.Burgon",
+        "weight": 2
+    },
+    {
+        "from": "Gavroche",
+        "to": "Thenardier",
+        "weight": 1
+    },
+    {
+        "from": "Gavroche",
+        "to": "Javert",
+        "weight": 1
+    },
+    {
+        "from": "Gavroche",
+        "to": "Valjean",
+        "weight": 1
+    },
+    {
+        "from": "Gillenormand",
+        "to": "Cosette",
+        "weight": 3
+    },
+    {
+        "from": "Gillenormand",
+        "to": "Valjean",
+        "weight": 2
+    },
+    {
+        "from": "Magnon",
+        "to": "Gillenormand",
+        "weight": 1
+    },
+    {
+        "from": "Magnon",
+        "to": "Mme.Thenardier",
+        "weight": 1
+    },
+    {
+        "from": "Mlle.Gillenormand",
+        "to": "Gillenormand",
+        "weight": 9
+    },
+    {
+        "from": "Mlle.Gillenormand",
+        "to": "Cosette",
+        "weight": 2
+    },
+    {
+        "from": "Mlle.Gillenormand",
+        "to": "Valjean",
+        "weight": 2
+    },
+    {
+        "from": "Mme.Pontmercy",
+        "to": "Mlle.Gillenormand",
+        "weight": 1
+    },
+    {
+        "from": "Mme.Pontmercy",
+        "to": "Pontmercy",
+        "weight": 1
+    },
+    {
+        "from": "Mlle.Vaubois",
+        "to": "Mlle.Gillenormand",
+        "weight": 1
+    },
+    {
+        "from": "Lt.Gillenormand",
+        "to": "Mlle.Gillenormand",
+        "weight": 2
+    },
+    {
+        "from": "Lt.Gillenormand",
+        "to": "Gillenormand",
+        "weight": 1
+    },
+    {
+        "from": "Lt.Gillenormand",
+        "to": "Cosette",
+        "weight": 1
+    },
+    {
+        "from": "Marius",
+        "to": "Mlle.Gillenormand",
+        "weight": 6
+    },
+    {
+        "from": "Marius",
+        "to": "Gillenormand",
+        "weight": 12
+    },
+    {
+        "from": "Marius",
+        "to": "Pontmercy",
+        "weight": 1
+    },
+    {
+        "from": "Marius",
+        "to": "Lt.Gillenormand",
+        "weight": 1
+    },
+    {
+        "from": "Marius",
+        "to": "Cosette",
+        "weight": 21
+    },
+    {
+        "from": "Marius",
+        "to": "Valjean",
+        "weight": 19
+    },
+    {
+        "from": "Marius",
+        "to": "Tholomyes",
+        "weight": 1
+    },
+    {
+        "from": "Marius",
+        "to": "Thenardier",
+        "weight": 2
+    },
+    {
+        "from": "Marius",
+        "to": "Eponine",
+        "weight": 5
+    },
+    {
+        "from": "Marius",
+        "to": "Gavroche",
+        "weight": 4
+    },
+    {
+        "from": "BaronessT",
+        "to": "Gillenormand",
+        "weight": 1
+    },
+    {
+        "from": "BaronessT",
+        "to": "Marius",
+        "weight": 1
+    },
+    {
+        "from": "Mabeuf",
+        "to": "Marius",
+        "weight": 1
+    },
+    {
+        "from": "Mabeuf",
+        "to": "Eponine",
+        "weight": 1
+    },
+    {
+        "from": "Mabeuf",
+        "to": "Gavroche",
+        "weight": 1
+    },
+    {
+        "from": "Enjolras",
+        "to": "Marius",
+        "weight": 7
+    },
+    {
+        "from": "Enjolras",
+        "to": "Gavroche",
+        "weight": 7
+    },
+    {
+        "from": "Enjolras",
+        "to": "Javert",
+        "weight": 6
+    },
+    {
+        "from": "Enjolras",
+        "to": "Mabeuf",
+        "weight": 1
+    },
+    {
+        "from": "Enjolras",
+        "to": "Valjean",
+        "weight": 4
+    },
+    {
+        "from": "Combeferre",
+        "to": "Enjolras",
+        "weight": 15
+    },
+    {
+        "from": "Combeferre",
+        "to": "Marius",
+        "weight": 5
+    },
+    {
+        "from": "Combeferre",
+        "to": "Gavroche",
+        "weight": 6
+    },
+    {
+        "from": "Combeferre",
+        "to": "Mabeuf",
+        "weight": 2
+    },
+    {
+        "from": "Prouvaire",
+        "to": "Gavroche",
+        "weight": 1
+    },
+    {
+        "from": "Prouvaire",
+        "to": "Enjolras",
+        "weight": 4
+    },
+    {
+        "from": "Prouvaire",
+        "to": "Combeferre",
+        "weight": 2
+    },
+    {
+        "from": "Feuilly",
+        "to": "Gavroche",
+        "weight": 2
+    },
+    {
+        "from": "Feuilly",
+        "to": "Enjolras",
+        "weight": 6
+    },
+    {
+        "from": "Feuilly",
+        "to": "Prouvaire",
+        "weight": 2
+    },
+    {
+        "from": "Feuilly",
+        "to": "Combeferre",
+        "weight": 5
+    },
+    {
+        "from": "Feuilly",
+        "to": "Mabeuf",
+        "weight": 1
+    },
+    {
+        "from": "Feuilly",
+        "to": "Marius",
+        "weight": 1
+    },
+    {
+        "from": "Courfeyrac",
+        "to": "Marius",
+        "weight": 9
+    },
+    {
+        "from": "Courfeyrac",
+        "to": "Enjolras",
+        "weight": 17
+    },
+    {
+        "from": "Courfeyrac",
+        "to": "Combeferre",
+        "weight": 13
+    },
+    {
+        "from": "Courfeyrac",
+        "to": "Gavroche",
+        "weight": 7
+    },
+    {
+        "from": "Courfeyrac",
+        "to": "Mabeuf",
+        "weight": 2
+    },
+    {
+        "from": "Courfeyrac",
+        "to": "Eponine",
+        "weight": 1
+    },
+    {
+        "from": "Courfeyrac",
+        "to": "Feuilly",
+        "weight": 6
+    },
+    {
+        "from": "Courfeyrac",
+        "to": "Prouvaire",
+        "weight": 3
+    },
+    {
+        "from": "Bahorel",
+        "to": "Combeferre",
+        "weight": 5
+    },
+    {
+        "from": "Bahorel",
+        "to": "Gavroche",
+        "weight": 5
+    },
+    {
+        "from": "Bahorel",
+        "to": "Courfeyrac",
+        "weight": 6
+    },
+    {
+        "from": "Bahorel",
+        "to": "Mabeuf",
+        "weight": 2
+    },
+    {
+        "from": "Bahorel",
+        "to": "Enjolras",
+        "weight": 4
+    },
+    {
+        "from": "Bahorel",
+        "to": "Feuilly",
+        "weight": 3
+    },
+    {
+        "from": "Bahorel",
+        "to": "Prouvaire",
+        "weight": 2
+    },
+    {
+        "from": "Bahorel",
+        "to": "Marius",
+        "weight": 1
+    },
+    {
+        "from": "Bossuet",
+        "to": "Marius",
+        "weight": 5
+    },
+    {
+        "from": "Bossuet",
+        "to": "Courfeyrac",
+        "weight": 12
+    },
+    {
+        "from": "Bossuet",
+        "to": "Gavroche",
+        "weight": 5
+    },
+    {
+        "from": "Bossuet",
+        "to": "Bahorel",
+        "weight": 4
+    },
+    {
+        "from": "Bossuet",
+        "to": "Enjolras",
+        "weight": 10
+    },
+    {
+        "from": "Bossuet",
+        "to": "Feuilly",
+        "weight": 6
+    },
+    {
+        "from": "Bossuet",
+        "to": "Prouvaire",
+        "weight": 2
+    },
+    {
+        "from": "Bossuet",
+        "to": "Combeferre",
+        "weight": 9
+    },
+    {
+        "from": "Bossuet",
+        "to": "Mabeuf",
+        "weight": 1
+    },
+    {
+        "from": "Bossuet",
+        "to": "Valjean",
+        "weight": 1
+    },
+    {
+        "from": "Joly",
+        "to": "Bahorel",
+        "weight": 5
+    },
+    {
+        "from": "Joly",
+        "to": "Bossuet",
+        "weight": 7
+    },
+    {
+        "from": "Joly",
+        "to": "Gavroche",
+        "weight": 3
+    },
+    {
+        "from": "Joly",
+        "to": "Courfeyrac",
+        "weight": 5
+    },
+    {
+        "from": "Joly",
+        "to": "Enjolras",
+        "weight": 5
+    },
+    {
+        "from": "Joly",
+        "to": "Feuilly",
+        "weight": 5
+    },
+    {
+        "from": "Joly",
+        "to": "Prouvaire",
+        "weight": 2
+    },
+    {
+        "from": "Joly",
+        "to": "Combeferre",
+        "weight": 5
+    },
+    {
+        "from": "Joly",
+        "to": "Mabeuf",
+        "weight": 1
+    },
+    {
+        "from": "Joly",
+        "to": "Marius",
+        "weight": 2
+    },
+    {
+        "from": "Grantaire",
+        "to": "Bossuet",
+        "weight": 3
+    },
+    {
+        "from": "Grantaire",
+        "to": "Enjolras",
+        "weight": 3
+    },
+    {
+        "from": "Grantaire",
+        "to": "Combeferre",
+        "weight": 1
+    },
+    {
+        "from": "Grantaire",
+        "to": "Courfeyrac",
+        "weight": 2
+    },
+    {
+        "from": "Grantaire",
+        "to": "Joly",
+        "weight": 2
+    },
+    {
+        "from": "Grantaire",
+        "to": "Gavroche",
+        "weight": 1
+    },
+    {
+        "from": "Grantaire",
+        "to": "Bahorel",
+        "weight": 1
+    },
+    {
+        "from": "Grantaire",
+        "to": "Feuilly",
+        "weight": 1
+    },
+    {
+        "from": "Grantaire",
+        "to": "Prouvaire",
+        "weight": 1
+    },
+    {
+        "from": "MotherPlutarch",
+        "to": "Mabeuf",
+        "weight": 3
+    },
+    {
+        "from": "Gueulemer",
+        "to": "Thenardier",
+        "weight": 5
+    },
+    {
+        "from": "Gueulemer",
+        "to": "Valjean",
+        "weight": 1
+    },
+    {
+        "from": "Gueulemer",
+        "to": "Mme.Thenardier",
+        "weight": 1
+    },
+    {
+        "from": "Gueulemer",
+        "to": "Javert",
+        "weight": 1
+    },
+    {
+        "from": "Gueulemer",
+        "to": "Gavroche",
+        "weight": 1
+    },
+    {
+        "from": "Gueulemer",
+        "to": "Eponine",
+        "weight": 1
+    },
+    {
+        "from": "Babet",
+        "to": "Thenardier",
+        "weight": 6
+    },
+    {
+        "from": "Babet",
+        "to": "Gueulemer",
+        "weight": 6
+    },
+    {
+        "from": "Babet",
+        "to": "Valjean",
+        "weight": 1
+    },
+    {
+        "from": "Babet",
+        "to": "Mme.Thenardier",
+        "weight": 1
+    },
+    {
+        "from": "Babet",
+        "to": "Javert",
+        "weight": 2
+    },
+    {
+        "from": "Babet",
+        "to": "Gavroche",
+        "weight": 1
+    },
+    {
+        "from": "Babet",
+        "to": "Eponine",
+        "weight": 1
+    },
+    {
+        "from": "Claquesous",
+        "to": "Thenardier",
+        "weight": 4
+    },
+    {
+        "from": "Claquesous",
+        "to": "Babet",
+        "weight": 4
+    },
+    {
+        "from": "Claquesous",
+        "to": "Gueulemer",
+        "weight": 4
+    },
+    {
+        "from": "Claquesous",
+        "to": "Valjean",
+        "weight": 1
+    },
+    {
+        "from": "Claquesous",
+        "to": "Mme.Thenardier",
+        "weight": 1
+    },
+    {
+        "from": "Claquesous",
+        "to": "Javert",
+        "weight": 1
+    },
+    {
+        "from": "Claquesous",
+        "to": "Eponine",
+        "weight": 1
+    },
+    {
+        "from": "Claquesous",
+        "to": "Enjolras",
+        "weight": 1
+    },
+    {
+        "from": "Montparnasse",
+        "to": "Javert",
+        "weight": 1
+    },
+    {
+        "from": "Montparnasse",
+        "to": "Babet",
+        "weight": 2
+    },
+    {
+        "from": "Montparnasse",
+        "to": "Gueulemer",
+        "weight": 2
+    },
+    {
+        "from": "Montparnasse",
+        "to": "Claquesous",
+        "weight": 2
+    },
+    {
+        "from": "Montparnasse",
+        "to": "Valjean",
+        "weight": 1
+    },
+    {
+        "from": "Montparnasse",
+        "to": "Gavroche",
+        "weight": 1
+    },
+    {
+        "from": "Montparnasse",
+        "to": "Eponine",
+        "weight": 1
+    },
+    {
+        "from": "Montparnasse",
+        "to": "Thenardier",
+        "weight": 1
+    },
+    {
+        "from": "Toussaint",
+        "to": "Cosette",
+        "weight": 2
+    },
+    {
+        "from": "Toussaint",
+        "to": "Javert",
+        "weight": 1
+    },
+    {
+        "from": "Toussaint",
+        "to": "Valjean",
+        "weight": 1
+    },
+    {
+        "from": "Child1",
+        "to": "Gavroche",
+        "weight": 2
+    },
+    {
+        "from": "Child2",
+        "to": "Gavroche",
+        "weight": 2
+    },
+    {
+        "from": "Child2",
+        "to": "Child1",
+        "weight": 3
+    },
+    {
+        "from": "Brujon",
+        "to": "Babet",
+        "weight": 3
+    },
+    {
+        "from": "Brujon",
+        "to": "Gueulemer",
+        "weight": 3
+    },
+    {
+        "from": "Brujon",
+        "to": "Thenardier",
+        "weight": 3
+    },
+    {
+        "from": "Brujon",
+        "to": "Gavroche",
+        "weight": 1
+    },
+    {
+        "from": "Brujon",
+        "to": "Eponine",
+        "weight": 1
+    },
+    {
+        "from": "Brujon",
+        "to": "Claquesous",
+        "weight": 1
+    },
+    {
+        "from": "Brujon",
+        "to": "Montparnasse",
+        "weight": 1
+    },
+    {
+        "from": "Mme.Hucheloup",
+        "to": "Bossuet",
+        "weight": 1
+    },
+    {
+        "from": "Mme.Hucheloup",
+        "to": "Joly",
+        "weight": 1
+    },
+    {
+        "from": "Mme.Hucheloup",
+        "to": "Grantaire",
+        "weight": 1
+    },
+    {
+        "from": "Mme.Hucheloup",
+        "to": "Bahorel",
+        "weight": 1
+    },
+    {
+        "from": "Mme.Hucheloup",
+        "to": "Courfeyrac",
+        "weight": 1
+    },
+    {
+        "from": "Mme.Hucheloup",
+        "to": "Gavroche",
+        "weight": 1
+    },
+    {
+        "from": "Mme.Hucheloup",
+        "to": "Enjolras",
+        "weight": 1
+    }
+]
