@@ -2,71 +2,16 @@
 {{ $edgesPath := .Get "edgesPath" }}
 
 <style>
-
   #mynetwork {
-    background-color: #f5f5f5; /* a medium gray color */
+    background-color: #EFEBE9; /* worn treasure map color */
     border-radius: 10px;
     border: 1px solid #cccccc;
     margin: 5px 0 40px 0;
   }
-
 </style>
 
 <div id="mynetwork" data-nodes-path={{ $nodesPath }} data-edges-path={{ $edgesPath }}></div>
 
 <script src="https://visjs.github.io/vis-network/standalone/umd/vis-network.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-  const options = {
-    width: "800px",
-    height: "500px",
-  };
-
-  const container = document.getElementById("mynetwork");
-  const network = new vis.Network(container, {}, options);
-
-  const nodesPath = $("#mynetwork").data("nodes-path");
-  const edgesPath = $("#mynetwork").data("edges-path");
-
-  const nodeStyles = {
-    nodes: {
-      color: {
-        background: '#eaeaea',
-        border: '#ffffff'
-      },
-      shape: 'circularImage',
-      size: 65,
-      image: node => node.image,
-      label: node => node.label,
-      font: {
-        size: 18,
-        color: '#000000',
-      }
-    }
-  };
-
-  function highlightNodes(matchingNodes) {
-    matchingNodes.forEach(node => {
-      $(`#${node.id}`).css('background-color', '#add8e6');
-    });
-  }
-
-  $.getJSON(nodesPath, function(nodesData) {
-    $.getJSON(edgesPath, function(edgesData) {
-      const data = {
-        nodes: nodesData,
-        edges: edgesData
-      };
-      network.setData(data);
-      network.setOptions(nodeStyles);
-
-      const nodes = data.nodes;
-
-      network.on('select', function(params) {
-        const matchingNodes = nodes.filter(node => selectedResults.includes(node.label));
-        highlightNodes(matchingNodes);
-      });
-    });
-  });
-</script>
-
+<script src="/js/fruit-network.js"></script>

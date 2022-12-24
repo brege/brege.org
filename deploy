@@ -4,7 +4,7 @@ DIR=/usr/share/nginx/brege.org/
 
 # Check for a valid Hugo installation
 if ! which hugo > /dev/null; then
-  echo "Error: Hugo not found"
+  echo "[hugo] Error: Hugo not found"
   exit 1
 fi
 
@@ -13,16 +13,27 @@ if [ -d "public" ]; then
   rm -rf public
 fi
 
-# build hguo site:
-hugo --buildDrafts=false 
+# Build hugo site:
+echo "[hugo] Building site..."
+hugo --buildDrafts=false 2>&1 | awk '{print "[hugo]", $0}'
 
 # Check if the build was successful
 if [ $? -ne 0 ]; then
-  echo "Error: Hugo build failed"
+  echo "[hugo] Error: Hugo build failed"
   exit 1
 fi
 
+# Try to clean the whitespace and blank lines 
+# left by hugo logic
+if [ -d "public" ]; then
+  echo "[clean] Cleaning HTML files..."
+  find public/ -name "*.html" -exec sed -i '/^[[:space:]]*$/d' {} \; 2>&1 | awk '{print "[clean]", $0}'
+else
+  echo "[clean] Warning: public/ does not exist"
+fi
+
 # Deploy to $HOST
-rsync -avz --delete --exclude=".well-known" public/ ${HOST}:${DIR}
+echo "[rsync] Deploying site to ${HOST}:${DIR}..."
+rsync -avz --delete --exclude=".well-known" public/ ${HOST}:${DIR} 2>&1 | awk '{print "[rsync]", $0}'
 
 exit 0
