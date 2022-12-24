@@ -40,6 +40,8 @@ Nodes can be clicked and added to a subgraph builder.
 You can continue to search for new node members in the search bar 
 (which has a rudimentary autofill that's a straight json query)
 and clicking on them will add them to the builder.
+Simultaneously, the graph will reduce to a graph containing only 
+all nodes with edges linked to nodes in the builder.
 
 Items can be removed from the builder either by clicking the little builder tabs or re-clicking the node.  Clearing the builder bar completely will redraw the whole graph.
 
@@ -50,7 +52,7 @@ Please email me at wyatt@brege.org with any questions.
 Dataset can be found here:
 
   - [`nodes.json`](/data/lesmis/nodes.json)
-  - [`edges.json`](/data/lesmis/nodes.json)
+  - [`edges.json`](/data/lesmis/edges.json)
 
 Lingering annoyances:
 
