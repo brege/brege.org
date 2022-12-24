@@ -1,0 +1,15 @@
+<!-- layout: _default/_markup/render-heading.html -->
+<h{{ .Level }} id="{{ .Anchor | safeURL }}">{{ .Text | safeHTML }} 
+    <a href="#{{ .Anchor | safeURL }}" class="anchor-link"> # </a>
+</h{{ .Level }}>
+
+<style> 
+  h{{ .Level }}:hover .anchor-link {
+      display: inline;
+  }
+
+  .anchor-link {
+      display: none;
+  }
+</style>
+
