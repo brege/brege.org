@@ -148,7 +148,6 @@
         console.log(selectedResults);
         // Pass the selelected results to the filterNodesAndEdges function  
         filterNodesAndEdges(selectedResults);
-
       });
       // Insert the result box before the search form
       searchForm.parentNode.insertBefore(resultBox, searchForm);
@@ -162,8 +161,8 @@
         }
       });
     }
-
-    // If selectedResults is updated, filter the nodes and edges
+    
+    // Filter the nodes and edges based on the selected results
     filterNodesAndEdges(selectedResults);
 
     // Clear the search results

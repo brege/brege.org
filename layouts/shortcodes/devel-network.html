@@ -119,6 +119,18 @@
     filterNodesAndEdges(selectedResults);
   });
   
+  // When the user clicks a node
+  network.on('click', function (params) {
+    // If the user clicked a node
+    if (params.nodes.length > 0) {
+      // Get the node id
+      const nodeId = params.nodes[0];
+      // Pass the node id to handleResultClick function
+      handleResultClick(nodeId);
+    }
+  });   
+
+  // Filter the nodes and edges based on the selected results
   function filterNodesAndEdges(selectedResults) {
     // Print the selected results to the console
     console.log('selectedResults', selectedResults);
