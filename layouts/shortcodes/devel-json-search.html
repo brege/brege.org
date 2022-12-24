@@ -29,41 +29,29 @@
     background-color: #EBF4FB;
   }
 
-  .btn-primary {
-    color: #ffffff;
-    background-color: #2b7ce9;
-    border-color: #2b7ce9;
-    font-size: 1rem;
-    height: 2.5rem;
-    padding: 0 0.75rem;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-
-  .btn-primary:hover {
-    background-color: #444750;
-  }
-
   .result-box {
     display: inline-block;
-    border: 1px solid #4c4c4c; /* grey */
+    border: 2px solid #2196F3; /* Light Blue 500 */
     margin: 4px;
     padding: 4px 8px;
-    background-color: #ffffff; /* white */
-    border-radius: 4px;
+    background-color: #BBDEFB; /* Light Blue 100 */
+    color: #0D47A1; /* Light Blue 900 */
+    border-radius: 3px;
+    font-weight: 600;
   }
-
+   
   .result-box:hover {
-    background-color: #eaeaea; /* light grey */
+    color: #272935; 
+    background-color: #64B5F6; /* Light Blue 300 */
   }
 
   .dark .result-box {
-    color: #ffffff; /* white */
-    background-color: #323440; /* dark grey */
+    color: #272935; 
+    background-color: #90CAF9; /* Light Blue 200 */
   }
 
   .dark .result-box:hover {
-    background-color: #444750; /* dark grey */
+    background-color: #1976D2; /* Light Blue 700 */
   }
 
   .search-result {
@@ -74,30 +62,17 @@
     cursor: pointer;
   }
 
-  .search-result:hover {
-    background-color: #eaeaea; /* light grey */
-  }
-
   .dark .search-result {
     background-color: #323440; /* dark grey */
   }
 
+
+  .search-result:hover {
+    background-color: #eaeaea; /* light grey */
+  }
+
   .dark .search-result:hover {
     background-color: #444750; /* dark grey */
-  }
-
-  .search-result-spread {
-    list-style: none;
-    border: 1px solid #ddd;
-    background-color: #f8f8f8;
-    padding: 4px 8px;
-    margin: 4px 0;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-
-  .dark .search-result-spread {
-    background-color: #323440; /* dark grey */
   }
 
 </style>
@@ -143,7 +118,11 @@
     const results = json.filter(node => node.id.toLowerCase().includes(query.toLowerCase())).slice(0, 5);
   
     // Display the search results as a list of ID's
-    searchResults.innerHTML = `<ul>${results.map(result => `<li class="search-result" onclick="handleResultClick('${result.id}')">${result.id}</li>`).join('')}</ul>`;
+    searchResults.innerHTML = `
+      <ul style="width: ${searchInput.offsetWidth}px">
+        ${results.map(result => `<li class="search-result" onclick="handleResultClick('${result.id}')">${result.id}</li>`).join('')}
+      </ul>
+    `;
   }
 
   let selectedResults = [];
@@ -191,6 +170,14 @@
     searchResults.innerHTML = '';
     // Clear the search input value
     searchInput.value = '';
+
+    // Hide the search results when current search is empty
+    if (selectedResults.length === 0) {
+      searchResults.style.display = 'none';
+    } else {
+      searchResults.style.display = 'block';
+    }
+    
 
   }
 

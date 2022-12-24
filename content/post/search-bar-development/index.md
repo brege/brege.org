@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Network - Search Bar Development"
+title: "Searching Graphs"
 subtitle: ""
 summary: ""
 authors: []
