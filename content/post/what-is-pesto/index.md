@@ -30,7 +30,9 @@ projects: []
 
 **Pesto\*** is a cold-prep green sauce made with herbs and alliums suspended in oil.  Most pestos call for some form of nut or cheese.  In the general sense, chefs may specify "loose pesto" when there are neither cheese nor nuts in the sauce, or when the sauce has an abundance of oil.  In general, pesto is made from herbs in the mint family, almost always from basil. The **\*** distinguishes a generalization to the traditional meaning of the word.
 
-# Relatives 
+{{% toc min-level=1 %}}
+
+## Relatives 
 **Basil pesto** is the common pesto.  Its recipe typically calls for five key ingredients:
 $$
 \\begin{align}
@@ -51,7 +53,7 @@ But there is a small catch, because some chefs may also say 'arugula pesto,' whi
 
 In this way, **pesto\*** is generalized from its elements, describing a sauce of process and appearence while flexible in its flavor balancing rules.  This is pesto\* as a **category**, not pesto as a set.  For all intents and purposes, chimis and gremolatas are pestos\*.
 
-# Members 
+## Members 
 
 The key to most pestos is to use a motor driven device for pureeing the sauce.
 The two best tools available and in common use both in commericial and residential kitchens are the **vitamix** or **immersion blender**.  Food processors and ninjas work just as well.
@@ -62,7 +64,7 @@ The two best tools available and in common use both in commericial and residenti
 
 Puree everything besides cheese first.  You don't want to gum up yourr blender, so you can fold the proto-pesto with grated parmesan in a mixing bowl after pureeing the produce.  In restaurants, you can make a really fine proto-pesto (i.e., loose pesto) by pureeing the produce and oil for an extended period of time.  It is easier on the motor and on the blades.  You can be lazier picking your leaves on your basil or include more stems, because the cheese absent creates less friction.  **Save the cheese for last.**
 
-## Greens
+### Greens
 
 Most herbs from either the carrot- or mint-families will will work great, and many green tops of root vegetables (turnip, radish) are, while interchangeable, usable and often complimentary in pestos.
 Caution: while tarragon can be made into a pesto\*, its deploymeny in cold-prep sauces is rare (marinades, green goddess dressing) and is typically utilized better in hot-prep sauces--especially béarnaise. Sage, rosemary, and lemon verbena require special practice.  Thyme is time.
@@ -74,21 +76,21 @@ Caution: while tarragon can be made into a pesto\*, its deploymeny in cold-prep 
  {{< pesto-network nodesPath="/data/pesto/nodes.json" edgesPath="/data/pesto/edges.json" >}}
  
 
-## Cheese
+### Cheese
 
 Try to stick with a hard cheese that has longer room temperature stability.  Cheeses with hard interiors and developed rinds will impart the necessary fats and impactful aromas while also being more conservative in the funky bleu cheeses, chalky goat cheeses, or sour yet creamy compositions of farmer/cottage style cheeses--namely, ricotta, cotija or paneer. An old queso fresco that has been air dried in the fridge, however, is a mighty substitute to parmesan on a budget.
 
 **Recommend:** parmesan, hard rind, feta, crumbly  
 **Avoid:** soft, bleu
 
-## Citrus?
+### Citrus?
 
 Of course, pesto is also seasoned (sodiums, peppercorn) and lemon zest or lemon juice is an especially common addition.  Adding citrus tunes flavor, because it combats salinity (parmesan saltiness is not equal between products) and piquancy (garlic cloves grown in drought can be remarkably 'hot').  Because lemons are a hybrid of pomelo and citron, grapefruit juice is an equally applicable substitute. 
 
 **Recommend:** lemon zest, grapefruit juice, kombucha vinegars  
 **Avoid:** orange, distilled vinegars
 
-## Nuts
+### Nuts
 
 Pine nuts are the nut of choice in recipes from canonical sources.  People don't have pine  nuts in their house.  They do have other nuts leftover from baked good preperations.  In restaurants, pine nuts are toasted in hot ovens.  They are applied whole to pizzas and salads, so because they can live in a recipe and two auxillary dishes, they define themselves as roleplayers in menus and inventories.  However, pine nuts are expensive.  Because they are normally toasted, errant chefs may leave them in ovens for moments too long, destroying a product whose cost is equivalent to whole numbers of the average hourly wages.  This is not good for anyone.  I've never done this before, I swear.
 
@@ -97,27 +99,27 @@ Instead, some nontropical tree nuts are immediate substitutes if you are concern
 **Recommend:** pine nut, walnut, almond, pistachio   
 **Avoid:** peanut, cashew, macadamia, brazil, pecan
 
-## Oils
+### Oils
 
 It is by no coincidence that extra virgin olive oil is the go to substrate (notice also olives and the alternative nuts previously mentioned grow adjacent to each other).  Its Mediterranean origin is the required consideration for almost all member dishes in its cuisine.  Some oils are better than others when olive oil is out: avocado, walnut, grapeseed.  Avoid soy and canola oils which are better suited for frying, and harm basil less in lite applications like salad (Italian) dressing.  Coconut oil can be used, but is not ideal because of its high melting point.  However, you can create a spreadable pesto by using coconut oil--if the proto-pesto wets are tempered into coconut oil carefully.  Coarser nuts in the spread make for a provocative but health-conscious party favor.
 
 **Recommend:** extra virgin, walnut, avocado  
 **Avoid:** canola, soy, peanut
 
-## Alliums
+### Alliums
 
 Lastly, we generalized garlic to alliums above for good reason.  You can make garlic scape pesto, which uses the green tops grown above earth from the garlic bulb.  But, you can also use spring onions and/or shallot bulbs in place of garlic, which is especially more pleasant with lakefish and seafood.  Although, garlic *is* preferable to onion in the regime of shellfish and, notably, the mollusk.  You can also use radish bulbs, as well as radish or mustard greens in pesto, which simulates "bite".  In place of garlic, this is a quite useful substitution when pestos are applied in dressings for leafy salads or pasta salads.
 
 **Recommend:** fresh garlic, young onions, shallot, some pickled  
 **Avoid:** large onions, leek, pearl onion, cooked garlic
 
-# Recipe 
+## Recipe 
 
 I've included a basic production recipe for *Basil Pesto* that creates a structurally "loose" pesto.  My application could be added to heavy mayo for basil aioli, brushed on bread for grilling, and thickened with reduced (50%) cream for penne pasta dishes (bechamel cheese sauces work there, too).
 Cheese plays a more vital role when pesto is a topping where the goal is to gratinize, or in the presence of crackers.
 
 {{% recipe %}}
-## Basil Pesto  
+### Basil Pesto  
 
 Chef: *Wyatt Brege*
   - Yield: 1 Quart
@@ -146,7 +148,7 @@ Chef: *Wyatt Brege*
 * This is a rather loose pesto.  More parmesan cheese can be added to thicken.
 {{% /recipe %}}
 
-# What is sauce?
+## What is sauce?
 
 When you play this game of generalizing sauces into irreducible primitives, you eventually question with good reason why the five mother sauces are the way that they are.
 
@@ -162,7 +164,7 @@ In my mind, I do consider some categories of cold sauces as fundamental to the e
 So with liberty, let's for sake of argument hold salsas and pestos in different regard.  I cannot speak to the genre it belongs, but: if you have never tried blending tomatillo and basil together, you are missing out on one of life's best kept secrets.
 
 {{% recipe %}}
-##  On the fly
+###  On the fly
  - Arugula, Mint, Pea pesto $\approx$ pesto, sub herb
  - Gremolata $\sim$ pesto, sub herb, add citrus, minus cheese, minus nuts
  - Chimichurri $\sim$ gremolata, with vinegar, with chiles
