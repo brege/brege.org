@@ -28,7 +28,7 @@ projects: []
 
 ---
 
-This graph may take a moment to load...
+The graph may take a moment to load.
 
 {{< devel-network nodesPath="/data/lesmis/nodes.json" edgesPath="/data/lesmis/edges.json" >}}
 {{< devel-json-search jsonPath="/data/lesmis/nodes.json"  >}}

@@ -55,15 +55,15 @@
     return {
       nodes: {
         color: {
-          background: colorPalette[1],  // Light 200
-          border: colorPalette[5],  // Light 600  
+          background: colorPalette[1],  // Pallete 200
+          border: colorPalette[5],  // Pallete 600  
           highlight: {
-            background: colorPalette[3],  // Light 400
-            border: colorPalette[5]  // Light 600
+            background: colorPalette[3],  // Pallete 400
+            border: colorPalette[5]  // Pallete 600
           }
         },
         font: {
-          color: colorPalette[9],  // Light 1000
+          color: colorPalette[9],  // Pallete 1000
           size: 30,
           align: 'center'
         },
@@ -74,18 +74,18 @@
       }
     };
   }
-
   const nodeStylesOrigin = generateNodeStyles(greyColorPalette);
   const nodeStylesPrime = generateNodeStyles(greenColorPalette);
   
-
-  // define the network options
+  // Define the network options
   const options = {
     interaction: {
       hover: true,
       hoverConnectedEdges: true,
     },
     autoResize: true,
+    height: '100%',
+    width: '100%',
   }
 
   // Create a new network graph
@@ -100,42 +100,33 @@
     nodes = await nodesResponse.json();
     const edgesResponse = await fetch('{{ $edgesPath }}');
     edges = await edgesResponse.json();
+    network.setOptions(nodeStylesOrigin);
+    network.setData({ nodes: nodes, edges: edges });
     // Apply the node styles
     network.setOptions(nodeStylesOrigin);
-    // Display the graph with the nodes and edges data
-    network.setData({ nodes: nodes, edges: edges });
   }
 
   // Display the graph when the page loads
   window.addEventListener('load', displayGraph);
   // Listen whenever selected results change
   document.addEventListener('selectedResultsChanged', function (e) {
-    // Get the selected results from the event
     const selectedResults = e.detail;
-    // Filter the nodes and edges based on the selected results
     filterNodesAndEdges(selectedResults);
   });
   
   // When the user clicks a node
   network.on('click', function (params) {
-    // If the user clicked a node
     if (params.nodes.length > 0) {
-      // Get the node id
       const nodeId = params.nodes[0];
-      // Pass the node id to handleResultClick function
       handleResultClick(nodeId);
     }
   });   
 
   // Filter the nodes and edges based on the selected results
   function filterNodesAndEdges(selectedResults) {
-    // Print the selected results to the console
-    console.log('selectedResults', selectedResults);
-    // From the selected results nodes, determine the list of every edge that connect to that node
-    const matchingEdges = edges.filter(edge => selectedResults.includes(edge.from) || selectedResults.includes(edge.to));
-    // From the matching edges, determine the list of every node that is connected to the selected results nodes
-    const matchingNodes = nodes.filter(node => matchingEdges.some(edge => edge.from === node.id || edge.to === node.id));
     // Display the graph with the matching nodes and edges, 
+    const matchingEdges = edges.filter(edge => selectedResults.includes(edge.from) || selectedResults.includes(edge.to));
+    const matchingNodes = nodes.filter(node => matchingEdges.some(edge => edge.from === node.id || edge.to === node.id));
     network.setData({ nodes: matchingNodes, edges: matchingEdges });
     // Apply the node styles
     network.setOptions(nodeStylesOrigin);
