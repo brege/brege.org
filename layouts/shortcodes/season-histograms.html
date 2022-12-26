@@ -1,0 +1,32 @@
+{{ $nodesPath := .Get "nodesPath" }}
+
+<!-- The purpose of this script is to plot histograms
+    for nodes in one json files that match entries
+    by the same name in another json file.  The first 
+    json file is the file to "search", and the second 
+    json file is the file with a list of months for each
+    node.  The script will plot a histogram for each node
+    in the search file that has a corresponding entry in
+    the second file.  -->
+
+<!-- The search file is the file to search for nodes. -->
+{{ $seasonsPath := .Get "seasonsPath" }}
+
+<!-- Create the Histogram container -->
+<div id="histogram-container" class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <div id="histogram"></div>
+    </div>
+  </div>
+</div>
+
+<!-- library for plotting histograms -->
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+<script>
+
+
+
+    
+</script>
