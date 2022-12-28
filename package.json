@@ -1,0 +1,27 @@
+{
+  "name": "brege.org",
+  "version": "1.0.0",
+  "description": "website for brege.org",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brege/brege.org.git"
+  },
+  "keywords": [
+    "brege"
+  ],
+  "author": "Wyatt Brege",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brege/brege.org/issues"
+  },
+  "homepage": "https://github.com/brege/brege.org#readme",
+  "devDependencies": {
+    "rxjs": "^7.8.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
+}
