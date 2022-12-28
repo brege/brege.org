@@ -74,7 +74,13 @@
         selectedResults = selectedResults.filter(id => id !== resultId);
         console.log(selectedResults);
         // Pass the selelected results to the node/edge filter 
-        filterNodesAndEdges(selectedResults);
+        // if filterNodesAndEdges is defined
+        if (typeof filterNodesAndEdges === 'function') {
+          filterNodesAndEdges(selectedResults);
+        }
+        if (typeof filterHistogram === 'function') {
+          filterHistogramData(selectedResults);
+        }
       });
       // Insert the result box before the search form
       searchForm.parentNode.insertBefore(resultBox, searchForm);
@@ -88,8 +94,15 @@
       });
     }
 
+    
+
     // Filter the nodes and edges based on the selected results
-    filterNodesAndEdges(selectedResults);
+    if (typeof filterNodesAndEdges === 'function') {
+      filterNodesAndEdges(selectedResults);
+    }
+    if (typeof filterHistogramData === 'function') {
+      filterHistogramData(selectedResults);
+    }
 
     // Clear the search results and input field
     searchResults.innerHTML = '';

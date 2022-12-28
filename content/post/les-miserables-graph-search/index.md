@@ -31,7 +31,8 @@ projects: []
 The graph may take a moment to load.
 
 {{< devel-network nodesPath="/data/lesmis/nodes.json" edgesPath="/data/lesmis/edges.json" >}}
-{{< devel-json-search jsonPath="/data/lesmis/nodes.json"  >}}
+
+{{< devel-json-search jsonPath="/data/lesmis/nodes.json" functions="[filterNodesAndEdges,poop]" >}}
 
 *Les Miserables is one of my favorite books.  I read most of the original translation on a train ride to Portland, OR from Chicago, IL back in 2008 and enjoyed the remainder on the return trip back East.  It taught me compassion: when Valjean places the coin in Cosette's shoe.  Father Christmas always misses her.  There was an earlier passage of a man stepping on a coin in front of her, while she swept dressed in rags.*
 
