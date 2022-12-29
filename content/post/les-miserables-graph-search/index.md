@@ -55,10 +55,10 @@ Dataset can be found here:
   - [`nodes.json`](/data/lesmis/nodes.json)
   - [`edges.json`](/data/lesmis/edges.json)
 
-Lingering annoyances:
 
-  - Slow
-  - Still haven't figured out how to pass shortcode variables 
-    to javascript files in Hugo (the website builder, not the author)
-  - Javascript needs clean up
-  - I have great fear running this on my 700x3000 dataset.. 
+> Lingering annoyances:
+>  - Slow
+>  - Still haven't figured out how to pass shortcode variables 
+>    to javascript files in Hugo (the website builder, not the author)
+>  - Javascript needs clean up
+>  - I have great fear running this on my 700x3000 dataset.. 
