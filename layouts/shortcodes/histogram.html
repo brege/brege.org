@@ -32,17 +32,8 @@ const colorPalette = [
 function generateColors(numDatasets) {
   const colors = [];
   for (let i = 0; i < numDatasets; i++) {
-    // Make the colors have a bit of transparency if there are more than 1 dataset,
     const colorIndex = i % colorPalette.length;
-    //colors.push(colorPalette[colorIndex].replace(')', ', 0.5)').replace('rgb', 'rgba'));
-    // TODO: don't let bars be transparent if they don't overlap
-    // Make the colors have a bit of transparency if there are more than 1 dataset,
-    // but not if the bars don't overlap
-    if (numDatasets > 1) {
-       colors.push(colorPalette[colorIndex].replace(')', ', 0.5)').replace('rgb', 'rgba'));
-    } else {
-      colors.push(colorPalette[colorIndex]);
-    }
+    colors.push(colorPalette[colorIndex]);
   }
   return colors;
 }
@@ -66,7 +57,6 @@ function createChart(data, colors) {
     },
     
     options: {
-      // when there is more than one dataset, don't put the bars side by side
       responsive: true,
       maintainAspectRatio: false,
       barSpacing: 0,
@@ -74,6 +64,9 @@ function createChart(data, colors) {
       scales: {
         xAxes: [{
             stacked: true,
+            gridLines: {
+                display: false
+            },
         }],
         yAxes: [{
           ticks: {
@@ -96,7 +89,7 @@ function createChart(data, colors) {
               fillStyle: style.backgroundColor,
               strokeStyle: style.borderColor,
               lineWidth: style.borderWidth,
-              hidden: isNaN(datasets[0].data[i]) || meta.data[i].hidden,
+              //hidden: isNaN(datasets[0].data[i]) || meta.data[i].hidden,
               index: i
             };
           });
@@ -114,38 +107,48 @@ function createChart(data, colors) {
   });
 }
 
-// Load the data from the JSON file
-console.log('Loading data from:', "{{ $jsonPath }}");
-fetch("{{ $jsonPath }}")
-  .then(response => response.json())
-  .then(data => {
-    console.log('Data loaded:', data);
-    const ingredients = ['tomatoes', 'apples', 'bananas']
-    const labels = ingredients;
-    const filteredData = {
-      labels: data.labels,
-      datasets: data.datasets.filter(dataset => labels.includes(dataset.label))
-    };
-    console.log('selectedResults:', ingredients);
+// Function to filter the data based on the selected results
+function filterHistogramData(selectedResults) {
+  // Load the data from the JSON file
+  console.log('Loading data from:', "{{ $jsonPath }}");
+  fetch("{{ $jsonPath }}")  
+    .then(response => response.json())
+    .then(data => {
+      console.log('Data loaded:', data);
+      const labels = selectedResults;
+      const filteredData = {
+        labels: data.labels,
+        datasets: data.datasets.filter(dataset => labels.includes(dataset.label))
+      };
+      console.log('selectedResults:', selectedResults);
+      // Create the chart
+      createChart(filteredData, generateColors(filteredData.datasets.length));
 
-    //filterHistogramData(labels);
-    createChart(filteredData, generateColors(filteredData.datasets.length));
+  });
+}
 
+/*
+// When the page loads, filter the data based on a preset list of ratatouille ingredients
+document.addEventListener('DOMContentLoaded', function () {
+  filterHistogramData(['tomatoes', 'lemons',  'garlic', 'eggplant', 'zucchini', 'basil']);
+});
+*/
+
+/*/ When the page loads, display an empty chart
+document.addEventListener('DOMContentLoaded', function () {
+  createChart({labels: [], datasets: []}, []);
+});
+/*/
+// Listen for the selectedResultsChanged event
+document.addEventListener('selectedResultsChanged', function (e) {
+  const selectedResults = e.detail;
+  filterHistogramData(selectedResults);
+  console.log('selectedResultsChanged:', selectedResults);
 });
 
-async function filterHistogramData(selectedResults) {
-  // Make a request to the JSON file and get the data
-  const response = await fetch('/path/to/json/file');
-  const json = await response.json();
-  // Filter the data based on the selected results
-  const filteredData = json.filter(item => selectedResults.includes(item.id));
-  // Update the chart with the filtered data
-  chart.data.datasets = filteredData.map((dataset, i) => ({
-    label: dataset.label,
-    data: dataset.data,
-    backgroundColor: datasetColors[i],
-  }));
-  chart.update();
-}
+
+
+
+
 
 </script>
