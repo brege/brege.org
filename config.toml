@@ -1,0 +1,169 @@
+baseURL = "https://brege.org"
+# title = "brege.org"
+author = "Wyatt Brege"
+copyright = "Copyright (c) 2016-2022 Wyatt Brege"
+paginate = 5
+languageCode = "en"
+DefaultContentLanguage = "en"
+
+enableRobotsTXT = false
+enableInlineShortcodes = true
+# prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
+# See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
+ignoreErrors = ["error-remote-getjson"]
+pygmentsUseClasses = true
+enableEmoji = true
+
+# ------------------------------
+theme = "hugo-papermod"
+title = "brege.org"
+
+[outputs]
+  home = [ "HTML", "RSS", "JSON" ]
+
+[params]
+  color = 'linen'
+  env = 'production'
+  twitter = ''
+  github = 'brege'
+  instagram = ''
+  mastodon = 'brege@mastodon.social'
+
+  avatar = 'wyatt@brege.org'
+  name = 'Wyatt Brege'
+  bio = 'gastrophysicist'
+
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+  ShowShareButtons = true
+  ShowReadingTime = true
+  ShowBreadCrumbs = true
+  ShowFullTextinRSS = true
+  ShowRssButtonInSectionTermList = true
+  ShowToc = true
+  TocOpen = true
+  UseHugoToc = true
+#  ShowWordCounts = true
+
+[params.editPost]
+  URL = "https://github.com/brege/brege.org/tree/master/content"
+  Text = "change"
+  appendFilePath = true
+
+[params.homeInfoParams]
+  Title = 'Wyatt Brege'
+  Content = " Welcome! I simulated [black hole and neutron star](https://black-holes.org) mergers for my physics PhD at [WSU](https://wsu.edu/).  I am also a professional chef with a love for seafood, sauces, soups and organic produce.  There's a little more info about me in [my bio](/about), [my CV](/brege-cv.pdf), and on [google scholar](https://scholar.google.com/citations?user=WsjvDuQAAAAJ) and the [arXiv](https://arxiv.org/search/?searchtype=author&query=Brege,W)."
+
+[params.profileMode]
+  enabled = false
+  title = "Wyatt Brege"
+  subtitle = 'Gastrophysicist'
+  imageUrl = "/img/portrait.png"
+  imageTitle = ''
+  imageWidth = 120
+  imageHeight = 120
+[[params.profileMode.buttons]]
+  name = 'Recent'
+  url = '/post'
+[[params.profileMode.buttons]]
+  name = 'Bio'
+  url = '/about'
+[[params.profileMode.buttons]]
+  name = 'Resume'
+  url = '/brege-cv.pdf'
+[[params.socialIcons]]
+  name = 'email'
+  url = 'mailto:wyatt@brege.org'
+[[params.socialIcons]]
+  name = 'github'
+  url = 'https://github.com/brege'
+[[params.socialIcons]]
+  name = 'mastodon'
+  url = 'https://mastodon.social/@brege'
+[[params.socialIcons]]
+  name = 'linkedin'
+  url = 'https://linkedin.com/in/wyatt-brege/'
+[[params.socialIcons]]
+  name = 'rss'
+  url = '/index.xml'
+
+#[[params.fuseOpts]]
+#  isCaseSensitive = false
+#  shouldSort = true
+#  location = 0
+#  distance = 1_000
+#  threshold = 0.4
+#  minMatchCharLength = 3
+#  keys = [ "title", "permalink", "summary", "content" ]
+# ------------------------------
+
+# needed to  render raw HTML (e.g. <sub>, <sup>, <kbd>, <mark>)
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highligh]
+      noClasses = true
+
+[menu]
+
+  [[menu.main]]
+    identifier = "search"
+    name = "search"
+    url = "/search"
+    weight = 5
+  [[menu.main]]
+    identifier = "about"
+    name = "about"
+    url = "/about/"
+    weight = 10
+  [[menu.main]]
+    identifier = "post"
+    name = "posts"
+    url = "/post/"
+    weight = 20
+  [[menu.main]]
+    identifier = "contact"
+    name = "contact"
+    url = "/contact/"
+    weight = 30
+  [[menu.main]]
+    identifier = "cv"
+    name = "cv"
+    url = "/brege-cv.pdf"
+    weight = 50
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[privacy]
+
+  [privacy.vimeo]
+    disabled = false
+    simple = true
+
+  [privacy.twitter]
+    disabled = false
+    enableDNT = true
+    simple = true
+
+  [privacy.instagram]
+    disabled = false
+    simple = true
+
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
+
+[services]
+
+  [services.instagram]
+    disableInlineCSS = true
+
+  [services.twitter]
+    disableInlineCSS = true
+
+
+

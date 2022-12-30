@@ -19,13 +19,18 @@ fi
 ### fi
 
 # Run webpack to build and bundle your JavaScript code
-echo "[webpack] Building JavaScript bundle..."
-webpack 2>&1 | awk '{print "[webpack]", $0}'
+#echo "[webpack] Building JavaScript bundle..."
+#webpack 2>&1 | awk '{print "[webpack]", $0}'
 
 # Check if the webpack build was successful
-if [ $? -ne 0 ]; then
-  echo "[webpack] Error: webpack build failed"
-  exit 1
+#if [ $? -ne 0 ]; then
+#  echo "[webpack] Error: webpack build failed"
+#  exit 1
+#fi
+
+# Clean the build directory, if it exists
+if [ -d "public" ]; then
+  hugo --cleanDestinationDir
 fi
 
 # Build hugo site
