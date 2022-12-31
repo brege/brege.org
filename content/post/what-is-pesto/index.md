@@ -1,15 +1,13 @@
 ---
-# Documentation: https://wowchemy.com/docs/managing-content/
-
 title: "What is Pesto?"
 subtitle: ""
 summary: ""
-authors: []
+authors: ['Wyatt Brege']
 tags: ["pesto", "basil", "food", "cooking", "graph", "culinary", "olive oil", "garlic"]
 categories: []
 date: 2022-12-11T16:56:56-05:00
 lastmod: 2022-12-11T16:56:56-05:00
-featured: false
+featured: true
 draft: false
 
 # Featured image
@@ -19,26 +17,26 @@ image:
   caption: "Photo: Basil from *[Eatwell Farm](https://eatwell.com)*"
   focal_point: ""
   preview_only: false
+cover:
+  image: 'featured.jpg'
+  caption: "Photo: Basil from *[Eatwell Farm](https://eatwell.com)*"
 
-# Projects (optional).
-#   Associate this post with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
-#   Otherwise, set `projects = []`.
-projects: []
+math: true
+ShowToc: true # isn't working
+TocOpen: true
 ---
+
 
 **Pesto\*** is a cold-prep green sauce made with herbs and alliums suspended in oil.  Most pestos call for some form of nut or cheese.  In the general sense, chefs may specify "loose pesto" when there are neither cheese nor nuts in the sauce, or when the sauce has an abundance of oil.  In general, pesto is made from herbs in the mint family, almost always from basil. The **\*** distinguishes a generalization to the traditional meaning of the word.
 
-{{% toc min-level=1 %}}
 
 ## Relatives 
 **Basil pesto** is the common pesto.  Its recipe typically calls for five key ingredients:
 $$
-\\begin{align}
-\textrm{basil pesto} = \textrm{basil} \&+ \textrm{extra virgin olive oil} + \textrm{garlic} \\\\\\ 
+\begin{aligned}
+\textrm{basil pesto} = \textrm{basil} \&+ \textrm{extra virgin olive oil} + \textrm{garlic} \\\\ 
                     \&+ \textrm{parmesan cheese} + \textrm{pine nuts}
-\\end{align}
+\end{aligned}
 $$
 
 Chimichurri includes a vinegar, usually red wine vinegar, which pesto does not, although pesto can suspend acid through citrus.  Chimichurri often uses rough chopped or ground herbs, almost always oregano and parsley, but some modern applications will puree chimichurri as one does with pesto.[^1] 
@@ -47,7 +45,18 @@ Pesto is also different from gremolata, which like chimi is also made with parsl
 
 A table is provided as a summary of these three sauce's distinctions.
 
-{{< table path="green-sauces.csv" header="true" caption="Green Sauces.  The author made spring sauce up, but it's very good on crostini." >}}
+
+|              |Pesto         |Gremolata      |Chimichurri        |*Spring Sauce*  |
+|--------------|--------------|---------------|-------------------|----------------|
+| Herb\*       | Basil        | Parsley       | Parsley + Oregano | *Mint + Peas*  |
+| Oil          | Extra Virgin | Extra Virgin  | Extra Virgin      | *Walnut Oil*   |
+| Allium       | Garlic       | Garlic        | Garlic            | *Green Onion*  |
+| Nut          | Pine nut     | \-            | \-                | *Pistachio*    |
+| Acid         | \-           | Citrus        | Red Wine Vinegar  | *Pomelo*       |
+| Wow          | Parmesan     | n\/a          | Chili Flakes      | *Chevre*       |
+
+
+>"Green Sauces.  The author made spring sauce up, but it's very good on crostini."
 
 But there is a small catch, because some chefs may also say 'arugula pesto,' which might have no mint-family herb mixed in.  This leafy sauce resembles pesto in process and appearence, and provides the effect of coating pastas in bright green colors, especially when suspended in stablized fat like reduced cream or mayonaisse.  A chef can employ arugula for its liquorice and peppercorn aspects, or baby spinach which adds tang (like nori) when cooked, but she will most likely apply it because of its food coloring properties (vibrancy).  Similarly, 'spring pea pesto' is made with a puree of spring peas and mint, and on crostini is a fantastic crudité.
 
@@ -71,9 +80,7 @@ Use edible garnishes. Keep away from the ornamental "perfumes".
 >**Recommend:** basil, mint, parsley, oregano, marjoram, arugula 
 >**Avoid:** lavendar, tarragon, lemon verbena, rosemary 
 
-
- {{< pesto-network nodesPath="/data/pesto/nodes.json" edgesPath="/data/pesto/edges.json" >}}
- 
+ {{< pesto-network nodesPath="/data/pesto/nodes.json" edgesPath="/data/pesto/edges.json" >}} 
 
 ### Cheese
 
