@@ -1,36 +1,20 @@
 ---
 title: "What is Pesto?"
-subtitle: ""
-summary: ""
-authors: ['Wyatt Brege']
 tags: ["pesto", "basil", "food", "cooking", "graph", "culinary", "olive oil", "garlic"]
-categories: []
 date: 2022-12-11T16:56:56-05:00
-lastmod: 2022-12-11T16:56:56-05:00
-featured: true
 draft: false
-
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder.
-# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
-image:
-  caption: "Photo: Basil from *[Eatwell Farm](https://eatwell.com)*"
-  focal_point: ""
-  preview_only: false
 cover:
   image: 'featured.jpg'
   caption: "Photo: Basil from *[Eatwell Farm](https://eatwell.com)*"
-
 math: true
 ShowToc: true # isn't working
 TocOpen: true
 ---
 
-
 **Pesto\*** is a cold-prep green sauce made with herbs and alliums suspended in oil.  Most pestos call for some form of nut or cheese.  In the general sense, chefs may specify "loose pesto" when there are neither cheese nor nuts in the sauce, or when the sauce has an abundance of oil.  In general, pesto is made from herbs in the mint family, almost always from basil. The **\*** distinguishes a generalization to the traditional meaning of the word.
 
-
-## Relatives 
+## Relatives
+ 
 **Basil pesto** is the common pesto.  Its recipe typically calls for five key ingredients:
 $$
 \begin{aligned}

@@ -1,30 +1,8 @@
 ---
-# Documentation: https://wowchemy.com/docs/managing-content/
-
 title: "Network Graphs in Hugo"
-subtitle: ""
-summary: ""
-authors: []
 tags: ["network", "networkx", "graph", "js", "hugo"]
-categories: []
 date: 2022-12-09T23:02:42-05:00
-featured: false
 draft: false
-
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder.
-# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
-image:
-  caption: ""
-  focal_point: ""
-  preview_only: true
-
-# Projects (optional).
-#   Associate this post with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
-#   Otherwise, set `projects = []`.
-projects: []
 ---
 
 This is a simple toy to see how a network graph can be added in a Hugo article.  I'll be testing new features on it as I learn new things.
