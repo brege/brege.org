@@ -1,154 +1,17 @@
 {{ $jsonPath := .Get "jsonPath" }}
 
-<canvas id="mychart"></canvas>
-
 <style>
-    #mychart {
-        width: 100%;
-        height: calc(50vw * 0.5);
-    }    
+  #myChart {
+    width: 100%;
+    height: calc(50vw * 0.5);
+  }    
 </style>
+
+<div id="myJson" data-json-path={{ $jsonPath }}><canvas id="myChart"></canvas></div> 
 
 <!-- chart.js -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-<script>
+<script src="/js/histogram.js"></script>
 
-// Material Design color palette (RGB values)
-const colorPalette = [
-    'rgb(31, 119, 180)', // blue
-    'rgb(255, 127, 14)', // orange
-    'rgb(44, 160, 44)', // green
-    'rgb(214, 39, 40)', // red
-    'rgb(148, 103, 189)', // purple
-    'rgb(140, 86, 75)', // brown
-    'rgb(227, 119, 194)', // pink
-    'rgb(127, 127, 127)', // gray
-    'rgb(188, 189, 34)', // yellow
-    'rgb(23, 190, 207)'  // light blue
-  ];
-
-// Function to generate colors for the datasets
-function generateColors(numDatasets) {
-  const colors = [];
-  for (let i = 0; i < numDatasets; i++) {
-    const colorIndex = i % colorPalette.length;
-    colors.push(colorPalette[colorIndex]);
-  }
-  return colors;
-}
-
-function createChart(data, colors) {
-  const datasetColors = generateColors(data.datasets.length);
-  const ctx = document.getElementById('mychart').getContext('2d');
-  const chart = new Chart(ctx, {
-    type: 'bar',
-    display: 'flex',
-    // associate a label and a color to each dataset
-    data: {
-      labels: data.labels,
-      datasets: data.datasets.map((dataset, i) => ({
-        label: dataset.label,
-        data: dataset.data,
-        backgroundColor: datasetColors[i],
-        categoryPercentage: 1.0,
-        barPercentage: 1.0,
-      }))
-    },
-    
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      barSpacing: 0,
-      stacked: true,
-      scales: {
-        xAxes: [{
-            stacked: true,
-            gridLines: {
-                display: false
-            },
-        }],
-        yAxes: [{
-          ticks: {
-            beginAtZero: true,
-            callback: value => value % 1 === 0 ? value : null
-          }
-        }],
-      },
-      legend: {
-        display: data.datasets.length > 1,
-        position: 'bottom',
-        generateLabels: chart => {
-          const labels = chart.data.labels;
-          const datasets = chart.data.datasets;
-          return labels.map((label, i) => {
-            const meta = chart.getDatasetMeta(0);
-            const style = meta.controller.getStyle(i);
-            return {
-              text: `${label} (${style.backgroundColor})`,
-              fillStyle: style.backgroundColor,
-              strokeStyle: style.borderColor,
-              lineWidth: style.borderWidth,
-              //hidden: isNaN(datasets[0].data[i]) || meta.data[i].hidden,
-              index: i
-            };
-          });
-        }
-      },
-      elements: {
-        // Apply the colors to the rectangles
-        rectangle: {
-          backgroundColor: datasetColors,
-          borderColor: datasetColors,
-          borderWidth: 1,
-        }        
-      }
-    }
-  });
-}
-
-// Function to filter the data based on the selected results
-function filterHistogramData(selectedResults) {
-  // Load the data from the JSON file
-  console.log('Loading data from:', "{{ $jsonPath }}");
-  fetch("{{ $jsonPath }}")  
-    .then(response => response.json())
-    .then(data => {
-      console.log('Data loaded:', data);
-      const labels = selectedResults;
-      const filteredData = {
-        labels: data.labels,
-        datasets: data.datasets.filter(dataset => labels.includes(dataset.label))
-      };
-      console.log('selectedResults:', selectedResults);
-      // Create the chart
-      createChart(filteredData, generateColors(filteredData.datasets.length));
-
-  });
-}
-
-/*
-// When the page loads, filter the data based on a preset list of ratatouille ingredients
-document.addEventListener('DOMContentLoaded', function () {
-  filterHistogramData(['tomatoes', 'lemons',  'garlic', 'eggplant', 'zucchini', 'basil']);
-});
-*/
-
-/*/ When the page loads, display an empty chart
-document.addEventListener('DOMContentLoaded', function () {
-  createChart({labels: [], datasets: []}, []);
-});
-/*/
-// Listen for the selectedResultsChanged event
-document.addEventListener('selectedResultsChanged', function (e) {
-  const selectedResults = e.detail;
-  filterHistogramData(selectedResults);
-  console.log('selectedResultsChanged:', selectedResults);
-});
-
-
-
-
-
-
-</script>
