@@ -7,26 +7,6 @@ if ! which hugo > /dev/null; then
   echo "[hugo] Error: Hugo not found"
   exit 1
 fi
-#if ! which webpack > /dev/null; then
-#  echo "[webpack] Error: webpack not found"
-#  exit 1
-#fi
-
-# this will be harmful to webpack build
-### Check if the public directory exists
-### if [ -d "public" ]; then
-###   rm -rf public
-### fi
-
-# Run webpack to build and bundle your JavaScript code
-#echo "[webpack] Building JavaScript bundle..."
-#webpack 2>&1 | awk '{print "[webpack]", $0}'
-
-# Check if the webpack build was successful
-#if [ $? -ne 0 ]; then
-#  echo "[webpack] Error: webpack build failed"
-#  exit 1
-#fi
 
 # Clean the build directory, if it exists
 if [ -d "public" ]; then
@@ -41,20 +21,6 @@ hugo --buildDrafts=false 2>&1 | awk '{print "[hugo]", $0}'
 if [ $? -ne 0 ]; then
   echo "[hugo] Error: Hugo build failed"
   exit 1
-fi
-
-## Use html-minify to clean up HTML files 
-## # npm install html-minify
-## Maybe use this insted of sed/awk ....
-## find public/ -name "*.html" -exec node -e "const minify = require('html-minify').minify; minify(require('fs').readFileSync('{}', 'utf8'), { caseSensitive: true })" \;
-
-# Try to clean the whitespace and blank lines 
-# left by hugo logic
-if [ -d "public" ]; then
-  echo "[clean] Cleaning HTML files..."
-  find public/ -name "*.html" -exec sed -i '/^[[:space:]]*$/d' {} \; 2>&1 | awk '{print "[clean]", $0}'
-else
-  echo "[clean] Warning: public/ does not exist"
 fi
 
 # Deploy to $HOST
