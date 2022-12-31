@@ -1,36 +1,8 @@
 /* static/css/search-bar.css */
 
-.form-margin {
-  margin: 1em 1em 4em 1em;
-}
-
-.search-form input {
-  flex: 1;
-  height: 2.5rem;
-  padding: 0 0.5rem 0 2.5rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  position: relative;
-  background-color: #f8f8f8;
-  font-size: 1rem;
-  transition: background-color 0.2s ease-in-out;
-}
-
-.search-form input::before {
-  content: "\f002";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 1.25rem;
-  position: absolute;
-  left: 0.5rem;
-}
-
-.search-form input:hover {
-  background-color: #EBF4FB;
-}
-
-/* Define the color variables */
+/* define the color variables */
 /* https://material.io/design/color/the-color-system.html#tools-for-picking-colors */
+/* this is a poor way to do this, but it works for now */
 :root {
   --blue-color-1: #BBDEFB;
   --blue-color-2: #2196F3;
@@ -64,52 +36,49 @@
   --grey-color-8: #f8f8f8;
 }
 
+/* behaviour for the result box bubbles above the search bar */
 .result-box {
   display: inline-block;
-  border: 2px solid var(--blue-color-2);
-  margin: 4px;
+  border: 1px solid var(--blue-color-2); 
   padding: 4px 8px;
+  margin: 8px 8px 8px 0px; 
   background-color: var(--blue-color-1);
-  color: var(--blue-color-4);
-  border-radius: 3px;
-  font-weight: 600;
+  color: var(--blue-color-4); 
+  border-radius: var(--radius);
+  font-weight: bold;
 }
 
 .result-box:hover {
-  color: var(--blue-color-5);
-  background-color: var(--blue-color-3);
+  color: var(--blue-color-5); 
+  background-color: var(--blue-color-3); 
+  cursor: pointer;
 }
 
 .dark .result-box {
   color: var(--blue-color-6);
-  background-color: var(--blue-color-7);
+  background-color: var(--blue-color-7); 
 }
 
 .dark .result-box:hover {
   background-color: var(--blue-color-4);
 }
 
-.search-result {
-  list-style: none;
-  background-color: var(--grey-color-1);
-  padding: 4px 8px;
-  margin: 0;
-  cursor: pointer;
+/* behavior for search results */
+#searchResults {
+  margin: 0px 0px 20px 0px; 
+  padding: 0px;
+  width: 100%;
 }
 
-.dark .search-result {
-  background-color: var(--grey-color-5);
-}
-
-.search-result:hover {
-  background-color: var(--grey-color-2);
-}
-
-.search-result:hover {
-  background-color: var(--grey-color-2);
-}
-
-.dark .search-result:hover {
+#searchResults li:hover {
+  background-color: var(--grey-color-1); 
   color: var(--grey-color-5);
-  background-color: var(--grey-color-3);
 }
+
+#searchResults li.focus {
+  background-color: var(--grey-color-1); 
+  color: var(--grey-color-5);
+}
+
+/* maybe the hover effects may be nice on the post search results? */
+

@@ -1,20 +1,19 @@
-<link rel="stylesheet" href="/css/search-bar.css">
-
 {{ $jsonPath := .Get "jsonPath" }}
 
-<div class="form-margin">
-  <form id="search-form" onsubmit="return false;">
-     <input type="text" name="search" id="search-input" class="form-control bg-highlight-color-7-10" placeholder="Search..." autofocus autocomplete="off">
-     <i class="" id="search-icon"></i>
-  </form>
-  <div id="search-results"></div>
+<link rel="stylesheet" href="/css/search-bar.css">
+
+<div id="searchbox">
+  <div id="search-form">
+    <input id="search-input" autofocus placeholder="Search..." aria-label="search" type="search" autocomplete="off">
+  </div>
+  <ul id="searchResults" aria-label="search results"></ul>
 </div>
 
 <script>
   // Get a reference to the search form and input field
   const searchForm = document.getElementById('search-form');
   const searchInput = document.getElementById('search-input');
-  const searchResults = document.getElementById('search-results');
+  const searchResults = document.getElementById('searchResults');
 
   // Add an input event listener to the input field
   searchInput.addEventListener('input', event => {
@@ -47,13 +46,20 @@
     const json = await response.json();
     const results = json.filter(node => node.id.toLowerCase().includes(query.toLowerCase())).slice(0, 5);
     searchResults.innerHTML = `
-      <ul>
-        ${results.map(result => `<li class="search-result" onclick="handleResultClick('${result.id}')">${result.id}</li>`).join('')}
-      </ul>
+        ${results.map(result => `<li class="searchResults" onclick="handleResultClick('${result.id}')">${result.id}</li>`).join('')}
     `;
-    // Show the search results
-    searchResults.style.display = 'block';
+    // it would be nice if arrow keys could be used to select the results
+    // as they do on the /search page
   }
+  // smarter search: we will want to make the dropdown list
+  // of results sorted by influence and not just alphabetical
+  // we could probably feed in the influence from sources that 
+  // we have, either from:
+  // 1. edges.json
+  // 2. a separate json file with the jaccard index
+  //      (this would be the most accurate)
+  //    - we have this in the python code
+  // 3. if nodes.json has the influence, we can use that
 
   let selectedResults = [];
 
@@ -94,8 +100,6 @@
       });
     }
 
-    
-
     // Filter the nodes and edges based on the selected results
     if (typeof filterNodesAndEdges === 'function') {
       filterNodesAndEdges(selectedResults);
@@ -103,18 +107,9 @@
     if (typeof filterHistogramData === 'function') {
       filterHistogramData(selectedResults);
     }
-
     // Clear the search results and input field
     searchResults.innerHTML = '';
-    searchInput.value = '';
-
-    // Hide the search results when current search is empty
-    if (selectedResults.length === 0) {
-      searchResults.style.display = 'none';
-    } else {
-      searchResults.style.display = 'block';
-    }
-        
+    searchInput.value = '';     
   }
 
 </script>

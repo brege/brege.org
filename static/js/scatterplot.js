@@ -1,7 +1,3 @@
-//testing
-//d3.select("div.article-style").append("p").text("Yo my dude");
-//console.log(d3)
-
 var margin = {top: 20, right: 20, bottom: 60, left: 60},
     width = 650 - margin.left - margin.right,
     height = 450 - margin.top - margin.bottom;
