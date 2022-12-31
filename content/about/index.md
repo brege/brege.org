@@ -1,5 +1,5 @@
 ---
-title: Wyatt's Bio
+title: Biography
 first_name: Wyatt
 last_name: Brege
 superuser: true
