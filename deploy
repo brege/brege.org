@@ -7,10 +7,10 @@ if ! which hugo > /dev/null; then
   echo "[hugo] Error: Hugo not found"
   exit 1
 fi
-if ! which webpack > /dev/null; then
-  echo "[webpack] Error: webpack not found"
-  exit 1
-fi
+#if ! which webpack > /dev/null; then
+#  echo "[webpack] Error: webpack not found"
+#  exit 1
+#fi
 
 # this will be harmful to webpack build
 ### Check if the public directory exists
