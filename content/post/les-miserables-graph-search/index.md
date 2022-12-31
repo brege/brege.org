@@ -1,41 +1,22 @@
 ---
 title: "Les Miserables"
-subtitle: ""
-summary: ""
-authors: []
 tags: ["hugo", "co-occurrence", "network", "visjs", "graph"]
-categories: []
 date: 2022-12-24T05:30:47-05:00
-featured: false
 draft: false
-
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder.
-# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
-image:
-  caption: ""
-  focal_point: ""
-  preview_only: true
-
 cover:
   image: 'book.jpg'
   caption:
   preview_only: true
-
 featured:
   image: 'network.png' #isn't working
-
-
 ---
 
 *Les Miserables is one of my favorite books.  I read most of the original translation on a train ride to Portland, OR from Chicago, IL back in 2008 and enjoyed the remainder on the return trip back East.  It taught me compassion: when Valjean places the coin in Cosette's shoe.  Father Christmas always misses her.  There was an earlier passage of a man stepping on a coin in front of her, while she swept dressed in rags.*
 
 The graph may take a moment to load.
 
-{{< devel-network nodesPath="/data/lesmis/nodes.json" edgesPath="/data/lesmis/edges.json" >}}
-
-{{< devel-json-search jsonPath="/data/lesmis/nodes.json" functions="[filterNodesAndEdges,poop]" >}}
-
+{{< lesmis-network nodesPath="/data/lesmis/nodes.json" edgesPath="/data/lesmis/edges.json" >}}
+{{< search-plots jsonPath="/data/lesmis/nodes.json" >}}
 
 The search bar is the major addition to the graphing methods.
 Nodes can be clicked and added to a subgraph builder.
