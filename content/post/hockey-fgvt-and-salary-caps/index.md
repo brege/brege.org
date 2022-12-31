@@ -2,8 +2,7 @@
 title = "Hockey Catch-all Statistics versus Salary Cap"
 date = 2017-11-07T11:11:52-08:00
 math = true
-tags = ["D3","NHL","Hockey","Data"
-]
+tags = ["D3","NHL","Hockey","Data"]
 draft = false
 
 [header]
@@ -23,10 +22,10 @@ I take as input the spreadsheet provided by [Robert Vollman](http://www.hockeyab
 
 To get an estimate of how good a goal is compared to an assist, we estimate that a goal scored contributes 1.5 times as much as an assist contributes to a goal.  Therefore, the calculated goal value (or assist) scored by an entity $x$ is 
 $$
-\begin{align}
-  GV\_x \&= \frac{1.5 G\_x}{A\_x + 1.5 G\_x}, \\\\\\ 
+\begin{aligned}
+  GV\_x \&= \frac{1.5 G\_x}{A\_x + 1.5 G\_x}, \\\\ 
   AV\_x \&= \frac{GV\_x}{1.5}
-\end{align}
+\end{aligned}
 $$
 where $G\_x$ is goals scored by either an individual, $x=i$, team, $x=T$, or the league as a whole, $x=L$, and $A\_x$ are the assists scored by those subcategories.
 
@@ -46,25 +45,24 @@ Additionally, I wanted to get a sense for one player's value to the team  in rel
 
 However, in debugging my code, something seemed strange to me.  This first term in the $OGVT$ expression, with some math, reduces to the number of goals by that individual:
 $$
-\\begin{align}
+\begin{aligned}
 G\_f \\times GV\_f + A\_f \\times AV\_f 
-  \&= G\_f \\times GV\_f + A\_f \\times \frac{GV\_f}{1.5} \\\\\\
+  \&= G\_f \\times GV\_f + A\_f \\times \frac{GV\_f}{1.5} \\\\
   \&= \\left( G\_f  + \\frac{A\_f}{1.5}\\right ) 
-      \\times GV\_f \\\\\\
+      \\times GV\_f \\\\
   \&= \\left( G\_f  + \\frac{A\_f}{1.5}\\right ) 
-      \\times \\left( \frac{1.5 G\_f}{A\_f + 1.5 G\_f} \\right)\\\\\\
+      \\times \\left( \frac{1.5 G\_f}{A\_f + 1.5 G\_f} \\right) \\\\
   \&= \\left( 1.5 G\_f  + A\_f \\right) 
-      \\times \\left( \frac{G\_f}{A\_f + 1.5 G\_f} \\right) \\\\\\
+      \\times \\left( \frac{G\_f}{A\_f + 1.5 G\_f} \\right) \\\\
   \&= G\_f.
-\\end{align}
+\end{aligned}
 $$ 
 So, unless I'm misunderstanding Tom Awad's definition of terms here:
-
-    A player's OGVT is therefore:
-    
-    OGVT = (G x GV) + (A x AV) - (MP x TOC)
-
-    Where G is the player's goals, A his assists, MP his minutes played, GV his goal value, AV his assist value, and TOC the Threshold offensive contribution value for his position.
+> A player's OGVT is therefore:
+>
+> OGVT = (G x GV) + (A x AV) - (MP x TOC)
+>
+> Where G is the player's goals, A his assists, MP his minutes played, GV his goal value, AV his assist value, and TOC the Threshold offensive contribution value for his position.
 
 I don't quite understand how this first set of terms is relevant, as it essentially removes the direct value of a skater's assists in the calculation of this catch-all offensive statistic.
 
