@@ -1,6 +1,4 @@
 ---
-# Documentation: https://wowchemy.com/docs/managing-content/
-
 title: "Les Miserables"
 subtitle: ""
 summary: ""
@@ -19,14 +17,18 @@ image:
   focal_point: ""
   preview_only: true
 
-# Projects (optional).
-#   Associate this post with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
-#   Otherwise, set `projects = []`.
-projects: []
+cover:
+  image: 'book.jpg'
+  caption:
+  preview_only: true
+
+featured:
+  image: 'network.png' #isn't working
+
 
 ---
+
+*Les Miserables is one of my favorite books.  I read most of the original translation on a train ride to Portland, OR from Chicago, IL back in 2008 and enjoyed the remainder on the return trip back East.  It taught me compassion: when Valjean places the coin in Cosette's shoe.  Father Christmas always misses her.  There was an earlier passage of a man stepping on a coin in front of her, while she swept dressed in rags.*
 
 The graph may take a moment to load.
 
@@ -34,7 +36,6 @@ The graph may take a moment to load.
 
 {{< devel-json-search jsonPath="/data/lesmis/nodes.json" functions="[filterNodesAndEdges,poop]" >}}
 
-*Les Miserables is one of my favorite books.  I read most of the original translation on a train ride to Portland, OR from Chicago, IL back in 2008 and enjoyed the remainder on the return trip back East.  It taught me compassion: when Valjean places the coin in Cosette's shoe.  Father Christmas always misses her.  There was an earlier passage of a man stepping on a coin in front of her, while she swept dressed in rags.*
 
 The search bar is the major addition to the graphing methods.
 Nodes can be clicked and added to a subgraph builder.
