@@ -31,7 +31,7 @@ projects: []
 
 I've put together a Google Drive spreadsheet for the avid Red Dead Redemption 2 completionist.  It's almost a 100% checklist, but mostly useful as a way to keep track of progress that plays nice in both print and mobile form.
 
-[{{< icon name="external-link" pack="fas" >}} RDR2 Completionist Checklist (Google Sheets)](https://docs.google.com/spreadsheets/d/1wBuPPvN-Y4K115rBQrOP559tG2oCTfUjTCTBgZSJwRA/edit?usp=sharing)
+[:link: RDR2 Completionist Checklist (Google Sheets)](https://docs.google.com/spreadsheets/d/1wBuPPvN-Y4K115rBQrOP559tG2oCTfUjTCTBgZSJwRA/edit?usp=sharing)
 
 ![png](./screenshot-1.png)
 
@@ -52,7 +52,8 @@ While not a replacement by any means for the various user made maps and guides o
 This guide can be used to checkoff *discovered* recipes and items, avoiding purchase from the fence, but mostly to fully complete the compendium (and sometimes it takes too many clicks and scrolls in the pause menu).  Items that are **bolded** are uniquely obtained, some of which are missable, or can be sold and never obtained again.
 
 There are page breaks to make printing easier.  Saving a copy of the Google Sheet will also allow you to use it on your phone quite well.  Or, here's the full
-[ {{< icon name="download" pack="fas" >}} PDF Checklist ](./rdr2-checklist.pdf)
+[ PDF Checklist :arrow_down: ](./rdr2-checklist.pdf)
+
 
 
 
