@@ -1,16 +1,17 @@
 baseURL = "https://brege.org"
-# title = "brege.org"
 author = "Wyatt Brege"
-copyright = "Copyright (c) 2016-2022 Wyatt Brege"
+copyright = "Copyright (c) 2016-2023 Wyatt Brege"
 paginate = 5
 languageCode = "en"
 DefaultContentLanguage = "en"
 
 enableRobotsTXT = false
 enableInlineShortcodes = true
-# prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
+# prevent build failures when using Hugo's Instagram shortcode 
+# due to deprecated Instagram API.
 # See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
 ignoreErrors = ["error-remote-getjson"]
+
 pygmentsUseClasses = true
 enableEmoji = true
 
@@ -71,6 +72,7 @@ title = "brege.org"
 [[params.profileMode.buttons]]
   name = 'Resume'
   url = '/brege-cv.pdf'
+
 [[params.socialIcons]]
   name = 'email'
   url = 'mailto:wyatt@brege.org'
