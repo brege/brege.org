@@ -5,7 +5,7 @@ math: true
 
 [Download link [PDF]](/brege-cv.pdf): `https://brege.org/brege-cv.pdf` 
 
-# Qualifications
+# Expertise
 
 simulated complex physical systems with terabytes of data on supercomputer clusters:
 
@@ -39,7 +39,7 @@ contributed to large, collaborative driven codebases with:
 [sage](https://en.wikipedia.org/wiki/Sage_(mathematics_software)),
 [jupyter](https://en.wikipedia.org/wiki/Project_Jupyter)
 
-advanced physics and mathematics specializing in:
+advanced physics and mathematics specialties:
 
 [mechanics](https://en.wikipedia.org/wiki/Hamiltonian_mechanics),
 [general relativity](https://en.wikipedia.org/wiki/General_relativity),
@@ -96,7 +96,6 @@ APS April Meeting, April 12 2015,
 *Symmetry Analysis of the Lane-Emden Equation* 
 [MathFest 2009](https://www.maa.org/meetings/mathfest-archive), Portland, OR, 07 August 2009
 
-
 # Awards
 
 - [NASA](https://nasa.gov) [Space Grant](https://www.waspacegrant.org/), 2015, 2016 and 2017
@@ -126,19 +125,19 @@ Aug 2009 - May 2010
 [*Grand Valley State University*](https://physicsgvsu.edu)
 - implemented [Gragg extrapolation](https://en.wikipedia.org/wiki/Bulirsch%E2%80%93Stoer_algorithm) to [evolve](https://en.wikipedia.org/wiki/Symplectic_geometry) Hamilton's equations for a [three-body](https://en.wikipedia.org/wiki/Three-body_problem) gravitational system
 - demonstrated the [chaotic](https://en.wikipedia.org/wiki/Chaos_theory) behavior of particle trajectories around [generic]() rotating binary systems
-- completion of Physics senior thesis	
+- completion of physics senior thesis	
 
 Aug 2009 - Dec 2009
 **Quasicrystals, tilings and diffraction patterns**
 [*Grand Valley State University*](https://math.gvsu.edu)
 - mathematical study of diffraction in [aperiodic tiles](https://en.wikipedia.org/wiki/Penrose_tiling) and [quasicrystals](https://en.wikipedia.org/wiki/Quasicrystal)
-- completion of Mathematics senior thesis	
+- completion of mathematics senior thesis	
 
 May 2009 - Aug 2009
 **Symmetry analysis of differential equations**
 [*University of Central Florida*](https://www.ucf.edu/)
-- determined the underlining symmetries of the [Lane-Emden equation](https://en.wikipedia.org/wiki/Lane%E2%80%93Emden_equation)	
-- participated in the [UCF](https://www.ucf.edu/) combined math and physics Research Experience for Undergrads 
+- determined the underlining [Lie symmetries](https://en.wikipedia.org/wiki/Lie_algebra) of the [Lane-Emden equation](https://en.wikipedia.org/wiki/Lane%E2%80%93Emden_equation)	
+- participated in the [UCF](https://www.ucf.edu/) combined math and physics Research Experience for Undergraduates
 
 # Memberships
 
