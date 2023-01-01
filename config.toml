@@ -4,7 +4,6 @@ copyright = "Copyright (c) 2016-2023 Wyatt Brege"
 paginate = 6
 languageCode = "en"
 DefaultContentLanguage = "en"
-
 enableRobotsTXT = false
 enableInlineShortcodes = true
 # prevent build failures when using Hugo's Instagram shortcode 
@@ -37,14 +36,15 @@ title = "brege.org"
   ShowPostNavLinks = true
   ShowCodeCopyButtons = true
   ShowShareButtons = true
-  ShowReadingTime = true
+  ShowReadingTime = false
+  ShowWordCount = true
   ShowBreadCrumbs = true
   ShowFullTextinRSS = true
   ShowRssButtonInSectionTermList = true
   ShowToc = true
   TocOpen = true
   UseHugoToc = true
-#  ShowWordCounts = true
+  hideFooter = true
 
 [params.editPost]
   URL = "https://github.com/brege/brege.org/tree/master/content"
@@ -53,7 +53,7 @@ title = "brege.org"
 
 [params.homeInfoParams]
   Title = 'Wyatt Brege'
-  Content = " Welcome! I simulated [black hole and neutron star](https://black-holes.org) mergers for my physics PhD at [WSU](https://wsu.edu/).  I am also a professional chef with a love for seafood, sauces, soups and organic produce.  There's a little more info about me in [my bio](/about), [my CV](/cv), and on [google scholar](https://scholar.google.com/citations?user=WsjvDuQAAAAJ) and the [arXiv](https://arxiv.org/search/?searchtype=author&query=Brege,W)."
+  Content = " Welcome! I simulated [black hole and neutron star](https://black-holes.org) mergers for my physics PhD at [WSU](https://wsu.edu/).  I am also a professional chef with a love for seafood, sauces, soups and organic produce.  There's a little more info about me in my [bio](/about), my [resumé](/cv) page, and on [google scholar](https://scholar.google.com/citations?user=WsjvDuQAAAAJ) and the [arXiv](https://arxiv.org/search/?searchtype=author&query=Brege,W)."
 
 [params.profileMode]
   enabled = false
@@ -118,7 +118,7 @@ title = "brege.org"
     identifier = "about"
     name = "about"
     url = "/about/"
-    weight = 10
+    weight = 20
   [[menu.main]]
     identifier = "post"
     name = "posts"
@@ -131,14 +131,9 @@ title = "brege.org"
     weight = 30
   [[menu.main]]
     identifier = "cv"
-    name = "cv"
+    name = "resumé"
     url = "/cv"
     weight = 40
-#  [[menu.main]]
-#    identifier = "cv"
-#    name = "cv"
-#    url = "/brege-cv.pdf"
-#    weight = 50
 
 [taxonomies]
 category = "categories"
