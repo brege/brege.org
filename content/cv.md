@@ -1,9 +1,18 @@
 ---
-ShowToc: true
+title: Wyatt Brege
+#ShowToc: true
+ShowWordCount: true
+date: 2023-01-01
 math: true
 ---
 
-[Download link [PDF]](/brege-cv.pdf): `https://brege.org/brege-cv.pdf` 
+<div align='right'>
+
+[resumé PDF](/brege-cv.pdf) 
+
+`/brege-cv.pdf` 
+
+</div>
 
 # Expertise
 
@@ -48,6 +57,22 @@ advanced physics and mathematics specialties:
 [numerical methods](https://en.wikipedia.org/wiki/Numerical_analysis)
 
 developed tests, validation and visualization tools of big data
+
+# Education
+
+- **PhD**,  *Washington State University*,  Physics, 2017
+- **BsC**,  *Grand Valley State University*,  Mathematics,  2010
+- **BSc**,  *Grand Valley State University*,  Physics,  2010
+- **ASc**,  *Grand Rapids Community College*,  2007
+
+# Professional
+
+- **Restaurant Consulting**, CA, MI, 2020-p.
+- **Executive Chef**, *Slanted Tree*, Fairfield, CA, 2019-2020
+- **Executive Chef**, *Dawson's*, Dixon, CA, 2017-2019
+- **Research Assistant**, *Washington State Univ*, Pullman, WA, 2013-2017
+- **Teaching Assistant**, *Washington State Univ*, Pullman, WA, 2010-2017
+- **Sous Chef**, *One Trick Pony*, Grand Rapids, MI, 2005-2007
 
 # Publications
 
@@ -110,8 +135,8 @@ APS April Meeting, April 12 2015,
 May 2013 - Sep 2018
 **Black hole-neutron star mergers and accretion disk simulations**
 *[Washington State University](https://physics.wsu.edu), [SXS collaboration](https://black-holes.org)*
-- evolved [black hole](https://en.wikipedia.org/wiki/Black_hole)-[neutron star](https://en.wikipedia.org/wiki/Neutron_star) systems in [SpEC](https://www.black-holes.org/code/SpEC.html) with adaptive mesh refinement and [nuclear-theory](https://en.wikipedia.org/wiki/Nucleosynthesis) based [equations of state](https://en.wikipedia.org/wiki/Equation_of_state)
-- implemented a high-order accurate finite difference scheme with boundary closures to solve the [fluid equations](https://en.wikipedia.org/wiki/Computational_fluid_dynamics) of an [accretion disk](https://en.wikipedia.org/wiki/Accretion_disk) on a [multipatch](https://en.wikipedia.org/wiki/Adaptive_mesh_refinement) grid structure
+- evolved [black hole](https://en.wikipedia.org/wiki/Black_hole)-[neutron star](https://en.wikipedia.org/wiki/Neutron_star) systems in [SpEC](https://www.black-holes.org/code/SpEC.html) with [adaptive mesh refinement](https://en.wikipedia.org/wiki/Adaptive_mesh_refinement) and [nuclear-theory](https://en.wikipedia.org/wiki/Nucleosynthesis) based [equations of state](https://en.wikipedia.org/wiki/Equation_of_state)
+- implemented a high-order accurate finite difference scheme with boundary closures to solve the [fluid equations](https://en.wikipedia.org/wiki/Computational_fluid_dynamics) of an [accretion disk](https://en.wikipedia.org/wiki/Accretion_disk) on a multipatch grid structure
 - completion of [dissertation](https://hdl.handle.net/2376/111818)	
 
 May 2010 - Aug 2010
@@ -146,4 +171,4 @@ May 2009 - Aug 2009
 * [Mathematical Association of America](https://www.maa.org/), c. 2009
 * [Omicron Delta Kappa](https://odk.org/), c. 2010
 * [Society of Physics Students](https://www.sigmapisigma.org/sigmapisigma) (SPS), c. 2009
-* [Pi Mu Epsilon](http://pme-math.org/) (Iota chapter), c. 2009
+* [Pi Mu Epsilon](https://pme-math.org/) (Iota chapter), c. 2009
