@@ -68,16 +68,18 @@
   margin: 0px 0px 20px 0px; 
   padding: 0px;
   width: 100%;
+  color: var(--primary);
+  background-color: var(--code-bg);
+  border-radius: var(--radius);
+  border: 1px solid var(--code-border);
 }
 
 #searchResults li:hover {
-  background-color: var(--grey-color-1); 
-  color: var(--grey-color-5);
+  background-color: var(--border); 
 }
 
 #searchResults li.focus {
-  background-color: var(--grey-color-1); 
-  color: var(--grey-color-5);
+  background-color: var(--border); 
 }
 
 /* maybe the hover effects may be nice on the post search results? */
