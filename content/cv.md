@@ -61,13 +61,13 @@ developed tests, validation and visualization tools of big data
 # Education
 
 - **PhD**,  *Washington State University*,  Physics, 2017
-- **BsC**,  *Grand Valley State University*,  Mathematics,  2010
+- **BSc**,  *Grand Valley State University*,  Mathematics,  2010
 - **BSc**,  *Grand Valley State University*,  Physics,  2010
 - **ASc**,  *Grand Rapids Community College*,  2007
 
 # Professional
 
-- **Restaurant Consulting**, CA, MI, 2020-p.
+- **Restaurant Consulting**, CA, MI, 2020-.
 - **Executive Chef**, *Slanted Tree*, Fairfield, CA, 2019-2020
 - **Executive Chef**, *Dawson's*, Dixon, CA, 2017-2019
 - **Research Assistant**, *Washington State Univ*, Pullman, WA, 2013-2017
