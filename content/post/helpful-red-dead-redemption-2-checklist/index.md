@@ -5,6 +5,10 @@ tags: ["RDR2", "Red Dead Redemption", "Games", "Checklists", "Spreadsheet", "Pri
 categories: []
 date: 2022-02-06T02:12:20-04:00
 draft: false
+cover:
+  image: 'featured.jpg'
+  caption: 'Red Dead Redeption II'
+  preview_only: true
 ---
 
 

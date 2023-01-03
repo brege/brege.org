@@ -61,7 +61,7 @@ Most herbs from either the carrot- or mint-families will will work great, and ma
 Caution: while tarragon can be made into a pesto\*, its deploymeny in cold-prep sauces is rare (marinades, green goddess dressing) and is typically utilized better in hot-prep sauces--especially béarnaise. Sage, rosemary, and lemon verbena require special practice.  Thyme is time.
 Use edible garnishes. Keep away from the ornamental "perfumes".
 
->**Recommend:** basil, mint, parsley, oregano, marjoram, arugula 
+>**Recommend:** basil, mint, parsley, oregano, marjoram, arugula   
 >**Avoid:** lavendar, tarragon, lemon verbena, rosemary 
 
  {{< pesto-network nodesPath="/data/pesto/nodes.json" edgesPath="/data/pesto/edges.json" >}} 
