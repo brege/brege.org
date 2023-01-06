@@ -1,32 +1,23 @@
 ---
 title: Wyatt Brege
-#ShowToc: true
-ShowWordCount: true
 date: 2023-01-01
 math: true
+disableShare: true
 ---
-
-<div align='right'>
-
-[resumé PDF](/brege-cv.pdf) 
-
-`/brege-cv.pdf` 
-
-</div>
 
 # Expertise
 
-simulated complex physical systems with terabytes of data on supercomputer clusters:
+- simulated complex physical systems with terabytes of data on supercomputing clusters:  
 
-[SpEC](https://www.black-holes.org/code/SpEC.html),
+    [SpEC](https://www.black-holes.org/code/SpEC.html),
 [stampede](https://www.tacc.utexas.edu/systems/stampede2),
 [xsede](http://www.xsede.org/),
 [calcul](https://www.calculquebec.ca/)
 [cacr.caltech](https://www.hpc.caltech.edu/)
 
-contributed to large, collaborative driven codebases with:
+- contributed to large, collaborative driven codebases with:
 
-[python](https://en.wikipedia.org/wiki/Python_(programming_language)),
+    [python](https://en.wikipedia.org/wiki/Python_(programming_language)),
 [c++](https://en.wikipedia.org/wiki/C%2B%2B),
 [git](https://en.wikipedia.org/wiki/Git),
 [javascript](https://en.wikipedia.org/wiki/JavaScript),
@@ -48,31 +39,31 @@ contributed to large, collaborative driven codebases with:
 [sage](https://en.wikipedia.org/wiki/Sage_(mathematics_software)),
 [jupyter](https://en.wikipedia.org/wiki/Project_Jupyter)
 
-advanced physics and mathematics specialties:
+- advanced physics and mathematics specialties:
 
-[mechanics](https://en.wikipedia.org/wiki/Hamiltonian_mechanics),
+    [mechanics](https://en.wikipedia.org/wiki/Hamiltonian_mechanics),
 [general relativity](https://en.wikipedia.org/wiki/General_relativity),
 [fluid dynamics](https://en.wikipedia.org/wiki/Fluid_dynamics),
 [finite volume](https://en.wikipedia.org/wiki/Finite_element_method),
 [numerical methods](https://en.wikipedia.org/wiki/Numerical_analysis)
 
-developed tests, validation and visualization tools of big data
+- developed tests, validation and visualization tools of big data
 
 # Education
 
-- **PhD**,  *Washington State University*,  Physics, 2017
-- **BSc**,  *Grand Valley State University*,  Mathematics,  2010
-- **BSc**,  *Grand Valley State University*,  Physics,  2010
-- **ASc**,  *Grand Rapids Community College*,  2007
+ **PhD**,  *Washington State University*,  Physics, 2017  
+ **BSc**,  *Grand Valley State University*,  Mathematics,  2010  
+ **BSc**,  *Grand Valley State University*,  Physics,  2010  
+ **ASc**,  *Grand Rapids Community College*,  2007  
 
 # Professional
 
-- **Restaurant Consulting**, CA, MI, 2020-.
-- **Executive Chef**, *Slanted Tree*, Fairfield, CA, 2019-2020
-- **Executive Chef**, *Dawson's*, Dixon, CA, 2017-2019
-- **Research Assistant**, *Washington State Univ*, Pullman, WA, 2013-2017
-- **Teaching Assistant**, *Washington State Univ*, Pullman, WA, 2010-2017
-- **Sous Chef**, *One Trick Pony*, Grand Rapids, MI, 2005-2007
+ **Restaurant Consulting**, CA, MI, 2020-.  
+ **Executive Chef**, *Slanted Tree*, Fairfield, CA, 2019-2020  
+ **Executive Chef**, *Dawson's*, Dixon, CA, 2017-2019  
+ **Research Assistant**, *Washington State Univ*, Pullman, WA, 2013-2017  
+ **Teaching Assistant**, *Washington State Univ*, Pullman, WA, 2010-2017  
+ **Sous Chef**, *One Trick Pony*, Grand Rapids, MI, 2005-2007  
 
 # Publications
 
@@ -172,3 +163,9 @@ May 2009 - Aug 2009
 * [Omicron Delta Kappa](https://odk.org/), c. 2010
 * [Society of Physics Students](https://www.sigmapisigma.org/sigmapisigma) (SPS), c. 2009
 * [Pi Mu Epsilon](https://pme-math.org/) (Iota chapter), c. 2009
+
+<span style="text-align: right">
+
+[[`print`](/brege-cv.pdf)]  
+
+</span>
