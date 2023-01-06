@@ -229,11 +229,15 @@ function filterNodesAndEdges(selectedResults) {
 function getSimilarNodes(selectedNodes, n=7) {
   const similarNodes = selectedNodes.map(function (node) {
     const nodeSimilarities = similarities[node];
+    if (!nodeSimilarities) {
+      return [];
+    } else {
     const sortedSimilarities = Object.entries(nodeSimilarities).sort(function (a, b) {
       return b[1] - a[1];
     });
     const topNSimilarNodes = sortedSimilarities.slice(0, n);
     return topNSimilarNodes;
+    }
   });
   const flattenedSimilarNodes = similarNodes.flat();
   const uniqueSimilarNodes = [...new Set(flattenedSimilarNodes)];
