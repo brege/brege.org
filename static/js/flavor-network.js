@@ -74,7 +74,6 @@ function generateNodeStyles(colorPalette) {
       },
       width: 1,
     },
-
   };
 };
 
@@ -219,6 +218,21 @@ function filterNodesAndEdges(selectedResults) {
       });
     }
   });
+
+  // Physics
+  // get the physics checkbox, and make sure it has
+  // an event listener
+  const physicsCheckbox = document.getElementById('physics');
+  if (!physicsCheckbox.hasEventListener) {
+    physicsCheckbox.addEventListener('change', function (e) {
+      const physics = e.target.checked;
+      network.setOptions({ physics: { enabled: physics } });
+    });
+    physicsCheckbox.hasEventListener = true;
+  }
+
+
+
 
   /* ************************************ */
   /* I COULD CRY I FINALLY GOT IT TO WORK */
