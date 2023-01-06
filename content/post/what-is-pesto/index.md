@@ -7,9 +7,10 @@ cover:
   image: 'featured.jpg'
   caption: "Photo: Basil from *[Eatwell Farm](https://eatwell.com)*"
 math: true
-ShowToc: true # isn't working
+ShowToc: true
 TocOpen: true
 ---
+
 
 **Pesto\*** is a cold-prep green sauce made with herbs and alliums suspended in oil.  Most pestos call for some form of nut or cheese.  In the general sense, chefs may specify "loose pesto" when there are neither cheese nor nuts in the sauce, or when the sauce has an abundance of oil.  In general, pesto is made from herbs in the mint family, almost always from basil. The **\*** distinguishes a generalization to the traditional meaning of the word.
 

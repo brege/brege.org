@@ -30,7 +30,7 @@ Typical workflow for creating a new post:
 
 2. `git checkout new-post`
 
-3. `hugo new --kind post i-made-a-new-post`
+3. `hugo new --kind post post/i-made-a-new-post`
 
 4. `git add content/post/i-made-a-new-post`
 

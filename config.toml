@@ -41,14 +41,15 @@ title = "brege.org"
   ShowBreadCrumbs = true
   ShowFullTextinRSS = true
   ShowRssButtonInSectionTermList = true
-  ShowToc = true
-  TocOpen = true
-  UseHugoToc = true
   hideFooter = true
+
+  showRelatedPosts = true
+  TocOpen = true
+  ShowToc = true
 
 [params.editPost]
   URL = "https://github.com/brege/brege.org/tree/master/content"
-  Text = "change"
+  Text = "edit"
   appendFilePath = true
 
 [params.homeInfoParams]
@@ -71,7 +72,7 @@ title = "brege.org"
   url = '/about'
 [[params.profileMode.buttons]]
   name = 'Resume'
-  url = '/brege-cv.pdf'
+  url = '/cv'
 
 [[params.socialIcons]]
   name = 'email'
@@ -106,6 +107,10 @@ title = "brege.org"
       unsafe = true
   [markup.highligh]
       noClasses = true
+  [tableOfContents]
+    ordered = true
+    startLevel = 1
+    endLevel = 4
 
 [menu]
 
