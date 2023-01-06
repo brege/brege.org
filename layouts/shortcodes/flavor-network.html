@@ -1,0 +1,17 @@
+{{ $nodesPath := .Get "nodesPath" }}
+{{ $edgesPath := .Get "edgesPath" }}
+{{ $simPath := .Get "simPath" }}
+
+
+<style>
+  #network { height: 60vh; } /* 60% of the viewport height */ 
+</style>
+
+<div id="network"
+  data-nodes-path={{ $nodesPath }} 
+  data-edges-path={{ $edgesPath }}
+  data-sim-path={{ $simPath }}
+></div>
+
+<script src="https://visjs.github.io/vis-network/standalone/umd/vis-network.min.js"></script>
+<script src="/js/flavor-network.js"></script>
