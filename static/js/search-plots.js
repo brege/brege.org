@@ -1,3 +1,23 @@
+// fuse.js options
+function searchWithFuse(query, data) {
+  const options = {
+    shouldSort: true,
+    threshold: 0.6,
+    location: 0,
+    distance: 100,
+    maxPatternLength: 32,
+    minMatchCharLength: 1,
+    keys: [
+      "id"
+    ]
+  };
+
+  const fuse = new Fuse(data, options);
+  const results = fuse.search(query).slice(0, 5);
+
+  return results;
+}
+
 // Get a reference to the search form and input field
 const searchForm = document.getElementById('search-form');
 const searchInput = document.getElementById('search-input');
@@ -31,26 +51,24 @@ document.addEventListener('keydown', event => {
   }
 });
 
-// Search the JSON file and display the results
+searchInput.addEventListener("keydown", event => {
+  if (event.key === "Enter") {
+    const firstResult = document.querySelector(".searchResults");
+    if (firstResult) {
+      handleResultClick(firstResult.textContent);
+    }
+  }
+});
+
+// Perform the search and display the results
 async function searchJSON(query, searchPath) {
   const response = await fetch(searchPath);
   const json = await response.json();
-  const results = json.filter(node => node.id.toLowerCase().includes(query.toLowerCase())).slice(0, 5);
+  const results = searchWithFuse(query, json);
   searchResults.innerHTML = `
-      ${results.map(result => `<li class="searchResults" onclick="handleResultClick('${result.id}')">${result.id}</li>`).join('')}
+      ${results.map(result => `<li class="searchResults" onclick="handleResultClick('${String(result.id)}')">${result.id}</li>`).join('')}
   `;
-  // it would be nice if arrow keys could be used to select the results
-  // as they do on the /search page
 }
-// smarter search: we will want to make the dropdown list
-// of results sorted by influence and not just alphabetical
-// we could probably feed in the influence from sources that 
-// we have, either from:
-// 1. edges.json
-// 2. a separate json file with the jaccard index
-//      (this would be the most accurate)
-//    - we have this in the python code
-// 3. if nodes.json has the influence, we can use that
 
 let selectedResults = [];
 
