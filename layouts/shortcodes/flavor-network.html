@@ -4,20 +4,67 @@
 
 
 <style>
-
-  /* the network container */
-  /* cannot be larger than 60vh */
+/* adaptions for phones vs desktops, c.2017+ */
+@media screen and (max-aspect-ratio: 1/1) {
   #network {
-    height: 60vh;
-    width: 100%;
+    height: 45vh;
   }
-  /* but not taller than 50vh */
-  @media (min-aspect-ratio: 1/1) {
-    #network {
-      height: 50vh;
-    }
-  }
+}
 
+@media screen and (min-aspect-ratio: 1/1) {
+  #network {
+    height: 65vh;
+  }
+}
+
+#physics-toggle {
+  float: right; 
+  display: none;
+  font-size: 0.6em;
+}
+
+#scroll-toggle {
+  float: right;
+  display: block;
+  font-size: 0.6em;
+}
+
+#physics-toggle input {
+  display: none;
+}
+
+/* hide the checkbox for the zoom mode */
+#scroll-toggle input {
+  display: none;
+}
+
+/* make the label bold if the option is enabled */
+#scroll-toggle.click-to-use-disabled label {
+  text-decoration: none;
+  font-weight: 800;
+  color: var(--content);
+}
+
+/* strike-through the label if the option is disabled */
+#scroll-toggle.click-to-use-enabled label {
+  text-decoration: line-through;
+  font-weight: 300;
+  color: var(--secondary);
+}
+
+/* make the label bold if the physics option is enabled */
+#physics-toggle.physics-enabled label {
+  text-decoration: none;
+  font-weight: 800;
+  color: var(--content);
+}
+
+/* strike-through the label if the physics option is disabled */
+#physics-toggle.physics-disabled label {
+  text-decoration: line-through;
+  font-weight: 300;
+  color: var(--secondary);
+}
 
 </style>
 
@@ -27,15 +74,15 @@
   data-sim-path={{ $simPath }}
 ></div>
 
-<!-- this div only shows if the network is not yet loaded ->
-<div id="loading" style="float: left; size: 24px; margin-right: 10px;">
-  <div class="loader"></div>
-  <div class="loader-text">1. type an ingredient<br/>2. ...</div>
-</div-->
-
-<div id="physics-toggle" style="float: right; display: none;">
-  <label for="physics">physics</label>
+<div id="physics-toggle">
+  <label for="physics">/ physics</label>
   <input type="checkbox" id="physics" checked>
 </div>
+
+<div id="scroll-toggle">
+  <label for="click-to-use">&nbsp;free zoom&nbsp; </label>
+  <input type="checkbox" id="click-to-use" checked>
+</div>
+
 <script src="https://visjs.github.io/vis-network/standalone/umd/vis-network.min.js"></script>
 <script src="/js/flavor-network.js"></script>

@@ -89,7 +89,42 @@ const options = {
   autoResize: true,
   height: '100%',
   width: '100%',
+  clickToUse: true,
+  physics: {
+    enabled: true,
+    /* all default values */
+    barnesHut: {
+      gravitationalConstant: -2000,
+      centralGravity: 0.3,
+      springLength: 95,
+      springConstant: 0.04,
+      damping: 0.09,
+      avoidOverlap: 0
+    }
+  },
 };
+
+// Define a function to update the appearance of the label element
+function updateOptionAppearance(containerId, baseClass, enabled) {
+  const classToAdd = enabled ? `${baseClass}-enabled` : `${baseClass}-disabled`;
+  const classToRemove = enabled ? `${baseClass}-disabled` : `${baseClass}-enabled`;
+  document.getElementById(containerId).classList.add(classToAdd);
+  document.getElementById(containerId).classList.remove(classToRemove);
+}
+
+// add event listeners
+document.getElementById('click-to-use').addEventListener('change', function() {
+  if (this.checked) {
+    options.clickToUse = true;
+  } else {
+    options.clickToUse = false;
+  }
+  network.setOptions(options);
+  // update the appearance of the label element
+  updateOptionAppearance('scroll-toggle', 'click-to-use', options.clickToUse);
+});
+
+
 
 /* Goals:
   * 1. The users specifies a node or a list of nodes (selectedResults)
@@ -143,6 +178,16 @@ getNodesAndEdges().then(function (data) {
   });
 });
 
+// update the click-to-use option
+updateOptionAppearance('click-to-use', 'click-to-use', options.clickToUse);
+
+// Add a single dummy node to the network graph
+network.setData({ nodes: [{ id: 'basil', label: 'type \'basil\'..' }], edges: [] });
+network.setOptions({ nodes: { shape: 'text' } });
+network.setOptions({ nodes: { font: { size: 34 } } });
+network.setOptions({ nodes: { font: { color: '#6c757d' } } });
+
+// When the user selects a result
 document.addEventListener('selectedResultsChanged', function (e) {
   // get the selected results
   const selectedResults = e.detail;
@@ -218,25 +263,20 @@ function filterNodesAndEdges(selectedResults) {
     }
   });
 
-  /** physics toggle **/
-
-  const physicsToggle = document.getElementById('physics-toggle');
+  /** physics **/
   if (selectedResults.length > 2) {
-    physicsToggle.style.display = 'block';
+    document.getElementById('physics-toggle').style.display = 'block';
   } else {
-    physicsToggle.style.display = 'none';
+    document.getElementById('physics-toggle').style.display = 'none';
   }
-  // add an event listener to the physics checkbox
-  const physicsCheckbox = document.getElementById('physics');
-  if (!physicsCheckbox.hasEventListener) {
-    physicsCheckbox.addEventListener('change', function (e) {
-      const physics = e.target.checked;
-      network.setOptions({ physics: { enabled: physics } });
-    });
-    physicsCheckbox.hasEventListener = true;
-  }
-  /* I COULD CRY I FINALLY GOT IT TO WORK */
+  // change the physics options based on physics toggle
+  document.getElementById('physics').addEventListener('change', function(e) {
+    const physics = e.target.checked;
+    network.setOptions({ physics: { enabled: physics } });
+    updateOptionAppearance('physics-toggle', 'physics', physics);
+  });
 
+  /* I COULD CRY I FINALLY GOT IT TO WORK */
 }
 
 // get the nodes that are similar to the selected nodes
