@@ -92,7 +92,6 @@ const options = {
   clickToUse: true,
   physics: {
     enabled: true,
-    /* all default values */
     barnesHut: {
       gravitationalConstant: -2000,
       centralGravity: 0.3,
@@ -123,8 +122,6 @@ document.getElementById('click-to-use').addEventListener('change', function() {
   // update the appearance of the label element
   updateOptionAppearance('scroll-toggle', 'click-to-use', options.clickToUse);
 });
-
-
 
 /* Goals:
   * 1. The users specifies a node or a list of nodes (selectedResults)
@@ -165,8 +162,7 @@ async function getSimilarities() {
   //console.log('similarities', similarities);
   return similarities;
 }
-
-// get the nodes and edges from the server
+// synchronize the network graph and ranking
 getNodesAndEdges().then(function (data) {
   nodes = data.nodes;
   edges = data.edges;
@@ -208,10 +204,25 @@ network.on('click', function (params) {
 function filterNodesAndEdges(selectedResults) {
   console.log('selectedResults', selectedResults);
 
+
+  /** display algorithm **/
+
+  // rule for n, the number of similar nodes to return
+  // if there's 1 selected result, return 10 similar nodes
+  let n = 0;
+  if (selectedResults.length === 1) {
+    n = 10;
+  } else if (selectedResults.length > 1 && selectedResults.length <= 4) {
+    n = 7;
+  } else if (selectedResults.length > 4) {
+    n = 4;
+  }
+  console.log('n', n);
+
   /** functionality **/
 
   // get the nodes that are similar to the selected nodes
-  const similarNodes = getSimilarNodes(selectedResults);
+  const similarNodes = getSimilarNodes(selectedResults, n);
   console.log('similarNodes', similarNodes);
 
   // filter the nodes and edges based on the selected results
@@ -264,6 +275,7 @@ function filterNodesAndEdges(selectedResults) {
   });
 
   /** physics **/
+
   if (selectedResults.length > 2) {
     document.getElementById('physics-toggle').style.display = 'block';
   } else {
@@ -276,8 +288,8 @@ function filterNodesAndEdges(selectedResults) {
     updateOptionAppearance('physics-toggle', 'physics', physics);
   });
 
-  /* I COULD CRY I FINALLY GOT IT TO WORK */
 }
+
 
 // get the nodes that are similar to the selected nodes
 function getSimilarNodes(selectedNodes, n=7) {
