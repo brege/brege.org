@@ -1,0 +1,82 @@
+/* adaptions for phones vs desktops, c.2017+ */
+@media screen and (max-aspect-ratio: 1/1) {
+  #network {
+    height: 45vh;
+  }
+}
+
+@media screen and (min-aspect-ratio: 1/1) {
+  #network {
+    height: 65vh;
+  }
+}
+
+#physics-toggle {
+  float: right; 
+  display: none;
+  font-size: 0.6em;
+}
+
+#scroll-toggle {
+  float: right;
+  display: block;
+  font-size: 0.6em;
+}
+
+#physics-toggle input {
+  display: none;
+}
+
+/* hide the checkbox for the zoom mode */
+#scroll-toggle input {
+  display: none;
+}
+
+/* make the label bold if the option is enabled */
+#scroll-toggle.click-to-use-disabled label {
+  text-decoration: none;
+  font-weight: 800;
+  color: var(--content);
+}
+
+/* strike-through the label if the option is disabled */
+#scroll-toggle.click-to-use-enabled label {
+  text-decoration: line-through;
+  font-weight: 300;
+  color: var(--secondary);
+}
+
+/* make the label bold if the physics option is enabled */
+#physics-toggle.physics-enabled label {
+  text-decoration: none;
+  font-weight: 800;
+  color: var(--content);
+}
+
+/* strike-through the label if the physics option is disabled */
+#physics-toggle.physics-disabled label {
+  text-decoration: line-through;
+  font-weight: 300;
+  color: var(--secondary);
+}
+
+#network {
+  float: right
+}
+
+#physics-toggle {
+  position: relative;
+  right: 0;
+}
+
+#scroll-toggle {
+  position: relative;
+  right: 0;
+}
+/* flex this to the width of the network */
+#network-settings {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-end;
+}
