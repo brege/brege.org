@@ -41,7 +41,7 @@
   display: inline-block;
   border: 1px solid var(--blue-color-2); 
   padding: 4px 8px;
-  margin: 8px 8px 8px 0px; 
+  margin: 8px 8px 0px 0px; 
   background-color: var(--blue-color-1);
   color: var(--blue-color-4); 
   border-radius: var(--radius);
@@ -80,4 +80,8 @@
 
 #searchResults li.focus {
   background-color: var(--border); 
+}
+/* search form */
+#search-form {
+  margin: 8px 0px 0px 0px; 
 }
