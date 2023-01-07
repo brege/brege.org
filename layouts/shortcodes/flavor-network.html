@@ -4,7 +4,21 @@
 
 
 <style>
-  #network { height: 60vh; } /* 60% of the viewport height */ 
+
+  /* the network container */
+  /* cannot be larger than 60vh */
+  #network {
+    height: 60vh;
+    width: 100%;
+  }
+  /* but not taller than 50vh */
+  @media (min-aspect-ratio: 1/1) {
+    #network {
+      height: 50vh;
+    }
+  }
+
+
 </style>
 
 <div id="network"
@@ -13,10 +27,15 @@
   data-sim-path={{ $simPath }}
 ></div>
 
-<div id="physics-toggle" style="float: right;">
-  <label for="physics">Physics</label>
+<!-- this div only shows if the network is not yet loaded ->
+<div id="loading" style="float: left; size: 24px; margin-right: 10px;">
+  <div class="loader"></div>
+  <div class="loader-text">1. type an ingredient<br/>2. ...</div>
+</div-->
+
+<div id="physics-toggle" style="float: right; display: none;">
+  <label for="physics">physics</label>
   <input type="checkbox" id="physics" checked>
 </div>
-
 <script src="https://visjs.github.io/vis-network/standalone/umd/vis-network.min.js"></script>
 <script src="/js/flavor-network.js"></script>

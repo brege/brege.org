@@ -101,12 +101,11 @@ const options = {
   * or nodes that are not selected
   * 
   * Just for reference, similarities looks like this:
-  *  { node1: { node2: 0.5, node3: 0.3, ... }, node2: { node1: 0.5, node3: 0.2, ... }, ... }
+  *  { node1: { node2: 0.5, node3: 0.3, ... }, 
+  *             node2: { node1: 0.5, node3: 0.2, ... }, ... }
   * 
   * The nodes and edges are displayed on the network graph
   */
-
-// get the nodes and edges from the server
 
 // Create a new network graph
 const container = document.getElementById('network');
@@ -158,7 +157,7 @@ network.on('click', function (params) {
     const nodeId = params.nodes[0];
     handleResultClick(nodeId);
   }
-});   
+});
 
 // Filter the nodes and edges based on the selected results
 function filterNodesAndEdges(selectedResults) {
@@ -219,9 +218,15 @@ function filterNodesAndEdges(selectedResults) {
     }
   });
 
-  // Physics
-  // get the physics checkbox, and make sure it has
-  // an event listener
+  /** physics toggle **/
+
+  const physicsToggle = document.getElementById('physics-toggle');
+  if (selectedResults.length > 2) {
+    physicsToggle.style.display = 'block';
+  } else {
+    physicsToggle.style.display = 'none';
+  }
+  // add an event listener to the physics checkbox
   const physicsCheckbox = document.getElementById('physics');
   if (!physicsCheckbox.hasEventListener) {
     physicsCheckbox.addEventListener('change', function (e) {
@@ -230,13 +235,8 @@ function filterNodesAndEdges(selectedResults) {
     });
     physicsCheckbox.hasEventListener = true;
   }
-
-
-
-
-  /* ************************************ */
   /* I COULD CRY I FINALLY GOT IT TO WORK */
-  /* ************************************ */
+
 }
 
 // get the nodes that are similar to the selected nodes
