@@ -54,12 +54,12 @@ The two best tools available and in common use both in commericial and residenti
 
 >**Hint:** always add cheese last
 
-Puree everything besides cheese first.  You don't want to gum up yourr blender, so you can fold the proto-pesto with grated parmesan in a mixing bowl after pureeing the produce.  In restaurants, you can make a really fine proto-pesto (i.e., loose pesto) by pureeing the produce and oil for an extended period of time.  It is easier on the motor and on the blades.  You can be lazier picking your leaves on your basil or include more stems, because the cheese absent creates less friction.  **Save the cheese for last.**
+Puree everything besides cheese first.  You don't want to gum up your blender, so you can fold the proto-pesto with grated parmesan in a mixing bowl after pureeing the produce.  In restaurants, you can make a really fine proto-pesto (i.e., loose pesto) by pureeing the produce and oil for an extended period of time.  It is easier on the motor and on the blades.  You can be lazier picking your leaves on your basil or include more stems, because the cheese absent creates less friction.  **Save the cheese for last.**
 
 ### Greens
 
-Most herbs from either the carrot- or mint-families will will work great, and many green tops of root vegetables (turnip, radish) are, while interchangeable, usable and often complimentary in pestos.
-Caution: while tarragon can be made into a pesto\*, its deploymeny in cold-prep sauces is rare (marinades, green goddess dressing) and is typically utilized better in hot-prep sauces--especially béarnaise. Sage, rosemary, and lemon verbena require special practice.  Thyme is time.
+Most herbs from either the carrot- or mint-families will work great, and many green tops of root vegetables (turnip, radish) are, while not interchangeable, usable and often complimentary in pestos.
+Caution: while tarragon can be made into a pesto\*, its deployment in cold-prep sauces is rare (marinades, green goddess dressing) and is typically utilized better in hot-prep sauces--especially béarnaise. Sage, rosemary, and lemon verbena require special practice.  Thyme is time.
 Use edible garnishes. Keep away from the ornamental "perfumes".
 
 >**Recommend:** basil, mint, parsley, oregano, marjoram, arugula   
