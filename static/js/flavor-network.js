@@ -234,11 +234,11 @@ function filterNodesAndEdges(selectedResults) {
   // rule for n, the number of similar nodes to return
   let n = 0;
   if (selectedResults.length === 1) {
-    n = 11;
+    n = 9;
   } else if (selectedResults.length > 1 && selectedResults.length <= 4) {
-    n = 7;
+    n = 6;
   } else if (selectedResults.length > 4) {
-    n = 5;
+    n = 4;
   }
 
   /** functionality **/
@@ -275,7 +275,6 @@ function filterNodesAndEdges(selectedResults) {
 
   /** cosmetic **/
 
- 
   // scale the size of the similar nodes based on their similarity, 
   // using the top similarity less than 0.9 as the reference
   const topSimilarity = similarNodes.reduce(function (acc, node) {
@@ -297,15 +296,14 @@ function filterNodesAndEdges(selectedResults) {
     });
   });
 
-
-   // for any node that is not a selectedResult,
+  // for any node that is not a selectedResult,
   // change the color of the node to the origin color
   selectedResults.forEach(function (nodeId) {
     network.body.data.nodes.update({
       id: nodeId,
       color: nodeStylesOrigin.nodes.color,
       level: 1,
-      font: { size: nodeStylesOrigin.nodes.font.size },
+      font: { size: 1.1*nodeStylesOrigin.nodes.font.size },
     });
   });
   // for any edge that is connected to a selectedResult only,
