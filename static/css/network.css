@@ -7,7 +7,7 @@
 
 @media screen and (min-aspect-ratio: 1/1) {
   #network {
-    height: 65vh;
+    height: 60vh;
   }
 }
 
@@ -15,96 +15,70 @@
   float: right;
 }
 
+.vis-network {
+  border-radius: var(--radius); 
+  height: 100%;
+  width: 100%;
+}
+.vis-active {
+  box-shadow: 0 0 2px var(--content);
+}
+
+#physics-toggle,
+#scroll-toggle,
+#use-rng-toggle {
+  display: block;
+  font-size: 0.6em;
+  position: relative;
+  padding: 0 var(--radius);
+}
+
 #physics-toggle {
-  float: right; 
-  display: none;
-  font-size: 0.6em;
-  position: relative;
-  right: 0;
+  display: /*none;*/ block;
 }
 
-#scroll-toggle {
-  float: right;
-  display: block;
-  font-size: 0.6em;
-  position: relative;
-  right: 0;
-}
-
-#dice-toggle {
-  float: right;
-  display: block;
-  font-size: 0.6em;
-  position: relative;
-  right: 0;
-}
-
-/* hide the checkbox for the zoom mode */
-#physics-toggle input {
+/* hide the checkboxes */
+#physics-toggle input,
+#scroll-toggle input,
+#use-rng-toggle input {
   display: none;
 }
-
-#scroll-toggle input {
-  display: none;
-}
-
-#dice-toggle input {
-  display: none;
-}
-
 
 /* make the label bold if the option is enabled */
-#scroll-toggle.click-to-use-disabled label {
+#physics-toggle.physics-enabled label,
+#scroll-toggle.click-to-use-enabled label,
+#use-rng-toggle.use-rng-enabled label {
   text-decoration: none;
   font-weight: 600;
   color: var(--content);
 }
 
+#physics-toggle.physics-disabled label,
+#scroll-toggle.click-to-use-disabled label,
+#use-rng-toggle.use-rng-disabled label {
+  font-weight: 300;
+  color: var(--secondary);
+}
+
+#physics-toggle label:hover,
+#scroll-toggle label:hover,
+#use-rng-toggle label:hover {
+  color: var(--primary);
+}
+
+/* hide the checkboxes */
+#physics-toggle input,
+#scroll-toggle input,
+#use-rng-toggle input {
+  display: none;
+}
+
+/* make the label bold if the option is enabled */
 #scroll-toggle.click-to-use-enabled label {
-  font-weight: 300;
-  color: var(--secondary);
-}
-
-#scroll-toggle label:hover {
-  font-weight: 600;
-}
-
-
-
-/* make the label bold if the dice option is enabled */
-#dice-toggle.dice-enabled label {
   text-decoration: none;
   font-weight: 600;
   color: var(--content);
 }
-
-#dice-toggle.dice-disabled label {
-  font-weight: 300;
-  color: var(--secondary);
-}
-
-#dice-toggle label:hover {
-  font-weight: 600;
-}
-
-
-
-/* make the label bold if the physics option is enabled */
-#physics-toggle.physics-enabled label {
-  text-decoration: none;
-  font-weight: 600;
-  color: var(--content);
-}
-
-#physics-toggle.physics-disabled label {
-  font-weight: 300;
-  color: var(--secondary);
-}
-
-#physics-toggle label:hover {
-  font-weight: 600;
-}
-
 
 /* flex this to the width of the network */
 #network-settings {
@@ -113,5 +87,3 @@
   width: 100%;
   justify-content: flex-end;
 }
-
-

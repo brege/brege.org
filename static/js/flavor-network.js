@@ -211,6 +211,19 @@ network.on('stabilizationProgress', function(params) {
   }
 });
 
+// listen when use changes bool for useRNG option
+document.getElementById('use-rng').addEventListener('change', function() {
+  if (this.checked) {
+    options.useRNG = true;
+  } else {
+    options.useRNG = false;
+  }
+  // update the appearance of the label element
+  updateOptionAppearance('use-rng-toggle', 'use-rng', options.useRNG);
+});
+
+
+
 
 /** filter the nodes and edges based on the selected results **/
 function filterNodesAndEdges(selectedResults) {
@@ -221,11 +234,11 @@ function filterNodesAndEdges(selectedResults) {
   // rule for n, the number of similar nodes to return
   let n = 0;
   if (selectedResults.length === 1) {
-    n = 8;
+    n = 11;
   } else if (selectedResults.length > 1 && selectedResults.length <= 4) {
-    n = 5;
+    n = 7;
   } else if (selectedResults.length > 4) {
-    n = 3;
+    n = 5;
   }
 
   /** functionality **/
@@ -240,28 +253,59 @@ function filterNodesAndEdges(selectedResults) {
       return item[0];
     }).includes(node.id) || selectedResults.includes(node.id);
   });
-  // 
+
   let filteredEdges = edges.filter(function (edge) {
     return similarNodes.map(function (item) {
       return item[0];
     }).includes(edge.from) && similarNodes.map(function (item) {
       return item[0];
-    }).includes(edge.to);
+    }).includes(edge.to) && similarNodes.map(function (item) {
+      return item[0];
+    }).includes(edge.from) || selectedResults.includes(edge.from) && selectedResults.includes(edge.to);
   });
-  //console.log('filteredNodes', filteredNodes);
-  //console.log('filteredEdges', filteredEdges);
-  
+
+  console.log('filteredNodes', filteredNodes);
+  console.log('filteredEdges', filteredEdges);
+
+  /** display **/  
+
   // set the nodes and edges on the network graph
   network.setOptions(nodeStylesPrime);
   network.setData({ nodes: filteredNodes, edges: filteredEdges });
 
   /** cosmetic **/
 
-  // change the color of the nodes that are selectedResults
+ 
+  // scale the size of the similar nodes based on their similarity, 
+  // using the top similarity less than 0.9 as the reference
+  const topSimilarity = similarNodes.reduce(function (acc, node) {
+    if (node[1] < 0.9 && node[1] > acc) {
+      return node[1];
+    } else {
+      return acc;
+    }
+  }, 0); 
+  console.log('topSimilarity', topSimilarity);
+  similarNodes.forEach(function (node) {
+    const nodeId = node[0];
+    const similarity = node[1];
+    const size = nodeStylesPrime.nodes.font.size * (similarity / topSimilarity);
+    network.body.data.nodes.update({
+      id: nodeId,
+      font: { size: size },
+      level: 2,
+    });
+  });
+
+
+   // for any node that is not a selectedResult,
+  // change the color of the node to the origin color
   selectedResults.forEach(function (nodeId) {
-    network.body.data.nodes.update({ 
-      id: nodeId, 
-      color: nodeStylesOrigin.nodes.color, 
+    network.body.data.nodes.update({
+      id: nodeId,
+      color: nodeStylesOrigin.nodes.color,
+      level: 1,
+      font: { size: nodeStylesOrigin.nodes.font.size },
     });
   });
   // for any edge that is connected to a selectedResult only,
@@ -275,21 +319,16 @@ function filterNodesAndEdges(selectedResults) {
       });
     }
     if (!selectedResults.includes(edge.from) && selectedResults.includes(edge.to)) {
-      network.body.data.edges.update({ 
-        id: edge.id, 
-        color: nodeStylesOrigin.edges.color, 
-        width: 3*nodeStylesOrigin.edges.width 
+      network.body.data.edges.update({
+        id: edge.id,
+        color: nodeStylesOrigin.edges.color,
+        width: 3*nodeStylesOrigin.edges.width,
       });
     }
   });
 
-  /** physics **/
 
-  if (selectedResults.length > 2) {
-    document.getElementById('physics-toggle').style.display = 'block';
-  } else {
-    document.getElementById('physics-toggle').style.display = 'none';
-  }
+
   // change the physics options based on physics toggle
   document.getElementById('physics').addEventListener('change', function(e) {
     const physics = e.target.checked;
@@ -306,51 +345,28 @@ function getSimilarNodes(selectedNodes, n=7) {
     if (!nodeSimilarities) {
       return [];
     } else {
-    const sortedSimilarities = Object.entries(nodeSimilarities).sort(function (a, b) {
-      return b[1] - a[1];
-    }); // computational complexity of O(nlogn)
+      const sortedSimilarities = Object.entries(nodeSimilarities).sort(function (a, b) {
+        return b[1] - a[1];
+      }); // computational complexity of O(nlogn)
+      //console.log('sortedSimilarities', sortedSimilarities);
 
-    //console.log('sortedSimilarities', sortedSimilarities);
-
-    n = Math.min(n, sortedSimilarities.length/2);
-
-    const topSimilarNodes = sortedSimilarities.slice(0, n);
-    
-    /**  diversity algorithm  **/
-
-    // for slice(n, sortedSimilarities.length), take n/2 nodes from
-    // the top 10% of the remaining nodes, ensuring:
-    // 1. the minimum similarity is 0.1
-
-    // get the top 10% of the remaining nodes
-    const top10Percent = Math.floor(sortedSimilarities.length * 0.1);
-    const top10PercentSlice = sortedSimilarities.slice(n, n + top10Percent);
-    //console.log ('top10PercentSlice', top10PercentSlice);
-
-    // get the minimum similarity of the top 10% of the remaining nodes
-    const minSimilarity = top10PercentSlice[0][1];
-    //console.log('minSimilarity', minSimilarity);
-
-    // get the top n/2 nodes with a similarity of at least 0.1.
-    // we do this by randomly plucking n/2 nodes from the top 
-    // 10% of the remaining nodes until we get 3 nodes with a
-    // similarity of at least 0.1
-    let randomNodes = [];
-    while (randomNodes.length < Math.floor( n/2 )) {
-      const randomIndex = Math.floor(Math.random() * top10PercentSlice.length);
-      const randomNode = top10PercentSlice[randomIndex];
-      if (randomNode[1] >= minSimilarity/n) {
-        randomNodes.push(randomNode);
+      /**  diversity algorithm  **/
+      n = Math.min(n, sortedSimilarities.length/2);
+      const topSimilarNodes = sortedSimilarities.slice(0, n);
+      
+      // check if the use-rng option is checked
+      const useRNG = document.getElementById('use-rng').checked;
+      if (!useRNG) {
+        return topSimilarNodes;
+      } else {
+        // get the top 10% of the remaining nodes
+        const randomNodes = getRandomNodes(sortedSimilarities, n);
+        //console.log('randomNodes', randomNodes);
+        const combinedNodes = topSimilarNodes.concat(randomNodes);
+        return combinedNodes;
       }
-    } // computational complexity of O(n)
-    //console.log('randomNodes', randomNodes);
-
-    // combine the top n nodes and the top 3 nodes
-    const combinedNodes = topSimilarNodes.concat(randomNodes);
-    
-    return combinedNodes;
-
     }
+
   });
   //console.log('similarNodes', similarNodes);
 
@@ -361,4 +377,32 @@ function getSimilarNodes(selectedNodes, n=7) {
   return uniqueSimilarNodes;
 }
 
+
+// get the top n/2 nodes with a similarity of at least 0.1.
+function getRandomNodes(sortedSimilarities, n=7) {
+  // get the top 10% of the remaining nodes
+  const top10Percent = Math.floor(sortedSimilarities.length * 0.1);
+  const top10PercentSlice = sortedSimilarities.slice(n, n + top10Percent);
+  //console.log ('top10PercentSlice', top10PercentSlice);
+
+  // get the minimum similarity of the top 10% of the remaining nodes
+  const minSimilarity = top10PercentSlice[0][1];
+  //console.log('minSimilarity', minSimilarity);
+
+  // get the top n/2 nodes with a similarity of at least 0.1.
+  // we do this by randomly plucking n/2 nodes from the top 
+  // 10% of the remaining nodes until we get 3 nodes with a
+  // similarity of at least 0.1
+  let randomNodes = [];
+  while (randomNodes.length < Math.floor( n/2 )) {
+    const randomIndex = Math.floor(Math.random() * top10PercentSlice.length);
+    const randomNode = top10PercentSlice[randomIndex];
+    if (randomNode[1] >= minSimilarity/n) {
+      randomNodes.push(randomNode);
+    }
+  } // computational complexity of O(n)
+  //console.log('randomNodes', randomNodes);
+
+  return randomNodes;
+} // computational complexity of O(n)
 
