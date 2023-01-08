@@ -111,7 +111,7 @@ function updateOptionAppearance(containerId, baseClass, enabled) {
   document.getElementById(containerId).classList.remove(classToRemove);
 }
 
-// add event listeners
+// Controls for the network
 document.getElementById('click-to-use').addEventListener('change', function() {
   if (this.checked) {
     options.clickToUse = true;
@@ -121,6 +121,7 @@ document.getElementById('click-to-use').addEventListener('change', function() {
   network.setOptions(options);
   // update the appearance of the label element
   updateOptionAppearance('scroll-toggle', 'click-to-use', options.clickToUse);
+  updateOptionAppearance('dice-toggle', 'dice-toggle', options.clickToUse);
 });
 
 /* Goals:
@@ -200,24 +201,32 @@ network.on('click', function (params) {
   }
 });
 
-// Filter the nodes and edges based on the selected results
+// If physics is freaking out (affinities, too many nodes, etc), turn it off 
+network.on('stabilizationProgress', function(params) {
+  const { iterations, total } = params;
+  if (iterations > 0.9 * total) {
+    network.setOptions({ physics: { enabled: false } });
+    document.getElementById('physics').checked = false;
+    updateOptionAppearance('physics-toggle', 'physics', false);
+  }
+});
+
+
+/** filter the nodes and edges based on the selected results **/
 function filterNodesAndEdges(selectedResults) {
   console.log('selectedResults', selectedResults);
-
 
   /** display algorithm **/
 
   // rule for n, the number of similar nodes to return
-  // if there's 1 selected result, return 10 similar nodes
   let n = 0;
   if (selectedResults.length === 1) {
-    n = 10;
+    n = 8;
   } else if (selectedResults.length > 1 && selectedResults.length <= 4) {
-    n = 7;
+    n = 5;
   } else if (selectedResults.length > 4) {
-    n = 4;
+    n = 3;
   }
-  console.log('n', n);
 
   /** functionality **/
 
@@ -290,8 +299,7 @@ function filterNodesAndEdges(selectedResults) {
 
 }
 
-
-// get the nodes that are similar to the selected nodes
+/** get the nodes that are similar to the selected nodes **/
 function getSimilarNodes(selectedNodes, n=7) {
   const similarNodes = selectedNodes.map(function (node) {
     const nodeSimilarities = similarities[node];
@@ -300,14 +308,57 @@ function getSimilarNodes(selectedNodes, n=7) {
     } else {
     const sortedSimilarities = Object.entries(nodeSimilarities).sort(function (a, b) {
       return b[1] - a[1];
-    });
-    const topNSimilarNodes = sortedSimilarities.slice(0, n);
-    return topNSimilarNodes;
+    }); // computational complexity of O(nlogn)
+
+    //console.log('sortedSimilarities', sortedSimilarities);
+
+    n = Math.min(n, sortedSimilarities.length/2);
+
+    const topSimilarNodes = sortedSimilarities.slice(0, n);
+    
+    /**  diversity algorithm  **/
+
+    // for slice(n, sortedSimilarities.length), take n/2 nodes from
+    // the top 10% of the remaining nodes, ensuring:
+    // 1. the minimum similarity is 0.1
+
+    // get the top 10% of the remaining nodes
+    const top10Percent = Math.floor(sortedSimilarities.length * 0.1);
+    const top10PercentSlice = sortedSimilarities.slice(n, n + top10Percent);
+    //console.log ('top10PercentSlice', top10PercentSlice);
+
+    // get the minimum similarity of the top 10% of the remaining nodes
+    const minSimilarity = top10PercentSlice[0][1];
+    //console.log('minSimilarity', minSimilarity);
+
+    // get the top n/2 nodes with a similarity of at least 0.1.
+    // we do this by randomly plucking n/2 nodes from the top 
+    // 10% of the remaining nodes until we get 3 nodes with a
+    // similarity of at least 0.1
+    let randomNodes = [];
+    while (randomNodes.length < Math.floor( n/2 )) {
+      const randomIndex = Math.floor(Math.random() * top10PercentSlice.length);
+      const randomNode = top10PercentSlice[randomIndex];
+      if (randomNode[1] >= minSimilarity/n) {
+        randomNodes.push(randomNode);
+      }
+    } // computational complexity of O(n)
+    //console.log('randomNodes', randomNodes);
+
+    // combine the top n nodes and the top 3 nodes
+    const combinedNodes = topSimilarNodes.concat(randomNodes);
+    
+    return combinedNodes;
+
     }
   });
+  //console.log('similarNodes', similarNodes);
+
+
   const flattenedSimilarNodes = similarNodes.flat();
   const uniqueSimilarNodes = [...new Set(flattenedSimilarNodes)];
   //console.log('uniqueSimilarNodes', uniqueSimilarNodes);
   return uniqueSimilarNodes;
 }
+
 

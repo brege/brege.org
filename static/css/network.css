@@ -11,68 +11,101 @@
   }
 }
 
+#network {
+  float: right;
+}
+
 #physics-toggle {
   float: right; 
   display: none;
   font-size: 0.6em;
+  position: relative;
+  right: 0;
 }
 
 #scroll-toggle {
   float: right;
   display: block;
   font-size: 0.6em;
+  position: relative;
+  right: 0;
 }
 
+#dice-toggle {
+  float: right;
+  display: block;
+  font-size: 0.6em;
+  position: relative;
+  right: 0;
+}
+
+/* hide the checkbox for the zoom mode */
 #physics-toggle input {
   display: none;
 }
 
-/* hide the checkbox for the zoom mode */
 #scroll-toggle input {
   display: none;
 }
 
+#dice-toggle input {
+  display: none;
+}
+
+
 /* make the label bold if the option is enabled */
 #scroll-toggle.click-to-use-disabled label {
   text-decoration: none;
-  font-weight: 800;
+  font-weight: 600;
   color: var(--content);
 }
 
-/* strike-through the label if the option is disabled */
 #scroll-toggle.click-to-use-enabled label {
-  text-decoration: line-through;
   font-weight: 300;
   color: var(--secondary);
 }
+
+#scroll-toggle label:hover {
+  font-weight: 600;
+}
+
+
+
+/* make the label bold if the dice option is enabled */
+#dice-toggle.dice-enabled label {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--content);
+}
+
+#dice-toggle.dice-disabled label {
+  font-weight: 300;
+  color: var(--secondary);
+}
+
+#dice-toggle label:hover {
+  font-weight: 600;
+}
+
+
 
 /* make the label bold if the physics option is enabled */
 #physics-toggle.physics-enabled label {
   text-decoration: none;
-  font-weight: 800;
+  font-weight: 600;
   color: var(--content);
 }
 
-/* strike-through the label if the physics option is disabled */
 #physics-toggle.physics-disabled label {
-  text-decoration: line-through;
   font-weight: 300;
   color: var(--secondary);
 }
 
-#network {
-  float: right
+#physics-toggle label:hover {
+  font-weight: 600;
 }
 
-#physics-toggle {
-  position: relative;
-  right: 0;
-}
 
-#scroll-toggle {
-  position: relative;
-  right: 0;
-}
 /* flex this to the width of the network */
 #network-settings {
   display: flex;
@@ -80,3 +113,5 @@
   width: 100%;
   justify-content: flex-end;
 }
+
+

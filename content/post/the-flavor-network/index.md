@@ -21,7 +21,25 @@ draft: false
 
 This tool allows you to explore the flavor network, a social graph for flavor profiles.  The network is based on the [Flavor Bible](https://karenandandrew.com/books/the-flavor-bible/) and soon the companion book [What to Drink with What You Eat](https://karenandandrew.com/books/what-to-drink-with-what-you-eat/).
 
-You search for an ingredient you like, and the graph refines based on a similarity score between ingredients (in the flavor metric).  Click on an ingredient in the network to add it to your recipe above the search box, or to remove it.  Clicking on nodes in the network has the same effect.
+You search for an ingredient you like, and the graph refines to give you a web of ingredients that share high compatability scores. 
+Then, click on a new ingredient in the network to add it to your recipe above the search box, or to remove it.  Clicking on search suggestions has the same effect.
+Search is not sorted by the flavor metric.  Search is sorted like any other search function, lexically.
+
+What you are seeing:
+
+* the nodes with color are your recipe ingredients
+* the suggested nodes are determined by Jaccard similarity
+* for each of your recipe ingredients, the suggested nodes are some fiducial
+  split between:
+  1. the most similar ingredients in the flavor metric (e.g., the top 5)
+  2. randomized plucking of other similar ingredients (e.g, a random 5 better than the mean)
+
+Randomization is added to encourage diversity of the suggestions.
+This is a seed, which will be added as an option to toggle. 
+The amount of suggestions gradually decreases as you add more ingredients
+to your recipe, for performance reasons.
+
+# Background
 
 Understanding why I chose this book for the dataset are mostly apparent upon opening it, but the key thing is the authors did a fine job formatting something computer readable and human usable--a rare feat!  Most importantly, it is aggregated from *chefs*, from real humans in kitchens doing what works, what's delicious, and what's in season.  Recipe API's don't have this granularity, they rely too heavily on user data to seed recommendations.  To my knowledge, this is the only dataset of this kind.
 
