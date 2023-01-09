@@ -10,6 +10,7 @@ cover:
   caption: '' 
 jquery: true
 draft: false
+showToc: false
 ---
 
 {{< flavor-network 

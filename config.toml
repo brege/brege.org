@@ -49,6 +49,7 @@ title = "brege.org"
 
   defaultTheme = 'auto' 
   disableScrollToTop = true
+  disableAnchorHeadings = false
 
 [params.editPost]
   URL = "https://github.com/brege/brege.org/tree/master/content"
