@@ -8,13 +8,12 @@ cover:
   caption: "Photo: Basil from *[Eatwell Farm](https://eatwell.com)*"
 math: true
 ShowToc: true
-TocOpen: true
 ---
 
 
 **Pesto\*** is a cold-prep green sauce made with herbs and alliums suspended in oil.  Most pestos call for some form of nut or cheese.  In the general sense, chefs may specify "loose pesto" when there are neither cheese nor nuts in the sauce, or when the sauce has an abundance of oil.  In general, pesto is made from herbs in the mint family, almost always from basil. The **\*** distinguishes a generalization to the traditional meaning of the word.
 
-## Relatives
+## Classification
  
 **Basil pesto** is the common pesto.  Its recipe typically calls for five key ingredients:
 $$
@@ -47,7 +46,7 @@ But there is a small catch, because some chefs may also say 'arugula pesto,' whi
 
 In this way, **pesto\*** is generalized from its elements, describing a sauce of process and appearence while flexible in its flavor balancing rules.  This is pesto\* as a **category**, not pesto as a set.  For all intents and purposes, chimis and gremolatas are pestos\*.
 
-## Members 
+## Ingredients
 
 The key to most pestos is to use a motor driven device for pureeing the sauce.
 The two best tools available and in common use both in commericial and residential kitchens are the **vitamix** or **immersion blender**.  Food processors and ninjas work just as well.
