@@ -178,8 +178,17 @@ getNodesAndEdges().then(function (data) {
 // update the click-to-use option (scrolling v. zooming)
 updateOptionAppearance('click-to-use', 'click-to-use', options.clickToUse);
 
+/* TODO: rotate suggestions
+const startingNodes = [
+  { id: 'basil', label: 'try \'basil\'..' },
+  { id: 'cherry', label: 'try \'cherries\', \'limes\', \'vodka\'..'},
+  { id: 'yogurt', label: 'try \'yogurt\', \'mint \', \'cucumbers\'..' },
+];
+const randIndex = Math.floor(Math.random() * startingNodes.length);
+const startingNode = startingNodes[randIndex];
+*/
 // DEMO: Add a single dummy node to the network graph
-network.setData({ nodes: [{ id: 'basil', label: 'type \'basil\'..' }], edges: [] });
+network.setData({ nodes: [{ id: 'basil', label: 'try \'basil\'..' }], edges: [] });
 network.setOptions({ nodes: { shape: 'text' } });
 network.setOptions({ nodes: { font: { size: 34 } } });
 network.setOptions({ nodes: { font: { color: '#6c757d' } } });
@@ -208,7 +217,7 @@ network.on('stabilizationProgress', function(params) {
   }
 });
 
-// listen ro the randomization checkbox
+// Listen to the randomization checkbox
 document.getElementById('use-rng').addEventListener('change', function() {
   if (this.checked) {
     options.useRNG = true;
@@ -221,8 +230,8 @@ document.getElementById('use-rng').addEventListener('change', function() {
 
 
 
-
 /** filter the nodes and edges based on the selected results **/
+
 function filterNodesAndEdges(selectedResults) {
   console.log('selectedResults', selectedResults);
 
@@ -294,7 +303,7 @@ function filterNodesAndEdges(selectedResults) {
       font: { size: size },
       level: 2,
     });
-  });
+  }); 
 
   // for any node that is not a selectedResult,
   // change the color of the node to the origin color
@@ -323,7 +332,7 @@ function filterNodesAndEdges(selectedResults) {
         width: 3*nodeStylesOrigin.edges.width,
       });
     }
-  }); // 
+  });// computational complexity of O(n^2)
 
 
 
