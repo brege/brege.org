@@ -420,7 +420,7 @@ function getRecipeLink(selectedResults) {
   const recipeList = document.getElementById('recipe-list');
   // recipe link: link to search food network, e.g.
   const recipeLink = document.getElementById('recipe-link');
-  const fnlink = 'https://www.foodnetwork.com/search/' + selectedResults.join('-,') + '-/rating';
+  const fnlink = 'https://www.foodnetwork.com/search/' + selectedResults.join('-,') + '-';
   const fhtip = 'Food Network recipes for ' + selectedResults.join(', ');
   const allrecipeslink = 'https://www.allrecipes.com/search?q=' + selectedResults.join('+'); 
   const allrecipestip = 'All Recipes with ' + selectedResults.join(', ');
