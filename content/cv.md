@@ -5,7 +5,7 @@ math: true
 disableShare: true
 ---
 
-# Expertise
+## Expertise
 
 - simulated complex physical systems with terabytes of data on supercomputing clusters:  
 
@@ -49,14 +49,14 @@ disableShare: true
 
 - developed tests, validation and visualization tools of big data
 
-# Education
+## Education
 
  **PhD**,  *Washington State University*,  Physics, 2017  
  **BSc**,  *Grand Valley State University*,  Mathematics,  2010  
  **BSc**,  *Grand Valley State University*,  Physics,  2010  
  **ASc**,  *Grand Rapids Community College*,  2007  
 
-# Professional
+## Professional
 
  **Restaurant Consulting**, CA, MI, 2020-.  
  **Executive Chef**, *Slanted Tree*, Fairfield, CA, 2019-2020  
@@ -65,7 +65,7 @@ disableShare: true
  **Teaching Assistant**, *Washington State Univ*, Pullman, WA, 2010-2017  
  **Sous Chef**, *One Trick Pony*, Grand Rapids, MI, 2005-2007  
 
-# Publications
+## Publications
 
 Chakravarti, K., Gupta, A., Bose, S., Duez, M.D., Caro, J., **Brege, W.**, Foucart, F., Ghosh, S., Kyutoku, K., Lackey, B.D. and Shibata, M.	
 *Systematic effects from black hole-neutron star waveform model uncertainties on the neutron star equation of state*,
@@ -83,7 +83,7 @@ Foucart, F., Desai, D., **Brege, W.**, Duez, M.D. 4, Kasen, D., Hemberger, D.A.,
 November 3, 2016 
 [arXiv:1611.01159](https://arxiv.org/abs/1611.01159)
 
-# Contributed Talks
+## Contributed Talks
 
 **Brege, W.**, Foucart, F., Duez, M.D., 
 *Equation of state survey of black hole-neutron star mergers*,
@@ -112,7 +112,7 @@ APS April Meeting, April 12 2015,
 *Symmetry Analysis of the Lane-Emden Equation* 
 [MathFest 2009](https://www.maa.org/meetings/mathfest-archive), Portland, OR, 07 August 2009
 
-# Awards
+## Awards
 
 - [NASA](https://nasa.gov) [Space Grant](https://www.waspacegrant.org/), 2015, 2016 and 2017
 - [Graduate Assistance in Areas of National Need (GAANN)](https://www2.ed.gov/programs/gaann/index.html) fellowship, 2010-2011 and 2011-2012
@@ -121,7 +121,7 @@ APS April Meeting, April 12 2015,
 - [Science, Mathematics, And Research for Transformation (SMART)](https://www.smartscholarship.org/smart) scholarship, 2009-2010
 - [Outstanding Student Achievement Award](https://www.gvsu.edu/math/scholarships-and-awards-9.htm), GVSU Mathematics Department, 2009
 
-# Research Experience
+## Research Experience
 
 May 2013 - Sep 2018
 **Black hole-neutron star mergers and accretion disk simulations**
@@ -140,7 +140,7 @@ Aug 2009 - May 2010
 **Motion in two-center gravitational systems**
 [*Grand Valley State University*](https://physicsgvsu.edu)
 - implemented [Gragg extrapolation](https://en.wikipedia.org/wiki/Bulirsch%E2%80%93Stoer_algorithm) to [evolve](https://en.wikipedia.org/wiki/Symplectic_geometry) Hamilton's equations for a [three-body](https://en.wikipedia.org/wiki/Three-body_problem) gravitational system
-- demonstrated the [chaotic](https://en.wikipedia.org/wiki/Chaos_theory) behavior of particle trajectories around [generic]() rotating binary systems
+- demonstrated the [chaotic](https://en.wikipedia.org/wiki/Chaos_theory) behavior of particle trajectories around generic rotating binary systems
 - completion of physics senior thesis	
 
 Aug 2009 - Dec 2009
@@ -155,7 +155,7 @@ May 2009 - Aug 2009
 - determined the underlining [Lie symmetries](https://en.wikipedia.org/wiki/Lie_algebra) of the [Lane-Emden equation](https://en.wikipedia.org/wiki/Lane%E2%80%93Emden_equation)	
 - participated in the [UCF](https://www.ucf.edu/) combined math and physics Research Experience for Undergraduates
 
-# Memberships
+## Memberships
 
 * [SXS Collaboration](https://github.com/sxs-collaboration), c. 2013
 * [American Physical Society](https://www.aps.org/), c. 2009

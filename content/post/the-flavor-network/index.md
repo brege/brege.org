@@ -102,4 +102,4 @@ It would be nice to be able to manipulate a canvas, like a musician can with a g
 or open an issue on
 [GitHub](https://github.com/brege/flavor-project/issues)!
 
-[^3]: When *What to Drink* has been parsed and merged with the network, the latter link in the recipe site should become much more robust. How fun!
+[^3]: When *What to Drink* has been parsed and merged with the network, the latter link in the recipe site list should become much more robust. How fun!
