@@ -103,15 +103,14 @@ const options = {
   },
 };
 
-// Define a function to update the appearance of the label element
+// To update the text emphasis of network options
 function updateOptionAppearance(containerId, baseClass, enabled) {
   const classToAdd = enabled ? `${baseClass}-enabled` : `${baseClass}-disabled`;
   const classToRemove = enabled ? `${baseClass}-disabled` : `${baseClass}-enabled`;
   document.getElementById(containerId).classList.add(classToAdd);
   document.getElementById(containerId).classList.remove(classToRemove);
 }
-
-// Controls for the network
+// Controls for the network (bottom right corner of network graph)
 document.getElementById('click-to-use').addEventListener('change', function() {
   if (this.checked) {
     options.clickToUse = true;
@@ -121,7 +120,8 @@ document.getElementById('click-to-use').addEventListener('change', function() {
   network.setOptions(options);
   // update the appearance of the label element
   updateOptionAppearance('scroll-toggle', 'click-to-use', options.clickToUse);
-  updateOptionAppearance('dice-toggle', 'dice-toggle', options.clickToUse);
+  // TODO: why did I put this here?
+  updateOptionAppearance('use-rng-toggle', 'use-rng-toggle', options.clickToUse);
 });
 
 /* Goals:
@@ -151,13 +151,13 @@ let nodes = [];
 let edges = [];
 let similarities = {};
 
-// get the nodes and edges from the server
+// get the nodes and edges from the json file
 async function getNodesAndEdges() {
   const nodes = await $.getJSON(nodesPath);
   const edges = await $.getJSON(edgesPath);
   return { nodes, edges };
 }
-// get the similarities from the server
+// get the similarities from the json file
 async function getSimilarities() {
   const similarities = await $.getJSON(simPath);
   //console.log('similarities', similarities);
@@ -175,21 +175,18 @@ getNodesAndEdges().then(function (data) {
   });
 });
 
-// update the click-to-use option
+// update the click-to-use option (scrolling v. zooming)
 updateOptionAppearance('click-to-use', 'click-to-use', options.clickToUse);
 
-// Add a single dummy node to the network graph
+// DEMO: Add a single dummy node to the network graph
 network.setData({ nodes: [{ id: 'basil', label: 'type \'basil\'..' }], edges: [] });
 network.setOptions({ nodes: { shape: 'text' } });
 network.setOptions({ nodes: { font: { size: 34 } } });
 network.setOptions({ nodes: { font: { color: '#6c757d' } } });
 
-// When the user selects a result
+// When the user selects a result, update the network graph
 document.addEventListener('selectedResultsChanged', function (e) {
-  // get the selected results
   const selectedResults = e.detail;
-  //console.log('selectedResults', selectedResults);
-  // Filter the nodes and edges based on the selected results
   filterNodesAndEdges(selectedResults);
 });
 
@@ -211,7 +208,7 @@ network.on('stabilizationProgress', function(params) {
   }
 });
 
-// listen when use changes bool for useRNG option
+// listen ro the randomization checkbox
 document.getElementById('use-rng').addEventListener('change', function() {
   if (this.checked) {
     options.useRNG = true;
@@ -229,7 +226,10 @@ document.getElementById('use-rng').addEventListener('change', function() {
 function filterNodesAndEdges(selectedResults) {
   console.log('selectedResults', selectedResults);
 
-  /** display algorithm **/
+  // to generate the recipe link:
+  getRecipeLink(selectedResults);
+
+  /** display algorithm **/ //shitty
 
   // rule for n, the number of similar nodes to return
   let n = 0;
@@ -323,7 +323,7 @@ function filterNodesAndEdges(selectedResults) {
         width: 3*nodeStylesOrigin.edges.width,
       });
     }
-  });
+  }); // 
 
 
 
@@ -334,7 +334,7 @@ function filterNodesAndEdges(selectedResults) {
     updateOptionAppearance('physics-toggle', 'physics', physics);
   });
 
-}
+}// end of filterNodesAndEdges
 
 /** get the nodes that are similar to the selected nodes **/
 function getSimilarNodes(selectedNodes, n=7) {
@@ -365,7 +365,7 @@ function getSimilarNodes(selectedNodes, n=7) {
       }
     }
 
-  });
+  }); // computational complexity of O(n^2)
   //console.log('similarNodes', similarNodes);
 
 
@@ -398,9 +398,36 @@ function getRandomNodes(sortedSimilarities, n=7) {
     if (randomNode[1] >= minSimilarity/n) {
       randomNodes.push(randomNode);
     }
-  } // computational complexity of O(n)
+  } 
   //console.log('randomNodes', randomNodes);
 
   return randomNodes;
 } // computational complexity of O(n)
 
+// add a link to search food network, and also
+// display the selected results for copy/paste
+function getRecipeLink(selectedResults) {
+  // recipe list: display the selected results for copy/paste
+  const recipeList = document.getElementById('recipe-list');
+  // recipe link: link to search food network, e.g.
+  const recipeLink = document.getElementById('recipe-link');
+  const fnlink = 'https://www.foodnetwork.com/search/' + selectedResults.join('-,') + '-/rating';
+  const fhtip = 'Food Network recipes for ' + selectedResults.join(', ');
+  const allrecipeslink = 'https://www.allrecipes.com/search?q=' + selectedResults.join('+'); 
+  const allrecipestip = 'All Recipes with ' + selectedResults.join(', ');
+  const googlelink = 'https://www.google.com/search?q=' + selectedResults.join('+') + '+recipes';
+  const googletip = 'Google recipes with ' + selectedResults.join(', ');
+  const cocktaillink = 'https://www.thecocktailproject.com/search/?search_api_fulltext=' + selectedResults.join('+');
+  const cocktailtip = 'Cocktail Project recipes for ' + selectedResults.join(', ');
+  if (selectedResults.length === 0) {
+    recipeLink.innerHTML = '';
+  } else {
+    recipeLink.innerHTML = "recipes: "
+      + ' <a href="' + fnlink + '" target="_blank" title="' + fhtip + '" >food network</a>'
+      + ' | <a href="' + allrecipeslink + '" target="_blank" title="' + allrecipestip + '">allrecipes</a>'
+      + ' | <a href="' + googlelink + '" target="_blank" title="' + googletip + '">google</a>'
+      + ' | <a href="' + cocktaillink + '" target="_blank" title="' + cocktailtip + '">cocktails</a>'
+      ;//+ '<span style="float: right;">' + selectedResults.join(' + ') + '</span>' ; 
+      //TODO: add a copy to clipboard button
+  }
+} 

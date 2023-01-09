@@ -1,7 +1,7 @@
-/* adaptions for phones vs desktops, c.2017+ */
+/* adapt for phones vs desktops, c.2017+ */
 @media screen and (max-aspect-ratio: 1/1) {
   #network {
-    height: 45vh;
+    height: 50vh;
   }
 }
 
@@ -12,9 +12,10 @@
 }
 
 #network {
-  float: right;
+  float: left;
+  /*resize: both;*/  
+  /*overflow: auto;*/
 }
-
 .vis-network {
   border-radius: var(--radius); 
   height: 100%;
@@ -35,13 +36,6 @@
 
 #physics-toggle {
   display: /*none;*/ block;
-}
-
-/* hide the checkboxes */
-#physics-toggle input,
-#scroll-toggle input,
-#use-rng-toggle input {
-  display: none;
 }
 
 /* make the label bold if the option is enabled */
@@ -73,17 +67,22 @@
   display: none;
 }
 
-/* make the label bold if the option is enabled */
 #scroll-toggle.click-to-use-enabled label {
   text-decoration: none;
   font-weight: 600;
   color: var(--content);
 }
 
-/* flex this to the width of the network */
 #network-settings {
   display: flex;
   flex-direction: row;
   width: 100%;
   justify-content: flex-end;
+}
+
+#recipe-link,
+#recipe-list {
+  position: relative;
+  font-size: 0.6em;
+  padding: 4px var(--radius);
 }
