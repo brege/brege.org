@@ -71,7 +71,7 @@ In 2019, I was helping fellow chefs come up with new menu offerings for our farm
 
 We would work out new ideas together over the prep table.
 As ideas began to stretch and the Northern California winter approached, we sometimes used sheets of butcher paper to draw out a crude graph of our plate setups.
-These were sketches of sauce and protein layouts, heavy edges between ideas if their pairing 'sang', now a guide hanging from the ticket rail on the night a featured debuted. Karen and Andrew's book was gifted to me later that year, and it changed my game.
+These were sketches of sauce and protein layouts, heavy edges between ideas if their pairing 'sang', now a guide hanging from the ticket rail on the night a feature debuted. Karen and Andrew's book was gifted to me later that year, and it changed my game.
 I had a good resource that gave answers, and especially new ideas, quickly.  One with a chef's trust.
 
 This method was so helpful, I started dreaming of a computer tool to help me sketch out this process. I saw a reddit [post](https://www.reddit.com/r/datasets/comments/3bxlg7/i_have_every_publicly_available_reddit_comment/) that [spurred others](https://www.reddit.com/r/dataisbeautiful/comments/ae88pk/interactive_visualization_of_related_subreddits/) to lay out some of the underlying ideas: overlapping subreddits :: compatible flavors.  Predictably, restaurant life is not at all conducive to finding free time to write code.
@@ -94,7 +94,7 @@ It would be nice to be able to manipulate a canvas, like a musician can with a g
     * \***BOLD CAPS** is the "Holy Grail" of pairings
 
     If the ingredient is not mentioned, it is given no weight (or edge) but it does not mean a flavor pairing doesn't exist.
-    This is part of the purpose of this tool!  Lastly, there are a few dozen mentions of "Avoid", and should be thought of opposite charges.
+    This is part of the purpose of this tool!  Lastly, there are a few dozen mentions of "Avoid", and should be thought of as opposite charges.
 
 [^2]: If you encounter a bug, please feel free to contact me by [email](mailto:wyatt@brege.org)
 or open an issue on

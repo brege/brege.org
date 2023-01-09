@@ -79,6 +79,7 @@ function generateNodeStyles(colorPalette) {
 
 const nodeStylesOrigin = generateNodeStyles(blueColorPalette);
 const nodeStylesPrime = generateNodeStyles(greyColorPalette);
+const nodeStylesHover = generateNodeStyles(greenColorPalette);
 
 // Define the network options
 const options = {
@@ -334,7 +335,8 @@ function filterNodesAndEdges(selectedResults) {
     }
   });// computational complexity of O(n^2)
 
-
+  // TODO: it would be nice to change the hover color
+  // of the edges
 
   // change the physics options based on physics toggle
   document.getElementById('physics').addEventListener('change', function(e) {
