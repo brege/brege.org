@@ -4,16 +4,6 @@ title = "New way forward for deploying brege.org"
 math = false
 tags = ["hugo","rsync","deployment"
 ]
-
-[header]
-image = ""
-caption = ""
-
-[image]
-caption = ""
-focal_point = ""
-preview_only = true
-
 aliases = [
         "/post/new-way-forward-for-deploying-brege/",
         "/post/new-way-forward-for-developing-brege/"

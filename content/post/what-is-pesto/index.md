@@ -4,7 +4,7 @@ tags: ["pesto", "basil", "food", "cooking", "graph", "culinary", "olive oil", "g
 date: 2022-12-11T16:56:56-05:00
 draft: false
 cover:
-  image: 'featured.jpg'
+  image: 'basil.jpg'
   caption: "Photo: Basil from *[Eatwell Farm](https://eatwell.com)*"
 math: true
 ShowToc: true

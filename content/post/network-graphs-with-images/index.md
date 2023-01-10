@@ -4,6 +4,9 @@ tags: ["network", "visjs", "graph", "js", "hugo", "fruit"]
 date: 2022-12-21T02:15:04-05:00
 featured: false
 draft: false
+cover:
+  image: "fruit-network-images.png"
+  hidden: true
 ---
 
 This is a follow-up to the previous post [Network Graphs in Hugo](/post/network-graphs-in-hugo/).

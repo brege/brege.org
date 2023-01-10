@@ -1,19 +1,8 @@
 +++
 math = false
-tags = ["rss","nginx"
-]
+tags = ["rss","nginx"]
 date = "2016-10-11T07:01:47Z"
 title = "Nginx rewrite for RSS"
-
-[header]
-image = ""
-caption = ""
-
-[image]
-caption = ""
-focal_point = ""
-preview_only = true
-
 +++
 
 Add the following to the main server block in your nginx config:

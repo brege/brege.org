@@ -3,6 +3,9 @@ title: "Network Graphs in Hugo"
 tags: ["network", "networkx", "graph", "js", "hugo"]
 date: 2022-12-09T23:02:42-05:00
 draft: false
+cover:
+  image: "fruit-network-graph.png"
+  hidden: true
 ---
 
 This is a simple toy to see how a network graph can be added in a Hugo article.  I'll be testing new features on it as I learn new things.

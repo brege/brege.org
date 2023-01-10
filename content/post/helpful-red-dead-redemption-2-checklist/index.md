@@ -6,8 +6,8 @@ categories: []
 date: 2022-02-06T02:12:20-04:00
 draft: false
 cover:
-  image: 'featured.jpg'
-  caption: 'Red Dead Redeption II'
+  image: 'rdr2-banner.jpg'
+  caption: 'Red Dead Redemption II'
   preview_only: true
 ---
 

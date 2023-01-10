@@ -6,8 +6,8 @@ authors: 'Wyatt Brege'
 tags: ['flavor', 'network', 'visjs', 'graph', 'jaccard', 'metric']
 date: 2023-01-04T04:04:49-05:00
 cover:
-  image: '' 
-  caption: '' 
+  image: 'lemon-basil-vanilla.png'
+  hidden: true
 jquery: true
 draft: false
 showToc: false

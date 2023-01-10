@@ -4,15 +4,6 @@ tags = ["certbot", "ssl", "https", "systemd"
 ]
 date = "2016-10-11T00:15:22Z"
 title = "Automatic renewal of Let's Encrypt Certificates"
-
-[header]
-image = ""
-caption = ""
-
-[image]
-caption = ""
-focal_point = ""
-preview_only = true
 +++
 
 Let's Encrypt certificates need to be renewed every three months.
