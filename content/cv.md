@@ -34,7 +34,7 @@ disableShare: true
 [d3.js](https://en.wikipedia.org/wiki/D3.js),
 [hugo](https://en.wikipedia.org/wiki/Hugo_(software)),
 [gnuplot](https://en.wikipedia.org/wiki/Gnuplot),
-[LaTeX](https://en.wikipedia.org/wiki/LaTeX),
+[latex](https://en.wikipedia.org/wiki/LaTeX),
 [paraview](https://en.wikipedia.org/wiki/ParaView),
 [sage](https://en.wikipedia.org/wiki/Sage_(mathematics_software)),
 [jupyter](https://en.wikipedia.org/wiki/Project_Jupyter)
