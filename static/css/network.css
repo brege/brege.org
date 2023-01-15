@@ -74,6 +74,7 @@
 }
 
 #network-settings {
+  padding: 4px var(--radius);
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -86,3 +87,49 @@
   font-size: 0.6em;
   padding: 4px var(--radius);
 }
+
+/* for the lenses dropdown */
+#lenses-dropdown {
+  position: relative;
+  font-size: 0.6em;
+  padding: 0px var(--radius);
+}
+
+#lenses {
+  position: relative;
+  padding: 1px var(--radius);
+}
+
+/* style the dropdown */
+#lenses-dropdown select {
+  position: relative;
+  border: 0px solid var(--secondary);
+  border-radius: var(--radius);
+  background-color: var(--entry);
+  color: var(--content);
+  cursor: pointer;
+  outline: none;
+}
+
+/* style the dropdown options */
+#lenses-dropdown select option {
+  border: 0px solid var(--secondary);
+  border-radius: var(--radius);
+  background-color: var(--entry);
+  color: var(--content);
+  cursor: pointer;
+  outline: none;
+}
+
+/* style the dropdown arrow */
+#lenses-dropdown select option:after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 0.5em;
+  background: var(--entry);
+  cursor: pointer;
+  pointer-events: none;
+}
+

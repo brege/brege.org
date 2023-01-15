@@ -4,7 +4,7 @@
 
 This example explains how to add a new post, assuming you are in the base directory for your [hugo](https://github.com/gohugoio/hugo) source files.
 
-1. `hugo new --kind post hello-world`
+1. `hugo new --kind post post/hello-world`
 
 2. Edit `content/post/hello-world/index.md` after the `+++...+++` or `---...---` front matter
 

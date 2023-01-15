@@ -94,14 +94,24 @@ const options = {
   physics: {
     enabled: true,
     barnesHut: {
-      gravitationalConstant: -2000,
+      gravitationalConstant: -3000,
       centralGravity: 0.3,
       springLength: 95,
       springConstant: 0.04,
       damping: 0.09,
-      avoidOverlap: 0
-    }
+      avoidOverlap: 0,
+    },
+    stabilization: {
+      enabled: true,
+      iterations: 1000,
+      updateInterval: 25,
+      onlyDynamicEdges: false,
+      fit: true,
+    },
+    timestep: 0.5,
+    adaptiveTimestep: true,
   },
+
 };
 
 // To update the text emphasis of network options
@@ -136,9 +146,7 @@ document.getElementById('click-to-use').addEventListener('change', function() {
   * 
   * Just for reference, similarities looks like this:
   *  { node1: { node2: 0.5, node3: 0.3, ... }, 
-  *             node2: { node1: 0.5, node3: 0.2, ... }, ... }
-  * 
-  * The nodes and edges are displayed on the network graph
+  *    node2: { node1: 0.5, node3: 0.2, ... }, ... }
   */
 
 // Create a new network graph
@@ -179,15 +187,6 @@ getNodesAndEdges().then(function (data) {
 // update the click-to-use option (scrolling v. zooming)
 updateOptionAppearance('click-to-use', 'click-to-use', options.clickToUse);
 
-/* TODO: rotate suggestions
-const startingNodes = [
-  { id: 'basil', label: 'try \'basil\'..' },
-  { id: 'cherry', label: 'try \'cherries\', \'limes\', \'vodka\'..'},
-  { id: 'yogurt', label: 'try \'yogurt\', \'mint \', \'cucumbers\'..' },
-];
-const randIndex = Math.floor(Math.random() * startingNodes.length);
-const startingNode = startingNodes[randIndex];
-*/
 // DEMO: Add a single dummy node to the network graph
 network.setData({ nodes: [{ id: 'basil', label: 'try \'basil\'..' }], edges: [] });
 network.setOptions({ nodes: { shape: 'text' } });
@@ -208,6 +207,14 @@ network.on('click', function (params) {
   }
 });
 
+// When the user picks a different algorithm
+const algorithmSelect = document.getElementById('lenses');
+algorithmSelect.addEventListener('change', function () {
+  if (selectedResults.length > 0) {
+    filterNodesAndEdges(selectedResults);
+  } 
+});
+
 // If physics is freaking out (affinities, too many nodes, etc), turn it off 
 network.on('stabilizationProgress', function(params) {
   const { iterations, total } = params;
@@ -219,6 +226,8 @@ network.on('stabilizationProgress', function(params) {
 });
 
 // Listen to the randomization checkbox
+// TODO: maybe we should just remove this since we can toggle
+// different algorithms now
 document.getElementById('use-rng').addEventListener('change', function() {
   if (this.checked) {
     options.useRNG = true;
@@ -249,22 +258,23 @@ function filterNodesAndEdges(selectedResults) {
     n = 6;
   } else if (selectedResults.length > 4) {
     n = 4;
-  }
+  } //shitty
 
   /** functionality **/
 
   // get the nodes that are similar to the selected nodes
-  const similarNodes = getSimilarNodes(selectedResults, n);
+  // from using the algorithmChoice
+  const similarNodes = algorithmChoice(selectedResults, n);
   console.log('similarNodes', similarNodes);
 
   // filter the nodes and edges based on the selected results
-  let filteredNodes = nodes.filter(function (node) {
+  const filteredNodes = nodes.filter(function (node) {
     return similarNodes.map(function (item) {
       return item[0];
     }).includes(node.id) || selectedResults.includes(node.id);
   });
 
-  let filteredEdges = edges.filter(function (edge) {
+  const filteredEdges = edges.filter(function (edge) {
     return similarNodes.map(function (item) {
       return item[0];
     }).includes(edge.from) && similarNodes.map(function (item) {
@@ -283,40 +293,50 @@ function filterNodesAndEdges(selectedResults) {
   network.setOptions(nodeStylesPrime);
   network.setData({ nodes: filteredNodes, edges: filteredEdges });
 
-  /** cosmetic **/
+  /** cosmetics **/
 
-  // scale the size of the similar nodes based on their similarity, 
-  // using the top similarity less than 0.9 as the reference
-  const topSimilarity = similarNodes.reduce(function (acc, node) {
-    if (node[1] < 0.9 && node[1] > acc) {
-      return node[1];
-    } else {
-      return acc;
-    }
-  }, 0); 
-  console.log('topSimilarity', topSimilarity);
-  similarNodes.forEach(function (node) {
-    const nodeId = node[0];
-    const similarity = node[1];
-    const size = nodeStylesPrime.nodes.font.size * (similarity / topSimilarity);
+  // set the font size of the selected nodes to the origin size
+  selectedResults.forEach(function (nodeId) {
     network.body.data.nodes.update({
       id: nodeId,
-      font: { size: size },
-      level: 2,
+      font: { size: nodeStylesOrigin.nodes.font.size },
+      level: 0,
     });
-  }); 
+  });
 
-  // for any node that is not a selectedResult,
+  // get the top similarity from the similar nodes
+  const topSimilarity = similarNodes.reduce(function (acc, node) {
+    return node[1] > acc && node[1] < 1 ? node[1] : acc;
+  }, 0);
+
+  // set the font size of the similar nodes to a size 
+  // relative to the top similarity
+  similarNodes.forEach(function (node) {
+    const fontSize = node[1] === 1 ? 1.*nodeStylesOrigin.nodes.font.size : 1.*nodeStylesOrigin.nodes.font.size * (node[1] / topSimilarity); 
+    network.body.data.nodes.update({
+      id: node[0],
+      font: { size: fontSize },
+      level: 1,
+    });
+  });
+  // print the font size of the similar nodes
+  similarNodes.forEach(function (node) {
+    console.log('node', node[0], network.body.data.nodes.get(node[0]).font.size);
+  });
+
+
+  // for any node that is not a selectedNode,
   // change the color of the node to the origin color
   selectedResults.forEach(function (nodeId) {
     network.body.data.nodes.update({
       id: nodeId,
       color: nodeStylesOrigin.nodes.color,
-      level: 1,
       font: { size: 1.1*nodeStylesOrigin.nodes.font.size },
+      level: 0,
     });
   });
-  // for any edge that is connected to a selectedResult only,
+
+  // for any edge that is not connected to a selectedNode,
   // change the color of the edge to the origin color
   filteredEdges.forEach(function (edge) {
     if (selectedResults.includes(edge.from) && !selectedResults.includes(edge.to)) {
@@ -324,6 +344,7 @@ function filterNodesAndEdges(selectedResults) {
         id: edge.id, 
         color: nodeStylesOrigin.edges.color, 
         width: 3*nodeStylesOrigin.edges.width,
+        level: 0,
       });
     }
     if (!selectedResults.includes(edge.from) && selectedResults.includes(edge.to)) {
@@ -331,12 +352,11 @@ function filterNodesAndEdges(selectedResults) {
         id: edge.id,
         color: nodeStylesOrigin.edges.color,
         width: 3*nodeStylesOrigin.edges.width,
+        level: 0,
       });
     }
-  });// computational complexity of O(n^2)
+  });
 
-  // TODO: it would be nice to change the hover color
-  // of the edges
 
   // change the physics options based on physics toggle
   document.getElementById('physics').addEventListener('change', function(e) {
@@ -345,9 +365,49 @@ function filterNodesAndEdges(selectedResults) {
     updateOptionAppearance('physics-toggle', 'physics', physics);
   });
 
-}// end of filterNodesAndEdges
+}
 
-/** get the nodes that are similar to the selected nodes **/
+/** A. show the nodes with the largest edge weights **/
+function getNodesByEdgeWeight(selectedNodes, n=7) {
+  // get the top n nodes with the largest edge weights
+  // don't use similarities, use the edge weights
+  const topEdges = selectedNodes.map(function (node) {
+    const nodeEdges = edges.filter(function (edge) {
+      return edge.from === node || edge.to === node;
+    });
+    const sortedEdges = nodeEdges.sort(function (a, b) {
+      return b.weight - a.weight;
+    });
+    return sortedEdges.slice(0, n);
+  }).flat();
+
+  // get the nodes that are connected to the top edges
+  const topNodes = topEdges.map(function (edge) {
+    return [edge.from, edge.to];
+  }).flat();
+
+  // get the average similarity of the similar nodes
+  const uniqueNodes = [...new Set(topNodes)];
+  //const similarNodes = getAverageSimilarity(selectedNodes, uniqueNodes);
+  const similarNodes = uniqueNodes.map(function (node) {
+    return [node, 1]; 
+    // TODO: change this to the average similarity,
+    // this doesn't work right now because the data is 
+    // asymmetric
+  });
+
+  // sort the similar nodes by their average similarity
+  const sortedSimilarNodes = similarNodes.sort(function (a, b) {
+    return b[1] - a[1];
+  });
+
+  // return the top n similar nodes
+  return sortedSimilarNodes
+
+}
+
+/** B. get the nodes that have high ingredient similarities
+ *  to the selected nodes **/
 function getSimilarNodes(selectedNodes, n=7) {
   const similarNodes = selectedNodes.map(function (node) {
     const nodeSimilarities = similarities[node];
@@ -361,8 +421,8 @@ function getSimilarNodes(selectedNodes, n=7) {
 
       /**  diversity algorithm  **/
       n = Math.min(n, sortedSimilarities.length/2);
-      const topSimilarNodes = sortedSimilarities.slice(0, n);
-      
+      const topSimilarNodes = sortedSimilarities.slice(0, n); 
+
       // check if the use-rng option is checked
       const useRNG = document.getElementById('use-rng').checked;
       if (!useRNG) {
@@ -379,12 +439,41 @@ function getSimilarNodes(selectedNodes, n=7) {
   }); // computational complexity of O(n^2)
   //console.log('similarNodes', similarNodes);
 
-
   const flattenedSimilarNodes = similarNodes.flat();
   const uniqueSimilarNodes = [...new Set(flattenedSimilarNodes)];
   //console.log('uniqueSimilarNodes', uniqueSimilarNodes);
   return uniqueSimilarNodes;
 }
+
+/** C. hybrid model, split the difference between the two **/
+// TODO: implement this
+
+// the user can choose which of A, B, or C to use
+// by checking the appropriate radio button, so we'll 
+// need to implement this function
+function getHybridNodes(selectedNodes, n=7) {
+  const similarNodes = getSimilarNodes(selectedNodes, n);
+  const edgeNodes = getNodesByEdgeWeight(selectedNodes, n);
+  const hybridNodes = similarNodes.concat(edgeNodes);
+  return hybridNodes;
+}
+
+// the function that handles the user's choice of which
+// algorithm to use
+function algorithmChoice(selectedNodes, n=7) {
+  const algorithm = document.getElementById('lenses').value;
+  console.log('algorithm:', algorithm);
+
+  if (algorithm === 'hybrid') {
+    return getHybridNodes(selectedNodes, n/Math.sqrt(2));
+  } else if (algorithm === 'similarity') {
+    return getSimilarNodes(selectedNodes, n);
+  } else if (algorithm === 'affinity') {
+    return getNodesByEdgeWeight(selectedNodes, n);
+  }
+
+}
+
 
 
 // get the top n/2 nodes with a similarity of at least 0.1.
@@ -415,6 +504,11 @@ function getRandomNodes(sortedSimilarities, n=7) {
   return randomNodes;
 } // computational complexity of O(n)
 
+
+
+
+
+
 // add a link to search food network, and also
 // display the selected results for copy/paste
 function getRecipeLink(selectedResults) {
@@ -435,9 +529,9 @@ function getRecipeLink(selectedResults) {
   } else {
     recipeLink.innerHTML = "recipes: "
       + ' <a href="' + fnlink + '" target="_blank" title="' + fhtip + '" >food network</a>'
-      + ' | <a href="' + allrecipeslink + '" target="_blank" title="' + allrecipestip + '">allrecipes</a>'
-      + ' | <a href="' + googlelink + '" target="_blank" title="' + googletip + '">google</a>'
-      + ' | <a href="' + cocktaillink + '" target="_blank" title="' + cocktailtip + '">cocktails</a>'
+      + ' · <a href="' + allrecipeslink + '" target="_blank" title="' + allrecipestip + '">allrecipes</a>'
+      + ' · <a href="' + googlelink + '" target="_blank" title="' + googletip + '">google</a>'
+      + ' · <a href="' + cocktaillink + '" target="_blank" title="' + cocktailtip + '">cocktails</a>'
       ;//+ '<span style="float: right;">' + selectedResults.join(' + ') + '</span>' ; 
       //TODO: add a copy to clipboard button
   }

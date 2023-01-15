@@ -16,7 +16,7 @@
 <div id="network-settings">
   <div id="physics-toggle">
     <label for="physics">
-      physics
+      dynamics
     </label>
     <input type="checkbox" id="physics" checked>
   </div>
@@ -31,6 +31,22 @@
       zoom lock
     </label>
     <input type="checkbox" id="click-to-use" checked>
+  </div>
+  <div id="lenses-dropdown">
+    <label for="lenses" title="used to see flavor combinations by 'social circle' or 'besties'">
+      lens:
+    </label>
+    <select id="lenses">
+      <option value="hybrid" title="uses a mix of 'friendships' and 'besties' to see flavor combinations">
+        hybrid
+      </option>
+      <option value="similarity" title="see ingredients that have similar overall 'friendships' as my recipe items" selected>
+        friend's list
+      </option>
+      <option value="affinity" title="see ingredients that are 'best friends' with my recipe items">
+        besties
+      </option>
+    </select>
   </div>
 </div>
 
