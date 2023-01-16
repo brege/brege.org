@@ -209,10 +209,8 @@ network.on('click', function (params) {
 
 // When the user picks a different algorithm
 const algorithmSelect = document.getElementById('lenses');
-algorithmSelect.addEventListener('change', function () {
-  if (selectedResults.length > 0) {
-    filterNodesAndEdges(selectedResults);
-  } 
+algorithmSelect.addEventListener('change', function (e) {
+  filterNodesAndEdges(selectedResults); 
 });
 
 // If physics is freaking out (affinities, too many nodes, etc), turn it off 
