@@ -39,7 +39,7 @@ const greenColorPalette = [
   '#1B5E20',  // Light Green 1000
 ];
 
-// Define a function for the nodes based on a color palette
+// Define the node styles
 function generateNodeStyles(colorPalette) {
   return {
     nodes: {
@@ -47,12 +47,12 @@ function generateNodeStyles(colorPalette) {
         background: colorPalette[3],  // Pallete 400
         border: colorPalette[5],  // Pallete 600  
         highlight: {
-          background: colorPalette[3],  // Pallete 700
+          background: colorPalette[3],  // Pallete 400 
           border: colorPalette[5],  // Pallete 600
         },
         hover: {
           background: colorPalette[5],  // Pallete 600
-          border: colorPalette[7],  // Pallete 600
+          border: colorPalette[7],  // Pallete 800
         },
       },
       font: {
@@ -129,7 +129,6 @@ document.getElementById('click-to-use').addEventListener('change', function() {
     options.clickToUse = false;
   }
   network.setOptions(options);
-  // update the appearance of the label element
   updateOptionAppearance('scroll-toggle', 'click-to-use', options.clickToUse);
 });
 
@@ -182,7 +181,10 @@ getNodesAndEdges().then(function (data) {
   });
 });
 
-// update the click-to-use option (scrolling v. zooming)
+/* update the click-to-use option
+   (weird naming, but it solves the scroll wheel/finger 
+    grabbing the graph and zooming, instead of scrolling/
+    gesture-ing down the page) */
 updateOptionAppearance('click-to-use', 'click-to-use', options.clickToUse);
 
 // DEMO: Add a single dummy node to the network graph
@@ -236,11 +238,12 @@ function filterNodesAndEdges(selectedResults) {
   let n = 0;
   if (selectedResults.length === 1) {
     n = 9;
-  } else if (selectedResults.length > 1 && selectedResults.length <= 4) {
-    n = 6;
-  } else if (selectedResults.length > 4) {
-    n = 4;
-  } //shitty
+  } else if (selectedResults.length > 1 && selectedResults.length < 6) {
+    n = 7;
+  } else if (selectedResults.length >= 6) {
+    n = 5;
+  }
+
 
   /** functionality **/
 
@@ -437,33 +440,6 @@ function algorithmChoice(selectedNodes, n=7) {
   }
 }
 
-// get the top n/2 nodes with a similarity of at least 0.1.
-function getRandomNodes(sortedSimilarities, n=7) {
-  // get the top 10% of the remaining nodes
-  const top10Percent = Math.floor(sortedSimilarities.length * 0.1);
-  const top10PercentSlice = sortedSimilarities.slice(n, n + top10Percent);
-  //console.log ('top10PercentSlice', top10PercentSlice);
-
-  // get the minimum similarity of the top 10% of the remaining nodes
-  const minSimilarity = top10PercentSlice[0][1];
-  //console.log('minSimilarity', minSimilarity);
-
-  // get the top n/2 nodes with a similarity of at least 0.1.
-  // we do this by randomly plucking n/2 nodes from the top 
-  // 10% of the remaining nodes until we get 3 nodes with a
-  // similarity of at least 0.1
-  let randomNodes = [];
-  while (randomNodes.length < Math.floor( n/2 )) {
-    const randomIndex = Math.floor(Math.random() * top10PercentSlice.length);
-    const randomNode = top10PercentSlice[randomIndex];
-    if (randomNode[1] >= minSimilarity/n) {
-      randomNodes.push(randomNode);
-    }
-  } 
-  //console.log('randomNodes', randomNodes);
-
-  return randomNodes;
-}
 
 // add a link to search food network, and also
 // display the selected results for copy/paste

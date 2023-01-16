@@ -96,7 +96,7 @@ This method was so helpful, I started dreaming of a computer tool to help me ske
 [post](https://www.reddit.com/r/datasets/comments/3bxlg7/i_have_every_publicly_available_reddit_comment/) 
 that 
 [spurred others](https://www.reddit.com/r/dataisbeautiful/comments/ae88pk/interactive_visualization_of_related_subreddits/) 
-to lay out some of the underlying ideas that apply to flavors in some way too: overlapping communities :: compatible flavors. 
+to lay out some of the underlying ideas here: overlapping communities :: compatible flavors. 
 
 ## Broader thoughts
 
@@ -110,8 +110,7 @@ chef's are unfortunately at a disadvantage creatively.
 Yes, we have recipes, but those are instructions, and do little to help us build on [ratio](https://ruhlman.com/ruhlmans-books/) or [balance](https://www.saltfatacidheat.com/).
 
 It would be nice to be able to have a playground to develop new plates or drinks, in the mildly abstract, without getting our hands dirty--just for once. 
-Recipes can teach you how to play a cover of your favorite band, but they don't teach you enough to go on tour.
-
+Recipes can teach you how to play a cover of your favorite band, but they don't teach you enough to go on tour with them.
 
 [^1]: In the book, the weight of the pairing is given by the emphasis of the text:
     * normal text means mentioned by at least one expert
