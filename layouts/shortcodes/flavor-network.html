@@ -20,12 +20,6 @@
     </label>
     <input type="checkbox" id="physics" checked>
   </div>
-  <div id="use-rng-toggle">
-    <label for="use-rng">
-      rng salt
-    </label>
-    <input type="checkbox" id="use-rng" checked>
-  </div>
   <div id="scroll-toggle">
     <label for="click-to-use">
       zoom lock
@@ -37,14 +31,14 @@
       lens:
     </label>
     <select id="lenses">
+      <option value="similarity" title="i.e. 'friends list' - see ingredients that have similar overall 'friendships' as my recipe items" selected>
+        similarity
+      </option>
+      <option value="affinity" title="i.e. 'besties' - see ingredients that are 'best friends' with my recipe items">
+        affinity
+      </option>
       <option value="hybrid" title="uses a mix of 'friendships' and 'besties' to see flavor combinations">
         hybrid
-      </option>
-      <option value="similarity" title="see ingredients that have similar overall 'friendships' as my recipe items" selected>
-        friend's list
-      </option>
-      <option value="affinity" title="see ingredients that are 'best friends' with my recipe items">
-        besties
       </option>
     </select>
   </div>

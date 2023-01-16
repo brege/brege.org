@@ -131,8 +131,6 @@ document.getElementById('click-to-use').addEventListener('change', function() {
   network.setOptions(options);
   // update the appearance of the label element
   updateOptionAppearance('scroll-toggle', 'click-to-use', options.clickToUse);
-  // TODO: why did I put this here?
-  updateOptionAppearance('use-rng-toggle', 'use-rng-toggle', options.clickToUse);
 });
 
 /* Goals:
@@ -193,13 +191,13 @@ network.setOptions({ nodes: { shape: 'text' } });
 network.setOptions({ nodes: { font: { size: 34 } } });
 network.setOptions({ nodes: { font: { color: '#6c757d' } } });
 
-// When the user selects a result, update the network graph
+// When the user selects a result, update the network graph 
 document.addEventListener('selectedResultsChanged', function (e) {
   const selectedResults = e.detail;
   filterNodesAndEdges(selectedResults);
 });
 
-// When the user clicks a node
+// When the user clicks a node, update the ranking
 network.on('click', function (params) {
   if (params.nodes.length > 0) {
     const nodeId = params.nodes[0];
@@ -207,13 +205,13 @@ network.on('click', function (params) {
   }
 });
 
-// When the user picks a different algorithm
+// When the user picks a different algorithm, update the network graph
 const algorithmSelect = document.getElementById('lenses');
 algorithmSelect.addEventListener('change', function (e) {
   filterNodesAndEdges(selectedResults); 
 });
 
-// If physics is freaking out (affinities, too many nodes, etc), turn it off 
+// When the physics is freakin' out, turn it off 
 network.on('stabilizationProgress', function(params) {
   const { iterations, total } = params;
   if (iterations > 0.9 * total) {
@@ -222,20 +220,6 @@ network.on('stabilizationProgress', function(params) {
     updateOptionAppearance('physics-toggle', 'physics', false);
   }
 });
-
-// Listen to the randomization checkbox
-// TODO: maybe we should just remove this since we can toggle
-// different algorithms now
-document.getElementById('use-rng').addEventListener('change', function() {
-  if (this.checked) {
-    options.useRNG = true;
-  } else {
-    options.useRNG = false;
-  }
-  // update the appearance of the label element
-  updateOptionAppearance('use-rng-toggle', 'use-rng', options.useRNG);
-});
-
 
 
 /** filter the nodes and edges based on the selected results **/
@@ -263,7 +247,7 @@ function filterNodesAndEdges(selectedResults) {
   // get the nodes that are similar to the selected nodes
   // from using the algorithmChoice
   const similarNodes = algorithmChoice(selectedResults, n);
-  console.log('similarNodes', similarNodes);
+  //console.log('similarNodes', similarNodes);
 
   // filter the nodes and edges based on the selected results
   const filteredNodes = nodes.filter(function (node) {
@@ -317,11 +301,6 @@ function filterNodesAndEdges(selectedResults) {
       level: 1,
     });
   });
-  // print the font size of the similar nodes
-  similarNodes.forEach(function (node) {
-    console.log('node', node[0], network.body.data.nodes.get(node[0]).font.size);
-  });
-
 
   // for any node that is not a selectedNode,
   // change the color of the node to the origin color
@@ -354,7 +333,6 @@ function filterNodesAndEdges(selectedResults) {
       });
     }
   });
-
 
   // change the physics options based on physics toggle
   document.getElementById('physics').addEventListener('change', function(e) {
@@ -406,7 +384,7 @@ function getNodesByEdgeWeight(selectedNodes, n=7) {
 
 /** B. get the nodes that have high ingredient similarities
  *  to the selected nodes **/
-function getSimilarNodes(selectedNodes, n=7) {
+function getNodesBySimilarity(selectedNodes, n=7) {
   const similarNodes = selectedNodes.map(function (node) {
     const nodeSimilarities = similarities[node];
     if (!nodeSimilarities) {
@@ -418,20 +396,9 @@ function getSimilarNodes(selectedNodes, n=7) {
       //console.log('sortedSimilarities', sortedSimilarities);
 
       /**  diversity algorithm  **/
-      n = Math.min(n, sortedSimilarities.length/2);
       const topSimilarNodes = sortedSimilarities.slice(0, n); 
 
-      // check if the use-rng option is checked
-      const useRNG = document.getElementById('use-rng').checked;
-      if (!useRNG) {
-        return topSimilarNodes;
-      } else {
-        // get the top 10% of the remaining nodes
-        const randomNodes = getRandomNodes(sortedSimilarities, n);
-        //console.log('randomNodes', randomNodes);
-        const combinedNodes = topSimilarNodes.concat(randomNodes);
-        return combinedNodes;
-      }
+      return topSimilarNodes;
     }
 
   }); // computational complexity of O(n^2)
@@ -450,7 +417,7 @@ function getSimilarNodes(selectedNodes, n=7) {
 // by checking the appropriate radio button, so we'll 
 // need to implement this function
 function getHybridNodes(selectedNodes, n=7) {
-  const similarNodes = getSimilarNodes(selectedNodes, n);
+  const similarNodes = getNodesBySimilarity(selectedNodes, n);
   const edgeNodes = getNodesByEdgeWeight(selectedNodes, n);
   const hybridNodes = similarNodes.concat(edgeNodes);
   return hybridNodes;
@@ -461,18 +428,14 @@ function getHybridNodes(selectedNodes, n=7) {
 function algorithmChoice(selectedNodes, n=7) {
   const algorithm = document.getElementById('lenses').value;
   console.log('algorithm:', algorithm);
-
   if (algorithm === 'hybrid') {
     return getHybridNodes(selectedNodes, n/Math.sqrt(2));
   } else if (algorithm === 'similarity') {
-    return getSimilarNodes(selectedNodes, n);
+    return getNodesBySimilarity(selectedNodes, n);
   } else if (algorithm === 'affinity') {
     return getNodesByEdgeWeight(selectedNodes, n);
   }
-
 }
-
-
 
 // get the top n/2 nodes with a similarity of at least 0.1.
 function getRandomNodes(sortedSimilarities, n=7) {
@@ -500,12 +463,7 @@ function getRandomNodes(sortedSimilarities, n=7) {
   //console.log('randomNodes', randomNodes);
 
   return randomNodes;
-} // computational complexity of O(n)
-
-
-
-
-
+}
 
 // add a link to search food network, and also
 // display the selected results for copy/paste

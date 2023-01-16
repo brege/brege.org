@@ -74,7 +74,7 @@
 }
 
 #network-settings {
-  padding: 4px var(--radius);
+  padding: 4px 0px; 
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -90,14 +90,19 @@
 
 /* for the lenses dropdown */
 #lenses-dropdown {
+  
   position: relative;
   font-size: 0.6em;
   padding: 0px var(--radius);
+  display: flex;
+  flex-direction: row;
 }
 
 #lenses {
   position: relative;
   padding: 1px var(--radius);
+  display: flex;
+  flex-direction: row;
 }
 
 /* style the dropdown */
@@ -119,6 +124,7 @@
   color: var(--content);
   cursor: pointer;
   outline: none;
+
 }
 
 /* style the dropdown arrow */
@@ -131,5 +137,22 @@
   background: var(--entry);
   cursor: pointer;
   pointer-events: none;
+}
+
+/* to make the text of all of the 
+ * children of the network div
+ * vertically centered
+ */
+#network {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* so that the network div
+ * is centered in the page
+ */
+#network {
+  margin: auto;
 }
 
