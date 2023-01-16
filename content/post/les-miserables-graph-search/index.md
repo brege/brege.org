@@ -9,6 +9,7 @@ cover:
   preview_only: true
 featured:
   image: 'network.png' #isn't working
+jquery: true
 ---
 
 *Les Miserables is one of my favorite books.  I read most of the original translation on a train ride to Portland, OR from Chicago, IL back in 2008 and enjoyed the remainder on the return trip back East.  It taught me compassion: when Valjean places the coin in Cosette's shoe.  Father Christmas always misses her.  There was an earlier passage of a man stepping on a coin in front of her, while she swept dressed in rags.*

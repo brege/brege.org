@@ -3,6 +3,7 @@ title: "Developing Seasons Histograms"
 date: 2022-12-26T02:29:42-05:00
 featured: false
 draft: true
+jquery: true
 ---
 
 {{< histogram jsonPath="/data/flavor/abundance.json" >}}
