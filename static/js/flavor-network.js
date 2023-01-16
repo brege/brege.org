@@ -237,13 +237,12 @@ function filterNodesAndEdges(selectedResults) {
   // rule for n, the number of similar nodes to return
   let n = 0;
   if (selectedResults.length === 1) {
-    n = 9;
+    n = 13;
   } else if (selectedResults.length > 1 && selectedResults.length < 6) {
     n = 7;
   } else if (selectedResults.length >= 6) {
     n = 5;
-  }
-
+  }  // should be done mathematically..
 
   /** functionality **/
 

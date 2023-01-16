@@ -27,8 +27,10 @@ The network is based on the
 
 Search for an ingredient you like, and the graph will refine to give you a web of ingredients that share highly similar flavor profiles. 
 Then, click on a new ingredient in the network to add it to your recipe above the search box (or to remove it).
-Clicking on either a search suggestion or a node has the same effect.
-Search is not sorted by the flavor metric, instead [lexically](https://fusejs.io/).
+Clicking on a recipe item or a node has the same effect.
+Search is not sorted by the flavor metric, it is instead sorted [lexically](https://fusejs.io/).
+
+This way, you can build out recipes or menu items from flavor compatability.
 
 ## Overview
 
