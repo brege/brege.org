@@ -30,7 +30,7 @@ Then, click on a new ingredient in the network to add it to your recipe above th
 Clicking on a recipe item or a node has the same effect.
 Search is not sorted by the flavor metric, it is instead sorted [lexically](https://fusejs.io/).
 
-This way, you can build out recipes or menu items from flavor compatability.
+In this way, you can start building out recipes, menu items and tastings from a consensus of delicious flavor combinations.
 
 ## Overview
 

@@ -223,7 +223,6 @@ network.on('stabilizationProgress', function(params) {
   }
 });
 
-
 /** filter the nodes and edges based on the selected results **/
 
 function filterNodesAndEdges(selectedResults) {
@@ -242,7 +241,7 @@ function filterNodesAndEdges(selectedResults) {
     n = 7;
   } else if (selectedResults.length >= 6) {
     n = 5;
-  }  // should be done mathematically..
+  }  // should be made mathematical
 
   /** functionality **/
 

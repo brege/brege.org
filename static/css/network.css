@@ -12,10 +12,15 @@
 }
 
 #network {
+  position: relative;
+  border-radius: var(--radius);
   float: left;
-  /*resize: both;*/  
-  /*overflow: auto;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
 .vis-network {
   border-radius: var(--radius); 
   height: 100%;
@@ -151,20 +156,4 @@
   pointer-events: none;
 }
 
-/* to make the text of all of the 
- * children of the network div
- * vertically centered
- */
-#network {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-/* so that the network div
- * is centered in the page
- */
-#network {
-  margin: auto;
-}
 
