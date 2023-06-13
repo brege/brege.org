@@ -30,7 +30,7 @@ Then, click on a new ingredient in the network to add it to your recipe above th
 Clicking on a recipe item or a node has the same effect.
 Search is not sorted by the flavor metric, it is instead sorted [lexically](https://fusejs.io/).
 
-In this way, you can start building out recipes, menu items and tastings from a consensus of delicious flavor combinations.
+In this way, you can start building out recipes, menu items and tastings from a consensus of flavor combinations.
 
 ## Overview
 
@@ -110,9 +110,7 @@ When it comes to tools available to chefs,
 compared to musicians, writers, and artists,
 chef's are unfortunately at a disadvantage creatively.
 Yes, we have recipes, but those are instructions, and do little to help us build on [ratio](https://ruhlman.com/ruhlmans-books/) or [balance](https://www.saltfatacidheat.com/).
-
-It would be nice to be able to have a playground to develop new plates or drinks, in the mildly abstract, without getting our hands dirty--just for once. 
-Recipes can teach you how to play a cover of your favorite band, but they don't teach you enough to go on tour with them.
+What might be more helpful, I think, is a playground for putting new food ideas together.
 
 [^1]: In the book, the weight of the pairing is given by the emphasis of the text:
     * normal text means mentioned by at least one expert
