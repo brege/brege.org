@@ -15,12 +15,12 @@ My undergrad was at [Grand Valley State University](https://gvsu.edu) where I st
 
 I am also a professional chef. 
 My culinary specialities are seafood and organic produce, although data suggests soups and sauces are my truer expression.
-My most natural state is in raucous, high-throughput kitchens. 
+My most natural state is in raucous, high-throughput kitchens.
 I'm fond of fermenting, pickling, brewing, smoking, and curing. While these require time, at go-time my cooking is geared towards speed, detail and efficiency.
 
 I've been a [Fedora](https://getfedora.org) Linux user for a while, since `fc14`.
 I enjoy tinkering with computers.
-I have built and restored many, as well as home servers, cryptogrphic miners, an automatic CD ripper, and made various media projects involving computer parts sourced from atypical places, e.g., the [WSU Surplus Store](https://surplus.wsu.edu/). 
+I have built and restored many, as well as home servers, cryptographic miners, an automatic CD ripper, and made various media projects involving computer parts sourced from atypical places, e.g., the [WSU Surplus Store](https://surplus.wsu.edu/). 
 I have worked with every [Raspberry Pi](https://www.raspberrypi.com/) board since their debute. 
 I have a server that I practiced maintaining a [LEMP](https://lemp.io/) stack on.
 
@@ -28,13 +28,13 @@ Softer things..  I love hockey, fishing, sometimes leathercraft and woodworking,
 
 <details> <summary> <b> Some more thoughts.. </b> </summary> <br/>
 
-I closed out my academic life at the end of 2017, finding a different path, yet still evermore envious of all of the incredibly mindful people I got to know through its journey.
+I closed out my academic life at the end of 2017, finding a different path, yet still evermore envious of all of the incredibly mindful people I got to know through my journey.
 I am forever grateful for the guidance that David Austin, Milun Rakovic and Matthew Duez, my advisors, have given me.
 
 I enjoy teaching, working through the hardest problems, complex puzzles, reading, basically all of the things an academic does, but when I measured myself--my work ethic, imagination, drive--I never truly felt I had their same *gift* in that space.
 It's worth noting that *gift* is not synonymous with 'less effort': archetypes in any discipline do not achieve without trying--you can't.  There are no *Will Hunting's* in this world.
 It's this nascent difference between life on easy-mode and the ability to work with ease. 
-The Italian word for this..umpf..I admired in others academically is [sprezzatura](https://en.wikipedia.org/wiki/Sprezzatura).  
+The Italian word for this, I learned, is called [sprezzatura](https://en.wikipedia.org/wiki/Sprezzatura).  
 
 The only medium I ever found myself to have experienced this nature, deep within, was with food, and maybe most of my accomplishments there don't exactly squeal *'gifted'*, but the way the processes click inside my brain is certainly *my* gift.
 
@@ -55,7 +55,7 @@ Something akin to sheet music, grammar structure, i.e., systems which let us exp
 
 Useful for design, pictures and numbers alone fall short in the dynamic creative processes of these three expressions of culture.
 What's unfair with food is the lack of an ability to construct our ideas visually in the *absence* of sensation.
-Yet, it is enough for me to remain hopeful, that these modes of culinary structures can be discovered and made more intelligible.
+Yet, it is enough for me to remain hopeful, that these modes of culinary structures can be discovered and made more intelligible to us.
 
 <br/> </details>
 

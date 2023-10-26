@@ -69,7 +69,9 @@ disableShare: true
 
 Chakravarti, K., Gupta, A., Bose, S., Duez, M.D., Caro, J., **Brege, W.**, Foucart, F., Ghosh, S., Kyutoku, K., Lackey, B.D. and Shibata, M.	
 *Systematic effects from black hole-neutron star waveform model uncertainties on the neutron star equation of state*,
-September 12, 2018 
+January 31, 2019
+[Physical Review D. 99(2), 024049](https://links.aps.org/doi/10.1103/PhysRevD.99.024049)
+*preprint*:
 [arXiv:1809.04349](https://arxiv.org/abs/1809.04349)
 		
 **Brege, W.**, Duez, M.D., Deaton, M.B.,  Foucart, F., Caro, J., Hemberger, D.A., Kidder, L.E.,O'Connor, E., Pfeiffer, H.P., Scheel, M.A. *Black hole-neutron star mergers using a survey of finite-temperature equations of state*, 
@@ -80,7 +82,9 @@ September 12, 2018
 			
 Foucart, F., Desai, D., **Brege, W.**, Duez, M.D. 4, Kasen, D., Hemberger, D.A., Kidder, L.E., Pfeiffer, H.P., Scheel, M.A., 
 *Dynamical ejecta from precessing neutron star-black hole mergers with a hot, nuclear-theory based equation of state*,
-November 3, 2016 
+November 3, 2016
+[Classical and Quantum Gravity 34(4) 044002](https://dx.doi.org/10.1088/1361-6382/aa573b)
+*preprint*:
 [arXiv:1611.01159](https://arxiv.org/abs/1611.01159)
 
 ## Contributed Talks
