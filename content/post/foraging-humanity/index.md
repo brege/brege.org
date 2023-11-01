@@ -39,14 +39,14 @@ This is a small survey of a show, a magazine, and some music I like that each pr
 
 This mosaic of found sound and vocal samples in large part created a music genre in its own right.  Well, mostly.  I think most have heard songs that kickstart or bridge their songs with an audio clip taken from a nature doc, political speech, or other movie.  But The Books did this to the extreme.
 
-{{< youtube url="https://www.youtube.com/watch?v=-lr9WshYouk" >}} 
+{{< youtube id="-lr9WshYouk" >}} 
 [The Books - Smells Like Content (3:42)](https://www.youtube.com/watch?v=-lr9WshYouk)
 
 In fact, each track is filled with an unimaginable number of recordings--sounds that bleed with every emotion of the original, forgotten storyteller within them.  There are also [aleatoric takes](https://en.wikipedia.org/wiki/Aleatoric_music) 
 
 What compelled me most was that the recordings they used were largely unscripted, probably all of which I'd never heard before.  In fact, I doubt most people could recognize any, which only made it more intriguing.  I wondered about the people the may have listened to some of those source tapes on long road trips.  In their carpeted basements while tying flies.  Recording into a taperecorder a fried thought no one was around to hear.
 
-{{< youtube url="https://www.youtube.com/watch?v=oD4anv60ow8" >}}
+{{< youtube id="oD4anv60ow8" >}}
 [The Books - All Bad Ends All (2:42)](https://www.youtube.com/watch?v=oD4anv60ow8)
 
 ## Found Magazine
@@ -73,7 +73,7 @@ It is no wonder why this magazine was so popular in the US penal system.  Realit
 
 Arguably the most inaccurately titled show ever, John Wilson sets out in New York City with nothing but his video camera recording, as he has done since he was a child, literally everything in his docuseries [How To with John Wilson](https://en.wikipedia.org/wiki/How_To_with_John_Wilson).  Spills and overflowing trash, candid public moments and private invitations, people spontaneously napping or ritualistic maneuvers that all walks of city life take add profoundly deep cuts into the human experience.
 
-{{< youtube url="https://www.youtube.com/watch?v=UUiRM7NOOow" >}}
+{{< youtube id="UUiRM7NOOow" >}}
 YouTube: [How To with John Wilson - Tough and Go](https://www.youtube.com/watch?v=UUiRM7NOOow)
 
 What I loved about this show, which thankfully made it to but sadly ended in three seasons, was the juxtaposition of Wilson's unpolished interview questioning skills with a carefully well thought-out narrative.  There is an incredible mastery of using random, second-long bits to string together larger, much broader points about our experiences in the world.  The travelogues benefit from people living in tight proximity among almost entirely manmade things.  Even when journeying, in promptu, out West to fail in filming **Burning Man**, Wilson somehow winds up inside an underground, former nuclear launch bunker that feels just as clostrophobic and unnatural as the city he's escaped.
