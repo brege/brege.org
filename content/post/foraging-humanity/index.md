@@ -1,18 +1,22 @@
 ---
 title: 'Foraging Humanity'
-summary: 'I talk about three mediums the captured the art of the lost and found'
-tags: []
+summary: 'I talk about three mediums that capture the art of the lost and found'
+tags: ["music", "foraging", "humanity", "hbo", "documentaries", "magazine", "lost+found", "culture"] 
 date: 2023-10-31T15:52:39-04:00
 draft: false
 cover:
-  image: ''  # e.g. 'cover.jpg'
-  caption: ''  # e.g. 'Photo: ... '
+  image: 'cover.jpg'
+  caption: 'A collage of the **How To with John Wilson** title card, **FOUND** magazine, and one of **The Books** albums'
 math: false
-ShowToc: false
-TocOpen: false
+ShowToc: true
+TocOpen: true
 ---
 
+This is a small survey of a show, a magazine, and some music I like that each provide unique lenses into our world, which all involve foraging through humanities discards to help us find truer emotion and greater meaning. 
+
 ## The Books
+
+[The Books](https://en.wikipedia.org/wiki/The_Books) were a musical duo that made music from found sound recordings.  Like a collage, bits of old personal casette tapes discovered at garage sales, thrift stores, and lost media found in old equipment and thrown out boxes were pieced together with minimal instrumention to create emotional, sonically beautiful tracks.
 
 <style>
   /* Define a custom class for the image container */
@@ -33,13 +37,10 @@ TocOpen: false
   <img src="lost-and-safe.jpg" alt="Image 3">
 </div>
 
-[The Books](https://en.wikipedia.org/wiki/The_Books) were a musical duo that made music from found sound recordings.  Like a collage, bits of old personal casette tapes discovered at garage sales, thrift stores, and lost media found in old equipment and thrown out boxes were pieced together with minimal instrumention to create emotional, sonically beautiful tracks.
+This mosaic of found sound and vocal samples in large part created a music genre in its own right.  Well, mostly.  I think most have heard songs that kickstart or bridge their songs with an audio clip taken from a nature doc, political speech, or other movie.  But The Books did this to the extreme.
 
 {{< youtube url="https://www.youtube.com/watch?v=-lr9WshYouk" >}} 
 [The Books - Smells Like Content (3:42)](https://www.youtube.com/watch?v=-lr9WshYouk)
-
-
-This mosaic of found sound and vocal samples in large part created a music genre in its own right.  Well, mostly.  I think most have heard songs that kickstart or bridge their songs with an audio clip taken from a nature doc, political speech, or other movie.  But The Books did this to the extreme.
 
 In fact, each track is filled with an unimaginable number of recordings--sounds that bleed with every emotion of the original, forgotten storyteller within them.  There are also [aleatoric takes](https://en.wikipedia.org/wiki/Aleatoric_music) 
 
@@ -75,7 +76,7 @@ Arguably the most inaccurately titled show ever, John Wilson sets out in New Yor
 {{< youtube url="https://www.youtube.com/watch?v=UUiRM7NOOow" >}}
 YouTube: [How To with John Wilson - Tough and Go](https://www.youtube.com/watch?v=UUiRM7NOOow)
 
-What I loved about this show, which thankfully made it to but sadly ended in three seasons, was the juxtaposition of Wilson's unpolished interview questioning skills with a carefully well thought-out narrative.  There is an incredible mastery of using random, second-long bits to string together larger, much broader points about our experiences in the world.  The travelogues benefit from people living in tight proximity among almost entirely manmade things.  Even when journying in promptu out west to fail filming Burning Man, Wilson somehow winds up inside an underground, former nuclear launch bunker that feels just as clostrophobic and unnatural as the city he escaped.
+What I loved about this show, which thankfully made it to but sadly ended in three seasons, was the juxtaposition of Wilson's unpolished interview questioning skills with a carefully well thought-out narrative.  There is an incredible mastery of using random, second-long bits to string together larger, much broader points about our experiences in the world.  The travelogues benefit from people living in tight proximity among almost entirely manmade things.  Even when journeying, in promptu, out West to fail in filming **Burning Man**, Wilson somehow winds up inside an underground, former nuclear launch bunker that feels just as clostrophobic and unnatural as the city he's escaped.
 
 ## Conclusions
 
