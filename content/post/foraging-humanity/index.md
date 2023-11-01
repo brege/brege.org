@@ -51,7 +51,7 @@ What compelled me most was that the recordings they used were largely unscripted
 
 ## Found Magazine
 
-[Found Magazine](https://en.wikipedia.org/wiki/Found_Magazine) was created by another duo in Ann Arbor, Michigan whose pages were a collage of scrap notes and photos sent in to the editors.  In it, these glimpses of averyday minutia are scanned into its pages, usually without any continuity, often bearing some of the weather and stains obtained on its way in and out of the trash.
+[Found Magazine](https://en.wikipedia.org/wiki/Found_Magazine) was created by another duo in Ann Arbor, Michigan whose pages were a collage of scrap notes and photos sent in to the editors.  In it, these glimpses of everyday minutia are scanned into its pages, usually without any continuity, often bearing some of the weather and stains obtained on its way in and out of the trash.
 
 ![4x2 grid of Found magazine covers over the years.  They all have a collage-like build quality to them.](FOUND+Magazine+Covers.jpg)
 [Source](https://images.squarespace-cdn.com/content/507dba43c4aabcfd2216a447/1377200982709-D8CFHDZBV9GAUZ38NUC9/FOUND+Magazine+Covers.jpg?format=1000w&content-type=image%2Fjpeg)
@@ -71,12 +71,14 @@ It is no wonder why this magazine was so popular in the US penal system.  Realit
 ![Picture of How To with John Wilson card shows director at three angles in colage on a washed out background of New York](How-To-With-John-Wilson.avif)
 [Source](https://static1.colliderimages.com/wordpress/wp-content/uploads/2022/01/How-To-With-John-Wilson.jpg)
 
-Arguably the most inaccurately titled show ever, John Wilson sets out in New York City with nothing but his video camera recording, as he has done since he was a child, literally everything in his docuseries [How To with John Wilson](https://en.wikipedia.org/wiki/How_To_with_John_Wilson).  Spills and overflowing trash, candid public moments and private invitations, people spontaneously napping or ritualistic maneuvers that all walks of city life take add profoundly deep cuts into the human experience.
+Arguably the most inaccurately titled show ever, John Wilson sets out in New York City with nothing but his video camera recording, as he has done since he was a child, literally everything. In his docuseries [How To with John Wilson](https://en.wikipedia.org/wiki/How_To_with_John_Wilson), there are shots of spills and overflowing trash, candid public moments and private invitations, people spontaneously napping or ritualistic maneuvers that all walks of city life take.  But moreso, it's the profoundly deep cuts into the human experience accompanying the imagery that make it so special.
 
 {{< youtube id="UUiRM7NOOow" >}}
-YouTube: [How To with John Wilson - Tough and Go](https://www.youtube.com/watch?v=UUiRM7NOOow)
+YouTube: [How To with John Wilson - Touch and Go](https://www.youtube.com/watch?v=UUiRM7NOOow)
 
-What I loved about this show, which thankfully made it to but sadly ended in three seasons, was the juxtaposition of Wilson's unpolished interview questioning skills with a carefully well thought-out narrative.  There is an incredible mastery of using random, second-long bits to string together larger, much broader points about our experiences in the world.  The travelogues benefit from people living in tight proximity among almost entirely manmade things.  Even when journeying, in promptu, out West to fail in filming **Burning Man**, Wilson somehow winds up inside an underground, former nuclear launch bunker that feels just as clostrophobic and unnatural as the city he's escaped.
+What I loved about this show, which thankfully made it to (but sadly ended in) three seasons, was the juxtaposition of Wilson's unpolished interview/questioning skills with a carefully well thought-out narrative.  There is an incredible mastery of using random, second-long bits to string together larger, much broader points about our experiences in the world.  
+
+The travelogues benefit from people living in tight proximity among almost entirely manmade things.  Even when journeying, in promptu, out West to fail in filming **Burning Man**, Wilson somehow winds up inside an underground, former nuclear launch bunker that feels just as claustrophobic and unnatural as the city he's escaped.
 
 ## Conclusions
 
