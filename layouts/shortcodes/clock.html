@@ -52,7 +52,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px;
   }
 
   .header-bar {
@@ -64,7 +63,6 @@
     position: absolute;
     top: 0;
     left: 0;
-    padding: 10px; /* Optional: Add padding */
   }
 
   .base-url {
@@ -85,16 +83,13 @@
     text-align: center;
   }
 
-  .time {
-    // font-family: 'Courier New', monospace; /* Optional: Use a monospace font for better alignment */
-  }
 
   .rotate-button,
   .dark-mode-button {
     font-size: 1.5em;
     border: none;
     cursor: pointer;
-    margin-right: 5px; /* Adjust the margin between buttons */
+    margin-right: 10px; /* Adjust the margin between buttons */
   }
 
   header, footer {
@@ -125,7 +120,7 @@
     switch (rotationState) {
       case 90:
       case 270:
-        fontSize = (viewportHeight * 0.9) / (timeString.length);
+        fontSize = (viewportHeight * 1.2) / (timeString.length);
         break;
       case 0:
       case 180:
