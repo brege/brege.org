@@ -13,7 +13,7 @@ ShowToc: false
 TocOpen: false
 ---
 
-Consider the the Epley formula for estimating one-rep max weight:
+Consider the Epley formula for estimating one-rep max weight:
 
 $$
 W_\textrm{1RM} = W * \left(1 + \frac{R}{30}\right)
