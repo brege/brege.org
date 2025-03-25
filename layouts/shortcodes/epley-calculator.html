@@ -1,0 +1,149 @@
+<link rel="stylesheet" href="{{ "css/calculator.css" | relURL }}">
+<div id="calculator">
+  <label for="weight" class="form-label"><b>Initial Weight</b> (lbs):</label>
+  <input type="number" id="weight" class="form-control" value="110" min="40" max="1000">
+  <br>
+
+  <label for="reps" class="form-label"><b>Initial Reps</b>:</label>
+  <input type="number" id="reps" class="form-control" value="5" min="1" max="30">
+  <br>
+
+  <!-- Rep range variation dropdown -->
+  <label for="repRange" class="form-label"><b>Rep Range Variation:</b></label>
+  <select id="repRange" class="post-tags">
+    <option value="0">±(R₀/2)</option> <!-- Default behavior -->
+    <option value="1">±1</option>
+    <option value="2">±2</option>
+    <option value="3">±3</option>
+    <option value="4">±4</option>
+    <option value="5">±5</option>
+    <option value="6">±6</option>
+    <option value="7">±7</option>
+    <option value="8">±8</option>
+    <option value="9">±9</option>
+    <option value="10">±10</option>
+    <option value="11">±11</option>
+    <option value="12">±12</option>
+    <option value="13">±13</option>
+    <option value="14">±14</option>
+    <option value="15">±15</option>
+    <option value="16">±16</option>
+    <option value="17">±17</option>
+    <option value="18">±18</option>
+    <option value="19">±19</option>
+    <option value="20">±20</option>
+  </select>
+  <br>
+
+  <button onclick="calculateResults()" class="btn btn-primary">Calculate</button>
+
+  <h3>Epley Pathway</h3>
+  <table id="resultsTable" class="table table-dark">
+    <thead>
+      <tr>
+        <th>Weight (lbs)</th>
+        <th>Reps</th>
+        <th>1RM (lbs)</th>
+        <th id="effectiveRMHeader">Effective 5RM (lbs)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Results will be populated here -->
+    </tbody>
+  </table>
+
+  <script>
+    function calculate1RM(weight, reps) {
+      return weight * (1 + reps / 30);
+    }
+
+    function calculateResults() {
+      const W_0 = parseInt(document.getElementById('weight').value);
+      const R_0 = parseInt(document.getElementById('reps').value);
+      const repVariation = parseInt(document.getElementById('repRange').value);
+
+      // Default behavior: Calculate the rep range based on the floor of R_0 / 2 (±R_0/2)
+      const defaultRepVariation = Math.floor(R_0 / 2);
+
+      // If the user has selected a rep variation, use it; otherwise, default to ±(R_0/2)
+      const finalRepVariation = repVariation === 0 ? defaultRepVariation : repVariation;
+
+      // Calculate the rep range based on selected or default variation: ± repVariation
+      const repRangeLower = Math.max(1, R_0 - finalRepVariation); // Ensuring the lower bound is at least 1
+      const repRangeUpper = Math.min(30, R_0 + finalRepVariation); // Ensuring the upper bound doesn't exceed 30
+
+      const lowerLimit = W_0;
+      const upperLimit = W_0 + 5;
+
+      const validPairs = [];
+
+      // Update the table header dynamically to reflect the chosen reps
+      document.getElementById('effectiveRMHeader').textContent = `Effective ${R_0}RM (lbs)`;
+
+      // Iterate over all weights from 10 lb to 1000 lb, incrementing by 5
+      for (let W = 10; W <= 1000; W += 5) {
+        // Iterate through all repetitions within the calculated rep range
+        for (let R = repRangeLower; R <= repRangeUpper; R++) {
+          const computed1RM = calculate1RM(W, R);
+
+          // Calculate the effective RM for the user-defined reps (R_0)
+          const effectiveRM = computed1RM / (1 + R_0 / 30);
+
+          // Check if the effective RM is within the range [W_0, W_0 + 5]
+          if (effectiveRM >= lowerLimit && effectiveRM <= upperLimit) {
+            validPairs.push({ W, R, computed1RM, effectiveRM });
+          }
+        }
+      }
+
+      // Sort results by Effective RM
+      validPairs.sort((a, b) => a.effectiveRM - b.effectiveRM);
+
+      // Display results in table
+      const resultsTable = document.getElementById('resultsTable').getElementsByTagName('tbody')[0];
+      resultsTable.innerHTML = ''; // Clear previous results
+
+      let finalRowAdded = false;
+
+      validPairs.forEach(pair => {
+        const row = resultsTable.insertRow();
+        row.insertCell(0).textContent = pair.W;
+        row.insertCell(1).textContent = pair.R;
+        row.insertCell(2).textContent = pair.computed1RM.toFixed(2);
+        row.insertCell(3).textContent = pair.effectiveRM.toFixed(2);
+
+        // Add bold class to rows with weight within +/- 5 of initial weight
+        if (Math.abs(pair.W - W_0) <= 5) {
+          row.classList.add('bold-weight');
+        }
+
+        // Ensure we add the final target row (W_0 + 5, R_0) at the end
+        if (pair.W === W_0 + 5 && pair.R === R_0 && !finalRowAdded) {
+          finalRowAdded = true;
+        }
+      });
+
+      // If the final row wasn't added, we manually add it
+      if (!finalRowAdded) {
+        const finalRow = resultsTable.insertRow();
+        finalRow.insertCell(0).textContent = W_0 + 5;
+        finalRow.insertCell(1).textContent = R_0;
+        finalRow.insertCell(2).textContent = calculate1RM(W_0 + 5, R_0).toFixed(2);
+        finalRow.insertCell(3).textContent = (calculate1RM(W_0 + 5, R_0) / (1 + R_0 / 30)).toFixed(2);
+
+        // Ensure this row is highlighted
+        finalRow.classList.add('bold-weight');
+      }
+    }
+
+    // Prepopulate the table when the page loads
+    window.addEventListener('DOMContentLoaded', (event) => {
+      calculateResults();
+    });
+
+  </script>
+
+  <hr/>
+
+</div>
+
