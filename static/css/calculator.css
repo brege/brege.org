@@ -107,3 +107,8 @@
   }
 }
 
+.progression-caption {
+  font-size: 14px;
+  text-align: center;
+  color: var(--primary);  /* Adjust to your theme */
+}

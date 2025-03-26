@@ -29,14 +29,24 @@ Because the formula is nonlinear, this requires an iterative approach.  I've mad
 
 {{< epley-calculator >}}
 
+### My Progression Scheme
+
 This makes it straightforward for me to also compute the warmup sets needed for my leading barbell exercise.  Recently, I've found good success in pyramiding warmups using my calculated $\left(30, 20, 10\right)\textrm{RM}$'s for $\left( 12, 8, 4 \right) \textrm{reps}$, respectively.  
 
 In addition, another scheme I've been using for strength focused exercises has been, after 3-6 reps of heavy weight for three sets, dropset into $\left(10,20\right)\textrm{RM}$ for $\left(8, 12..\textrm{amrap}\right)$, respectively, to increase my work volume without chewing up my joints, leaving $2+ \textrm{rir}$.  Here, $\textrm{amrap} = $ "as many reps as possible" and $\textrm{rir} =$ "reps in reserve".  My thoughts here reflect the want to cover warmup (3), strength (3-4), and hypertrophy (2), in a single leading compound exercise.
 
-### Work in Progress
+{{< progression-chart weight=135 
+                      reps=5 
+                      caption="<b>Progression Chart Example: Set Breakdown for Leading Barbell Lift.</b> The width of the bins represents the number of reps, $R$, denoted inside the bins. The weigths, $W_{N\textrm{RM}}$ are in lbs, represented as the height of the bins.  From left to right, the weights in my scheme are: 10RM, 20RM, 30RM, 5RM  (3x's), 10RM, 20RM.  This provides a visual sense of volume in each zone of the exercise. <i> If you change the weights in the calculator, this plot will update.  Because this is a hybrid model for strength training and hypertrophy, it will bind the rep-ranges between 3-6 reps.</i>"
+>}}
 
-- make a similar pathway for the goal of adding a rep, instead of adding $5 \textrm{lbs}$ to the bar  
-- make a histogram that shows my pyramid scheme that includes warmup, worksets, and dropsets
+### Possible Improvements
+
+* Create a similar pathway table for the goal of adding a rep, instead of adding $5 \textrm{lbs}$ to the bar.
+
+* Implement a pyramid scheme with broader rep ranges. I haven't thought much about this yet, but when I can hit 7 reps on heavy compound lifts, I feel like I'm entering a moderately safe 7-12 rep range. At that point, the effort level shifts to something different.
+
+* The Epley model is just one of many. I haven't explored the others yet because I could solve this with fractional arithmetic in my head while "ape-brained" in the gym. However, adding a dropdown toggle to choose different models, and referring to recent literature on advancements in curve fitting, would make this tool more robust. Similar to how the Opus audio codec performs at different fidelities with various bitrates, I'm sure that the pathway from 1RM to 30RM follows a more complex, multi-fitted approach.
 
 ### References
 

@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="{{ "css/calculator.css" | relURL }}">
 <div id="calculator">
   <label for="weight" class="form-label"><b>Initial Weight</b> (lbs):</label>
-  <input type="number" id="weight" class="form-control" value="110" min="40" max="1000">
+  <input type="number" id="weight" class="form-control" value="135" min="10" max="1000">
   <br>
 
   <label for="reps" class="form-label"><b>Initial Reps</b>:</label>
@@ -32,10 +32,18 @@
     <option value="18">±18</option>
     <option value="19">±19</option>
     <option value="20">±20</option>
+    <option value="21">±21</option>
+    <option value="22">±22</option>
+    <option value="23">±23</option>
+    <option value="24">±24</option>
+    <option value="25">±25</option>
+    <option value="26">±26</option>
+    <option value="27">±27</option>
+    <option value="28">±28</option>
+    <option value="29">±29</option>
+    <option value="30">±30</option>
   </select>
   <br>
-
-  <button onclick="calculateResults()" class="btn btn-primary">Calculate</button>
 
   <h3>Epley Pathway</h3>
   <table id="resultsTable" class="table table-dark">
@@ -51,6 +59,10 @@
       <!-- Results will be populated here -->
     </tbody>
   </table>
+
+  <div id="chart-container">
+    <!-- Chart will be dynamically generated here -->
+  </div>
 
   <script>
     function calculate1RM(weight, reps) {
@@ -134,9 +146,53 @@
         // Ensure this row is highlighted
         finalRow.classList.add('bold-weight');
       }
+
+      updateChart(validPairs);
     }
 
-    // Prepopulate the table when the page loads
+    function updateChart(validPairs) {
+      const chartData = validPairs.map(pair => ({
+        weight: pair.W,
+        effectiveRM: pair.effectiveRM
+      }));
+
+      // Assuming the chart is initialized with a specific chart library (e.g., Chart.js)
+      const ctx = document.getElementById("chart-container");
+      if (ctx && window.myChart) {
+        window.myChart.data.labels = chartData.map(data => data.weight);
+        window.myChart.data.datasets[0].data = chartData.map(data => data.effectiveRM);
+        window.myChart.update();
+      } else {
+        // Initialize a new chart if none exists (for the first time)
+        const newChart = new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: chartData.map(data => data.weight),
+            datasets: [{
+              label: 'Effective RM',
+              data: chartData.map(data => data.effectiveRM),
+              borderColor: 'rgb(75, 192, 192)',
+              fill: false,
+            }]
+          },
+          options: {
+            responsive: true,
+            scales: {
+              x: { title: { display: true, text: 'Weight (lbs)' } },
+              y: { title: { display: true, text: 'Effective RM (lbs)' } }
+            }
+          }
+        });
+        window.myChart = newChart;
+      }
+    }
+
+    // Event listeners to update calculations and chart instantly
+    document.getElementById('weight').addEventListener('input', calculateResults);
+    document.getElementById('reps').addEventListener('input', calculateResults);
+    document.getElementById('repRange').addEventListener('change', calculateResults);
+
+    // Prepopulate the table and chart when the page loads
     window.addEventListener('DOMContentLoaded', (event) => {
       calculateResults();
     });
@@ -144,6 +200,5 @@
   </script>
 
   <hr/>
-
 </div>
 
