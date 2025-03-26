@@ -1,5 +1,6 @@
 <div class="progression-chart">
-  <svg id="progressionChart" width="800" height="400"></svg>
+  <svg id="progressionChart" width="100%" height="auto" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid meet"></svg>
+
   {{ with .Get "caption" }}
     <div class="progression-caption">{{ . | safeHTML }}</div>
   {{ end }}

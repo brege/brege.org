@@ -112,3 +112,23 @@
   text-align: center;
   color: var(--primary);  /* Adjust to your theme */
 }
+
+.progression-chart {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden; /* Prevents overflow */
+  box-sizing: border-box;
+  position: relative;
+}
+
+#progressionChart {
+  width: 115%;
+  max-height: 400px; /* Set max height to prevent it from becoming too tall */
+}
+
+@media (max-width: 800px) {
+  #progressionChart {
+    height: auto; /* Adjust height for mobile devices */
+  }
+}
+
