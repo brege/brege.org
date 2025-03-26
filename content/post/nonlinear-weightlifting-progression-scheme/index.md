@@ -23,7 +23,7 @@ where to compute your one-rep max weight for a given lift, $W_{1RM}$, you simply
 
 This formula has been empirically validated [^1] and is a useful tool not just for estimating your max weight for a given weight-rep pair $\left(W, R\right)$, but also to compute the amount of predictable reps you can do for any other given weight, in the limit of your one-rep max.
 
-This is quite useful for plateaus.  For example, if you get stuck progressing the Overhead Press from 115 lbs for 5 reps after succesfully performing the OHP for 110 lbs for 5 reps, you may need to strategize.  Using the Epley formula, to go from $\left( 110\textrm{lb} , 5 \textrm{reps} \right)  \rightarrow \left(115 \textrm{lb}, 5 \textrm{reps}\right)  $, you are effectively increasing your one-rep max: $W_\textrm{1RM}: 128 \textrm{lbs} \rightarrow 134 \textrm{lbs}$.  Our goal here is to effectively increment your $W_\textrm{1RM}$ in smaller steps. 
+This is quite useful for plateaus.  For example, if you get stuck progressing the Overhead Press to 115 lbs for 5 reps after succesfully performing the OHP for 110 lbs for 5 reps, you may need to strategize.  Using the Epley formula, to go from $\left( 110\textrm{lb} , 5 \textrm{reps} \right)  \rightarrow \left(115 \textrm{lb}, 5 \textrm{reps}\right)  $, you are effectively increasing your one-rep max: $W_\textrm{1RM}: 128 \textrm{lbs} \rightarrow 134 \textrm{lbs}$.  Our goal here is to effectively increment your $W_\textrm{1RM}$ in smaller steps. 
 
 Because the formula is nonlinear, this requires an iterative approach.  I've made a calculator that will help you find this path over different $\left(W, R\right)$ pairs.  It defaults to using a range of reps roughly half the total initial reps, $ R_0 $, used.
 
