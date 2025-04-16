@@ -8,7 +8,7 @@ enableInlineShortcodes = true
 # prevent build failures when using Hugo's Instagram shortcode 
 # due to deprecated Instagram API.
 # See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
-ignoreErrors = ["error-remote-getjson"]
+#ignoreErrors = ["error-remote-getjson"]
 
 pygmentsUseClasses = true
 enableEmoji = true
@@ -49,6 +49,8 @@ title = "brege.org"
   defaultTheme = 'auto' 
   disableScrollToTop = true
   disableAnchorHeadings = false
+
+  mainSections = ['post']
 
 [params.editPost]
   URL = "https://github.com/brege/brege.org/tree/master/content"
@@ -93,16 +95,6 @@ title = "brege.org"
   name = 'rss'
   url = '/index.xml'
 
-#[[params.fuseOpts]]
-#  isCaseSensitive = false
-#  shouldSort = true
-#  location = 0
-#  distance = 1_000
-#  threshold = 0.4
-#  minMatchCharLength = 3
-#  keys = [ "title", "permalink", "summary", "content" ]
-# ------------------------------
-
 # needed to  render raw HTML (e.g. <sub>, <sup>, <kbd>, <mark>)
 [markup]
   [markup.goldmark]
@@ -132,6 +124,11 @@ title = "brege.org"
     name = "posts"
     url = "/post/"
     weight = 20
+  [[menu.main]]
+    identifier = "recipes"
+    name = "recipes"
+    url = "/recipes/"
+    weight = 25
   [[menu.main]]
     identifier = "contact"
     name = "contact"
