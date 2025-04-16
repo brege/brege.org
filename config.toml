@@ -1,7 +1,6 @@
 baseURL = "https://brege.org"
 author = "Wyatt Brege"
 copyright = "Copyright (c) 2016-2025 Wyatt Brege"
-paginate = 6
 languageCode = "en"
 DefaultContentLanguage = "en"
 enableRobotsTXT = false
@@ -177,4 +176,6 @@ series = "series"
     disableInlineCSS = true
 
 
+[pagination]
+  pagerSize = 6
 

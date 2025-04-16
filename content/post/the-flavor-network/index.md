@@ -8,6 +8,7 @@ date: 2023-01-04T04:04:49-05:00
 cover:
   image: 'lemon-basil-vanilla.png'
   hidden: true
+  hiddenInList: false
 jquery: true
 draft: false
 showToc: false

@@ -46,14 +46,14 @@ In fact, each track is filled with an unimaginable number of recordings--sounds 
 [Stomp](https://en.wikipedia.org/wiki/Stomp_(theatrical_show))
 or [Anathallo](https://en.wikipedia.org/wiki/Anathallo).
 
-What compelled me most was the unscripted essence of the recordings.  I wondered about the people the may have listened to some of those source tapes on long road trips, or recorded there.  Like archives of thoughts from carpeted basements, strong together from one fried thought to the next.
+What compelled me most was the unscripted essence of the recordings.  I wondered about the people that may have listened to some of those source tapes on long road trips, or recorded there.  Like archives of thoughts from carpeted basements, strung together from one fried thought to the next.
 
 {{< youtube id="oD4anv60ow8" >}}
 [The Books - All Bad Ends All (2:42)](https://www.youtube.com/watch?v=oD4anv60ow8)
 
 ## Found Magazine
 
-[Found Magazine](https://en.wikipedia.org/wiki/Found_Magazine) was created by another duo based in Ann Arbor, Michigan whose pages were each a collage of scrap notes and photos sent in to them.  In it, glimpses of everyday minutia are scanned into its pages, without continuity, often bearing the weather and stains obtained in journey from the trash.
+[Found Magazine](https://en.wikipedia.org/wiki/Found_Magazine) was created by another duo, based in Ann Arbor, Michigan whose pages were each a collage of scrap notes and photos sent in to them.  In it, glimpses of everyday minutia are scanned into its pages, without continuity, often bearing the weather and stains obtained in journey from the trash.
 
 ![4x2 grid of Found magazine covers over the years.  They all have a collage-like build quality to them.](FOUND+Magazine+Covers.jpg)
 [Source](https://images.squarespace-cdn.com/content/507dba43c4aabcfd2216a447/1377200982709-D8CFHDZBV9GAUZ38NUC9/FOUND+Magazine+Covers.jpg?format=1000w&content-type=image%2Fjpeg)
@@ -66,7 +66,7 @@ People's experiences simultaneously made out to be both relatable and unlivable.
 ![FOUND scrap note says: "7th Grade. Dear Katie, I won't forgive you for that what happend Thursday ant I'm no Longer being frie with you because you're annoying. from, Zyan"](ANNOYING-crop.jpg)
 [Source](http://foundmagazine.com/find/annoying/)
 
-It is no wonder why this magazine was so popular in the US penal system.  Shy of living in it, its these discards that are made to share our bond.  To me, there is an inner nature here lost in most documentaries (ugh, Netflix), let alone all reality TV shows: they are over prompted and epicly driven.  But the stories in *Found* were of a different species, one that was free of slant, rich in humor, tied deeply in emotion and all of our imperfections.
+It is no wonder why this magazine was so popular in the US penal system.  Shy of living in it, it's these discards that are made to share our bond.  To me, there is an inner nature here lost in most documentaries (ugh, *Netflix*), let alone all reality TV shows: they are over prompted and epicly driven.  But the stories in *Found* were of a different species, one that was free of slant, rich in humor, tied deeply in emotion and all of our imperfections.
 
 ## How To with John Wilson
 

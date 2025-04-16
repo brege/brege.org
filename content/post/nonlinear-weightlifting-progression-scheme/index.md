@@ -6,8 +6,9 @@ summary: 'Using the Epley formula for estimating a pathway through plateaus'
 draft: false
 aliases: ['epley']
 cover:
-  image: '' 
-  caption: ''  
+  image: 'progression-histogram.png' 
+  hidden: true
+  hiddenInList: false
 math: true
 ShowToc: false
 TocOpen: false

@@ -7,6 +7,7 @@ draft: false
 cover:
   image: "fruit-network-images.png"
   hidden: true
+  hiddenInList: false
 ---
 
 This is a follow-up to the previous post [Network Graphs in Hugo](/post/network-graphs-in-hugo/).

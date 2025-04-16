@@ -6,6 +6,7 @@ draft: false
 cover:
   image: "fruit-network-graph.png"
   hidden: true
+  hiddenInList: false
 ---
 
 This is a simple toy to see how a network graph can be added in a Hugo article.  I'll be testing new features on it as I learn new things.
