@@ -100,7 +100,7 @@ title = "brege.org"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
-  [markup.highligh]
+  [markup.highlight]
       noClasses = true
   [tableOfContents]
     ordered = true

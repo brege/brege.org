@@ -59,59 +59,6 @@ fi
 
 mkdir -p "$final_output_dir"
 
-# If Hugo mode, generate a full index.md with recipe links and script
-if ! $no_hugo; then
-    index_file="$final_output_dir/index.md"
-    SCRIPT_PATH="$(realpath "$0")"
-
-    {
-        # Frontmatter + intro
-        echo
-        echo "---"
-        echo "title: 'Recipes'"
-        echo "ShowTOC: false"
-        echo "draft: false"
-        echo "date: $DATE"
-        echo "---"
-
-        echo "These recipes are for a production kitchen. The quantities are much larger than what is appropriate for home use. These are speed recipes in the sense the user knows their way around their equipment."
-        echo 
-        echo "## Production Recipes"
-
-
-        # Recipe list
-        for dir in "$final_output_dir"/*/; do
-            [ -d "$dir" ] || continue
-            slug=$(basename "$dir")
-            title=$(grep -m1 '^title:' "$dir/index.md" | sed 's/^title:[[:space:]]*//; s/^"//; s/"$//')
-            echo "- [${title:-$slug}](/recipes/$slug/)"
-        done
-
-        echo
-        echo "## Converting Gourmet Recipe Manager HTML to Markdown"
-        echo 
-        echo "You'll have to change the paths in the script."
-        echo "I wrote this script to automatically convert the now abandoned "
-        echo "[Gourmet Recipe Manager](https://github.com/thinkle/gourmet) output HTML files to:"
-        echo "Markdown.  You can run this script with --no-hugo to generate normal markdown"
-        echo "files.  If you download this script to the same directory as the output from "
-        echo "*Gourmet* > *Files* > *Export all recipes* > *HTML* as the output format in the "
-        echo "file picker.  Otherwise, you can specify --input= and --output= or"
-        echo "in long form or -i and -o in short form to change the paths."
-        echo 
-        echo "<details>"
-        echo "<summary><strong>Show script used to generate these recipes</strong></summary>"
-        echo
-        echo '```bash'
-        cat "$SCRIPT_PATH"
-        echo '```'
-        echo "</details>"
-
-    } > "$index_file"
-
-    echo "Wrote Hugo index with embedded script and recipe list to $index_file"
-fi
-
 # --- Convert recipes ---
 shopt -s nullglob
 files=( "$INPUT_DIR"/*.htm "$INPUT_DIR"/*.html )
@@ -153,12 +100,17 @@ for file in "${files[@]}"; do
             echo "tags: []"
             echo "date: 2018-01-01" # "$DATE"
             echo "draft: false"
+            #echo "type: recipe"
             echo "ShowTOC: false"
             echo "---"
             echo
+            echo "{{% recipe %}}"
+            echo
+            echo "### $title"
+            echo
         fi
 
-        echo "**Author:** $AUTHOR"
+        echo "**Author:** *$AUTHOR*"
         echo
         [[ -n "$yield" ]] && echo "**Yield:** $yield"
         echo
@@ -176,10 +128,16 @@ for file in "${files[@]}"; do
       | sed -E 's/\\$//' \
       | sed -E 's/\[.*?\]//g' \
       | sed -E 's/\{[^}]+\}//g' \
+      | sed -E 's/^### Instructions/#### Directions:/I' \
+      | sed -E 's/^### Notes/#### Notes:/I' \
+      | sed -E 's/^### Ingredients/#### Ingredients:/I' \
       | sed '/^\s*$/N;/^\s*\n\s*$/D' \
       | awk 'BEGIN {skip=1} /^\s*#/ && skip {next} {skip=0} 1')
 
     echo "$clean_body" >> "$output_file"
+    if ! $no_hugo; then 
+      echo "{{% /recipe %}}" >> "$output_file"
+    fi
     #echo "✅ Converted $file to $output_file"
 done
 
