@@ -6,11 +6,15 @@ draft: false
 ShowTOC: false
 ---
 
+{{% recipe %}}
+
+### Ranchero Sauce
+
 **Author:** Wyatt Brege
 
 
 
-### Ingredients
+#### Ingredients:
 
 -   4 Quart Tomato Scraps
 -   1 ea Green Bell Pepper
@@ -22,8 +26,9 @@ ShowTOC: false
 -   1/4 Cup Chili Powder
 -   tt Salt and Fine Black Pepper
 
-### Instructions 
+#### Directions: 
 
 Julienne the peppers and onions. Dice the tomato scraps. In a large
 saute pan, saute onions until tender. Add the peppers and saute until
 soft. Add tomatoes, garlic and seasoning. Cook to reduce.
+{{% /recipe %}}

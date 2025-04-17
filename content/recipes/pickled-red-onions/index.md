@@ -6,12 +6,16 @@ draft: false
 ShowTOC: false
 ---
 
+{{% recipe %}}
+
+### Pickled Red Onions
+
 **Author:** Wyatt Brege
 
 **Yield:** 4 quarts
 
 
-### Ingredients
+#### Ingredients:
 
 -   1 Quart White Wine Vinegar
 -   1 Quart Water
@@ -22,10 +26,11 @@ ShowTOC: false
 -   1/2 ounce Crushed Red Pepper Flakes
 -   1/3 Cup Lemon Juice
 
-### Instructions 
+#### Directions: 
 
 Jullien red onion until a 4 Quart container is full.
 Add all other ingredients to a large stock pot.
 Bring to a boil and strain the brine from the mixture with a chinois
 into onions.
 Let cool to room temperature.
+{{% /recipe %}}

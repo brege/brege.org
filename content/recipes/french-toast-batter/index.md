@@ -6,12 +6,16 @@ draft: false
 ShowTOC: false
 ---
 
+{{% recipe %}}
+
+### French Toast Batter
+
 **Author:** Wyatt Brege
 
 **Yield:** 2 quarts
 
 
-### Ingredients
+#### Ingredients:
 
 -   1 Quart Liquid Egg Mix
 -   1 Quart Heavy Cream
@@ -19,6 +23,7 @@ ShowTOC: false
 -   1/8 tsp Nutmeg
 -   1 tsp Vanilla Extract
 
-### Instructions 
+#### Directions: 
 
 In a large mixing bowl, whisk all ingredients together.
+{{% /recipe %}}

@@ -6,12 +6,16 @@ draft: false
 ShowTOC: false
 ---
 
+{{% recipe %}}
+
+### Roasted Corn
+
 **Author:** Wyatt Brege
 
 **Yield:** 1 quarts
 
 
-### Ingredients
+#### Ingredients:
 
 -   5 ears Corn
 -   2 Tbs Olive Oil
@@ -19,9 +23,10 @@ ShowTOC: false
 -   1 tsp Fine Black Pepper
 -   1 tsp Spanish Paprika
 
-### Instructions 
+#### Directions: 
 
 Cut corn kernels off of ears.
 In a mixing bowl, combine all ingredients.
 Oil a 1/2 sheet tray.
 Cook in salamander until lightly roasted.
+{{% /recipe %}}

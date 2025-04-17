@@ -6,12 +6,16 @@ draft: false
 ShowTOC: false
 ---
 
+{{% recipe %}}
+
+### Wild Berry Vinaigrette
+
 **Author:** Wyatt Brege
 
 **Yield:** 7 Cups
 
 
-### Ingredients
+#### Ingredients:
 
 -   2 Cup Canola Salad Oil
 -   2 Cup Honey
@@ -22,7 +26,7 @@ ShowTOC: false
 -   1 tsp Fine Black Pepper
 -   1 Tbsp Shallots, bruinoisse
 
-### Instructions 
+#### Directions: 
 
 In the food processor, add all ingredients besides the canola oil.
 
@@ -31,3 +35,4 @@ emulsify.
 
 Strain the mixture with a chinois, then store in squeeze bottle and/or
 deli containers.
+{{% /recipe %}}

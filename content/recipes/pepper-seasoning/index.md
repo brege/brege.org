@@ -6,16 +6,21 @@ draft: false
 ShowTOC: false
 ---
 
+{{% recipe %}}
+
+### Pepper Seasoning
+
 **Author:** Wyatt Brege
 
 **Yield:** 2 quarts
 
 
-### Ingredients
+#### Ingredients:
 
 -   5 Cup Course Grind Black Pepper
 -   3 Cup Kosher Salt
 
-### Instructions 
+#### Directions: 
 
 Combine in a mixing bowl and store in two 1 Quart containers.
+{{% /recipe %}}

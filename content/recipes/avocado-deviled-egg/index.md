@@ -6,12 +6,16 @@ draft: false
 ShowTOC: false
 ---
 
+{{% recipe %}}
+
+### Avocado Deviled Egg
+
 **Author:** Wyatt Brege
 
 **Yield:** 15 servings
 
 
-### Ingredients
+#### Ingredients:
 
 -   30 Egg Yolks
 -   1/2 Cup Mayonaise
@@ -23,7 +27,7 @@ ShowTOC: false
 -   2 tsp Salt
 -   2 tsp Fine Black Pepper
 
-### Instructions 
+#### Directions: 
 
 Bring 30 eggs to a rolling boil, then remove pan from heat.
 Let eggs stand in hot water for 13 minutes.
@@ -38,3 +42,4 @@ Combine half of the yolks and the remaining ingredients in the food
 processor for 10-20 seconds. Store the other half of yolks in a small
 deli for the next batch.
 Scoop the mixture into a piping bag and tie.
+{{% /recipe %}}

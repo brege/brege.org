@@ -6,17 +6,22 @@ draft: false
 ShowTOC: false
 ---
 
+{{% recipe %}}
+
+### Honey Dijon Mustard
+
 **Author:** Wyatt Brege
 
 **Yield:** 3 Quarts
 
 
-### Ingredients
+#### Ingredients:
 
 -   32 fl oz Dijon Mustard
 -   3/4 jug Honey
 -   2 Cup Yellow Mustard
 
-### Instructions 
+#### Directions: 
 
 Mix in a bowl with a whisk.
+{{% /recipe %}}

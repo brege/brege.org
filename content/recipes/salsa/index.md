@@ -6,11 +6,15 @@ draft: false
 ShowTOC: false
 ---
 
+{{% recipe %}}
+
+### Salsa
+
 **Author:** Wyatt Brege
 
 
 
-### Ingredients
+#### Ingredients:
 
 -   2 pounds Cherry Tomatoes
 -   3 each Garlic Cloves
@@ -18,7 +22,7 @@ ShowTOC: false
 -   1/2 each Yellow Onion (bruinoise)
 -   1/2 bunch Cilantro
 
-### Instructions 
+#### Directions: 
 
 Roast the poblano over the slotted grill or six-burners. When the skin
 is blackened, but before it whitens to ash, add
@@ -28,3 +32,4 @@ in the salamander until roasted.
 
 With the garlic and poblano, lightly blend the ingredients until chunky.
 Fold in the onions and roughly chopped cilantro.
+{{% /recipe %}}

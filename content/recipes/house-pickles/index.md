@@ -6,11 +6,15 @@ draft: false
 ShowTOC: false
 ---
 
+{{% recipe %}}
+
+### House Pickles
+
 **Author:** Wyatt Brege
 
 
 
-### Ingredients
+#### Ingredients:
 
 -   1 case Pickling Cucumbers
 -   4 bunches Fresh Dill
@@ -23,7 +27,7 @@ ShowTOC: false
 -   20 each Dry Bay Leaves
 -   1/4 Cup Pickling Spice
 
-### Instructions 
+#### Directions: 
 
 Slice Cucumbers on the 1/16\" setting on the mandolin.
 
@@ -37,3 +41,4 @@ Poor the pickling juices through the Chinois into the 22 Quart bucket
 until an inch or so shy of the rim.
 
 Let cool and refrigerate.
+{{% /recipe %}}

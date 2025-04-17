@@ -6,11 +6,15 @@ draft: false
 ShowTOC: false
 ---
 
+{{% recipe %}}
+
+### Flour Dredge
+
 **Author:** Wyatt Brege
 
 
 
-### Ingredients
+#### Ingredients:
 
 -   6 C AP Flour
 -   3 Tbsp Granulated Garlic
@@ -18,3 +22,4 @@ ShowTOC: false
 -   2 tsp Paprika
 -   2 tsp Chili Powder
 -   2 tsp Fine Black Pepper
+{{% /recipe %}}

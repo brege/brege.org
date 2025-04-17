@@ -6,12 +6,16 @@ draft: false
 ShowTOC: false
 ---
 
+{{% recipe %}}
+
+### Red Wine Vinaigrette
+
 **Author:** Wyatt Brege
 
 **Yield:** 6 Cups
 
 
-### Ingredients
+#### Ingredients:
 
 -   2 Cups Honey
 -   2 Cups Red Wine Vinegar
@@ -21,7 +25,7 @@ ShowTOC: false
 -   1 tsp Fine Black Pepper
 -   1 Tbsp Garlic, chopped
 
-### Instructions 
+#### Directions: 
 
 In a 4-Quart container, add all ingredients besides the canola oil.
 
@@ -29,3 +33,4 @@ Blitz with the immersion blender, then slowly trickle in the oil to
 emulsify.
 
 Store in 5-Cup squeeze bottles.
+{{% /recipe %}}

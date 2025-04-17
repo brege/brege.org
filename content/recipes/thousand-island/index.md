@@ -6,17 +6,22 @@ draft: false
 ShowTOC: false
 ---
 
+{{% recipe %}}
+
+### Thousand Island
+
 **Author:** Wyatt Brege
 
 
 
-### Ingredients
+#### Ingredients:
 
 -   1 1/2 Quart Mayonaisse
 -   2 Cup Ketchup
 -   1 Cup Yellow Mustard
 -   1 Cup House Pickle Juice
 
-### Instructions 
+#### Directions: 
 
 In a medium mixing bowl combine all ingredients until smooth.
+{{% /recipe %}}

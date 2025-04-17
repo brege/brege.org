@@ -6,12 +6,16 @@ draft: false
 ShowTOC: false
 ---
 
+{{% recipe %}}
+
+### Asian Brown Sauce
+
 **Author:** Wyatt Brege
 
 **Yield:** 1 Quart
 
 
-### Ingredients
+#### Ingredients:
 
 -   1 1/2 Cup Soy Sauce
 -   1/2 Cup Water
@@ -23,9 +27,10 @@ ShowTOC: false
 -   1/4 Cup Sesame Oil
 -   4 ea Plums, pits removed
 
-### Instructions 
+#### Directions: 
 
 Peel and grate the ginger.
 
 In a 4 Quart container, add all ingredients and blend with the immersion
 blender.
+{{% /recipe %}}

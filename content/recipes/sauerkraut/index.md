@@ -6,17 +6,21 @@ draft: false
 ShowTOC: false
 ---
 
+{{% recipe %}}
+
+### Sauerkraut
+
 **Author:** Wyatt Brege
 
 **Yield:** 2 1/2 Quart
 
 
-### Ingredients
+#### Ingredients:
 
 -   4 ea Green Cabbage, Large
 -   tt Salt
 
-### Instructions 
+#### Directions: 
 
 Sanitize a large mixing bowl, chef knife, cutting board, 8-Quart
 container, Cambro 1/6 pan lid, and a clean deli container and lid with
@@ -48,7 +52,7 @@ debris.
 
 Store for 4-7 days, then condense into deli containers, with the brine.
 
-### Notes 
+#### Notes: 
 
 Check progress of the kraut every day. Be sure to sanitize utensils used
 to sample it. It is okay for some natural bloom, or foaming to occur on
@@ -60,3 +64,4 @@ salinity) to the existing brine to keep kraut submerged.
 
 The hotel pan with water is a way of moderating fluctuations in
 temperature of the kraut between day and night.
+{{% /recipe %}}

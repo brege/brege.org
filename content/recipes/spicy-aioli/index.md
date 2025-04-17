@@ -6,18 +6,23 @@ draft: false
 ShowTOC: false
 ---
 
+{{% recipe %}}
+
+### Spicy Aioli
+
 **Author:** Wyatt Brege
 
 **Yield:** 5 Quarts
 
 
-### Ingredients
+#### Ingredients:
 
 -   1 Gallon Mayonnaise
 -   17 fl oz Sriracha
 -   1/2 Cup Lemon Juice
 
-### Instructions 
+#### Directions: 
 
 In a large mixing bowl add all ingredients and whisk until blended
 smooth.
+{{% /recipe %}}

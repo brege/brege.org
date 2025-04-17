@@ -6,12 +6,16 @@ draft: false
 ShowTOC: false
 ---
 
+{{% recipe %}}
+
+### Green Onion Gremolata
+
 **Author:** Wyatt Brege
 
 **Yield:** 1 Quart
 
 
-### Ingredients
+#### Ingredients:
 
 -   2 bunch Green Onion
 -   1 bunch Parsley
@@ -20,6 +24,7 @@ ShowTOC: false
 -   4 each Lemons (zest and juice)
 -   tt Salt and Fine Black Pepper
 
-### Instructions 
+#### Directions: 
 
 Puree all ingredients in a food processor until smooth.
+{{% /recipe %}}

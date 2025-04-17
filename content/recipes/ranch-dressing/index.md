@@ -6,12 +6,16 @@ draft: false
 ShowTOC: false
 ---
 
+{{% recipe %}}
+
+### Ranch Dressing
+
 **Author:** Wyatt Brege
 
 **Yield:** 6 Quarts
 
 
-### Ingredients
+#### Ingredients:
 
 -   1 Gallon Mayonaise
 -   2 1/2 lb Sour Cream
@@ -22,8 +26,9 @@ ShowTOC: false
 -   2 Tbs Garlic Powder
 -   1 Tbs Fine Black Pepper
 
-### Instructions 
+#### Directions: 
 
 Whisk wet ingredients in a large mixing bowl until thoroughly combined.
 Remove dill fronds from main stem and chop them.
 Add dry ingredients and dill to wet mixture and whisk thoroughly.
+{{% /recipe %}}

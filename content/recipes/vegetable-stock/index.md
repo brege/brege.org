@@ -6,11 +6,15 @@ draft: false
 ShowTOC: false
 ---
 
+{{% recipe %}}
+
+### Vegetable Stock
+
 **Author:** Wyatt Brege
 
 
 
-### Ingredients
+#### Ingredients:
 
 -   2 Bunches Celary
 -   1 Bunch Leeks
@@ -18,7 +22,7 @@ ShowTOC: false
 -   3 ea Large Yellow Onions
 -   2 Bunches Parsley
 
-### Instructions 
+#### Directions: 
 
 In a large pot, fill 3/4 the way full with water and add the vegetables
 (coarsely chopped and cleaned of any dirt) and parsley.
@@ -26,3 +30,4 @@ In a large pot, fill 3/4 the way full with water and add the vegetables
 Let boil and set to simmer for 1-2 hours.
 
 Strain via a china cap and 22 Quart container.
+{{% /recipe %}}

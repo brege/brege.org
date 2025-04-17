@@ -6,12 +6,16 @@ draft: false
 ShowTOC: false
 ---
 
+{{% recipe %}}
+
+### Champagne Vinaigrette
+
 **Author:** Wyatt Brege
 
 **Yield:** 1 1/2 Quart
 
 
-### Ingredients
+#### Ingredients:
 
 -   2 Cup Honey
 -   1 1/2 Cup White Wine Vinegar
@@ -23,7 +27,7 @@ ShowTOC: false
 -   2 oz Red Onion
 -   2 oz Chopped Garlic
 
-### Instructions 
+#### Directions: 
 
 In a 4-Quart container, add all ingredients besides the canola oil.
 
@@ -32,6 +36,7 @@ emulsify.
 
 Store in a 5-Cup squeeze bottle.
 
-### Notes 
+#### Notes: 
 
 Please ask the bartender for the house champagne used in the mimosas.
+{{% /recipe %}}

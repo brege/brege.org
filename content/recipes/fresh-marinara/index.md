@@ -6,12 +6,16 @@ draft: false
 ShowTOC: false
 ---
 
+{{% recipe %}}
+
+### Fresh Marinara
+
 **Author:** Wyatt Brege
 
 **Yield:** 2 Quarts
 
 
-### Ingredients
+#### Ingredients:
 
 -   4 pounds Roma Tomato
 -   2 Tbsp Tomato Paste
@@ -21,7 +25,7 @@ ShowTOC: false
 -   1 Tbsp Kosher Salt
 -   1 Tbsp Fine Black Pepper
 
-### Instructions 
+#### Directions: 
 
 In a 200 hotel pan, coat roma tomato pieces with extra virgin olive oil,
 salt and pepper.
@@ -37,3 +41,4 @@ Store in 1-Quart deli containers.
 
 Marinara (for the mozzarella sticks) should be stored hot in the *baine
 marie*.
+{{% /recipe %}}

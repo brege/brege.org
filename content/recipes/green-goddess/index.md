@@ -6,12 +6,16 @@ draft: false
 ShowTOC: false
 ---
 
+{{% recipe %}}
+
+### Green Goddess
+
 **Author:** Wyatt Brege
 
 **Yield:** 1 quarts
 
 
-### Ingredients
+#### Ingredients:
 
 -   1 Quart Mayonaisse
 -   1 Bunch Chive
@@ -19,8 +23,9 @@ ShowTOC: false
 -   1 Bunch Parsley
 -   tt Salt and Pepper
 
-### Instructions 
+#### Directions: 
 
 Add all ingredients to a 4 Quart Container.
 Blend with immersion blender until the mayonnaise turns green.
 Season.
+{{% /recipe %}}

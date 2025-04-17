@@ -6,17 +6,22 @@ draft: false
 ShowTOC: false
 ---
 
+{{% recipe %}}
+
+### Sweet Chili Glaze
+
 **Author:** Wyatt Brege
 
 
 
-### Ingredients
+#### Ingredients:
 
 -   2 Bottles Mae Ploy Sweet Chilli Sauce
 -   2 Tbs Honey
 -   2 Cup Orange Juice
 
-### Instructions 
+#### Directions: 
 
 Whisk ingredients in a large saute pan.
 Place pan on low heat and reduce sauce by a third.
+{{% /recipe %}}

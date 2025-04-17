@@ -6,11 +6,15 @@ draft: false
 ShowTOC: false
 ---
 
+{{% recipe %}}
+
+### Mac n Cheese Sauce
+
 **Author:** Wyatt Brege
 
 
 
-### Ingredients
+#### Ingredients:
 
 -   1/2 Cup All-Purpose Flour
 -   1/2 Cup Butter
@@ -20,7 +24,7 @@ ShowTOC: false
 -   1 Tbsp Fine Black Pepper
 -   1 Tbsp Kosher Salt
 
-### Instructions 
+#### Directions: 
 
 Melt Butter in a 4 Quart pot over medium-high heat.
 Whisk in flour to create a blonde roux.
@@ -29,3 +33,4 @@ Add 1/3 of cream and bring up to heat.
 Add the cheeses.
 Add remaining 1/3 of cream and bring up to temperature.
 Season with salt and pepper and place in a Baine-Marie insert.
+{{% /recipe %}}

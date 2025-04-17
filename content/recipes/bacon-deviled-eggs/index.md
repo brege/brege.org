@@ -6,12 +6,16 @@ draft: false
 ShowTOC: false
 ---
 
+{{% recipe %}}
+
+### Bacon Deviled Eggs
+
 **Author:** Wyatt Brege
 
 **Yield:** 15 servings
 
 
-### Ingredients
+#### Ingredients:
 
 -   30 Egg Yolks
 -   1 Cup Mayonaise
@@ -22,7 +26,7 @@ ShowTOC: false
 -   2 tsp Salt
 -   2 tsp Pepper
 
-### Instructions 
+#### Directions: 
 
 Bring 30 eggs to a rolling boil, then remove pan from heat.
 Let eggs stand in hot water for 13 minutes.
@@ -36,3 +40,4 @@ Carefully organize the egg whites on a toweled half sheet tray.
 With gloves, thoroughly massage the yolks.
 Add remaining ingredients and beat smooth with masher.
 Scoop the mixture into a piping bag and tie.
+{{% /recipe %}}

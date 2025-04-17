@@ -6,12 +6,16 @@ draft: false
 ShowTOC: false
 ---
 
+{{% recipe %}}
+
+### Boneless Beef Short Ribs
+
 **Author:** Wyatt Brege
 
 **Yield:** 6 servings
 
 
-### Ingredients
+#### Ingredients:
 
 -   6 each 10 oz Boneless Beef Short Ribs
 -   1 each Yellow Onion
@@ -20,7 +24,7 @@ ShowTOC: false
 -   1/4 Cup House Demi Glase
 -   tt Salt and Course Black Pepper
 
-### Instructions 
+#### Directions: 
 
 Season the short ribs with salt and black pepper, then sear off all six
 sides on the flat top grill.
@@ -30,7 +34,7 @@ ingredients and bring to a boil.
 
 Cover with aluminum foil and braise for 2.5 hours in a 425 deg oven.
 
-### Notes 
+#### Notes: 
 
 To make the house demi glase, boil 2 pounds of connective tissue scraps
 from processing the teres major beef muscle, tomato and mushroom scrap,
@@ -38,3 +42,4 @@ and 1 gallon vegetable stock and reduce by half. Puree this goulash in
 the Ninja blender attachment (the connective tissue binds up the blade
 on the immersion blender), then sieve through the chinois. Discard the
 puree and slowly reduce the liquid to a demi glase.
+{{% /recipe %}}

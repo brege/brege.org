@@ -6,12 +6,16 @@ draft: false
 ShowTOC: false
 ---
 
+{{% recipe %}}
+
+### Southwest Deviled Eggs
+
 **Author:** Wyatt Brege
 
 **Yield:** 15 servings
 
 
-### Ingredients
+#### Ingredients:
 
 -   30 Egg Yolks
 -   2 tsp Kosher Salt
@@ -23,7 +27,7 @@ ShowTOC: false
 -   1 Tbsp Lime Juice
 -   1 Cup Mayonaisse
 
-### Instructions 
+#### Directions: 
 
 Bring 30 eggs to a rolling boil, then remove pan from heat.
 Let eggs stand in hot water for 13 minutes.
@@ -40,3 +44,4 @@ the food processor for 20 seconds.
 In a mixing bowl, fold remaining ingredients together with the yolk
 mixture.
 Store in piping bag with excess plastic and string removed.
+{{% /recipe %}}

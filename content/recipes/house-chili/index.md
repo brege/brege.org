@@ -6,11 +6,15 @@ draft: false
 ShowTOC: false
 ---
 
+{{% recipe %}}
+
+### House Chili
+
 **Author:** Wyatt Brege
 
 
 
-### Ingredients
+#### Ingredients:
 
 -   2 each Red Bell Pepper (small dice)
 -   2 each Green Bell Pepper (small dice)
@@ -27,7 +31,7 @@ ShowTOC: false
 -   6 each Bay Leaves
 -   1/2 Cup Oregano, dry
 
-### Instructions 
+#### Directions: 
 
 Hydrate the pinto beans by cooking them in water for at least one hour.
 
@@ -42,8 +46,9 @@ ingredients achieve an even viscosity.
 
 Season with salt and fine black pepper.
 
-### Notes 
+#### Notes: 
 
 Chili is a great soup for using up ingredients left over from tacos like
 ground beef, diced tomatoes and onions, over-ripened tomatoes, black
 beans nearing volatility and other cuts of neutrally cooked beef.
+{{% /recipe %}}

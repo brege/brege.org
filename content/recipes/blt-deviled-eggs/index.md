@@ -6,12 +6,16 @@ draft: false
 ShowTOC: false
 ---
 
+{{% recipe %}}
+
+### B.L.T. Deviled Eggs
+
 **Author:** Wyatt Brege
 
 **Yield:** 15 servings
 
 
-### Ingredients
+#### Ingredients:
 
 -   30 Egg Yolks
 -   1 Cup Mayonaisse
@@ -22,7 +26,7 @@ ShowTOC: false
 -   1 tsp Kosher Salt
 -   1 tsp Fine Black Pepper
 
-### Instructions 
+#### Directions: 
 
 Bring 30 eggs to a rolling boil, then remove pan from heat.
 Let eggs stand in hot water for 13 minutes.
@@ -44,8 +48,9 @@ Store in piping bag with excess plastic and string removed.
 Garnish with candied bacon and cherry tomato slivers (quartered
 lengthwise).
 
-### Notes 
+#### Notes: 
 
 For the candied bacon, heat 1 cup chopped bacon in a saute pan until its
 fat starts to glisten. Add 1/4 Cup of brown sugar and simmer on low heat
 until the caramel crystallizes the bacon.
+{{% /recipe %}}

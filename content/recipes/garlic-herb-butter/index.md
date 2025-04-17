@@ -6,12 +6,16 @@ draft: false
 ShowTOC: false
 ---
 
+{{% recipe %}}
+
+### Garlic Herb Butter
+
 **Author:** Wyatt Brege
 
 **Yield:** 1 Log
 
 
-### Ingredients
+#### Ingredients:
 
 -   1 Pound Butter, semi-soft
 -   1 bunch Tarragon
@@ -20,7 +24,7 @@ ShowTOC: false
 -   1/4 Cup Garlic, chopped
 -   tt Salt and Black Pepper
 
-### Instructions 
+#### Directions: 
 
 Finely chop the herbs.
 
@@ -29,3 +33,4 @@ herbs and seasoning at medium high speed until all ingredients are
 smoothly combined.
 
 Scoop the contents onto plastic wrap and roll into a tight log.
+{{% /recipe %}}

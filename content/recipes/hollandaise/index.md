@@ -6,13 +6,17 @@ draft: false
 ShowTOC: false
 ---
 
+{{% recipe %}}
+
+### Hollandaise
+
 **Author:** Wyatt Brege
 
 
 
  Chef Wyatt Brege
 
-### Ingredients
+#### Ingredients:
 
 -   1 Cup Egg Yolks
 -   1 Tbsp Lemon Juice
@@ -20,7 +24,7 @@ ShowTOC: false
 -   1 1/2 Pound Butter (melted)
 -   tt Old Bay Seasoning (Standard)
 
-### Instructions 
+#### Directions: 
 
 Whisk egg yolk, white wine, and lemon juice over a double boiler until
 thickened to proper consistency. Be sure to not over heat the egg
@@ -32,3 +36,4 @@ break.
 If too thick add a small amount of hot water.
 
 Once the hollandaise has formed, season with Old Bay.
+{{% /recipe %}}

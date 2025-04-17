@@ -6,11 +6,15 @@ draft: false
 ShowTOC: false
 ---
 
+{{% recipe %}}
+
+### Salmon Cakes
+
 **Author:** Wyatt Brege
 
 
 
-### Ingredients
+#### Ingredients:
 
 -   1 ea Hot House Tomatoes
 -   1/2 Cup Capers
@@ -21,7 +25,7 @@ ShowTOC: false
 -   tt Salt and Pepper
 -   1 Quart Forked Salmon Scrap
 
-### Instructions 
+#### Directions: 
 
 In a large mixing bowl, fold all ingredients together and portion into 2
 ounce portions with the 2 1/2 inch circle cutter.
@@ -29,3 +33,4 @@ ounce portions with the 2 1/2 inch circle cutter.
 Bread tops and bottoms of cakes with additional Panko Bread Crumbs.
 
 Carefully place in a Cambro with Patty Papers.
+{{% /recipe %}}

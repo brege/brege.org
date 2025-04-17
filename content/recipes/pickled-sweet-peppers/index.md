@@ -6,12 +6,16 @@ draft: false
 ShowTOC: false
 ---
 
+{{% recipe %}}
+
+### Pickled Sweet Peppers
+
 **Author:** Wyatt Brege
 
 **Yield:** 12 Quarts
 
 
-### Ingredients
+#### Ingredients:
 
 -   1 case Sweet Peppers
 -   12 ea Jalepeno
@@ -23,7 +27,7 @@ ShowTOC: false
 -   1/2 Cup Garlic Clove (crushed)
 -   1 bunch Parsley
 
-### Instructions 
+#### Directions: 
 
 In a large stock pot, add the vinegar, water, salt and sugar and bring
 to a rolling boil.
@@ -32,3 +36,4 @@ Slice the sweet peppers into rings, the ginger into medallions, and rest
 of the produce keep whole and mix into a 12 or 18 Quart container.
 
 Poor the hot pickling liquid over the peppers.
+{{% /recipe %}}
