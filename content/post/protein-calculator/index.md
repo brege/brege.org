@@ -57,11 +57,11 @@ Following the guidelines is also made more tedious by the near-constant arithmet
 
 With the assumption that:
 
-* **MAX** $ = $ 100% efficiency in protein synthesis, $\sim 1.6 \text{g} / \text{kg} / \text{day}$
+* $\textbf{MAX} = $ 100% efficiency in protein synthesis, $\sim 1.6 \text{g} / \text{kg} / \text{day}$
 * **0.75** $\coloneqq 0.75 \times \text{MAX} \sim 1.2 \text{g} / \text{kg} / \text{day}$
-* **RDA** $\coloneqq 0.5 \times \text{MAX} \sim 0.8 \text{g} / \text{kg} / \text{day}$
+* $\textbf{RDA} \coloneqq 0.5 \times \text{MAX} \sim 0.8 \text{g} / \text{kg} / \text{day}$
 
-where RDA is the "Recommended Daily Allowance", and "$0.75 \times \text{MAX}$" is roughly the target for most people, or about [^1]:
+where $\text{RDA}$ is the "Recommended Daily Allowance", and "$0.75 \times \text{MAX}$" is roughly the target for most people, on average [^1], or about:
 
 $$
 \text{<65yo + RE:} \quad \left[ 0.8,\ 1.6 \right] \ \text{g} / \text{kg} / \text{day}
@@ -81,11 +81,13 @@ $$
 \text{⩾65yo + RE:} \quad \left[ 0.55,\ 0.65 \right] \ \text{g} / \text{lbs} / \text{day}.
 $$
 
-## Implementation
+## Implementation: the Protein Efficiency Matrix
 
 The table below answers a simple question: how much of one single food do you need to eat to hit your daily protein target? Input your weight, toggle metric or imperial, and adjust units per row—grams, ounces, scoops, each. It’ll show you the amount needed to hit benchmarks in the range of $\text{RDA}$ to the **maximum efficient intake** $(\text{MAX})$.  Based on resistance training status and the latest research, a sliding scale in this range will allow you to explore this range.
 
 **Quantity:** the number of units in the **Serving Units** column you need to eat to acheive the chosen protein target, per day, for your input weight.
+
+Adjusting the **Protein target** slider can be thought of as a direct conversion of protein to training intensity, from sedentary/$\text{RDA}$ all the way to the $\text{MAX}$ intensity threshold.
 
 {{< protein-table >}}
 
