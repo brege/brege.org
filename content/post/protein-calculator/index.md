@@ -53,7 +53,7 @@ Following the guidelines is also made more tedious by the near-constant arithmet
 
 ## Compositional Thinking Strategy
 
-*Here's my take:* **Ratio counting.** As a chef, there's a reason the imperial, fractional system works: ratio. It's easier for me to think about doubling, tripling, or halving depending on what I'm buying and who I'm cooking for. Our days are divided into twelves and therefore 2's, 3's, and 4's. Naturally, our meals are spaced that way too. The value of our `base10` system cannot be overstated, but I have a difficult time what eating or preparing 10% less of a meal or recipe means vs a doing a quarter or half.
+*Here's my take:* **Ratio counting.** As a chef, there's a reason the imperial, fractional system works: ratio. It's easier for me to think about doubling, tripling, or halving depending on what I'm buying and who I'm cooking for. Our days are divided into twelves and therefore 2's, 3's, and 4's. Naturally, our meals are spaced that way too. The value of our `base10` system cannot be overstated, but I have a difficult time what eating or preparing 10% less of a meal or recipe means vs doing a quarter or half.
 
 With the assumption that:
 
