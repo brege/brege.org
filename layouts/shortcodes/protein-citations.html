@@ -1,0 +1,8 @@
+<ol>
+  {{ range .Site.Data.protein_sources.protein_sources }}
+    <li id="{{ .citation.label | plainify | lower }}">
+      <a href="{{ .citation.href }}" target="_blank" rel="noopener">{{ .source }} – citation source</a>
+    </li>
+  {{ end }}
+</ol>
+

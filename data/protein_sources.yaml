@@ -1,0 +1,146 @@
+protein_sources:
+  - source: Eggs
+    unit: each
+    protein_per_unit: 7.0
+    citation:
+      label: "[1]"
+      href: "https://fdc.nal.usda.gov/food-details/1663084/nutrients"
+    units:
+      - label: each
+        grams: 7.
+      - label: grams
+        grams: 12.5
+      - label: dozen
+        grams: 84.
+  - source: Chicken Breast
+    unit: pounds 
+    protein_per_unit: 105.
+    citation: 
+      label: "[2]"
+      href: "https://fdc.nal.usda.gov/food-details/577951/nutrients"
+    units: 
+      - label: pounds
+        grams: 105.
+      - label: ounces
+        grams: 1.0
+      - label: grams
+        grams: 0.13
+      - label: kilograms
+        grams: 130.
+  - source: Beef (Ground, 85% lean)
+    unit: pounds
+    protein_per_unit: 105.
+    citation: 
+      label: "[3]"
+      href: "https://fdc.nal.usda.gov/food-details/2312134/nutrients"
+    units:
+      - label: ounces
+        grams: 6.6
+      - label: pounds
+        grams: 105.
+      - label: grams
+        grams: 0.23
+      - label: kilograms
+        grams: 232.
+  - source: Greek Yogurt (Plain)
+    unit: cups
+    protein_per_unit: 21.
+    citation: 
+      label: "[4]"
+      href: "https://fdc.nal.usda.gov/food-details/360742/nutrients"
+    units:
+      - label: ounces
+        grams: 2.7
+      - label: grams
+        grams: 0.87
+      - label: cups
+        grams: 21.
+  - source: Cottage Cheese (Low Fat)
+    unit: cups
+    protein_per_unit: 24.
+    citation: 
+      label: "[5]"
+      href: "https://fdc.nal.usda.gov/food-details/2658102/nutrients"
+    units:
+      - label: ounces
+        grams: 3.11
+      - label: grams
+        grams: 0.11
+      - label: cups
+        grams: 24.
+  - source: Tree Nuts (Avg)
+    unit: cups
+    protein_per_unit: 23.
+    citation: 
+      label: "[6]"
+      href: "https://fdc.nal.usda.gov/food-details/2653755/nutrients"
+    units:
+      - label: ounces
+        grams: 4.6
+      - label: grams
+        grams: 0.165
+      - label: cups
+        grams: 23.
+  - source: Peas, Green, Frozen
+    unit: ounces
+    protein_per_unit: 6.0
+    citation: 
+      label: "[7]"
+      href: "https://fdc.nal.usda.gov/food-details/2427531/nutrients"
+    units:
+      - label: ounces
+        grams: 1.3
+      - label: grams
+        grams: 0.045
+      - label: cups
+        grams: 6.0
+  - source: Chili (Est.)
+    unit: cups
+    protein_per_unit: 15.0
+    citation: 
+      label: "[8]"
+      href: "https://fdc.nal.usda.gov/food-details/2671587/nutrients"
+    units:
+      - label: cups
+        grams: 15.
+      - label: ounces
+        grams: 1.9
+      - label: grams
+        grams: 0.07
+  - source: Salmon
+    unit: pounds
+    protein_per_unit: 100.
+    citation: 
+      label: "[9]"
+      href: "https://fdc.nal.usda.gov/food-details/2684441/nutrients"
+    units:
+      - label: ounces
+        grams: 6.23
+      - label: grams
+        grams: 0.22
+      - label: pounds
+        grams: 100.
+  - source: Pork Chop, Boneless
+    unit: pounds
+    protein_per_unit: 104.
+    citation: 
+      label: "[10]"
+      href: "https://fdc.nal.usda.gov/food-details/2646168/nutrients"
+    units:
+      - label: ounces
+        grams: 6.2
+      - label: grams
+        grams: 0.22
+      - label: pounds
+        grams: 104.
+  - source: Whey Protein Powder
+    unit: scoops
+    protein_per_unit: 25.
+    citation: 
+      label: "[11]"
+      href: "https://www.costco.com/kirkland-signature-whey-protein%2c-creamy-chocolate%2c-5.4lbs.product.4000287218.html"
+    units:
+      - label: grams
+        grams: 0.71
+      - label: scoops
+        grams: 25.
