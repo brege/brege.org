@@ -2,145 +2,209 @@ protein_sources:
   - source: Eggs
     unit: each
     protein_per_unit: 7.0
+    calories_per_unit: 70.
     citation:
       label: "[1]"
       href: "https://fdc.nal.usda.gov/food-details/1663084/nutrients"
     units:
       - label: each
         grams: 7.
+        calories: 70.
       - label: grams
         grams: 12.5
+        calories: 175.
       - label: dozen
         grams: 84.
+        calories: 840.
   - source: Chicken Breast
     unit: pounds 
     protein_per_unit: 105.
+    calories_per_unit: 735.
     citation: 
       label: "[2]"
       href: "https://fdc.nal.usda.gov/food-details/577951/nutrients"
     units: 
       - label: pounds
         grams: 105.
+        calories: 735.
       - label: ounces
-        grams: 1.0
+        grams: 46
       - label: grams
         grams: 0.13
+        calories: 1.7
       - label: kilograms
         grams: 130.
+        calories: 1160.
   - source: Beef (Ground, 85% lean)
     unit: pounds
     protein_per_unit: 105.
+    calories_per_unit: 975.
     citation: 
       label: "[3]"
       href: "https://fdc.nal.usda.gov/food-details/2312134/nutrients"
     units:
       - label: ounces
         grams: 6.6
+        calories: 61.
       - label: pounds
         grams: 105.
+        calories: 975.
       - label: grams
         grams: 0.23
+        calories: 2.2
       - label: kilograms
         grams: 232.
-  - source: Greek Yogurt (Plain)
+        calories: 2150.
+  - source: Greek Yogurt (Fage 2%)
     unit: cups
     protein_per_unit: 21.
+    calories_per_unit: 150.
     citation: 
       label: "[4]"
       href: "https://fdc.nal.usda.gov/food-details/360742/nutrients"
     units:
       - label: ounces
         grams: 2.7
+        calories: 18.
       - label: grams
         grams: 0.87
+        calories: 0.63
       - label: cups
-        grams: 21.
+        grams: 22.
+        calories: 150.
   - source: Cottage Cheese (Low Fat)
     unit: cups
     protein_per_unit: 24.
+    calories_per_unit: 200.
     citation: 
       label: "[5]"
       href: "https://fdc.nal.usda.gov/food-details/2658102/nutrients"
     units:
       - label: ounces
         grams: 3.11
+        calories: 23.
       - label: grams
         grams: 0.11
+        calories: 0.81
       - label: cups
         grams: 24.
+        calories: 200.
   - source: Tree Nuts (Avg)
     unit: cups
     protein_per_unit: 23.
+    calories_per_unit: 850.
     citation: 
       label: "[6]"
       href: "https://fdc.nal.usda.gov/food-details/2653755/nutrients"
     units:
       - label: ounces
         grams: 4.6
+        calories: 170.
       - label: grams
         grams: 0.165
+        calories: 6.1
       - label: cups
         grams: 23.
+        calories: 850.
   - source: Peas, Green, Frozen
-    unit: ounces
+    unit: cups
     protein_per_unit: 6.0
+    calories_per_unit: 100.
     citation: 
       label: "[7]"
       href: "https://fdc.nal.usda.gov/food-details/2427531/nutrients"
     units:
       - label: ounces
         grams: 1.3
+        calories: 22
       - label: grams
         grams: 0.045
+        calories: 0.78
       - label: cups
         grams: 6.0
+        calories: 100.
   - source: Chili (Est.)
     unit: cups
     protein_per_unit: 15.0
+    calories_per_unit: 240.
     citation: 
       label: "[8]"
       href: "https://fdc.nal.usda.gov/food-details/2671587/nutrients"
     units:
       - label: cups
         grams: 15.
+        calories: 240.
       - label: ounces
         grams: 1.9
+        calories: 28.
       - label: grams
         grams: 0.07
+        calories: 1.0
   - source: Salmon
     unit: pounds
     protein_per_unit: 100.
+    calories_per_unit: 1100.
     citation: 
       label: "[9]"
       href: "https://fdc.nal.usda.gov/food-details/2684441/nutrients"
     units:
       - label: ounces
         grams: 6.23
+        calories: 65.
       - label: grams
         grams: 0.22
+        calories: 2.3
       - label: pounds
         grams: 100.
+        calories: 1100.
+      - label: kilograms
+        grams: 232.
+        calories: 2150.
   - source: Pork Chop, Boneless
     unit: pounds
     protein_per_unit: 104.
+    calories_per_unit: 620.
     citation: 
       label: "[10]"
       href: "https://fdc.nal.usda.gov/food-details/2646168/nutrients"
     units:
       - label: ounces
         grams: 6.2
+        calories: 40.
       - label: grams
         grams: 0.22
+        calories: 1.3
       - label: pounds
         grams: 104.
+        calories: 620.
+      - label: kilograms
+        grams: 232.
+        calories: 1230.
   - source: Whey Protein Powder
     unit: scoops
     protein_per_unit: 25.
+    calories_per_unit: 35.
     citation: 
       label: "[11]"
       href: "https://www.costco.com/kirkland-signature-whey-protein%2c-creamy-chocolate%2c-5.4lbs.product.4000287218.html"
     units:
       - label: grams
         grams: 0.71
+        calories: 4.9
       - label: scoops
         grams: 25.
+        calories: 130.
+  - source: Orgain Vegan Pr. Powder
+    unit: scoops
+    protein_per_unit: 21.
+    calories_per_unit: 150.
+    citation:
+      label: "[12]"
+      href: "https://orgain.com/products/organic-protein-plant-based-protein-powder-vanilla-bean"
+    units:
+      - label: scoops
+        grams: 21.
+        calories: 150.
+      - label: grams
+        grams: 0.8
+        calories: 5.7

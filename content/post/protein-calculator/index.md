@@ -44,7 +44,7 @@ where we have used the shorthand
 
 $$
 \text{g} / \text{lbs} / \text{day}
-= \frac{\text{protein (g)}}{\text{bodyweight (lbs)} \cdot \text{day}}
+\coloneqq \frac{\text{protein (g)}}{\text{bodyweight (lbs)} \cdot \text{day}}
 $$
 
 But for nearly everyone landing on these pages, the goal is fat loss. Higher protein (and fiber) intake will help you feel fuller for longer and can help people new to fitness and diet control their cravings.
@@ -58,8 +58,8 @@ Following the guidelines is also made more tedious by the near-constant arithmet
 With the assumption that:
 
 * **MAX** $ = $ 100% efficiency in protein synthesis, $\sim 1.6 \text{g} / \text{kg} / \text{day}$
-* **0.75** $:= 0.75 \times \text{MAX} \sim 1.2 \text{g} / \text{kg} / \text{day}$
-* **RDA** $:= 0.5 \times \text{MAX} \sim 0.8 \text{g} / \text{kg} / \text{day}$
+* **0.75** $\coloneqq 0.75 \times \text{MAX} \sim 1.2 \text{g} / \text{kg} / \text{day}$
+* **RDA** $\coloneqq 0.5 \times \text{MAX} \sim 0.8 \text{g} / \text{kg} / \text{day}$
 
 where RDA is the "Recommended Daily Allowance", and "$0.75 \times \text{MAX}$" is roughly the target for most people, or about [^1]:
 
@@ -83,7 +83,13 @@ $$
 
 ## Implementation
 
+The table below answers a simple question: how much of one single food do you need to eat to hit your daily protein target? Input your weight, toggle metric or imperial, and adjust units per row—grams, ounces, scoops, each. It’ll show you the amount needed to hit benchmarks in the range of $\text{RDA}$ to the **maximum efficient intake** $(\text{MAX})$.  Based on resistance training status and the latest research, a sliding scale in this range will allow you to explore this range.
+
+**Quantity:** the number of units in the **Serving Units** column you need to eat to acheive the chosen protein target, per day, for your input weight.
+
 {{< protein-table >}}
+
+I've also included the calories if you ate that much of the same source.  You'll note that high carbohydrate (peas, chili) and especially high fat content (mixed nuts) greatly diminish the remaining calorie budget in the day.  Conversely, protein powders, including the vegan kind, substantially lower the overall calorie footprint. 
 
 ## Discussion
 

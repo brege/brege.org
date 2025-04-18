@@ -3,15 +3,15 @@
 
 <div class="calculator">
   <label for="weight-input" class="form-label">Your weight:</label>
-  <input type="number" id="weight-input" value="80" class="form-control" >
-  <label class="form-label"><input type="radio" name="unit" value="metric" checked> kg</label>
-  <label><input type="radio" name="unit" class="form-control" value="imperial"> lbs</label>
+  <input type="number" id="weight-input" value="175" class="form-control" style="background-color: var(--entry)" >
+  <label class="form-label"><input type="radio" name="unit" value="metric"> kg</label>
+  <label><input type="radio" name="unit" value="imperial" checked> lbs</label>
   <br><br>
   <label for="target-range" class="form-label mt-4">Protein target:
-    <span id="target-label">0.8 g/kg (RDA)</span>
+    <span id="target-label">0.8 g/lb (RDA)</span>
   </label>
   <br>
-  <input type="range" id="target-range" min="0.8" max="1.7" step="0.05" value="0.8" class="w-full mb-4" />
+  <input type="range" id="target-range" class="w-full mb-4" />
   <br>
 </div>
 
@@ -19,15 +19,16 @@
   <thead>
     <tr>
       <th>Source</th>
-      <th>Protein/unit</th>
+      <th>Protein/unit (g)</th>
       <th id="target-column-label">Quantity</th>
       <th>Serving Units</th>
+      <th>Calories (kcal)</th>
       <th>Source</th>
     </tr>
   </thead>
   <tbody id="protein-tbody">
     {{ range .Site.Data.protein_sources.protein_sources }}
-    <tr data-protein="{{ .protein_per_unit }}">
+    <tr data-protein="{{ .protein_per_unit }}" data-calories="{{ .calories_per_unit }}">
       <td>{{ .source }}</td>
       <td class="protein-per-unit">{{ .protein_per_unit }}</td>
       <td class="col-target"></td>
@@ -35,12 +36,13 @@
         <select class="unit-select">
           {{ $source := . }}
           {{ range $unit := $source.units }}
-            <option value="{{ $unit.grams }}" {{ if eq $unit.grams $source.protein_per_unit }}selected{{ end }}>
+            <option value="{{ $unit.grams }}" data-calories="{{ $unit.calories }}" {{ if eq $unit.grams $source.protein_per_unit }}selected{{ end }}>
               {{ $unit.label }}
             </option>
           {{ end }}
         </select>
       </td>
+      <td class="calories-total"></td>
       <td class="citation">
         <a href="{{ .citation.href }}" target="_blank" rel="noopener">{{ .citation.label }}</a>
       </td>
@@ -50,8 +52,8 @@
 </table>
 
 <script>
-  let currentUnit = 'metric';
-  let userWeightKg = 80;
+  let currentUnit = 'imperial';
+  let userWeightKg = 175 / 2.205;
   let currentTarget = 1.2;
 
   function updateProteinNeeds(weightKg) {
@@ -65,10 +67,33 @@
 
   function updateSingleRow(row) {
     const proteinPerUnit = parseFloat(row.dataset.protein);
+    const unitSelect = row.querySelector(".unit-select");
+    const selectedOption = unitSelect.options[unitSelect.selectedIndex];
+    const caloriesPerUnit = parseFloat(selectedOption.dataset.calories);
+
     if (isNaN(proteinPerUnit) || proteinPerUnit === 0) return;
 
     const targetGrams = userWeightKg * currentTarget;
-    row.querySelector(".col-target").textContent = (targetGrams / proteinPerUnit).toFixed(2);
+    const quantity = targetGrams / proteinPerUnit;
+    row.querySelector(".col-target").textContent = quantity.toFixed(2);
+
+    const totalCalories = isNaN(caloriesPerUnit) ? '-' : (quantity * caloriesPerUnit).toFixed(0);
+    row.querySelector(".calories-total").textContent = totalCalories;
+  }
+
+  function updateTargetRangeAttributes() {
+    const range = document.querySelector("#target-range");
+    if (currentUnit === 'metric') {
+      range.min = 0.8;
+      range.max = 1.7;
+      range.step = 0.05;
+      range.value = currentTarget;
+    } else {
+      range.min = (0.8 / 2.205).toFixed(3);
+      range.max = (1.7 / 2.205).toFixed(3);
+      range.step = (0.05 / 2.205).toFixed(3);
+      range.value = (currentTarget / 2.205).toFixed(3);
+    }
   }
 
   function updateTargetLabel() {
@@ -98,29 +123,30 @@
       const val = parseFloat(document.querySelector("#weight-input").value);
       const weightInKg = currentUnit === "metric" ? val : val / 2.205;
       updateProteinNeeds(weightInKg);
+      updateTargetRangeAttributes();
       updateTargetLabel();
     });
   });
 
   document.querySelector("#target-range").addEventListener("input", function () {
-    currentTarget = parseFloat(this.value);
+    currentTarget = currentUnit === 'metric' ? parseFloat(this.value) : parseFloat(this.value) * 2.205;
     updateTargetLabel();
     updateTableValues();
   });
 
   document.querySelectorAll("tbody#protein-tbody tr").forEach(row => {
-    const selects = row.querySelectorAll(".unit-select");
-    const [unitSelect] = selects;
-
+    const unitSelect = row.querySelector(".unit-select");
     unitSelect.addEventListener("change", function () {
       const protein = parseFloat(this.value);
+      const calories = parseFloat(this.selectedOptions[0].dataset.calories);
       row.dataset.protein = protein;
       row.querySelector(".protein-per-unit").textContent = protein.toFixed(2);
       updateSingleRow(row);
     });
   });
 
-  updateProteinNeeds(userWeightKg); // Initial load
+  updateTargetRangeAttributes();
+  updateProteinNeeds(userWeightKg);
   updateTargetLabel();
 </script>
 
