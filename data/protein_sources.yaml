@@ -16,7 +16,7 @@ protein_sources:
       - label: dozen
         grams: 84.
         calories: 840.
-  - source: Chicken Breast
+  - source: Chicken Breast, Raw
     unit: pounds 
     protein_per_unit: 105.
     calories_per_unit: 735.
@@ -36,7 +36,7 @@ protein_sources:
       - label: kilograms
         grams: 230.
         calories: 1700.
-  - source: Beef (Ground, 85% lean)
+  - source: Beef, Ground (85/15)
     unit: pounds
     protein_per_unit: 105.
     calories_per_unit: 975.
@@ -56,7 +56,7 @@ protein_sources:
       - label: kilograms
         grams: 232.
         calories: 2150.
-  - source: Greek Yogurt (Fage 2%)
+  - source: Greek Yogurt (2%)
     unit: cups
     protein_per_unit: 22.
     calories_per_unit: 150.
@@ -73,7 +73,7 @@ protein_sources:
       - label: grams
         grams: 0.10
         calories: 0.68
-  - source: Cottage Cheese (Low Fat)
+  - source: Cottage Cheese (2%)
     unit: cups
     protein_per_unit: 24.
     calories_per_unit: 200.
@@ -107,7 +107,7 @@ protein_sources:
       - label: cups
         grams: 23.
         calories: 850.
-  - source: Peas, Green, Frozen
+  - source: Peas, Frozen
     unit: cups
     protein_per_unit: 6.0
     calories_per_unit: 100.
@@ -198,7 +198,7 @@ protein_sources:
       - label: scoops
         grams: 25.
         calories: 130.
-  - source: Orgain Vegan Pr. Powder
+  - source: Vegan Protein Powder
     unit: scoops
     protein_per_unit: 21.
     calories_per_unit: 150.
