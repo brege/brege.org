@@ -17,7 +17,7 @@ tags:
 date: '2025-03-25'
 summary: 'Using the Epley formula for estimating a pathway through plateaus'
 draft: false
-aliases: ['epley']
+aliases: '/epley'
 cover:
   image: 'progression-histogram.png' 
   hidden: true

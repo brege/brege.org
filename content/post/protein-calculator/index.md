@@ -20,7 +20,7 @@ cover:
   caption: 'A snapshot of the prototype protein calculator with the first few entries in the table.' 
   hidden: true
   hiddenInList: false
-
+aliases: '/protein'
 math: true
 ShowToc: false
 TocOpen: false
@@ -57,11 +57,15 @@ Following the guidelines is also made more tedious by the near-constant arithmet
 
 With the assumption that:
 
-* $\textbf{MAX} = $ 100% efficiency in protein synthesis, $\sim 1.6 \text{g} / \text{kg} / \text{day}$
-* **0.75** $\coloneqq 0.75 \times \text{MAX} \sim 1.2 \text{g} / \text{kg} / \text{day}$
-* $\textbf{RDA} \coloneqq 0.5 \times \text{MAX} \sim 0.8 \text{g} / \text{kg} / \text{day}$
+* $\textbf{MAX} = $ 100% efficiency in protein synthesis $\approx 1.6 \text{g} / \text{kg} / \text{day}$
+* **0.75** $\coloneqq 0.75 \times \text{MAX} \approx 1.2 \text{g} / \text{kg} / \text{day}$
+* $\textbf{RDA} \coloneqq 0.5 \times \text{MAX} \approx 0.8 \text{g} / \text{kg} / \text{day}$
 
-where $\text{RDA}$ is the "Recommended Daily Allowance", and "$0.75 \times \text{MAX}$" is roughly the target for most people, on average [^1], or about:
+where $\text{RDA}$ is the "Recommended Daily Allowance". The "$0.75 \times \text{MAX} \approx 1.2 \text{lbs}$" is roughly the target for most people who weight 175 lbs (80 kg), on average. [^1]
+
+<details> <summary><b>Tap here to see the ranges for this weight...</b></summary> 
+<br/>
+For reference, the ranges of protein consumption needed for the the 175 lbs individual are:
 
 $$
 \text{<65yo + RE:} \quad \left[ 0.8,\ 1.6 \right] \ \text{g} / \text{kg} / \text{day}
@@ -80,6 +84,8 @@ $$
 $$
 \text{⩾65yo + RE:} \quad \left[ 0.55,\ 0.65 \right] \ \text{g} / \text{lbs} / \text{day}.
 $$
+</details>
+
 
 ## Implementation: the Protein Efficiency Matrix
 
