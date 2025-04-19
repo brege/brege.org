@@ -7,7 +7,11 @@ layout: recipe-landing
 ShoeBreadcrumbs: true
 ---
 
-These recipes are for a production kitchen. The quantities are much larger than what is appropriate for home use. These are speed recipes in the sense the user knows their way around their equipment.
+A collection of professional, family, and personal recipes.
+
+## Production Recipes
+
+These recipes are for a production kitchen. The quantities are much larger than what is appropriate for home use. These are speed recipes in the sense the user knows their way around their equipment, and has familiarized themselves with industry terminology.
 
 {{< recipe-list >}}
 
