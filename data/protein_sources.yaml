@@ -1,8 +1,8 @@
 protein_sources:
   - source: Eggs
-    unit: each
-    protein_per_unit: 7.0
-    calories_per_unit: 70.
+    unit: dozen
+    protein_per_unit: 84.
+    calories_per_unit: 840.
     citation:
       label: "[1]"
       href: "https://fdc.nal.usda.gov/food-details/1663084/nutrients"
@@ -57,9 +57,9 @@ protein_sources:
         grams: 232.
         calories: 2150.
   - source: Greek Yogurt (2%)
-    unit: cups
-    protein_per_unit: 22.
-    calories_per_unit: 150.
+    unit: 32oz tub
+    protein_per_unit: 88.
+    calories_per_unit: 600.
     citation: 
       label: "[4]"
       href: "https://fdc.nal.usda.gov/food-details/360742/nutrients"
@@ -73,10 +73,13 @@ protein_sources:
       - label: grams
         grams: 0.10
         calories: 0.68
+      - label: 32oz tub
+        grams: 88.
+        calories: 600.
   - source: Cottage Cheese (2%)
-    unit: cups
-    protein_per_unit: 24.
-    calories_per_unit: 200.
+    unit: 24oz tub
+    protein_per_unit: 72.
+    calories_per_unit: 600.
     citation: 
       label: "[5]"
       href: "https://fdc.nal.usda.gov/food-details/2658102/nutrients"
@@ -90,6 +93,9 @@ protein_sources:
       - label: cups
         grams: 24.
         calories: 200.
+      - label: 24oz tub
+        grams: 72.
+        calories: 600.
   - source: Tree Nuts (Avg)
     unit: cups
     protein_per_unit: 23.
@@ -125,9 +131,9 @@ protein_sources:
         grams: 6.0
         calories: 100.
   - source: Chili (Est.)
-    unit: cups
-    protein_per_unit: 15.0
-    calories_per_unit: 240.
+    unit: bowls
+    protein_per_unit: 30.
+    calories_per_unit: 480.
     citation: 
       label: "[8]"
       href: "https://fdc.nal.usda.gov/food-details/2671587/nutrients"
@@ -144,7 +150,10 @@ protein_sources:
       - label: kilograms
         grams: 70.
         calories: 1000
-  - source: Salmon
+      - label: bowls
+        grams: 30.
+        calories: 480.
+  - source: Salmon, raw
     unit: pounds
     protein_per_unit: 100.
     calories_per_unit: 1100.
