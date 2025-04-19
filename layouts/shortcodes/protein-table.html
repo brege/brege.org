@@ -1,55 +1,60 @@
 <!-- layouts/shortcodes/protein-table.html -->
 <link rel="stylesheet" href="{{ "css/calculator.css" | relURL }}">
 
-<div class="calculator">
-  <label for="weight-input" class="form-label">Your weight:</label>
-  <input type="number" id="weight-input" value="175" class="form-control" style="background-color: var(--entry)" >
-  <label class="form-label"><input type="radio" name="unit" value="metric"> kg</label>
-  <label><input type="radio" name="unit" value="imperial" checked> lbs</label>
-  <br><br>
-  <label for="target-range" class="form-label mt-4">Protein target:
-    <span id="target-label">0.8 g/lb (RDA)</span>
-  </label>
-  <br>
-  <input type="range" id="target-range" class="w-full mb-4" />
-  <br>
-</div>
+<div id="calculator">
 
-<table class="table table-dark border-collapse w-full">
-  <thead>
-    <tr>
-      <th>Source</th>
-      <th>Protein/unit (g)</th>
-      <th id="target-column-label">Quantity</th>
-      <th>Serving Units</th>
-      <th>Calories (kcal)</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody id="protein-tbody">
-    {{ range .Site.Data.protein_sources.protein_sources }}
-    <tr data-protein="{{ .protein_per_unit }}" data-calories="{{ .calories_per_unit }}">
-      <td>{{ .source }}</td>
-      <td class="protein-per-unit">{{ .protein_per_unit }}</td>
-      <td class="col-target"></td>
-      <td>
-        <select class="unit-select">
-          {{ $source := . }}
-          {{ range $unit := $source.units }}
-            <option value="{{ $unit.grams }}" data-calories="{{ $unit.calories }}" {{ if eq $unit.grams $source.protein_per_unit }}selected{{ end }}>
-              {{ $unit.label }}
-            </option>
-          {{ end }}
-        </select>
-      </td>
-      <td class="calories-total"></td>
-      <td class="citation">
-        <a href="{{ .citation.href }}" target="_blank" rel="noopener">{{ .citation.label }}</a>
-      </td>
-    </tr>
-    {{ end }}
-  </tbody>
-</table>
+  <div class="calculator">
+    <div class="input-group">
+      <input type="number" id="weight-input" value="175" class="form-control weight-input" />
+      <div class="unit-toggle">
+        <label><input type="radio" name="unit" value="imperial" checked> lbs</label>
+        <label><input type="radio" name="unit" value="metric"> kg</label>
+      </div>
+    </div>
+
+    <label for="target-range" class="form-label mt-4"><b>Protein target:</b>
+      <span id="target-label">0.8 g/lb (RDA) [140 g]</span>
+    </label>
+    <br>
+    <input type="range" id="target-range" class="w-full mb-4" />
+  </div>
+
+  <table id="resultsTable">
+    <thead>
+      <tr>
+        <th>Source</th>
+        <th>Protein (g)/Unit</th>
+        <th id="target-column-label">Quantity</th>
+        <th>Serving Units</th>
+        <th>Calories</th>
+        <th>Source</th>
+      </tr>
+    </thead>
+    <tbody id="protein-tbody">
+      {{ range .Site.Data.protein_sources.protein_sources }}
+      <tr data-protein="{{ .protein_per_unit }}" data-calories="{{ .calories_per_unit }}">
+        <td>{{ .source }}</td>
+        <td class="protein-per-unit">{{ .protein_per_unit }}</td>
+        <td class="col-target"></td>
+        <td>
+          <select class="unit-select">
+            {{ $source := . }}
+            {{ range $unit := $source.units }}
+              <option value="{{ $unit.grams }}" data-calories="{{ $unit.calories }}" {{ if eq $unit.grams $source.protein_per_unit }}selected{{ end }}>
+                {{ $unit.label }}
+              </option>
+            {{ end }}
+          </select>
+        </td>
+        <td class="calories-per-unit">{{ .calories_per_unit }}</td>
+        <td class="citation">
+          <a href="{{ .citation.href }}" target="_blank" rel="noopener">{{ .citation.label }}</a>
+        </td>
+      </tr>
+      {{ end }}
+    </tbody>
+  </table>
+</div>
 
 <script>
   let currentUnit = 'imperial';
@@ -67,18 +72,15 @@
 
   function updateSingleRow(row) {
     const proteinPerUnit = parseFloat(row.dataset.protein);
-    const unitSelect = row.querySelector(".unit-select");
-    const selectedOption = unitSelect.options[unitSelect.selectedIndex];
-    const caloriesPerUnit = parseFloat(selectedOption.dataset.calories);
-
+    const caloriesPerUnit = parseFloat(row.dataset.calories);
     if (isNaN(proteinPerUnit) || proteinPerUnit === 0) return;
 
     const targetGrams = userWeightKg * currentTarget;
     const quantity = targetGrams / proteinPerUnit;
-    row.querySelector(".col-target").textContent = quantity.toFixed(2);
+    const calories = quantity * caloriesPerUnit;
 
-    const totalCalories = isNaN(caloriesPerUnit) ? '-' : (quantity * caloriesPerUnit).toFixed(0);
-    row.querySelector(".calories-total").textContent = totalCalories;
+    row.querySelector(".col-target").textContent = quantity.toFixed(2);
+    row.querySelector(".calories-per-unit").textContent = isNaN(calories) ? '-' : Math.round(calories);
   }
 
   function updateTargetRangeAttributes() {
@@ -100,13 +102,18 @@
     const unitSuffix = currentUnit === "metric" ? "g/kg" : "g/lb";
     const displayTarget = currentUnit === "metric" ? currentTarget : currentTarget / 2.205;
     const label = document.querySelector("#target-label");
+
+    const targetGrams = userWeightKg * currentTarget;
+    const gramsRounded = Math.round(targetGrams);
+
+    let baseText = `${displayTarget.toFixed(2)} ${unitSuffix}`;
     if (currentTarget <= 0.85) {
-      label.textContent = `${displayTarget.toFixed(2)} ${unitSuffix} (RDA)`;
-    } else if (currentTarget < 1.6) {
-      label.textContent = `${displayTarget.toFixed(2)} ${unitSuffix}`;
-    } else {
-      label.textContent = `${displayTarget.toFixed(2)} ${unitSuffix} (MAX)`;
+      baseText += " (RDA)";
+    } else if (currentTarget >= 1.6) {
+      baseText += " (MAX)";
     }
+
+    label.textContent = `${baseText} [${gramsRounded} g]`;
   }
 
   document.querySelector("#weight-input").addEventListener("input", function () {
@@ -140,6 +147,7 @@
       const protein = parseFloat(this.value);
       const calories = parseFloat(this.selectedOptions[0].dataset.calories);
       row.dataset.protein = protein;
+      row.dataset.calories = calories;
       row.querySelector(".protein-per-unit").textContent = protein.toFixed(2);
       updateSingleRow(row);
     });

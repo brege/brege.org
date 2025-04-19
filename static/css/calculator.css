@@ -1,9 +1,11 @@
+/* calculator.css — shared between Epley and Protein Calculator */
+
 .bold-weight {
   font-weight: bold;
   background-color: var(--highlight); 
 }
 
-/* Apply styles for the calculator input fields and dropdown */
+/* ====== Calculator Input Styles ====== */
 #calculator input,
 #calculator select {
   position: relative;
@@ -11,43 +13,38 @@
   padding: 10px;
   border: 1px solid var(--secondary);
   border-radius: var(--radius);
-  background-color: var(--entry); /* Match background color to theme */
-  color: var(--content); /* Ensure text is readable */
+  background-color: var(--entry);
+  color: var(--content);
   cursor: pointer;
   outline: none;
   margin-bottom: 10px;
   width: 100%;
 }
 
-/* Hover effect for inputs */
 #calculator input:hover,
 #calculator select:hover {
-  background-color: var(--border); /* Hover with a slightly darker background */
+  background-color: var(--border);
 }
 
-/* Style the dropdown options */
 #calculator select option {
-  background-color: var(--code-bg); /* Background color for options */
-  color: var(--content); /* Text color for the options */
+  background-color: var(--code-bg);
+  color: var(--content);
   cursor: pointer;
-  outline: none;
   border-radius: var(--radius);
 }
 
-/* Hover effect for dropdown options */
 #calculator select option:hover {
   background-color: var(--primary);
   color: var(--content);
 }
 
-/* Style the button */
-/* Style the calculate button to match the Papermod tag style */
+/* ====== Calculate Button Style ====== */
 #calculator button {
   padding: 8px 20px;
-  border-radius: var(--radius); /* Rounded corners */
-  background-color: var(--accent); /* Matching background color like tags */
-  color: var(--content); /* Text color */
-  border: 1px solid var(--secondary); /* Border color */
+  border-radius: var(--radius);
+  background-color: var(--accent);
+  color: var(--content);
+  border: 1px solid var(--secondary);
   cursor: pointer;
   font-size: 1em;
   text-align: center;
@@ -56,34 +53,35 @@
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-/* Hover effect for the button */
 #calculator button:hover {
-  background-color: var(--primary); /* On hover, change the background */
-  border-color: var(--primary); /* On hover, adjust the border color */
+  background-color: var(--primary);
+  border-color: var(--primary);
 }
 
-/* Focus effect for the button */
 #calculator button:focus {
   outline: none;
-  box-shadow: 0 0 3px var(--primary); /* Add a glow when focused */
+  box-shadow: 0 0 3px var(--primary);
 }
 
-/* Style the results table */
+/* ====== Results Table (Protein Calculator) ====== */
 #resultsTable {
   width: 100%;
   margin-top: 20px;
   border-collapse: collapse;
+  font-size: 1.1rem;
+  white-space: nowrap;
 }
 
 #resultsTable th,
 #resultsTable td {
-  padding: 10px;
+  padding: 4px 8px 0px 8px;
   text-align: center;
   border: 1px solid var(--secondary);
 }
 
 #resultsTable th {
   background-color: var(--border);
+  padding: 1em 8px 1em 8px;
 }
 
 #resultsTable td {
@@ -91,10 +89,17 @@
 }
 
 #resultsTable tr:hover td {
-  background-color: var(--primary); /* Hover effect on rows */
+  background-color: var(--tertiary);
 }
 
-/* Adjust for small screen sizes */
+#resultsTable td:first-child,
+#resultsTable th:first-child {
+  min-width: 140px;
+  white-space: nowrap;
+  word-break: keep-all;
+}
+
+/* ====== Responsive Adjustments ====== */
 @media screen and (max-width: 768px) {
   #calculator {
     width: 100%;
@@ -105,30 +110,93 @@
   #calculator button {
     font-size: 0.9em;
   }
+
+  #resultsTable td,
+  #resultsTable th {
+    padding: 2px 6px;
+  }
+
+  #resultsTable td:first-child,
+  #resultsTable th:first-child {
+    min-width: 120px;
+  }
 }
 
+/* ====== Epley Chart Styles ====== */
 .progression-caption {
   font-size: 14px;
   text-align: center;
-  color: var(--primary);  /* Adjust to your theme */
+  color: var(--primary);
 }
 
 .progression-chart {
   width: 100%;
   max-width: 100%;
-  overflow: hidden; /* Prevents overflow */
+  overflow: hidden;
   box-sizing: border-box;
   position: relative;
 }
 
 #progressionChart {
   width: 115%;
-  max-height: 400px; /* Set max height to prevent it from becoming too tall */
+  max-height: 400px;
 }
 
 @media (max-width: 800px) {
   #progressionChart {
-    height: auto; /* Adjust height for mobile devices */
+    height: auto;
   }
 }
 
+/* ====== Layout Utilities ====== */
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.flex-grow {
+  flex: 1 1 auto;
+}
+
+.unit-toggle {
+  display: flex;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.unit-toggle label {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-weight: normal;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+/* ====== Input Cleanups ====== */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.weight-input {
+  flex: 1;
+  min-width: 0;
+}
