@@ -6,7 +6,6 @@
   {{ end }}
 </div>
 
-<!-- Include d3.js -->
 <script src="https://d3js.org/d3.v7.min.js"></script>
 
 <script>
@@ -14,40 +13,40 @@
   let inputReps = {{ .Get "reps" }};
   let chartData = [];
 
-  function calculate1RM(weight, reps) {
+  function progression_calculate1RM(weight, reps) {
     return weight * (1 + reps / 30);
   }
 
-  function roundToNearest5(num) {
+  function progression_roundToNearest5(num) {
     return Math.round(num / 5) * 5;
   }
 
-  function calculateWeights(weight, reps) {
-    const W_1RM = roundToNearest5(calculate1RM(weight, reps));
-    const W_30RM = roundToNearest5(W_1RM / (1 + 30 / 30));
-    const W_20RM = roundToNearest5(W_1RM / (1 + 20 / 30));
-    const W_10RM = roundToNearest5(W_1RM / (1 + 10 / 30));
-    const W_5RM = roundToNearest5(weight);
+  function progression_calculateWeights(weight, reps) {
+    const W_1RM = progression_roundToNearest5(progression_calculate1RM(weight, reps));
+    const W_30RM = progression_roundToNearest5(W_1RM / (1 + 30 / 30));
+    const W_20RM = progression_roundToNearest5(W_1RM / (1 + 20 / 30));
+    const W_10RM = progression_roundToNearest5(W_1RM / (1 + 10 / 30));
+    const W_5RM = progression_roundToNearest5(weight);
     return { W_30RM, W_20RM, W_10RM, W_5RM, W_1RM };
   }
 
-  function updateChart() {
+  function progression_updateChart() {
     const constrainedReps = Math.max(3, Math.min(inputReps, 6));
-
-    const { W_30RM, W_20RM, W_10RM, W_5RM, W_1RM } = calculateWeights(inputWeight, constrainedReps);
+    const { W_30RM, W_20RM, W_10RM, W_5RM, W_1RM } = progression_calculateWeights(inputWeight, constrainedReps);
 
     chartData = [
       { label: '12 reps (Warmup)', weight: W_30RM, reps: 12, zone: 'warmup' },
       { label: '8 reps (Warmup)', weight: W_20RM, reps: 8, zone: 'warmup' },
       { label: '4 reps (Warmup)', weight: W_10RM, reps: 4, zone: 'warmup' },
-      { label: `${constrainedReps} reps (Workset 1)`, weight: inputWeight, reps: constrainedReps, zone: 'worksets' },  // Update with constrained reps
-      { label: `${constrainedReps} reps (Workset 2)`, weight: inputWeight, reps: constrainedReps, zone: 'worksets' },  // Update with constrained reps
-      { label: `${constrainedReps} reps (Workset 3)`, weight: inputWeight, reps: constrainedReps, zone: 'worksets' },  // Update with constrained reps
+      { label: `${constrainedReps} reps (Workset 1)`, weight: inputWeight, reps: constrainedReps, zone: 'worksets' },
+      { label: `${constrainedReps} reps (Workset 2)`, weight: inputWeight, reps: constrainedReps, zone: 'worksets' },
+      { label: `${constrainedReps} reps (Workset 3)`, weight: inputWeight, reps: constrainedReps, zone: 'worksets' },
       { label: '8 reps (Dropset)', weight: W_10RM, reps: 8, zone: 'dropsets' },
       { label: '12 reps (Dropset)', weight: W_20RM, reps: 12, zone: 'dropsets' }
     ];
+
     const svg = d3.select("#progressionChart");
-    svg.selectAll("*").remove(); // Clear previous chart
+    svg.selectAll("*").remove();
 
     const margin = { top: 20, right: 20, bottom: 60, left: 40 };
     const width = 800 - margin.left - margin.right;
@@ -168,18 +167,16 @@
       .style("padding", "1rem");
   }
 
-  // Event listeners to update the chart on user input
   document.getElementById('weight').addEventListener('input', (event) => {
     inputWeight = parseInt(event.target.value);
-    updateChart();
+    progression_updateChart();
   });
 
   document.getElementById('reps').addEventListener('input', (event) => {
     inputReps = parseInt(event.target.value);
-    updateChart();
+    progression_updateChart();
   });
 
-  // Initial chart render
-  updateChart();
+  progression_updateChart();
 </script>
 

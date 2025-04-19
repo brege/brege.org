@@ -1,51 +1,39 @@
 <link rel="stylesheet" href="{{ "css/calculator.css" | relURL }}">
+
 <div id="calculator">
   <label for="weight" class="form-label"><b>Initial Weight</b> (lbs):</label>
   <input type="number" id="weight" class="form-control" value="135" min="10" max="1000">
-  <br>
 
   <label for="reps" class="form-label"><b>Initial Reps</b>:</label>
   <input type="number" id="reps" class="form-control" value="5" min="1" max="30">
-  <br>
 
-  <!-- Rep range variation dropdown -->
   <label for="repRange" class="form-label"><b>Rep Range Variation:</b></label>
   <select id="repRange" class="post-tags">
-    <option value="0">±(R₀/2)</option> <!-- Default behavior -->
-    <option value="1">±1</option>
-    <option value="2">±2</option>
-    <option value="3">±3</option>
-    <option value="4">±4</option>
-    <option value="5">±5</option>
-    <option value="6">±6</option>
-    <option value="7">±7</option>
-    <option value="8">±8</option>
-    <option value="9">±9</option>
-    <option value="10">±10</option>
-    <option value="11">±11</option>
-    <option value="12">±12</option>
-    <option value="13">±13</option>
-    <option value="14">±14</option>
-    <option value="15">±15</option>
-    <option value="16">±16</option>
-    <option value="17">±17</option>
-    <option value="18">±18</option>
-    <option value="19">±19</option>
-    <option value="20">±20</option>
-    <option value="21">±21</option>
-    <option value="22">±22</option>
-    <option value="23">±23</option>
-    <option value="24">±24</option>
-    <option value="25">±25</option>
-    <option value="26">±26</option>
-    <option value="27">±27</option>
-    <option value="28">±28</option>
-    <option value="29">±29</option>
-    <option value="30">±30</option>
+    <option value="0">±(R₀/2)</option>
+    {{ range $i := seq 1 30 }}
+      <option value="{{ $i }}">±{{ $i }}</option>
+    {{ end }}
   </select>
-  <br>
 
-  <h3>Epley Pathway</h3>
+  <label for="formulaSelect" class="form-label"><b>1RM Formula:</b></label>
+  <select id="formulaSelect" class="post-tags">
+    <option value="epley">Epley</option>
+    <option value="brzycki">Brzycki</option>
+    <option value="lombardi">Lombardi</option>
+    <option value="oconner">O’Conner</option>
+  </select>
+
+  <!-- insert method here to be able to add text from the hugo document -->
+
+  {{ if .Inner }}
+  <div class="calculator-explanation">
+    {{ .Inner | markdownify }}
+  </div>
+  {{ end }}
+
+  <h3 id="formulaHeading">Epley Pathway </h3>
+  <div id="formulaLatex" class="katex-block" style="margin-bottom: 1rem;"></div>
+
   <table id="resultsTable" class="table table-dark">
     <thead>
       <tr>
@@ -55,148 +43,140 @@
         <th id="effectiveRMHeader">Effective 5RM (lbs)</th>
       </tr>
     </thead>
-    <tbody>
-      <!-- Results will be populated here -->
-    </tbody>
+    <tbody></tbody>
   </table>
 
-  <div id="chart-container">
-    <!-- Chart will be dynamically generated here -->
-  </div>
+  <div id="chart-container"></div>
 
   <script>
     function calculate1RM(weight, reps) {
-      return weight * (1 + reps / 30);
+      const formula = document.getElementById('formulaSelect').value;
+      switch (formula) {
+        case 'epley': return weight * (1 + reps / 30);
+        case 'brzycki': return weight / (1.0278 - 0.0278 * reps);
+        case 'lombardi': return weight * Math.pow(reps, 0.10);
+        case 'oconner': return weight * (1 + 0.025 * reps);
+        default: return weight * (1 + reps / 30); // fallback
+      }
     }
+    // inverse of calculate1RM
+    function calculateEffectiveRM(estimated1RM, reps) {
+      const formula = document.getElementById('formulaSelect').value;
+      switch (formula) {
+        case 'epley':
+          return estimated1RM / (1 + reps / 30);
+        case 'brzycki':
+          return estimated1RM * (1.0278 - 0.0278 * reps);
+        case 'lombardi':
+          return estimated1RM / Math.pow(reps, 0.10);
+        case 'oconner':
+          return estimated1RM / (1 + 0.025 * reps);
+        default:
+          return estimated1RM / (1 + reps / 30); // fallback to Epley
+      }
+    }
+
+    function updateFormulaHeading() {
+      const formula = document.getElementById('formulaSelect').value;
+
+      const headingMap = {
+        epley: "Epley Pathway",
+        brzycki: "Brzycki Pathway",
+        lombardi: "Lombardi Pathway",
+        oconner: "O’Conner Pathway"
+      };
+
+      const latexMap = {
+        epley: "W_{\\text{1RM}} = W \\cdot \\left(1 + \\frac{R}{30}\\right)",
+        brzycki: "W_{\\text{1RM}} = \\frac{W}{1.0278 - 0.0278R}",
+        lombardi: "W_{\\text{1RM}} = W \\cdot R^{0.10}",
+        oconner: "W_{\\text{1RM}} = W \\cdot (1 + 0.025R)"
+      };
+
+      // Update heading text
+      document.getElementById('formulaHeading').textContent = headingMap[formula] || "Epley Pathway";
+
+      // Update KaTeX rendering
+      const formulaLatex = latexMap[formula] || latexMap["epley"];
+      const formulaLatexDiv = document.getElementById('formulaLatex');
+
+      if (window.katex) {
+        katex.render(formulaLatex, formulaLatexDiv, { throwOnError: false });
+      } else {
+        formulaLatexDiv.textContent = `\\(${formulaLatex}\\)`; // fallback for no KaTeX
+      }
+    }
+
 
     function calculateResults() {
       const W_0 = parseInt(document.getElementById('weight').value);
       const R_0 = parseInt(document.getElementById('reps').value);
       const repVariation = parseInt(document.getElementById('repRange').value);
+      const defaultVar = Math.floor(R_0 / 2);
+      const finalVar = repVariation === 0 ? defaultVar : repVariation;
 
-      // Default behavior: Calculate the rep range based on the floor of R_0 / 2 (±R_0/2)
-      const defaultRepVariation = Math.floor(R_0 / 2);
-
-      // If the user has selected a rep variation, use it; otherwise, default to ±(R_0/2)
-      const finalRepVariation = repVariation === 0 ? defaultRepVariation : repVariation;
-
-      // Calculate the rep range based on selected or default variation: ± repVariation
-      const repRangeLower = Math.max(1, R_0 - finalRepVariation); // Ensuring the lower bound is at least 1
-      const repRangeUpper = Math.min(30, R_0 + finalRepVariation); // Ensuring the upper bound doesn't exceed 30
-
+      const R_min = Math.max(1, R_0 - finalVar);
+      const R_max = Math.min(30, R_0 + finalVar);
       const lowerLimit = W_0;
       const upperLimit = W_0 + 5;
 
-      const validPairs = [];
-
-      // Update the table header dynamically to reflect the chosen reps
       document.getElementById('effectiveRMHeader').textContent = `Effective ${R_0}RM (lbs)`;
 
-      // Iterate over all weights from 10 lb to 1000 lb, incrementing by 5
+      const pairs = [];
       for (let W = 10; W <= 1000; W += 5) {
-        // Iterate through all repetitions within the calculated rep range
-        for (let R = repRangeLower; R <= repRangeUpper; R++) {
-          const computed1RM = calculate1RM(W, R);
-
-          // Calculate the effective RM for the user-defined reps (R_0)
-          const effectiveRM = computed1RM / (1 + R_0 / 30);
-
-          // Check if the effective RM is within the range [W_0, W_0 + 5]
+        for (let R = R_min; R <= R_max; R++) {
+          const oneRM = calculate1RM(W, R);
+          //const effectiveRM = oneRM * (1 + R_0 / 30); // epley hardcoded
+          const effectiveRM =  calculateEffectiveRM(oneRM, R_0);
           if (effectiveRM >= lowerLimit && effectiveRM <= upperLimit) {
-            validPairs.push({ W, R, computed1RM, effectiveRM });
+            pairs.push({ W, R, oneRM, effectiveRM });
           }
         }
       }
 
-      // Sort results by Effective RM
-      validPairs.sort((a, b) => a.effectiveRM - b.effectiveRM);
+      pairs.sort((a, b) => a.effectiveRM - b.effectiveRM);
 
-      // Display results in table
-      const resultsTable = document.getElementById('resultsTable').getElementsByTagName('tbody')[0];
-      resultsTable.innerHTML = ''; // Clear previous results
+      const tbody = document.querySelector("#resultsTable tbody");
+      tbody.innerHTML = '';
 
       let finalRowAdded = false;
+      for (const row of pairs) {
+        const tr = tbody.insertRow();
+        tr.insertCell(0).textContent = row.W;
+        tr.insertCell(1).textContent = row.R;
+        tr.insertCell(2).textContent = row.oneRM.toFixed(2);
+        tr.insertCell(3).textContent = row.effectiveRM.toFixed(2);
+        if (Math.abs(row.W - W_0) <= 5) tr.classList.add('bold-weight');
+        if (row.W === W_0 + 5 && row.R === R_0) finalRowAdded = true;
+      }
 
-      validPairs.forEach(pair => {
-        const row = resultsTable.insertRow();
-        row.insertCell(0).textContent = pair.W;
-        row.insertCell(1).textContent = pair.R;
-        row.insertCell(2).textContent = pair.computed1RM.toFixed(2);
-        row.insertCell(3).textContent = pair.effectiveRM.toFixed(2);
-
-        // Add bold class to rows with weight within +/- 5 of initial weight
-        if (Math.abs(pair.W - W_0) <= 5) {
-          row.classList.add('bold-weight');
-        }
-
-        // Ensure we add the final target row (W_0 + 5, R_0) at the end
-        if (pair.W === W_0 + 5 && pair.R === R_0 && !finalRowAdded) {
-          finalRowAdded = true;
-        }
-      });
-
-      // If the final row wasn't added, we manually add it
       if (!finalRowAdded) {
-        const finalRow = resultsTable.insertRow();
+        const finalOneRM = calculate1RM(W_0 + 5, R_0);
+        const finalEffective = finalOneRM / (1 + R_0 / 30);
+        const finalRow = tbody.insertRow();
         finalRow.insertCell(0).textContent = W_0 + 5;
         finalRow.insertCell(1).textContent = R_0;
-        finalRow.insertCell(2).textContent = calculate1RM(W_0 + 5, R_0).toFixed(2);
-        finalRow.insertCell(3).textContent = (calculate1RM(W_0 + 5, R_0) / (1 + R_0 / 30)).toFixed(2);
-
-        // Ensure this row is highlighted
+        finalRow.insertCell(2).textContent = finalOneRM.toFixed(2);
+        finalRow.insertCell(3).textContent = finalEffective.toFixed(2);
         finalRow.classList.add('bold-weight');
       }
 
-      updateChart(validPairs);
+      updateChart(pairs);
     }
 
-    function updateChart(validPairs) {
-      const chartData = validPairs.map(pair => ({
-        weight: pair.W,
-        effectiveRM: pair.effectiveRM
-      }));
+    document.getElementById('formulaSelect').addEventListener('change', () => {
+      updateFormulaHeading();
+      calculateResults();
+    });
 
-      // Assuming the chart is initialized with a specific chart library (e.g., Chart.js)
-      const ctx = document.getElementById("chart-container");
-      if (ctx && window.myChart) {
-        window.myChart.data.labels = chartData.map(data => data.weight);
-        window.myChart.data.datasets[0].data = chartData.map(data => data.effectiveRM);
-        window.myChart.update();
-      } else {
-        // Initialize a new chart if none exists (for the first time)
-        const newChart = new Chart(ctx, {
-          type: 'line',
-          data: {
-            labels: chartData.map(data => data.weight),
-            datasets: [{
-              label: 'Effective RM',
-              data: chartData.map(data => data.effectiveRM),
-              borderColor: 'rgb(75, 192, 192)',
-              fill: false,
-            }]
-          },
-          options: {
-            responsive: true,
-            scales: {
-              x: { title: { display: true, text: 'Weight (lbs)' } },
-              y: { title: { display: true, text: 'Effective RM (lbs)' } }
-            }
-          }
-        });
-        window.myChart = newChart;
-      }
-    }
-
-    // Event listeners to update calculations and chart instantly
     document.getElementById('weight').addEventListener('input', calculateResults);
     document.getElementById('reps').addEventListener('input', calculateResults);
     document.getElementById('repRange').addEventListener('change', calculateResults);
 
-    // Prepopulate the table and chart when the page loads
-    window.addEventListener('DOMContentLoaded', (event) => {
+    window.addEventListener('DOMContentLoaded', () => {
+      updateFormulaHeading();
       calculateResults();
     });
-
   </script>
 
   <hr/>
