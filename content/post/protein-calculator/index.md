@@ -91,7 +91,7 @@ Adjusting the **Protein target** slider can be thought of as a direct conversion
 
 {{< protein-table >}}
 
-I've also included the calories if you ate that much of the same source.  You'll note that high carbohydrate (peas, chili) and especially high fat content (mixed nuts) greatly diminish the remaining calorie budget in the day.  Conversely, protein powders, including the vegan kind, substantially lower the overall calorie footprint. 
+I've also included the calories if you ate that much of the same source.  You'll note that high carbohydrate (peas, chili) and especially high fat content (mixed nuts) greatly diminish the remaining calorie budget in the day.  Conversely, protein powders, including the vegan kind, substantially lower the overall caloric footprint.
 
 ## Discussion
 

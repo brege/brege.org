@@ -11,8 +11,8 @@ protein_sources:
         grams: 7.
         calories: 70.
       - label: grams
-        grams: 12.5
-        calories: 175.
+        grams: .14
+        calories: 1.4
       - label: dozen
         grams: 84.
         calories: 840.
@@ -28,13 +28,14 @@ protein_sources:
         grams: 105.
         calories: 735.
       - label: ounces
-        grams: 46
+        grams: 6.6
+        calories: 46.
       - label: grams
-        grams: 0.13
+        grams: 0.25 
         calories: 1.7
       - label: kilograms
-        grams: 130.
-        calories: 1160.
+        grams: 230.
+        calories: 1700.
   - source: Beef (Ground, 85% lean)
     unit: pounds
     protein_per_unit: 105.
@@ -57,21 +58,21 @@ protein_sources:
         calories: 2150.
   - source: Greek Yogurt (Fage 2%)
     unit: cups
-    protein_per_unit: 21.
+    protein_per_unit: 22.
     calories_per_unit: 150.
     citation: 
       label: "[4]"
       href: "https://fdc.nal.usda.gov/food-details/360742/nutrients"
     units:
+      - label: cups
+        grams: 22.
+        calories: 150.
       - label: ounces
         grams: 2.7
         calories: 18.
       - label: grams
-        grams: 0.87
-        calories: 0.63
-      - label: cups
-        grams: 22.
-        calories: 150.
+        grams: 0.10
+        calories: 0.68
   - source: Cottage Cheese (Low Fat)
     unit: cups
     protein_per_unit: 24.
@@ -140,6 +141,9 @@ protein_sources:
       - label: grams
         grams: 0.07
         calories: 1.0
+      - label: kilograms
+        grams: 70.
+        calories: 1000
   - source: Salmon
     unit: pounds
     protein_per_unit: 100.
@@ -158,8 +162,8 @@ protein_sources:
         grams: 100.
         calories: 1100.
       - label: kilograms
-        grams: 232.
-        calories: 2150.
+        grams: 220.
+        calories: 2300.
   - source: Pork Chop, Boneless
     unit: pounds
     protein_per_unit: 104.
@@ -178,19 +182,19 @@ protein_sources:
         grams: 104.
         calories: 620.
       - label: kilograms
-        grams: 232.
-        calories: 1230.
+        grams: 220.
+        calories: 1300.
   - source: Whey Protein Powder
     unit: scoops
     protein_per_unit: 25.
-    calories_per_unit: 35.
+    calories_per_unit: 130.
     citation: 
       label: "[11]"
       href: "https://www.costco.com/kirkland-signature-whey-protein%2c-creamy-chocolate%2c-5.4lbs.product.4000287218.html"
     units:
       - label: grams
         grams: 0.71
-        calories: 4.9
+        calories: 3.5
       - label: scoops
         grams: 25.
         calories: 130.
