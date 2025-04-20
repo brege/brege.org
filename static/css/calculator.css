@@ -99,6 +99,9 @@
   word-break: keep-all;
 }
 
+#resultsTable th {
+  white-space: wrap !important;
+}
 /* ====== Responsive Adjustments ====== */
 @media screen and (max-width: 768px) {
   #calculator {
@@ -122,9 +125,6 @@
   }
 }
 
-#resultsTable th {
-  white-space: wrap !important;
-}
 /* ====== Epley Chart Styles ====== */
 .progression-caption {
   font-size: 14px;
