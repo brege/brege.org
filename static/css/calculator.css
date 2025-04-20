@@ -63,7 +63,7 @@
   box-shadow: 0 0 3px var(--primary);
 }
 
-/* ====== Results Table (Protein Calculator) ====== */
+/* ====== Results Table (Protein and Epley Calculator) ====== */
 #resultsTable {
   width: 100%;
   margin-top: 20px;
@@ -122,6 +122,9 @@
   }
 }
 
+#resultsTable th {
+  white-space: wrap !important;
+}
 /* ====== Epley Chart Styles ====== */
 .progression-caption {
   font-size: 14px;
