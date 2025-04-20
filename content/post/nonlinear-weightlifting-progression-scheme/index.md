@@ -41,7 +41,7 @@ This is quite useful for plateaus. For example, if you get stuck progressing the
 
 Because the formula is nonlinear, this requires an iterative approach. I've made a calculator that will help you find this path over different $\left(W, R\right)$ pairs. It defaults to using a range of reps roughly half the total initial reps, $R_0$, used.
 
-{{< epley-calculator >}}
+{{< epley-calculator method="weight" >}}
 You'll note that I've generalized this calculator to also include different formulas that different apps use:
 $$
 W_{\text{1RM}} = f(W, R)
@@ -66,11 +66,11 @@ In addition, another scheme I've been using for strength-focused exercises has b
 
 ### Possible Improvements
 
-* Create a similar pathway table for the goal of adding a rep, instead of adding $5 \textrm{lbs}$ to the bar.
+* Create a similar pathway table for the goal of adding a rep, instead of adding $5 \text{lbs}$ to the bar.  Will take a good amount of effort.
 
-* Implement a pyramid scheme with broader rep ranges. I haven't thought much about this yet, but when I can hit 7 reps on heavy compound lifts, I feel like I'm entering a moderately safe 7–12 rep range. At that point, the effort level shifts to something different.
+* Implement a pyramid scheme with broader rep ranges in the progression chart histogram. I haven't thought much about this yet, but when I can hit 7 reps on heavy compound lifts, I feel like I'm entering a moderately safe 7–12 rep range. At that point, the effort level shifts to something different.
 
-* The Epley model is just one of many. I haven't explored the others yet because I could solve this with fractional arithmetic in my head while "ape-brained" in the gym. However, adding a dropdown toggle to choose different models, and referring to recent literature on advancements in curve fitting, would make this tool more robust. Similar to how the Opus audio codec performs at different fidelities with various bitrates, I'm sure that the pathway from 1RM to 30RM follows a more complex, multi-fitted approach.
+* ~~The Epley model is just one of many. I haven't explored the others yet because I could solve this with fractional arithmetic in my head while "ape-brained" in the gym. However, adding a dropdown toggle to choose different models, and referring to recent literature on advancements in curve fitting, would make this tool more robust.~~ Similar to how the Opus audio codec performs at different fidelities with various bitrates, I'm sure that the pathway from 1RM to 30RM follows a more complex, multi-fitted approach.
 
 ### References
 
