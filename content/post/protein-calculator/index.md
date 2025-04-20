@@ -88,7 +88,7 @@ $$
 </details>
 
 
-## Implementation: the Protein Efficiency Matrix
+## Implementation: The Protein Efficiency Calculator
 
 The table below answers a simple question: how much of one single food do you need to eat to hit your daily protein target? Input your weight, toggle metric or imperial, and adjust units per row—grams, ounces, scoops, each. It’ll show you the amount needed to hit benchmarks in the range of $\text{RDA}$ to the $(\text{MAX})$ intake.  Based on resistance training status and the latest research, a sliding scale in this range will allow you to estimate your required protein demands.
 
@@ -99,6 +99,44 @@ Adjusting the **Protein target** slider can be thought of as a direct conversion
 {{< protein-table >}}
 
 I've also included the **daily Calories** you'd likewise take on per food item.  You'll note that high carbohydrate (peas, chili) and especially high fat content (mixed nuts) greatly diminish the remaining calorie budget in the day.  Conversely, protein powders, including the vegan kind, substantially lower the overall caloric footprint.
+
+## The Protein Efficiency Matrix
+
+While the above tool scales protein needs to an individual's body composition, it’s also worth viewing high-protein foods in a way that’s independent of bodyweight. The protein-to-calorie efficiency of a food source is a fixed property — it doesn’t change based on who’s eating it.
+
+With that in mind, the **Protein Efficiency Matrix** below expresses the relative caloric density of each food source. It compares the efficiency of each against the others in the table.
+
+{{< protein-efficiency-matrix >}}
+
+Your weight and training status don’t matter here — this table is the same for everyone, assuming equal daily protein intake. The first column shows a simple mean of each row’s relative efficiency compared to others — a rough estimate of how each food stacks up overall.
+**Smaller numbers are better.**
+High-fat items like salmon and nuts, and high-carb ones like peas and chili, form relative "islands of inefficiency" among high-protein sources.
+
+You can even think of this matrix as a way to zone:
+<span style="color: steelblue;">cutting</span> / 
+<span style="color: seagreen;">maintaining</span> / 
+<span style="color: lightcoral;">bulking</span>
+cycles using
+<span style="color: steelblue;">blues</span> /
+<span style="color: seagreen;">greens</span> /
+<span style="color: lightcoral;">reds</span>
+as a visual cue for how your shopping list and pantry pars might shift depending on your current training status.
+
+For example, Greek yogurt has over five times the protein density of tree nuts by volume. If you’re trying to control weight and meal prep, having this kind of visual measure might help you balance portions — say, between yogurt and nuts in your breakfast bowl.
+
+Note also that the
+<span style="color: lightcoral;">red, lower-in-protein efficiency</span> 
+items are still quite efficient. For example, gas station treats like trollies and doritos have relative efficiency values order(s) of magnitude higher.  Compared to greek yogurt, their protein efficiencies are astonomically bad 
+$\text{eff.}\left(\text{trollies}:\text{yogurt}\right)$
+<span style="color: lightcoral;">
+$\approx 32$
+</span>
+and
+$\text{eff.}\left(\text{doritos}:\text{yogurt}\right)$
+<span style="color: lightcoral;">
+$\approx 13$.
+</span>
+*Abysmal.*
 
 ## Discussion
 

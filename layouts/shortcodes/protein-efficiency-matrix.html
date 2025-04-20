@@ -1,0 +1,127 @@
+<style>
+  .nowrap {
+    white-space: nowrap;
+  }
+  .font-bold {
+    font-weight: bold;
+  }
+</style>
+
+<div id="protein-matrix-container" class="mt-6">
+  <div id="protein-matrix"></div>
+</div>
+
+<script>
+  const proteinMatrixEl = document.querySelector("#protein-matrix");
+  const tableBodyEl = document.querySelector("#protein-tbody");
+
+  function getProteinDataRows() {
+    return Array.from(tableBodyEl.querySelectorAll("tr")).map(row => {
+      const source = row.querySelector("td:first-child").textContent.trim();
+      const protein = parseFloat(row.dataset.protein);
+      const calories = parseFloat(row.dataset.calories);
+      return { source, protein, calories, calPer95g: (95 / protein) * calories };
+    }).filter(x => !isNaN(x.calPer95g));
+  }
+
+  function getCellStyle(val, extraClass = "") {
+    let color = "";
+    let fontWeight = "";
+
+    if (val <= 0.75) {
+      color = "steelblue";
+      fontWeight = "font-bold";
+    } else if (val < 0.85) {
+      color = "steelblue";
+    } else if (val <= 1.15) {
+      color = "seagreen";
+    } else if (val < 2) {
+      color = "lightcoral";
+    } else {
+      color = "lightcoral";
+      fontWeight = "font-bold";
+    }
+
+    const classes = ["td-right"];
+    if (extraClass) classes.push(extraClass);
+    if (fontWeight) classes.push(fontWeight);
+
+    return {
+      className: classes.join(" "),
+      style: `color: ${color};`
+    };
+  }
+
+  function buildMatrix(data) {
+    const n = data.length;
+    const matrix = [];
+
+    // Build base matrix
+    for (let i = 0; i < n; i++) {
+      matrix[i] = [];
+      for (let j = 0; j < n; j++) {
+        matrix[i][j] = data[i].calPer95g / data[j].calPer95g;
+      }
+    }
+
+    // Calculate row-wise averages
+    const rowAverages = matrix.map(row =>
+      row.reduce((sum, val) => sum + val, 0) / n
+    );
+
+    const table = document.createElement("table");
+    table.className = "table-style text-sm";
+
+    // Header row
+    const thead = document.createElement("thead");
+    const headerRow = document.createElement("tr");
+
+    headerRow.innerHTML = `
+      <th class="th-left">↘︎</th>
+      <th class="th-top">Average</th>
+      ${data.map(item => `<th class="th-top">${item.source}</th>`).join('')}
+    `;
+    thead.appendChild(headerRow);
+    table.appendChild(thead);
+
+    // Body
+    const tbody = document.createElement("tbody");
+    for (let i = 0; i < n; i++) {
+      const row = document.createElement("tr");
+
+      const avg = rowAverages[i];
+      const avgStyle = getCellStyle(avg, "bg-blue-50");
+
+      row.innerHTML = `
+        <th class="th-left nowrap">${data[i].source}</th>
+        <td class="${avgStyle.className}" style="${avgStyle.style}">${avg.toFixed(2)}</td>
+        ${matrix[i].map(val => {
+          const cellStyle = getCellStyle(val);
+          return `<td class="${cellStyle.className}" style="${cellStyle.style}">${val.toFixed(2)}</td>`;
+        }).join('')}
+      `;
+      tbody.appendChild(row);
+    }
+
+    table.appendChild(tbody);
+    return table;
+  }
+
+  function updateMatrixView() {
+    const proteinData = getProteinDataRows();
+    proteinMatrixEl.innerHTML = "";
+    if (proteinData.length === 0) return;
+    const matrixTable = buildMatrix(proteinData);
+    proteinMatrixEl.appendChild(matrixTable);
+  }
+
+  const observer = new MutationObserver(updateMatrixView);
+  observer.observe(tableBodyEl, { childList: true, subtree: true, attributes: true, attributeFilter: ['data-protein', 'data-calories'] });
+
+  document.querySelector("#target-range").addEventListener("input", updateMatrixView);
+  document.querySelector("#weight-input").addEventListener("input", updateMatrixView);
+  document.querySelectorAll("input[name='unit']").forEach(el => el.addEventListener("change", updateMatrixView));
+
+  updateMatrixView();
+</script>
+
