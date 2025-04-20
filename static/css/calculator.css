@@ -102,6 +102,14 @@
 #resultsTable th {
   white-space: wrap !important;
 }
+
+#resultsTable tbody tr.highlighted-row {                             
+  background-color: white !important;
+  color: steelblue !important;
+  font-weight: bold !important;
+}
+
+
 /* ====== Responsive Adjustments ====== */
 @media screen and (max-width: 768px) {
   #calculator {

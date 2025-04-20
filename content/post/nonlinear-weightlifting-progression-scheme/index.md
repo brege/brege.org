@@ -30,23 +30,56 @@ TocOpen: false
 Consider the Epley formula for estimating one-rep max weight:
 
 $$
-W_\textrm{1RM} = W * \left(1 + \frac{R}{30}\right)
+W_\text{1RM} = W \cdot \left(1 + \frac{R}{30}\right)
 $$
 
-To compute your one-rep max weight for a given lift, $W_{1RM}$, you simply input the weight lifted, $W$, and the number of reps performed before failure, $R$.
+To compute your one-rep max weight for a given lift, $W_{1\text{RM}}$, you simply input the weight lifted, $W$, and the number of reps performed before failure, $R$.
 
 This formula has been empirically validated [^1] and is a useful tool not just for estimating your max weight for a given weight-rep pair $\left(W, R\right)$, but also to compute the number of predictable reps you can do at any other given weight, relative to your one-rep max.
 
-This is quite useful for plateaus. For example, if you get stuck progressing the Overhead Press to 115 lbs for 5 reps after successfully performing the OHP for 110 lbs for 5 reps, you may need to strategize. Using the Epley formula, to go from $\left( 110\textrm{lb}, 5 \textrm{reps} \right) \rightarrow \left(115 \textrm{lb}, 5 \textrm{reps}\right)$, you are effectively increasing your one-rep max: $W_\textrm{1RM}: 128 \textrm{lbs} \rightarrow 134 \textrm{lbs}$. Our goal here is to effectively increment your $W_\textrm{1RM}$ in smaller steps.
+This is quite useful for plateaus. For example, if you get stuck progressing the Overhead Press to 115 lbs for 5 reps after successfully performing the OHP for 110 lbs for 5 reps, you may need to strategize. Using the Epley formula, to go from 
+$$
+\left( 110\text{lb}, 5 \text{reps} \right) \rightarrow \left(115 \text{lb}, 5 \text{reps}\right),
+$$
+you are effectively increasing your one-rep max: $W_\text{1RM}: 128 \text{lbs} \rightarrow 134 \text{lbs}$. Our goal here is to effectively increment your $W_\text{1RM}$ in smaller steps:
+$$
+\small
+\left( 110\text{lb}, 5 \text{reps} \right) 
+    \rightarrow \left(115 \text{lb}, 4 \text{reps}\right)
+    \rightarrow \left(110 \text{lb}, 6 \text{reps}\right)
+    \rightarrow \left(105 \text{lb}, 8 \text{reps}\right)
+    \rightarrow \left(115 \text{lb}, 5 \text{reps}\right)
+$$
+because this is the same as
+$$
+W_{1\text{RM}}: 128.33 \text{lb}
+    \rightarrow 130.33 \text{lb} 
+    \rightarrow 132.00 \text{lb}
+    \rightarrow 133.00 \text{lb}
+    \rightarrow 134.17 \text{lb} \\\\
+W_{5\text{RM}}: 110.00 \text{lb} 
+    \rightarrow 111.71 \text{lb}
+    \rightarrow 113.14 \text{lb}
+    \rightarrow 114.00 \text{lb}
+    \rightarrow 115.00 \text{lb}
+$$
+I refer to this as the **Epley pathway**.
 
-Because the formula is nonlinear, this requires an iterative approach. I've made a calculator that will help you find this path over different $\left(W, R\right)$ pairs. It defaults to using a range of reps roughly half the total initial reps, $R_0$, used.
+Because the Epley formula is nonlinear, this requires an iterative approach. I've made a calculator that will help you find this path over different $\left(W, R\right)$ pairs. It defaults to using a range of reps roughly half that of your initial number, $R_0$, and a few "sweet spot" rep values.
 
 {{< epley-calculator method="weight" >}}
+<details open=true> 
+<summary> Show/Hide extra notes </summary>
+
 You'll note that I've generalized this calculator to also include different formulas that different apps use:
+
 $$
 W_{\text{1RM}} = f(W, R)
 $$
+
 Try changing the dropdown to see how different curves generate slightly different effective rep ranges.  To read more on the survey of different calculations, check out the [One-repetition maximum article on Wikipedia](https://en.wikipedia.org/wiki/One-repetition_maximum).
+
+</details>
 {{< /epley-calculator >}}
 
 *More details of different, specific formulae for Epley [^6] Brzycki [^2], Lombardi [^3] and O'Connor [^4], and several complimentary research articles [^1] and [^5], are available.*
@@ -55,13 +88,13 @@ Try changing the dropdown to see how different curves generate slightly differen
 
 ### My Progression Scheme
 
-This makes it straightforward for me to also compute the warmup sets needed for my leading barbell exercise. Recently, I've found good success in pyramiding warmups using my calculated $\left(30, 20, 10\right)\textrm{RM}$'s for $\left(12, 8, 4\right) \textrm{reps}$, respectively.
+This makes it straightforward for me to also compute the warmup sets needed for my leading barbell exercise. Recently, I've found good success in pyramiding warmups using my calculated $\left(30, 20, 10\right)\text{RM}$'s for $\left(12, 8, 4\right) \text{reps}$, respectively.
 
-In addition, another scheme I've been using for strength-focused exercises has been, after 3–6 reps of heavy weight for three sets, to drop set into $\left(10, 20\right)\textrm{RM}$ for $\left(8, 12\ldots\textrm{amrap}\right)$, respectively, to increase my work volume without chewing up my joints, leaving $\text{2+}$ $\textrm{rir}$. Here, $\textrm{amrap} = $ "as many reps as possible" and $\textrm{rir} =$ "reps in reserve". My thoughts here reflect the goal to cover warmup (3), strength (3–4), and hypertrophy (2), in a single leading compound exercise.
+In addition, another scheme I've been using for strength-focused exercises has been, after 3–6 reps of heavy weight for three sets, to drop set into $\left(10, 20\right)\text{RM}$ for $\left(8, 12\ldots\text{amrap}\right)$, respectively, to increase my work volume without chewing up my joints, leaving $\sim \text{2}$ $\text{rir}$. Here, $\text{amrap} = $ "as many reps as possible" and $\text{rir} =$ "reps in reserve". My thoughts here reflect the goal to cover warmup (3), strength (3–4), and hypertrophy (2), in a single leading compound exercise.
 
 {{< progression-chart weight=135 
                       reps=5 
-                      caption="<b>Progression Chart Example: Set Breakdown for Leading Barbell Lift.</b> The width of the bins represents the number of reps, $R$, denoted inside the bins. The weights, $W_{N\textrm{RM}}$, are in lbs, represented as the height of the bins. From left to right, the weights in my scheme are: 30RM, 20RM, 10RM, 5RM (3x's), 10RM, 20RM. This provides a visual sense of volume in each zone of the exercise. <i>If you change the weights in the calculator, this plot will update. Because this is a hybrid model for strength training and hypertrophy, it will bind the rep ranges between 3–6 reps. The $y$-axis is truncated at ⅔ $W_{\textrm{30RM}}$.</i>"
+                      caption="<b>Progression Chart Example: Set Breakdown for Leading Barbell Lift.</b> The width of the bins represents the number of reps, $R$, denoted inside the bins. The weights, $W_{N\text{RM}}$, are in lbs, represented as the height of the bins. From left to right, the weights in my scheme are: 30RM, 20RM, 10RM, 5RM (3x's), 10RM, 20RM. This provides a visual sense of volume in each zone of the exercise. <i>If you change the weights in the calculator, this plot will update. Because this is a hybrid model for strength training and hypertrophy, it will bind the rep ranges between 3–6 reps. The $y$-axis is truncated at ⅔ $W_{\text{30RM}}$.</i>"
 >}}
 
 ### Possible Improvements

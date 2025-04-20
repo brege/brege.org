@@ -181,6 +181,13 @@
         finalRow.classList.add('bold-weight');
       }
 
+      tbody.querySelectorAll("tr").forEach(tr => {
+        tr.addEventListener("click", () => {
+          tbody.querySelectorAll("tr").forEach(r => r.classList.remove("highlighted-row"));
+          tr.classList.add("highlighted-row");
+        });
+      });
+
       updateChart(pairs);
     }
 

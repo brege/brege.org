@@ -55,13 +55,14 @@ Following the guidelines is also made more tedious by the near-constant arithmet
 
 *Here's my take:* **Ratio counting.** As a chef, there's a reason the imperial, fractional system works: ratio. It's easier for me to think about doubling, tripling, or halving depending on what I'm buying and who I'm cooking for. Our days are divided into twelves and therefore 2's, 3's, and 4's. Naturally, our meals are spaced that way too. The value of our `base10` system cannot be overstated, but I have a difficult time what eating or preparing 10% less of a meal or recipe means vs doing a quarter or half.
 
-With the assumption that:
+For the 175 lbs individual, the ranges of protein consumption needed are pinned by three characteristic quantities:
 
 * $\textbf{MAX} = $ 100% efficiency in protein synthesis $\approx 1.6 \text{g} / \text{kg} / \text{day}$
 * **0.75** $\coloneqq 0.75 \times \text{MAX} \approx 1.2 \text{g} / \text{kg} / \text{day}$
 * $\textbf{RDA} \coloneqq 0.5 \times \text{MAX} \approx 0.8 \text{g} / \text{kg} / \text{day}$
 
-where $\text{RDA}$ is the "Recommended Daily Allowance". The "$0.75 \times \text{MAX} \approx 1.2 \text{lbs}$" is roughly the target for most people who weight 175 lbs (80 kg), on average. [^1]
+where $\text{RDA}$ is the **Recommended Daily Allowance**, and $\text{MAX}$ is the **Maximum Efficient Intake**. The "$0.75 \times \text{MAX} \approx 1.2 \text{lbs}$" is roughly the target for most people who weigh 175 lbs (80 kg), on average. [^1]
+
 
 <details> <summary><b>Tap here to see the ranges for this weight...</b></summary> 
 <br/>
@@ -89,15 +90,15 @@ $$
 
 ## Implementation: the Protein Efficiency Matrix
 
-The table below answers a simple question: how much of one single food do you need to eat to hit your daily protein target? Input your weight, toggle metric or imperial, and adjust units per row—grams, ounces, scoops, each. It’ll show you the amount needed to hit benchmarks in the range of $\text{RDA}$ to the **maximum efficient intake** $(\text{MAX})$.  Based on resistance training status and the latest research, a sliding scale in this range will allow you to explore this range.
+The table below answers a simple question: how much of one single food do you need to eat to hit your daily protein target? Input your weight, toggle metric or imperial, and adjust units per row—grams, ounces, scoops, each. It’ll show you the amount needed to hit benchmarks in the range of $\text{RDA}$ to the $(\text{MAX})$ intake.  Based on resistance training status and the latest research, a sliding scale in this range will allow you to estimate your required protein demands.
 
-**Quantity:** the number of units in the **Serving Units** column you need to eat to acheive the chosen protein target, per day, for your input weight.
+**Quantity:** the number of units in the **Unit/Size** column you need to eat to acheive the chosen protein target, per day, for your input weight.
 
 Adjusting the **Protein target** slider can be thought of as a direct conversion of protein to training intensity, from sedentary/$\text{RDA}$ all the way to the $\text{MAX}$ intensity threshold.
 
 {{< protein-table >}}
 
-I've also included the calories if you ate that much of the same source.  You'll note that high carbohydrate (peas, chili) and especially high fat content (mixed nuts) greatly diminish the remaining calorie budget in the day.  Conversely, protein powders, including the vegan kind, substantially lower the overall caloric footprint.
+I've also included the **daily Calories** you'd likewise take on per food item.  You'll note that high carbohydrate (peas, chili) and especially high fat content (mixed nuts) greatly diminish the remaining calorie budget in the day.  Conversely, protein powders, including the vegan kind, substantially lower the overall caloric footprint.
 
 ## Discussion
 
