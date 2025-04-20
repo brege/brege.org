@@ -9,10 +9,14 @@
 
   <label for="repRange" class="form-label"><b>Rep Range Variation:</b></label>
   <select id="repRange" class="post-tags">
-    <option value="0">±(R₀/2)</option>
-    {{ range $i := seq 1 30 }}
-      <option value="{{ $i }}">±{{ $i }}</option>
-    {{ end }}
+    <option value="0">hybrid: ±R₀/2 and (8, 10, 12, 15, 20, 30)</option>
+    <option value="1">R₀±5 reps</option>
+    <option value="2">±R₀</option>
+    <option value="3">R₀±8 reps</option>
+    <option value="4">R₀±10 reps</option>
+    <option value="5">R₀±12 reps</option>
+    <option value="6">R₀±15 reps</option>
+    <option value="7">All reps: [0,..,30]</option>
   </select>
 
   <label for="formulaSelect" class="form-label"><b>1RM Formula:</b></label>
@@ -22,8 +26,6 @@
     <option value="lombardi">Lombardi</option>
     <option value="oconner">O’Conner</option>
   </select>
-
-  <!-- insert method here to be able to add text from the hugo document -->
 
   {{ if .Inner }}
   <div class="calculator-explanation">
@@ -56,23 +58,18 @@
         case 'brzycki': return weight / (1.0278 - 0.0278 * reps);
         case 'lombardi': return weight * Math.pow(reps, 0.10);
         case 'oconner': return weight * (1 + 0.025 * reps);
-        default: return weight * (1 + reps / 30); // fallback
+        default: return weight * (1 + reps / 30);
       }
     }
-    // inverse of calculate1RM
+
     function calculateEffectiveRM(estimated1RM, reps) {
       const formula = document.getElementById('formulaSelect').value;
       switch (formula) {
-        case 'epley':
-          return estimated1RM / (1 + reps / 30);
-        case 'brzycki':
-          return estimated1RM * (1.0278 - 0.0278 * reps);
-        case 'lombardi':
-          return estimated1RM / Math.pow(reps, 0.10);
-        case 'oconner':
-          return estimated1RM / (1 + 0.025 * reps);
-        default:
-          return estimated1RM / (1 + reps / 30); // fallback to Epley
+        case 'epley': return estimated1RM / (1 + reps / 30);
+        case 'brzycki': return estimated1RM * (1.0278 - 0.0278 * reps);
+        case 'lombardi': return estimated1RM / Math.pow(reps, 0.10);
+        case 'oconner': return estimated1RM / (1 + 0.025 * reps);
+        default: return estimated1RM / (1 + reps / 30);
       }
     }
 
@@ -93,30 +90,54 @@
         oconner: "W_{\\text{1RM}} = W \\cdot (1 + 0.025R)"
       };
 
-      // Update heading text
       document.getElementById('formulaHeading').textContent = headingMap[formula] || "Epley Pathway";
 
-      // Update KaTeX rendering
       const formulaLatex = latexMap[formula] || latexMap["epley"];
       const formulaLatexDiv = document.getElementById('formulaLatex');
 
       if (window.katex) {
         katex.render(formulaLatex, formulaLatexDiv, { throwOnError: false });
       } else {
-        formulaLatexDiv.textContent = `\\(${formulaLatex}\\)`; // fallback for no KaTeX
+        formulaLatexDiv.textContent = `\\(${formulaLatex}\\)`;
       }
     }
 
+    function getRepRange(repVariation, R_0) {
+      const reps = new Set();
+
+      if (repVariation === 0) {
+        // Discrete samples around R₀/2 to 3/2×R₀
+        const rStart = Math.floor(R_0 / 2);
+        const rEnd = Math.floor(3 * R_0 / 2);
+        for (let r = rStart; r <= rEnd; r++) reps.add(r);
+
+        // Explicit additions
+        [8, 10, 12, 15, 20, 30].forEach(r => reps.add(r));
+      } else if (repVariation === 1) {
+        for (let r = Math.max(1, R_0 - 5); r <= Math.min(30, R_0 + 5); r++) reps.add(r);
+      } else if (repVariation === 2) {
+        for (let r = 0; r <= 2 * R_0; r++) reps.add(r);
+      } else if (repVariation === 3) {
+        for (let r = Math.max(1, R_0 - 8); r <= Math.min(30, R_0 + 8); r++) reps.add(r);
+      } else if (repVariation === 4) {
+        for (let r = Math.max(1, R_0 - 10); r <= Math.min(30, R_0 + 10); r++) reps.add(r);
+      } else if (repVariation === 5) {
+        for (let r = Math.max(1, R_0 - 12); r <= Math.min(30, R_0 + 12); r++) reps.add(r);
+      } else if (repVariation === 6) {
+        for (let r = Math.max(1, R_0 - 15); r <= Math.min(30, R_0 + 15); r++) reps.add(r);
+      } else if (repVariation === 7) {
+        for (let r = 0; r <= 30; r++) reps.add(r);
+      }
+
+      return Array.from(reps).filter(r => r >= 1 && r <= 30).sort((a, b) => a - b);
+    }
 
     function calculateResults() {
       const W_0 = parseInt(document.getElementById('weight').value);
       const R_0 = parseInt(document.getElementById('reps').value);
       const repVariation = parseInt(document.getElementById('repRange').value);
-      const defaultVar = Math.floor(R_0 / 2);
-      const finalVar = repVariation === 0 ? defaultVar : repVariation;
 
-      const R_min = Math.max(1, R_0 - finalVar);
-      const R_max = Math.min(30, R_0 + finalVar);
+      const repsToTry = getRepRange(repVariation, R_0);
       const lowerLimit = W_0;
       const upperLimit = W_0 + 5;
 
@@ -124,10 +145,9 @@
 
       const pairs = [];
       for (let W = 10; W <= 1000; W += 5) {
-        for (let R = R_min; R <= R_max; R++) {
+        for (const R of repsToTry) {
           const oneRM = calculate1RM(W, R);
-          //const effectiveRM = oneRM * (1 + R_0 / 30); // epley hardcoded
-          const effectiveRM =  calculateEffectiveRM(oneRM, R_0);
+          const effectiveRM = calculateEffectiveRM(oneRM, R_0);
           if (effectiveRM >= lowerLimit && effectiveRM <= upperLimit) {
             pairs.push({ W, R, oneRM, effectiveRM });
           }
@@ -152,7 +172,7 @@
 
       if (!finalRowAdded) {
         const finalOneRM = calculate1RM(W_0 + 5, R_0);
-        const finalEffective = finalOneRM / (1 + R_0 / 30);
+        const finalEffective = calculateEffectiveRM(finalOneRM, R_0);
         const finalRow = tbody.insertRow();
         finalRow.insertCell(0).textContent = W_0 + 5;
         finalRow.insertCell(1).textContent = R_0;
@@ -163,6 +183,7 @@
 
       updateChart(pairs);
     }
+
 
     document.getElementById('formulaSelect').addEventListener('change', () => {
       updateFormulaHeading();
