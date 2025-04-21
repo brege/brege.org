@@ -1,6 +1,7 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
-tags: []
+tags: 
+  - recipes
 date: {{ .Date }}
 draft: true
 ShowTOC: false
@@ -8,9 +9,10 @@ ShowTOC: false
 
 {{% recipe %}}
 
-#### Title Here
+### Title Here
 
 **Author:** Wyatt Brege  
+
 **Yield:** X servings
 
 #### Ingredients:
@@ -26,5 +28,6 @@ ShowTOC: false
 #### Notes:
 
 - Something to remember
+
 {{% /recipe %}}
 

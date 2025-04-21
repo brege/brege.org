@@ -22,5 +22,12 @@
   </footer>
 </article>
 
+<!-- Recipe List Below -->
+{{- if .Params.section }}
+  <section class="recipe-list">
+    {{ partial "recipe-list.html" (dict "section" .Params.section "title" .Title) }}
+  </section>
+{{- end }}
+
 {{- end }}
 

@@ -1,6 +1,10 @@
+{{- $section := .Get "section" -}}
+
 <ol>
-  {{ range .Page.Pages.ByTitle }}
-    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-  {{ end }}
+  {{- with site.GetPage (print "recipes/" $section) }}
+    {{- range .Pages.ByTitle }}
+      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+    {{- end }}
+  {{- end }}
 </ol>
 
