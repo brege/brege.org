@@ -1,5 +1,5 @@
 ---
-title: "Thousand Island"
+title: "Thousand Island / Awesome Sauce"
 tags: []
 date: 2018-01-01
 draft: false
@@ -8,7 +8,7 @@ ShowTOC: false
 
 {{% recipe %}}
 
-### Thousand Island
+### Thousand Island / Awesome Sauce
 
 **Author:** Wyatt Brege
 

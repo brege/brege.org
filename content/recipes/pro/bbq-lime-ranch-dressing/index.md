@@ -10,14 +10,14 @@ ShowTOC: false
 
 ### BBQ Lime Ranch Dressing
 
-**Author:** Wyatt Brege
+**Author:** Matt Andrews, Wyatt Brege
 
 
 
 #### Ingredients:
 
 -   2 Quart Mayonaise
--   3 Cup Sassy Midwest BBQ Sauce
+-   3 Cup [Sassy Midwest BBQ Sauce](/recipes/pro/bbq-sauce-midwest-style/)
 -   2 1/2 Cup Sour Cream
 -   2 Cup Buttermilk
 -   1 1/2 Cup Lime Juice

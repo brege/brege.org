@@ -10,7 +10,7 @@ ShowTOC: false
 
 ### Whiskey Steak Sauce
 
-**Author:** Wyatt Brege
+**Author:** Ryan Fleener
 
 **Yield:** 4 quarts
 

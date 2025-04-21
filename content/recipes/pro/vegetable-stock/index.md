@@ -10,7 +10,7 @@ ShowTOC: false
 
 ### Vegetable Stock
 
-**Author:** Wyatt Brege
+**Author:** Matt Andrews, Wyatt Brege
 
 
 

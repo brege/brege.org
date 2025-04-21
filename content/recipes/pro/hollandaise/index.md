@@ -10,11 +10,7 @@ ShowTOC: false
 
 ### Hollandaise
 
-**Author:** Wyatt Brege
-
-
-
- Chef Wyatt Brege
+**Author:** Matt Andrews, Wyatt Brege
 
 #### Ingredients:
 

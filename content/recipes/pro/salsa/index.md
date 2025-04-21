@@ -1,5 +1,5 @@
 ---
-title: "Salsa"
+title: "Salsa, Chunky"
 tags: []
 date: 2018-01-01
 draft: false
@@ -8,7 +8,7 @@ ShowTOC: false
 
 {{% recipe %}}
 
-### Salsa
+### Salsa, Chunky
 
 **Author:** Wyatt Brege
 

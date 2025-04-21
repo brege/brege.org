@@ -1,5 +1,5 @@
 ---
-title: "Bacon Gravy"
+title: "Bacon Gravy / Sausage Gravy"
 tags: []
 date: 2018-01-01
 draft: false
@@ -8,11 +8,11 @@ ShowTOC: false
 
 {{% recipe %}}
 
-### Bacon Gravy
+### Bacon Gravy / Sausage Gravy
 
-**Author:** Wyatt Brege
+**Author:** Ryan Fleener, Wyatt Brege
 
-
+**Yield:** 7 Quarts
 
 #### Ingredients:
 

@@ -10,7 +10,7 @@ ShowTOC: false
 
 ### House Pickles
 
-**Author:** Wyatt Brege
+**Author:** Ryan Fleener, Wyatt Brege
 
 
 

@@ -10,7 +10,7 @@ ShowTOC: false
 
 ### BBQ Sauce (midwest style)
 
-**Author:** Wyatt Brege
+**Author:** Ginger Brege, Wyatt Brege
 
 
 

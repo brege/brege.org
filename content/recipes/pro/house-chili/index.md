@@ -10,7 +10,7 @@ ShowTOC: false
 
 ### House Chili
 
-**Author:** Wyatt Brege
+**Author:** Wyatt Brege, Viktor Sanchez
 
 
 

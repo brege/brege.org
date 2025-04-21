@@ -10,7 +10,7 @@ ShowTOC: false
 
 ### Pickled Red Onions
 
-**Author:** Wyatt Brege
+**Author:** Ryan Fleener, Wyatt Brege
 
 **Yield:** 4 quarts
 

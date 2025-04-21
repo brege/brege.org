@@ -5,7 +5,7 @@ ShowBreadcrumbs: true
 hideMeta: true
 ---
 
-A collection of professional, family, and personal recipes.
+A collection of professional, heirloom, and personal recipes.
 
 ## [General / Home Recipes](/recipes/gen)
 

@@ -10,7 +10,7 @@ ShowTOC: false
 
 ### Green Goddess
 
-**Author:** Wyatt Brege
+**Author:** Matt Andrews, Wyatt Brege
 
 **Yield:** 1 quarts
 

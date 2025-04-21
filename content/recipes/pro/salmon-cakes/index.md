@@ -10,7 +10,7 @@ ShowTOC: false
 
 ### Salmon Cakes
 
-**Author:** Wyatt Brege
+**Author:** Wyatt Brege, Matt Andrews
 
 
 

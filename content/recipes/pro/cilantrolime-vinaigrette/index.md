@@ -10,7 +10,7 @@ ShowTOC: false
 
 ### Cilantro-Lime Vinaigrette
 
-**Author:** Wyatt Brege
+**Author:** Wyatt Brege, Matt Andrews
 
 
 

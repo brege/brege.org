@@ -10,7 +10,7 @@ ShowTOC: false
 
 ### Croutons
 
-**Author:** Wyatt Brege
+**Author:** Patty Pereira, Wyatt Brege
 
 
 
