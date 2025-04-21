@@ -1,5 +1,6 @@
 protein_sources:
-  - source: Eggs
+  - source: Eggs, whole
+    abbreviation: Eggs
     unit: dozen
     protein_per_unit: 84.
     calories_per_unit: 840.
@@ -17,6 +18,7 @@ protein_sources:
         grams: 84.
         calories: 840.
   - source: Chicken Breast, Raw
+    abbreviation: Chkn
     unit: pounds 
     protein_per_unit: 105.
     calories_per_unit: 735.
@@ -37,6 +39,7 @@ protein_sources:
         grams: 230.
         calories: 1700.
   - source: Beef, Ground (85/15)
+    abbreviation: Beef
     unit: pounds
     protein_per_unit: 105.
     calories_per_unit: 975.
@@ -57,6 +60,7 @@ protein_sources:
         grams: 232.
         calories: 2150.
   - source: Greek Yogurt (2%)
+    abbreviation: Yog.
     unit: 32oz tub
     protein_per_unit: 88.
     calories_per_unit: 600.
@@ -77,6 +81,7 @@ protein_sources:
         grams: 88.
         calories: 600.
   - source: Cottage Cheese (2%)
+    abbreviation: Cot.
     unit: 24oz tub
     protein_per_unit: 72.
     calories_per_unit: 600.
@@ -97,6 +102,7 @@ protein_sources:
         grams: 72.
         calories: 600.
   - source: Tree Nuts (Avg)
+    abbreviation: Nuts
     unit: cups
     protein_per_unit: 23.
     calories_per_unit: 850.
@@ -114,6 +120,7 @@ protein_sources:
         grams: 23.
         calories: 850.
   - source: Peas, Frozen
+    abbreviation: Peas
     unit: cups
     protein_per_unit: 6.0
     calories_per_unit: 100.
@@ -131,6 +138,7 @@ protein_sources:
         grams: 6.0
         calories: 100.
   - source: Chili (Est.)
+    abbreviation: Chili
     unit: bowls
     protein_per_unit: 30.
     calories_per_unit: 480.
@@ -154,6 +162,7 @@ protein_sources:
         grams: 30.
         calories: 480.
   - source: Salmon, raw
+    abbreviation: Salm.
     unit: pounds
     protein_per_unit: 100.
     calories_per_unit: 1100.
@@ -174,26 +183,28 @@ protein_sources:
         grams: 220.
         calories: 2300.
   - source: Pork Chop, Boneless
+    abbreviation: Pork
     unit: pounds
     protein_per_unit: 104.
-    calories_per_unit: 620.
+    calories_per_unit: 760.
     citation: 
       label: "[10]"
       href: "https://fdc.nal.usda.gov/food-details/2646168/nutrients"
     units:
       - label: ounces
         grams: 6.2
-        calories: 40.
+        calories: 48.
       - label: grams
         grams: 0.22
-        calories: 1.3
+        calories: 1.7
       - label: pounds
         grams: 104.
-        calories: 620.
+        calories: 760.
       - label: kilograms
         grams: 220.
-        calories: 1300.
+        calories: 1680
   - source: Whey Protein Powder
+    abbreviation: Whey
     unit: scoops
     protein_per_unit: 25.
     calories_per_unit: 130.
@@ -208,6 +219,7 @@ protein_sources:
         grams: 25.
         calories: 130.
   - source: Vegan Protein Powder
+    abbreviation: Vegan
     unit: scoops
     protein_per_unit: 21.
     calories_per_unit: 150.

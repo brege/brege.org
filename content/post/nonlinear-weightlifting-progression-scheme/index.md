@@ -1,5 +1,5 @@
 ---
-title: 'Non-linear Weightlifting Progression Scheme'
+title: 'Non-linear Weightlifting Progression Calculator'
 tags:
   - weightlifting
   - regression
@@ -15,11 +15,11 @@ tags:
   - amrap
   - volume pyramid
 date: '2025-03-25'
-summary: 'Using the Epley formula for estimating a pathway through plateaus'
+summary: 'Using the Epley formula, and others, for estimating an effective pathway through plateaus'
 draft: false
 aliases: '/epley'
 cover:
-  image: 'progression-histogram.png' 
+  image: 'tool-collage.png' 
   hidden: true
   hiddenInList: false
 math: true
