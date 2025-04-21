@@ -1,0 +1,25 @@
+{{- $section := .Get "section" -}}
+
+<ol>
+  {{- with site.GetPage (print "recipes/" $section) }}
+    {{- range .Pages.ByDate }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        {{- $headers := findRE `(?m)^###\s+(.+)` .RawContent }}
+        {{- $cleaned := slice }}
+        {{- range $headers }}
+          {{- $line := trim (replace (replace . "###" "") "\\" "") " " }}
+          {{- if ne $line "" }}
+            {{- $cleaned = $cleaned | append $line }}
+          {{- end }}
+        {{- end }}
+        {{- if gt (len $cleaned) 0 }}
+          <div style="font-size: 1.0em; color: var(--secondary); margin-left: 1rem;"> 
+            {{ delimit $cleaned ", " }}
+          </div>
+        {{- end }}
+      </li>
+    {{- end }}
+  {{- end }}
+</ol>
+

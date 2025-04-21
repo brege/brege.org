@@ -13,6 +13,12 @@ These recipes are meant for at home, personal, and camping use.  More info on th
 
 {{< recipe-list section="gen" >}}
 
+## [Tasting Menus](/recipes/menus)
+
+An archive of the tasting menus / farmer's market / farm-to-fork / CSA popup menus I did for *Dawson's* and *The Slanted Tree*. 
+
+- [menu archive](/recipes/menus)
+
 ## [Production Recipes](/recipes/pro)
 
 These recipes are for a production kitchen. The quantities are much larger than what is appropriate for home use. These are speed recipes in the sense the user knows their way around their equipment, and has familiarized themselves with industry terminology.
