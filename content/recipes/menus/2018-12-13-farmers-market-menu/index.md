@@ -33,4 +33,4 @@ cream cheese frosting, walnut
 
 
 *we gladly acknowledge Eatwell Farm for delivering their*
-*amazing CSA share box to our door *
+*amazing CSA share box to our door*

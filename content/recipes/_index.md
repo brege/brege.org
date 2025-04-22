@@ -17,7 +17,7 @@ These recipes are meant for at home, personal, and camping use.  More info on th
 
 An archive of the tasting menus / farmer's market / farm-to-fork / CSA popup menus I did for *Dawson's* and *The Slanted Tree*. 
 
-- [menu archive](/recipes/menus)
+- [Menu Archive](/recipes/menus)
 
 ## [Production Recipes](/recipes/pro)
 

@@ -33,5 +33,5 @@ caramel\-walnut sauce, mint whipped cream
 
 
 *we gladly acknowledge Eatwell Farm for delivering their*
-*amazing CSA share box to our door and the Barn & Pantry for *
+*amazing CSA share box to our door and the Barn & Pantry for*
 *providing the cacao cajun sausages*

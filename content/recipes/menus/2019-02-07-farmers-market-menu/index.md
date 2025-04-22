@@ -30,5 +30,5 @@ fingerling potatoes, apple lamb jus
 blueberries, mint pesto
 
 
-*We gladly acknowledge Eatwell Farm for *
-*delivering their amazing CSA box to our door\! *
+*We gladly acknowledge Eatwell Farm for*
+*delivering their amazing CSA box to our door\!*

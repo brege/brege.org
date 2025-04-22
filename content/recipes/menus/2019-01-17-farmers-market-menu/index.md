@@ -33,5 +33,5 @@ pea puree, wild rice, lemon beurre blanc
 meringue, basil gelee, navel orange
 
 
-*We gladly acknowledge Eatwell Farm for *
-*delivering their amazing CSA box to our door\! *
+*We gladly acknowledge Eatwell Farm for*
+*delivering their amazing CSA box to our door\!*

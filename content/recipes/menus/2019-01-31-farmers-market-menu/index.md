@@ -31,5 +31,5 @@ swiss chard, turnip puree, chimichurri
 orange snap cookie, basil
 
 
-*We gladly acknowledge Eatwell Farm for *
-*delivering their amazing CSA box to our door\! *
+*We gladly acknowledge Eatwell Farm for*
+*delivering their amazing CSA box to our door\!*

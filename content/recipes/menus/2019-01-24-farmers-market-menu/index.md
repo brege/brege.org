@@ -31,5 +31,5 @@ navel orange\-sesame sauce
 oats, local walnut, lemon and raisins
 
 
-*We gladly acknowledge Eatwell Farm for *
-*delivering their amazing CSA box to our door\! *
+*We gladly acknowledge Eatwell Farm for*
+*delivering their amazing CSA box to our door\!*

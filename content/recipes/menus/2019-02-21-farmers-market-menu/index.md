@@ -30,5 +30,5 @@ garlic scape, red kale, baby spinach, celeriac puree
 oreo crumble, candied walnut
 
 
-*We gladly acknowledge Eatwell Farm for *
-*delivering their amazing CSA box to our door\! *
+*We gladly acknowledge Eatwell Farm for*
+*delivering their amazing CSA box to our door\!*

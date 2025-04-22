@@ -30,5 +30,5 @@ ranch dressing
 orange, mixed berries, whipped cream
 
 
-*We gladly acknowledge Eatwell Farm for *
-*delivering their amazing CSA box to our door\! *
+*We gladly acknowledge Eatwell Farm for*
+*delivering their amazing CSA box to our door\!*

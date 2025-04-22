@@ -32,5 +32,5 @@ turnip, basmati rice, apple\-honey curry sauce
 orange caramel sauce, mandarin, ice cream
 
 
-*We gladly acknowledge Eatwell Farm for delivering their amazing *
-*CSA box to our door\-\-enjoy the break next week, Lorraine *et al*\! *
+*We gladly acknowledge Eatwell Farm for delivering their amazing*
+*CSA box to our door\-\-enjoy the break next week, Lorraine *et al*\!*

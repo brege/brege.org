@@ -30,5 +30,5 @@ sweet peppers, zucchini, cherry tomato ragout, basil
 whipped cream, candied walnut
 
 
-*We gladly acknowledge  Eatwell Farm for *
-*delivering their amazing CSA box to our door\! *
+*We gladly acknowledge  Eatwell Farm for*
+*delivering their amazing CSA box to our door\!*
