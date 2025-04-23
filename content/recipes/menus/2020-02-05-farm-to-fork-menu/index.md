@@ -18,20 +18,20 @@ tangelos, citrus vinaigrette
 
 *add chicken / add salmon*
 
-*Suggested:* Berryessa Fast Pass to Helles 5\.0%/
+*Suggested:* Berryessa Fast Pass to Helles 5\.0%
 
 ### 4\-Piece Buttermilk Fried Chicken
 
 roasted carnival squash,  house coleslaw 
 or beer battered fries 
 
-*Suggested:* Anchor Steam Amber 4\.8%/
+*Suggested:* Anchor Steam Amber 4\.8%
 
 ### Apple Crumble
 
 w/ vanilla bean ice cream 
 
-*Suggested:* Purple Monkey Dishwasher Porter 6\.7%/
+*Suggested:* Purple Monkey Dishwasher Porter 6\.7%
 
 
 *Seasonal produce provided by our great friends at Eatwell Farm*

@@ -5,11 +5,11 @@ ShowBreadcrumbs: true
 hideMeta: true
 ---
 
-A collection of professional, heirloom, and personal recipes.
+A collection of professional, heirloom, and personal recipes, as well as tasting menus.
 
 ## [General / Home Recipes](/recipes/gen)
 
-These recipes are meant for at home, personal, and camping use.  More info on the [landing page](/recipes/gen)
+These recipes are meant for at home, personal, and camping use.  These will come in due time as I recreate and digitize my past notes. 
 
 {{< recipe-list section="gen" >}}
 

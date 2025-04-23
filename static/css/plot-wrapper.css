@@ -1,0 +1,16 @@
+.plot-container {
+  width: 100%;
+  max-width: 700px;
+  padding-top: 100%; /* 1:1 aspect ratio */
+  position: relative;
+}
+
+.plot-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+

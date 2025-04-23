@@ -1,0 +1,34 @@
+<style>
+.tsne-plot-container {
+  width: 100%;
+  max-width: 700px;
+  aspect-ratio: 1 / 1;
+  position: relative;
+  margin: 1rem auto;
+}
+
+.tsne-plot-container iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+}
+
+.tsne-caption {
+  text-align: center;
+  font-style: italic;
+  margin-top: 1rem;
+  color: #555;
+}
+</style>
+
+<div class="tsne-plot-container">
+  <iframe src="{{ .Get "src" }}" loading="lazy"></iframe>
+</div>
+
+{{ if .Get "caption" }}
+  <div class="tsne-caption">{{ .Get "caption"  | markdownify  }}</div>
+{{ end }}
+

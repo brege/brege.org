@@ -14,7 +14,7 @@ title: 2018-08-22 Farmers Market Menu
 ### Grape Salad
 
 flame, anon king and autumn grapes,
-arugula, goat cheese, tampanad,
+arugula, goat cheese, tapenade,
 lemon\-poppy seed vinaigrette
 
 ### Herb\-encrusted Mediterranean Chicken
