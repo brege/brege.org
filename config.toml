@@ -59,7 +59,21 @@ title = "brege.org"
 
 [params.homeInfoParams]
   Title = 'Wyatt Brege'
-  Content = " Welcome! I simulated [black hole and neutron star](https://black-holes.org) mergers for my physics PhD at [WSU](https://wsu.edu/).  I am also a professional chef with a love for seafood, sauces, soups and organic produce.  There's a little more info about me in my [bio](/about), my [resumé](/cv) page, and on [google scholar](https://scholar.google.com/citations?user=WsjvDuQAAAAJ) and the [arXiv](https://arxiv.org/search/?searchtype=author&query=Brege,W)."
+  Content = """
+  Welcome! I simulated 
+  [black hole and neutron star](https://black-holes.org) 
+  mergers for my physics PhD at 
+  [WSU](https://wsu.edu/).
+  I am also a professional chef with a love for seafood, sauces, soups and organic produce.
+  There's a little more info about me in my 
+  [**bio**](/about),
+  my [**resumé**](/cv) page, 
+  and on [google scholar](https://scholar.google.com/citations?user=WsjvDuQAAAAJ) 
+  and the [arXiv](https://arxiv.org/search/?searchtype=author&query=Brege,W).
+  You can also check out my 
+  [**recipes**](/recipes) and 
+  [**farmer's market menus**](/recipes/menus) on this site.
+  """
 
 [params.profileMode]
   enabled = false
@@ -118,7 +132,7 @@ title = "brege.org"
     identifier = "about"
     name = "about"
     url = "/about/"
-    weight = 20
+    weight = 10
   [[menu.main]]
     identifier = "post"
     name = "posts"
