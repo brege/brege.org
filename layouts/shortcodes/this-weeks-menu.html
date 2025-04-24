@@ -1,45 +1,41 @@
-{{- $now := .Page.Date }}
-{{- $targetMonth := $now.Month }}
-{{- $targetDay := $now.Day }}
-{{- $tolerance := .Get "plus-minus-days" | default "5" | int }}
+{{- $tolerance := .Get "plus-minus-days" | default "5" | int -}}
 
 {{- $menus := site.GetPage "recipes/menus" }}
 
-<div class="this-weeks-menus">
+{{/* Output all menus initially. JS will hide those outside the date tolerance. */}}
+<div class="this-weeks-menus" data-tolerance="{{ $tolerance }}">
   {{- range $menus.Pages }}
     {{- $menuDate := .Date }}
-    {{- if eq $menuDate.Month $targetMonth }}
-      {{- $dayDiff := math.Abs (sub $menuDate.Day $targetDay) }}
-      {{- if le $dayDiff $tolerance }}
-        <a href="{{ .RelPermalink }}" class="menu-card">
-          <!--div class="menu-title">{{ .Title }}</div-->
-          {{- $dateFormatted := .Date | time | dateFormat "January 2, 2006" -}}
-          {{- $title := .Title -}}
-          {{- $rawDate := .Date | time.Format "2006-01-02" -}}
-          {{- $rest := replace $title (print $rawDate " ") "" -}}
+    {{- $rawDate := $menuDate | time.Format "2006-01-02" -}}
 
-          <div class="menu-title">{{ $dateFormatted }} - {{ $rest }}</div>
+    {{/* Add the data-date attribute for JS to read */}}
+    <a href="{{ .RelPermalink }}" class="menu-card" data-date="{{ $rawDate }}">
+      {{- $dateFormatted := $menuDate | time | dateFormat "January 2, 2006" -}}
+      {{- $title := .Title -}}
+      {{- $rawDate := $menuDate | time.Format "2006-01-02" -}}
+      {{- $rest := replace $title (print $rawDate " ") "" -}}
 
-          {{- $headers := findRE `(?m)^###\s+(.+)` .RawContent }}
-          {{- $cleaned := slice }}
-          {{- range $headers }}
-            {{- $line := trim (replace (replace . "###" "") "\\" "") " " }}
-            {{- if ne $line "" }}
-              {{- $cleaned = $cleaned | append $line }}
-            {{- end }}
-          {{- end }}
-          {{- if gt (len $cleaned) 0 }}
-            <div class="menu-items">
-              {{ delimit $cleaned ", " }}
-            </div>
-          {{- end }}
-        </a>
+      <div class="menu-title">{{ $dateFormatted }} - {{ $rest }}</div>
+
+      {{- $headers := findRE `(?m)^###\s+(.+)` .RawContent }}
+      {{- $cleaned := slice }}
+      {{- range $headers }}
+        {{- $line := trim (replace (replace . "###" "") "\\" "") " " }}
+        {{- if ne $line "" }}
+          {{- $cleaned = $cleaned | append $line }}
+        {{- end }}
       {{- end }}
-    {{- end }}
+      {{- if gt (len $cleaned) 0 }}
+        <div class="menu-items">
+          {{ delimit $cleaned ", " }}
+        </div>
+      {{- end }}
+    </a>
   {{- end }}
 </div>
 
 <style>
+/* Keep the original CSS */
 .this-weeks-menus {
   display: grid;
   gap: 1rem;
@@ -81,5 +77,89 @@
   color: inherit;
 }
 
+/* Add a CSS rule to hide elements that the JS marks as outside the date range */
+.this-weeks-menus .menu-card.hidden-by-js {
+    display: none;
+}
+
 </style>
 
+{{/* Add the JavaScript block to perform filtering client-side */}}
+<script>
+(function() {
+    // Helper function to calculate the day of the year (1-based) for a JS Date object
+    function calculateDayOfYear(date) {
+        const start = new Date(date.getFullYear(), 0, 0); // Jan 1st of the same year
+        const diff = date - start; // Difference in milliseconds
+        const oneDay = 1000 * 60 * 60 * 24; // Milliseconds in one day
+        return Math.floor(diff / oneDay); // This calculates the number of full days passed since Jan 1st + 1 (because Jan 1st is day 1)
+    }
+
+     // Helper function to calculate days in a year (accounts for leap years)
+    function daysInYear(year) {
+        return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0) ? 366 : 365;
+    }
+
+
+    const container = document.querySelector('.this-weeks-menus');
+    if (!container) {
+        console.warn("Container '.this-weeks-menus' not found for date filtering.");
+        return; // Exit if the container element isn't on the page
+    }
+
+    // Get the tolerance passed from the Hugo shortcode
+    const tolerance = parseInt(container.dataset.tolerance, 10) || 5; // Default to 5 if attribute missing or invalid
+
+    // Get today's date using the visitor's browser clock
+    const today = new Date();
+    // Calculate today's Day of Year
+    const currentDOY = calculateDayOfYear(today);
+    // We don't strictly need currentYear or daysInCurrentYear for the difference calculation across years
+
+    // Find all the menu cards within the container
+    const menuCards = container.querySelectorAll('.menu-card');
+
+    // Loop through each menu card and check its date
+    menuCards.forEach(card => {
+        const dateString = card.dataset.date; // Get the YYYY-MM-DD date string from the data attribute
+
+        if (!dateString) {
+            // If a card doesn't have a date attribute, hide it or handle as needed
+            card.classList.add('hidden-by-js');
+            return;
+        }
+
+        // Parse the date string into a JavaScript Date object.
+        // Append 'T00:00:00Z' to treat the date as UTC midnight, avoiding timezone issues
+        const menuDate = new Date(dateString + 'T00:00:00Z');
+        if (isNaN(menuDate.getTime())) {
+             // Handle invalid date strings if necessary
+             console.error("Invalid date string:", dateString);
+             card.classList.add('hidden-by-js');
+             return;
+        }
+
+
+        // Calculate the menu item's Day of Year
+        const menuDOY = calculateDayOfYear(menuDate);
+        // Calculate days in the YEAR of the menu item for wrap-around calculation
+        const menuYear = menuDate.getFullYear();
+        const totalDaysInYear = daysInYear(menuYear);
+
+        // Calculate the difference in Day of Year, considering wrap-around across the year boundary
+        const diff1 = Math.abs(currentDOY - menuDOY); // Direct difference
+        const diff2 = totalDaysInYear - diff1; // Wrap-around difference
+        const dayDiff = Math.min(diff1, diff2); // The actual minimum difference
+
+
+        // Check if the calculated difference is within the allowed tolerance
+        if (dayDiff <= tolerance) {
+            // If within tolerance, ensure the card is visible
+            card.classList.remove('hidden-by-js');
+        } else {
+            // If outside tolerance, hide the card
+            card.classList.add('hidden-by-js');
+        }
+    });
+})(); // The IIFE (Immediately Invoked Function Expression) makes the script run as soon as it's parsed
+</script>
