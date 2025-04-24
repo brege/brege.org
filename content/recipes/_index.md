@@ -19,6 +19,10 @@ An archive of the tasting menus / farmer's market / farm-to-fork / CSA popup men
 
 - [Menu Archive](/recipes/menus)
 
+Here's a few menu items that appeared this week of the year:
+
+{{< this-weeks-menu plus-minus-days="7" >}}
+
 ## [Production Recipes](/recipes/pro)
 
 These recipes are for a production kitchen. The quantities are much larger than what is appropriate for home use. These are speed recipes in the sense the user knows their way around their equipment, and has familiarized themselves with industry terminology.

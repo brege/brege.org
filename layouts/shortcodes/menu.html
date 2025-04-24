@@ -1,0 +1,80 @@
+<style>
+  .menu-card {
+    position: relative;
+    margin-bottom: var(--gap);
+    padding: var(--gap);
+    background: var(--code-bg);
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    transition: transform 0.1s ease-in-out;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .menu-card:hover {
+    transform: scale(0.99);
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    padding-bottom: 1.5rem;
+    text-decoration: underline;
+    text-align: left;
+  }
+
+  .menu-items {
+    font-size: 1rem;
+    color: var(--secondary);
+    line-height: 1.6;
+    flex-grow: 1;
+  }
+
+  .menu-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: var(--secondary);
+    margin-top: 1rem;
+  }
+
+  .menu-footer .menu-date {
+    text-align: left;
+  }
+
+  .menu-footer .menu-author {
+    text-align: right;
+  }
+
+  .menu-card a {
+    color: inherit;
+    text-decoration: none;
+  }
+</style>
+
+<div class="menu-card">
+  <div class="menu-items">
+    {{ .Inner }}
+  </div>
+
+  {{- $dateFormatted := .Page.Date | time | dateFormat "January 2, 2006" -}}
+  {{- $rawDate := .Page.Date | time.Format "2006-01-02" -}}
+  {{- $rest := replace .Page.Title (print $rawDate " ") "" -}}
+
+  <div class="menu-footer">
+    <div class="menu-date">
+      <span>{{ $dateFormatted }} - {{ $rest }}</span>
+    </div>
+    <div class="menu-author">
+      <span>Chef Wyatt Brege</span>
+    </div>
+  </div>
+</div>
+
