@@ -1,4 +1,5 @@
 ---
+
 ShowTOC: false
 date: '2018-09-20'
 draft: false
@@ -8,6 +9,8 @@ tags:
 - farm to fork
 title: 2018-09-20 Farmers Market Menu
 ---
+
+{{% menu %}}
 
 ### Plum Drop
 
@@ -32,3 +35,5 @@ almond crust, raspberry coulis
 
 Vue Family Farms, Lloyd’s Produce, Pure Honey,
 Heritage Pantry, Il Fiorello
+
+{{% /menu %}}

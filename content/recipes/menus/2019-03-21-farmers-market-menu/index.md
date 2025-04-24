@@ -1,4 +1,5 @@
 ---
+
 ShowTOC: false
 date: '2019-03-21'
 draft: false
@@ -8,6 +9,8 @@ tags:
 - farm to fork
 title: 2019-03-21 Farmers Market Menu
 ---
+
+{{% menu %}}
 
 ## Farm\-to\-table Menu
 
@@ -29,3 +32,5 @@ oreo crumb, whipped cream
 
 
 *Proudly serving fresh ingredients from Eatwell Farm*
+
+{{% /menu %}}

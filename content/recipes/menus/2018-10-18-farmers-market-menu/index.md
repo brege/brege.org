@@ -1,4 +1,5 @@
 ---
+
 ShowTOC: false
 date: '2018-10-18'
 draft: false
@@ -8,6 +9,8 @@ tags:
 - farm to fork
 title: 2018-10-18 Farmers Market Menu
 ---
+
+{{% menu %}}
 
 ## Farmer’s Market Menu
 
@@ -31,3 +34,5 @@ almond cream cheese frosting, blueberry sauce
 
 *we thank all the local farmers for providing us with such amazing*
 *produce this season and for becoming our dear friends*
+
+{{% /menu %}}

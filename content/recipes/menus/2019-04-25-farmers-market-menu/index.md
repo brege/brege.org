@@ -9,6 +9,8 @@ tags:
 title: 2019-04-25 Farmers Market Menu
 ---
 
+{{% menu %}}
+
 ## Farmer’s Market Menu
 
 ### Cucumber Crisp
@@ -33,3 +35,5 @@ daikon radish, basmati rice, ponzu sauce
 
 
 *Proudly supporting community supported agriculture from Eatwell Farm*
+
+{{% /menu %}} 

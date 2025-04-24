@@ -1,4 +1,5 @@
 ---
+
 ShowTOC: false
 date: '2019-06-14'
 draft: false
@@ -8,6 +9,8 @@ tags:
 - farm to fork
 title: 2019-06-14 Farmers Market Menu
 ---
+
+{{% menu %}}
 
 ## Farmer’s Market Menu
 
@@ -33,3 +36,5 @@ fresh berries, strawberry gelee
 
 
 *Fresh produce provided by our friends at Eatwell Farm*
+
+{{% /menu %}}

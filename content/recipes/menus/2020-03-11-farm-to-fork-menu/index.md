@@ -1,4 +1,5 @@
 ---
+
 ShowTOC: false
 date: '2020-03-11'
 draft: false
@@ -8,6 +9,8 @@ tags:
 - farm to fork
 title: 2020-03-11 Farm-To-Fork Menu
 ---
+
+{{% menu %}}
 
 ## Farm\-to\-Fork
 
@@ -30,3 +33,5 @@ swiss chard, collard greens, farro grain, american chili glaze
 
 
 *Seasonal produce provided by our great friends at Eatwell Farm*
+
+{{% /menu %}}

@@ -1,4 +1,5 @@
 ---
+
 ShowTOC: false
 date: '2019-01-31'
 draft: false
@@ -8,6 +9,8 @@ tags:
 - farm to fork
 title: 2019-01-31 Farmers Market Menu
 ---
+
+{{% menu %}}
 
 ## Farm\-to\-table Menu
 
@@ -33,3 +36,5 @@ orange snap cookie, basil
 
 *We gladly acknowledge Eatwell Farm for*
 *delivering their amazing CSA box to our door\!*
+
+{{% /menu %}}

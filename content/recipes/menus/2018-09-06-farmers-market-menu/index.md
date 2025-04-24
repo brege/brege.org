@@ -1,4 +1,5 @@
 ---
+
 ShowTOC: false
 date: '2018-09-06'
 draft: false
@@ -8,6 +9,8 @@ tags:
 - farm to fork
 title: 2018-09-06 Farmers Market Menu
 ---
+
+{{% menu %}}
 
 ### Bourbon Pear Wallop
 
@@ -30,3 +33,5 @@ pistachio, dried cherries, bourbon plum glaze, ice cream
 
 Chavez Farms, Lloyd’s Produce, Ahmad Farms,
 Vue Family Farms, Heritage Pantry, Pure Honey
+
+{{% /menu %}}

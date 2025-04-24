@@ -1,4 +1,5 @@
 ---
+
 ShowTOC: false
 date: '2020-03-04'
 draft: false
@@ -8,6 +9,8 @@ tags:
 - farm to fork
 title: 2020-03-04 Farm-To-Fork Menu
 ---
+
+{{% menu %}}
 
 ## Farm\-to\-Fork
 
@@ -33,3 +36,5 @@ green garlic, red bell pepper, fennel, zinfandel cream sauce
 
 
 *Seasonal produce provided by our great friends at Eatwell Farm*
+
+{{% /menu %}}

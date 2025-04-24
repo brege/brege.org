@@ -1,4 +1,5 @@
 ---
+
 ShowTOC: false
 date: '2019-05-02'
 draft: false
@@ -8,6 +9,8 @@ tags:
 - farm to fork
 title: 2019-05-02 Farmers Market Menu
 ---
+
+{{% menu %}}
 
 ## Farmer’s Market Menu
 
@@ -27,3 +30,5 @@ cauliflower puree, lemon beurre blanc
 
 
 *Proudly supporting community supported agriculture from Eatwell Farm*
+
+{{% /menu %}}

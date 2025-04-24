@@ -1,4 +1,5 @@
 ---
+
 ShowTOC: false
 date: '2018-08-30'
 draft: false
@@ -8,6 +9,8 @@ tags:
 - farm to fork
 title: 2018-08-30 Farmers Market Menu
 ---
+
+{{% menu %}}
 
 ### Dixonville Stone Blossom
 
@@ -34,3 +37,5 @@ peaches and ice cream
 R\. Schletewitz Farms, Lloyd’s Produce, Pure Honey,
 
 Toledo Farms, Heritage Pantry
+
+{{% /menu %}}

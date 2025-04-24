@@ -1,4 +1,5 @@
 ---
+
 ShowTOC: false
 date: '2018-07-12'
 draft: false
@@ -8,6 +9,8 @@ tags:
 - farm to fork
 title: 2018-07-12 Farmers Market Menu
 ---
+
+{{% menu %}}
 
 ## Farmer’s Market Menu
 
@@ -27,3 +30,5 @@ whipped cream, local honey
 
 
 Toledo Farms, LLoyd’s Farms, Free Spirit Farms
+
+{{% /menu %}}

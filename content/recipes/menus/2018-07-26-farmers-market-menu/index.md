@@ -1,4 +1,5 @@
 ---
+
 ShowTOC: false
 date: '2018-07-26'
 draft: false
@@ -8,6 +9,8 @@ tags:
 - farm to fork
 title: 2018-07-26 Farmers Market Menu
 ---
+
+{{% menu %}}
 
 ### Watermelon  Salad
 
@@ -28,3 +31,5 @@ cherry tomatoes, corn, basil pesto
 
 LLoyd’s Farms, Chavez Farms, Toledo Farms, Vue Family Farm,
 Free Tree Field Farm, Davis Noodle City
+
+{{% /menu %}}

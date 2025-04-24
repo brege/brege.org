@@ -1,4 +1,5 @@
 ---
+
 ShowTOC: false
 date: '2018-10-11'
 draft: false
@@ -8,6 +9,8 @@ tags:
 - farm to fork
 title: 2018-10-11 Farmers Market Menu
 ---
+
+{{% menu %}}
 
 ## Farmer’s Market Menu
 
@@ -33,3 +36,5 @@ frangipane whipped cream
 
 
 Lloyd’s Produce, Vue Family Farm, Pure Honey, Food Tree Field Farm
+
+{{% /menu %}}

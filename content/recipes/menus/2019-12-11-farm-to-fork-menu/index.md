@@ -1,4 +1,5 @@
 ---
+
 ShowTOC: false
 date: '2019-12-11'
 draft: false
@@ -8,6 +9,8 @@ tags:
 - farm to fork
 title: 2019-12-11 Farm-To-Fork Menu
 ---
+
+{{% menu %}}
 
 ## Farm\-to\-Fork
 
@@ -35,3 +38,5 @@ house caramel sauce
 
 
 *Seasonal produce from Eatwell Farm*
+
+{{% /menu %}}

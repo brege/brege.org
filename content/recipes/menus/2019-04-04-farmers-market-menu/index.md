@@ -1,4 +1,5 @@
 ---
+
 ShowTOC: false
 date: '2019-04-04'
 draft: false
@@ -8,6 +9,8 @@ tags:
 - farm to fork
 title: 2019-04-04 Farmers Market Menu
 ---
+
+{{% menu %}}
 
 ## Farmer’s Market Menu
 
@@ -29,3 +32,5 @@ whipped cream, local walnuts
 
 
 *Proudly serving community supported agriculture from Eatwell Farm*
+
+{{% /menu %}}

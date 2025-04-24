@@ -1,4 +1,5 @@
 ---
+
 ShowTOC: false
 date: '2019-03-07'
 draft: false
@@ -8,6 +9,8 @@ tags:
 - farm to fork
 title: 2019-03-07 Farmers Market Menu
 ---
+
+{{% menu %}}
 
 ## Farm\-to\-table Menu
 
@@ -34,3 +37,5 @@ spiced dried fruit, amaretto
 
 
 *Proudly serving fresh ingredients from Eatwell Farm*
+
+{{% /menu %}}

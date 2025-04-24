@@ -1,4 +1,5 @@
 ---
+
 ShowTOC: false
 date: '2019-02-07'
 draft: false
@@ -8,6 +9,8 @@ tags:
 - farm to fork
 title: 2019-02-07 Farmers Market Menu
 ---
+
+{{% menu %}}
 
 ## Farm\-to\-table Menu
 
@@ -32,3 +35,5 @@ blueberries, mint pesto
 
 *We gladly acknowledge Eatwell Farm for*
 *delivering their amazing CSA box to our door\!*
+
+{{% /menu %}}

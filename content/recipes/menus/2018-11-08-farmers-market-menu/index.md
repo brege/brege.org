@@ -1,4 +1,5 @@
 ---
+
 ShowTOC: false
 date: '2018-11-08'
 draft: false
@@ -8,6 +9,8 @@ tags:
 - farm to fork
 title: 2018-11-08 Farmers Market Menu
 ---
+
+{{% menu %}}
 
 ## Farm\-to\-table Menu
 
@@ -30,3 +33,5 @@ bourbon\-star anise gastrique
 
 *we gladly acknowledge Eatwell Farm for delivering their*
 *amazing CSA share box to our door and inspiring our menu*
+
+{{% /menu %}}

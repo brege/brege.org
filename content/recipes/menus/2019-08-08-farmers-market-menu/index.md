@@ -1,4 +1,5 @@
 ---
+
 ShowTOC: false
 date: '2019-08-08'
 draft: false
@@ -8,6 +9,8 @@ tags:
 - farm to fork
 title: 2019-08-08 Farmers Market Menu
 ---
+
+{{% menu %}}
 
 ## Farmer’s Market Menu
 
@@ -31,3 +34,5 @@ grape “popsicle”, ice cream, house granola
 
 
 *Fresh produce provided by our friends at Eatwell Farm*
+
+{{% /menu %}}

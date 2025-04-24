@@ -1,4 +1,5 @@
 ---
+
 ShowTOC: false
 date: '2019-02-28'
 draft: false
@@ -8,6 +9,8 @@ tags:
 - farm to fork
 title: 2019-02-28 Farmers Market Menu
 ---
+
+{{% menu %}}
 
 ## Farm\-to\-table Menu
 
@@ -34,3 +37,5 @@ vanilla ice cream
 
 
 *Eatwell Farm, Heritage Pantry, Il Fiorello*
+
+{{% /menu %}}

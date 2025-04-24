@@ -1,4 +1,5 @@
 ---
+
 ShowTOC: false
 date: '2019-12-04'
 draft: false
@@ -8,6 +9,8 @@ tags:
 - farm to fork
 title: 2019-12-04 Farm-To-Fork Menu
 ---
+
+{{% menu %}}
 
 ## Farm-To-Fork Menu
 
@@ -34,3 +37,5 @@ Gold Label Reserve, rosemary, honey, lemon
 
 
 *Seasonal produce from Eatwell Farm*
+
+{{% /menu %}}

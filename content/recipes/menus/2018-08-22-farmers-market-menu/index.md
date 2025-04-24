@@ -1,4 +1,5 @@
 ---
+
 ShowTOC: false
 date: '2018-08-22'
 draft: false
@@ -8,6 +9,8 @@ tags:
 - farm to fork
 title: 2018-08-22 Farmers Market Menu
 ---
+
+{{% menu %}}
 
 ## Farmer’s Market Menu
 
@@ -29,3 +32,5 @@ seasonal fruit, crème anglaise
 
 R\. Schletewitz Farms, Lloyd’s Produce,
 Vue Family Farm, Heritage Pantry
+
+{{% /menu %}}

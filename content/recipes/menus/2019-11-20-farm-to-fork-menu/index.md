@@ -1,4 +1,5 @@
 ---
+
 ShowTOC: false
 date: '2019-11-20'
 draft: false
@@ -8,6 +9,8 @@ tags:
 - farm to fork
 title: 2019-11-20 Farm-To-Fork Menu
 ---
+
+{{% menu %}}
 
 ## Farm\-to\-Fork
 
@@ -31,3 +34,5 @@ Tito’s vodka, rosemary, peppercorn, lemon
 
 
 *Seasonal produce from Eatwell Farm*
+
+{{% /menu %}}

@@ -1,4 +1,5 @@
 ---
+
 ShowTOC: false
 date: '2019-11-27'
 draft: false
@@ -8,6 +9,8 @@ tags:
 - farm to fork
 title: 2019-11-27 Farm-To-Fork Menu
 ---
+
+{{% menu %}}
 
 ## Farm\-to\-Fork
 
@@ -30,3 +33,5 @@ layers of pumpkin, pecan and apple pie
 
 
 *Seasonal produce from Eatwell Farm*
+
+{{% /menu %}}

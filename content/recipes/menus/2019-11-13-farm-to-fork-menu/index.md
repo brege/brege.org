@@ -1,4 +1,5 @@
 ---
+
 ShowTOC: false
 date: '2019-11-13'
 draft: false
@@ -8,6 +9,8 @@ tags:
 - farm to fork
 title: 2019-11-13 Farm-To-Fork Menu
 ---
+
+{{% menu %}}
 
 ## Farm\-to\-Fork
 
@@ -29,3 +32,5 @@ rum, coconut milk, cointreau, rosemary, cranberry
 
 
 *Seasonal produce from Eatwell Farm*
+
+{{% /menu %}}

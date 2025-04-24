@@ -1,4 +1,5 @@
 ---
+
 ShowTOC: false
 date: '2020-02-19'
 draft: false
@@ -8,6 +9,8 @@ tags:
 - farm to fork
 title: 2020-02-19 Farm-To-Fork Menu
 ---
+
+{{% menu %}}
 
 ## Farm\-to\-Fork
 
@@ -31,3 +34,5 @@ fennel, tangelo\-bourbon glaze
 
 
 *Seasonal produce provided by our great friends at Eatwell Farm*
+
+{{% /menu %}}

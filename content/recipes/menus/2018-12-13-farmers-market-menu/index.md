@@ -1,4 +1,5 @@
 ---
+
 ShowTOC: false
 date: '2018-12-13'
 draft: false
@@ -8,6 +9,8 @@ tags:
 - farm to fork
 title: 2018-12-13 Farmers Market Menu
 ---
+
+{{% menu %}}
 
 ## Farm\-to\-table Menu
 
@@ -34,3 +37,5 @@ cream cheese frosting, walnut
 
 *we gladly acknowledge Eatwell Farm for delivering their*
 *amazing CSA share box to our door*
+
+{{% /menu %}}

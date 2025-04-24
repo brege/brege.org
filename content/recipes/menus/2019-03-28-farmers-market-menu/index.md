@@ -1,4 +1,5 @@
 ---
+
 ShowTOC: false
 date: '2019-03-28'
 draft: false
@@ -8,6 +9,8 @@ tags:
 - farm to fork
 title: 2019-03-28 Farmers Market Menu
 ---
+
+{{% menu %}}
 
 ## Farm\-to\-table Menu
 
@@ -34,3 +37,5 @@ toasted almonds, whipped cream
 
 
 *Proudly serving community supported agriculture from Eatwell Farm*
+
+{{% /menu %}}

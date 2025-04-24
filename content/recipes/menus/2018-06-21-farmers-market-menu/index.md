@@ -1,4 +1,5 @@
 ---
+
 ShowTOC: false
 date: '2018-06-21'
 draft: false
@@ -8,6 +9,8 @@ tags:
 - farm to fork
 title: 2018-06-21 Farmers Market Menu
 ---
+
+{{% menu %}}
 
 ## Farmer’s Market Menu
 
@@ -28,3 +31,5 @@ mascarpone whipped cream, balsamic glaze
 
 Free Spirit Farms, Achmed’s Farms,
 Toledo Farms, LLoyd’s Farms, Chavez Farms
+
+{{% /menu %}}

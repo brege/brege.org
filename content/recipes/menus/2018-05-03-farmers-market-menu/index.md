@@ -1,4 +1,5 @@
 ---
+
 ShowTOC: false
 date: '2018-05-03'
 draft: false
@@ -8,6 +9,8 @@ tags:
 - farm to fork
 title: 2018-05-03 Farmers Market Menu
 ---
+
+{{% menu %}}
 
 ## Farmers Market Menu
 
@@ -25,3 +28,5 @@ bell pepper, market fresh egg
 
 fava bean puree, fingerling potatoes,
 green beans, cherry port sauce
+
+{{% /menu %}}

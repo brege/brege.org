@@ -1,4 +1,5 @@
 ---
+
 ShowTOC: false
 date: '2018-09-13'
 draft: false
@@ -8,6 +9,8 @@ tags:
 - farm to fork
 title: 2018-09-13 Farmers Market Menu
 ---
+
+{{% menu %}}
 
 ## Farmer’s Market Menu
 
@@ -32,3 +35,5 @@ whipped cream, basil mint gelée, toasted almond
 
 Toledo Farms, Lloyd’s Produce, Vue Family Farms,
 Heritage Pantry, Il Fiorello
+
+{{% /menu %}}

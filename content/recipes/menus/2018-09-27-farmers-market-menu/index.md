@@ -1,4 +1,5 @@
 ---
+
 ShowTOC: false
 date: '2018-09-27'
 draft: false
@@ -8,6 +9,8 @@ tags:
 - farm to fork
 title: 2018-09-27 Farmers Market Menu
 ---
+
+{{% menu %}}
 
 ## Farmer’s Market Menu
 
@@ -32,3 +35,5 @@ pistachio\-graham crumble
 
 Vue Family Farms, Lloyd’s Produce, Pure Honey,
 Food Tree Field Farm, V&M Farms
+
+{{% /menu %}}

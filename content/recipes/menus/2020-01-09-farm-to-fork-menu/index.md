@@ -1,4 +1,5 @@
 ---
+
 ShowTOC: false
 date: '2020-01-09'
 draft: false
@@ -8,6 +9,8 @@ tags:
 - farm to fork
 title: 2020-01-09 Farm-To-Fork Menu
 ---
+
+{{% menu %}}
 
 ## Special Features
 
@@ -32,3 +35,5 @@ w/ housemade crème anglaise
 
 
 *Seasonal produce from Eatwell Farm*
+
+{{% /menu %}}

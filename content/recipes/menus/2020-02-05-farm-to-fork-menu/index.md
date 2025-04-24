@@ -1,4 +1,5 @@
 ---
+
 ShowTOC: false
 date: '2020-02-05'
 draft: false
@@ -8,6 +9,8 @@ tags:
 - farm to fork
 title: 2020-02-05 Farm-To-Fork Menu
 ---
+
+{{% menu %}}
 
 ## Farm\-to\-Fork
 
@@ -35,3 +38,5 @@ w/ vanilla bean ice cream
 
 
 *Seasonal produce provided by our great friends at Eatwell Farm*
+
+{{% /menu %}}

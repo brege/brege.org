@@ -1,4 +1,5 @@
 ---
+
 ShowTOC: false
 date: '2018-07-19'
 draft: false
@@ -8,6 +9,8 @@ tags:
 - farm to fork
 title: 2018-07-19 Farmers Market Menu
 ---
+
+{{% menu %}}
 
 ## Farmer’s Market Menu
 
@@ -27,3 +30,5 @@ pluots, apricots, whipped cream
 
 
 LLoyd’s Farms, Chavez Farms, Vue Family Farm, R\. Schletewitz Farms
+
+{{% /menu %}}

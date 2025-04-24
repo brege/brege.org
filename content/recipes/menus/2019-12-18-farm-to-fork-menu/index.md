@@ -1,4 +1,5 @@
 ---
+
 ShowTOC: false
 date: '2019-12-18'
 draft: false
@@ -8,6 +9,8 @@ tags:
 - farm to fork
 title: 2019-12-18 Farm-To-Fork Menu
 ---
+
+{{% menu %}}
 
 ## Farm\-to\-Fork
 
@@ -32,3 +35,5 @@ Whistlepig Piggyback Rye, hand picked orange
 
 
 *Seasonal produce from Eatwell Farm*
+
+{{% /menu %}}

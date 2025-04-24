@@ -1,4 +1,5 @@
 ---
+
 ShowTOC: false
 date: '2018-12-06'
 draft: false
@@ -8,6 +9,8 @@ tags:
 - farm to fork
 title: 2018-12-06 Farmers Market Menu
 ---
+
+{{% menu %}}
 
 ## Farm\-to\-table Menu
 
@@ -35,3 +38,5 @@ caramel\-walnut sauce, mint whipped cream
 *we gladly acknowledge Eatwell Farm for delivering their*
 *amazing CSA share box to our door and the Barn & Pantry for*
 *providing the cacao cajun sausages*
+
+{{% /menu %}}

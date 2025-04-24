@@ -1,4 +1,5 @@
 ---
+
 ShowTOC: false
 date: '2019-04-18'
 draft: false
@@ -8,6 +9,8 @@ tags:
 - farm to fork
 title: 2019-04-18 Farmers Market Menu
 ---
+
+{{% menu %}}
 
 ## Farmer’s Market Menu
 
@@ -28,3 +31,5 @@ sprinkles, strawberry coulis
 
 
 *Proudly serving community supported agriculture from Eatwell Farm*
+
+{{% /menu %}}

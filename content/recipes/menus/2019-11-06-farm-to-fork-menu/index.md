@@ -1,4 +1,5 @@
 ---
+
 ShowTOC: false
 date: '2019-11-06'
 draft: false
@@ -8,6 +9,8 @@ tags:
 - farm to fork
 title: 2019-11-06 Farm-To-Fork Menu
 ---
+
+{{% menu %}}
 
 ## Farm\-to\-Fork
 
@@ -32,3 +35,5 @@ Tito’s vodka, lime, ginger beer
 
 
 *Seasonal produce from Eatwell Farm*
+
+{{% /menu %}}

@@ -1,4 +1,5 @@
 ---
+
 ShowTOC: false
 date: '2020-01-29'
 draft: false
@@ -8,6 +9,8 @@ tags:
 - farm to fork
 title: 2020-01-29 Farm-To-Fork Menu
 ---
+
+{{% menu %}}
 
 ## Three Course Tasting Menu
 
@@ -31,3 +34,5 @@ arugula, shaved parmesan, pickled red onion,
 cajun aioli, french roll, w/ fries or coleslaw
 
 *Fort Point Westfalia \- Red Ale*
+
+{{% /menu %}}

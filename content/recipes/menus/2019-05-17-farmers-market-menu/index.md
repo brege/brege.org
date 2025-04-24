@@ -1,4 +1,5 @@
 ---
+
 ShowTOC: false
 date: '2019-05-17'
 draft: false
@@ -8,6 +9,8 @@ tags:
 - farm to fork
 title: 2019-05-17 Farmers Market Menu
 ---
+
+{{% menu %}}
 
 ## Weekend Specials
 
@@ -27,3 +30,5 @@ strawberry cream cheese frosting
 
 
 *Fresh produce provided by our friends at Eatwell Farm*
+
+{{% /menu %}}

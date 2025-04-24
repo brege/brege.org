@@ -1,4 +1,5 @@
 ---
+
 ShowTOC: false
 date: '2018-12-20'
 draft: false
@@ -8,6 +9,8 @@ tags:
 - farm to fork
 title: 2018-12-20 Farmers Market Menu
 ---
+
+{{% menu %}}
 
 ## Farm\-to\-table Menu
 
@@ -34,3 +37,5 @@ orange caramel sauce, mandarin, ice cream
 
 *We gladly acknowledge Eatwell Farm for delivering their amazing*
 *CSA box to our door\-\-enjoy the break next week, Lorraine *et al*\!*
+
+{{% /menu %}}

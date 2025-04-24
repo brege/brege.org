@@ -1,4 +1,5 @@
 ---
+
 ShowTOC: false
 date: '2019-08-15'
 draft: false
@@ -8,6 +9,8 @@ tags:
 - farm to fork
 title: 2019-08-15 Farmers Market Menu
 ---
+
+{{% menu %}}
 
 ## Farmer’s Market Menu
 
@@ -29,3 +32,5 @@ lemon cookie, fig brûlée, candied walnut
 
 
 *Fresh produce provided by our friends at Eatwell Farm*
+
+{{% /menu %}}

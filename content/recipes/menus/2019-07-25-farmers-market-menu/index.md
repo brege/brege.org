@@ -1,4 +1,5 @@
 ---
+
 ShowTOC: false
 date: '2019-07-25'
 draft: false
@@ -8,6 +9,8 @@ tags:
 - farm to fork
 title: 2019-07-25 Farmers Market Menu
 ---
+
+{{% menu %}}
 
 ## Farmer’s Market Menu
 
@@ -32,3 +35,5 @@ peach, plum, nectarine, mint
 
 
 *Fresh produce provided by our friends at Eatwell Farm*
+
+{{% /menu %}}
