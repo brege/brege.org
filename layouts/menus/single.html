@@ -1,0 +1,64 @@
+{{- define "main" }}
+
+<article class="post-single"> {{/* Use the theme's main article wrapper class */}}
+
+  <header class="post-header"> {{/* Use the theme's header class */}}
+    {{- partial "breadcrumbs.html" . -}} {{/* Call the theme's breadcrumbs partial */}}
+    <h1 class="post-title entry-hint-parent"> {{/* Use theme's title classes */}}
+      {{ .Title }}
+      {{- if .Draft }}
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
+          <path d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+      {{- end }}
+    </h1>
+    {{- if .Description }}
+    <div class="post-description"> {{/* Use theme's description class */}}
+      {{ .Description }}
+    </div>
+    {{- end }}
+    {{- if not (.Param "hideMeta") }}
+    <div class="post-meta"> {{/* Use theme's meta class */}}
+      {{- partial "post_meta.html" . -}} {{/* Call the theme's post meta partial */}}
+      {{- partial "translation_list.html" . -}} {{/* Call other theme partials as needed */}}
+      {{- partial "edit_post.html" . -}}
+      {{- partial "post_canonical.html" . -}}
+    </div>
+    {{- end }}
+  </header>
+
+  {{- partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" ((.Param "cover.hiddenInSingle") | default (.Param "cover.hidden") | default false)) -}} {{/* Call theme's cover partial */}}
+  {{- if (.Param "ShowToc") }}
+  {{- partial "toc.html" . -}} {{/* Call theme's ToC partial */}}
+  {{- end }}
+
+  <div class="post-content"> {{/* Use theme's content class */}}
+    {{- if not (.Param "disableAnchoredHeadings") }}
+    {{- partial "anchored_headings.html" .Content -}} {{/* Call theme's anchored headings partial */}}
+    {{- else }}{{ .Content }}{{ end }}
+  </div>
+
+  <footer class="post-footer"> {{/* Use theme's footer class */}}
+    {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
+    <ul class="post-tags"> {{/* Use theme's tag list class */}}
+      {{- range ($.GetTerms $tags) }}
+      <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+      {{- end }}
+    </ul>
+    {{- if (.Param "ShowPostNavLinks") }}
+    {{- partial "post_nav_links.html" . -}} {{/* Call the theme's navigation links partial */}}
+    {{- end }}
+    {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
+    {{- partial "share_icons.html" . -}} {{/* Call theme's share icons partial */}}
+    {{- end }}
+  </footer>
+
+  {{- if (.Param "comments") }}
+  {{- partial "comments.html" . -}} {{/* Call theme's comments partial */}}
+  {{- end }}
+
+</article>
+
+{{- end }}{{/* end main */}}

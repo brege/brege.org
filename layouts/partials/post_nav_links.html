@@ -1,0 +1,19 @@
+{{- $pages := .CurrentSection.RegularPages }} {{/* Get all regular pages within the current section */}}
+{{- if and (gt (len $pages) 1) (in $pages . ) }} {{/* Check if there's more than one page in the section and the current page is in it */}}
+<nav class="paginav">
+  {{- with $pages.Next . }}
+  <a class="prev" href="{{ .Permalink }}">
+    <span class="title">« {{ i18n "prev_page" }}</span> {{/* These i18n keys might need corresponding entries in your site's i18n files if you use translations */}}
+    <br>
+    <span>{{- .Name -}}</span>
+  </a>
+  {{- end }}
+  {{- with $pages.Prev . }}
+  <a class="next" href="{{ .Permalink }}">
+    <span class="title">{{ i18n "next_page" }} »</span>
+    <br>
+    <span>{{- .Name -}}</span>
+  </a>
+  {{- end }}
+</nav>
+{{- end }}

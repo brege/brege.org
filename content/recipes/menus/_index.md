@@ -5,6 +5,7 @@ draft: false
 date: 2025-04-16
 layout: menu-landing
 ShowBreadcrumbs: true
+type: menus
 ---
 
 An archive of the tasting menus / farmer's market / farm-to-fork / CSA popup menus I did for *Dawson's* and *The Slanted Tree*.

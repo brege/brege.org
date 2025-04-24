@@ -1,10 +1,36 @@
-{{- $section := .Get "section" -}}
+{{- $sectionName := .Get "section" }} {{/* Get the 'section' parameter, e.g., "pro" or "gen" */}}
+{{- if $sectionName }}
+  {{- /*
+    Construct the expected path of the subsection _index.md relative to the site root,
+    e.g., "recipes/pro". .Page.Section gives the top-level section ("recipes").
+  */}}
+  {{- $targetPath := printf "%s/%s" .Page.Section $sectionName }}
 
-<ol>
-  {{- with site.GetPage (print "recipes/" $section) }}
-    {{- range .Pages.ByTitle }}
-      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+  {{- /* Get the subsection page using site.GetPage with the section kind and path */}}
+  {{- $subsection := site.GetPage "section" $targetPath }}
+
+  {{- if $subsection }}
+    {{- /* Now range through the pages within that subsection */}}
+    {{- $subsectionPages := $subsection.Pages }}
+    {{- if $subsectionPages }}
+      <div class="recipe-list-shortcode"> {{/* Add a class for styling specific to the shortcode output */}}
+        {{- /* Heading controlled from _index.md */}}
+        <ul>
+          {{- range $subsectionPages.ByTitle }} {{/* Loop through pages in the subsection */}}
+          <li>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+          </li>
+          {{- end }}
+        </ul>
+      </div>
+    {{- else }}
+      <p>No recipes found in "{{ $sectionName }}" subsection.</p>
     {{- end }}
+  {{- else }}
+    {{- /* Added target path to the error message for debugging */}}
+    <p>Recipe subsection "{{ $sectionName }}" not found at path "{{ $targetPath }}".</p>
   {{- end }}
-</ol>
-
+{{- else }}
+{{- /* Handle case where no section is specified in the shortcode */}}
+<p>Error: No section specified. Usage example: &lt;recipe-list section="subsection_name"&gt;</p>
+{{- end }}

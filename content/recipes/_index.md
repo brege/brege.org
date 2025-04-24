@@ -1,8 +1,11 @@
 ---
 title: 'Recipes'
+type: recipes
 layout: recipe-landing
 ShowBreadcrumbs: true
-hideMeta: true
+sort_by: title
+order: asc
+
 ---
 
 A collection of professional, heirloom, and personal recipes, as well as tasting menus.
@@ -19,9 +22,9 @@ An archive of the tasting menus / farmer's market / farm-to-fork / CSA popup men
 
 - [Menu Archive](/recipes/menus)
 
-Here's a few menu items that appeared this week of the year:
+Here's a few menu items that appeared around this time of the year:
 
-{{< this-weeks-menu plus-minus-days="7" >}}
+{{< this-weeks-menu plus-minus-days="10" >}}
 
 ## [Production Recipes](/recipes/pro)
 
