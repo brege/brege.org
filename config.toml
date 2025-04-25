@@ -115,7 +115,7 @@ title = "brege.org"
     [markup.goldmark.renderer]
       unsafe = true
   [markup.highlight]
-      noClasses = true
+    noClasses = true
   [tableOfContents]
     ordered = true
     startLevel = 1
@@ -131,22 +131,22 @@ title = "brege.org"
   [[menu.main]]
     identifier = "about"
     name = "about"
-    url = "/about/"
+    url = "/about"
     weight = 10
   [[menu.main]]
     identifier = "post"
     name = "posts"
-    url = "/post/"
+    url = "/post"
     weight = 20
   [[menu.main]]
     identifier = "recipes"
     name = "recipes"
-    url = "/recipes/"
+    url = "/recipes"
     weight = 25
   [[menu.main]]
     identifier = "contact"
     name = "contact"
-    url = "/contact/"
+    url = "/contact"
     weight = 30
   [[menu.main]]
     identifier = "cv"
