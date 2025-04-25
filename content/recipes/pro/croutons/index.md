@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Croutons
 
-**Author:** Patty Pereira, Wyatt Brege
+**Chefs:** Patty Pereira, Wyatt Brege
 
 
 

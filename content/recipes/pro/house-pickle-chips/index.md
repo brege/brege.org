@@ -13,7 +13,7 @@ ShowTOC: false
 
 ## House Pickle Chips
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 **Yield:** 22 Quarts
 

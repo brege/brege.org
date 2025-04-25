@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Cajun Roasted Red Pepper Sauce
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 **Yield:** 2 Quart
 

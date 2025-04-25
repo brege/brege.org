@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Thousand Island / Awesome Sauce
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 
 

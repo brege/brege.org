@@ -13,7 +13,7 @@ ShowTOC: false
 
 ## Pesto Aioli
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 **Yield:** 6 Quarts 
 

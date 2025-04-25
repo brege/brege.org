@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Wasabi Deviled Eggs
 
-**Author:** Matt Andrews, Wyatt Brege
+**Chefs:** Matt Andrews, Wyatt Brege
 
 
 

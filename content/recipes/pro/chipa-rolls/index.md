@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Chipa Rolls
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 **Yield:** 10 servings
 

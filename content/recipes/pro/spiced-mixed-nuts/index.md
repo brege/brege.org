@@ -13,7 +13,7 @@ ShowTOC: false
 
 ## Spiced Mixed Nuts
 
-**Author:** Wyatt Brege, Patty Pereira
+**Chefs:** Wyatt Brege, Patty Pereira
 
 **Yield:** 2 Quarts
 

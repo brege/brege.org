@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Vegetable Stock
 
-**Author:** Matt Andrews, Wyatt Brege
+**Chefs:** Matt Andrews, Wyatt Brege
 
 
 

@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Asian Brown Sauce
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 **Yield:** 1 Quart
 

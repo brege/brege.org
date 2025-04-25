@@ -13,7 +13,7 @@ ShowTOC: false
 
 ## Chipotle-Lime Dressing
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 **Yield:** 2.5 Quarts 
 

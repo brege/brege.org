@@ -13,7 +13,7 @@ ShowTOC: false
 
 ## Tomatillo Salsa
 
-**Author:** Wyatt Brege, Victor Sanchez
+**Chefs:** Wyatt Brege, Victor Sanchez
 
 **Yield:** 4 Quarts
 

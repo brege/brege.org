@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Bleu Cheese Dressing
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 **Yield:** 1 Quart
 

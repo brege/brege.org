@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Boneless Beef Short Ribs
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 **Yield:** 6 servings
 

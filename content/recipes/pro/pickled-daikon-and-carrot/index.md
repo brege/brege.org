@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Pickled Daikon and Carrot
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 **Yield:** 2 Quart
 

@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Basil Pesto
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 **Yield:** 1 Quart
 

@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Wild Berry Vinaigrette
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 **Yield:** 7 Cups
 

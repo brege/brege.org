@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Balsamic Vinaigrette
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 **Yield:** 5 cups
 

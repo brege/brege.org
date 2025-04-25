@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Salsa, Chunky
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 
 

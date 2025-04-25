@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Roasted Corn
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 **Yield:** 1 quarts
 

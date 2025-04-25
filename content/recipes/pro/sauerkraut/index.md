@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Sauerkraut
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 **Yield:** 2 1/2 Quart
 

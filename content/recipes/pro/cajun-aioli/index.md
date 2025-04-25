@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Cajun Aioli
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 
 

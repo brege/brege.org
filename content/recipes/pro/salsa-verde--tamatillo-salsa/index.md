@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Salsa Verde / Tamatillo Salsa
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 **Yield:** 4 Quart
 

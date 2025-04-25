@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Citrus Gremolata
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 **Yield:** 2 Cups
 

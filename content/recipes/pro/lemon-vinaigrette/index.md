@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Lemon Vinaigrette
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 
 

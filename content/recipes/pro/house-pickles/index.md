@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## House Pickles
 
-**Author:** Ryan Fleener, Wyatt Brege
+**Chefs:** Ryan Fleener, Wyatt Brege
 
 
 

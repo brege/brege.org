@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Chardonnay Vinaigrette
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 **Yield:** 6 Cups
 

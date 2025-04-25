@@ -13,7 +13,7 @@ ShowTOC: false
 
 ## Honey Balsamic Vinaigrette
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 **Yield:** 2 Quarts
 

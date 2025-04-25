@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Ranch Dressing
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 **Yield:** 6 Quarts
 

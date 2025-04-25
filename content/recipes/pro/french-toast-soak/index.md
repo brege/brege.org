@@ -13,7 +13,7 @@ ShowTOC: false
 
 ## French Toast Soak
 
-**Author:** Wyatt Brege, Patty Pereira
+**Chefs:** Wyatt Brege, Patty Pereira
 
 **Yield:** 4.5 Quarts 
 

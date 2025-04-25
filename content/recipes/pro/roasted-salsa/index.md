@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Roasted Salsa
 
-**Author:** Wyatt Brege, Patty Pereira
+**Chefs:** Wyatt Brege, Patty Pereira
 
 
 

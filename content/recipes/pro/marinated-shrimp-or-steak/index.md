@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Marinated Shrimp or Steak
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 
 

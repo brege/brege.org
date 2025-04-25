@@ -13,7 +13,7 @@ ShowTOC: false
 
 ## Chicken Wings
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 **Yield:** 3x's 8 Quarts
 

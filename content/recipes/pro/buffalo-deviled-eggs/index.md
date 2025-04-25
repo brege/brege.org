@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Buffalo Deviled Eggs
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 **Yield:** 15 servings
 

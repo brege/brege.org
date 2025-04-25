@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Pickled Jalepenos
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 
 

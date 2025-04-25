@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Sweet Chili Glaze
 
-**Author:** Wyatt Brege, Ryan Fleener
+**Chefs:** Wyatt Brege, Ryan Fleener
 
 
 

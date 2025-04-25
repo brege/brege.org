@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Fresh Marinara
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 **Yield:** 2 Quarts
 

@@ -13,7 +13,7 @@ ShowTOC: false
 
 ## Candied Walnuts
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 **Yield:** 3 Quarts 
 

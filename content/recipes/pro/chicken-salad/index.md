@@ -13,7 +13,7 @@ ShowTOC: false
 
 ## Chicken Salad
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 **Yield:** 2-3 Quarts
 

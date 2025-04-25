@@ -13,7 +13,7 @@ ShowTOC: false
 
 ## Thai Peanut Sauce
 
-**Author:** Wyatt Brege, Hank Gerrero
+**Chefs:** Wyatt Brege, Hank Gerrero
 
 **Yield:** 4 Quarts
 

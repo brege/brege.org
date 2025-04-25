@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Garlic-Parmessan Cream Sauce
 
-**Author:** Matt Andrews, Wyatt Brege
+**Chefs:** Matt Andrews, Wyatt Brege
 
 
 

@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Pickled Sweet Peppers
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 **Yield:** 12 Quarts
 

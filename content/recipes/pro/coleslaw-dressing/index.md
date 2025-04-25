@@ -13,7 +13,7 @@ ShowTOC: false
 
 ## Coleslaw Dressing
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 **Yield:** 1 Quart 
 

@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Sriracha Aioli
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 
 

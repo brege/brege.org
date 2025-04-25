@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Caesar Dressing
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 **Yield:** 3 quarts
 

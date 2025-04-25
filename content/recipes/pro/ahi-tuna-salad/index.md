@@ -13,7 +13,7 @@ ShowTOC: false
 
 ## Ahi Tuna Salad
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 **Yield:** 4 Quarts
 

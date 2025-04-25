@@ -13,7 +13,7 @@ ShowTOC: false
 
 ## Pulled Pork
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 **Yield:** 1.5-2x's 8 Quarts 
 

@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Mac n Cheese Sauce
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 
 

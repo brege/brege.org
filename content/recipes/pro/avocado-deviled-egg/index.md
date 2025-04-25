@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Avocado Deviled Egg
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 **Yield:** 15 servings
 

@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Champagne Vinaigrette
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 **Yield:** 1 1/2 Quart
 

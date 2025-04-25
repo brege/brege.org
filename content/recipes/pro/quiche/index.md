@@ -13,7 +13,7 @@ ShowTOC: false
 
 ## Quiche
 
-**Author:** Patty Pereira
+**Chef:** Patty Pereira
 
 **Yield:** 7 ea quiches
 

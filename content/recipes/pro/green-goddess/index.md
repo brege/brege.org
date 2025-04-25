@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Green Goddess
 
-**Author:** Matt Andrews, Wyatt Brege
+**Chefs:** Matt Andrews, Wyatt Brege
 
 **Yield:** 1 quarts
 

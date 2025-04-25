@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Cajun Seasoning
 
-**Author:** Viktor Sanchez, Wyatt Brege
+**Chefs:** Viktor Sanchez, Wyatt Brege
 
 **Yield:** 2 Quart
 

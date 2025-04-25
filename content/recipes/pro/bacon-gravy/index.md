@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Bacon Gravy / Sausage Gravy
 
-**Author:** Ryan Fleener, Wyatt Brege
+**Chefs:** Ryan Fleener, Wyatt Brege
 
 **Yield:** 7 Quarts
 

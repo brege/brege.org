@@ -13,7 +13,7 @@ ShowTOC: false
 
 ## Crab Cakes
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 **Yield:** 22 ea
 

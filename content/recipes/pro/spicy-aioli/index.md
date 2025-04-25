@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Spicy Aioli
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 **Yield:** 5 Quarts
 

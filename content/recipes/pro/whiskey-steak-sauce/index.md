@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Whiskey Steak Sauce
 
-**Author:** Ryan Fleener
+**Chef:** Ryan Fleener
 
 **Yield:** 4 quarts
 

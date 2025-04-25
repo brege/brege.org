@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## BBQ Lime Ranch Dressing
 
-**Author:** Matt Andrews, Wyatt Brege
+**Chefs:** Matt Andrews, Wyatt Brege
 
 
 

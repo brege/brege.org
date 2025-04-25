@@ -13,7 +13,7 @@ ShowTOC: false
 
 ## Pineapple Salsa
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 **Yield:** 3-4 Quarts 
 

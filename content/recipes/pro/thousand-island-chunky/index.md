@@ -13,7 +13,7 @@ ShowTOC: false
 
 ## Thousand Island, Classic/Chunky
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 **Yield:** 6 Quarts
 

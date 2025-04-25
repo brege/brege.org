@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Garlic Aioli
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 **Yield:** 2 Quart
 

@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Fried Chicken Dredge
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 **Yield:** 2 Quarts
 

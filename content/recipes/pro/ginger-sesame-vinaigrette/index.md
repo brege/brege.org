@@ -13,7 +13,7 @@ ShowTOC: false
 
 ## Ginger Sesame Vinaigrette
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 **Yield:** 3 Quarts 
 

@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Flour Dredge
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 
 

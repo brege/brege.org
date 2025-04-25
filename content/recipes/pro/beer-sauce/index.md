@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Beer Sauce
 
-**Author:** Ryan Fleener, Wyatt Brege
+**Chefs:** Ryan Fleener, Wyatt Brege
 
 
 

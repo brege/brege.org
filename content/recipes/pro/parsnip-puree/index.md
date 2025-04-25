@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Parsnip Puree
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 
 

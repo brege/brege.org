@@ -13,7 +13,7 @@ ShowTOC: false
 
 ## Beer Cheese Sauce
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 **Yield:** 4 Quarts 
 

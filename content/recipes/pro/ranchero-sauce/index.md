@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Ranchero Sauce
 
-**Author:** Wyatt Brege, Patty Pereira
+**Chefs:** Wyatt Brege, Patty Pereira
 
 
 

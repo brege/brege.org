@@ -13,7 +13,7 @@ ShowTOC: false
 
 ## Pancake Batter
 
-**Author:** Wyatt Brege, Patty Periera
+**Chefs:** Wyatt Brege, Patty Periera
 
 **Yield:** 3 Quarts
 

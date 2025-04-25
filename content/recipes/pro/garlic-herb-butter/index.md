@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Garlic Herb Butter
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 **Yield:** 1 Log
 

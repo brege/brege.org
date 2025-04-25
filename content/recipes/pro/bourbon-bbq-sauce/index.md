@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Bourbon BBQ Sauce
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 
 

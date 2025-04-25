@@ -13,7 +13,7 @@ ShowTOC: false
 
 ## Biscuits
 
-**Author:** Wyatt Brege, Patty Pereira
+**Chefs:** Wyatt Brege, Patty Pereira
 
 **Yield:** 1 full sheet (12 ea XL biscuits) 
 

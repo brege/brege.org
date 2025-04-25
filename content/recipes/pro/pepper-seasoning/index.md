@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Pepper Seasoning
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 **Yield:** 2 quarts
 

@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Tomato Jam
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 **Yield:** 2 Cups
 

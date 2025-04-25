@@ -10,7 +10,7 @@ ShowTOC: false
 
 ## Green Onion Gremolata
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 **Yield:** 1 Quart
 
