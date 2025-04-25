@@ -8,14 +8,14 @@ ShowTOC: false
 
 {{% recipe %}}
 
-### Garlic Herb Butter
+## Garlic Herb Butter
 
 **Author:** Wyatt Brege
 
 **Yield:** 1 Log
 
 
-#### Ingredients:
+### Ingredients:
 
 -   1 Pound Butter, semi-soft
 -   1 bunch Tarragon
@@ -24,7 +24,7 @@ ShowTOC: false
 -   1/4 Cup Garlic, chopped
 -   tt Salt and Black Pepper
 
-#### Directions: 
+### Directions: 
 
 Finely chop the herbs.
 

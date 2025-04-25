@@ -8,14 +8,14 @@ ShowTOC: false
 
 {{% recipe %}}
 
-### Pickled Daikon and Carrot
+## Pickled Daikon and Carrot
 
 **Author:** Wyatt Brege
 
 **Yield:** 2 Quart
 
 
-#### Ingredients:
+### Ingredients:
 
 -   2 ea Large Daikon Radish
 -   2 ea Carrot
@@ -28,7 +28,7 @@ ShowTOC: false
 -   2 Tbsp Kosher Salt
 -   2 Tbsp Granulated Sugar
 
-#### Directions: 
+### Directions: 
 
 Fine julienne the daikon and carrot.
 Place the produce in a 4 Quart container.

@@ -8,13 +8,13 @@ ShowTOC: false
 
 {{% recipe %}}
 
-### Salsa, Chunky
+## Salsa, Chunky
 
 **Author:** Wyatt Brege
 
 
 
-#### Ingredients:
+### Ingredients:
 
 -   2 pounds Cherry Tomatoes
 -   3 each Garlic Cloves
@@ -22,7 +22,7 @@ ShowTOC: false
 -   1/2 each Yellow Onion (bruinoise)
 -   1/2 bunch Cilantro
 
-#### Directions: 
+### Directions: 
 
 Roast the poblano over the slotted grill or six-burners. When the skin
 is blackened, but before it whitens to ash, add

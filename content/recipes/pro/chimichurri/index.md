@@ -8,14 +8,14 @@ ShowTOC: false
 
 {{% recipe %}}
 
-### Chimichurri
+## Chimichurri
 
 **Author:** Wyatt Brege
 
 **Yield:** 2 1/2 Cups
 
 
-#### Ingredients:
+### Ingredients:
 
 -   2 Cup Extra Virgin Olive Oil
 -   1 Cup Parsley, chopped
@@ -25,7 +25,7 @@ ShowTOC: false
 -   2 Tbsp Crushed Red Pepper
 -   tt Salt and Fine Black Pepper
 
-#### Directions: 
+### Directions: 
 
 Chop the herbs, then mix with remaining ingredients in a mixing bowl.
 {{% /recipe %}}

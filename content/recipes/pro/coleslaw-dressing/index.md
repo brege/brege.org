@@ -11,13 +11,13 @@ ShowTOC: false
 
 {{% recipe %}}
 
-### Coleslaw Dressing
+## Coleslaw Dressing
 
 **Author:** Wyatt Brege
 
 **Yield:** 1 Quart 
 
-#### Ingredients:
+### Ingredients:
 
 - 1 ½ Cup Mayonnaise
 - 1 Cup Dijon Mustard
@@ -28,7 +28,7 @@ ShowTOC: false
 - 1 ½ Tbsp Black Pepper
 - 1 ½ Tbsp Kosher Salt
 
-#### Directions:
+### Directions:
 
 1.  Mix all ingredients in a large mixing bowl with a whisk
 

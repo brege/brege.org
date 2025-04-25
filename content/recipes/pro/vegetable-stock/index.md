@@ -8,13 +8,13 @@ ShowTOC: false
 
 {{% recipe %}}
 
-### Vegetable Stock
+## Vegetable Stock
 
 **Author:** Matt Andrews, Wyatt Brege
 
 
 
-#### Ingredients:
+### Ingredients:
 
 -   2 Bunches Celary
 -   1 Bunch Leeks
@@ -22,7 +22,7 @@ ShowTOC: false
 -   3 ea Large Yellow Onions
 -   2 Bunches Parsley
 
-#### Directions: 
+### Directions: 
 
 In a large pot, fill 3/4 the way full with water and add the vegetables
 (coarsely chopped and cleaned of any dirt) and parsley.

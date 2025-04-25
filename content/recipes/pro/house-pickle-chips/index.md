@@ -11,13 +11,13 @@ ShowTOC: false
 
 {{% recipe %}}
 
-### House Pickle Chips
+## House Pickle Chips
 
 **Author:** Wyatt Brege
 
 **Yield:** 22 Quarts
 
-#### Ingredients:
+### Ingredients:
 
 - 1 Gallon Water
 - 1 Gallon Apple Cider Vinegar
@@ -30,7 +30,7 @@ ShowTOC: false
 - 1 Cup Garlic, crushed
 - 4 oz Dill, whole
 
-#### Directions:
+### Directions:
 
 1.  Bring the first seven ingredients to a boil
 
@@ -39,7 +39,7 @@ ShowTOC: false
 3.  With a chinois, strain the brine over the 18 Quart container and let
     cool
 
-#### Notes:
+### Notes:
 
 1.  For the **sandwiches**, slice the pickles with the mandolin to make
     deli chips

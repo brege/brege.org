@@ -11,20 +11,20 @@ ShowTOC: false
 
 {{% recipe %}}
 
-### Candied Walnuts
+## Candied Walnuts
 
 **Author:** Wyatt Brege
 
 **Yield:** 3 Quarts 
 
-#### Ingredients:
+### Ingredients:
 
 - 2 Quart Walnuts, halves and pieces
 - 3 Cup Brown Sugar
 - ¾ Cup Water
 - 1 Tbsp Kosher Salt
 
-#### Directions:
+### Directions:
 
 1.  In a large non-stick saute pan, bring all ingredients to a simmer
     until the syrup has begun to caramelize\

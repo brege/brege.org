@@ -8,14 +8,14 @@ ShowTOC: false
 
 {{% recipe %}}
 
-### Boneless Beef Short Ribs
+## Boneless Beef Short Ribs
 
 **Author:** Wyatt Brege
 
 **Yield:** 6 servings
 
 
-#### Ingredients:
+### Ingredients:
 
 -   6 each 10 oz Boneless Beef Short Ribs
 -   1 each Yellow Onion
@@ -24,7 +24,7 @@ ShowTOC: false
 -   1/4 Cup House Demi Glase
 -   tt Salt and Course Black Pepper
 
-#### Directions: 
+### Directions: 
 
 Season the short ribs with salt and black pepper, then sear off all six
 sides on the flat top grill.
@@ -34,7 +34,7 @@ ingredients and bring to a boil.
 
 Cover with aluminum foil and braise for 2.5 hours in a 425 deg oven.
 
-#### Notes: 
+### Notes: 
 
 To make the house demi glase, boil 2 pounds of connective tissue scraps
 from processing the teres major beef muscle, tomato and mushroom scrap,

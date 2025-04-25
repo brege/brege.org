@@ -8,13 +8,13 @@ ShowTOC: false
 
 {{% recipe %}}
 
-### Wasabi Deviled Eggs
+## Wasabi Deviled Eggs
 
 **Author:** Matt Andrews, Wyatt Brege
 
 
 
-#### Ingredients:
+### Ingredients:
 
 -   30 Egg Yolks
 -   4 Tbs Wasabi Paste
@@ -24,7 +24,7 @@ ShowTOC: false
 -   1 C Mayonaise
 -   1 tsp Salt
 
-#### Directions: 
+### Directions: 
 
 Bring 30 eggs to a rolling boil, then remove pan from heat.
 Let eggs stand in hot water for 13 minutes.
@@ -39,7 +39,7 @@ With gloves, thoroughly massage the yolks.
 Add remaining ingredients and smooth with masher.
 Scoop the mixture into a piping bag.
 
-#### Notes: 
+### Notes: 
 
 If starting from dry wasabi powder, incrementally reconstitute the
 powder in a clean bowl with cold water until you can form a soft cube

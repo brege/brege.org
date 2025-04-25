@@ -8,14 +8,14 @@ ShowTOC: false
 
 {{% recipe %}}
 
-### Green Goddess
+## Green Goddess
 
 **Author:** Matt Andrews, Wyatt Brege
 
 **Yield:** 1 quarts
 
 
-#### Ingredients:
+### Ingredients:
 
 -   1 Quart Mayonaisse
 -   1 Bunch Chive
@@ -23,7 +23,7 @@ ShowTOC: false
 -   1 Bunch Parsley
 -   tt Salt and Pepper
 
-#### Directions: 
+### Directions: 
 
 Add all ingredients to a 4 Quart Container.
 Blend with immersion blender until the mayonnaise turns green.

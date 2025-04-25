@@ -11,13 +11,13 @@ ShowTOC: false
 
 {{% recipe %}}
 
-### Quiche
+## Quiche
 
 **Author:** Patty Pereira
 
 **Yield:** 7 ea quiches
 
-#### Ingredients:
+### Ingredients:
 
 *Crust base - Yield: 3-4 quiche*
 - 6 Cup Organic Flour
@@ -30,7 +30,7 @@ ShowTOC: false
 - ½ Tbsp Kosher Salt
 - 1 tsp Black Pepper
 
-#### Directions:
+### Directions:
 
 1.  Prepare the crust by mixing the Flour and Butter in the stand mixer
     with the spade beater attachment, then, add ⅔ of the water to begin
@@ -49,7 +49,7 @@ ShowTOC: false
 5.  Poor the egg mixture into the dough-lined pan \[1\] and bake at 350 deg
     F for approx. 30 minutes until the center is set
 
-#### Notes:
+### Notes:
 
 -   \[1\] At this stage you can add your ingredients into the wet
     mixture, e.g. asparagus, goat cheese, prosciutto, salami, pitted

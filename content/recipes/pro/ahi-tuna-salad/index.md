@@ -11,13 +11,13 @@ ShowTOC: false
 
 {{% recipe %}}
 
-### Ahi Tuna Salad
+## Ahi Tuna Salad
 
 **Author:** Wyatt Brege
 
 **Yield:** 4 Quarts
 
-#### Ingredients:
+### Ingredients:
 
 - 1 ea 5\# Loin Ahi Tuna, cooked and shredded
 - 1 ½ Cup Mayonnaise
@@ -30,7 +30,7 @@ ShowTOC: false
 - 1 each Lemon, juiced
 - 1 Tbsp Malt Vinegar
 
-#### Directions:
+### Directions:
 
 1.  Cut the tuna loin into steaks, season with salt and black pepper,
     and roast on an oiled sheet tray in a 400 deg F oven for 30 minutes

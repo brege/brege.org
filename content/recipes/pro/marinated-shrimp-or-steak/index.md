@@ -8,19 +8,19 @@ ShowTOC: false
 
 {{% recipe %}}
 
-### Marinated Shrimp or Steak
+## Marinated Shrimp or Steak
 
 **Author:** Wyatt Brege
 
 
 
-#### Ingredients:
+### Ingredients:
 
 -   1 bag Peeled and Deveined Shrimp
 -   1 1/2 Tbsp Fry Seasoning
 -   2 Tbsp Extra Virgin Olive Oil
 
-#### Directions: 
+### Directions: 
 
 Thaw, rinse and strain shrimps in a colander to drain excess water.
 Place shrimp in large mixing bowl.

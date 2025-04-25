@@ -8,14 +8,14 @@ ShowTOC: false
 
 {{% recipe %}}
 
-### Salsa Verde / Tamatillo Salsa
+## Salsa Verde / Tamatillo Salsa
 
 **Author:** Wyatt Brege
 
 **Yield:** 4 Quart
 
 
-#### Ingredients:
+### Ingredients:
 
 -   5 pounds Tamatillo
 -   4 each Garlic Cloves
@@ -23,7 +23,7 @@ ShowTOC: false
 -   tt Salt and Black Pepper
 -   tt Ground Cumin
 
-#### Directions: 
+### Directions: 
 
 Peel and wash the tamatillos. Roast them with the jalapenos in a cast
 iron until soft.

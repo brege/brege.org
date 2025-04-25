@@ -8,14 +8,14 @@ ShowTOC: false
 
 {{% recipe %}}
 
-### Citrus Gremolata
+## Citrus Gremolata
 
 **Author:** Wyatt Brege
 
 **Yield:** 2 Cups
 
 
-#### Ingredients:
+### Ingredients:
 
 -   2 Cups Roughly Chopped Parsley
 -   1 Cup Extra Virgin Olive Oil

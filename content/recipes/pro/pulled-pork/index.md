@@ -11,13 +11,13 @@ ShowTOC: false
 
 {{% recipe %}}
 
-### Pulled Pork
+## Pulled Pork
 
 **Author:** Wyatt Brege
 
 **Yield:** 1.5-2x's 8 Quarts 
 
-#### Ingredients:
+### Ingredients:
 
 - 2 ea Pork Butt, large
 - ½ Cup Granulated Onion
@@ -29,7 +29,7 @@ ShowTOC: false
 - 5 ea Bay Leaves
 - 2 Cup Dark Beer
 
-#### Directions:
+### Directions:
 
 1.  Break down the pork butt into 3"x3"x3" cubic pieces
 

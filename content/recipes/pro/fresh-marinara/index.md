@@ -8,14 +8,14 @@ ShowTOC: false
 
 {{% recipe %}}
 
-### Fresh Marinara
+## Fresh Marinara
 
 **Author:** Wyatt Brege
 
 **Yield:** 2 Quarts
 
 
-#### Ingredients:
+### Ingredients:
 
 -   4 pounds Roma Tomato
 -   2 Tbsp Tomato Paste
@@ -25,7 +25,7 @@ ShowTOC: false
 -   1 Tbsp Kosher Salt
 -   1 Tbsp Fine Black Pepper
 
-#### Directions: 
+### Directions: 
 
 In a 200 hotel pan, coat roma tomato pieces with extra virgin olive oil,
 salt and pepper.

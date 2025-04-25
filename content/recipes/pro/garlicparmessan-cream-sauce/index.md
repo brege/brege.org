@@ -8,13 +8,13 @@ ShowTOC: false
 
 {{% recipe %}}
 
-### Garlic-Parmessan Cream Sauce
+## Garlic-Parmessan Cream Sauce
 
 **Author:** Matt Andrews, Wyatt Brege
 
 
 
-#### Ingredients:
+### Ingredients:
 
 -   1/2 Gallon Heavy Wipping Cream
 -   1/2 Cup All-Purpose Flour
@@ -24,7 +24,7 @@ ShowTOC: false
 -   1/2 Tbsp Fine Black Pepper
 -   1 Tbsp Kosher Salt
 
-#### Directions: 
+### Directions: 
 
 Melt Butter in a 4 Quart pot over medium-high heat.
 Whisk in flour to create a blonde roux.
@@ -34,7 +34,7 @@ Add the Parmesan and garlic puree.
 Add remaining 1/3 of cream and bring up to temperature.
 Season with salt and pepper and place in a Baine-Marie insert.
 
-#### Notes: 
+### Notes: 
 
 To make the pureed garlic confit, bring a quart of peeled garlic cloves
 to a simmer in olive or salad oil for 30-45 minutes. You want the garlic

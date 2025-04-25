@@ -8,14 +8,14 @@ ShowTOC: false
 
 {{% recipe %}}
 
-### Chardonnay Vinaigrette
+## Chardonnay Vinaigrette
 
 **Author:** Wyatt Brege
 
 **Yield:** 6 Cups
 
 
-#### Ingredients:
+### Ingredients:
 
 -   2 Cup Salad Oil
 -   2 Cup Honey
@@ -27,7 +27,7 @@ ShowTOC: false
 -   1 Tbsp Garlic, chopped
 -   1 Tbsp Shallots, bruinoisse
 
-#### Directions: 
+### Directions: 
 
 In a 4-Quart container, add all ingredients besides the canola oil.
 
@@ -36,7 +36,7 @@ emulsify.
 
 Store in a 5-Cup squeeze bottle.
 
-#### Notes: 
+### Notes: 
 
 Please don\'t use expensive chardonnay like Berryessa Gap\--ask the
 bartender for the house chardonnay.

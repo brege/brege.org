@@ -11,13 +11,13 @@ ShowTOC: false
 
 {{% recipe %}}
 
-### Biscuits
+## Biscuits
 
 **Author:** Wyatt Brege, Patty Pereira
 
 **Yield:** 1 full sheet (12 ea XL biscuits) 
 
-#### Ingredients:
+### Ingredients:
 
 - 1 Quart Organic Flour
 - 2 Tbsp Baking Powder
@@ -25,7 +25,7 @@ ShowTOC: false
 - ½ Pound Cold Raw Butter, 1" cubed
 - 1+ Cup Barista Whole Milk (not raw)
 
-#### Directions:
+### Directions:
 
 1.  In a large mixing bowl, whisk together dry ingredients until
     thoroughly combined
@@ -45,7 +45,7 @@ ShowTOC: false
 
 6.  In a 350 deg F convection oven, bake for roughly twenty minutes
 
-#### Notes:
+### Notes:
 
 -   There will be dough scraps from the cutting practice that should be
     combined and rolled out to form more biscuits

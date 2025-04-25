@@ -11,13 +11,13 @@ ShowTOC: false
 
 {{% recipe %}}
 
-### Lavender Vinaigrette
+## Lavender Vinaigrette
 
 **Author:** Wyatt Brege
 
 **Yield:** 2 Quarts
 
-#### Ingredients:
+### Ingredients:
 
 - 3 Cup White Wine Vinegar
 - 3 oz Lavender
@@ -29,7 +29,7 @@ ShowTOC: false
 - 1 ½ tsp Kosher Salt
 - 2 ½ Cup Olive Oil
 
-#### Directions:
+### Directions:
 
 1.  Puree all ingredients except the olive oil in the blender until
     smooth

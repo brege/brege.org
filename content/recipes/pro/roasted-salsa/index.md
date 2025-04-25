@@ -8,13 +8,13 @@ ShowTOC: false
 
 {{% recipe %}}
 
-### Roasted Salsa
+## Roasted Salsa
 
 **Author:** Wyatt Brege, Patty Pereira
 
 
 
-#### Ingredients:
+### Ingredients:
 
 -   10 ea Hot House Tomato Butts
 -   1 ea Large Yellow Onion
@@ -24,7 +24,7 @@ ShowTOC: false
 -   tt Salt and Pepper
 -   1 Bunch Cilantro
 
-#### Directions: 
+### Directions: 
 
 Roughly chop the vegetables and place on an oiled half sheet tray.
 Place in salamander until mushy.

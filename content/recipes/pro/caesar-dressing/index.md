@@ -8,14 +8,14 @@ ShowTOC: false
 
 {{% recipe %}}
 
-### Caesar Dressing
+## Caesar Dressing
 
 **Author:** Wyatt Brege
 
 **Yield:** 3 quarts
 
 
-#### Ingredients:
+### Ingredients:
 
 -   6 oz Anchovie Paste
 -   1/2 Cup Dijon Mustard
@@ -28,7 +28,7 @@ ShowTOC: false
 -   1 tsp Salt
 -   1 Cup Water
 
-#### Directions: 
+### Directions: 
 
 Measure Parmesan in a separate container.
 Measure EVOO in a pitcher.
@@ -39,7 +39,7 @@ Slowly trickle in EVOO to the mixture.
 Add Parmesan cheese slowly.
 Thin with water and season with salt and pepper.
 
-#### Notes: 
+### Notes: 
 
 It is important to use actual olive oil and not salad (conola) oil in
 this recipe.

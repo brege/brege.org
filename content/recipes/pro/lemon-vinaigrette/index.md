@@ -8,13 +8,13 @@ ShowTOC: false
 
 {{% recipe %}}
 
-### Lemon Vinaigrette
+## Lemon Vinaigrette
 
 **Author:** Wyatt Brege
 
 
 
-#### Ingredients:
+### Ingredients:
 
 -   2 1/2 Cups Extra Virgin Olive Oil
 -   1 Cup Fresh Lemon Juice
@@ -22,7 +22,7 @@ ShowTOC: false
 -   1/3 Cup White Wine Vinegar
 -   tt Salt and Black Pepper
 
-#### Directions: 
+### Directions: 
 
 In a 4 Quart container, add all ingredients except the oil and emulsify
 with the immersion blender.

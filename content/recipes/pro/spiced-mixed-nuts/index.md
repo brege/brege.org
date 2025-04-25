@@ -11,13 +11,13 @@ ShowTOC: false
 
 {{% recipe %}}
 
-### Spiced Mixed Nuts
+## Spiced Mixed Nuts
 
 **Author:** Wyatt Brege, Patty Pereira
 
 **Yield:** 2 Quarts
 
-#### Ingredients:
+### Ingredients:
 
 - 1 ½ Cup Brown Sugar
 - 4 oz Sriracha
@@ -25,7 +25,7 @@ ShowTOC: false
 - 2 oz Sesame Seeds
 - tt Kosher Salt & Black Pepper
 
-#### Directions:
+### Directions:
 
 1.  Create a spicy syrup with brown sugar and sriracha in a sauce pan on
     medium heat
@@ -38,7 +38,7 @@ ShowTOC: false
 4.  Roast sticky nuts in a 350 deg F oven for 15-20 minutes, until
     crispy but not burnt
 
-#### Notes:
+### Notes:
 
 1.  In case of no brown sugar, substitute 1 Cup brown sugar for 1 Cup
     cane sugar with 1 Tbsp molasses

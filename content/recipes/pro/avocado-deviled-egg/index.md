@@ -8,14 +8,14 @@ ShowTOC: false
 
 {{% recipe %}}
 
-### Avocado Deviled Egg
+## Avocado Deviled Egg
 
 **Author:** Wyatt Brege
 
 **Yield:** 15 servings
 
 
-#### Ingredients:
+### Ingredients:
 
 -   30 Egg Yolks
 -   1/2 Cup Mayonaise
@@ -27,7 +27,7 @@ ShowTOC: false
 -   2 tsp Salt
 -   2 tsp Fine Black Pepper
 
-#### Directions: 
+### Directions: 
 
 Bring 30 eggs to a rolling boil, then remove pan from heat.
 Let eggs stand in hot water for 13 minutes.

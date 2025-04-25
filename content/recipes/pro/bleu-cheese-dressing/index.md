@@ -8,14 +8,14 @@ ShowTOC: false
 
 {{% recipe %}}
 
-### Bleu Cheese Dressing
+## Bleu Cheese Dressing
 
 **Author:** Wyatt Brege
 
 **Yield:** 1 Quart
 
 
-#### Ingredients:
+### Ingredients:
 
 -   1 1/2 Quart Sour Cream
 -   3 Cups Mayonaisse
@@ -26,14 +26,14 @@ ShowTOC: false
 -   2 Tbsp Fresh Chopped Parsley
 -   1 Tbsp Fresh Finely Chopped Chive
 
-#### Directions: 
+### Directions: 
 
 In the Ninja blender attachment, add all ingredients and blend on the
 \"Smoothie\" setting until smooth.
 
 Store in squeeze bottle or deli container.
 
-#### Notes: 
+### Notes: 
 
 Be sure to check the consistency of the dressing so that any large
 clumps don\'t impede the nozzle of the squirt bottle.

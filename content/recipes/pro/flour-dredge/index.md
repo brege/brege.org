@@ -8,13 +8,13 @@ ShowTOC: false
 
 {{% recipe %}}
 
-### Flour Dredge
+## Flour Dredge
 
 **Author:** Wyatt Brege
 
 
 
-#### Ingredients:
+### Ingredients:
 
 -   6 C AP Flour
 -   3 Tbsp Granulated Garlic

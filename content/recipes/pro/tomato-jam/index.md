@@ -8,14 +8,14 @@ ShowTOC: false
 
 {{% recipe %}}
 
-### Tomato Jam
+## Tomato Jam
 
 **Author:** Wyatt Brege
 
 **Yield:** 2 Cups
 
 
-#### Ingredients:
+### Ingredients:
 
 -   4 lb Tomato Scraps (no seeds)
 -   1/2 Cup Granulated Sugar
@@ -23,7 +23,7 @@ ShowTOC: false
 -   tt Sallt and Cracked Black Pepper
 -   1 packet Fruit Pectin (optional)
 
-#### Directions: 
+### Directions: 
 
 Quarter and remove the seeds from the tomatoes.
 Roughly chop the seeded tomato and place in 6 quart sauce pot.
@@ -33,7 +33,7 @@ Break down the tomatoes with a potato masher.
 (Optional) Add the pectin and let dissolve for 10 minutes.
 Cool in a 200 hotel pan in the fridge, then store in deli containers.
 
-#### Notes: 
+### Notes: 
 
 You can can this recipe but you will need a pressure canner due to the
 increased risk of botulism in tomato canning. In our use we simply store

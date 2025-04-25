@@ -8,14 +8,14 @@ ShowTOC: false
 
 {{% recipe %}}
 
-### Buffalo Deviled Eggs
+## Buffalo Deviled Eggs
 
 **Author:** Wyatt Brege
 
 **Yield:** 15 servings
 
 
-#### Ingredients:
+### Ingredients:
 
 -   30 Egg Yolks
 -   2 Tbsp Paprika
@@ -25,7 +25,7 @@ ShowTOC: false
 -   1 Tbsp Carrot, bruinoisse
 -   1 Tbsp Celery, bruinoisse
 
-#### Directions: 
+### Directions: 
 
 Bring 30 eggs to a rolling boil, then remove pan from heat.
 Let eggs stand in hot water for 13 minutes.
