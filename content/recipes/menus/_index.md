@@ -3,7 +3,6 @@ title: 'Tasting Menus / Popup Menus'
 ShowTOC: false
 draft: false
 date: 2025-04-16
-layout: menu-landing
 ShowBreadcrumbs: true
 type: menus
 ---

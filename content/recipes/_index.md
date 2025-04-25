@@ -1,8 +1,8 @@
 ---
 title: 'Recipes'
 type: recipes
-layout: recipe-landing
 ShowBreadcrumbs: true
+date: 2025-04-20
 sort_by: title
 order: asc
 
