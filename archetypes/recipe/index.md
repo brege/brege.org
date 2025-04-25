@@ -9,23 +9,23 @@ ShowTOC: false
 
 {{% recipe %}}
 
-### Title Here
+## Title Here
 
-**Author:** Wyatt Brege  
+**Chef:** Wyatt Brege  
 
 **Yield:** X servings
 
-#### Ingredients:
+### Ingredients:
 
 - Item 1
 - Item 2
 
-#### Directions:
+### Directions:
 
 1. Step 1
 2. Step 2
 
-#### Notes:
+### Notes:
 
 - Something to remember
 

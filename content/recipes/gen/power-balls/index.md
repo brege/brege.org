@@ -14,15 +14,15 @@ ShowTOC: false
 
 {{% recipe %}}
 
-### Power Balls
+## Power Balls
 
-**Author:** Wyatt Brege
+**Chef:** Wyatt Brege
 
 **Yield:** 9 servings (18 balls)
 
 *An easy no-bake protein ball recipe with the protein of an egg white and the fiber of half an apple.*
 
-#### Ingredients:
+### Ingredients:
 
 - 2 C Old-Fashioned Oats
 - 2 30g Scoop of Vanilla-flavored Protein Powder (I use Aldi's)
@@ -37,7 +37,7 @@ ShowTOC: false
 - 1/4 C [*optional*] Shreded Coconut, Crushed Nuts, or Granola (for coating or crunch)
 - 2 Tbsp [*optional*] Flax Seed, ground
 
-#### Directions:
+### Directions:
 
 1. Mix the first 7 dry ingredients, then add remaining wet ingredients, pressing with either
     a wooden pestle, spoon, or, ideally, a plastic dough scraper
@@ -46,7 +46,7 @@ ShowTOC: false
 4. Optionally, roll the balls in 1/4 C shredded coconut or equivalent
 5. Store inthe fridge for up to one week
 
-#### Notes:
+### Notes:
 
 - If you want a dryer protein ball, use coconut or maple sugar in place of honey or maple syrup
 - **Substitution:** apple sauce ↔ ripe banana

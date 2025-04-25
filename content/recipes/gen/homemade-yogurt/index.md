@@ -12,18 +12,18 @@ ShowTOC: false
 
 {{% recipe %}}
 
-### Homemade Greek Yogurt
+## Homemade Greek Yogurt
 
-**Author:** Wyatt Brege  
+**Chef:** Wyatt Brege  
 
 **Yield:** 1 quart
 
-#### Ingredients:
+### Ingredients:
 
 - 1/2 Gallon Whole Milk, expiring
 - 1/2 Cup Greek Yogurt
 
-#### Directions:
+### Directions:
 
 1. Bring the milk up to 161 degrees F (79 degrees C) for 15 seconds if unsure of origin, then let cool to blood temperature, 100 degrees F (38 degrees C). USDA approved is generally safe to use as is.
 2. Stir in the Greek yogurt, then pitch into a plastic tub or crock.  Glass can effect temperature greatly under draft.
@@ -35,7 +35,7 @@ ShowTOC: false
 8. Pasteurize the whey water for storage or discard.
 9. Sperate the yogurt from the cloth into a clean tub and store.
 
-#### Notes:
+### Notes:
 
 - The whey water can be reduced to less the 1/4 of its original volume (from about 1 Quart to 3/4 Cup) into a spreadable caramel called **myost** in Skandinavian countries.  You can also use it in homemade bread, reheating chili or soup, marinading chicken for fried chicken, or as a starter for lacto-fermented vegetables.  Quite sour, this is not suitable for protein shakes.
 
