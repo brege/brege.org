@@ -1,5 +1,5 @@
 ---
-title: "Homemade Greek Yogurt"
+title: "Greek Yogurt"
 tags: 
   - recipes
   - yogurt
@@ -12,7 +12,7 @@ ShowTOC: false
 
 {{% recipe %}}
 
-## Homemade Greek Yogurt
+## Greek Yogurt
 
 **Chef:** Wyatt Brege  
 
