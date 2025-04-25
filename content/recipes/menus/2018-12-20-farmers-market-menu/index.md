@@ -8,7 +8,7 @@ tags:
 - menus
 - farmers market
 - farm to fork
-title: 2018-12-20 Farmers Market Menu
+title: 2018-12-20 Farmer's Market Menu
 ---
 
 {{% menu %}}

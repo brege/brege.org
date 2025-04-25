@@ -8,12 +8,12 @@ tags:
 - menus
 - farmers market
 - farm to fork
-title: 2018-05-03 Farmers Market Menu
+title: 2018-05-03 Farmer's Market Menu
 ---
 
 {{% menu %}}
 
-## Farmers Market Menu
+## Farmer's Market Menu
 
 ### Mixed Green Salad
 

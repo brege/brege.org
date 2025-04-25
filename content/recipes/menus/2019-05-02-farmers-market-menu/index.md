@@ -8,7 +8,7 @@ tags:
 - menus
 - farmers market
 - farm to fork
-title: 2019-05-02 Farmers Market Menu
+title: 2019-05-02 Farmer's Market Menu
 ---
 
 {{% menu %}}
@@ -20,7 +20,7 @@ title: 2019-05-02 Farmers Market Menu
 cavatappi pasta, spring green mix, watermelon radish,
 cherry tomatoes, aged white cheddar, italian dressing
 
-*add chicke / add shrimp*
+*add chicken / add shrimp*
 
 ### Pork Chop Schnitzel
 
