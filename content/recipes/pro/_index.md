@@ -3,7 +3,6 @@ title: 'Production Recipes'
 ShowTOC: false
 draft: false
 date: 2025-04-16
-layout: recipe-landing
 type: recipes
 ShowBreadcrumbs: true
 ---

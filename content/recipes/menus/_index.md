@@ -55,4 +55,14 @@ Vue Family Farms*
 
 </details>
 
+### Menus Items In Season Now
+Here's a few menu items that appeared around this time of the year:
+
+{{< this-weeks-menu plus-minus-days="10" >}}
+
+
+### Menu Archive
+
+
+
 {{< menu-list section="menus" >}}

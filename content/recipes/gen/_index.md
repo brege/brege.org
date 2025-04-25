@@ -3,7 +3,6 @@ title: 'General Recipes'
 ShowTOC: false
 draft: false
 date: 2025-04-21
-layout: recipe-landing
 ShowBreadcrumbs: true
 type: recipes
 ---

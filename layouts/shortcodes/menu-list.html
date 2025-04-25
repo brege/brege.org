@@ -2,7 +2,7 @@
 
 <ol>
   {{- with site.GetPage (print "recipes/" $section) }}
-    {{- range .Pages.ByDate }}
+    {{- range .Pages.ByDate.Reverse }}
       <li>
         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
         {{- $headers := findRE `(?m)^###\s+(.+)` .RawContent }}
