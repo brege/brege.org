@@ -18,6 +18,18 @@ I've put together a Google Drive spreadsheet for the avid Red Dead Redemption 2 
 
 ![png](./screenshot-1.png)
 
+> ### 2025 Note on Google Drive/Sheets
+>
+> **In order for you to edit this, you need to:**
+> 
+> 1. Open the spreadsheet in [:link: **Google Sheets**](https://docs.google.com/spreadsheets/d/1wBuPPvN-Y4K115rBQrOP559tG2oCTfUjTCTBgZSJwRA/edit?usp=sharing) while **signed in** with your account
+> 2. **File > Make a copy**
+>
+> This will add a completely editable copy in your Google Drive. I've gotten a lot of requests to edit this spreadsheet!
+>
+> *If you do not have a Google account*: you can use this [**PDF version**](./rdr2-checklist.pdf) instead. On my last playthrough, I made sure the page breaks were well placed so I could print them out and mark them off as I played. 
+
+
 While not a replacement by any means for the various user made maps and guides out there, I wanted everything consolodated in a form similar to what I had already been doing with a little notebook while I played.
 
   - **Hunting**: these are animals that you need for the Trapper, Mr. Pearson, Ms. Hobbs, and the legendaries.  Daggers † are reserved for the epilogue, officially, and have a grey background.
