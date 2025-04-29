@@ -1,14 +1,24 @@
 ---
 title: "Helpful Red Dead Redemption 2 Checklists"
-authors: []
-tags: ["RDR2", "Red Dead Redemption", "Games", "Checklists", "Spreadsheet", "Printable"]
-categories: []
+tags: 
+  - RDR2
+  - Red Dead Redemption
+  - PS4
+  - PS5
+  - Xbox Series X
+  - Xbox Series S
+  - Checklist
+  - Spreadsheet
+  - Printable
+  - 100% Checklist
+  - Completionist
 date: 2022-02-06T02:12:20-04:00
 draft: false
 cover:
   image: 'rdr2-banner.jpg'
   caption: 'Red Dead Redemption II'
   preview_only: true
+ShowToc: false
 ---
 
 
