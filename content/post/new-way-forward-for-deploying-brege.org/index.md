@@ -21,14 +21,14 @@ Here I outline a way to do this in a more conservative manner.<!--more-->
 1. On a development laptop, [Fedora](https://getfedora.org/), I installed [Go](https://golang.org/) and [Hugo](https://gohugo.io) via
 ``` bash
 sudo dnf install golang
-mkdir -p ~/Build/go
-export GOPATH=$HOME/Build/go
+mkdir -p ~/build/go
+export GOPATH=$HOME/build/go
 go get -v github.com/spf13/hugo
 ```
 
 2. Clone repository 
 ``` bash
-cd ~/Build/
+cd ~/build/
 git clone git://github.com/brege/brege.org.git
 ```
 
@@ -36,7 +36,7 @@ git clone git://github.com/brege/brege.org.git
 
 1. I once again use Hugo to create my article
 ``` bash
-cd ~/Build/brege.org
+cd ~/build/brege.org
 hugo new post/new-way-forward-for-deploying-brege.org.md
 ```
 

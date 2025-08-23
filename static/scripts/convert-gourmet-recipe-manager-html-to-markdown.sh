@@ -9,7 +9,7 @@
 set -euo pipefail
 
 # --- Configurable defaults ---
-DEFAULT_HUGO_OUTPUT_DIR="$HOME/Build/brege.org/content/recipes" # "./recipes.hugo"
+DEFAULT_HUGO_OUTPUT_DIR="$HOME/build/brege.org/content/recipes" # "./recipes.hugo"
 echo "Default Hugo output directory: $DEFAULT_HUGO_OUTPUT_DIR"
 DEFAULT_NOHUGO_OUTPUT_DIR="./recipes.markdown"
 DEFAULT_INPUT_DIR="./recipes.html"
