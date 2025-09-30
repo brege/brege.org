@@ -27,6 +27,8 @@ title = "brege.org"
   github = 'brege'
   instagram = ''
   mastodon = 'brege@mastodon.social'
+  matrix = '@brege:matrix.org'
+  signal = '@brege.01'
 
   avatar = 'wyatt@brege.org'
   name = 'Wyatt Brege'
@@ -97,11 +99,20 @@ title = "brege.org"
   name = 'email'
   url = 'mailto:wyatt@brege.org'
 [[params.socialIcons]]
+  name = 'pgpkey'
+  url = '/brege-gpg.txt'
+[[params.socialIcons]]
   name = 'github'
   url = 'https://github.com/brege'
 [[params.socialIcons]]
   name = 'mastodon'
   url = 'https://mastodon.social/@brege'
+[[params.socialIcons]]
+  name = 'signal'
+  url = 'https://signal.me/#eu/0qONLHRq0LrobBU7QIEfqomo1LJ9425RBq5IzydUPCa3hLGuq61AzLhY4Xjvt0e8'
+[[params.socialIcons]]
+  name = 'matrix'
+  url = 'https://matrix.to/#/@brege:matrix.org'
 [[params.socialIcons]]
   name = 'linkedin'
   url = 'https://linkedin.com/in/wyatt-brege/'

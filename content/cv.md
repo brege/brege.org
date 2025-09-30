@@ -7,9 +7,23 @@ disableShare: true
 
 ## Expertise
 
+- **recent open-source projects**
+
+  - [**oshea**](https://github.com/brege/oshea)
+    -- a [Node.JS](https://en.wikipedia.org/wiki/Node.js) Markdown to PDF converter and extensible doctype plugin system 
+  - [aoife](https://github.com/brege/aoif)
+    -- a simple multi-media sharing matrix made with [React](https://en.wikipedia.org/wiki/React_(software))
+  - [thunder-muscle](https://github.com/brege/thunder-muscle)
+    -- a data exporter and python API for [Thunderbird](https://en.wikipedia.org/wiki/Mozilla_Thunderbird). Basis for a project to data-mine decades of email.
+  - [ilma](https://github.com/brege/ilma)
+    -- a pure-shell project-mirror supporting context generation, repo stats, project pruning, advanced configurable archival, and natively supported by  `tar`, `rsync`, `gpg` in one convenient wrapper 
+  - [**the-flavor-network**](https://github.com/brege/the-flavor-network)
+    -- an interactive creativity tool for chefs and bartenders to visualize recipes through flavor pairings
+
+
 - simulated complex physical systems with terabytes of data on supercomputing clusters:  
 
-    [SpEC](https://www.black-holes.org/code/SpEC.html),
+[**SpEC**](https://www.black-holes.org/code/SpEC.html),
 [stampede](https://www.tacc.utexas.edu/systems/stampede2),
 [xsede](http://www.xsede.org/),
 [calcul](https://www.calculquebec.ca/)
@@ -17,7 +31,8 @@ disableShare: true
 
 - contributed to large, collaborative driven codebases with:
 
-    [python](https://en.wikipedia.org/wiki/Python_(programming_language)),
+[**node.js**](https://en.wikipedia.org/wiki/Node.js),
+[python](https://en.wikipedia.org/wiki/Python_(programming_language)),
 [c++](https://en.wikipedia.org/wiki/C%2B%2B),
 [git](https://en.wikipedia.org/wiki/Git),
 [javascript](https://en.wikipedia.org/wiki/JavaScript),
@@ -41,10 +56,10 @@ disableShare: true
 
 - advanced physics and mathematics specialties:
 
-    [mechanics](https://en.wikipedia.org/wiki/Hamiltonian_mechanics),
+[mechanics](https://en.wikipedia.org/wiki/Hamiltonian_mechanics),
 [general relativity](https://en.wikipedia.org/wiki/General_relativity),
-[fluid dynamics](https://en.wikipedia.org/wiki/Fluid_dynamics),
-[finite volume](https://en.wikipedia.org/wiki/Finite_element_method),
+[**fluid dynamics**](https://en.wikipedia.org/wiki/Fluid_dynamics),
+[**finite volume**](https://en.wikipedia.org/wiki/Finite_element_method),
 [numerical methods](https://en.wikipedia.org/wiki/Numerical_analysis)
 
 - developed tests, validation and visualization tools of big data
@@ -58,7 +73,8 @@ disableShare: true
 
 ## Professional
 
- **Restaurant Consulting**, CA, MI, 2020-.  
+ **Data Science Fellowship**, *The Data Incubator*, San Francisco, CA, 2023  
+ **Restaurant Consulting**, CA, MI, 2020-2022  
  **Executive Chef**, *Slanted Tree*, Fairfield, CA, 2019-2020  
  **Executive Chef**, *Dawson's*, Dixon, CA, 2017-2019  
  **Research Assistant**, *Washington State Univ*, Pullman, WA, 2013-2017  
@@ -88,6 +104,10 @@ November 3, 2016
 [arXiv:1611.01159](https://arxiv.org/abs/1611.01159)
 
 ## Contributed Talks
+
+**Brege, W.**
+*The Flavor Network*,
+Specially selected for [The Data Incubator's](https://thedataincubator.com/) Capstone Showcase, November 9 2023
 
 **Brege, W.**, Foucart, F., Duez, M.D., 
 *Equation of state survey of black hole-neutron star mergers*,
