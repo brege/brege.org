@@ -107,34 +107,34 @@ November 3, 2016
 
 **Brege, W.**
 *The Flavor Network*,
-Specially selected for [The Data Incubator's](https://thedataincubator.com/) Capstone Showcase, November 9 2023
+Specially selected for [The Data Incubator's](https://thedataincubator.com/) Capstone Showcase, November 9, 2023
 
 **Brege, W.**, Foucart, F., Duez, M.D., 
 *Equation of state survey of black hole-neutron star mergers*,
-APS April Meeting, April 16 2016,
+APS April Meeting, April 16, 2016,
 [BAPS.2016.APR.C14.3](https://meetings.aps.org/Meeting/APR16/Session/C14.3)
 		
 **Brege, W.**, Duez, M.D., 
 *A high order accurate finite difference scheme with boundary closures for astrophysical simulations*,
-Northwest APS Meeting, May 16 2015,
+Northwest APS Meeting, May 16, 2015,
 [BAPS.2015.NWS.E6.6](https://meetings.aps.org/Meeting/NWS15/Session/E6.6)
 		
 **Brege, W.**, Duez, M.D.,
 *A stable high-order multipatch method for black hole accretion simulations*,
-APS April Meeting, April 12 2015, 
+APS April Meeting, April 12, 2015, 
 [BAPS.2015.APR.K13.9](https://meetings.aps.org/Meeting/APR15/Session/K13.9)
 		
 **Brege, W.**, Bolen, B., 
 *Polymer quantum mechanics and an approach to minimal length* (Poster),
-[19th International Conference on General Relativity](https://iopscience.iop.org/issue/0264-9381/28/11) and Gravitation (GR19), Mexico City, Mexico, 06 July 2010
+[19th International Conference on General Relativity](https://iopscience.iop.org/issue/0264-9381/28/11) and Gravitation (GR19), Mexico City, Mexico, July 16, 2010
 		
 **Brege, W.**, Brennan, J., 
 *Symmetry Analysis and the Lane-Emden Equation*,
-2009 Undergraduate Symposium at [Argonne National Labs](https://www.anl.gov/), Argonne, IL, 13 November 2009
+2009 Undergraduate Symposium at [Argonne National Labs](https://www.anl.gov/), Argonne, IL, November 13, 2009
 		
 **Brege, W.**, Brennan, J., 
 *Symmetry Analysis of the Lane-Emden Equation* 
-[MathFest 2009](https://www.maa.org/meetings/mathfest-archive), Portland, OR, 07 August 2009
+[MathFest 2009](https://www.maa.org/meetings/mathfest-archive), Portland, OR, August 07, 2009
 
 ## Awards
 
