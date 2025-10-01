@@ -30,6 +30,7 @@ Softer things..  I love hockey, fishing, sometimes leathercraft and woodworking,
 
 I closed out my academic life at the end of 2017, finding a different path, yet still evermore envious of all of the incredibly mindful people I got to know through my journey.
 I am forever grateful for the guidance that David Austin, Milun Rakovic and Matthew Duez, my advisors, have given me.
+I owe my academic mentor, Karen Gipson, an unbridled thankfulness for my academic compass, and for her guidance to pursue a life out West, where I could be the best me I could ever have dreamt to be.
 
 I enjoy teaching, working through the hardest problems, complex puzzles, reading, basically all of the things an academic does, but when I measured myself--my work ethic, imagination, drive--I never truly felt I had their same *gift* in that space.
 It's worth noting that *gift* is not synonymous with 'less effort': archetypes in any discipline do not achieve without trying--you can't.  There are no *Will Hunting's* in this world.
