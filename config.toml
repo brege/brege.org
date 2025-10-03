@@ -111,9 +111,6 @@ title = "brege.org"
 [[params.socialIcons]]
   name = 'linkedin'
   url = 'https://linkedin.com/in/wyatt-brege/'
-[[params.socialIcons]]
-  name = 'rss'
-  url = '/index.xml'
 
 # needed to  render raw HTML (e.g. <sub>, <sup>, <kbd>, <mark>)
 [markup]
