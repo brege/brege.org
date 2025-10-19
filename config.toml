@@ -94,9 +94,6 @@ title = "brege.org"
   name = 'email'
   url = 'mailto:wyatt@brege.org'
 [[params.socialIcons]]
-  name = 'pgpkey'
-  url = '/brege-gpg.txt'
-[[params.socialIcons]]
   name = 'github'
   url = 'https://github.com/brege'
 [[params.socialIcons]]
