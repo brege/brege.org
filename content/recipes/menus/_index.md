@@ -45,16 +45,6 @@ Toledo Farms,
 Vue Family Farms*
 
 
-<details>
-  <summary><b>Interactive ingredient co-occurrence triads across all menus</b></summary>
-  
-  {{< tsneplot 
-      src="/data/tsne-plot/triad_tsne_plot.html" 
-      caption="<b>t-SNE ingredient triad co-occurrences cluster map</b>. This interactive <a href='https://en.wikipedia.org/wiki/T-distributed_stochastic_neighborhood_embedding'>t-SNE</a> plot shows the 3D projection of all the ingredient triads (three items appearing together) in these menus. The t-SNE plot visualizes clusters of these triads, highlighting interesting culinary pairings, strict adherence to growing season availability, and overarching culinary clustering patterns. Data points represent groups of three ingredients that often appear together across menu items, offering a deeper look into ingredient relationships." 
-  >}}
-
-</details>
-
 ### Menus Items In Season Now
 Here's a few menu items that appeared around this time of the year:
 
