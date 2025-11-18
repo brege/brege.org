@@ -28,5 +28,11 @@ matrix
 
 ---
 
+### a note about phone calls
+
+the spam and unknown caller guard on my phone is aggressive as of 2025. please leave a voicemail or voice transcript and i will get back to you when i am able. ping me on signal [@brege.01](https://signal.me/#eu/0qONLHRq0LrobBU7QIEfqomo1LJ9425RBq5IzydUPCa3hLGuq61AzLhY4Xjvt0e8]) if high priority.
+
+### fangman socials
+
 i rarely open instagram or linkedin unless I am nudged to do so by email.
 response timescales are on the order of ~weeks or ~months.
