@@ -8,60 +8,51 @@ disableShare: true
 ## Expertise
 
 - **recent open-source projects**
-
   - [**oshea**](https://github.com/brege/oshea)
     -- a [Node.JS](https://en.wikipedia.org/wiki/Node.js) Markdown to PDF converter and extensible doctype plugin system 
   - [aoife](https://github.com/brege/aoif)
-    -- a simple multi-media sharing matrix made with [React](https://en.wikipedia.org/wiki/React_(software))
+    -- a simple multi-media poster sharing matrix made with [React](https://en.wikipedia.org/wiki/React_(software))
   - [thunder-muscle](https://github.com/brege/thunder-muscle)
     -- a data exporter and python API for [Thunderbird](https://en.wikipedia.org/wiki/Mozilla_Thunderbird). Basis for a project to data-mine decades of email.
   - [ilma](https://github.com/brege/ilma)
     -- a pure-shell project-mirror supporting context generation, repo stats, project pruning, advanced configurable archival, and natively supported by  `tar`, `rsync`, `gpg` in one convenient wrapper 
   - [**the-flavor-network**](https://github.com/brege/the-flavor-network)
     -- an interactive creativity tool for chefs and bartenders to visualize recipes through flavor pairings
-
-
-- simulated complex physical systems with terabytes of data on supercomputing clusters:  
-
-[**SpEC**](https://www.black-holes.org/code/SpEC.html),
-[stampede](https://www.tacc.utexas.edu/systems/stampede2),
-[xsede](http://www.xsede.org/),
-[calcul](https://www.calculquebec.ca/)
-[cacr.caltech](https://www.hpc.caltech.edu/)
-
+- simulated complex physical systems with terabytes of data on supercomputing clusters:
+  [**SpEC**](https://www.black-holes.org/code/SpEC.html),
+  [stampede](https://www.tacc.utexas.edu/systems/stampede2),
+  [xsede](http://www.xsede.org/),
+  [calcul](https://www.calculquebec.ca/)
+  [cacr.caltech](https://www.hpc.caltech.edu/)
 - contributed to large, collaborative driven codebases with:
-
-[**node.js**](https://en.wikipedia.org/wiki/Node.js),
-[python](https://en.wikipedia.org/wiki/Python_(programming_language)),
-[c++](https://en.wikipedia.org/wiki/C%2B%2B),
-[git](https://en.wikipedia.org/wiki/Git),
-[javascript](https://en.wikipedia.org/wiki/JavaScript),
-[pandas](https://en.wikipedia.org/wiki/Pandas_(software)),
-[networkx](https://en.wikipedia.org/wiki/NetworkX),
-[fortran](https://en.wikipedia.org/wiki/Fortran),
-[tensorflow](https://en.wikipedia.org/wiki/TensorFlow),
-[perl](https://en.wikipedia.org/wiki/Perl),
-[bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)),
-[php](https://en.wikipedia.org/wiki/PHP),
-[sql](https://en.wikipedia.org/wiki/SQL),
-[numpy](https://en.wikipedia.org/wiki/NumPy),
-[matplotlib](https://en.wikipedia.org/wiki/Matplotlib),
-[d3.js](https://en.wikipedia.org/wiki/D3.js),
-[hugo](https://en.wikipedia.org/wiki/Hugo_(software)),
-[gnuplot](https://en.wikipedia.org/wiki/Gnuplot),
-[latex](https://en.wikipedia.org/wiki/LaTeX),
-[paraview](https://en.wikipedia.org/wiki/ParaView),
-[sage](https://en.wikipedia.org/wiki/Sage_(mathematics_software)),
-[jupyter](https://en.wikipedia.org/wiki/Project_Jupyter)
-
+  [**node.js**](https://en.wikipedia.org/wiki/Node.js),
+  [**python**](https://en.wikipedia.org/wiki/Python_(programming_language)),
+  [c++](https://en.wikipedia.org/wiki/C%2B%2B),
+  [git](https://en.wikipedia.org/wiki/Git),
+  [javascript](https://en.wikipedia.org/wiki/JavaScript),
+  [pandas](https://en.wikipedia.org/wiki/Pandas_(software)),
+  [networkx](https://en.wikipedia.org/wiki/NetworkX),
+  [fortran](https://en.wikipedia.org/wiki/Fortran),
+  [tensorflow](https://en.wikipedia.org/wiki/TensorFlow),
+  [perl](https://en.wikipedia.org/wiki/Perl),
+  [bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)),
+  [php](https://en.wikipedia.org/wiki/PHP),
+  [sql](https://en.wikipedia.org/wiki/SQL),
+  [numpy](https://en.wikipedia.org/wiki/NumPy),
+  [matplotlib](https://en.wikipedia.org/wiki/Matplotlib),
+  [d3.js](https://en.wikipedia.org/wiki/D3.js),
+  [hugo](https://en.wikipedia.org/wiki/Hugo_(software)),
+  [gnuplot](https://en.wikipedia.org/wiki/Gnuplot),
+  [latex](https://en.wikipedia.org/wiki/LaTeX),
+  [paraview](https://en.wikipedia.org/wiki/ParaView),
+  [sage](https://en.wikipedia.org/wiki/Sage_(mathematics_software)),
+  [jupyter](https://en.wikipedia.org/wiki/Project_Jupyter)  
 - advanced physics and mathematics specialties:
-
-[mechanics](https://en.wikipedia.org/wiki/Hamiltonian_mechanics),
-[general relativity](https://en.wikipedia.org/wiki/General_relativity),
-[**fluid dynamics**](https://en.wikipedia.org/wiki/Fluid_dynamics),
-[**finite volume**](https://en.wikipedia.org/wiki/Finite_element_method),
-[numerical methods](https://en.wikipedia.org/wiki/Numerical_analysis)
-
+  [mechanics](https://en.wikipedia.org/wiki/Hamiltonian_mechanics),
+  [general relativity](https://en.wikipedia.org/wiki/General_relativity),
+  [**fluid dynamics**](https://en.wikipedia.org/wiki/Fluid_dynamics),
+  [**finite volume**](https://en.wikipedia.org/wiki/Finite_element_method),
+  [numerical methods](https://en.wikipedia.org/wiki/Numerical_analysis)  
 - developed tests, validation and visualization tools of big data
 
 ## Education
