@@ -57,7 +57,7 @@ title = "brege.org"
 [params.homeInfoParams]
   Title = 'Wyatt Brege'
   Content = """
-  Welcome! I simulated 
+  I simulated 
   [black hole and neutron star](https://black-holes.org) 
   mergers for my physics PhD at 
   [WSU](https://wsu.edu/).
@@ -65,7 +65,6 @@ title = "brege.org"
   [AI and data science](https://flavorpair.me)
   and contribute to the world through 
   [**free software**](https://github.com/brege).
-  
   I am also a professional chef with a love for
   seafood, sauces, soups and organic produce.
   There's a little more info about me in my

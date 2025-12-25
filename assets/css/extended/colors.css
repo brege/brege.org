@@ -1,0 +1,56 @@
+:root {
+    /* light mode - creamy whites */
+    --theme: rgb(247, 241, 232);
+    --entry: rgb(251, 245, 236);
+    --primary: rgb(59, 47, 37);
+    --secondary: rgb(122, 106, 90);
+    --tertiary: rgb(226, 214, 200);
+    --content: rgb(62, 51, 40);
+    --code-block-bg: rgb(47, 37, 32);
+    --code-bg: rgb(239, 231, 220);
+    --border: rgb(224, 210, 194);
+    --accent: rgb(196, 104, 42);
+    --selection: rgb(236, 220, 204);
+}
+
+:root[data-theme="dark"] {
+    /* dark mode - rich browns */
+    --theme: rgb(36, 27, 22);
+    --entry: rgb(47, 36, 29);
+    --primary: rgb(240, 228, 213);
+    --secondary: rgb(200, 183, 165);
+    --tertiary: rgb(75, 59, 48);
+    --content: rgb(226, 212, 196);
+    --code-block-bg: rgb(42, 31, 25);
+    --code-bg: rgb(58, 45, 37);
+    --border: rgb(63, 48, 38);
+    --accent: rgb(240, 186, 120);
+    --selection: rgb(84, 62, 47);
+}
+
+a {
+    color: var(--primary);
+}
+
+.post-content a,
+.home-info .entry-content a {
+    color: var(--primary);
+}
+
+a:hover,
+a:active,
+.post-content a:hover,
+.post-content a:active,
+.home-info .entry-content a:hover,
+.home-info .entry-content a:active,
+.post-meta .i18n_list li a:hover,
+.post-meta .i18n_list li a:active,
+.toc a:hover,
+.toc a:active {
+    color: var(--accent);
+}
+
+::selection {
+    color: var(--theme);
+    background: var(--selection);
+}
