@@ -5,34 +5,29 @@ disableShare: true
 showToc: false
 ---
 
-### **through email**
+### **email**
 
-email [**wyatt@brege.org**](mailto:wyatt@brege.org)
-
-[public GPG key](/brege-gpg.txt)  also found on the
+- email [**wyatt@brege.org**](mailto:wyatt@brege.org)
+- [public GPG key](/brege-gpg.txt) also found on the
 [Ubuntu keyserver](https://keyserver.ubuntu.com/pks/lookup?search=EB3F25A8C5579EA6&fingerprint=on&op=index)
-
 
 ---
 
-### **through socials**
+### **socials**
 
-signal
+- signal
 [@brege.01](https://signal.me/#eu/0qONLHRq0LrobBU7QIEfqomo1LJ9425RBq5IzydUPCa3hLGuq61AzLhY4Xjvt0e8])
-
-mastodon
+- mastodon
 [**@mastodon.social@brege**](https://mastodon.social/@brege)
-
-matrix
+- matrix
 [@brege:matrix.org](https://matrix.to/#/@brege:matrix.org)
 
 ---
 
-### a note about phone calls
+### phone calls
 
-the spam and unknown caller guard on my phone is aggressive as of 2025. please leave a voicemail or voice transcript and i will get back to you when i am able. ping me on signal [@brege.01](https://signal.me/#eu/0qONLHRq0LrobBU7QIEfqomo1LJ9425RBq5IzydUPCa3hLGuq61AzLhY4Xjvt0e8]) if high priority.
+spam is out of control. if you've tried to reach me by phone and gotten the assistant, please leave a voicemail or voice transcript and i will get back to you when i am able.
 
-### fangman socials
+### fangman socials *\*dies*\*
 
-i rarely open instagram or linkedin unless I am nudged to do so by email.
-response timescales are on the order of ~weeks or ~months.
+i rarely open instagram or linkedin unless i am nudged to do so by email. response timescales are on the order of ~weeks or ~months.

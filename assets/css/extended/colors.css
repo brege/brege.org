@@ -51,6 +51,11 @@ a:active,
 }
 
 ::selection {
-    color: var(--theme);
+    color: var(--primary);
+    background: var(--selection);
+}
+
+::-moz-selection {
+    color: var(--primary);
     background: var(--selection);
 }
