@@ -4,8 +4,8 @@ body {
     font-family: "GraphikWeb", -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", Meiryo, sans-serif;
 }
 
-.post-content,
-.home-info .entry-content {
+.type-post .post-content,
+.type-card .post-content {
     font-family: "Newsreader", "Georgia", serif;
     font-weight: 400;
     letter-spacing: 0.1px;
@@ -33,6 +33,33 @@ body {
     font-synthesis-weight: none;
     /* make 1.2 times larger */
     font-size: 2.5em;
+}
+
+.post-content .footnotes,
+.post-content .footnote-ref,
+.post-content .footnote-backref,
+.post-content cite,
+.post-content .citation {
+    font-family: "GraphikWeb", -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", Meiryo, sans-serif;
+}
+
+.post-content .katex {
+    font-family: "Cormorant Garamond", "Georgia", serif;
+}
+
+.recipe .content {
+    font-family: "GraphikWeb", -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", Meiryo, sans-serif;
+}
+
+.recipe .content h1,
+.recipe .content h2,
+.recipe .content h3,
+.recipe .content h4,
+.recipe .content h5,
+.recipe .content h6 {
+    font-family: "Cormorant Garamond", "Georgia", serif;
+    font-weight: 200;
+    letter-spacing: 0.1px;
 }
 
 code,
