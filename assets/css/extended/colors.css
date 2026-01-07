@@ -1,31 +1,29 @@
 :root {
-    /* light mode - creamy whites */
     --theme: rgb(247, 241, 232);
-    --entry: rgb(251, 245, 236);
-    --primary: rgb(59, 47, 37);
-    --secondary: rgb(122, 106, 90);
-    --tertiary: rgb(226, 214, 200);
-    --content: rgb(62, 51, 40);
-    --code-block-bg: rgb(47, 37, 32);
-    --code-bg: rgb(239, 231, 220);
-    --border: rgb(224, 210, 194);
-    --accent: rgb(196, 104, 42);
-    --selection: rgb(236, 220, 204);
+    --entry: #f5efe5;
+    --primary: #1a1a1a;
+    --secondary: #6b6b6b;
+    --tertiary: #e0d9ce;
+    --content: #2c2c2c;
+    --code-block-bg: #30302e;
+    --code-bg: #faf9f5;
+    --border: #e0d9ce;
+    --accent: #2563eb;
+    --selection: rgba(37, 99, 235, 0.15);
 }
 
 :root[data-theme="dark"] {
-    /* dark mode - rich browns */
-    --theme: rgb(36, 27, 22);
-    --entry: rgb(47, 36, 29);
-    --primary: rgb(240, 228, 213);
-    --secondary: rgb(200, 183, 165);
-    --tertiary: rgb(75, 59, 48);
-    --content: rgb(226, 212, 196);
-    --code-block-bg: rgb(42, 31, 25);
-    --code-bg: rgb(58, 45, 37);
-    --border: rgb(63, 48, 38);
-    --accent: rgb(240, 186, 120);
-    --selection: rgb(84, 62, 47);
+    --theme: #262624;
+    --entry: #343432;
+    --primary: #e8e8e8;
+    --secondary: #a0a0a0;
+    --tertiary: #3d3d3a;
+    --content: #f0f0f0;
+    --code-block-bg: #30302e;
+    --code-bg: #3a3a38;
+    --border: #3d3d3a;
+    --accent: #60a5fa;
+    --selection: rgba(96, 165, 250, 0.2);
 }
 
 a {
@@ -58,4 +56,8 @@ a:active,
 ::-moz-selection {
     color: var(--primary);
     background: var(--selection);
+}
+
+.list {
+    background: var(--theme);
 }
