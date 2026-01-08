@@ -1,6 +1,6 @@
 baseURL = "https://brege.org"
 author = "Wyatt Brege"
-copyright = "Copyright (c) 2016-2025 Wyatt Brege"
+copyright = "Copyright (c) 2016-2026 Wyatt Brege"
 languageCode = "en"
 DefaultContentLanguage = "en"
 enableRobotsTXT = false
