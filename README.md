@@ -1,7 +1,5 @@
 # [brege.org](https://brege.org)
 
-## Workflow
-
 ### Adding an article
 
 This example explains how to add a new post, assuming you are in the base directory for your [hugo](https://github.com/gohugoio/hugo) source files.
@@ -27,9 +25,12 @@ Say you want to remove the `hello-world.md` article:
 1. `git clone git@github.com:brege/brege.org.git`
 2. `cd brege.org`
 
+Contains Markdown (post content) and JavaScript (shortcodes and partials).
+
 ### Theme 
 
 3. `mkdir -p themes/hugo-papermod`
 4. `git clone git@github.com:adityatelange/hugo-PaperMod.git themes/hugo-papermod/`
 5. check: `hugo server`
 
+The base of [brege.org](https://brege.org) is [hugo-PaperMod](https://github.com/adityatelange/hugo-PaperMod), with some custom overrides found in [`assets/css/extended/`](assets/css/extended/).
