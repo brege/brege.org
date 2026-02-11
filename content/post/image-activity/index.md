@@ -12,7 +12,7 @@ tags:
 date: 2026-02-11T16:09:29-05:00
 draft: false
 cover:
-  image: 'cover.jpg'
+  image: 'cover.png'
   caption: 'heatmap of image activity over days and hours'
   hidden: true
   hiddenInList: false
