@@ -10,24 +10,24 @@ aliases:
  - "/sanoma"
 cover:
   image: 'cover.svg'
-  caption: 'concentric elliptic anuluses with and email icon in the center'
+  caption: 'concentric elliptic annuli with an email icon in the center'
 math: false
 ShowToc: false
 TocOpen: false
 ---
 
 
-I'm not intentionally a data hoarder, I've just not been an effective nor aggressive email deleter or filterer. This has changed some in recent years, as the techniques for spam emails have evolved to covertly trojan "survey" subterfuge into my mailbox. 
+I'm not intentionally a data hoarder. I just haven't been an effective or aggressive email deleter or filter user. This has changed some in recent years, as the techniques for spam emails have evolved to covertly trojan "survey" subterfuge into my mailbox. 
 
 ## I have survey fatigue
 
-Surveys are marketing emails. I can't believe I used to take the time to respond to some of them. An analysis on my email history has shown that my hunch on survey spam is correct. Around 2023, I began marking all surveys as spam, and I've got the data to prove just how rampant companies have used surveys to get to get their brand in your inbox.
+Surveys are marketing emails. I can't believe I used to take the time to respond to some of them. An analysis on my email history has shown that my hunch on survey spam is correct. Around 2023, I began marking all surveys as spam, and I've got the data to prove just how rampant companies have used surveys to get their brand in your inbox.
 
 ## Emails that matter
 
-My main driving goal for exploring my emails in depth was in wanting to build a predictor of whether an email sent to me had any **future usefulness**. 
+My main goal in exploring my emails in-depth was to build a predictor of whether an email had any **future usefulness**. 
 
-Mail from friends and family, correspondence with students, receipts and financial records, etc. fit the **binary of keep**. After I manually processed this massive backlog of email (with great help of Thunderbird's filters) what I found I discarded the most, besides spam, were surveys, newsletters, and other mass-mailers.
+Mail from friends and family, correspondence with students, receipts and financial records, etc. fit the **binary of keep**. After I manually processed this massive backlog of email (with great help of Thunderbird's filters), what I found I discarded most, besides spam, were surveys, newsletters, and other mass mailers.
 
 What I found, qualitatively, was:
 
@@ -35,13 +35,13 @@ What I found, qualitatively, was:
 - little-to-no HTML markup
 - all emails meant only for me sans phishing and spam
 
-defined true keepsakes.
+These traits defined true keepsakes.
 
 ## Introducing sanoma
 
 [en.wiktionary.org/wiki/sanoma](https://en.wiktionary.org/wiki/sanoma)
     
-    sanome (noun) Finnish 
+    sanoma (noun) Finnish 
       message, communication (a communication or the content of a physical
       message; also the message contained in some act or expression such as a
       work of art)
@@ -52,18 +52,18 @@ I developed this YAML workflow method in my Markdown-to-PDF project--**[oshea](h
 
 ## Data Mining
 
-While much of this can be done in a Jupyter notebook (far easier to refresh plots this way--although `:MarkdownPreview` in **Neovim** is sufficient) I also sprung this project as a series of Data-mining yourself. Maybe I want to create a visualization harness for a great many things on my computer:
+While much of this can be done in a Jupyter notebook (far easier to refresh plots this way, although `:MarkdownPreview` in **Neovim** is sufficient), I built this project as a way to data-mine my own activity. I also want to create a visualization harness for many things on my computer:
 
 - text message history
 - email history
 - screenshot frequency
 - browser history and bookmarks
 
-Being text base, and since the first concept of "AI" in my mind was the necessity of combative spam filtering that've been built in the last thirty years, email felt like a good choice.
+Because email is text-based, and because my first concept of "AI" was the need for combative spam filters that have been built over the last thirty years, email felt like a good starting point.
 
 ## Grad-school Emails
 
-The monthly timeline reveals the academic year rhythm: high volume during active semesters with dramatic drops during summer breaks and winter holidays. The 2016-2017 dip corresponds to dissertation defense period, where militant email sanitation was a reprieve from LaTeX and simulation monitoring--hence the dip.
+The monthly timeline reveals the academic year rhythm: high volume during active semesters with dramatic drops during summer breaks and winter holidays. The 2016-2017 dip corresponds to the dissertation defense period, where militant email sanitation was a reprieve from LaTeX and simulation monitoring--hence the dip.
 
 My personal dataset has about 35K emails between my grad-school emails and [my current website's](https://brege.org) personal email. Not included are my Gmail and undergrad email(s). I plan on synchronizing those at a later date.
 
@@ -71,13 +71,13 @@ My personal dataset has about 35K emails between my grad-school emails and [my c
 
 ![Grad-school Emails (monthly)](img/wsu/timeline.png)
 
-WSU's Okta system requires(d) changing passwords every 6 months, and sometime a couple years after my defense my account died. I am thankful that I had a thunderbird profile tucked away on a drive that allowed me to recover all of my university emails..
+WSU's Okta system required changing passwords every 6 months, and some time after my defense my account died. I am thankful that I had a Thunderbird profile tucked away on a drive that allowed me to recover all of my university emails.
 
 ### Grad-school and onward Histogram
 
 ![Grad-school Emails (yearly)](img/wsu/histogram.png)
 
-The year-over-year histogram demonstrates consistent academic seasonality, with September-April peaks and May -- mid-August valleys across all years of graduate study.  Even with teaching summer labs, the beuracratic pressure in the summertime dies. I loved teaching in the summer.
+The year-over-year histogram demonstrates consistent academic seasonality, with September-April peaks and May -- mid-August valleys across all years of graduate study. Even with teaching summer labs, the bureaucratic pressure in the summertime dies. I loved teaching in the summer.
 
 ## Spam, Marketing, and Surveys
 
@@ -88,7 +88,7 @@ The spam timeline shows minimal marketing emails pre-2010, followed by a sharp i
 ![Spam Timeline](img/spam/timeline.png)
 
 The tail in the beginning of this timeline is presented for context.
-It only includes a "purified" hotmail account mailbox from my teenage years that extended a bit into my undergrad years. Those years overlap with gmail usage (not integrated into this data) and my GVSU university email.
+It only includes a "purified" hotmail account mailbox from my teenage years that extended a bit into my undergrad years. Those years overlap with Gmail usage (not integrated into this data) and my GVSU university email.
 
 ### Keyword Buckets
 

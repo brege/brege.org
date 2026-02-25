@@ -1,5 +1,5 @@
 ---
-title: 'Exploring my camera, screenshot, and internet image activity'
+title: 'Exploring my camera, screenshot, and image activity'
 summary: 'A data exploration project around my personal image collection habits.'
 tags: 
  - machine-learning
