@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@200;300;400&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@200;300;400&family=IBM+Plex+Mono:wght@400;500&display=swap");
 
 body {
     font-family: "GraphikWeb", -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", Meiryo, sans-serif;
@@ -6,7 +6,7 @@ body {
 
 .type-post .post-content,
 .type-card .post-content {
-    font-family: "Newsreader", "Georgia", serif;
+    font-family: "GraphikWeb", -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", Meiryo, sans-serif;
     font-weight: 400;
     letter-spacing: 0.1px;
 }
