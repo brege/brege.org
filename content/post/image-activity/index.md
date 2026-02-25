@@ -11,10 +11,12 @@ tags:
  - data-exploration
 date: 2026-02-11T16:09:29-05:00
 draft: false
+aliases: 
+ - "/image-activity"
+ - "/bruki"
 cover:
   image: 'cover.png'
-  caption: 'heatmap of image activity over days and hours'
-  hidden: true
+  caption: 'heatmap with a monitor, camera, and phone icon'
   hiddenInList: false
 math: false
 ShowToc: false

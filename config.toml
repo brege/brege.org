@@ -1,12 +1,10 @@
 baseURL = "https://brege.org"
-author = "Wyatt Brege"
 copyright = "Copyright (c) 2016-2026 Wyatt Brege"
 languageCode = "en"
-DefaultContentLanguage = "en"
+defaultContentLanguage = "en"
 enableRobotsTXT = false
 enableInlineShortcodes = true
 
-pygmentsUseClasses = true
 enableEmoji = true
 
 theme = "hugo-papermod"
@@ -14,6 +12,10 @@ title = "brege.org"
 
 [outputs]
   home = [ "HTML", "RSS", "JSON" ]
+
+[params.author]
+  name = "Wyatt Brege"
+  email = "wyatt@brege.org"
 
 [params]
   color = 'linen'
@@ -121,7 +123,7 @@ title = "brege.org"
       unsafe = true
   [markup.highlight]
     noClasses = true
-  [tableOfContents]
+  [markup.tableOfContents]
     ordered = true
     startLevel = 1
     endLevel = 4
@@ -194,4 +196,3 @@ series = "series"
 
 [pagination]
   pagerSize = 6
-

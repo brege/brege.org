@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Blue Annulus Background</title>
+  <desc id="desc">Background with contiguous filled elliptical blue annulus bands and dynamic blue depth.</desc>
+
+  <defs>
+    <linearGradient id="base" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#12306f"/>
+      <stop offset="46%" stop-color="#3e66a7"/>
+      <stop offset="76%" stop-color="#5f8fca"/>
+      <stop offset="100%" stop-color="#4e78b8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="70%" cy="46%" r="58%">
+      <stop offset="0%" stop-color="#87afe2" stop-opacity="0.42"/>
+      <stop offset="55%" stop-color="#6d96ce" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#355b9c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#base)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <g opacity="0.34">
+    <rect x="18" y="0" width="26" height="630" fill="#1d3f84"/>
+    <rect x="72" y="0" width="22" height="630" fill="#285297"/>
+    <rect x="140" y="0" width="30" height="630" fill="#1a4188"/>
+    <rect x="214" y="0" width="26" height="630" fill="#3762a7"/>
+    <rect x="296" y="0" width="24" height="630" fill="#204c91"/>
+    <rect x="368" y="0" width="30" height="630" fill="#4873b8"/>
+    <rect x="456" y="0" width="28" height="630" fill="#2e5ca0"/>
+    <rect x="542" y="0" width="24" height="630" fill="#5a86c4"/>
+    <rect x="620" y="0" width="30" height="630" fill="#3f6cb0"/>
+    <rect x="706" y="0" width="22" height="630" fill="#6f99d2"/>
+    <rect x="774" y="0" width="26" height="630" fill="#4c79bc"/>
+    <rect x="850" y="0" width="28" height="630" fill="#7ea8dc"/>
+    <rect x="932" y="0" width="24" height="630" fill="#5d8bc8"/>
+    <rect x="1006" y="0" width="30" height="630" fill="#739ed6"/>
+    <rect x="1092" y="0" width="24" height="630" fill="#608fcf"/>
+  </g>
+
+  <g transform="rotate(-13 600 315)">
+    <path fill="#173b7e" fill-rule="evenodd" d="
+      M -350 355
+      a 980 390 0 1 0 1960 0
+      a 980 390 0 1 0 -1960 0
+      M -280 355
+      a 910 360 0 1 1 1820 0
+      a 910 360 0 1 1 -1820 0
+    "/>
+
+    <path fill="#235097" fill-rule="evenodd" d="
+      M -280 355
+      a 910 360 0 1 0 1820 0
+      a 910 360 0 1 0 -1820 0
+      M -205 350
+      a 835 328 0 1 1 1670 0
+      a 835 328 0 1 1 -1670 0
+    "/>
+
+    <path fill="#3162ab" fill-rule="evenodd" d="
+      M -205 350
+      a 835 328 0 1 0 1670 0
+      a 835 328 0 1 0 -1670 0
+      M -120 344
+      a 750 294 0 1 1 1500 0
+      a 750 294 0 1 1 -1500 0
+    "/>
+
+    <path fill="#234d95" fill-rule="evenodd" d="
+      M -120 344
+      a 750 294 0 1 0 1500 0
+      a 750 294 0 1 0 -1500 0
+      M -30 338
+      a 660 258 0 1 1 1320 0
+      a 660 258 0 1 1 -1320 0
+    "/>
+
+    <path fill="#4a79bf" fill-rule="evenodd" d="
+      M -30 338
+      a 660 258 0 1 0 1320 0
+      a 660 258 0 1 0 -1320 0
+      M 75 332
+      a 555 220 0 1 1 1110 0
+      a 555 220 0 1 1 -1110 0
+    "/>
+
+    <path fill="#1d427f" fill-rule="evenodd" d="
+      M 75 332
+      a 555 220 0 1 0 1110 0
+      a 555 220 0 1 0 -1110 0
+      M 195 326
+      a 435 178 0 1 1 870 0
+      a 435 178 0 1 1 -870 0
+    "/>
+
+    <ellipse cx="630" cy="326" rx="435" ry="178" fill="#6f9ad2"/>
+
+    <ellipse cx="630" cy="326" rx="168" ry="118" fill="#9dc1e7" opacity="0.28"/>
+    <g transform="translate(524 221) scale(8.8)" aria-hidden="true">
+      <path fill="#102a58" stroke="#d7e9ff" stroke-width="0.85" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2z"/>
+      <path fill="#355f9f" d="M20 8l-8 5-8-5V6l8 5 8-5v2z"/>
+    </g>
+  </g>
+</svg>
