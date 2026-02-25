@@ -1,0 +1,17 @@
+{{- if or .Params.author site.Params.author }}
+{{- $author := (.Params.author | default site.Params.author) }}
+{{- $author_type := (printf "%T" $author) }}
+{{- if (or (eq $author_type "[]string") (eq $author_type "[]interface {}")) }}
+{{- (delimit $author ", " ) }}
+{{- else if reflect.IsMap $author }}
+{{- with index $author "name" -}}
+{{- . -}}
+{{- else -}}
+{{- with index $author "email" -}}
+{{- . -}}
+{{- end -}}
+{{- end -}}
+{{- else }}
+{{- $author }}
+{{- end }}
+{{- end -}}

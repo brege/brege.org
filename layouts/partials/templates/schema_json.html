@@ -1,0 +1,89 @@
+{{- $ctx := . -}}
+{{ if .Params.cover.hiddenInSingle | default site.Params.cover.hiddenInSingle }}
+{{ $ctx = (dict "Params" (merge .Params (dict "cover" (dict "hiddenInSingle" false)))
+"IsPage" .IsPage
+"Language" .Language
+"Permalink" .Permalink
+"Title" .Title
+"Summary" .Summary
+"PublishDate" .PublishDate
+"Lastmod" .Lastmod
+"Date" .Date
+"Site" .Site
+"Page" .Page
+"WordCount" .WordCount
+"Kind" .Kind
+"Section" .Section
+"CurrentSection" .CurrentSection
+"RelPermalink" .RelPermalink
+"OutputFormats" .OutputFormats
+"Data" .Data
+"Scratch" .Scratch) }}
+{{ end }}
+{{- if $ctx.IsPage -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "{{ if .Params.schema.type }}{{ .Params.schema.type }}{{ else }}BlogPosting{{ end }}",
+  "headline": {{ $ctx.Title }},
+  "name": {{ $ctx.Title }},
+  "description": {{ with $ctx.Description }}{{ . }}{{ else }}{{ $ctx.Summary }}{{ end }},
+  {{ if .Params.cover.image -}}
+  "image":
+    {{- if (ne .Params.cover.relative true) -}}
+    {{ .Params.cover.image | absURL }},
+    {{- else -}}
+    {{ (path.Join .RelPermalink .Params.cover.image ) | absURL }},
+    {{- end}}
+  {{- else }}
+    {{- $images := partial "templates/_funcs/get-page-images" . -}}
+    {{- with index $images 0 -}}
+  "image": {{ .Permalink }},
+    {{- end }}
+  {{- end -}}
+  "datePublished": {{ .PublishDate }},
+  "dateModified": {{ .Lastmod }},
+  {{- with (.Params.author | default site.Params.author) }}
+  "author":
+    {{- if (or (eq (printf "%T" .) "[]string") (eq (printf "%T" .) "[]interface {}")) -}}
+  [{{- range $i, $v := . -}}
+  {{- if $i }}, {{end -}}
+  {
+    "@type": "Person",
+    "name": {{ $v }}
+  }
+  {{- end }}],
+    {{- else if reflect.IsMap . -}}
+  {
+    "@type": "Person",
+    {{- with index . "name" -}}
+    "name": {{ . }}
+    {{- else -}}
+    "name": ""
+    {{- end -}}
+    {{- with index . "email" -}},
+    "email": {{ . }}
+    {{- end }}
+  },
+    {{- else -}}
+  {
+    "@type": "Person",
+    "name": {{ . }}
+  },
+    {{- end -}}
+  {{- end }}
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": {{ .Permalink | safeHTML }}
+  },
+  "publisher": {
+    "@type": "{{- ( site.Params.schema.publisherType | default "Organization") | title -}}",
+    "name": {{ site.Title }},
+    "logo": {
+      "@type": "ImageObject",
+      "url": {{ site.Params.assets.favicon | default "favicon.ico" | absURL }}
+    }
+  }
+}
+</script>
+{{- end }}{{/* .IsPage end */}}
