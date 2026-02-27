@@ -5,6 +5,54 @@
   .font-bold {
     font-weight: bold;
   }
+  #protein-matrix .td-right {
+    width: 3rem;
+    min-width: 3rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+  }
+  #protein-matrix .matrix-col-header {
+    position: relative;
+    height: 10.5rem;
+    width: 3rem;
+    min-width: 3rem;
+    max-width: 3rem;
+    padding: 0;
+    vertical-align: bottom;
+    overflow: visible;
+  }
+  #protein-matrix .matrix-col-header > span {
+    position: absolute;
+    left: 0.35rem;
+    bottom: 0.35rem;
+    display: block;
+    white-space: nowrap;
+    line-height: 1;
+    font-size: 0.92em;
+    transform: rotate(-45deg);
+    transform-origin: left bottom;
+  }
+  @media (max-width: 800px) {
+    #protein-matrix .td-right {
+      width: auto;
+      min-width: auto;
+    }
+    #protein-matrix .matrix-col-header {
+      height: auto;
+      width: auto;
+      min-width: auto;
+      max-width: none;
+      padding: 0.5rem 0.4rem;
+    }
+    #protein-matrix .matrix-col-header > span {
+      position: static;
+      display: inline;
+      white-space: normal;
+      line-height: inherit;
+      transform: none;
+      transform-origin: initial;
+    }
+  }
 </style>
 
 <div id="protein-matrix-container" class="mt-6">
@@ -77,9 +125,9 @@
     const headerRow = document.createElement("tr");
 
     headerRow.innerHTML = `
-      <th class="th-left">↘︎</th>
-      <th class="th-top">Average</th>
-      ${data.map(item => `<th class="th-top">${item.source}</th>`).join('')}
+      <th class="th-left" aria-hidden="true"></th>
+      <th class="th-top matrix-col-header"><span>Average</span></th>
+      ${data.map(item => `<th class="th-top matrix-col-header"><span>${item.source}</span></th>`).join('')}
     `;
     thead.appendChild(headerRow);
     table.appendChild(thead);
@@ -124,4 +172,3 @@
 
   updateMatrixView();
 </script>
-

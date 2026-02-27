@@ -16,7 +16,7 @@ tags:
 date: 2025-04-17T16:54:44-04:00
 draft: false
 cover:
-  image: 'calculator-table.png'
+  image: 'cover.png'
   caption: 'A snapshot of the prototype protein calculator with the first few entries in the table.' 
   hidden: true
   hiddenInList: false
