@@ -196,3 +196,7 @@ series = "series"
 
 [pagination]
   pagerSize = 6
+
+[caches]
+  [caches.getresource]
+    maxAge = "10m"

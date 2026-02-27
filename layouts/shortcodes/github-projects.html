@@ -1,0 +1,15 @@
+{{- $githubUser := site.Params.github | default "USER" -}}
+{{- $defaultURL := printf "https://raw.githubusercontent.com/%s/%s/main/README.md" $githubUser $githubUser -}}
+{{- $url := .Get "url" | default $defaultURL -}}
+{{- $pattern := `(?s)<!-- cv-projects-start -->\s*(.*?)\s*<!-- cv-projects-end -->` -}}
+
+{{- with try (resources.GetRemote $url) -}}
+  {{- with .Value -}}
+    {{- $readme := .Content -}}
+    {{- with findRESubmatch $pattern $readme 1 -}}
+      {{- $block := index (index . 0) 1 -}}
+      {{- $shifted := replaceRE `(?m)^##\s+` `#### ` $block -}}
+      {{- $shifted | markdownify -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}

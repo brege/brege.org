@@ -7,53 +7,29 @@ disableShare: true
 
 ## Expertise
 
-- **recent open-source projects**
-  - [**oshea**](https://github.com/brege/oshea)
-    -- a [Node.JS](https://en.wikipedia.org/wiki/Node.js) Markdown to PDF converter and extensible doctype plugin system 
-  - [aoife](https://github.com/brege/aoif)
-    -- a simple multi-media poster sharing matrix made with [React](https://en.wikipedia.org/wiki/React_(software))
-  - [thunder-muscle](https://github.com/brege/thunder-muscle)
-    -- a data exporter and python API for [Thunderbird](https://en.wikipedia.org/wiki/Mozilla_Thunderbird). Basis for a project to data-mine decades of email.
-  - [ilma](https://github.com/brege/ilma)
-    -- a pure-shell project-mirror supporting context generation, repo stats, project pruning, advanced configurable archival, and natively supported by  `tar`, `rsync`, `gpg` in one convenient wrapper 
-  - [**the-flavor-network**](https://github.com/brege/the-flavor-network)
-    -- an interactive creativity tool for chefs and bartenders to visualize recipes through flavor pairings
-- simulated complex physical systems with terabytes of data on supercomputing clusters:
-  [**SpEC**](https://www.black-holes.org/code/SpEC.html),
-  [stampede](https://www.tacc.utexas.edu/systems/stampede2),
-  [xsede](http://www.xsede.org/),
-  [calcul](https://www.calculquebec.ca/)
-  [cacr.caltech](https://www.hpc.caltech.edu/)
-- contributed to large, collaborative driven codebases with:
-  [**node.js**](https://en.wikipedia.org/wiki/Node.js),
-  [**python**](https://en.wikipedia.org/wiki/Python_(programming_language)),
-  [c++](https://en.wikipedia.org/wiki/C%2B%2B),
-  [git](https://en.wikipedia.org/wiki/Git),
-  [javascript](https://en.wikipedia.org/wiki/JavaScript),
-  [pandas](https://en.wikipedia.org/wiki/Pandas_(software)),
-  [networkx](https://en.wikipedia.org/wiki/NetworkX),
-  [fortran](https://en.wikipedia.org/wiki/Fortran),
-  [tensorflow](https://en.wikipedia.org/wiki/TensorFlow),
-  [perl](https://en.wikipedia.org/wiki/Perl),
-  [bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)),
-  [php](https://en.wikipedia.org/wiki/PHP),
-  [sql](https://en.wikipedia.org/wiki/SQL),
-  [numpy](https://en.wikipedia.org/wiki/NumPy),
-  [matplotlib](https://en.wikipedia.org/wiki/Matplotlib),
-  [d3.js](https://en.wikipedia.org/wiki/D3.js),
-  [hugo](https://en.wikipedia.org/wiki/Hugo_(software)),
-  [gnuplot](https://en.wikipedia.org/wiki/Gnuplot),
-  [latex](https://en.wikipedia.org/wiki/LaTeX),
-  [paraview](https://en.wikipedia.org/wiki/ParaView),
-  [sage](https://en.wikipedia.org/wiki/Sage_(mathematics_software)),
-  [jupyter](https://en.wikipedia.org/wiki/Project_Jupyter)  
-- advanced physics and mathematics specialties:
+- **advanced physics and mathematics** ·
   [mechanics](https://en.wikipedia.org/wiki/Hamiltonian_mechanics),
   [general relativity](https://en.wikipedia.org/wiki/General_relativity),
-  [**fluid dynamics**](https://en.wikipedia.org/wiki/Fluid_dynamics),
-  [**finite volume**](https://en.wikipedia.org/wiki/Finite_element_method),
+  [fluid dynamics](https://en.wikipedia.org/wiki/Fluid_dynamics),
+  [finite volume](https://en.wikipedia.org/wiki/Finite_element_method),
   [numerical methods](https://en.wikipedia.org/wiki/Numerical_analysis)  
-- developed tests, validation and visualization tools of big data
+
+- **technical computing proficiencies** ·
+  [data science](https://en.wikipedia.org/wiki/Data_science),
+  [artificial intelligence](https://en.wikipedia.org/wiki/AI),
+  [software engineering](https://en.wikipedia.org/wiki/Software_engineering),
+  [sysadmin](https://en.wikipedia.org/wiki/System_administration),
+  [machine learning](https://en.wikipedia.org/wiki/Machine_learning),
+  [full-stack](https://en.wikipedia.org/wiki/Full_stack)
+
+- **applications** ·
+  [oshea](https://github.com/brege/oshea),
+  [the flavor network](https://flavorpair.me),
+  [monitorat](https://monitorat.brege.org),
+  [aoife](https://aoife.brege.org)
+
+- **culinary arts** ·
+  pairing dinners, farmer's market pop-ups, foundational cooking, fermentation, seafood, game, organic produce, CSA, nutritional & dietary needs, local vendors, preservation, north american, european
 
 ## Education
 
@@ -71,6 +47,77 @@ disableShare: true
  **Research Assistant**, *Washington State Univ*, Pullman, WA, 2013-2017  
  **Teaching Assistant**, *Washington State Univ*, Pullman, WA, 2010-2017  
  **Sous Chef**, *One Trick Pony*, Grand Rapids, MI, 2005-2007  
+
+## Projects
+
+{{< github-projects >}}
+
+#### Languages and Frameworks
+
+- supercomputers and high performance computing
+
+  - [**SpEC**](https://www.black-holes.org/code/SpEC.html),
+  [mpi](https://en.wikipedia.org/wiki/Message_Passing_Interface),
+  [spark](https://spark.apache.org/),
+  [stampede](https://www.tacc.utexas.edu/systems/stampede2),
+  [xsede](http://www.xsede.org/),
+  [calcul](https://www.calculquebec.ca/)
+  [cacr.caltech](https://www.hpc.caltech.edu/)
+
+- programming languages and frameworks
+
+  - [**node.js**](https://en.wikipedia.org/wiki/Node.js),
+  [**python**](https://en.wikipedia.org/wiki/Python_(programming_language)),
+  [c++](https://en.wikipedia.org/wiki/C%2B%2B),
+  [git](https://en.wikipedia.org/wiki/Git),
+  [javascript](https://en.wikipedia.org/wiki/JavaScript),
+  [php](https://en.wikipedia.org/wiki/PHP),
+  [bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell))
+  
+  - [**react**](https://en.wikipedia.org/wiki/React_(JavaScript_library)),
+  [**flask**](https://en.wikipedia.org/wiki/Flask_(web_framework)),
+  [sqlite](https://en.wikipedia.org/wiki/SQLite),
+  [hugo](https://en.wikipedia.org/wiki/Hugo_(software)),
+  [d3.js](https://en.wikipedia.org/wiki/D3.js),
+  [chart.js](https://en.wikipedia.org/wiki/Chart.js),
+  [vis.js](https://visjs.org)
+
+  - [scikit-learn](https://en.wikipedia.org/wiki/Scikit-learn),
+  [pandas](https://en.wikipedia.org/wiki/Pandas_(software)),
+  [networkx](https://en.wikipedia.org/wiki/NetworkX),
+  [tensorflow](https://en.wikipedia.org/wiki/TensorFlow),
+  [pytorch](https://en.wikipedia.org/wiki/PyTorch),
+  [numpy](https://en.wikipedia.org/wiki/NumPy),
+  [matplotlib](https://en.wikipedia.org/wiki/Matplotlib),
+  [jupyter](https://en.wikipedia.org/wiki/Project_Jupyter#Jupyter_Notebook)
+  
+  - [sage](https://en.wikipedia.org/wiki/Sage_(mathematics_software)),
+  [fortran](https://en.wikipedia.org/wiki/Fortran),
+  [octave](https://en.wikipedia.org/wiki/GNU_Octave),
+  [matlab](https://en.wikipedia.org/wiki/MATLAB),
+  [latex](https://en.wikipedia.org/wiki/LaTeX),
+  [gnuplot](https://en.wikipedia.org/wiki/Gnuplot),
+  [paraview](https://en.wikipedia.org/wiki/ParaView),
+  [seaborn](https://en.wikipedia.org/wiki/Seaborn) 
+  
+- testing, QA, and linting
+
+  - [pytest](https://en.wikipedia.org/wiki/Pytest),
+  [mocha](https://en.wikipedia.org/wiki/Mocha_(JavaScript_framework)),
+  [biome](https://en.wikipedia.org/wiki/Biome),
+  [ruff](https://en.wikipedia.org/wiki/Ruff_(software)),
+  [integration](https://en.wikipedia.org/wiki/Integration_testing),
+  [end-to-end](https://en.wikipedia.org/wiki/System_testing),
+  [life-cycle](https://en.wikipedia.org/wiki/Lifecycle_(software_development)),
+  [YAML](https://en.wikipedia.org/wiki/YAML) workflows
+
+- packaging
+
+  - [npm](https://en.wikipedia.org/wiki/Npm),
+  [pypi](https://en.wikipedia.org/wiki/Pypi),
+  [docker](https://en.wikipedia.org/wiki/Docker_(software)),
+  [podman](https://en.wikipedia.org/wiki/Podman),
+  [AMO](https://en.wikipedia.org/wiki/Mozilla_Add-on_SDK)
 
 ## Publications
 
