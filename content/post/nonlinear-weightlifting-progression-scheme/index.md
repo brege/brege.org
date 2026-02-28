@@ -19,7 +19,7 @@ summary: 'Using the Epley formula, and others, for estimating an effective pathw
 draft: false
 aliases: '/epley'
 cover:
-  image: 'tool-collage.png' 
+  image: 'cover.png' 
   hidden: true
   hiddenInList: false
 math: true
