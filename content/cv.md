@@ -3,6 +3,8 @@ title: Wyatt Brege
 date: 2023-01-01
 math: true
 disableShare: true
+tocStartLevel: 2
+tocEndLevel: 2
 ---
 
 ## Expertise
@@ -22,7 +24,7 @@ disableShare: true
   [machine learning](https://en.wikipedia.org/wiki/Machine_learning),
   [full-stack](https://en.wikipedia.org/wiki/Full_stack)
 
-- **applications** ·
+- **software applications** ·
   [oshea](https://github.com/brege/oshea),
   [the flavor network](https://flavorpair.me),
   [monitorat](https://monitorat.brege.org),
