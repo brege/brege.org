@@ -54,7 +54,7 @@ tocEndLevel: 2
 
 {{< github-projects >}}
 
-#### Languages and Frameworks
+#### Technological Experience
 
 - supercomputers and high performance computing
 
