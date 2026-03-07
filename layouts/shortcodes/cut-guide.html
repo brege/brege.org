@@ -1,0 +1,87 @@
+{{- $rows := int (.Get "rows" | default 2) -}}
+{{- $cols := int (.Get "cols" | default 5) -}}
+{{- $count := mul $rows $cols -}}
+{{- $title := .Get "title" | default "Cut guide" -}}
+{{- $item := .Get "item" | default "pieces" -}}
+{{- $caption := .Get "caption" -}}
+
+<style>
+  .cut-guide {
+    margin: 1rem 0 1.5rem;
+    padding: 1rem;
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+  }
+
+  .cut-guide__meta {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.75rem;
+    margin-bottom: 0.9rem;
+    flex-wrap: wrap;
+  }
+
+  .cut-guide__title {
+    font-weight: 700;
+    color: var(--primary);
+  }
+
+  .cut-guide__count {
+    padding: 0.2rem 0.55rem;
+    font-size: 0.85rem;
+    color: var(--secondary);
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+  }
+
+  .cut-guide__grid {
+    display: grid;
+    grid-template-columns: repeat(var(--cut-cols), minmax(0, 1fr));
+    gap: 0.5rem;
+  }
+
+  .cut-guide__piece {
+    display: block;
+    aspect-ratio: 0.52 / 1;
+    border: 2px solid var(--primary);
+    border-radius: calc(var(--radius) * 0.7);
+    background: var(--entry);
+    box-shadow:
+      inset 0 0 0 1px var(--code-bg),
+      0 1px 2px rgba(0, 0, 0, 0.08);
+  }
+
+  .cut-guide__caption {
+    margin: 0.85rem 0 0;
+    color: var(--secondary);
+    font-size: 0.95rem;
+  }
+
+  @media (max-width: 520px) {
+    .cut-guide__grid {
+      gap: 0.35rem;
+    }
+  }
+</style>
+
+<div
+  class="cut-guide"
+  role="img"
+  aria-label="{{ $title }} showing {{ $count }} {{ $item }} arranged in {{ $rows }} rows and {{ $cols }} columns. {{ $caption }}"
+>
+  <div class="cut-guide__meta">
+    <span class="cut-guide__title">{{ $title }}</span>
+    <span class="cut-guide__count">{{ $count }} {{ $item }}</span>
+  </div>
+  <div class="cut-guide__grid" style="--cut-cols: {{ $cols }};">
+    {{- range seq $count }}
+    <span class="cut-guide__piece" aria-hidden="true"></span>
+    {{- end }}
+  </div>
+  {{- with $caption }}
+  <p class="cut-guide__caption">{{ . }}</p>
+  {{- end }}
+</div>
