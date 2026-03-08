@@ -227,9 +227,3 @@ May 2009 - Aug 2009
 * [Omicron Delta Kappa](https://odk.org/), c. 2010
 * [Society of Physics Students](https://www.sigmapisigma.org/sigmapisigma) (SPS), c. 2009
 * [Pi Mu Epsilon](https://pme-math.org/) (Iota chapter), c. 2009
-
-<span style="text-align: right">
-
-[[`print`](/brege-cv.pdf)]  
-
-</span>
