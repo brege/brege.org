@@ -13,11 +13,8 @@ title = "brege.org"
 [outputs]
   home = [ "HTML", "RSS", "JSON" ]
 
-[params.author]
-  name = "Wyatt Brege"
-  email = "wyatt@brege.org"
-
 [params]
+  author = "Wyatt Brege"
   color = 'linen'
   env = 'production'
   twitter = ''
