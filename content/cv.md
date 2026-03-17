@@ -54,7 +54,7 @@ tocEndLevel: 2
 
 {{< github-projects >}}
 
-#### Technological Experience
+#### Technologies
 
 - supercomputers and high performance computing
 
@@ -218,6 +218,23 @@ May 2009 - Aug 2009
 [*University of Central Florida*](https://www.ucf.edu/)
 - determined the underlining [Lie symmetries](https://en.wikipedia.org/wiki/Lie_algebra) of the [Lane-Emden equation](https://en.wikipedia.org/wiki/Lane%E2%80%93Emden_equation)	
 - participated in the [UCF](https://www.ucf.edu/) combined math and physics Research Experience for Undergraduates
+
+## Teaching Experience
+
+- **ASTR 135** Laboratory, Astronomy, F-2010, S-2012
+  - solar system, stars, galaxies, cosmology, history  
+
+- **PHYS 101** Laboratory, General Physics I, F-2011, F-2012, F-2014, X-2017  
+  - algebra-based, uncertainty analysis, mechanics, pendulum, springs, work and energy, impulse and momentum, ballistics, buoyancy, vibrations, temperature and heat
+
+- **PHYS 102** Laboratory, General Physics II, S-2013  
+  - algebra-based, uncertainty analysis, electric and magnetic fields, ohm's law, circuits, induction, reflection and refraction, lenses
+
+- **PHYS 201** Laboratory, Physics for Scientists and Engineers I, S-2011, X-2012  
+  - calculus-based, error propagation, mechanics, Newton's laws, friction, pendulum, impulse and momentum, work and energy, ballistics, rotational dynamics, buoyancy, harmonics
+
+- **PHYS 202** Laboratory, Physics for Scientists and Engineers II, F-2012  
+  - calculus-based, error propagation, electric and magnetic fields, RC and AC circuits, induction, transformers, interference, thin lenses
 
 ## Memberships
 
