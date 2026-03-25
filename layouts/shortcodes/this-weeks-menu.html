@@ -9,13 +9,17 @@
     {{- $rawDate := $menuDate | time.Format "2006-01-02" -}}
 
     {{/* Add the data-date attribute for JS to read */}}
-    <a href="{{ .RelPermalink }}" class="menu-card" data-date="{{ $rawDate }}">
+    <a href="{{ .RelPermalink }}" class="season-menu" data-date="{{ $rawDate }}">
       {{- $dateFormatted := $menuDate | time | dateFormat "January 2, 2006" -}}
       {{- $title := .Title -}}
       {{- $rawDate := $menuDate | time.Format "2006-01-02" -}}
       {{- $rest := replace $title (print $rawDate " ") "" -}}
 
-      <div class="menu-title">{{ $dateFormatted }} - {{ $rest }}</div>
+      <div class="season-menu-topline">
+        <div class="season-menu-date">{{ $dateFormatted }}</div>
+        <div class="season-menu-stamp" aria-hidden="true"></div>
+      </div>
+      <div class="season-menu-title">{{ $rest }}</div>
 
       {{- $headers := findRE `(?m)^###\s+(.+)` .RawContent }}
       {{- $cleaned := slice }}
@@ -26,8 +30,10 @@
         {{- end }}
       {{- end }}
       {{- if gt (len $cleaned) 0 }}
-        <div class="menu-items">
-          {{ delimit $cleaned ", " }}
+        <div class="season-menu-items">
+          {{- range first 4 $cleaned }}
+            <span>{{ . }}</span>
+          {{- end }}
         </div>
       {{- end }}
     </a>
@@ -35,132 +41,155 @@
 </div>
 
 <style>
-/* Keep the original CSS */
 .this-weeks-menus {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.menu-card {
+.season-menu {
   display: block;
-  background-color: var(--code-bg);
-  border-radius: var(--radius);
-  border: 1px solid var(--border);
-  color: var(--secondary);
-  padding: 1rem;
-  text-decoration: none;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-  box-shadow: none; /* << no base shadow */
-}
-
-.menu-card:hover {
-  transform: scale(0.98);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06); /* subtle and symmetrical */
-}
-
-.menu-title {
-  font-weight: 600;
-  color: var(--primary);
-  margin-bottom: 0.5rem;
-  font-size: 1.1rem;
-}
-
-.menu-items {
-  font-size: 1rem;
-  color: var(--secondary);
-}
-
-.this-weeks-menus a {
-  box-shadow: none !important;
-  text-decoration: none;
+  padding: 1rem 0 1.1rem;
+  border-top: 2px solid var(--border);
   color: inherit;
+  text-decoration: none;
+  transition: border-color 0.15s ease, color 0.15s ease;
+  box-shadow: none !important;
 }
 
-/* Add a CSS rule to hide elements that the JS marks as outside the date range */
-.this-weeks-menus .menu-card.hidden-by-js {
+.season-menu:hover {
+  border-color: var(--primary);
+  box-shadow: none !important;
+}
+
+.season-menu-topline {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.35rem;
+}
+
+.season-menu-date {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  padding-top: 0.2rem;
+}
+
+.season-menu-stamp {
+  font-family: var(--font-serif-display);
+  font-size: 2.15rem;
+  line-height: 0.9;
+  color: var(--primary);
+  flex: 0 0 auto;
+}
+
+.season-menu-title {
+  margin-bottom: 0.35rem;
+  font-family: var(--font-serif-display);
+  font-size: 1.66rem;
+  font-weight: 200;
+  line-height: 1.1;
+  color: var(--primary);
+}
+
+.season-menu-items {
+  color: var(--secondary);
+  font-size: 1.13rem;
+  line-height: 1.65;
+}
+
+.season-menu-items span {
+  display: block;
+}
+
+.this-weeks-menus .season-menu.hidden-by-js {
     display: none;
+}
+
+.post-content .season-menu,
+.post-content .season-menu:hover,
+.post-content .season-menu:active {
+  box-shadow: none !important;
+}
+
+@media (max-width: 700px) {
+  .season-menu-topline {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+  }
 }
 
 </style>
 
-{{/* Add the JavaScript block to perform filtering client-side */}}
 <script>
 (function() {
-    // Helper function to calculate the day of the year (1-based) for a JS Date object
     function calculateDayOfYear(date) {
-        const start = new Date(date.getFullYear(), 0, 0); // Jan 1st of the same year
-        const diff = date - start; // Difference in milliseconds
-        const oneDay = 1000 * 60 * 60 * 24; // Milliseconds in one day
-        return Math.floor(diff / oneDay); // This calculates the number of full days passed since Jan 1st + 1 (because Jan 1st is day 1)
+        const start = new Date(date.getFullYear(), 0, 0);
+        const diff = date - start;
+        const oneDay = 1000 * 60 * 60 * 24;
+        return Math.floor(diff / oneDay);
     }
 
-     // Helper function to calculate days in a year (accounts for leap years)
     function daysInYear(year) {
         return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0) ? 366 : 365;
     }
 
+    function calculateWeekOfYear(date) {
+        const utcDate = new Date(Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate()));
+        const day = utcDate.getUTCDay() || 7;
+        utcDate.setUTCDate(utcDate.getUTCDate() + 4 - day);
+        const yearStart = new Date(Date.UTC(utcDate.getUTCFullYear(), 0, 1));
+        return Math.ceil((((utcDate - yearStart) / 86400000) + 1) / 7);
+    }
 
     const container = document.querySelector('.this-weeks-menus');
     if (!container) {
-        console.warn("Container '.this-weeks-menus' not found for date filtering.");
-        return; // Exit if the container element isn't on the page
+        return;
     }
 
-    // Get the tolerance passed from the Hugo shortcode
-    const tolerance = parseInt(container.dataset.tolerance, 10) || 5; // Default to 5 if attribute missing or invalid
+    const tolerance = parseInt(container.dataset.tolerance, 10) || 5;
 
-    // Get today's date using the visitor's browser clock
     const today = new Date();
-    // Calculate today's Day of Year
     const currentDOY = calculateDayOfYear(today);
-    // We don't strictly need currentYear or daysInCurrentYear for the difference calculation across years
 
-    // Find all the menu cards within the container
-    const menuCards = container.querySelectorAll('.menu-card');
+    const menuCards = container.querySelectorAll('.season-menu');
 
-    // Loop through each menu card and check its date
     menuCards.forEach(card => {
-        const dateString = card.dataset.date; // Get the YYYY-MM-DD date string from the data attribute
+        const dateString = card.dataset.date;
 
         if (!dateString) {
-            // If a card doesn't have a date attribute, hide it or handle as needed
             card.classList.add('hidden-by-js');
             return;
         }
 
-        // Parse the date string into a JavaScript Date object.
-        // Append 'T00:00:00Z' to treat the date as UTC midnight, avoiding timezone issues
         const menuDate = new Date(dateString + 'T00:00:00Z');
         if (isNaN(menuDate.getTime())) {
-             // Handle invalid date strings if necessary
-             console.error("Invalid date string:", dateString);
-             card.classList.add('hidden-by-js');
-             return;
+            card.classList.add('hidden-by-js');
+            return;
         }
 
+        const stamp = card.querySelector('.season-menu-stamp');
+        if (stamp) {
+            stamp.textContent = String(calculateWeekOfYear(menuDate)).padStart(2, '0');
+        }
 
-        // Calculate the menu item's Day of Year
         const menuDOY = calculateDayOfYear(menuDate);
-        // Calculate days in the YEAR of the menu item for wrap-around calculation
         const menuYear = menuDate.getFullYear();
         const totalDaysInYear = daysInYear(menuYear);
+        const diff1 = Math.abs(currentDOY - menuDOY);
+        const diff2 = totalDaysInYear - diff1;
+        const dayDiff = Math.min(diff1, diff2);
 
-        // Calculate the difference in Day of Year, considering wrap-around across the year boundary
-        const diff1 = Math.abs(currentDOY - menuDOY); // Direct difference
-        const diff2 = totalDaysInYear - diff1; // Wrap-around difference
-        const dayDiff = Math.min(diff1, diff2); // The actual minimum difference
-
-
-        // Check if the calculated difference is within the allowed tolerance
         if (dayDiff <= tolerance) {
-            // If within tolerance, ensure the card is visible
             card.classList.remove('hidden-by-js');
         } else {
-            // If outside tolerance, hide the card
             card.classList.add('hidden-by-js');
         }
     });
-})(); // The IIFE (Immediately Invoked Function Expression) makes the script run as soon as it's parsed
+})();
 </script>

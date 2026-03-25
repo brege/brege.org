@@ -1,0 +1,193 @@
+{{- define "main" }}
+
+{{- if (and site.Params.profileMode.enabled .IsHome) }}
+{{- partial "index_profile.html" . }}
+{{- else }}
+
+{{- $pages := union .RegularPages .Sections }}
+
+{{- if .IsHome }}
+{{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true"  }}
+{{- end }}
+
+{{- $paginator := .Paginate $pages }}
+{{- $categories := "categories" }}
+{{- $tags := "tags" }}
+
+{{- if not .IsHome | and .Title }}
+<header class="page-header">
+  {{- partial "breadcrumbs.html" . }}
+  <div class="page-header-main">
+    <h1>
+      {{ .Title }}
+      {{- if and (or (eq .Kind `term`) (eq .Kind `section`)) (.Param "ShowRssButtonInSectionTermList") }}
+      {{- with .OutputFormats.Get "rss" }}
+      <a href="{{ .RelPermalink }}" title="RSS" aria-label="RSS">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" height="23">
+          <path d="M4 11a9 9 0 0 1 9 9" />
+          <path d="M4 4a16 16 0 0 1 16 16" />
+          <circle cx="5" cy="19" r="1" />
+        </svg>
+      </a>
+      {{- end }}
+      {{- end }}
+    </h1>
+    {{- if gt (len $paginator.Pages) 0 }}
+    <div class="view-toggle">
+      <button id="btn-horiz" class="active" title="Card view">
+        <svg viewBox="0 0 16 16"><rect x="1" y="2" width="5" height="5" rx="1"/><line x1="8" y1="3" x2="15" y2="3"/><line x1="8" y1="6" x2="13" y2="6"/><rect x="1" y="9" width="5" height="5" rx="1"/><line x1="8" y1="10" x2="15" y2="10"/><line x1="8" y1="13" x2="13" y2="13"/></svg>
+      </button>
+      <button id="btn-minimal" title="List view">
+        <svg viewBox="0 0 16 16"><line x1="1" y1="3" x2="15" y2="3"/><line x1="1" y1="6.5" x2="15" y2="6.5"/><line x1="1" y1="10" x2="15" y2="10"/><line x1="1" y1="13.5" x2="15" y2="13.5"/></svg>
+      </button>
+    </div>
+    {{- end }}
+  </div>
+  {{- if .Description }}
+  <div class="post-description">
+    {{ .Description | markdownify }}
+  </div>
+  {{- end }}
+</header>
+{{- end }}
+
+{{- if .Content }}
+<div class="post-content">
+  {{- if not (.Param "disableAnchoredHeadings") }}
+  {{- partial "anchored_headings.html" .Content -}}
+  {{- else }}{{ .Content }}{{ end }}
+</div>
+{{- end }}
+
+{{- if and .IsHome site.Params.homeInfoParams (eq $paginator.PageNumber 1) }}
+{{- partial "home_info.html" . }}
+{{- end }}
+
+{{- $term := .Data.Term }}
+<div id="post-list" class="post-list view-horizontal">
+{{- range $index, $page := $paginator.Pages }}
+
+{{- $class := "post-entry" }}
+{{- if $term }}
+{{- $class = "post-entry tag-entry" }}
+{{- end }}
+
+<article class="{{ $class }} post-card">
+  {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
+  <div class="entry-media">
+    {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
+  </div>
+  <div class="entry-body">
+    {{- with first 1 ($page.GetTerms $categories) }}
+    {{- range . }}
+    <div class="entry-category">{{ .LinkTitle }}</div>
+    {{- end }}
+    {{- end }}
+    <header class="entry-header">
+      <h2 class="entry-hint-parent">
+        {{- .Title }}
+        {{- if .Draft }}
+        <span class="entry-hint" title="Draft">
+          <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
+            <path
+              d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+          </svg>
+        </span>
+        {{- end }}
+      </h2>
+    </header>
+    {{- if (ne (.Param "hideSummary") true) }}
+    <div class="entry-summary">
+      <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+    </div>
+    {{- end }}
+    {{- if not (.Param "hideMeta") }}
+    <footer class="entry-meta">
+      {{- if not .Date.IsZero }}
+      <span>{{ .Date | time.Format (default ":date_long" site.Params.DateFormat) }}</span>
+      {{- end }}
+      {{- if (.Param "ShowWordCount") }}
+      <span>{{ i18n "words" .WordCount | default (printf "%d words" .WordCount) }}</span>
+      {{- end }}
+    </footer>
+    {{- end }}
+    {{- with first 3 ($page.GetTerms $tags) }}
+    <div class="entry-tags">
+      <span class="tag-line" aria-hidden="true"></span>
+      <ul class="entry-tags-preview" aria-label="tags">
+        {{- range . }}
+        <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+        {{- end }}
+      </ul>
+    </div>
+    {{- end }}
+  </div>
+  <div class="entry-date-col">
+    {{- if not .Date.IsZero }}
+    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+    {{- end }}
+    {{- if (.Param "ShowWordCount") }}
+    <span>{{ .WordCount }}w</span>
+    {{- end }}
+  </div>
+  <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+</article>
+{{- end }}
+</div>
+
+{{- if gt $paginator.TotalPages 1 }}
+<footer class="page-footer">
+  <nav class="pagination">
+    {{- if $paginator.HasPrev }}
+    <a class="prev" href="{{ $paginator.Prev.URL | absURL }}">
+      «&nbsp;{{ i18n "prev_page" }}&nbsp;
+      {{- if (.Param "ShowPageNums") }}
+      {{- sub $paginator.PageNumber 1 }}/{{ $paginator.TotalPages }}
+      {{- end }}
+    </a>
+    {{- end }}
+    {{- if $paginator.HasNext }}
+    <a class="next" href="{{ $paginator.Next.URL | absURL }}">
+      {{- i18n "next_page" }}&nbsp;
+      {{- if (.Param "ShowPageNums") }}
+      {{- add 1 $paginator.PageNumber }}/{{ $paginator.TotalPages }}
+      {{- end }}&nbsp;»
+    </a>
+    {{- end }}
+  </nav>
+</footer>
+{{- end }}
+
+{{- end }}
+
+<script>
+(function() {
+    var list = document.getElementById("post-list");
+    var btnH = document.getElementById("btn-horiz");
+    var btnM = document.getElementById("btn-minimal");
+    if (!list || !btnH || !btnM) return;
+
+    function setView(view) {
+        var isMinimal = view === "minimal";
+        list.className = "post-list " + (isMinimal ? "view-minimal" : "view-horizontal");
+        btnM.classList.toggle("active", isMinimal);
+        btnH.classList.toggle("active", !isMinimal);
+    }
+
+    var stored = localStorage.getItem("post-view");
+    setView(stored === "minimal" ? "minimal" : "horizontal");
+
+    btnH.addEventListener("click", function() {
+        setView("horizontal");
+        localStorage.setItem("post-view", "horizontal");
+    });
+    btnM.addEventListener("click", function() {
+        setView("minimal");
+        localStorage.setItem("post-view", "minimal");
+    });
+})();
+</script>
+
+{{- end }}{{- /* end main */ -}}

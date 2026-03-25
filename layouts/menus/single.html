@@ -1,10 +1,10 @@
 {{- define "main" }}
 
-<article class="post-single"> 
+<article class="post-single">
 
   <header class="post-header">
-    {{- partial "breadcrumbs.html" . -}} {{/* Call the theme's breadcrumbs partial */}}
-    <h1 class="post-title entry-hint-parent"> 
+    {{- partial "breadcrumbs.html" . -}}
+    <h1 class="post-title entry-hint-parent">
       {{ .Title }}
       {{- if .Draft }}
       <span class="entry-hint" title="Draft">
@@ -15,48 +15,57 @@
       {{- end }}
     </h1>
     {{- if .Description }}
-    <div class="post-description"> 
+    <div class="post-description">
       {{ .Description }}
     </div>
     {{- end }}
     {{- if not (.Param "hideMeta") }}
-    <div class="post-meta"> 
-      {{- partial "post_meta.html" . -}} 
-      {{- partial "translation_list.html" . -}} 
-      {{- partial "edit_post.html" . -}}
-      {{- partial "post_canonical.html" . -}}
-    </div>
+    {{- partial "single_meta.html" . -}}
     {{- end }}
   </header>
 
-  {{- partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" ((.Param "cover.hiddenInSingle") | default (.Param "cover.hidden") | default false)) -}} 
+  {{- partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" ((.Param "cover.hiddenInSingle") | default (.Param "cover.hidden") | default false)) -}}
   {{- if (.Param "ShowToc") }}
-  {{- partial "toc.html" . -}} 
+  <div class="toc-anchor">
+    <div class="toc-margin-wrap">
+      {{- partial "toc.html" . -}}
+    </div>
+  </div>
+  <div class="toc-preamble">
+    {{- partial "toc.html" . -}}
+  </div>
   {{- end }}
 
-  <div class="post-content"> 
+  <div class="post-content">
     {{- if not (.Param "disableAnchoredHeadings") }}
-    {{- partial "anchored_headings.html" .Content -}} 
+    {{- partial "anchored_headings.html" .Content -}}
     {{- else }}{{ .Content }}{{ end }}
   </div>
 
-  <footer class="post-footer"> {{/* Use theme's footer class */}}
-    {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
-    <ul class="post-tags"> {{/* Use theme's tag list class */}}
-      {{- range ($.GetTerms $tags) }}
-      <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
-      {{- end }}
-    </ul>
+  <footer class="post-footer">
+    {{- $tags := "tags" }}
+    {{- with ($.GetTerms $tags) }}
+    <div class="post-tags">
+      <span class="tag-line" aria-hidden="true"></span>
+      <ul class="tag-list">
+        {{- range . }}
+        <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+        {{- end }}
+      </ul>
+    </div>
+    {{- end }}
     {{- if (.Param "ShowPostNavLinks") }}
-    {{- partial "post_nav_links.html" . -}} 
+    {{- partial "post_nav_links.html" . -}}
     {{- end }}
     {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
-    {{- partial "share_icons.html" . -}} 
+    <div id="share-links">
+      {{- partial "share_icons.html" . -}}
+    </div>
     {{- end }}
   </footer>
 
   {{- if (.Param "comments") }}
-  {{- partial "comments.html" . -}} 
+  {{- partial "comments.html" . -}}
   {{- end }}
 
 </article>

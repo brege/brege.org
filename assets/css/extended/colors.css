@@ -14,16 +14,16 @@
 
 :root[data-theme="dark"] {
     --theme: #262624;
-    --entry: #343432;
+    --entry: #302f2c;
     --primary: #e8e8e8;
-    --secondary: #a0a0a0;
+    --secondary: #b0b0a8;
     --tertiary: #3d3d3a;
     --content: #f0f0f0;
-    --code-block-bg: #30302e;
-    --code-bg: #3a3a38;
-    --border: #3d3d3a;
-    --accent: #60a5fa;
-    --selection: rgba(96, 165, 250, 0.2);
+    --code-block-bg: #2c2c2a;
+    --code-bg: #2c2c2a;
+    --border: #444440;
+    --accent: #8ab4f8;
+    --selection: rgba(138, 180, 248, 0.2);
 }
 
 a {

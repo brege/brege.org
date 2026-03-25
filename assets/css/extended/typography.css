@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@200;300;400&family=IBM+Plex+Mono:wght@400;500&display=swap");
+:root {
+    --font-serif-main: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+    --font-serif-display: "Cormorant Garamond", Georgia, serif;
+}
 
 body {
     font-family: "GraphikWeb", -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", Meiryo, sans-serif;
@@ -23,9 +26,9 @@ body {
 .post-content h4,
 .post-content h5,
 .post-content h6 {
-    font-family: "Cormorant Garamond", "Georgia", serif;
-    font-weight: 200;
-    letter-spacing: 0.1px;
+    font-family: var(--font-serif-main);
+    font-weight: 400;
+    letter-spacing: 0;
 }
 
 .post-content h1 {
@@ -33,9 +36,17 @@ body {
 }
 .post-content h2 {
     font-size: 1.6em;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid var(--border);
 }
 .post-content h3 {
     font-size: 1.4em;
+}
+
+.recipe .content h2,
+.menu-card h2 {
+    border-bottom: none;
+    padding-bottom: 0;
 }
 .post-content h4 {
     font-size: 1.2em;
@@ -46,10 +57,65 @@ body {
     text-transform: uppercase;
 }
 
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+    display: flex;
+    align-items: baseline;
+    gap: 0.35rem;
+}
+
+.post-content h1 .heading-text,
+.post-content h2 .heading-text,
+.post-content h3 .heading-text,
+.post-content h4 .heading-text,
+.post-content h5 .heading-text,
+.post-content h6 .heading-text {
+    flex: 0 1 auto;
+    min-width: 0;
+}
+
+.post-content h1 .anchor,
+.post-content h2 .anchor,
+.post-content h3 .anchor,
+.post-content h4 .anchor,
+.post-content h5 .anchor,
+.post-content h6 .anchor {
+    display: inline-flex !important;
+    flex: 0 0 auto;
+    margin-inline-start: 0;
+    color: var(--secondary);
+    font-weight: 500;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    user-select: none;
+    transition: opacity 0.15s ease, color 0.15s ease, visibility 0.15s ease;
+}
+
+.post-content h1:hover .anchor,
+.post-content h2:hover .anchor,
+.post-content h3:hover .anchor,
+.post-content h4:hover .anchor,
+.post-content h5:hover .anchor,
+.post-content h6:hover .anchor,
+.post-content h1 .anchor:focus-visible,
+.post-content h2 .anchor:focus-visible,
+.post-content h3 .anchor:focus-visible,
+.post-content h4 .anchor:focus-visible,
+.post-content h5 .anchor:focus-visible,
+.post-content h6 .anchor:focus-visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
 .home-info .entry-header h1 {
-    font-weight: 200 !important;
+    font-weight: 400 !important;
     font-synthesis-weight: none;
-    /* make 1.2 times larger */
     font-size: 2.5em;
 }
 
@@ -62,7 +128,7 @@ body {
 }
 
 .post-content .katex {
-    font-family: "Cormorant Garamond", "Georgia", serif;
+    font-family: var(--font-serif-main);
 }
 
 .recipe .content {
@@ -75,9 +141,9 @@ body {
 .recipe .content h4,
 .recipe .content h5,
 .recipe .content h6 {
-    font-family: "Cormorant Garamond", "Georgia", serif;
-    font-weight: 200;
-    letter-spacing: 0.1px;
+    font-family: var(--font-serif-main);
+    font-weight: 400;
+    letter-spacing: 0;
 }
 
 code,

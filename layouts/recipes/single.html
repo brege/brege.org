@@ -20,18 +20,20 @@
     </div>
     {{- end }}
     {{- if not (.Param "hideMeta") }}
-    <div class="post-meta">
-      {{- partial "post_meta.html" . -}}
-      {{- partial "translation_list.html" . -}}
-      {{- partial "edit_post.html" . -}}
-      {{- partial "post_canonical.html" . -}}
-    </div>
+    {{- partial "single_meta.html" . -}}
     {{- end }}
   </header>
   {{- $isHidden := (.Param "cover.hiddenInSingle") | default (.Param "cover.hidden") | default false }}
   {{- partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" $isHidden) }}
   {{- if (.Param "ShowToc") }}
-  {{- partial "toc.html" . }}
+  <div class="toc-anchor">
+    <div class="toc-margin-wrap">
+      {{- partial "toc.html" . }}
+    </div>
+  </div>
+  <div class="toc-preamble">
+    {{- partial "toc.html" . }}
+  </div>
   {{- end }}
 
   {{- if .Content }}
@@ -43,17 +45,24 @@
   {{- end }}
 
   <footer class="post-footer">
-    {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
-    <ul class="post-tags">
-      {{- range ($.GetTerms $tags) }}
-      <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
-      {{- end }}
-    </ul>
+    {{- $tags := "tags" }}
+    {{- with ($.GetTerms $tags) }}
+    <div class="post-tags">
+      <span class="tag-line" aria-hidden="true"></span>
+      <ul class="tag-list">
+        {{- range . }}
+        <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+        {{- end }}
+      </ul>
+    </div>
+    {{- end }}
     {{- if (.Param "ShowPostNavLinks") }}
     {{- partial "post_nav_links.html" . }}
     {{- end }}
     {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
-    {{- partial "share_icons.html" . -}}
+    <div id="share-links">
+      {{- partial "share_icons.html" . -}}
+    </div>
     {{- end }}
   </footer>
 
