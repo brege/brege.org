@@ -63,8 +63,8 @@
 }
 
 .season-menu-topline {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
   align-items: flex-start;
   gap: 1rem;
   margin-bottom: 0.35rem;
@@ -85,6 +85,7 @@
   line-height: 0.9;
   color: var(--primary);
   flex: 0 0 auto;
+  justify-self: end;
 }
 
 .season-menu-title {
@@ -118,9 +119,12 @@
 
 @media (max-width: 700px) {
   .season-menu-topline {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.2rem;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 0.5rem;
+  }
+
+  .season-menu-stamp {
+    font-size: 1.9rem;
   }
 }
 

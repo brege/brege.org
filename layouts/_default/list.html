@@ -167,26 +167,58 @@
     var list = document.getElementById("post-list");
     var btnH = document.getElementById("btn-horiz");
     var btnM = document.getElementById("btn-minimal");
-    if (!list || !btnH || !btnM) return;
+    if (!list) return;
 
     function setView(view) {
         var isMinimal = view === "minimal";
         list.className = "post-list " + (isMinimal ? "view-minimal" : "view-horizontal");
-        btnM.classList.toggle("active", isMinimal);
-        btnH.classList.toggle("active", !isMinimal);
+        if (btnM) btnM.classList.toggle("active", isMinimal);
+        if (btnH) btnH.classList.toggle("active", !isMinimal);
+        clampMobileTags();
+    }
+
+    function clampMobileTags() {
+        var mobile = window.matchMedia("(max-width: 700px)").matches;
+        var rows = list.querySelectorAll(".entry-tags");
+
+        rows.forEach(function(row) {
+            var preview = row.querySelector(".entry-tags-preview");
+            if (!preview) {
+                return;
+            }
+            var items = Array.prototype.slice.call(preview.children);
+            items.forEach(function(item) {
+                item.style.display = "";
+            });
+
+            if (!mobile || items.length < 3) {
+                return;
+            }
+
+            if (items[2].getBoundingClientRect().right > preview.getBoundingClientRect().right) {
+                items[2].style.display = "none";
+            }
+        });
     }
 
     var stored = localStorage.getItem("post-view");
     setView(stored === "minimal" ? "minimal" : "horizontal");
 
-    btnH.addEventListener("click", function() {
-        setView("horizontal");
-        localStorage.setItem("post-view", "horizontal");
-    });
-    btnM.addEventListener("click", function() {
-        setView("minimal");
-        localStorage.setItem("post-view", "minimal");
-    });
+    if (btnH) {
+        btnH.addEventListener("click", function() {
+            setView("horizontal");
+            localStorage.setItem("post-view", "horizontal");
+        });
+    }
+    if (btnM) {
+        btnM.addEventListener("click", function() {
+            setView("minimal");
+            localStorage.setItem("post-view", "minimal");
+        });
+    }
+
+    window.addEventListener("load", clampMobileTags);
+    window.addEventListener("resize", clampMobileTags);
 })();
 </script>
 
