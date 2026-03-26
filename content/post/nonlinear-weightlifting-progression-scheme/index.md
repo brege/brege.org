@@ -14,6 +14,7 @@ tags:
   - rir
   - amrap
   - volume pyramid
+categories: [fitness]
 date: '2025-03-25'
 summary: 'Using the Epley formula, and others, for estimating an effective pathway through plateaus'
 draft: false

@@ -2,8 +2,9 @@
 date = "2016-10-18T16:35:01-07:00"
 title = "New way forward for deploying brege.org"
 math = false
-tags = ["hugo","rsync","deployment"
-]
+tags = ["hugo", "rsync", "deployment"]
+categories = ["software"]
+series = ["building brege.org"]
 aliases = [
         "/post/new-way-forward-for-deploying-brege/",
         "/post/new-way-forward-for-developing-brege/"

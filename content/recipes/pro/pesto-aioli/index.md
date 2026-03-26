@@ -1,9 +1,10 @@
 ---
 title: "Pesto Aioli"
 tags:
-  - recipes
-  - restaurant
-  - production
+  - sauce
+  - emulsification
+  - mediterranean
+  - vegetarian
 date: 2020-01-01 
 draft: false
 ShowTOC: false

@@ -1,6 +1,7 @@
 ---
 title: "What is Pesto?"
-tags: ["pesto", "basil", "food", "cooking", "graph", "culinary", "olive oil", "garlic"]
+tags: ["pesto", "basil", "food", "graph", "culinary", "olive oil", "garlic"]
+categories: ["cooking"]
 date: 2022-12-11T16:56:56-05:00
 draft: false
 cover:

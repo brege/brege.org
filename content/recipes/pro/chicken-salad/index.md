@@ -1,9 +1,7 @@
 ---
 title: "Chicken Salad"
 tags:
-  - recipes
-  - restaurant
-  - production
+  - salad
 date: 2020-01-01 
 draft: false
 ShowTOC: false

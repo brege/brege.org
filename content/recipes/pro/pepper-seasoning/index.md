@@ -1,6 +1,7 @@
 ---
 title: "Pepper Seasoning"
-tags: []
+tags:
+  - seasoning
 date: 2018-01-01
 draft: false
 ShowTOC: false

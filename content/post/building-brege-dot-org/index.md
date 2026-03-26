@@ -1,6 +1,8 @@
 +++
 math = false
-tags = ["site", "building"]
+tags = ["hugo"]
+categories = ["software"]
+series = ["building brege.org"]
 date = "2016-10-10T19:47:14Z"
 title = "Building brege.org"
 

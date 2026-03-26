@@ -1,9 +1,10 @@
 ---
 title: "Biscuits"
 tags:
-  - recipes
-  - restaurant
-  - production
+  - baked-goods
+  - breakfast
+  - american
+  - vegetarian
 date: 2020-01-01 
 draft: false
 ShowTOC: false

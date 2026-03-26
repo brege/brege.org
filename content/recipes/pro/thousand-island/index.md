@@ -1,6 +1,10 @@
 ---
 title: "Thousand Island / Awesome Sauce"
-tags: []
+tags:
+  - sauce
+  - american
+  - vegetarian
+  - vegan
 date: 2018-01-01
 draft: false
 ShowTOC: false

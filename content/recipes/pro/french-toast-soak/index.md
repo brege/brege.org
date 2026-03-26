@@ -1,9 +1,8 @@
 ---
 title: "French Toast Soak"
 tags:
-  - recipes
-  - restaurant
-  - production
+  - breakfast
+  - culinary-basics
 date: 2020-01-01 
 draft: false
 ShowTOC: false

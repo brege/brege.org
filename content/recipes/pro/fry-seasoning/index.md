@@ -1,6 +1,9 @@
 ---
 title: "Fry Seasoning"
-tags: []
+tags:
+  - seasoning
+  - american
+  - vegetarian
 date: 2018-01-01
 draft: false
 ShowTOC: false

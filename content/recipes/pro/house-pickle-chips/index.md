@@ -1,9 +1,11 @@
 ---
 title: "House Pickle Chips"
 tags:
-  - recipes
-  - restaurant
-  - production
+  - pickling
+  - vegetarian
+  - vegan
+  - dairy-free
+  - gluten-free
 date: 2020-01-01 
 draft: false
 ShowTOC: false

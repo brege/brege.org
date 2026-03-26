@@ -1,6 +1,10 @@
 ---
 title: "Cajun Aioli"
-tags: []
+tags:
+  - sauce
+  - emulsification
+  - american
+  - cajun
 date: 2018-01-01
 draft: false
 ShowTOC: false

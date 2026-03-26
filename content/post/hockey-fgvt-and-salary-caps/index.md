@@ -2,7 +2,8 @@
 title = "Hockey Catch-all Statistics versus Salary Cap"
 date = 2017-11-07T11:11:52-08:00
 math = true
-tags = ["D3","NHL","Hockey","Data"]
+tags = ["d3", "nhl", "hockey", "data-science"]
+categories = ["data-science"]
 draft = false
 cover.image = "nhl17-ogvt-salary.png"
 cover.hidden = true

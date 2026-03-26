@@ -1,7 +1,8 @@
 ---
 title: 'Foraging Humanity'
 summary: 'I talk about three mediums that capture the art of the lost and found'
-tags: ["music", "foraging", "humanity", "hbo", "documentaries", "magazine", "lost+found", "culture"] 
+tags: ["music", "foraging", "hbo", "documentaries", "lost and found"]
+categories: ["culture"] 
 date: 2023-10-31T15:52:39-04:00
 draft: false
 cover:

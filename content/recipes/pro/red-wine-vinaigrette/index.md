@@ -1,6 +1,12 @@
 ---
 title: "Red Wine Vinaigrette"
-tags: []
+tags:
+  - dressing
+  - emulsification
+  - culinary-basics
+  - vegetarian
+  - dairy-free
+  - gluten-free
 date: 2018-01-01
 draft: false
 ShowTOC: false

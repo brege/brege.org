@@ -1,6 +1,8 @@
 ---
 title: "Bleu Cheese Dressing"
-tags: []
+tags:
+  - dressing
+  - emulsification
 date: 2018-01-01
 draft: false
 ShowTOC: false

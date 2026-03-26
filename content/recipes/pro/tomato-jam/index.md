@@ -1,6 +1,9 @@
 ---
 title: "Tomato Jam"
-tags: []
+tags:
+  - vegetarian
+  - preserve
+  - vegan
 date: 2018-01-01
 draft: false
 ShowTOC: false

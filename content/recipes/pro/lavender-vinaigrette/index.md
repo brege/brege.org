@@ -1,9 +1,9 @@
 ---
 title: "Lavender Vinaigrette"
 tags:
-  - recipes
-  - restaurant
-  - production
+  - dressing
+  - emulsification
+  - vegetarian
 date: 2020-01-01 
 draft: false
 ShowTOC: false

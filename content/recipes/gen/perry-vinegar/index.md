@@ -1,10 +1,12 @@
 ---
 title: "Perry Vinegar"
-tags: 
-  - recipes
+tags:
   - vinegar
   - cider
   - fermentation
+  - vegetarian
+  - vegan
+  - dairy-free
 date: 2025-04-25T11:52:48-04:00
 draft: false
 ShowTOC: false

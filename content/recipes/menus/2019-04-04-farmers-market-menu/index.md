@@ -4,10 +4,6 @@ type: menus
 ShowTOC: false
 date: '2019-04-04'
 draft: false
-tags:
-- menus
-- farmers market
-- farm to fork
 title: 2019-04-04 Farmer's Market Menu
 ---
 

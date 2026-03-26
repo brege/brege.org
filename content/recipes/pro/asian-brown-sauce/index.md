@@ -1,6 +1,8 @@
 ---
 title: "Asian Brown Sauce"
-tags: []
+tags:
+  - sauce
+  - asian
 date: 2018-01-01
 draft: false
 ShowTOC: false

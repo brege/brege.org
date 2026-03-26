@@ -1,6 +1,9 @@
 ---
 title: "Cajun Roasted Red Pepper Sauce"
-tags: []
+tags:
+  - sauce
+  - american
+  - cajun
 date: 2018-01-01
 draft: false
 ShowTOC: false

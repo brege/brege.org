@@ -1,6 +1,9 @@
 ---
 title: "Wasabi Deviled Eggs"
-tags: []
+tags:
+  - appetizer
+  - asian
+  - american
 date: 2018-01-01
 draft: false
 ShowTOC: false

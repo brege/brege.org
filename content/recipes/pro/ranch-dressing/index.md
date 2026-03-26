@@ -1,6 +1,10 @@
 ---
 title: "Ranch Dressing"
-tags: []
+tags:
+  - dressing
+  - culinary-basics
+  - american
+  - vegetarian
 date: 2018-01-01
 draft: false
 ShowTOC: false

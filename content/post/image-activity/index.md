@@ -1,14 +1,15 @@
 ---
 title: 'Exploring my camera, screenshot, and image activity'
 summary: 'A data exploration project around my personal image collection habits.'
-tags: 
- - machine-learning
- - data-science
- - image-processing
- - visualization
- - ocr
- - computer-vision
- - data-exploration
+tags:
+  - machine-learning
+  - data-science
+  - image-processing
+  - visualization
+  - ocr
+  - computer-vision
+  - data-exploration
+categories: [data-science]
 date: 2026-02-11T16:09:29-05:00
 draft: false
 aliases: 

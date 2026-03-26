@@ -1,6 +1,9 @@
 ---
 title: "Basil Pesto"
-tags: []
+tags:
+  - sauce
+  - mediterranean
+  - vegetarian
 date: 2018-01-01
 draft: false
 ShowTOC: false

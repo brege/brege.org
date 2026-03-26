@@ -1,9 +1,8 @@
 ---
 title: "Candied Walnuts"
 tags:
-  - recipes
-  - restaurant
-  - production
+  - candied
+  - vegetarian
 date: 2020-01-01 
 draft: false
 ShowTOC: false

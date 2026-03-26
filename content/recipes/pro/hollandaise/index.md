@@ -1,6 +1,9 @@
 ---
 title: "Hollandaise"
-tags: []
+tags:
+  - sauce
+  - emulsification
+  - culinary-basics
 date: 2018-01-01
 draft: false
 ShowTOC: false

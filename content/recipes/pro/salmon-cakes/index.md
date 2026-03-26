@@ -1,6 +1,8 @@
 ---
 title: "Salmon Cakes"
-tags: []
+tags:
+  - appetizer
+  - breakfast
 date: 2018-01-01
 draft: false
 ShowTOC: false

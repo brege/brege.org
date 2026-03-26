@@ -1,6 +1,10 @@
 ---
 title: "Garlic-Parmessan Cream Sauce"
-tags: []
+tags:
+  - mediterranean
+  - vegetarian
+  - culinary-basics
+  - sauce
 date: 2018-01-01
 draft: false
 ShowTOC: false

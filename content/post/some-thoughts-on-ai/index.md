@@ -2,6 +2,7 @@
 title: 'Some thoughts on AI'
 summary: ''
 tags: []
+categories: [culture]
 date: 2025-12-01T23:04:20-05:00
 draft: true
 cover:

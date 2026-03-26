@@ -1,7 +1,7 @@
 +++
 math = false
-tags = ["certbot", "ssl", "https", "systemd"
-]
+tags = ["certbot", "https", "systemd"]
+categories = ["software"]
 date = "2016-10-11T00:15:22Z"
 title = "Automatic renewal of Let's Encrypt Certificates"
 +++

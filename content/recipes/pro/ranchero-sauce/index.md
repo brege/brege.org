@@ -1,6 +1,8 @@
 ---
 title: "Ranchero Sauce"
-tags: []
+tags:
+  - sauce
+  - hispanic
 date: 2018-01-01
 draft: false
 ShowTOC: false

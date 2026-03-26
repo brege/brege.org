@@ -1,6 +1,7 @@
 ---
 title: "Marinated Shrimp or Steak"
-tags: []
+tags:
+  - marinade
 date: 2018-01-01
 draft: false
 ShowTOC: false

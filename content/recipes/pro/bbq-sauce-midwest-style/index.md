@@ -1,6 +1,8 @@
 ---
 title: "BBQ Sauce (midwest style)"
-tags: []
+tags:
+  - sauce
+  - american
 date: 2018-01-01
 draft: false
 ShowTOC: false

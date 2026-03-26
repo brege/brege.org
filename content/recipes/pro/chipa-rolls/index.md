@@ -1,6 +1,8 @@
 ---
 title: "Chipa Rolls"
-tags: []
+tags:
+  - baked-goods
+  - argentinian
 date: 2018-01-01
 draft: false
 ShowTOC: false

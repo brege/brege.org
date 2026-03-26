@@ -1,6 +1,11 @@
 ---
 title: "Fresh Marinara"
-tags: []
+tags:
+  - mediterranean
+  - vegetarian
+  - vegan
+  - dairy-free
+  - gluten-free
 date: 2018-01-01
 draft: false
 ShowTOC: false

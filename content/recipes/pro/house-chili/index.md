@@ -1,6 +1,7 @@
 ---
 title: "House Chili"
-tags: []
+tags:
+  - american
 date: 2018-01-01
 draft: false
 ShowTOC: false

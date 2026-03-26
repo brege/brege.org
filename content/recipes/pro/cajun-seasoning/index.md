@@ -1,6 +1,10 @@
 ---
 title: "Cajun Seasoning"
-tags: []
+tags:
+  - seasoning
+  - american
+  - cajun
+  - vegetarian
 date: 2018-01-01
 draft: false
 ShowTOC: false

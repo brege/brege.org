@@ -1,6 +1,9 @@
 ---
 title: "Sriracha Aioli"
-tags: []
+tags:
+  - sauce
+  - emulsification
+  - asian
 date: 2018-01-01
 draft: false
 ShowTOC: false

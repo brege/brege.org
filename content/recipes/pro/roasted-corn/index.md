@@ -1,6 +1,9 @@
 ---
 title: "Roasted Corn"
-tags: []
+tags:
+  - hispanic
+  - vegetarian
+  - vegan
 date: 2018-01-01
 draft: false
 ShowTOC: false

@@ -1,9 +1,8 @@
 ---
 title: "Beer Mustard Sauce"
 tags:
-  - recipes
-  - restaurant
-  - production
+  - sauce
+  - vegetarian
 date: 2020-01-01 
 draft: false
 ShowTOC: false

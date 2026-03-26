@@ -1,6 +1,9 @@
 ---
 title: "Bourbon BBQ Sauce"
-tags: []
+tags:
+  - sauce
+  - american
+  - alcohol
 date: 2018-01-01
 draft: false
 ShowTOC: false

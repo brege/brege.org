@@ -1,9 +1,11 @@
 ---
 title: "Ginger Sesame Vinaigrette"
 tags:
-  - recipes
-  - restaurant
-  - production
+  - dressing
+  - emulsification
+  - asian
+  - vegetarian
+  - dairy-free
 date: 2020-01-01 
 draft: false
 ShowTOC: false

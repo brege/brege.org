@@ -1,6 +1,8 @@
 ---
 title: "Bacon Deviled Eggs"
-tags: []
+tags:
+  - appetizer
+  - american
 date: 2018-01-01
 draft: false
 ShowTOC: false

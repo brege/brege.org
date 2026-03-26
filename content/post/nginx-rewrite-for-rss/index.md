@@ -1,6 +1,7 @@
 +++
 math = false
-tags = ["rss","nginx"]
+tags = ["rss", "nginx"]
+categories = ["software"]
 date = "2016-10-11T07:01:47Z"
 title = "Nginx rewrite for RSS"
 +++

@@ -1,9 +1,8 @@
 ---
 title: "Greek Yogurt"
-tags: 
-  - recipes
+tags:
   - yogurt
-  - Greek yogurt
+  - greek-yogurt
   - fermentation
   - dairy
 date: 2024-02-14

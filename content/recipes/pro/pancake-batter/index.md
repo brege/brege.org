@@ -1,9 +1,9 @@
 ---
 title: "Pancake Batter"
 tags:
-  - recipes
-  - restaurant
-  - production
+  - breakfast
+  - culinary-basics
+  - vegetarian
 date: 2020-01-01 
 draft: false
 ShowTOC: false

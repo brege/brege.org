@@ -1,9 +1,9 @@
 ---
 title: "Ahi Tuna Salad"
 tags:
-  - recipes
-  - restaurant
-  - production
+  - salad
+  - high-protein
+  - seafood
 date: 2020-01-01 
 draft: false
 ShowTOC: false

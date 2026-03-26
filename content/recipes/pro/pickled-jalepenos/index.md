@@ -1,6 +1,11 @@
 ---
 title: "Pickled Jalepenos"
-tags: []
+tags:
+  - pickling
+  - hispanic
+  - vegetarian
+  - vegan
+  - gluten-free
 date: 2018-01-01
 draft: false
 ShowTOC: false

@@ -1,9 +1,9 @@
 ---
 title: "Honey Balsamic Vinaigrette"
 tags:
-  - recipes
-  - restaurant
-  - production
+  - dressing
+  - emulsification
+  - mediterranean
 date: 2020-01-01 
 draft: false
 ShowTOC: false

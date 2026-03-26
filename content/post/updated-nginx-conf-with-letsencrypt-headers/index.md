@@ -3,8 +3,8 @@ title = "Updated Nginx configuration with Let's Encrypt headers"
 math = false
 highlight = true
 date = "2017-04-03T15:06:38-07:00"
-tags = ["nginx", "HSTS", "Let's Encrypt" 
-]
+tags = ["nginx", "hsts", "lets-encrypt"]
+categories = ["software"]
 
 [header]
   image = ""

@@ -1,17 +1,16 @@
 ---
 title: "Helpful Red Dead Redemption 2 Checklists"
-tags: 
-  - RDR2
-  - Red Dead Redemption
-  - PS4
-  - PS5
-  - Xbox Series X
-  - Xbox Series S
-  - Checklist
-  - Spreadsheet
-  - Printable
-  - 100% Checklist
-  - Completionist
+tags:
+  - rdr2
+  - red dead redemption
+  - checklist
+  - spreadsheet
+  - guide
+  - playthrough
+  - printable
+  - playstation
+  - xbox
+categories: [gaming]
 date: 2022-02-06T02:12:20-04:00
 draft: false
 cover:

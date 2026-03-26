@@ -1,6 +1,8 @@
 ---
 title: "Croutons"
-tags: []
+tags:
+  - culinary-basics
+  - vegetarian
 date: 2018-01-01
 draft: false
 ShowTOC: false

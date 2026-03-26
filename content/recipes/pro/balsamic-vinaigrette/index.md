@@ -1,6 +1,13 @@
 ---
 title: "Balsamic Vinaigrette"
-tags: []
+tags:
+  - dressing
+  - emulsification
+  - mediterranean
+  - vegetarian
+  - dairy-free
+  - gluten-free
+  - vegan
 date: 2018-01-01
 draft: false
 ShowTOC: false

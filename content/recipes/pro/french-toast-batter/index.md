@@ -1,6 +1,8 @@
 ---
 title: "French Toast Batter"
-tags: []
+tags:
+  - breakfast
+  - culinary-basics
 date: 2018-01-01
 draft: false
 ShowTOC: false

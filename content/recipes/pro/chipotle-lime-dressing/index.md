@@ -1,9 +1,9 @@
 ---
 title: "Chipotle-Lime Dressing"
 tags:
-  - recipes
-  - restaurant
-  - production
+  - dressing
+  - emulsification
+  - hispanic
 date: 2020-01-01 
 draft: false
 ShowTOC: false

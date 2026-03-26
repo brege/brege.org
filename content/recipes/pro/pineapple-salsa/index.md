@@ -1,9 +1,11 @@
 ---
 title: "Pineapple Salsa"
 tags:
-  - recipes
-  - restaurant
-  - production
+  - hispanic
+  - vegetarian
+  - vegan
+  - dairy-free
+  - gluten-free
 date: 2020-01-01 
 draft: false
 ShowTOC: false

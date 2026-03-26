@@ -1,9 +1,7 @@
 ---
 title: "Pulled Pork"
 tags:
-  - recipes
-  - restaurant
-  - production
+  - american
 date: 2020-01-01 
 draft: false
 ShowTOC: false

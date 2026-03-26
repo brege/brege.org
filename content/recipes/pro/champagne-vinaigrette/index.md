@@ -1,6 +1,12 @@
 ---
 title: "Champagne Vinaigrette"
-tags: []
+tags:
+  - dressing
+  - emulsification
+  - vegetarian
+  - dairy-free
+  - gluten-free
+  - alcohol
 date: 2018-01-01
 draft: false
 ShowTOC: false

@@ -1,12 +1,10 @@
 ---
 title: "Power Bars"
 tags:
-  - power bars
-  - recipes
+  - power-bars
   - no-bake
-  - diet
-  - healthy food
   - granola
+  - vegetarian
 date: 2025-04-20T19:55:39-04:00
 draft: false
 ShowTOC: false
@@ -64,7 +62,7 @@ ShowTOC: false
 
 ### Notes:
 
-- If you want a dryer protein ball, use coconut or maple sugar in place of honey or maple syrup
+- If you want a dryer protein bar, use coconut or maple sugar in place of honey or maple syrup
 - **Substitution:** apple sauce ↔ ripe banana ↔ ripe pear
 - **Substitution:** peanut butter ↔ almond butter
 - Never be afraid to adjust oats if the mixture is too wet

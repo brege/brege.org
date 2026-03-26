@@ -1,9 +1,8 @@
 ---
 title: "Thai Peanut Sauce"
 tags:
-  - recipes
-  - restaurant
-  - production
+  - sauce
+  - asian
 date: 2020-01-01 
 draft: false
 ShowTOC: false

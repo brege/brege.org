@@ -1,9 +1,7 @@
 ---
 title: "Quiche"
 tags:
-  - recipes
-  - restaurant
-  - production
+  - breakfast
 date: 2020-01-01 
 draft: false
 ShowTOC: false

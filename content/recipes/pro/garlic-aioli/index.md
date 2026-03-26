@@ -1,6 +1,8 @@
 ---
 title: "Garlic Aioli"
-tags: []
+tags:
+  - sauce
+  - emulsification
 date: 2018-01-01
 draft: false
 ShowTOC: false

@@ -1,6 +1,8 @@
 ---
 title: "Boneless Beef Short Ribs"
-tags: []
+tags:
+  - braised
+  - alcohol
 date: 2018-01-01
 draft: false
 ShowTOC: false
