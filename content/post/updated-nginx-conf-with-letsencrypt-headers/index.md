@@ -1,10 +1,11 @@
 +++
 title = "Updated Nginx configuration with Let's Encrypt headers"
+tags = ["nginx", "lets-encrypt", "https", "hsts", "tls", "security-headers"]
+categories = ["software"]
+series = ["web hardening"]
 math = false
 highlight = true
 date = "2017-04-03T15:06:38-07:00"
-tags = ["nginx", "hsts", "lets-encrypt"]
-categories = ["software"]
 
 [header]
   image = ""

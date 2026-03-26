@@ -1,9 +1,9 @@
 +++
 math = false
-tags = ["rss", "nginx"]
-categories = ["software"]
 date = "2016-10-11T07:01:47Z"
 title = "Nginx rewrite for RSS"
+tags = ["nginx", "rss", "rewrite-rules", "feeds"]
+categories = ["software"]
 +++
 
 Add the following to the main server block in your nginx config:

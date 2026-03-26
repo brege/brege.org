@@ -1,10 +1,10 @@
 +++
 math = false
-tags = ["hugo"]
-categories = ["software"]
-series = ["building brege.org"]
 date = "2016-10-10T19:47:14Z"
 title = "Building brege.org"
+tags = ["hugo", "nginx", "lets-encrypt", "deployment", "digitalocean", "static-site"]
+categories = ["software"]
+series = ["building brege.org"]
 
 [header]
 image = ""

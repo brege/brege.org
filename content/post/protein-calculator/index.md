@@ -3,16 +3,15 @@ title: 'How much of one single food do you need to eat in a day to satisfy prote
 summary: 'A live protein calculator prototype for common high protein food sources.'
 tags:
   - protein
-  - calories
-  - protein calculator
-  - fat loss
-  - weight loss
-  - weightlifting
-  - resistance training
-  - protein synthesis
-  - muscle mass
-  - hypertrophy
-categories: [cooking, fitness]
+  - high-protein
+  - calculator
+  - nutrition
+  - muscle-gain
+  - fat-loss
+  - food-data
+categories:
+  - culinary
+  - health-and-wellness
 date: 2025-04-17T16:54:44-04:00
 draft: false
 cover:

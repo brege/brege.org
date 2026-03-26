@@ -1,9 +1,10 @@
 +++
 title = "Getting an A+ on Mozilla's HTTP Observatory"
+tags = ["nginx", "mozilla-observatory", "https", "hsts", "security-headers", "csp"]
+categories = ["software"]
+series = ["web hardening"]
 date = 2017-01-09T18:29:50-05:00
 math = true
-tags = ["nginx", "https", "observatory", "mozilla", "hsts"]
-categories = ["software"]
 draft = false
 
 [header]

@@ -1,22 +1,18 @@
 ---
 title: 'Non-linear Weightlifting Progression Calculator'
-tags:
-  - weightlifting
-  - regression
-  - nonlinear
-  - epley formula
-  - progression
-  - strength training
-  - plateaus
-  - one-rep max
-  - 1rm
-  - reps in reserve
-  - rir
-  - amrap
-  - volume pyramid
-categories: [fitness]
 date: '2025-03-25'
 summary: 'Using the Epley formula, and others, for estimating an effective pathway through plateaus'
+tags:
+  - weightlifting
+  - strength-training
+  - calculator
+  - epley-formula
+  - 1rm
+  - rir
+  - amrap
+  - progression
+categories:
+  - health-and-wellness
 draft: false
 aliases: '/epley'
 cover:

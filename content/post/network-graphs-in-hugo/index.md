@@ -1,8 +1,16 @@
 ---
 title: "Network Graphs in Hugo"
-tags: ["network", "networkx", "graph", "vis.js", "hugo"]
-categories: ["data-science"]
-series: ["network graphs in hugo"]
+tags:
+  - hugo
+  - network-graphs
+  - vis.js
+  - tutorial
+  - data-visualization
+categories:
+  - software
+  - data-science
+series:
+  - network graphs in hugo
 date: 2022-12-09T23:02:42-05:00
 draft: false
 cover:

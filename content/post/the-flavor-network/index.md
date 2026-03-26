@@ -3,8 +3,18 @@ title: 'The Flavor Network'
 summary: >
     This tool allows you to explore the flavor network, a social graph for flavor profiles. The network is based on the [*Flavor Bible*](https://karenandandrew.com/books/the-flavor-bible/) and soon the companion book [*What to Drink with What You Eat*](https://karenandandrew.com/books/what-to-drink-with-what-you-eat/).
 authors: 'Wyatt Brege'
-tags: ['flavor', 'network', 'vis.js', 'graph', 'jaccard']
-categories: ['cooking', 'data-science']
+tags:
+  - flavor-pairing
+  - network-graphs
+  - vis.js
+  - jaccard
+  - ingredients
+  - recipe-discovery
+categories:
+  - data-science
+  - culinary
+series:
+  - network graphs in hugo
 date: 2023-01-04T04:04:49-05:00
 cover:
   image: 'lemon-basil-vanilla.png'

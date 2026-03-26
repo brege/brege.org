@@ -2,15 +2,15 @@
 title: "Helpful Red Dead Redemption 2 Checklists"
 tags:
   - rdr2
-  - red dead redemption
+  - red-dead-redemption
   - checklist
   - spreadsheet
-  - guide
-  - playthrough
   - printable
+  - completionist
   - playstation
   - xbox
-categories: [gaming]
+categories:
+  - gaming
 date: 2022-02-06T02:12:20-04:00
 draft: false
 cover:

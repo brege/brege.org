@@ -1,9 +1,10 @@
 +++
 math = false
-tags = ["certbot", "https", "systemd"]
-categories = ["software"]
 date = "2016-10-11T00:15:22Z"
 title = "Automatic renewal of Let's Encrypt Certificates"
+tags = ["lets-encrypt", "certbot", "systemd", "https", "certificate-renewal"]
+categories = ["software"]
+series = ["web hardening"]
 +++
 
 Let's Encrypt certificates need to be renewed every three months.

@@ -1,8 +1,18 @@
 ---
 title: '20 years of email'
 summary: 'Making my case that satisfaction surveys are the new email cancer'
-tags: [email, analysis, visualization, data-science, python, thunderbird]
-categories: [data-science]
+tags:
+  - email
+  - thunderbird
+  - spam
+  - surveys
+  - classification
+  - visualization
+  - personal-data
+categories:
+  - data-science
+series:
+  - personal data explorations
 date: 2025-09-01
 updated: 2026-02-24
 draft: false

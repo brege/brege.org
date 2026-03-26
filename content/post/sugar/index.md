@@ -1,7 +1,15 @@
 ---
 title: 'Some Sweet Thoughts on Sugar'
-tags: ['syrup', 'sugar', 'caramel', 'toffee', 'butterscotch', 'honey', 'maple']
-categories: ['cooking']
+tags:
+  - sugar
+  - sweeteners
+  - caramel
+  - honey
+  - maple
+  - dessert
+  - syrup
+categories:
+  - culinary
 date: 2023-06-10T16:35:51-04:00
 draft: false
 cover:

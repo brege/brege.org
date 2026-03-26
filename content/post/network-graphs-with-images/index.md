@@ -1,8 +1,16 @@
 ---
 title: "Network Graphs with Images"
-tags: ["network", "vis.js", "graph", "hugo"]
-categories: ["data-science"]
-series: ["network graphs in hugo"]
+tags:
+  - hugo
+  - network-graphs
+  - vis.js
+  - images
+  - data-visualization
+categories:
+  - software
+  - data-science
+series:
+  - network graphs in hugo
 date: 2022-12-21T02:15:04-05:00
 featured: false
 draft: false

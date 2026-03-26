@@ -1,10 +1,10 @@
 +++
 math = false
-tags = ["github"]
-categories = ["software"]
-series = ["building brege.org"]
 date = "2016-10-12T00:32:21Z"
 title = "brege.org now on GitHub"
+tags = ["github", "site-source", "hugo"]
+categories = ["software"]
+series = ["building brege.org"]
 
 [header]
 +++
