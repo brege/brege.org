@@ -24,10 +24,12 @@ showToc: false
 
 ---
 
-### phone calls
+### **phone calls**
 
 spam is out of control. if you've tried to reach me by phone and gotten the assistant, please leave a voicemail or voice transcript and i will get back to you when i am able.
 
-### fangman socials *\*dies*\*
+---
+
+### **fangman socials *\*dies*\***
 
 i rarely open instagram or linkedin unless i am nudged to do so by email. response timescales are on the order of ~weeks or ~months.

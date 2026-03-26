@@ -155,24 +155,7 @@
     flex: 0 0 auto;
 }
 .post-card .entry-tags-preview a {
-    font-variant: small-caps;
-    font-size: 0.82em;
     letter-spacing: 0.04em;
-    color: var(--secondary);
-    white-space: nowrap;
-}
-.post-card .entry-tags-preview a:hover {
-    color: var(--accent);
-}
-.post-card .entry-tags-preview a::before {
-    content: "";
-    display: inline-block;
-    width: 5px;
-    height: 5px;
-    border: 1px solid var(--secondary);
-    border-radius: 50%;
-    margin-right: 0.3em;
-    vertical-align: 2px;
 }
 .post-card .entry-date-col {
     display: flex;
@@ -287,9 +270,9 @@
 .post-tags .tag-list,
 .post-tags .tag-list li,
 .post-tags .tag-list a {
-    background: none !important;
-    border: none !important;
-    border-radius: 0 !important;
+    background: none;
+    border: none;
+    border-radius: 0;
 }
 .post-tags .tag-line {
     flex: 1;
@@ -308,19 +291,18 @@
 .post-tags .tag-list li {
     margin: 0;
 }
+.post-card .entry-tags-preview a,
 .post-tags .tag-list a {
-    display: inline-block;
     font-variant: small-caps;
     font-size: 0.82em;
-    letter-spacing: 0.5px;
     color: var(--secondary);
     white-space: nowrap;
-    line-height: 1.9;
-    padding: 0;
 }
+.post-card .entry-tags-preview a:hover,
 .post-tags .tag-list a:hover {
     color: var(--accent);
 }
+.post-card .entry-tags-preview a::before,
 .post-tags .tag-list a::before {
     content: "";
     display: inline-block;
@@ -330,6 +312,12 @@
     border-radius: 50%;
     margin-right: 0.3em;
     vertical-align: 2px;
+}
+.post-tags .tag-list a {
+    display: inline-block;
+    letter-spacing: 0.5px;
+    line-height: 1.9;
+    padding: 0;
 }
 
 /* --- bottom nav: small-caps guillemet arrows --- */
@@ -398,10 +386,10 @@
     max-width: 100%;
     padding: 0 0 0.7rem;
     margin: 1.5rem auto 0;
-    background: none !important;
-    border: none !important;
-    border-bottom: 3px solid var(--border) !important;
-    border-radius: 0 !important;
+    background: none;
+    border: none;
+    border-bottom: 3px solid var(--border);
+    border-radius: 0;
     overflow: visible;
 }
 .share-buttons li,
@@ -413,7 +401,7 @@
 }
 .share-buttons a:hover {
     color: var(--accent);
-    background: none !important;
+    background: none;
 }
 .share-buttons a:not(:last-of-type) {
     margin-inline-end: 0;
@@ -452,22 +440,21 @@
 
 .toc-preamble .toc {
     margin-bottom: var(--content-gap);
+}
+
+.post-single .toc {
     border: none;
     background: none;
     border-radius: 0;
     padding: 0;
 }
-
-.toc-preamble .toc details,
-.toc-margin-wrap .toc details {
+.post-single .toc details {
     border: none;
     background: none;
     margin: 0;
     padding: 0;
 }
-
-.toc-preamble .toc summary,
-.toc-margin-wrap .toc summary {
+.post-single .toc summary {
     font-size: 0.8em;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -478,53 +465,39 @@
     list-style: none;
     margin-inline-start: 0;
 }
-.toc-preamble .toc summary::-webkit-details-marker,
-.toc-margin-wrap .toc summary::-webkit-details-marker { display: none; }
-.toc-preamble .toc summary .details,
-.toc-margin-wrap .toc summary .details { font-weight: 500; }
-
-.toc-preamble .toc .inner,
-.toc-margin-wrap .toc .inner {
+.post-single .toc summary::-webkit-details-marker { display: none; }
+.post-single .toc summary .details { font-weight: 500; }
+.post-single .toc .inner {
     border-left: 2px solid var(--border);
     padding-left: 1rem;
     margin: 0;
     padding-right: 0;
     opacity: 1;
 }
-
-.toc-preamble .toc .inner ul,
-.toc-margin-wrap .toc .inner ul {
+.post-single .toc .inner ul {
     list-style: none;
     padding-left: 0;
     font-size: 0.85em;
     line-height: 1.4;
     margin-inline-start: 0;
 }
-
-.toc-preamble .toc .inner ul ul,
-.toc-margin-wrap .toc .inner ul ul {
+.post-single .toc .inner ul ul {
     padding-left: 1rem;
     margin-top: 0.3rem;
     margin-inline-start: 0;
 }
-
-.toc-preamble .toc .inner li,
-.toc-margin-wrap .toc .inner li {
+.post-single .toc .inner li {
     margin-bottom: 0.5rem;
 }
-
-.toc-preamble .toc .inner a,
-.toc-margin-wrap .toc .inner a {
+.post-single .toc .inner a {
     color: var(--secondary);
     transition: color 0.15s;
     display: block;
     padding: 0.1em 0;
     box-shadow: none;
 }
-.toc-preamble .toc .inner a:hover,
-.toc-preamble .toc .inner a.active,
-.toc-margin-wrap .toc .inner a:hover,
-.toc-margin-wrap .toc .inner a.active {
+.post-single .toc .inner a:hover,
+.post-single .toc .inner a.active {
     color: var(--accent);
     box-shadow: none;
 }
@@ -553,10 +526,6 @@
     .toc-margin-wrap .toc {
         width: 200px;
         margin: 0;
-        border: none;
-        background: none;
-        border-radius: 0;
-        padding: 0;
     }
 
     :root[data-theme="dark"] .toc-margin-wrap .toc {
