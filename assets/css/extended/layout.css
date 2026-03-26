@@ -557,33 +557,51 @@
 /* --- view toggle buttons --- */
 .view-toggle {
     display: flex;
-    gap: 0.3rem;
-    background: var(--tertiary);
-    padding: 3px;
-    border-radius: 6px;
+    flex: 0 0 auto;
 }
 .view-toggle button {
     background: none;
     border: none;
     cursor: pointer;
-    padding: 0.35em 0.5em;
-    border-radius: 4px;
+    padding: 0;
     color: var(--secondary);
     display: flex;
     align-items: center;
-    transition: background 0.15s, color 0.15s;
+    justify-content: center;
+    transition: color 0.15s;
 }
-.view-toggle button.active {
-    background: var(--theme);
+.view-toggle button:hover {
     color: var(--primary);
 }
-.view-toggle button:hover { color: var(--primary); }
 .view-toggle svg {
+    display: block;
     width: 16px;
     height: 16px;
     stroke: currentColor;
     fill: none;
     stroke-width: 2;
+}
+.view-toggle[data-current-view="horizontal"] .icon-horizontal,
+.view-toggle[data-current-view="minimal"] .icon-minimal {
+    display: none;
+}
+
+.home-info-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.home-info-footer .social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 0;
+}
+.home-info-footer .view-toggle {
+    margin-left: auto;
+}
+.home-info-footer .view-toggle button {
+    padding: 10px;
 }
 
 /* --- category label --- */
@@ -608,6 +626,10 @@
     .page-header-main {
         align-items: flex-start;
         flex-wrap: wrap;
+    }
+
+    .home-info-footer {
+        gap: 0.75rem;
     }
 
     .view-horizontal .post-card {

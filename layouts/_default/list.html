@@ -35,12 +35,10 @@
       {{- end }}
     </h1>
     {{- if gt (len $paginator.Pages) 0 }}
-    <div class="view-toggle">
-      <button id="btn-horiz" class="active" title="Card view">
-        <svg viewBox="0 0 16 16"><rect x="1" y="2" width="5" height="5" rx="1"/><line x1="8" y1="3" x2="15" y2="3"/><line x1="8" y1="6" x2="13" y2="6"/><rect x="1" y="9" width="5" height="5" rx="1"/><line x1="8" y1="10" x2="15" y2="10"/><line x1="8" y1="13" x2="13" y2="13"/></svg>
-      </button>
-      <button id="btn-minimal" title="List view">
-        <svg viewBox="0 0 16 16"><line x1="1" y1="3" x2="15" y2="3"/><line x1="1" y1="6.5" x2="15" y2="6.5"/><line x1="1" y1="10" x2="15" y2="10"/><line x1="1" y1="13.5" x2="15" y2="13.5"/></svg>
+    <div class="view-toggle" data-current-view="horizontal">
+      <button type="button" title="Switch to list view" aria-label="Switch to list view">
+        <svg class="icon-horizontal" viewBox="0 0 16 16"><rect x="1" y="2" width="5" height="5" rx="1"/><line x1="8" y1="3" x2="15" y2="3"/><line x1="8" y1="6" x2="13" y2="6"/><rect x="1" y="9" width="5" height="5" rx="1"/><line x1="8" y1="10" x2="15" y2="10"/><line x1="8" y1="13" x2="13" y2="13"/></svg>
+        <svg class="icon-minimal" viewBox="0 0 16 16"><line x1="1" y1="3" x2="15" y2="3"/><line x1="1" y1="6.5" x2="15" y2="6.5"/><line x1="1" y1="10" x2="15" y2="10"/><line x1="1" y1="13.5" x2="15" y2="13.5"/></svg>
       </button>
     </div>
     {{- end }}
@@ -165,16 +163,30 @@
 <script>
 (function() {
     var list = document.getElementById("post-list");
-    var btnH = document.getElementById("btn-horiz");
-    var btnM = document.getElementById("btn-minimal");
-    if (!list) return;
+    var toggles = Array.prototype.slice.call(document.querySelectorAll(".view-toggle"));
+    if (!list || toggles.length === 0) return;
 
     function setView(view) {
         var isMinimal = view === "minimal";
         list.className = "post-list " + (isMinimal ? "view-minimal" : "view-horizontal");
-        if (btnM) btnM.classList.toggle("active", isMinimal);
-        if (btnH) btnH.classList.toggle("active", !isMinimal);
+        syncToggles(view);
         clampMobileTags();
+    }
+
+    function syncToggles(view) {
+        var nextLabel = view === "minimal" ? "Switch to card view" : "Switch to list view";
+
+        toggles.forEach(function(toggle) {
+            var button = toggle.querySelector("button");
+            toggle.dataset.currentView = view;
+
+            if (!button) {
+                return;
+            }
+
+            button.title = nextLabel;
+            button.setAttribute("aria-label", nextLabel);
+        });
     }
 
     function clampMobileTags() {
@@ -204,18 +216,19 @@
     var stored = localStorage.getItem("post-view");
     setView(stored === "minimal" ? "minimal" : "horizontal");
 
-    if (btnH) {
-        btnH.addEventListener("click", function() {
-            setView("horizontal");
-            localStorage.setItem("post-view", "horizontal");
+    toggles.forEach(function(toggle) {
+        var button = toggle.querySelector("button");
+
+        if (!button) {
+            return;
+        }
+
+        button.addEventListener("click", function() {
+            var nextView = toggle.dataset.currentView === "minimal" ? "horizontal" : "minimal";
+            setView(nextView);
+            localStorage.setItem("post-view", nextView);
         });
-    }
-    if (btnM) {
-        btnM.addEventListener("click", function() {
-            setView("minimal");
-            localStorage.setItem("post-view", "minimal");
-        });
-    }
+    });
 
     window.addEventListener("load", clampMobileTags);
     window.addEventListener("resize", clampMobileTags);
