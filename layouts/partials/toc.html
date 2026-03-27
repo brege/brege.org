@@ -20,6 +20,16 @@
 <div class="toc">
     <details {{if (.Param "TocOpen") }} open{{ end }}>
         <summary accesskey="c" title="(Alt + C)">
+            <span class="toc-mark" aria-hidden="true">
+                <svg class="toc-mark-closed" viewBox="0 0 18 18">
+                    <path d="M2.75 4.5h12.5"></path>
+                    <path d="M2.75 9h9.25"></path>
+                    <path d="M2.75 13.5h6.25"></path>
+                </svg>
+                <svg class="toc-mark-open" viewBox="0 0 18 18">
+                    <path d="M2.75 9h12.5"></path>
+                </svg>
+            </span>
             <span class="details">{{- i18n "toc" | default "Table of Contents" }}</span>
         </summary>
 

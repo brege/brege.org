@@ -48,6 +48,66 @@
   </div>
   {{- end }}
 
+  {{- if $showToc }}
+  <script>
+    (function() {
+      var tocLinks = Array.from(document.querySelectorAll('.post-single .toc .inner a[href^="#"]'));
+      if (!tocLinks.length) return;
+
+      var groups = new Map();
+      var headings = [];
+
+      tocLinks.forEach(function(link) {
+        var id = decodeURIComponent(link.getAttribute('href').slice(1));
+        if (!id) return;
+        var target = document.getElementById(id);
+        if (!target) return;
+        if (!groups.has(id)) {
+          groups.set(id, []);
+          headings.push(target);
+        }
+        groups.get(id).push(link);
+      });
+
+      if (!headings.length) return;
+
+      var activeId = "";
+
+      function setActive(id) {
+        if (id === activeId) return;
+        activeId = id;
+        groups.forEach(function(links, key) {
+          var isActive = key === id;
+          links.forEach(function(link) {
+            link.classList.toggle('active', isActive);
+          });
+        });
+      }
+
+      function syncActive() {
+        var offset = 120;
+        var current = headings[0];
+
+        headings.forEach(function(heading) {
+          if (heading.getBoundingClientRect().top - offset <= 0) {
+            current = heading;
+          }
+        });
+
+        if ((window.innerHeight + window.scrollY) >= (document.documentElement.scrollHeight - 4)) {
+          current = headings[headings.length - 1];
+        }
+
+        setActive(current.id);
+      }
+
+      window.addEventListener('scroll', syncActive, { passive: true });
+      window.addEventListener('resize', syncActive);
+      syncActive();
+    })();
+  </script>
+  {{- end }}
+
   <footer class="post-footer">
     {{- $tags := "tags" }}
     {{- with ($.GetTerms $tags) }}

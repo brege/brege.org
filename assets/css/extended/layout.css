@@ -642,6 +642,9 @@
     padding: 0;
 }
 .post-single .toc summary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
     font-size: 0.8em;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -653,6 +656,35 @@
     margin-inline-start: 0;
 }
 .post-single .toc summary::-webkit-details-marker { display: none; }
+.post-single .toc .toc-mark {
+    display: inline-block;
+    position: relative;
+    width: 1.05rem;
+    height: 1.05rem;
+    color: var(--primary);
+    flex: 0 0 auto;
+    overflow: visible;
+}
+.post-single .toc .toc-mark svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+}
+.post-single .toc .toc-mark-open {
+    display: none;
+}
+.post-single .toc details[open] .toc-mark-closed {
+    display: none;
+}
+.post-single .toc details[open] .toc-mark-open {
+    display: block;
+}
 .post-single .toc summary .details { font-weight: 500; }
 .post-single .toc .inner {
     border-left: 2px solid var(--border);
@@ -682,6 +714,7 @@
     display: block;
     padding: 0.1em 0;
     box-shadow: none;
+    position: relative;
 }
 .post-single .toc .inner a:hover,
 .post-single .toc .inner a.active {
@@ -704,6 +737,17 @@
         width: 200px;
         max-height: calc(100vh - var(--header-height) - 3rem);
         overflow-y: auto;
+    }
+
+    .toc-margin-wrap .toc .inner a.active::before {
+        content: "";
+        position: absolute;
+        top: 0.22em;
+        bottom: 0.22em;
+        left: -1.15rem;
+        width: 3px;
+        background: var(--accent);
+        border-radius: 999px;
     }
 
     .toc-preamble {
