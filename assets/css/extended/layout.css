@@ -800,13 +800,17 @@
 }
 .view-toggle,
 .tags-toggle,
-.recipe-view-toggle {
+.recipe-view-toggle,
+.menu-view-toggle,
+.menu-sort-toggle {
     display: flex;
     flex: 0 0 auto;
 }
 .view-toggle button,
 .tags-toggle button,
-.recipe-view-toggle button {
+.recipe-view-toggle button,
+.menu-view-toggle button,
+.menu-sort-toggle button {
     background: none;
     border: none;
     cursor: pointer;
@@ -819,12 +823,16 @@
 }
 .view-toggle button:hover,
 .tags-toggle button:hover,
-.recipe-view-toggle button:hover {
+.recipe-view-toggle button:hover,
+.menu-view-toggle button:hover,
+.menu-sort-toggle button:hover {
     color: var(--primary);
 }
 .view-toggle svg,
 .tags-toggle svg,
-.recipe-view-toggle svg {
+.recipe-view-toggle svg,
+.menu-view-toggle svg,
+.menu-sort-toggle svg {
     display: block;
     width: 16px;
     height: 16px;
@@ -838,10 +846,21 @@
 .recipe-view-toggle .icon-browse {
     fill: currentColor;
 }
-.recipe-view-toggle .icon-compact {
+.recipe-view-toggle .icon-compact,
+.menu-view-toggle .icon-compact {
     stroke: currentColor;
     fill: none;
     stroke-width: 2;
+}
+.menu-sort-toggle svg {
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+}
+.menu-view-toggle .icon-expanded {
+    fill: currentColor;
+    stroke: none;
 }
 .view-toggle[data-current-view="horizontal"] .icon-horizontal,
 .view-toggle[data-current-view="minimal"] .icon-minimal {
@@ -849,6 +868,10 @@
 }
 .recipe-view-toggle[data-recipe-view="compact"] .icon-compact,
 .recipe-view-toggle[data-recipe-view="browse"] .icon-browse,
+.menu-sort-toggle[data-menu-sort="asc"] .icon-asc,
+.menu-sort-toggle[data-menu-sort="desc"] .icon-desc,
+.menu-view-toggle[data-menu-view="compact"] .icon-compact,
+.menu-view-toggle[data-menu-view="expanded"] .icon-expanded,
 .tags-toggle[data-tag-mode="clamped"] .icon-clamped,
 .tags-toggle[data-tag-mode="expanded"] .icon-expanded {
     display: none;

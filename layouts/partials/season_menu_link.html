@@ -1,0 +1,29 @@
+{{- $page := .Page -}}
+{{- $class := .Class | default "season-menu" -}}
+{{- $menuDate := $page.Date -}}
+{{- $rawDate := $menuDate | time.Format "2006-01-02" -}}
+{{- $dateFormatted := $menuDate | time | dateFormat "January 2, 2006" -}}
+{{- $title := $page.Title -}}
+{{- $rest := replace $title (print $rawDate " ") "" -}}
+{{- $headers := findRE `(?m)^###\s+(.+)` $page.RawContent -}}
+{{- $cleaned := slice -}}
+{{- range $headers }}
+  {{- $line := trim (replace (replace . "###" "") "\\" "") " " -}}
+  {{- if ne $line "" }}
+    {{- $cleaned = $cleaned | append $line -}}
+  {{- end }}
+{{- end }}
+<a href="{{ $page.RelPermalink }}" class="{{ $class }}" data-date="{{ $rawDate }}">
+  <div class="season-menu-topline">
+    <div class="season-menu-date">{{ $dateFormatted }}</div>
+    <div class="season-menu-stamp" aria-hidden="true"></div>
+  </div>
+  <div class="season-menu-title">{{ $rest }}</div>
+  {{- if gt (len $cleaned) 0 }}
+    <div class="season-menu-items">
+      {{- range first 4 $cleaned }}
+        <span>{{ . }}</span>
+      {{- end }}
+    </div>
+  {{- end }}
+</a>

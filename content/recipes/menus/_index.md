@@ -45,13 +45,15 @@ Toledo Farms,
 Vue Family Farms*
 
 
-### Menus Items In Season Now
+## Menus Items In Season Now
+
 Here's a few menu items that appeared around this time of the year:
 
 {{< this-weeks-menu plus-minus-days="10" >}}
 
+The upper-right numerical stamp refers to week-of-year.
 
-### Menu Archive
+## Menu Archive
 
 
 

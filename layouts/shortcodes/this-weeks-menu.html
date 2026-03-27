@@ -5,38 +5,7 @@
 {{/* Output all menus initially. JS will hide those outside the date tolerance. */}}
 <div class="this-weeks-menus" data-tolerance="{{ $tolerance }}">
   {{- range $menus.Pages }}
-    {{- $menuDate := .Date }}
-    {{- $rawDate := $menuDate | time.Format "2006-01-02" -}}
-
-    {{/* Add the data-date attribute for JS to read */}}
-    <a href="{{ .RelPermalink }}" class="season-menu" data-date="{{ $rawDate }}">
-      {{- $dateFormatted := $menuDate | time | dateFormat "January 2, 2006" -}}
-      {{- $title := .Title -}}
-      {{- $rawDate := $menuDate | time.Format "2006-01-02" -}}
-      {{- $rest := replace $title (print $rawDate " ") "" -}}
-
-      <div class="season-menu-topline">
-        <div class="season-menu-date">{{ $dateFormatted }}</div>
-        <div class="season-menu-stamp" aria-hidden="true"></div>
-      </div>
-      <div class="season-menu-title">{{ $rest }}</div>
-
-      {{- $headers := findRE `(?m)^###\s+(.+)` .RawContent }}
-      {{- $cleaned := slice }}
-      {{- range $headers }}
-        {{- $line := trim (replace (replace . "###" "") "\\" "") " " }}
-        {{- if ne $line "" }}
-          {{- $cleaned = $cleaned | append $line }}
-        {{- end }}
-      {{- end }}
-      {{- if gt (len $cleaned) 0 }}
-        <div class="season-menu-items">
-          {{- range first 4 $cleaned }}
-            <span>{{ . }}</span>
-          {{- end }}
-        </div>
-      {{- end }}
-    </a>
+    {{- partial "season_menu_link.html" (dict "Page" .) }}
   {{- end }}
 </div>
 
