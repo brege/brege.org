@@ -27,7 +27,7 @@
 {{- end }}
 
 {{- if .Content }}
-<div class="post-content menus-page" data-menu-view="compact">
+<div class="post-content menus-page" data-menu-view="expanded">
   <div class="menus-section-toggle-source" hidden>
     <div class="list-controls">
       {{- partial "menu_sort_toggle.html" . }}
@@ -125,7 +125,7 @@
     var storedView = localStorage.getItem("menu-view");
     var storedSort = localStorage.getItem("menu-sort");
     syncSort(storedSort === "asc" ? "asc" : "desc");
-    syncView(storedView === "expanded" ? "expanded" : "compact");
+    syncView(storedView === "compact" ? "compact" : "expanded");
 
     viewToggles.forEach(function(toggle) {
         var button = toggle.querySelector("button");
