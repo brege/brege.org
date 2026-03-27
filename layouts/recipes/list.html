@@ -1,5 +1,7 @@
 {{- define "main" }}
 
+{{- $recipeLanding := and .IsSection (eq .RelPermalink "/recipes/") -}}
+
 {{- if not .IsHome | and .Title }}
 <header class="page-header">
   {{- partial "breadcrumbs.html" . }}
@@ -19,14 +21,11 @@
       {{- end }}
       {{- end }}
     </h1>
+    {{- if not $recipeLanding }}
     <div class="list-controls">
-      <div class="recipe-view-toggle" data-recipe-view="compact">
-        <button type="button" title="Switch to browse view" aria-label="Switch to browse view">
-          <svg class="icon-compact" viewBox="0 0 16 16"><line x1="1" y1="3" x2="15" y2="3"/><line x1="1" y1="6.5" x2="15" y2="6.5"/><line x1="1" y1="10" x2="15" y2="10"/><line x1="1" y1="13.5" x2="15" y2="13.5"/></svg>
-          <svg class="icon-browse" viewBox="0 0 512 512"><path d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"></path></svg>
-        </button>
-      </div>
+      {{- partial "recipe_view_toggle.html" . }}
     </div>
+    {{- end }}
   </div>
   {{- if .Description }}
   <div class="post-description">
@@ -38,6 +37,11 @@
 
 {{- if .Content }}
 <div class="post-content recipes-page" data-recipe-view="compact">
+  {{- if $recipeLanding }}
+  <div class="recipes-section-toggle-source" hidden>
+    {{- partial "recipe_view_toggle.html" . }}
+  </div>
+  {{- end }}
   {{- if not (.Param "disableAnchoredHeadings") }}
   {{- partial "anchored_headings.html" .Content -}}
   {{- else }}{{ .Content }}{{ end }}
@@ -47,8 +51,30 @@
 <script>
 (function() {
     var page = document.querySelector(".recipes-page");
+    if (!page) return;
+
+    var source = page.querySelector(".recipes-section-toggle-source .recipe-view-toggle");
+    if (source) {
+        var heading = Array.prototype.find.call(page.querySelectorAll("h2"), function(node) {
+            var text = node.querySelector(".heading-text");
+            return (text ? text.textContent : node.textContent).trim() === "Recipes";
+        });
+
+        if (heading) {
+            var head = document.createElement("div");
+            head.className = "recipes-section-head";
+            heading.parentNode.insertBefore(head, heading);
+            head.appendChild(heading);
+            head.appendChild(source);
+            var sourceWrap = page.querySelector(".recipes-section-toggle-source");
+            if (sourceWrap) {
+                sourceWrap.remove();
+            }
+        }
+    }
+
     var toggles = Array.prototype.slice.call(document.querySelectorAll(".recipe-view-toggle"));
-    if (!page || !toggles.length) return;
+    if (!toggles.length) return;
 
     function sync(mode) {
         var nextLabel = mode === "browse" ? "Switch to compact view" : "Switch to browse view";
@@ -67,6 +93,19 @@
         });
     }
 
+    function syncUrl(mode) {
+        if (!window.history || !window.history.replaceState) {
+            return;
+        }
+
+        var url = window.location.pathname + window.location.search;
+        if (mode === "browse") {
+            url += "#browse";
+        }
+
+        window.history.replaceState(null, "", url);
+    }
+
     var stored = localStorage.getItem("recipe-view");
     sync(stored === "browse" ? "browse" : "compact");
 
@@ -81,13 +120,14 @@
             var nextView = toggle.dataset.recipeView === "browse" ? "compact" : "browse";
             sync(nextView);
             localStorage.setItem("recipe-view", nextView);
-            window.location.hash = nextView === "browse" ? "browse" : "";
+            syncUrl(nextView);
         });
     });
 
     if (window.location.hash === "#browse") {
         sync("browse");
         localStorage.setItem("recipe-view", "browse");
+        syncUrl("browse");
     }
 })();
 </script>

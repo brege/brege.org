@@ -85,6 +85,24 @@
     margin: 0.65rem 0 1.6rem;
 }
 
+.recipes-section-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 32px auto 24px;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.post-content .recipes-section-head h2 {
+    margin: 0;
+    padding: 0;
+    border-bottom: none;
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
 .recipe-index-list {
     margin: 0;
     padding: 0;
@@ -236,6 +254,10 @@
     color: var(--secondary);
 }
 @media (max-width: 700px) {
+    .recipes-section-head {
+        gap: 0.75rem;
+    }
+
     .recipe-list-shortcode {
         margin-bottom: 1.35rem;
     }
