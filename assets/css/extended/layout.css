@@ -266,9 +266,9 @@
     min-width: 1.25rem;
     flex: 0 0 1.25rem;
 }
-.view-horizontal .post-card.no-cover .entry-tags-preview,
-.view-horizontal .post-card.home-compact .entry-tags-preview,
-.view-minimal .post-card .entry-tags-preview {
+.post-list:not(.tags-expanded).view-horizontal .post-card.no-cover .entry-tags-preview,
+.post-list:not(.tags-expanded).view-horizontal .post-card.home-compact .entry-tags-preview,
+.post-list:not(.tags-expanded).view-minimal .post-card .entry-tags-preview {
     flex-wrap: nowrap;
     max-height: none;
     margin-left: 0.45rem;
