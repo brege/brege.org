@@ -81,6 +81,90 @@
 }
 
 /* --- recipe sheet (recipe.html shortcode) --- */
+.recipe-list-shortcode {
+    margin: 0.65rem 0 1.6rem;
+}
+
+.recipe-index-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.recipe-index-item {
+    padding: 0.22rem 0 0.28rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.post-content .recipe-index-title {
+    display: block;
+    margin: 0;
+    font-family: var(--font-serif-main);
+    font-size: 1.34rem;
+    font-weight: 400;
+    line-height: 1.06;
+}
+
+.recipe-index-title a {
+    color: var(--primary);
+}
+
+.recipe-index-tags {
+    display: none;
+}
+
+.recipes-page[data-recipe-view="browse"] .recipe-index-item {
+    padding: 0.26rem 0 0.34rem;
+}
+
+.recipes-page[data-recipe-view="browse"] .recipe-index-tags {
+    display: flex;
+    align-items: flex-start;
+    gap: 0;
+    margin-top: 0.18rem;
+}
+
+.recipes-page[data-recipe-view="browse"] .recipe-index-tags .tag-line {
+    display: none;
+}
+
+.recipe-index-tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.15rem 0.55rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    min-width: 0;
+}
+
+.recipe-index-tag-list li {
+    flex: 0 0 auto;
+}
+
+.recipe-index-tag-list a {
+    font-variant: small-caps;
+    font-size: 0.72rem;
+    color: var(--secondary);
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+}
+
+.recipe-index-tag-list a:hover {
+    color: var(--accent);
+}
+
+.recipe-index-tag-list a::before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin-right: 0.3em;
+    border: 1px solid var(--secondary);
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
 .recipe {
     margin: 2rem auto 0;
     max-width: 760px;
@@ -152,6 +236,18 @@
     color: var(--secondary);
 }
 @media (max-width: 700px) {
+    .recipe-list-shortcode {
+        margin-bottom: 1.35rem;
+    }
+
+    .post-content .recipe-index-title {
+        font-size: 1.25rem;
+    }
+
+    .recipe-index-tag-list {
+        gap: 0.2rem 0.55rem;
+    }
+
     .recipe {
         margin-top: 1.5rem;
     }

@@ -755,12 +755,14 @@
     flex: 0 0 auto;
 }
 .view-toggle,
-.tags-toggle {
+.tags-toggle,
+.recipe-view-toggle {
     display: flex;
     flex: 0 0 auto;
 }
 .view-toggle button,
-.tags-toggle button {
+.tags-toggle button,
+.recipe-view-toggle button {
     background: none;
     border: none;
     cursor: pointer;
@@ -772,11 +774,13 @@
     transition: color 0.15s;
 }
 .view-toggle button:hover,
-.tags-toggle button:hover {
+.tags-toggle button:hover,
+.recipe-view-toggle button:hover {
     color: var(--primary);
 }
 .view-toggle svg,
-.tags-toggle svg {
+.tags-toggle svg,
+.recipe-view-toggle svg {
     display: block;
     width: 16px;
     height: 16px;
@@ -786,13 +790,21 @@
     fill: none;
     stroke-width: 2;
 }
-.tags-toggle svg {
+.tags-toggle svg,
+.recipe-view-toggle .icon-browse {
     fill: currentColor;
+}
+.recipe-view-toggle .icon-compact {
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 2;
 }
 .view-toggle[data-current-view="horizontal"] .icon-horizontal,
 .view-toggle[data-current-view="minimal"] .icon-minimal {
     display: none;
 }
+.recipe-view-toggle[data-recipe-view="compact"] .icon-compact,
+.recipe-view-toggle[data-recipe-view="browse"] .icon-browse,
 .tags-toggle[data-tag-mode="clamped"] .icon-clamped,
 .tags-toggle[data-tag-mode="expanded"] .icon-expanded {
     display: none;

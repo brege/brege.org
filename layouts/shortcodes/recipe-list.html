@@ -1,4 +1,5 @@
 {{- $sectionName := .Get "section" }} {{/* Get the 'section' parameter, e.g., "pro" or "gen" */}}
+{{- $tags := "tags" }}
 {{- if $sectionName }}
   {{- /*
     Construct the expected path of the subsection _index.md relative to the site root,
@@ -13,12 +14,21 @@
     {{- /* Now range through the pages within that subsection */}}
     {{- $subsectionPages := $subsection.Pages }}
     {{- if $subsectionPages }}
-      <div class="recipe-list-shortcode"> {{/* Add a class for styling specific to the shortcode output */}}
-        {{- /* Heading controlled from _index.md */}}
-        <ul>
-          {{- range $subsectionPages.ByTitle }} {{/* Loop through pages in the subsection */}}
-          <li>
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
+      <div class="recipe-list-shortcode">
+        <ul class="recipe-index-list">
+          {{- range $subsectionPages.ByTitle }}
+          <li class="recipe-index-item">
+            <h3 class="recipe-index-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+            {{- with (.GetTerms $tags) }}
+            <div class="recipe-index-tags">
+              <span class="tag-line" aria-hidden="true"></span>
+              <ul class="recipe-index-tag-list" aria-label="recipe tags">
+                {{- range . }}
+                <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+                {{- end }}
+              </ul>
+            </div>
+            {{- end }}
           </li>
           {{- end }}
         </ul>
