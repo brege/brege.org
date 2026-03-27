@@ -868,12 +868,26 @@
         gap: 0.75rem;
     }
 
+    .view-horizontal .post-card.no-cover,
+    .view-horizontal .post-card.home-compact,
+    .view-horizontal .post-card.home-lead {
+        grid-template-columns: 1fr;
+    }
+
     .view-horizontal .post-card {
         grid-template-columns: 1fr;
     }
 
+    .view-horizontal .post-card.no-cover .entry-date-col,
+    .view-horizontal .post-card.home-compact .entry-date-col,
+    .view-horizontal .post-card.home-lead .entry-date-col,
     .view-horizontal .post-card .entry-date-col {
         display: none;
+    }
+
+    .view-horizontal .post-card.home-lead {
+        gap: 0.85rem;
+        padding: 0.8rem;
     }
 
     .view-minimal .post-card,
