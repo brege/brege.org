@@ -1,8 +1,10 @@
 # Post Taxonomy
 
+This is by no means a limited set.
+
 ## Categories
 
-Career and Lifestyle framing:
+### Career / Lifestyle
 
 - `software`
 - `data-science`

@@ -19,6 +19,8 @@ Someone should be able to land on one recipe, notice a useful trait like `vegeta
 - `pickling`
 - `fermentation`
 
+Genre of a recipe.
+
 ### Cuisine / Region
 
 - `american`
@@ -27,7 +29,7 @@ Someone should be able to land on one recipe, notice a useful trait like `vegeta
 - `hispanic`
 - `mediterranean`
 
-Only apply a cuisine tag when the influence is real and legible, not because the recipe vaguely resembles something from that region.
+Definitive origin of a recipe.
 
 ### Technique / Method
 
@@ -37,9 +39,10 @@ Only apply a cuisine tag when the influence is real and legible, not because the
 - `emulsification`
 - `poached`
 - `puree`
+- `roasting`
 - `sous-vide`
 
-Use technique tags when the method is central to the recipe or likely to be a useful retrieval path.
+Central processing step of a recipe.
 
 ### Diet / Compatibility
 

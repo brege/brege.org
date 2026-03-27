@@ -1,36 +1,56 @@
 # [brege.org](https://brege.org)
 
-### Adding an article
+[brege.org](https://brege.org) is my static [hugo](https://github.com/gohugoio/hugo) site, which is currently based on [hugo-PaperMod](https://github.com/adityatelange/hugo-PaperMod). 
 
-This example explains how to add a new post, assuming you are in the base directory for your [hugo](https://github.com/gohugoio/hugo) source files.
+## Adding an article
 
-1. Initialize: `hugo new --kind post post/hello-world`
-2. Edit `content/post/hello-world/index.md` after the `+++...+++` or `---...---` front matter
-3. Check article for typos with `hugo server` (use `-D` if draft) 
-4. When finalized, run `./deploy` ship the changes to the production server
+How I add a new post on [brege.org](https://brege.org).
 
-To edit an article, repeat steps 2-4 above while `hugo server` is running. Best to use git to track changes.
+1. Initialize
+   ```bash
+   hugo new --kind post post/hello-world
+   hugo server # -D|--buildDrafts
+   ```
+2. Edit `content/post/hello-world/index.md` and add content after the `+++...+++` or `---...---` front matter
+3. The I run an external `./deploy` script to push the changes to my droplet.
 
-### Removing an article
+## Editing an article
+
+To edit an article, repeat steps 2-4 while `hugo server` is running.
+
+## Removing an article
 
 Say you want to remove the `hello-world.md` article:
 
-1. `rm -r content/post/hello-world/`
-2. `./deploy`
+```bash
+rm -r content/post/hello-world/
+./deploy
+```
+
+## Taxonomy
+
+See [Post README](content/post/README.md) and [Recipe README](content/recipes/README.md) for categories, tagging, and serialization used on [brege.org](https://brege.org).
 
 ## Installing
 
 ### Site
 
-1. `git clone git@github.com:brege/brege.org.git`
-2. `cd brege.org`
+```bash
+git clone git@github.com:brege/brege.org.git
+cd brege.org
+```
 
-Contains Markdown (post content) and JavaScript (shortcodes and partials).
+This repo tracks all JavaScript, CSS, and Markdown files used on [brege.org](https://brege.org). I have heavily modded [papermod](https://github.com/adityatelange/hugo-PaperMod) for better culinary and multiple-careers handling through:
+
+- [shortcodes](https://gohugo.io/shortcodes/)
+- [partials](https://gohugo.io/functions/partials/)
+- [layouts](https://gohugo.io/methods/page/layout/)
+- [assets](https://gohugo.io/hugo-pipes/introduction/#asset-directory)
 
 ### Theme 
 
-3. `mkdir -p themes/hugo-papermod`
-4. `git clone git@github.com:adityatelange/hugo-PaperMod.git themes/hugo-papermod/`
-5. check: `hugo server`
-
-The base of [brege.org](https://brege.org) is [hugo-PaperMod](https://github.com/adityatelange/hugo-PaperMod), with some custom overrides found in [`assets/css/extended/`](assets/css/extended/).
+```bash
+mkdir -p themes/hugo-papermod
+git clone git@github.com:adityatelange/hugo-PaperMod.git themes/hugo-papermod/
+```
+Check: `hugo server`
