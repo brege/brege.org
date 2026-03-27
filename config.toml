@@ -6,6 +6,7 @@ enableRobotsTXT = false
 enableInlineShortcodes = true
 
 enableEmoji = true
+ignoreFiles = ['(?:^|/)README\.md$']
 
 theme = "hugo-papermod"
 title = "brege.org"

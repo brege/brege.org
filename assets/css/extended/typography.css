@@ -157,7 +157,7 @@ body {
 .home-info .entry-header h1 {
     font-weight: 400 !important;
     font-synthesis-weight: none;
-    font-size: clamp(3.2rem, 8vw, 5.8rem);
+    font-size: clamp(3.84rem, 9.6vw, 6.96rem);
     line-height: 0.98;
     letter-spacing: -0.03em;
 }
