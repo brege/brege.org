@@ -14,6 +14,8 @@ draft: false
 cover:
   image: 'cover.jpg'
   caption: "A collage of the **How To with John Wilson** title card, **FOUND** magazine, and one of **The Books'** albums"
+params:
+  homeLead: true
 math: false
 ShowToc: true
 TocOpen: true
@@ -98,4 +100,3 @@ I think about random notes I've found, the content of which often surprised me.
 I also imagine all the little notes I've lost whose finder must have been just as confused upon reading.
 I guess that's my larger wonder.
 We don't always know who our audience is.  And I think that's actually quiet wonderful.
-

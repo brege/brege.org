@@ -123,4 +123,3 @@ Each bin is averaged for each picture type over the last 15 years, regardless of
 Image activity generally increases at the beginning and end of standard university semesters, which also include the height of summer and the holiday period when I am always always travelling. Screenshotting is highest in the fall to mid-winter. 
 
 In my experience, restaurants are historically busier between, roughly, Friendsgiving and Father's Day. Camera usage also largest during high summer. Beach. Hiking. Produce selection during chef years. 
-

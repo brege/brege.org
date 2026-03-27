@@ -5,10 +5,41 @@
 {{- else }}
 
 {{- $pages := union .RegularPages .Sections }}
+{{- $homeLeadPermalink := "" }}
 
 {{- if .IsHome }}
 {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
 {{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true"  }}
+{{- range $pages }}
+  {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
+  {{- $hasCover := and .Params.cover.image (not $isHidden) }}
+  {{- if and $hasCover (eq $homeLeadPermalink "") (.Param "homeLead") }}
+    {{- $homeLeadPermalink = .RelPermalink }}
+  {{- end }}
+{{- end }}
+{{- if eq $homeLeadPermalink "" }}
+  {{- range $pages }}
+    {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
+    {{- $hasCover := and .Params.cover.image (not $isHidden) }}
+    {{- if and $hasCover (eq $homeLeadPermalink "") }}
+      {{- $homeLeadPermalink = .RelPermalink }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+{{- if ne $homeLeadPermalink "" }}
+  {{- $ordered := slice }}
+  {{- range $pages }}
+    {{- if eq .RelPermalink $homeLeadPermalink }}
+      {{- $ordered = $ordered | append . }}
+    {{- end }}
+  {{- end }}
+  {{- range $pages }}
+    {{- if ne .RelPermalink $homeLeadPermalink }}
+      {{- $ordered = $ordered | append . }}
+    {{- end }}
+  {{- end }}
+  {{- $pages = $ordered }}
+{{- end }}
 {{- end }}
 
 {{- $paginator := .Paginate $pages }}
@@ -69,26 +100,42 @@
 
 {{- if and .IsHome site.Params.homeInfoParams (eq $paginator.PageNumber 1) }}
 {{- partial "home_info.html" . }}
+{{- with site.Params.homeInfoParams.FeedTitle }}
+{{- if gt (len $paginator.Pages) 0 }}
+<header class="home-feed-header">
+  <h2><a href="{{ "/post/" | absURL }}">{{ . }}</a></h2>
+</header>
+{{- end }}
+{{- end }}
 {{- end }}
 
 {{- $term := .Data.Term }}
 <div id="post-list" class="post-list view-horizontal">
 {{- range $index, $page := $paginator.Pages }}
 
-{{- $class := "post-entry" }}
-{{- if $term }}
-{{- $class = "post-entry tag-entry" }}
-{{- end }}
-
-<article class="{{ $class }} post-card">
   {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
+  {{- $hasCover := and .Params.cover.image (not $isHidden) }}
+  {{- $hasHomeLead := ne $homeLeadPermalink "" }}
+  {{- $isHomeLead := and $.IsHome (eq $paginator.PageNumber 1) $hasHomeLead (eq .RelPermalink $homeLeadPermalink) }}
+  {{- $cardClass := "post-entry post-card" }}
+  {{- if not $hasCover }}
+    {{- $cardClass = printf "%s no-cover" $cardClass }}
+  {{- end }}
+  {{- if $isHomeLead }}
+    {{- $cardClass = printf "%s home-lead" $cardClass }}
+  {{- else if and $.IsHome (eq $paginator.PageNumber 1) $hasHomeLead }}
+    {{- $cardClass = printf "%s home-compact" $cardClass }}
+  {{- end }}
+<article class="{{ $cardClass }}">
+  {{- if $hasCover }}
   <div class="entry-media">
     {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
   </div>
+  {{- end }}
   <div class="entry-body">
     {{- with first 1 ($page.GetTerms $categories) }}
     {{- range . }}
-    <div class="entry-category">{{ .LinkTitle }}</div>
+    <div class="entry-category"><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></div>
     {{- end }}
     {{- end }}
     <header class="entry-header">
@@ -224,8 +271,12 @@
 
     function clampMobileTags() {
         var expanded = list.classList.contains("tags-expanded");
-        var mobile = window.matchMedia("(max-width: 700px)").matches;
         var rows = list.querySelectorAll(".entry-tags");
+
+        function fits(preview) {
+            return preview.scrollWidth <= preview.clientWidth + 1 &&
+                preview.scrollHeight <= preview.clientHeight + 1;
+        }
 
         rows.forEach(function(row) {
             var preview = row.querySelector(".entry-tags-preview");
@@ -245,12 +296,21 @@
                 item.style.display = "none";
             });
 
-            if (!mobile || items.length < 3) {
-                return;
-            }
+            while (true) {
+                var visible = items.filter(function(item) {
+                    return item.style.display !== "none";
+                });
+                var last = visible[visible.length - 1];
 
-            if (items[2].getBoundingClientRect().right > preview.getBoundingClientRect().right) {
-                items[2].style.display = "none";
+                if (!last) {
+                    return;
+                }
+
+                if (fits(preview)) {
+                    return;
+                }
+
+                last.style.display = "none";
             }
         });
     }

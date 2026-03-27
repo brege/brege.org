@@ -55,26 +55,36 @@ title = "brege.org"
 
 [params.homeInfoParams]
   Title = 'Wyatt Brege'
+  FeedTitle = 'Articles'
   Content = """
-  I simulated 
-  [black hole and neutron star](https://black-holes.org) 
-  mergers for my physics PhD at 
+  I simulated
+  [black-hole neutron-star mergers](https://black-holes.org)
+  for my physics PhD at
   [WSU](https://wsu.edu/).
-  These days I do a lot of work with
-  [AI and data science](https://flavorpair.me)
-  and contribute to the world through 
-  [free software](https://github.com/brege).
-  I am also a professional chef with a love for
+  I'm also a professional chef with a love for
   seafood, sauces, soups and organic produce.
-  There's a little more info about me in my
-  [**bio**](/about),
-  my [**resumé**](/cv) page,
-  and on [google scholar](https://scholar.google.com/citations?user=WsjvDuQAAAAJ)
-  and the [arXiv](https://arxiv.org/search/?searchtype=author&query=Brege,W).
-  You can also check out my
-  [recipes](/recipes) and
-  [**farmer's market menus**](/recipes/menus) on this site.
+  A lifelong believer in free software,
+  I build apps and tools across
+  [AI](https://github.com/brege#agents),
+  [data science](/categories/data-science/),
+  and [Linux](https://github.com/brege#apps).
+
   """
+[[params.homeInfoParams.markers]]
+  name = 'my bio'
+  url = '/about'
+[[params.homeInfoParams.markers]]
+  name = 'my CV'
+  url = '/cv'
+[[params.homeInfoParams.markers]]
+  name = 'google scholar'
+  url = 'https://scholar.google.com/citations?user=WsjvDuQAAAAJ'
+[[params.homeInfoParams.markers]]
+  name = 'arXiv.org'
+  url = 'https://arxiv.org/search/?searchtype=author&query=Brege,W'
+[[params.homeInfoParams.markers]]
+  name = "farmer's market menus"
+  url = '/recipes/menus'
 
 [params.profileMode]
   enabled = false

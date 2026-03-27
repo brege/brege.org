@@ -1,0 +1,7 @@
+{{- with site.Params.homeInfoParams.markers }}
+<ul class="home-markers" aria-label="biographical links">
+    {{- range . }}
+    <li><a href="{{ .url | absURL }}">{{ .name }}</a></li>
+    {{- end }}
+</ul>
+{{- end }}

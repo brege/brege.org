@@ -1,13 +1,16 @@
 {{- with site.Params.homeInfoParams }}
 {{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections -}}
 {{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true" -}}
-<article class="first-entry home-info">
+{{- $note := .Note | default "data scientist / chef / astrophysicist" -}}
+<article class="first-entry home-info home-signal">
     <header class="entry-header">
+        <p class="home-signal-note">{{ $note }}</p>
         <h1>{{ .Title | markdownify }}</h1>
     </header>
     <div class="entry-content">
         {{ .Content | markdownify }}
     </div>
+    {{ partial "home_markers.html" . }}
     <footer class="entry-footer home-info-footer">
         {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
         {{- if gt (len $pages) 0 }}
