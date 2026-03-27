@@ -1,0 +1,11 @@
+[
+    { "id": 1, "label": "Pear" },
+    { "id": 2, "label": "Apple" },
+    { "id": 3, "label": "Quince" },
+    { "id": 4, "label": "Lime" },
+    { "id": 5, "label": "Orange" },
+    { "id": 6, "label": "Lemon" },
+    { "id": 7, "label": "Grapefruit" },
+    { "id": 8, "label": "Peach" },
+    { "id": 9, "label": "Plum" }
+]

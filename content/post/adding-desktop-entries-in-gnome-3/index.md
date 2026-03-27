@@ -18,7 +18,7 @@ I wanted to add a desktop entry/launcher icon for Firefox Developer.  I searched
 
 **Problem 1:** Alacarte didn't allow me to actually click "OK".  Both with the version from the Fedora repositories, `alacarte-3.11.91-4.fc24` via `sudo dnf install alacarte`, as well as a version built from source, `1bb265f7` via `git clone git://git.gnome.org/alacarte`, did I have these issues.
 
-{{< figure src="/img/Screenshot from 2016-10-17 14-10-49.png" >}}
+{{< figure src="alacarte-disabled-ok-button.png" >}}
 
 **Solution:** Create the .desktop file by hand.  (Also, probably submit a bug report.)
 
@@ -59,7 +59,7 @@ StartupWMClass=Firefox
 ## Exercise - Repeating the process for Earlybird (Thunderbird Alpha)
 
 1. Go to the [Thunderbird Release Channel](https://www.mozilla.org/en-US/thunderbird/channel/) and grab the package for Earlybird (or the the Beta, if you choose):
-    {{< figure src="/img/Screenshot from 2016-10-17 14-49-06.png" >}}
+    {{< figure src="thunderbird-release-channel.png" >}}
 Or, from the command line:
     ``` bash
     cd ~/Preview`
@@ -81,6 +81,6 @@ StartupWMClass=Thunderbird
 ```
 Replace `xxxxxxxx.default` with your profile.
 
-{{< figure src="/img/Screenshot from 2016-10-17 15-16-18.png" >}}
+{{< figure src="thunderbird-launcher.png" >}}
 
 For any other application like this, I would just copy `firefox.desktop` to `myapplication.desktop` and adjust the contents to suit your needs.  Then, in general, launch the application and run `xprop WM_CLASS` to determine the value to put in the `StartupWMClass=` field. 

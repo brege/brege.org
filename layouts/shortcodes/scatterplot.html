@@ -1,4 +1,6 @@
-<div id="scatterplot"></div>
+{{ $dataPath := .Get "dataPath" | default "NHL_PIT-DET-EDM_OGVT_2016-17.csv" }}
+
+<div id="scatterplot" data-csv-path="{{ $dataPath }}"></div>
 <style> 
 #scatterplot {
   margin: 10px 0;

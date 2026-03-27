@@ -73,7 +73,7 @@ Use edible garnishes. Keep away from the ornamental "perfumes".
 >**Recommend:** basil, mint, parsley, oregano, marjoram, arugula   
 >**Avoid:** lavendar, tarragon, lemon verbena, rosemary 
 
- {{< pesto-network nodesPath="/data/pesto/nodes.json" edgesPath="/data/pesto/edges.json" >}} 
+ {{< pesto-network nodesPath="nodes.json" edgesPath="edges.json" >}} 
 
 ### Cheese
 

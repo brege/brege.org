@@ -38,10 +38,12 @@ var tooltip = d3.select("body").append("div")
     .attr("class", "tooltip")
     .style("opacity", 0);
 
+var csvPath = d3.select("#scatterplot").attr("data-csv-path");
+
 
 
 // load data
-d3.csv("/data/NHL_PIT-DET-EDM_OGVT_2016-17.csv", type, function(error, data) {
+d3.csv(csvPath, type, function(error, data) {
   if (error) throw error;
 
   x.domain(d3.extent(data, function(d) { return d.CapHit; }));

@@ -1,5 +1,6 @@
 {{ $nodesPath := .Get "nodesPath" }}
 {{ $edgesPath := .Get "edgesPath" }}
+{{ $scriptPath := .Get "scriptPath" | default "lesmis-network.js" }}
 
 <style>
   #network { height: 60vh; } /* 60% of the viewport height */ 
@@ -8,4 +9,4 @@
 <div id="network" data-nodes-path={{ $nodesPath }} data-edges-path={{ $edgesPath }}></div>
 
 <script src="https://visjs.github.io/vis-network/standalone/umd/vis-network.min.js"></script>
-<script src="/js/lesmis-network.js"></script>
+<script src="{{ $scriptPath }}"></script>

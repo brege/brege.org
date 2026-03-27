@@ -23,15 +23,16 @@ cover:
 This is a follow-up to the previous post [Network Graphs in Hugo](/post/network-graphs-in-hugo/).
 I'm feeling fruity.  These aren't *all* tree fruits, but a few clusters organized by tree grafting compatibility.
 
-{{< fruit-network nodesPath="/data/fruit/nodes.json" edgesPath="/data/fruit/edges.json" >}}
+{{< fruit-network nodesPath="nodes.json" edgesPath="edges.json" >}}
 
-1. Data for the network is stored in two separate JSON files, both located in `/static/data/fruit/`: 
-    - [`nodes.json`](/data/fruit/nodes.json)
-    - [`edges.json`](/data/fruit/edges.json)
+1. Data for the network is stored in two separate JSON files in this page bundle:
+    - [`nodes.json`](nodes.json)
+    - [`edges.json`](edges.json)
 
-2. The javascript and the shortcode, as one file: 
+2. The shortcode and post-local javascript work together:
     - `fruit-network.html`
-        ``` javascript
+    - [`fruit-network.js`](fruit-network.js)
+        ``` html
         {{ $nodesPath := .Get "nodesPath" }}
         {{ $edgesPath := .Get "edgesPath" }}
 
@@ -48,58 +49,12 @@ I'm feeling fruity.  These aren't *all* tree fruits, but a few clusters organize
 
         <script src="https://visjs.github.io/vis-network/standalone/umd/vis-network.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script>
-          const options = {
-            width: "100%",
-            height: "500px",
-          };
-
-          const container = document.getElementById("mynetwork");
-          const network = new vis.Network(container, {}, options);
-
-          const nodesPath = $("#mynetwork").data("nodes-path");
-          const edgesPath = $("#mynetwork").data("edges-path");
-
-          const nodeStyles = {
-            nodes: {
-              shape: 'circularImage',
-              size: 65,
-              font: {
-                size: 18,
-                color: '#000000',
-              }
-            }
-          };
-
-          function highlightNodes(matchingNodes) {
-            matchingNodes.forEach(node => {
-              $(`#${node.id}`).css('background-color', '#add8e6');
-            });
-          }
-
-          $.getJSON(nodesPath, function(nodesData) {
-            $.getJSON(edgesPath, function(edgesData) {
-              const data = {
-                nodes: nodesData,
-                edges: edgesData
-              };
-              network.setData(data);
-              network.setOptions(nodeStyles);
-
-              const nodes = data.nodes;
-
-              network.on('select', function(params) {
-                const matchingNodes = nodes.filter(node => selectedResults.includes(node.label));
-                highlightNodes(matchingNodes);
-              });
-            });
-          });
-        </script>
+        <script src="fruit-network.js"></script>
 
         ```
 
 This will provide network graph physics where the nodes are images (all sourced from [Wikipedia](https://www.wikipedia.org/). Hugo template for completeness:
 ``` markdown
-{{</* fruit-network nodesPath="/data/fruit/nodes.json" edgesPath="/data/fruit/edges.json" */>}}
+{{</* fruit-network nodesPath="nodes.json" edgesPath="edges.json" */>}}
 
 ```

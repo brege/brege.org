@@ -1,5 +1,6 @@
 {{ $nodesPath := .Get "nodesPath" }}
 {{ $edgesPath := .Get "edgesPath" }}
+{{ $scriptPath := .Get "scriptPath" | default "fruit-network.js" }}
 
 <style>
   #mynetwork {
@@ -14,4 +15,4 @@
 
 <script src="https://visjs.github.io/vis-network/standalone/umd/vis-network.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="/js/fruit-network.js"></script>
+<script src="{{ $scriptPath }}"></script>

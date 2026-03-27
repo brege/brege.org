@@ -16,8 +16,9 @@ const options = {
 
 // create a network
 const container = document.getElementById("mynetwork");
-//const options = {};
 const network = new vis.Network(container, data, options);
+const nodesPath = container.dataset.nodesPath;
+const edgesPath = container.dataset.edgesPath;
 
 // define the node styles
 const nodeStyles = {
@@ -39,8 +40,8 @@ const nodeStyles = {
 
 // fetch the data from the JSON files
 Promise.all([
-    fetch("/data/toy-network/nodes.json"),
-    fetch("/data/toy-network/edges.json")
+    fetch(nodesPath),
+    fetch(edgesPath)
 ])
 .then(([nodesResponse, edgesResponse]) => Promise.all([
     nodesResponse.json(),
@@ -59,4 +60,3 @@ Promise.all([
     // apply the node styles
     network.setOptions(nodeStyles);
 });
-

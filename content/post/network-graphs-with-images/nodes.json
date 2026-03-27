@@ -1,0 +1,11 @@
+[
+    { "id": 1, "label": "Pear" , "image": "fruit/pear.jpg" },
+    { "id": 2, "label": "Apple", "image": "fruit/apple.jpg" },
+    { "id": 3, "label": "Quince", "image": "fruit/quince.jpg" },
+    { "id": 4, "label": "Lime", "image": "fruit/lime.jpg" },
+    { "id": 5, "label": "Orange", "image": "fruit/orange.jpg" },
+    { "id": 6, "label": "Lemon", "image": "fruit/lemon.jpg" },
+    { "id": 7, "label": "Grapefruit", "image": "fruit/grapefruit.jpg" },
+    { "id": 8, "label": "Peach", "image": "fruit/peach.jpg" },
+    { "id": 9, "label": "Plum", "image": "fruit/plum.jpg" }
+]
