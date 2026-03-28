@@ -1,5 +1,7 @@
 ---
 title: "Network Graphs in Hugo"
+summary: |
+  First crack at making a simple toy network graph in Hugo.
 tags:
   - hugo
   - network-graphs

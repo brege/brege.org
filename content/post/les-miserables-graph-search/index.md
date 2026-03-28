@@ -1,5 +1,8 @@
 ---
 title: "Les Miserables"
+summary: |
+    A network graph of character connections from one of my favorite books
+    and authors of all time, Victor Hugo's Les Miserables.
 tags:
   - les-miserables
   - network-graphs

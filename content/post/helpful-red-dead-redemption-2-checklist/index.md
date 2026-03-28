@@ -1,5 +1,9 @@
 ---
 title: "Helpful Red Dead Redemption 2 Checklists"
+summary: |
+  A compact, printable Google Drive spreadsheet for 100% Completion in
+  Rockstar's Red Dead Redemption 2, including all missable items, compendia,
+  recipes, and more.
 tags:
   - rdr2
   - red-dead-redemption
@@ -12,6 +16,7 @@ tags:
 categories:
   - gaming
 date: 2022-02-06T02:12:20-04:00
+lastmod: 2026-03-26
 draft: false
 cover:
   image: 'rdr2-banner.jpg'

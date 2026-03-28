@@ -1,5 +1,8 @@
 ---
 title: "Network Graphs with Images"
+summary: |
+  A followup to the Network Graphs in Hugo post, this time with avatars for
+  the nodes.
 tags:
   - hugo
   - network-graphs

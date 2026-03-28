@@ -1,5 +1,9 @@
 ---
 title: "What is Pesto?"
+summary: |
+  A minimum specification of Pesto, earstwhile its relation to other green 
+  sauces, and my view of pesto as a classifcation schema and not a rigid
+  recipe.
 tags:
   - pesto
   - basil

@@ -1,16 +1,22 @@
 ---
 title: 'Some Sweet Thoughts on Sugar'
+date: 2023-06-10T16:35:51-04:00
+summary: |
+  How I think about sugar and sweetness as a chef from the perspectives of
+  history, technique, and natural science.
 tags:
   - sugar
-  - sweeteners
   - caramel
   - honey
   - maple
+  - molasses
+  - butterscotch
+  - toffee
   - dessert
   - syrup
+  - sweeteners
 categories:
   - culinary
-date: 2023-06-10T16:35:51-04:00
 draft: false
 cover:
   image: 'syrup.jpg' 
