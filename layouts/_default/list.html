@@ -123,8 +123,6 @@
   {{- end }}
   {{- if $isHomeLead }}
     {{- $cardClass = printf "%s home-lead" $cardClass }}
-  {{- else if and $.IsHome (eq $paginator.PageNumber 1) $hasHomeLead }}
-    {{- $cardClass = printf "%s home-compact" $cardClass }}
   {{- end }}
 <article class="{{ $cardClass }}">
   {{- if $hasCover }}
