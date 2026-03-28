@@ -66,8 +66,26 @@
 .post-meta-editorial .post-meta-tools a {
     color: inherit;
 }
+.post-share-toggle {
+    appearance: none;
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+    letter-spacing: inherit;
+    padding: 0;
+    text-transform: none;
+}
 .post-meta-editorial .post-meta-tools a:hover {
     color: var(--accent);
+}
+.post-share-toggle:hover,
+.post-share-toggle[aria-expanded="true"] {
+    color: var(--accent);
+}
+.post-share-panel {
+    padding-top: 0.75rem;
 }
 
 /* --- strip theme's boxed post-entry cards --- */
@@ -585,15 +603,15 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 0.75rem;
-    width: fit-content;
+    width: 100%;
     max-width: 100%;
-    padding: 0 0 0.7rem;
-    margin: 1.5rem auto 0;
+    padding: 0;
+    margin: 0;
     background: none;
     border: none;
-    border-bottom: 3px solid var(--border);
     border-radius: 0;
     overflow: visible;
+    list-style: none;
 }
 .share-buttons li,
 .share-buttons a {
@@ -608,6 +626,50 @@
 }
 .share-buttons a:not(:last-of-type) {
     margin-inline-end: 0;
+}
+.post-share-footer {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.post-share-bar {
+    display: inline-flex;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.78em;
+    letter-spacing: 0.08em;
+}
+.post-share-footer .post-share-toggle {
+    display: block;
+    line-height: 1;
+    padding: 0 0 0.45rem;
+    border-bottom: 3px solid var(--border);
+}
+.post-share-footer .post-share-toggle[aria-expanded="true"] {
+    border-bottom-color: transparent;
+}
+.post-share-footer .post-share-panel {
+    width: fit-content;
+    max-width: 100%;
+    padding-top: 0.55rem;
+}
+.post-share-footer .post-share-panel:not([hidden]) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.post-share-footer .post-share-panel:not([hidden])::before {
+    content: "";
+    width: 100%;
+    border-top: 3px solid var(--border);
+    margin-bottom: 0.7rem;
+}
+.post-share-footer .share-buttons {
+    width: fit-content;
+    max-width: 100%;
+    margin: 0;
+    padding-top: 0;
+    border-top: none;
 }
 
 .page-footer {
