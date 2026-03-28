@@ -110,7 +110,10 @@
 {{- end }}
 
 {{- $term := .Data.Term }}
-<div id="post-list" class="post-list view-horizontal">
+<div
+  id="post-list"
+  class="post-list view-horizontal"
+  data-default-view="{{ if .IsHome }}minimal{{ else }}horizontal{{ end }}">
 {{- range $index, $page := $paginator.Pages }}
 
   {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
@@ -315,7 +318,8 @@
 
     var stored = localStorage.getItem("post-view");
     var storedTags = localStorage.getItem("post-tags");
-    setView(stored === "minimal" ? "minimal" : "horizontal");
+    var defaultView = list.dataset.defaultView === "minimal" ? "minimal" : "horizontal";
+    setView(stored === "minimal" || stored === "horizontal" ? stored : defaultView);
     setTagMode(storedTags === "expanded" ? "expanded" : "clamped");
 
     viewToggles.forEach(function(toggle) {
