@@ -113,7 +113,8 @@
 <div
   id="post-list"
   class="post-list view-horizontal"
-  data-default-view="{{ if .IsHome }}minimal{{ else }}horizontal{{ end }}">
+  data-default-view="{{ if .IsHome }}minimal{{ else }}horizontal{{ end }}"
+  data-view-storage-key="{{ if .IsHome }}home-post-view{{ else }}post-list-view{{ end }}">
 {{- range $index, $page := $paginator.Pages }}
 
   {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
@@ -316,7 +317,8 @@
         });
     }
 
-    var stored = localStorage.getItem("post-view");
+    var viewStorageKey = list.dataset.viewStorageKey || "post-list-view";
+    var stored = localStorage.getItem(viewStorageKey);
     var storedTags = localStorage.getItem("post-tags");
     var defaultView = list.dataset.defaultView === "minimal" ? "minimal" : "horizontal";
     setView(stored === "minimal" || stored === "horizontal" ? stored : defaultView);
@@ -332,7 +334,7 @@
         button.addEventListener("click", function() {
             var nextView = toggle.dataset.currentView === "minimal" ? "horizontal" : "minimal";
             setView(nextView);
-            localStorage.setItem("post-view", nextView);
+            localStorage.setItem(viewStorageKey, nextView);
         });
     });
 
