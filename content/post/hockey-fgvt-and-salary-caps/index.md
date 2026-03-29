@@ -5,7 +5,7 @@ categories = ["data-science"]
 date = 2017-11-07T11:11:52-08:00
 math = true
 draft = false
-cover.image = "nhl17-ogvt-salary.png"
+cover.image = "cover.png"
 cover.hidden = true
 +++
 
@@ -35,7 +35,7 @@ $$
 
 Additionally, I wanted to get a sense for one player's value to the team  in relation to his salary cap hit.  Here, I show from the 2016-17 NHL regular season $OGVT$ versus Salary Cap for the Stanley Cup Champion Pittsburgh Penguins, the cap-troubled Detroit Red Wings, and the young Edmonton Oilers with generational talent Connor McDavid (only forward skaters).
 
-{{< scatterplot dataPath="NHL_PIT-DET-EDM_OGVT_2016-17.csv" >}}
+{{< scatterplot dataPath="data/NHL_PIT-DET-EDM_OGVT_2016-17.csv" >}}
 
 However, in debugging my code, something seemed strange to me.  This first term in the $OGVT$ expression, with some math, reduces to the number of goals by that individual:
 $$

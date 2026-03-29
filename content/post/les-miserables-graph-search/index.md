@@ -17,11 +17,11 @@ series:
 date: 2022-12-24T05:30:47-05:00
 draft: false
 cover:
-  image: 'book.jpg'
+  image: 'cover.jpg'
   caption:
   preview_only: true
 featured:
-  image: 'network.png' #isn't working
+  image: 'img/network.png' #isn't working
 jquery: true
 ---
 
@@ -29,8 +29,8 @@ jquery: true
 
 The graph may take a moment to load.
 
-{{< lesmis-network nodesPath="nodes.json" edgesPath="edges.json" >}}
-{{< search-plots jsonPath="nodes.json" >}}
+{{< lesmis-network nodesPath="data/nodes.json" edgesPath="data/edges.json" scriptPath="js/lesmis-network.js" >}}
+{{< search-plots jsonPath="data/nodes.json" >}}
 
 The search bar is the major addition to the graphing methods.
 Nodes can be clicked and added to a subgraph builder.
@@ -48,8 +48,8 @@ Please email me at wyatt@brege.org with any questions.
 
 Dataset can be found here:
 
-  - [`nodes.json`](nodes.json)
-  - [`edges.json`](edges.json)
+  - [`nodes.json`](data/nodes.json)
+  - [`edges.json`](data/edges.json)
 
 
 > Lingering annoyances:

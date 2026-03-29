@@ -39,9 +39,9 @@ This is a small survey of a band, a magazine, and a show that each provide uniqu
 </style>
 
 <div class="image-container">
-  <img src="thought-for-food.jpg" alt="The Books: Though For Food (2002) cover art is an egg shape labeled 'thought' and a cavity labeled 'food'">
-  <img src="lemon-of-pink.jpg" alt="The Books: The Lemon of Pink cover art">
-  <img src="lost-and-safe.jpg" alt="The Books: Lost and Safe cover art features an abstract cube at the center of a spider web">
+  <img src="img/thought-for-food.jpg" alt="The Books: Though For Food (2002) cover art is an egg shape labeled 'thought' and a cavity labeled 'food'">
+  <img src="img/lemon-of-pink.jpg" alt="The Books: The Lemon of Pink cover art">
+  <img src="img/lost-and-safe.jpg" alt="The Books: Lost and Safe cover art features an abstract cube at the center of a spider web">
 </div>
 
 This mosaic of found sound and vocal samples in large part created a music genre of its own.  Well, mostly.  I think most of us have heard those tracks that kickstart or bridge their songs with an audio clip taken from some movie or speech.  But The Books did this to the extreme, mixing these sounds into their songs as their own instrument.
@@ -64,7 +64,7 @@ What compelled me most was the unscripted essence of the recordings.  I wondered
 
 [Found Magazine](https://en.wikipedia.org/wiki/Found_Magazine) was created by another duo, based in Ann Arbor, Michigan whose pages were each a collage of scrap notes and photos sent in to them.  In it, glimpses of everyday minutia are scanned into its pages, without continuity, often bearing the weather and stains obtained in journey from the trash.
 
-![4x2 grid of Found magazine covers over the years.  They all have a collage-like build quality to them.](FOUND+Magazine+Covers.jpg)
+![4x2 grid of Found magazine covers over the years.  They all have a collage-like build quality to them.](img/FOUND+Magazine+Covers.jpg)
 [Source](https://images.squarespace-cdn.com/content/507dba43c4aabcfd2216a447/1377200982709-D8CFHDZBV9GAUZ38NUC9/FOUND+Magazine+Covers.jpg?format=1000w&content-type=image%2Fjpeg)
 
 Amid a probable banality, the subjects of these clippings range anywhere from odd grocery store requests to people dealing with heavy topics like abortion, divorce, and suicidal thoughts.  I was in my very early twenties when my friends introduced me to it, and while I had every opinion imaginable about the world, I certainly didn't suffer any of the experiences these notes conveyed.
@@ -72,14 +72,14 @@ Amid a probable banality, the subjects of these clippings range anywhere from od
 There was sheer earnesty to them: a glimpse into worlds you couldn't ever possibly live.
 People's experiences simultaneously made out to be both relatable and unlivable.
 
-![FOUND scrap note says: "7th Grade. Dear Katie, I won't forgive you for that what happend Thursday ant I'm no Longer being frie with you because you're annoying. from, Zyan"](ANNOYING-crop.jpg)
+![FOUND scrap note says: "7th Grade. Dear Katie, I won't forgive you for that what happend Thursday ant I'm no Longer being frie with you because you're annoying. from, Zyan"](img/ANNOYING-crop.jpg)
 [Source](http://foundmagazine.com/find/annoying/)
 
 It is no wonder why this magazine was so popular in the US penal system.  Shy of living in it, it's these discards that are made to share our bond.  To me, there is an inner nature here lost in most documentaries (ugh, *Netflix*), let alone all reality TV shows: they are over prompted and epicly driven.  But the stories in *Found* were of a different species, one that was free of slant, rich in humor, tied deeply in emotion and all of our imperfections.
 
 ## How To with John Wilson
 
-![Picture of How To with John Wilson card shows director at three angles in colage on a washed out background of New York](How-To-With-John-Wilson.avif)
+![Picture of How To with John Wilson card shows director at three angles in colage on a washed out background of New York](img/How-To-With-John-Wilson.avif)
 [Source](https://static1.colliderimages.com/wordpress/wp-content/uploads/2022/01/How-To-With-John-Wilson.jpg)
 
 Arguably the most inaccurately titled show ever, John Wilson sets out in New York City with nothing but his video camera, as he has done since he was a child, recording literally everything. In his docuseries [How To with John Wilson](https://en.wikipedia.org/wiki/How_To_with_John_Wilson), there are shots of spills and overflowing trash, candid public moments and private invitations, people spontaneously napping or ritualistic maneuvers that all walks of city life take.  But moreso, it's the profoundly deep cuts into the human experience accompanying the imagery that make it so special.

@@ -17,7 +17,7 @@ categories:
 date: 2022-12-11T16:56:56-05:00
 draft: false
 cover:
-  image: 'basil.jpg'
+  image: 'cover.jpg'
   caption: "Photo: Basil from *[Eatwell Farm](https://eatwell.com)*"
 math: true
 ShowToc: true
@@ -77,7 +77,7 @@ Use edible garnishes. Keep away from the ornamental "perfumes".
 >**Recommend:** basil, mint, parsley, oregano, marjoram, arugula   
 >**Avoid:** lavendar, tarragon, lemon verbena, rosemary 
 
- {{< pesto-network nodesPath="nodes.json" edgesPath="edges.json" >}} 
+ {{< pesto-network nodesPath="data/nodes.json" edgesPath="data/edges.json" >}} 
 
 ### Cheese
 

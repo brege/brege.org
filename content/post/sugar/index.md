@@ -19,7 +19,7 @@ categories:
   - culinary
 draft: false
 cover:
-  image: 'syrup.jpg' 
+  image: 'cover.jpg' 
   caption: 'Maple leaves on sand dunes in early September have just started to change color. Michigan, 2023'
 math: true
 ShowToc: false
@@ -44,7 +44,6 @@ With all that said: consuming less sugar is probably a good idea.  Any modern di
 [^1]: **Gastriques** are made by combining vinegars and caramels, and are a fantastic way to use up expiring fruit and deglazing a cooking pan (like a rondeau used to caramelize onions) that pairs with steak, pork, or producing a glazing crostini toppings.
 
 [^2]: In [*Ecce Homo*](https://en.wikipedia.org/wiki/Ecce_Homo_(book)), Nietzsche says he does not drink coffee because it spreads darkness, yet drinks tea but only in the morning (p. 21).  For some reason, I tend to remember that when choosing honey or maple for sauces and cocktails and it *sort of* becomes a pneumonic for me that honey goes in lighter mediums and maple syrup in darker ones.  Usually.
-
 
 
 
