@@ -1034,6 +1034,7 @@
     }
 
     .view-minimal .post-card.home-lead {
+        grid-template-columns: 1fr;
         gap: 0.85rem;
         padding: 0.8rem;
     }
