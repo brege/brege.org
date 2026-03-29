@@ -17,7 +17,7 @@ ShowTOC: false
 
 
 
-### Ingredients:
+### Ingredients
 
 -   1/2 #10 can Fancy Ketchup
 -   1 Cup Brown Sugar
@@ -27,7 +27,7 @@ ShowTOC: false
 -   2 Tbsp Dijon Mustard
 -   2 fl oz Maker\'s Mark Bourbon
 
-### Directions: 
+### Directions 
 
 On low heat, combine all ingredients in a 6 quart sauce pot and stir.
 Let cool and store in a 4 quart container.

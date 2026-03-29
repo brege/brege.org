@@ -17,7 +17,7 @@ ShowTOC: false
 **Yield:** 4 quarts
 
 
-### Ingredients:
+### Ingredients
 
 -   1 can Restaurant Style Ketchup
 -   2 Cup Worcestershire Sauce
@@ -30,7 +30,7 @@ ShowTOC: false
 -   1 1/2 ounce Sriracha
 -   tt Salt and Pepper
 
-### Directions: 
+### Directions 
 
 In a large Rondeau, add all ingredients and whisk thoroughly. Place over
 a simmer for 1 hour, or until cooked down to light paste consistency.

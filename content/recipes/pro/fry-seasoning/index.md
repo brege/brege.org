@@ -18,7 +18,7 @@ ShowTOC: false
 **Yield:** 2 quarts
 
 
-### Ingredients:
+### Ingredients
 
 -   1 Cup Onion Powder
 -   1 Cup Granulated Garlic
@@ -28,7 +28,7 @@ ShowTOC: false
 -   3/4 Cup Fine Black Pepper
 -   1 C Granulated Sugar
 
-### Directions: 
+### Directions 
 
 Thoroughly combine ingredients in a medium sized mixing bowl.
 Store in a two 1 Quart containers.

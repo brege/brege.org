@@ -16,7 +16,7 @@ ShowTOC: false
 
 **Yield:** 4 Quarts
 
-### Ingredients:
+### Ingredients
 
 - 54 fl oz Coconut Milk
 - ½ Cup Curry Paste
@@ -24,7 +24,7 @@ ShowTOC: false
 - 2 tsp Kosher Salt
 - 1 tsp Black Pepper
 
-### Directions:
+### Directions
 
 1.  In a 6 quart sauce pot on medium heat, bring all ingredients to a
     whisp and whisk

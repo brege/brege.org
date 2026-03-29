@@ -19,7 +19,7 @@ ShowTOC: false
 
 **Yield:** 2 Quarts 
 
-### Ingredients:
+### Ingredients
 
 - 3 Cup White Wine Vinegar
 - 2 Tbsp Dijon Mustard
@@ -33,7 +33,7 @@ ShowTOC: false
 - 1 ½ tsp Kosher Salt
 - 2 ½ Cup Olive Oil
 
-### Directions:
+### Directions
 
 1.  Puree all ingredients except the olive oil in the blender until
     smooth

@@ -17,7 +17,7 @@ ShowTOC: false
 **Yield:** 15 servings
 
 
-### Ingredients:
+### Ingredients
 
 -   30 Egg Yolks
 -   2 tsp Kosher Salt
@@ -29,7 +29,7 @@ ShowTOC: false
 -   1 Tbsp Lime Juice
 -   1 Cup Mayonaisse
 
-### Directions: 
+### Directions 
 
 Bring 30 eggs to a rolling boil, then remove pan from heat.
 Let eggs stand in hot water for 13 minutes.

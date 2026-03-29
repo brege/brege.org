@@ -15,7 +15,7 @@ ShowTOC: false
 
 
 
-### Ingredients:
+### Ingredients
 
 -   6 C AP Flour
 -   3 Tbsp Granulated Garlic

@@ -16,13 +16,13 @@ ShowTOC: false
 
 
 
-### Ingredients:
+### Ingredients
 
 -   5 ea Parsnip
 -   Heavy Cream
 -   tt Salt
 
-### Directions: 
+### Directions 
 
 Peel parsnips and dice to 1/2 inch sizes.
 In a small 2 quart stock pot, add parsnips and poor Heavy Whipping Cream
@@ -33,7 +33,7 @@ Blend the parsnips and cream into a puree with a blender and ladle, food
 processor, or an immersion blender.
 Season with salt.
 
-### Notes: 
+### Notes 
 
 Poaching the parsnips in cream (or milk) ensures that the puree comes
 out bright white.

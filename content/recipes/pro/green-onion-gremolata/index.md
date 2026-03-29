@@ -20,7 +20,7 @@ ShowTOC: false
 **Yield:** 1 Quart
 
 
-### Ingredients:
+### Ingredients
 
 -   2 bunch Green Onion
 -   1 bunch Parsley
@@ -29,7 +29,7 @@ ShowTOC: false
 -   4 each Lemons (zest and juice)
 -   tt Salt and Fine Black Pepper
 
-### Directions: 
+### Directions 
 
 Puree all ingredients in a food processor until smooth.
 {{% /recipe %}}

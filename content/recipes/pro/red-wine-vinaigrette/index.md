@@ -21,7 +21,7 @@ ShowTOC: false
 **Yield:** 6 Cups
 
 
-### Ingredients:
+### Ingredients
 
 -   2 Cups Honey
 -   2 Cups Red Wine Vinegar
@@ -31,7 +31,7 @@ ShowTOC: false
 -   1 tsp Fine Black Pepper
 -   1 Tbsp Garlic, chopped
 
-### Directions: 
+### Directions 
 
 In a 4-Quart container, add all ingredients besides the canola oil.
 

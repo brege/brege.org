@@ -19,7 +19,7 @@ ShowTOC: false
 **Yield:** 2 Quart
 
 
-### Ingredients:
+### Ingredients
 
 -   2 cups Cayenne Pepper
 -   1 cup Paprika
@@ -31,7 +31,7 @@ ShowTOC: false
 -   1/2 cup Granulated Onion
 -   2 Tbsp Oregano
 
-### Directions: 
+### Directions 
 
 In a medium sized mixing bowl, add all ingredients and thoroughly mix.
 {{% /recipe %}}

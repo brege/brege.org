@@ -19,7 +19,7 @@ ShowTOC: false
 
 **Yield:** 3 Quarts 
 
-### Ingredients:
+### Ingredients
 
 - 1 Cup Soy Sauce
 - 2 oz Sriracha
@@ -30,7 +30,7 @@ ShowTOC: false
 - 2 oz Ground Ginger
 - 2 Quart Sesame Oil
 
-### Directions:
+### Directions
 
 1.  Puree all ingredients except the sesame oil in the blender until
     smooth
@@ -38,7 +38,7 @@ ShowTOC: false
 2.  While the blender is still running, slowly trickle the sesame oil to
     emulsify
 
-### Notes:
+### Notes
 
 1.  Optionally, a few limes can be squeezed into the dressing
 

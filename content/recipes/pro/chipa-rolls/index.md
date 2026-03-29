@@ -17,7 +17,7 @@ ShowTOC: false
 **Yield:** 10 servings
 
 
-### Ingredients:
+### Ingredients
 
 -   1 each Egg, whole
 -   2/3 Cup Whole Milk
@@ -26,7 +26,7 @@ ShowTOC: false
 -   1 3/4 Cup Tapioca Flour
 -   1 Cup Self Rising Flour
 
-### Directions: 
+### Directions 
 
 Preheat oven to 350 degrees F (175 degrees C). Oil a baking sheet with
 cooking spray and set aside.
@@ -40,7 +40,7 @@ baking sheet.
 
 Bake in preheated oven until golden brown, 10 to 15 minutes.
 
-### Notes: 
+### Notes 
 
 To make self rising flour, for every one cup AP Flour, ad 1/2 tsp Baking
 Powder and 1/2 tsp Salt.

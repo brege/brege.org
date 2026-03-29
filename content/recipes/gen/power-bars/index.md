@@ -20,7 +20,7 @@ ShowTOC: false
 
 *An easy no-bake protein bar recipe with the protein of an egg white and the fiber of half an apple.*
 
-### Ingredients:
+### Ingredients
 
 #### Dry
 - 2 C Old-Fashioned Oats
@@ -38,7 +38,7 @@ ShowTOC: false
 - 2 Tbsp No-stir Peanut Butter
 - 1 tsp vanilla extract
 
-### Directions:
+### Directions
 
 1. Mix the 7 dry ingredients, then add remaining wet ingredients, pressing with either a wooden pestle, spoon, or, ideally, a plastic dough scraper or wet hand
 
@@ -60,7 +60,7 @@ ShowTOC: false
 >}}
 
 
-### Notes:
+### Notes
 
 - If you want a dryer protein bar, use coconut or maple sugar in place of honey or maple syrup
 - **Substitution:** apple sauce ↔ ripe banana ↔ ripe pear

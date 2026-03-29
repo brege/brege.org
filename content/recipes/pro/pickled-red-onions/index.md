@@ -20,7 +20,7 @@ ShowTOC: false
 **Yield:** 4 quarts
 
 
-### Ingredients:
+### Ingredients
 
 -   1 Quart White Wine Vinegar
 -   1 Quart Water
@@ -31,7 +31,7 @@ ShowTOC: false
 -   1/2 ounce Crushed Red Pepper Flakes
 -   1/3 Cup Lemon Juice
 
-### Directions: 
+### Directions 
 
 Jullien red onion until a 4 Quart container is full.
 Add all other ingredients to a large stock pot.

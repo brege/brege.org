@@ -22,14 +22,14 @@ ShowTOC: false
 **Yield:** 5 cups
 
 
-### Ingredients:
+### Ingredients
 
 -   2 Cups Balsamic Vinegar
 -   2 Cups Extra Virgin Olive Oil
 -   1/4 Cup White Sugar
 -   1/2 Cup Dijon Mustard
 
-### Directions: 
+### Directions 
 
 In a 4 Quart container, emulsify everything but the olive oil with the
 immersion blender.

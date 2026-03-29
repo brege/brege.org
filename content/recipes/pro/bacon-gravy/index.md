@@ -16,7 +16,7 @@ ShowTOC: false
 
 **Yield:** 7 Quarts
 
-### Ingredients:
+### Ingredients
 
 -   2 Cups Rendered Bacon Fat
 -   2 Cups AP Flour
@@ -24,7 +24,7 @@ ShowTOC: false
 -   1 1/2 tsp Smoked Paprika
 -   tt Salt and Pepper
 
-### Directions: 
+### Directions 
 
 Make a roux with the bacon fat and flour over medium heat.
 
@@ -32,7 +32,7 @@ Add milk in 1/3 increments to build the bechamel.
 
 Over low heat, bring up to temperature and season.
 
-### Notes: 
+### Notes 
 
 For sausage gravy, simply add one quart of cooked sausage meat.
 {{% /recipe %}}

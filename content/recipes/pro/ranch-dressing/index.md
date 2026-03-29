@@ -19,7 +19,7 @@ ShowTOC: false
 **Yield:** 6 Quarts
 
 
-### Ingredients:
+### Ingredients
 
 -   1 Gallon Mayonaise
 -   2 1/2 lb Sour Cream
@@ -30,7 +30,7 @@ ShowTOC: false
 -   2 Tbs Garlic Powder
 -   1 Tbs Fine Black Pepper
 
-### Directions: 
+### Directions 
 
 Whisk wet ingredients in a large mixing bowl until thoroughly combined.
 Remove dill fronds from main stem and chop them.

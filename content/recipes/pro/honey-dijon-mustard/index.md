@@ -19,13 +19,13 @@ ShowTOC: false
 **Yield:** 3 Quarts
 
 
-### Ingredients:
+### Ingredients
 
 -   32 fl oz Dijon Mustard
 -   3/4 jug Honey
 -   2 Cup Yellow Mustard
 
-### Directions: 
+### Directions 
 
 Mix in a bowl with a whisk.
 {{% /recipe %}}

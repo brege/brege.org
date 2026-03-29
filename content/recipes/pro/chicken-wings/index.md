@@ -15,14 +15,14 @@ ShowTOC: false
 
 **Yield:** 3x's 8 Quarts
 
-### Ingredients:
+### Ingredients
 
 - 1 case Chicken Wings (40 lb)
 - ¼ Cup Kosher Salt
 - 1 oz Chili Powder
 - 1 oz Kosher Salt
 
-### Directions:
+### Directions
 
 1.  In a large stock pot, add the first two ingredients, then fill with
     water until the chicken wings are fully submerged

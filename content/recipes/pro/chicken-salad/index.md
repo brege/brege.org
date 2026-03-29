@@ -15,7 +15,7 @@ ShowTOC: false
 
 **Yield:** 2-3 Quarts
 
-### Ingredients:
+### Ingredients
 
 - 6 ea Chicken Breast (6 oz)
 - 6 ea Celery Stalks, diced
@@ -24,7 +24,7 @@ ShowTOC: false
 - ½ Tbsp Black Pepper
 - 1 Cup [Pesto Aioli](/recipes/pro/pesto-aioli/)
 
-### Directions:
+### Directions
 
 1.  Braise the chicken in chicken stock with a 6 quart stock pot until
     cooked to the proper temperature

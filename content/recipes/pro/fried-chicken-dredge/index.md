@@ -16,7 +16,7 @@ ShowTOC: false
 **Yield:** 2 Quarts
 
 
-### Ingredients:
+### Ingredients
 
 -   2 Quarts All-Purpose Flour
 -   4 Tbsp Kosher Salt
@@ -25,7 +25,7 @@ ShowTOC: false
 -   1 Tbsp Fine Black Pepper
 -   1 bunch Majoram
 
-### Directions: 
+### Directions 
 
 Pick the majoram, then combine all ingredients in a medium sized mixing
 bowl.

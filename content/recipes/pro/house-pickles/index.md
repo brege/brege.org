@@ -19,7 +19,7 @@ ShowTOC: false
 
 
 
-### Ingredients:
+### Ingredients
 
 -   1 case Pickling Cucumbers
 -   4 bunches Fresh Dill
@@ -32,7 +32,7 @@ ShowTOC: false
 -   20 each Dry Bay Leaves
 -   1/4 Cup Pickling Spice
 
-### Directions: 
+### Directions 
 
 Slice Cucumbers on the 1/16\" setting on the mandolin.
 

@@ -16,14 +16,14 @@ ShowTOC: false
 
 **Yield:** 3 Quarts
 
-### Ingredients:
+### Ingredients
 
 - 1 Quart Dijon Mustard
 - 3 Cup Yellow Mustard
 - 3 Cup Honey
 - 8 fl oz Stout or Porter Beer
 
-### Directions:
+### Directions
 
 1.  In a large mixing bowl, combine all ingredients and whisk
 

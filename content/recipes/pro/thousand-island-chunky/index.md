@@ -17,7 +17,7 @@ ShowTOC: false
 
 **Yield:** 6 Quarts
 
-### Ingredients:
+### Ingredients
 
 - 1 #10 can Ketchup
 - 1 Quart Mayonnaise
@@ -25,7 +25,7 @@ ShowTOC: false
 - 1 Cup Relish
 - ½ Cup Pickle Juice
 
-### Directions:
+### Directions
 
 1.  Mix all ingredients in a large mixing bowl with a whisk
 

@@ -15,7 +15,7 @@ ShowTOC: false
 
 **Yield:** 6 Quarts
 
-### Ingredients:
+### Ingredients
 
 - 1 Gallon Mayonnaise
 - 2 Cup Relish
@@ -28,7 +28,7 @@ ShowTOC: false
 - 1 Tbsp Kosher Salt
 - 1 Tbsp Black Pepper
 
-### Directions:
+### Directions
 
 1.  Mix all ingredients in a large mixing bowl with a whisk
 

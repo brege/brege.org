@@ -18,14 +18,14 @@ ShowTOC: false
 
 
 
-### Ingredients:
+### Ingredients
 
 -   1/2 Gallon Mayonaise
 -   3 Tbsp Cajun Seasoning
 -   1/4 Cup Lemon Juice
 -   1/3 Cup Roasted Red Pepper Sauce
 
-### Directions: 
+### Directions 
 
 In a large mixing bowl, whisk ingredients together.
 {{% /recipe %}}

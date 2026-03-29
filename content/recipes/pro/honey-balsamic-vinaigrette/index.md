@@ -17,7 +17,7 @@ ShowTOC: false
 
 **Yield:** 2 Quarts
 
-### Ingredients:
+### Ingredients
 
 - 2 ¾ Cup Balsamic Vinegar
 - 1 Cup Honey
@@ -28,7 +28,7 @@ ShowTOC: false
 - 1 ½ tsp Kosher Salt
 - 2 ½ Cup Canola Oil
 
-### Directions:
+### Directions
 
 1.  Add all ingredients except canola oil to the blender and blend until
     smooth

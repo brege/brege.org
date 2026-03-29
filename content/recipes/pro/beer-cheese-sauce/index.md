@@ -15,7 +15,7 @@ ShowTOC: false
 
 **Yield:** 4 Quarts 
 
-### Ingredients:
+### Ingredients
 
 - ¼ lb Butter
 - 1 Cup AP Flour
@@ -24,7 +24,7 @@ ShowTOC: false
 - 2 Quart Shredded Cheddar/jack Cheese
 - 2 Tbsp House Seasoning
 
-### Directions:
+### Directions
 
 1.  Over medium high heat, create a blonde roux with the butter and
     flour in a 6 quart sauce pot

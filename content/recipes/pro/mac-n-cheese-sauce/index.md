@@ -16,7 +16,7 @@ ShowTOC: false
 
 
 
-### Ingredients:
+### Ingredients
 
 -   1/2 Cup All-Purpose Flour
 -   1/2 Cup Butter
@@ -26,7 +26,7 @@ ShowTOC: false
 -   1 Tbsp Fine Black Pepper
 -   1 Tbsp Kosher Salt
 
-### Directions: 
+### Directions 
 
 Melt Butter in a 4 Quart pot over medium-high heat.
 Whisk in flour to create a blonde roux.

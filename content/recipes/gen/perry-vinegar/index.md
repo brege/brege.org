@@ -20,12 +20,12 @@ ShowTOC: false
 
 **Yield:** 1 gallon
 
-### Ingredients:
+### Ingredients
 
 - 5 lbs Pears, very ripe
 - 1/2 gal Water
 
-### Directions:
+### Directions
 
 1. Wash, then dice the pears and place in a sanitized glass vessel  (stems and seeds are fine)
 2. Smoosh with a potato masher or wooden pestle
@@ -35,7 +35,7 @@ ShowTOC: false
 6. Ferment for **6-12 weeks**. A pellical will form within the first 1-2 weeks, which can be saved for use in **kombucha** (this is the "SCOBY")
 7. **Vinegar**: you can pasteurize the vinegar by boiling it. You can remove the sedimentation by carefully tipping the vessel into another so as to not disturb it.  This **trub** is fantastic for homemade bread.
 
-### Notes:
+### Notes
 
 - This recipe is for a farmhouse style perry, using the natural yeast present on the skins of the pears, and is ideal when a storm knocks a bunch of pears off the tree.
 - This can attract **fruit flies**---be mindful of the location and climate you are fermenting in, especially during the vinegar formation phase.  You can mitigate some of this with a carboy and airlock system found at home brew stores.

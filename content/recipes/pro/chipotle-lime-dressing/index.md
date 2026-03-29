@@ -17,7 +17,7 @@ ShowTOC: false
 
 **Yield:** 2.5 Quarts 
 
-### Ingredients:
+### Ingredients
 
 - 1 7 oz Can Chipotles (w/ juice)
 - 1 Cup Lime Juice
@@ -27,7 +27,7 @@ ShowTOC: false
 - 1 bn Cilantro
 - 2 Quart Sour Cream
 
-### Directions:
+### Directions
 
 1.  In the blender, puree all ingredients except the sour cream until
     smooth

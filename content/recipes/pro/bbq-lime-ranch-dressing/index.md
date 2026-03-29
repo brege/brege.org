@@ -16,7 +16,7 @@ ShowTOC: false
 
 
 
-### Ingredients:
+### Ingredients
 
 -   2 Quart Mayonaise
 -   3 Cup [Sassy Midwest BBQ Sauce](/recipes/pro/bbq-sauce-midwest-style/)
@@ -28,7 +28,7 @@ ShowTOC: false
 -   1 1/2 tsp Fine Black Pepper
 -   2 bunches Fresh Cilantro
 
-### Directions: 
+### Directions 
 
 In a medium sized mixing bowl, blend all ingredients together with the
 immersion blender. Store in 4 Quart container.

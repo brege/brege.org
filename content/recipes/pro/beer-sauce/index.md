@@ -16,13 +16,13 @@ ShowTOC: false
 
 
 
-### Ingredients:
+### Ingredients
 
 -   3 qt Mayonaisse
 -   12 fl oz Guiness (bottle)
 -   3 Tbsp Coarse Grind Black Pepper
 
-### Directions: 
+### Directions 
 
 Add ingredients to a large mixing bowl and whisk.
 {{% /recipe %}}

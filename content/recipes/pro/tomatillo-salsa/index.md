@@ -19,7 +19,7 @@ ShowTOC: false
 
 **Yield:** 4 Quarts
 
-### Ingredients:
+### Ingredients
 
 - 5 lb Tomatillos
 - 5 ea Jalapenos
@@ -27,7 +27,7 @@ ShowTOC: false
 - 1 Tbsp House Seasoning
 - 1 pinch Cumin, ground
 
-### Directions:
+### Directions
 
 1.  Lightly roast the tomatillos (skins removed) in a large saute pan
     until tender

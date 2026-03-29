@@ -20,7 +20,7 @@ ShowTOC: false
 **Yield:** 7 Cups
 
 
-### Ingredients:
+### Ingredients
 
 -   2 Cup Canola Salad Oil
 -   2 Cup Honey
@@ -31,7 +31,7 @@ ShowTOC: false
 -   1 tsp Fine Black Pepper
 -   1 Tbsp Shallots, bruinoisse
 
-### Directions: 
+### Directions 
 
 In the food processor, add all ingredients besides the canola oil.
 

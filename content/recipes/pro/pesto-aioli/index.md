@@ -18,7 +18,7 @@ ShowTOC: false
 
 **Yield:** 6 Quarts 
 
-### Ingredients:
+### Ingredients
 
 - 1 bn Basil leaves (approx. 1 quart unpacked or cut)
 - 1/2 Cup Garlic Clove
@@ -28,7 +28,7 @@ ShowTOC: false
 - 1 Cup Water
 - 1 Gallon Mayonnaise
 
-### Directions:
+### Directions
 
 1.  In the blender, puree all ingredients into a pesto minus mayonnaise
     until smooth

@@ -17,7 +17,7 @@ ShowTOC: false
 
 
 
-### Ingredients:
+### Ingredients
 
 -   2 Bunches Cilantro, Whole
 -   1/4 Cup Honey
@@ -27,7 +27,7 @@ ShowTOC: false
 -   2 Tbs Sour Cream
 -   tt Salt and Pepper
 
-### Directions: 
+### Directions 
 
 Measure out Salad Oil in a pitcher.
 Blend the rest of the ingredients in a container with the immersion

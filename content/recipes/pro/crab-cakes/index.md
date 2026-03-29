@@ -15,7 +15,7 @@ ShowTOC: false
 
 **Yield:** 22 ea
 
-### Ingredients:
+### Ingredients
 
 - 3 pound Crab, canned
 - 1 each Red Bell Pepper, small dice
@@ -28,7 +28,7 @@ ShowTOC: false
 - 2 tsp Black Pepper
 - 2 tsp Kosher Salt
 
-### Directions:
+### Directions
 
 1.  In a large mixing bowl, combine all ingredients, ensuring you do not
     overwork the crab claw meat
