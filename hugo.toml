@@ -49,6 +49,24 @@ title = "brege.org"
 
   mainSections = ['post']
 
+[params.heroCards]
+  defaultView = 'expanded'
+
+  [params.heroCards.compact]
+    summary = true
+
+  [params.heroCards.expanded]
+    summary = true
+
+[params.postCards]
+  defaultView = 'compact'
+
+  [params.postCards.compact]
+    summary = true
+
+  [params.postCards.expanded]
+    summary = true
+
 [params.editPost]
   URL = "https://github.com/brege/brege.org/tree/master/content"
   Text = "edit"

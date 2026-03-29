@@ -1,7 +1,7 @@
 ---
 title: 'Non-linear Weightlifting Progression Calculator'
 date: '2025-03-25'
-summary: 'Using the Epley formula, and others, for estimating an effective pathway through plateaus'
+summary: 'Using the Epley formula, and others, for estimating an effective pathway through weightlifting plateaus'
 tags:
   - weightlifting
   - strength-training

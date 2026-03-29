@@ -45,6 +45,24 @@
 {{- $paginator := .Paginate $pages }}
 {{- $categories := "categories" }}
 {{- $tags := "tags" }}
+{{- $heroCards := site.Params.heroCards | default dict }}
+{{- $heroView := lower (string (default "expanded" $heroCards.defaultView)) }}
+{{- if ne $heroView "compact" }}
+  {{- $heroView = "expanded" }}
+{{- end }}
+{{- $heroCompact := $heroCards.compact | default dict }}
+{{- $heroExpanded := $heroCards.expanded | default dict }}
+{{- $heroSummaryCompact := ne $heroCompact.summary false }}
+{{- $heroSummaryExpanded := ne $heroExpanded.summary false }}
+{{- $postCards := site.Params.postCards | default dict }}
+{{- $postView := lower (string (default (cond .IsHome "compact" "expanded") $postCards.defaultView)) }}
+{{- if ne $postView "compact" }}
+  {{- $postView = "expanded" }}
+{{- end }}
+{{- $postCompact := $postCards.compact | default dict }}
+{{- $postExpanded := $postCards.expanded | default dict }}
+{{- $postSummaryCompact := ne $postCompact.summary false }}
+{{- $postSummaryExpanded := ne $postExpanded.summary false }}
 
 {{- if not .IsHome | and .Title }}
 <header class="page-header">
@@ -73,8 +91,8 @@
           <svg class="icon-expanded" viewBox="0 0 640 512"><path d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"></path></svg>
         </button>
       </div>
-      <div class="view-toggle" data-current-view="horizontal">
-        <button type="button" title="Switch to list view" aria-label="Switch to list view">
+      <div class="view-toggle" data-current-view="{{ $postView }}">
+        <button type="button" title="{{ if eq $postView "compact" }}Switch to expanded view{{ else }}Switch to compact view{{ end }}" aria-label="{{ if eq $postView "compact" }}Switch to expanded view{{ else }}Switch to compact view{{ end }}">
           <svg class="icon-horizontal" viewBox="0 0 16 16"><rect x="1" y="2" width="5" height="5" rx="1"/><line x1="8" y1="3" x2="15" y2="3"/><line x1="8" y1="6" x2="13" y2="6"/><rect x="1" y="9" width="5" height="5" rx="1"/><line x1="8" y1="10" x2="15" y2="10"/><line x1="8" y1="13" x2="13" y2="13"/></svg>
           <svg class="icon-minimal" viewBox="0 0 16 16"><line x1="1" y1="3" x2="15" y2="3"/><line x1="1" y1="6.5" x2="15" y2="6.5"/><line x1="1" y1="10" x2="15" y2="10"/><line x1="1" y1="13.5" x2="15" y2="13.5"/></svg>
         </button>
@@ -110,10 +128,85 @@
 {{- end }}
 
 {{- $term := .Data.Term }}
+{{- if and .IsHome (eq $paginator.PageNumber 1) (ne $homeLeadPermalink "") }}
+{{- range $paginator.Pages }}
+  {{- if eq .RelPermalink $homeLeadPermalink }}
+    {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
+    {{- $hasCover := and .Params.cover.image (not $isHidden) }}
+    {{- $summaryCompact := $heroSummaryCompact }}
+    {{- $summaryExpanded := $heroSummaryExpanded }}
+    {{- $renderSummary := and (ne (.Param "hideSummary") true) (or $summaryCompact $summaryExpanded) }}
+    {{- $heroClass := printf "post-entry post-card home-lead hero-view-%s summary-compact-%t summary-expanded-%t" $heroView $summaryCompact $summaryExpanded }}
+<div class="hero-list post-list {{ if eq $heroView "compact" }}view-minimal hero-list-compact{{ else }}view-horizontal hero-list-expanded{{ end }}">
+<article class="{{ $heroClass }}">
+  {{- if $hasCover }}
+  <div class="entry-media">
+    {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
+  </div>
+  {{- end }}
+  <div class="entry-body">
+    {{- with first 1 (.GetTerms $categories) }}
+    {{- range . }}
+    <div class="entry-category"><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></div>
+    {{- end }}
+    {{- end }}
+    <header class="entry-header">
+      <h2 class="entry-hint-parent">
+        {{- .Title }}
+        {{- if .Draft }}
+        <span class="entry-hint" title="Draft">
+          <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
+            <path
+              d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+          </svg>
+        </span>
+        {{- end }}
+      </h2>
+    </header>
+    {{- if $renderSummary }}
+    <div class="entry-summary">
+      <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+    </div>
+    {{- end }}
+    {{- if not (.Param "hideMeta") }}
+    <footer class="entry-meta">
+      {{- if not .Date.IsZero }}
+      <span>{{ .Date | time.Format (default ":date_long" site.Params.DateFormat) }}</span>
+      {{- end }}
+      {{- if (.Param "ShowWordCount") }}
+      <span>{{ i18n "words" .WordCount | default (printf "%d words" .WordCount) }}</span>
+      {{- end }}
+    </footer>
+    {{- end }}
+    {{- with (.GetTerms $tags) }}
+    <div class="entry-tags">
+      <span class="tag-line" aria-hidden="true"></span>
+      <ul class="entry-tags-preview" aria-label="tags">
+        {{- range . }}
+        <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+        {{- end }}
+      </ul>
+    </div>
+    {{- end }}
+  </div>
+  <div class="entry-date-col">
+    {{- if not .Date.IsZero }}
+    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+    {{- end }}
+    {{- if (.Param "ShowWordCount") }}
+    <span>{{ .WordCount }}w</span>
+    {{- end }}
+  </div>
+  <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+</article>
+</div>
+  {{- end }}
+{{- end }}
+{{- end }}
 <div
   id="post-list"
   class="post-list view-horizontal"
-  data-default-view="{{ if .IsHome }}minimal{{ else }}horizontal{{ end }}"
+  data-default-view="{{ $postView }}"
   data-view-storage-key="{{ if .IsHome }}home-post-view{{ else }}post-list-view{{ end }}">
 {{- range $index, $page := $paginator.Pages }}
 
@@ -121,14 +214,18 @@
   {{- $hasCover := and .Params.cover.image (not $isHidden) }}
   {{- $hasHomeLead := ne $homeLeadPermalink "" }}
   {{- $isHomeLead := and $.IsHome (eq $paginator.PageNumber 1) $hasHomeLead (eq .RelPermalink $homeLeadPermalink) }}
+  {{- if $isHomeLead }}
+    {{- continue }}
+  {{- end }}
+  {{- $summaryCompact := cond $isHomeLead $heroSummaryCompact $postSummaryCompact }}
+  {{- $summaryExpanded := cond $isHomeLead $heroSummaryExpanded $postSummaryExpanded }}
+  {{- $renderSummary := and (ne (.Param "hideSummary") true) (or $summaryCompact $summaryExpanded) }}
   {{- $cardClass := "post-entry post-card" }}
   {{- if not $hasCover }}
     {{- $cardClass = printf "%s no-cover" $cardClass }}
   {{- end }}
-  {{- if $isHomeLead }}
-    {{- $cardClass = printf "%s home-lead" $cardClass }}
-  {{- end }}
-<article class="{{ $cardClass }}">
+  {{- $cardClass = printf "%s summary-compact-%t summary-expanded-%t" $cardClass $summaryCompact $summaryExpanded }}
+<article class="{{ $cardClass }}" data-summary-compact="{{ if $summaryCompact }}true{{ else }}false{{ end }}" data-summary-expanded="{{ if $summaryExpanded }}true{{ else }}false{{ end }}">
   {{- if $hasCover }}
   <div class="entry-media">
     {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
@@ -153,7 +250,7 @@
         {{- end }}
       </h2>
     </header>
-    {{- if (ne (.Param "hideSummary") true) }}
+    {{- if $renderSummary }}
     <div class="entry-summary">
       <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
     </div>
@@ -220,20 +317,32 @@
 <script>
 (function() {
     var list = document.getElementById("post-list");
+    var heroList = document.querySelector(".hero-list");
     var viewToggles = Array.prototype.slice.call(document.querySelectorAll(".view-toggle"));
     var tagToggles = Array.prototype.slice.call(document.querySelectorAll(".tags-toggle"));
-    if (!list) return;
+    if (!list && !heroList) return;
+
+    function syncSummaries(view) {
+        var mode = view === "compact" ? "summaryCompact" : "summaryExpanded";
+
+        Array.prototype.forEach.call(list.querySelectorAll(".post-card"), function(card) {
+            var visible = card.dataset[mode] === "true";
+            card.classList.toggle("summary-visible", visible);
+            card.classList.toggle("summary-hidden", !visible);
+        });
+    }
 
     function setView(view) {
-        var isMinimal = view === "minimal";
+        var isCompact = view === "compact";
         list.classList.remove("view-horizontal", "view-minimal");
-        list.classList.add(isMinimal ? "view-minimal" : "view-horizontal");
+        list.classList.add(isCompact ? "view-minimal" : "view-horizontal");
+        syncSummaries(view);
         syncViewToggles(view);
         clampMobileTags();
     }
 
     function syncViewToggles(view) {
-        var nextLabel = view === "minimal" ? "Switch to card view" : "Switch to list view";
+        var nextLabel = view === "compact" ? "Switch to expanded view" : "Switch to compact view";
 
         viewToggles.forEach(function(toggle) {
             var button = toggle.querySelector("button");
@@ -250,7 +359,12 @@
 
     function setTagMode(mode) {
         var expanded = mode === "expanded";
-        list.classList.toggle("tags-expanded", expanded);
+        if (list) {
+            list.classList.toggle("tags-expanded", expanded);
+        }
+        if (heroList) {
+            heroList.classList.toggle("tags-expanded", expanded);
+        }
         syncTagToggles(mode);
         clampMobileTags();
     }
@@ -272,56 +386,64 @@
     }
 
     function clampMobileTags() {
-        var expanded = list.classList.contains("tags-expanded");
-        var rows = list.querySelectorAll(".entry-tags");
-
         function fits(preview) {
             return preview.scrollWidth <= preview.clientWidth + 1 &&
                 preview.scrollHeight <= preview.clientHeight + 1;
         }
 
-        rows.forEach(function(row) {
-            var preview = row.querySelector(".entry-tags-preview");
-            if (!preview) {
-                return;
-            }
-            var items = Array.prototype.slice.call(preview.children);
-            items.forEach(function(item) {
-                item.style.display = "";
-            });
-
-            if (expanded) {
+        [heroList, list].forEach(function(container) {
+            if (!container) {
                 return;
             }
 
-            items.slice(3).forEach(function(item) {
-                item.style.display = "none";
-            });
+            var expanded = container.classList.contains("tags-expanded");
+            var rows = container.querySelectorAll(".entry-tags");
 
-            while (true) {
-                var visible = items.filter(function(item) {
-                    return item.style.display !== "none";
+            rows.forEach(function(row) {
+                var preview = row.querySelector(".entry-tags-preview");
+                if (!preview) {
+                    return;
+                }
+                var items = Array.prototype.slice.call(preview.children);
+                items.forEach(function(item) {
+                    item.style.display = "";
                 });
-                var last = visible[visible.length - 1];
 
-                if (!last) {
+                if (expanded) {
                     return;
                 }
 
-                if (fits(preview)) {
-                    return;
-                }
+                items.slice(3).forEach(function(item) {
+                    item.style.display = "none";
+                });
 
-                last.style.display = "none";
-            }
+                while (true) {
+                    var visible = items.filter(function(item) {
+                        return item.style.display !== "none";
+                    });
+                    var last = visible[visible.length - 1];
+
+                    if (!last) {
+                        return;
+                    }
+
+                    if (fits(preview)) {
+                        return;
+                    }
+
+                    last.style.display = "none";
+                }
+            });
         });
     }
 
-    var viewStorageKey = list.dataset.viewStorageKey || "post-list-view";
+    var viewStorageKey = list ? (list.dataset.viewStorageKey || "post-list-view") : "post-list-view";
     var stored = localStorage.getItem(viewStorageKey);
     var storedTags = localStorage.getItem("post-tags");
-    var defaultView = list.dataset.defaultView === "minimal" ? "minimal" : "horizontal";
-    setView(stored === "minimal" || stored === "horizontal" ? stored : defaultView);
+    var defaultView = list && list.dataset.defaultView === "compact" ? "compact" : "expanded";
+    if (list) {
+        setView(stored === "compact" || stored === "expanded" ? stored : defaultView);
+    }
     setTagMode(storedTags === "expanded" ? "expanded" : "clamped");
 
     viewToggles.forEach(function(toggle) {
@@ -332,7 +454,7 @@
         }
 
         button.addEventListener("click", function() {
-            var nextView = toggle.dataset.currentView === "minimal" ? "horizontal" : "minimal";
+            var nextView = toggle.dataset.currentView === "compact" ? "expanded" : "compact";
             setView(nextView);
             localStorage.setItem(viewStorageKey, nextView);
         });

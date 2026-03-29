@@ -248,9 +248,12 @@
     gap: 1rem;
     padding: 1.2rem 0;
 }
-.view-horizontal .post-card.no-cover .entry-summary,
 .view-horizontal .post-card.no-cover .entry-meta {
     display: none;
+}
+.view-horizontal .post-card.no-cover .entry-summary {
+    margin-top: 0.35rem;
+    max-width: 48ch;
 }
 .view-horizontal .post-card.no-cover .entry-header h2 {
     font-size: 1.3em;
@@ -276,7 +279,8 @@
     flex: 0 0 1.25rem;
 }
 .post-list:not(.tags-expanded).view-horizontal .post-card.no-cover .entry-tags-preview,
-.post-list:not(.tags-expanded).view-minimal .post-card .entry-tags-preview {
+.post-list:not(.tags-expanded).view-minimal .post-card .entry-tags-preview,
+.hero-list-compact .post-card.home-lead .entry-tags-preview {
     flex-wrap: nowrap;
     max-height: none;
     margin-left: 0.45rem;
@@ -289,7 +293,8 @@
     align-self: start;
 }
 .view-horizontal .post-card.home-lead,
-.view-minimal .post-card.home-lead {
+.view-minimal .post-card.home-lead,
+.hero-list-expanded .post-card.home-lead {
     grid-template-columns: minmax(260px, 320px) 1fr;
     gap: 1.35rem;
     padding: 1rem;
@@ -299,50 +304,62 @@
     border-radius: var(--radius);
 }
 .view-horizontal .post-card.home-lead .entry-body,
-.view-minimal .post-card.home-lead .entry-body {
+.view-minimal .post-card.home-lead .entry-body,
+.hero-list-expanded .post-card.home-lead .entry-body {
     min-width: 0;
     padding-right: 0.15rem;
 }
 .view-horizontal .post-card.home-lead .entry-header h2,
-.view-minimal .post-card.home-lead .entry-header h2 {
+.view-minimal .post-card.home-lead .entry-header h2,
+.hero-list-expanded .post-card.home-lead .entry-header h2 {
     margin-top: 0;
     font-size: 1.6em;
 }
 .view-horizontal .post-card.home-lead .entry-summary,
-.view-minimal .post-card.home-lead .entry-summary {
+.view-minimal .post-card.home-lead .entry-summary,
+.hero-list-expanded .post-card.home-lead .entry-summary {
     font-size: 0.98em;
 }
 .view-horizontal .post-card.home-lead .entry-summary p,
-.view-minimal .post-card.home-lead .entry-summary p {
+.view-minimal .post-card.home-lead .entry-summary p,
+.hero-list-expanded .post-card.home-lead .entry-summary p {
     max-width: 42ch;
 }
 .view-horizontal .post-card.home-lead .entry-meta,
-.view-minimal .post-card.home-lead .entry-meta {
+.view-minimal .post-card.home-lead .entry-meta,
+.hero-list-expanded .post-card.home-lead .entry-meta {
     margin-top: 0.8rem;
 }
 .view-horizontal .post-card.home-lead .entry-tags,
-.view-minimal .post-card.home-lead .entry-tags {
+.view-minimal .post-card.home-lead .entry-tags,
+.hero-list-expanded .post-card.home-lead .entry-tags {
     margin-top: 0.85rem;
 }
 .view-horizontal .post-card.home-lead .entry-cover,
-.view-minimal .post-card.home-lead .entry-cover {
+.view-minimal .post-card.home-lead .entry-cover,
+.hero-list-expanded .post-card.home-lead .entry-cover {
     border-radius: var(--radius);
     overflow: hidden;
 }
 .view-horizontal .post-card.home-lead .entry-cover img,
-.view-minimal .post-card.home-lead .entry-cover img {
+.view-minimal .post-card.home-lead .entry-cover img,
+.hero-list-expanded .post-card.home-lead .entry-cover img {
     width: 100%;
     aspect-ratio: 4 / 3;
     object-fit: cover;
 }
 .view-minimal .post-card.home-lead .entry-media,
-.view-minimal .post-card.home-lead .entry-summary {
+.view-minimal .post-card.home-lead .entry-summary,
+.hero-list-expanded .post-card.home-lead .entry-media,
+.hero-list-expanded .post-card.home-lead .entry-summary {
     display: block;
 }
-.view-minimal .post-card.home-lead .entry-meta {
+.view-minimal .post-card.home-lead .entry-meta,
+.hero-list-expanded .post-card.home-lead .entry-meta {
     display: flex;
 }
-.view-minimal .post-card.home-lead .entry-date-col {
+.view-minimal .post-card.home-lead .entry-date-col,
+.hero-list-expanded .post-card.home-lead .entry-date-col {
     display: none;
 }
 .home-feed-header {
@@ -377,9 +394,13 @@
     padding: 1.2rem 0;
 }
 .view-minimal .post-card .entry-media,
-.view-minimal .post-card .entry-summary,
 .view-minimal .post-card .entry-meta {
     display: none;
+}
+.view-minimal .post-card .entry-summary {
+    display: block;
+    margin-top: 0.35rem;
+    max-width: 48ch;
 }
 .view-minimal .post-card .entry-header h2 {
     font-size: 1.3em;
@@ -412,10 +433,104 @@
 .view-minimal .post-card .entry-date-col {
     align-self: start;
 }
+.view-horizontal .post-card:not(.home-lead)[data-summary-expanded="false"] .entry-summary,
+.view-minimal .post-card:not(.home-lead)[data-summary-compact="false"] .entry-summary {
+    display: none;
+}
+.view-horizontal .post-card.home-lead.hero-view-compact,
+.view-minimal .post-card.home-lead.hero-view-compact,
+.hero-list-compact .post-card.home-lead.hero-view-compact {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: start;
+    gap: 1rem;
+    padding: 1.2rem 0;
+    margin: 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+}
+.view-horizontal .post-card.home-lead.hero-view-compact .entry-media,
+.view-minimal .post-card.home-lead.hero-view-compact .entry-media,
+.hero-list-compact .post-card.home-lead.hero-view-compact .entry-media,
+.view-horizontal .post-card.home-lead.hero-view-compact .entry-meta,
+.view-minimal .post-card.home-lead.hero-view-compact .entry-meta,
+.hero-list-compact .post-card.home-lead.hero-view-compact .entry-meta {
+    display: none;
+}
+.view-horizontal .post-card.home-lead.hero-view-compact .entry-body,
+.view-minimal .post-card.home-lead.hero-view-compact .entry-body,
+.hero-list-compact .post-card.home-lead.hero-view-compact .entry-body {
+    display: block;
+    min-width: 0;
+    padding-right: 0;
+}
+.view-horizontal .post-card.home-lead.hero-view-compact .entry-header h2,
+.view-minimal .post-card.home-lead.hero-view-compact .entry-header h2,
+.hero-list-compact .post-card.home-lead.hero-view-compact .entry-header h2 {
+    margin-top: 0;
+    font-size: 1.3em;
+}
+.view-horizontal .post-card.home-lead.hero-view-compact .entry-summary,
+.view-minimal .post-card.home-lead.hero-view-compact .entry-summary,
+.hero-list-compact .post-card.home-lead.hero-view-compact .entry-summary {
+    display: block;
+    margin-top: 0.35rem;
+    font-size: 0.92em;
+    max-width: 48ch;
+}
+.view-horizontal .post-card.home-lead.hero-view-compact .entry-category,
+.view-minimal .post-card.home-lead.hero-view-compact .entry-category,
+.hero-list-compact .post-card.home-lead.hero-view-compact .entry-category {
+    margin: 0 0 0.15rem;
+    font-size: 0.7em;
+    line-height: 1.4;
+}
+.view-horizontal .post-card.home-lead.hero-view-compact .entry-tags,
+.view-minimal .post-card.home-lead.hero-view-compact .entry-tags,
+.hero-list-compact .post-card.home-lead.hero-view-compact .entry-tags {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 0.4rem;
+    max-width: 100%;
+}
+.view-horizontal .post-card.home-lead.hero-view-compact .entry-tags .tag-line,
+.view-minimal .post-card.home-lead.hero-view-compact .entry-tags .tag-line,
+.hero-list-compact .post-card.home-lead.hero-view-compact .entry-tags .tag-line {
+    min-width: 1.25rem;
+    flex: 0 0 1.25rem;
+}
+.view-horizontal .post-card.home-lead.hero-view-compact .entry-tags-preview a,
+.view-minimal .post-card.home-lead.hero-view-compact .entry-tags-preview a,
+.hero-list-compact .post-card.home-lead.hero-view-compact .entry-tags-preview a {
+    font-size: 0.76em;
+}
+.view-horizontal .post-card.home-lead.hero-view-compact .entry-date-col,
+.view-minimal .post-card.home-lead.hero-view-compact .entry-date-col,
+.hero-list-compact .post-card.home-lead.hero-view-compact .entry-date-col {
+    display: flex;
+    align-self: start;
+}
+.hero-list-expanded .post-card.home-lead.hero-view-expanded.summary-expanded-false .entry-summary,
+.hero-list-compact .post-card.home-lead.hero-view-compact.summary-compact-false .entry-summary,
+.view-horizontal .post-card.home-lead.hero-view-expanded[data-summary-expanded="false"] .entry-summary,
+.view-minimal .post-card.home-lead.hero-view-expanded[data-summary-expanded="false"] .entry-summary,
+.view-horizontal .post-card.home-lead.hero-view-compact[data-summary-compact="false"] .entry-summary,
+.view-minimal .post-card.home-lead.hero-view-compact[data-summary-compact="false"] .entry-summary {
+    display: none;
+}
+.post-card.summary-visible .entry-summary {
+    display: block !important;
+}
+.post-card.summary-hidden .entry-summary {
+    display: none !important;
+}
 
 @media (max-width: 700px) {
     .view-horizontal .post-card .entry-tags-preview,
-    .view-minimal .post-card .entry-tags-preview {
+    .view-minimal .post-card .entry-tags-preview,
+    .hero-list-expanded .post-card.home-lead .entry-tags-preview,
+    .hero-list-compact .post-card.home-lead .entry-tags-preview {
         gap: 0.2rem 0.65rem;
     }
 }
@@ -940,8 +1055,8 @@
     fill: currentColor;
     stroke: none;
 }
-.view-toggle[data-current-view="horizontal"] .icon-horizontal,
-.view-toggle[data-current-view="minimal"] .icon-minimal {
+.view-toggle[data-current-view="expanded"] .icon-horizontal,
+.view-toggle[data-current-view="compact"] .icon-minimal {
     display: none;
 }
 .recipe-view-toggle[data-recipe-view="compact"] .icon-compact,
@@ -1014,7 +1129,9 @@
     }
 
     .view-horizontal .post-card.no-cover,
-    .view-horizontal .post-card.home-lead {
+    .view-horizontal .post-card.home-lead,
+    .hero-list-expanded .post-card.home-lead,
+    .hero-list-compact .post-card.home-lead {
         grid-template-columns: 1fr;
     }
 
@@ -1024,16 +1141,21 @@
 
     .view-horizontal .post-card.no-cover .entry-date-col,
     .view-horizontal .post-card.home-lead .entry-date-col,
+    .hero-list-expanded .post-card.home-lead .entry-date-col,
+    .hero-list-compact .post-card.home-lead .entry-date-col,
     .view-horizontal .post-card .entry-date-col {
         display: none;
     }
 
-    .view-horizontal .post-card.home-lead {
+    .view-horizontal .post-card.home-lead,
+    .hero-list-expanded .post-card.home-lead,
+    .hero-list-compact .post-card.home-lead {
         gap: 0.85rem;
         padding: 0.8rem;
     }
 
-    .view-minimal .post-card.home-lead {
+    .view-minimal .post-card.home-lead,
+    .hero-list-compact .post-card.home-lead {
         grid-template-columns: 1fr;
         gap: 0.85rem;
         padding: 0.8rem;
