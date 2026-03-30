@@ -110,7 +110,7 @@
             </a>
             {{- end }}
         </div>
-        <ul id="menu">
+        <ul id="menu" class="balanced-wrap balance-end">
             {{- range site.Menus.main }}
             {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
             {{- $is_search := eq (site.GetPage .KeyName).Layout `search` }}
@@ -137,65 +137,3 @@
         </ul>
     </nav>
 </header>
-<script>
-    (function () {
-        var nav = document.querySelector(".header .nav");
-        var toggle = document.getElementById("menu-toggle");
-        var menu = document.getElementById("menu");
-        if (!nav || !toggle || !menu) return;
-        var storageKey = "mobile-menu-open";
-
-        function isMobile() {
-            return window.matchMedia("(max-width: 700px)").matches;
-        }
-
-        function resetMenuLayout() {
-            menu.removeAttribute("data-layout");
-            menu.style.removeProperty("--mobile-menu-cols");
-        }
-
-        function balanceMenu() {
-            resetMenuLayout();
-            if (!isMobile() || !nav.classList.contains("menu-open")) return;
-
-            var items = Array.prototype.filter.call(menu.querySelectorAll("li"), function (item) {
-                return window.getComputedStyle(item).display !== "none";
-            });
-            if (items.length < 2) return;
-
-            var style = window.getComputedStyle(menu);
-            var gap = parseFloat(style.columnGap || style.gap || "0");
-            var available = menu.clientWidth;
-            var total = items.reduce(function (sum, item) {
-                return sum + item.getBoundingClientRect().width;
-            }, 0) + gap * (items.length - 1);
-
-            if (total <= available) return;
-
-            for (var rows = Math.max(2, Math.ceil(total / available)); rows <= items.length; rows++) {
-                menu.dataset.layout = "balanced";
-                menu.style.setProperty("--mobile-menu-cols", String(Math.ceil(items.length / rows)));
-                if (menu.scrollWidth <= available + 1) {
-                    return;
-                }
-            }
-
-            menu.dataset.layout = "balanced";
-            menu.style.setProperty("--mobile-menu-cols", String(Math.ceil(items.length / 2)));
-        }
-
-        function setOpen(open) {
-            nav.classList.toggle("menu-open", open);
-            toggle.setAttribute("aria-expanded", open ? "true" : "false");
-            localStorage.setItem(storageKey, open ? "true" : "false");
-            window.requestAnimationFrame(balanceMenu);
-        }
-
-        toggle.addEventListener("click", function () {
-            setOpen(toggle.getAttribute("aria-expanded") !== "true");
-        });
-
-        window.addEventListener("resize", balanceMenu);
-        setOpen(localStorage.getItem(storageKey) === "true");
-    })();
-</script>

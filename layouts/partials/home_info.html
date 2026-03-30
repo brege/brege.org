@@ -1,8 +1,20 @@
 {{- with site.Params.homeInfoParams }}
 {{- $note := .Note | default "data scientist / chef / astrophysicist" -}}
+{{- $noteItems := slice -}}
+{{- range split $note "/" }}
+  {{- $part := strings.TrimSpace . -}}
+  {{- if ne $part "" -}}
+    {{- $noteItems = $noteItems | append (dict "name" $part) -}}
+  {{- end -}}
+{{- end -}}
 <article class="first-entry home-info home-signal">
     <header class="entry-header">
-        <p class="home-signal-note">{{ $note }}</p>
+        {{- partial "balanced_sequence.html" (dict
+          "class" "home-signal-note"
+          "tag" "p"
+          "align" "center"
+          "items" $noteItems
+        ) }}
         <h1>{{ .Title | markdownify }}</h1>
     </header>
     <div class="entry-content">

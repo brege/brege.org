@@ -1,7 +1,14 @@
 {{- with site.Params.homeInfoParams.markers }}
-<ul class="home-markers" aria-label="biographical links">
-    {{- range . }}
-    <li><a href="{{ .url | absURL }}">{{ .name }}</a></li>
-    {{- end }}
-</ul>
+{{- $items := slice -}}
+{{- range . }}
+  {{- $items = $items | append (dict "name" .name "url" (.url | absURL)) -}}
+{{- end }}
+{{- partial "balanced_sequence.html" (dict
+  "id" "home-markers"
+  "class" "home-markers"
+  "tag" "ul"
+  "align" "center"
+  "aria_label" "biographical links"
+  "items" $items
+) }}
 {{- end }}
