@@ -969,6 +969,7 @@
     display: flex;
     align-items: center;
     gap: 0.4rem;
+    line-height: 1;
 }
 .page-header-main h1 a {
     display: inline-flex;
@@ -976,6 +977,9 @@
 }
 .page-header-main h1 svg {
     display: block;
+}
+.page-header-main .list-controls {
+    align-self: center;
 }
 
 .mobile-menu-summary {
@@ -1219,7 +1223,7 @@
     }
 
     .page-header-main {
-        align-items: flex-start;
+        align-items: center;
         flex-wrap: wrap;
     }
 
