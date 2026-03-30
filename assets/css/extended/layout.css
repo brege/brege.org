@@ -1132,13 +1132,6 @@
     flex-wrap: wrap;
     min-width: 0;
 }
-.home-info-footer .list-controls {
-    margin-left: auto;
-}
-.home-info-footer .view-toggle button,
-.home-info-footer .tags-toggle button {
-    padding: 0;
-}
 
 /* --- category label --- */
 .entry-category {

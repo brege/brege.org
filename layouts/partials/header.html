@@ -80,8 +80,7 @@
                 {{- end }}
             </div>
         </div>
-        {{- $currentPage := . }}
-        {{- $page_url := $currentPage.Permalink | absLangURL }}
+        {{- $page_url := .Permalink | absLangURL }}
         {{- $active_name := "" }}
         {{- $active_url := "" }}
         {{- range site.Menus.main }}
@@ -167,38 +166,16 @@
             var style = window.getComputedStyle(menu);
             var gap = parseFloat(style.columnGap || style.gap || "0");
             var available = menu.clientWidth;
-            var widths = items.map(function (item) {
-                return item.getBoundingClientRect().width;
-            });
-            var total = widths.reduce(function (sum, width) {
-                return sum + width;
+            var total = items.reduce(function (sum, item) {
+                return sum + item.getBoundingClientRect().width;
             }, 0) + gap * (items.length - 1);
 
             if (total <= available) return;
 
-            for (var rows = 2; rows <= items.length; rows++) {
-                var cols = Math.ceil(items.length / rows);
-                var fits = true;
-
-                for (var row = 0; row < rows; row++) {
-                    var start = row * cols;
-                    var end = Math.min(start + cols, widths.length);
-                    if (start >= end) break;
-
-                    var rowWidth = 0;
-                    for (var i = start; i < end; i++) {
-                        rowWidth += widths[i];
-                    }
-                    rowWidth += gap * (end - start - 1);
-                    if (rowWidth > available) {
-                        fits = false;
-                        break;
-                    }
-                }
-
-                if (fits) {
-                    menu.dataset.layout = "balanced";
-                    menu.style.setProperty("--mobile-menu-cols", String(cols));
+            for (var rows = Math.max(2, Math.ceil(total / available)); rows <= items.length; rows++) {
+                menu.dataset.layout = "balanced";
+                menu.style.setProperty("--mobile-menu-cols", String(Math.ceil(items.length / rows)));
+                if (menu.scrollWidth <= available + 1) {
                     return;
                 }
             }
