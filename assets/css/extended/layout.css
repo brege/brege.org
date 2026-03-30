@@ -978,6 +978,56 @@
     display: block;
 }
 
+.mobile-menu-summary {
+    display: none;
+}
+
+.menu-toggle {
+    appearance: none;
+    -webkit-appearance: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto 0;
+    padding: 0;
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.menu-toggle svg {
+    display: block;
+    width: 24px;
+    height: 18px;
+    stroke: currentColor;
+    fill: none;
+}
+
+.menu-toggle .icon-expanded {
+    display: none;
+}
+
+.nav.menu-open .menu-toggle .icon-collapsed {
+    display: none;
+}
+
+.nav.menu-open .menu-toggle .icon-expanded {
+    display: block;
+}
+
+.mobile-menu-current {
+    display: inline-flex;
+    align-items: center;
+    color: var(--primary);
+    font-size: 16px;
+}
+
+.mobile-menu-current .active {
+    font-weight: 500;
+    border-bottom: 2px solid currentColor;
+}
+
 /* --- view toggle buttons --- */
 .post-list.tags-expanded .entry-tags-preview {
     max-height: none;
@@ -1110,6 +1160,62 @@
 }
 
 @media (max-width: 700px) {
+    .nav {
+        align-items: center;
+    }
+
+    .logo {
+        margin-right: 0;
+    }
+
+    .mobile-menu-summary {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.2rem;
+        margin: auto var(--gap) auto auto;
+    }
+
+    #menu {
+        display: none;
+        width: calc(100% - (var(--gap) * 2));
+        margin: 0 var(--gap);
+        padding-top: 0.35rem;
+        padding-bottom: 0.35rem;
+        border-bottom: 1px solid var(--border);
+        line-height: 1.35;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        gap: 0.2rem 1rem;
+        overflow: visible;
+        white-space: normal;
+    }
+
+    .nav.menu-open #menu {
+        display: flex;
+    }
+
+    .nav.menu-open #menu[data-layout="balanced"] {
+        display: grid;
+        grid-template-columns: repeat(var(--mobile-menu-cols), max-content);
+        justify-content: flex-end;
+    }
+
+    #menu li + li {
+        margin-inline-start: 0;
+    }
+
+    #menu li.menu-item-current {
+        display: none;
+    }
+
+    #menu li {
+        flex: 0 0 auto;
+    }
+
+    #menu a {
+        padding: 0;
+    }
+
     .post-meta-editorial {
         flex-direction: column;
         align-items: flex-start;
