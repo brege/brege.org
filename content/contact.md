@@ -1,5 +1,6 @@
 ---
 title: Contact
+type: contact
 hideMeta: true
 disableShare: true
 showToc: false
@@ -7,20 +8,10 @@ showToc: false
 
 ### **email**
 
-- email [**wyatt@brege.org**](mailto:wyatt@brege.org)
-- [public GPG key](/brege-gpg.txt) also found on the
-[Ubuntu keyserver](https://keyserver.ubuntu.com/pks/lookup?search=EB3F25A8C5579EA6&fingerprint=on&op=index)
-
----
-
-### **socials**
-
-- signal
-[@brege.01](https://signal.me/#eu/0qONLHRq0LrobBU7QIEfqomo1LJ9425RBq5IzydUPCa3hLGuq61AzLhY4Xjvt0e8])
-- mastodon
-[**@mastodon.social@brege**](https://mastodon.social/@brege)
-- matrix
-[@brege:matrix.org](https://matrix.to/#/@brege:matrix.org)
+| type | details |
+| --- | --- |
+| email | [**wyatt@brege.org**](mailto:wyatt@brege.org) |
+| pgp key | [EB3F25A8C5579EA6](/brege-gpg.txt) · [Ubuntu keyserver](https://keyserver.ubuntu.com/pks/lookup?search=EB3F25A8C5579EA6&fingerprint=on&op=index) |
 
 ---
 
@@ -30,6 +21,18 @@ spam is out of control. if you've tried to reach me by phone and gotten the assi
 
 ---
 
-### **fangman socials *\*dies*\***
+### **socials**
+
+| type | details |
+| --- | --- |
+| signal | [@brege.01](https://signal.me/#eu/0qONLHRq0LrobBU7QIEfqomo1LJ9425RBq5IzydUPCa3hLGuq61AzLhY4Xjvt0e8) |
+| mastodon | [**@mastodon.social@brege**](https://mastodon.social/@brege) |
+| matrix | [@brege:matrix.org](https://matrix.to/#/@brege:matrix.org) |
+
+---
+
+### **fangman socials**
+
+*\*dies*\*
 
 i rarely open instagram or linkedin unless i am nudged to do so by email. response timescales are on the order of ~weeks or ~months.
