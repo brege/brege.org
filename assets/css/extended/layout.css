@@ -579,7 +579,7 @@
     --balanced-sep-color: var(--secondary);
     --balanced-col-gap: 0;
     --balanced-row-gap: 0.45rem;
-    --balanced-sep-gap: 0.38rem;
+    --balanced-sep-gap: 0.4rem;
     margin: 1.25rem auto 0;
     padding: 0;
     list-style: none;
@@ -1169,7 +1169,7 @@
     --balanced-sep-color: var(--border);
     --balanced-col-gap: 0;
     --balanced-row-gap: 0.15rem;
-    --balanced-sep-gap: 0.7rem;
+    --balanced-sep-gap: 0.32rem;
     font-size: 0.88rem;
 }
 
