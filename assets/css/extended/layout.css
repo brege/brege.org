@@ -1617,6 +1617,15 @@
     }
 }
 
+.post-single.type-cv .cv-reader-shadow {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
 /* --- category label --- */
 .entry-category {
     font-family: "IBM Plex Mono", monospace;

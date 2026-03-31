@@ -45,6 +45,9 @@
   {{- end }}
 
   <div class="post-content cv-content">
+    <div class="cv-reader-shadow">
+      {{- .RawContent | markdownify -}}
+    </div>
     {{- if not (.Param "disableAnchoredHeadings") }}
     {{- partial "anchored_headings.html" (partial "cv.html" .) -}}
     {{- else -}}

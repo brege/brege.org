@@ -13,7 +13,7 @@ tocEndLevel: 2
 
 - **physics and mathematics** · [mechanics](https://en.wikipedia.org/wiki/Hamiltonian_mechanics), [general relativity](https://en.wikipedia.org/wiki/General_relativity), [fluid dynamics](https://en.wikipedia.org/wiki/Fluid_dynamics), [finite volume](https://en.wikipedia.org/wiki/Finite_element_method), [numerical methods](https://en.wikipedia.org/wiki/Numerical_analysis), [differential equations](https://en.wikipedia.org/wiki/Differential_equation)
 
-- **computing** · [data science](https://en.wikipedia.org/wiki/Data_science), [artificial intelligence](https://en.wikipedia.org/wiki/AI), [software engineering](https://en.wikipedia.org/wiki/Software_engineering), [sysadmin](https://en.wikipedia.org/wiki/System_administration), [machine learning](https://en.wikipedia.org/wiki/Machine_learning), [full-stack development](https://en.wikipedia.org/wiki/Full_stack)
+- **computing** · [data science](https://en.wikipedia.org/wiki/Data_science), [artificial intelligence](https://en.wikipedia.org/wiki/AI), [software engineering](https://en.wikipedia.org/wiki/Software_engineering), [sysadmin](https://en.wikipedia.org/wiki/System_administration), [machine learning](https://en.wikipedia.org/wiki/Machine_learning), [full-stack development](https://en.wikipedia.org/wiki/Solution_stack#Full-stack_developer)
 
 - **culinary arts** · menu profit analysis, from-scratch and seasonal cooking, farm-to-table sourcing, pairing dinners and pop-ups, fermentation and preservation, pedagogical training, documentation systems
 
