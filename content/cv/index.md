@@ -142,58 +142,62 @@ APS April Meeting, apr 12, 2015, [BAPS.2015.APR.K13.9](https://meetings.aps.org/
 ## Research Experience
 
 May 2013 | to | Sep 2018
-My [dissertation](https://hdl.handle.net/2376/111818) for my physics PhD consisted of two primary projects around **black hole-neutron star mergers and accretion disk simulations**.
+**Black hole-neutron star mergers and accretion disk simulations**
+[Physics Dissertation](https://hdl.handle.net/2376/111818), [Washington State University](https://physics.wsu.edu), [SXS collaboration](https://black-holes.org)
+My doctoral research consisted of two primary projects: one in compact binary mergers and accretion disks, and another in a high-order accurate [finite volume](https://en.wikipedia.org/wiki/Finite_volume) implementation.
 1. I evolved [black hole](https://en.wikipedia.org/wiki/Black_hole)-[neutron star](https://en.wikipedia.org/wiki/Neutron_star) systems in [SpEC](https://www.black-holes.org/code/SpEC.html) with [adaptive mesh refinement](https://en.wikipedia.org/wiki/Adaptive_mesh_refinement) and [nuclear-theory](https://en.wikipedia.org/wiki/Nucleosynthesis) based [equations of state](https://en.wikipedia.org/wiki/Equation_of_state)
-2. I implemented a high-order accurate finite difference scheme with boundary closures to solve the [fluid equations](https://en.wikipedia.org/wiki/Computational_fluid_dynamics) of an [accretion disk](https://en.wikipedia.org/wiki/Accretion_disk) on a multipatch grid structure.
-- *[Washington State University](https://physics.wsu.edu), [SXS collaboration](https://black-holes.org)*
+2. I implemented a shock-capturing, energy stable, multiblock algorithm, [ESWENO](https://arc.aiaa.org/doi/abs/10.2514/6.2012-2837), into [SpEC](https://www.black-holes.org/code/SpEC.html) to solve the [fluid equations](https://en.wikipedia.org/wiki/Computational_fluid_dynamics) of an [accretion disk](https://en.wikipedia.org/wiki/Accretion_disk) on a multipatch grid structure.
 
 May 2010 | to | Aug 2010
-**Generalized uncertainty principle and minimal length** was a post-baccalaureate project where I determined new connections between [polymer quantum mechanics](https://en.wikipedia.org/wiki/Loop_quantum_gravity) and [minimal length](https://en.wikipedia.org/wiki/Uncertainty_principle).
-- [*Grand Valley State University*](https://physics.gvsu.edu).
+**Generalized uncertainty principle**
+[Post-Baccalaureate Project](https://physics.gvsu.edu), [Grand Valley State University](https://physics.gvsu.edu)
+I determined new connections between [polymer quantum mechanics](https://en.wikipedia.org/wiki/Loop_quantum_gravity) and [minimal length](https://en.wikipedia.org/wiki/Uncertainty_principle).
 
 Aug 2009 | to | May 2010
-**Motion in two-center gravitational systems** was my **physics senior thesis** where I evolved [Hamilton's equations](https://en.wikipedia.org/wiki/Hamiltonian_mechanics) using [Gragg extrapolation](https://en.wikipedia.org/wiki/Bulirsch%E2%80%93Stoer_algorithm) of [chaotic](https://en.wikipedia.org/wiki/Chaos_theory) [particle trajectories](https://en.wikipedia.org/wiki/Symplectic_geometry) around a rotating, binary [three-body](https://en.wikipedia.org/wiki/Three-body_problem) gravitational systems
-[*Grand Valley State University*](https://physics.gvsu.edu).
+**Motion in two-center gravitational systems**
+[Physics Senior Thesis](https://physics.gvsu.edu), [Grand Valley State University](https://physics.gvsu.edu)
+A [three-body problem](https://en.wikipedia.org/wiki/Three-body_problem) where I evolved [Hamilton's equations](https://en.wikipedia.org/wiki/Hamiltonian_mechanics) using [Gragg extrapolation](https://en.wikipedia.org/wiki/Bulirsch%E2%80%93Stoer_algorithm) to model [chaotic](https://en.wikipedia.org/wiki/Chaos_theory) [particle trajectories](https://en.wikipedia.org/wiki/Symplectic_geometry) around rotating binary gravitational systems and derived a non-obvious [integral of motion](https://en.wikipedia.org/wiki/Constant_of_motion#Integral_of_motion).
 
 Aug 2009 | to | Dec 2009
 **Quasicrystals, tilings and diffraction patterns**
-was my **math senior thesis** where I studied diffraction in [aperiodic tiles](https://en.wikipedia.org/wiki/Penrose_tiling) and [quasicrystals](https://en.wikipedia.org/wiki/Quasicrystal).
-[*Grand Valley State University*](https://math.gvsu.edu).
+[Mathematics Senior Thesis](https://www.gvsu.edu/math/), [Grand Valley State University](https://math.gvsu.edu)
+I studied diffraction patterns of [aperiodic tiles](https://en.wikipedia.org/wiki/Penrose_tiling), [quasicrystals](https://en.wikipedia.org/wiki/Quasicrystal), and [Golden](https://en.wikipedia.org/wiki/Golden_ratio) and [Silver](https://en.wikipedia.org/wiki/Silver_ratio) ratios.
 
 May 2009 | to | Aug 2009
 **Symmetry analysis of differential equations**
-was my project for a combined math and physics Research Experience for Undergraduates (REU) at [UCF](https://www.ucf.edu/). I determined the underlying [Lie symmetries](https://en.wikipedia.org/wiki/Lie_algebra) of the [Lane-Emden equation](https://en.wikipedia.org/wiki/Lane%E2%80%93Emden_equation).
-[*University of Central Florida*](https://www.ucf.edu/).
+[Research Experience for Undergraduates](https://www.ucf.edu/), [University of Central Florida](https://www.ucf.edu/)
+I determined the underlying [Lie symmetries](https://en.wikipedia.org/wiki/Lie_algebra) of the [Lane-Emden equation](https://en.wikipedia.org/wiki/Lane%E2%80%93Emden_equation) for generalized polytropic stars.
+
 
 ## Teaching Experience
 
 S-2011
-**PHYS 320** Lecture, Hamiltonian Mechanics
-- junior-level physics majors, multiweek lecture series, [Hamiltonian mechanics](https://en.wikipedia.org/wiki/Hamiltonian_mechanics), GAANN 2010 fellowship
+**PHYS 320** Lecture, [Hamiltonian Mechanics](https://en.wikipedia.org/wiki/Hamiltonian_mechanics) | GAANN 2010 fellowship
+**junior-level physics majors**, **multi-week lecture series**, [hamiltonian mechanics](https://en.wikipedia.org/wiki/Hamiltonian_mechanics), [lagrangians](https://en.wikipedia.org/wiki/Lagrangian_mechanics), [canonical coordinates](https://en.wikipedia.org/wiki/Canonical_coordinates), [phase space](https://en.wikipedia.org/wiki/Phase_space), [poisson bracket](https://en.wikipedia.org/wiki/Poisson_bracket) 
 
 S-2012 | F-2010
 **ASTR 135** Laboratory, Astronomy
-- solar system, stars, galaxies, cosmology, history
+**non-science majors**, [astronomy](https://en.wikipedia.org/wiki/Astronomy), [solar system](https://en.wikipedia.org/wiki/Solar_System), [stars](https://en.wikipedia.org/wiki/Star), [galaxies](https://en.wikipedia.org/wiki/Galaxy), [cosmology](https://en.wikipedia.org/wiki/Cosmology), [history of astronomy](https://en.wikipedia.org/wiki/History_of_astronomy)
 
 X-2017 | F-2014 | F-2012 | F-2011
 **PHYS 101** Laboratory, General Physics I
-- algebra-based, uncertainty analysis, mechanics, pendulum, springs, work and energy, impulse and momentum, ballistics, buoyancy, vibrations, temperature and heat
+**algebra-based**, [measurement uncertainty](https://en.wikipedia.org/wiki/Measurement_uncertainty), [mechanics](https://en.wikipedia.org/wiki/Mechanics), [pendulum](https://en.wikipedia.org/wiki/Pendulum), [springs](https://en.wikipedia.org/wiki/Spring_(device)), [work and energy](https://en.wikipedia.org/wiki/Work_(physics)), [impulse and momentum](https://en.wikipedia.org/wiki/Momentum), [ballistics](https://en.wikipedia.org/wiki/Ballistics), [buoyancy](https://en.wikipedia.org/wiki/Buoyancy), [vibrations](https://en.wikipedia.org/wiki/Vibration), [temperature](https://en.wikipedia.org/wiki/Temperature), [heat](https://en.wikipedia.org/wiki/Heat)
 
 S-2012
-**PHYS 101** Lecture, General Physics I
-- [engine cycles](https://en.wikipedia.org/wiki/Carnot_heat_engine), [thermodynamics](https://en.wikipedia.org/wiki/Thermodynamics#Laws_of_thermodynamics), GAANN 2011 fellowship
+**PHYS 101** Lecture, General Physics I | GAANN 2011 fellowship
+[engine cycles](https://en.wikipedia.org/wiki/Carnot_heat_engine), [thermodynamics](https://en.wikipedia.org/wiki/Thermodynamics#Laws_of_thermodynamics)
 
 S-2013
 **PHYS 102** Laboratory, General Physics II
-- algebra-based, uncertainty analysis, electric and magnetic fields, ohm's law, circuits, induction, reflection and refraction, lenses
+**algebra-based**, [measurement uncertainty](https://en.wikipedia.org/wiki/Measurement_uncertainty), [electric field](https://en.wikipedia.org/wiki/Electric_field), [magnetic field](https://en.wikipedia.org/wiki/Magnetic_field), [Ohm's law](https://en.wikipedia.org/wiki/Ohm%27s_law), [electric circuits](https://en.wikipedia.org/wiki/Electrical_network), [electromagnetic induction](https://en.wikipedia.org/wiki/Electromagnetic_induction), [reflection](https://en.wikipedia.org/wiki/Reflection_(physics)) and [refraction](https://en.wikipedia.org/wiki/Refraction), [lenses](https://en.wikipedia.org/wiki/Lens_(optics))
 
 X-2012 | S-2011
 **PHYS 201** Laboratory, Physics for Scientists and Engineers I
-- calculus-based, error propagation, mechanics, Newton's laws, friction, pendulum, impulse and momentum, work and energy, ballistics, rotational dynamics, buoyancy, harmonics, [engine cycles](https://en.wikipedia.org/wiki/Carnot_heat_engine)
+**calculus-based**, [propagation of uncertainty](https://en.wikipedia.org/wiki/Propagation_of_uncertainty), [mechanics](https://en.wikipedia.org/wiki/Mechanics), [Newton's laws](https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion), [friction](https://en.wikipedia.org/wiki/Friction), [pendulum](https://en.wikipedia.org/wiki/Pendulum), [impulse and momentum](https://en.wikipedia.org/wiki/Momentum), [work and energy](https://en.wikipedia.org/wiki/Work_(physics)), [ballistics](https://en.wikipedia.org/wiki/Ballistics), [rotational dynamics](https://en.wikipedia.org/wiki/Rotational_dynamics), [buoyancy](https://en.wikipedia.org/wiki/Buoyancy), [harmonics](https://en.wikipedia.org/wiki/Harmonic_oscillator), [engine cycles](https://en.wikipedia.org/wiki/Carnot_heat_engine)
 
 F-2012
 **PHYS 202** Laboratory, Physics for Scientists and Engineers II
-- calculus-based, error propagation, electric and magnetic fields, RC and AC circuits, induction, transformers, interference, thin lenses
+**calculus-based**, [propagation of uncertainty](https://en.wikipedia.org/wiki/Propagation_of_uncertainty), [electric field](https://en.wikipedia.org/wiki/Electric_field), [magnetic field](https://en.wikipedia.org/wiki/Magnetic_field), [RC circuit](https://en.wikipedia.org/wiki/RC_circuit) and [AC circuit](https://en.wikipedia.org/wiki/AC_circuit), [electromagnetic induction](https://en.wikipedia.org/wiki/Electromagnetic_induction), [transformers](https://en.wikipedia.org/wiki/Transformer), [interference](https://en.wikipedia.org/wiki/Wave_interference), [thin lenses](https://en.wikipedia.org/wiki/Lens_(optics))
 
 ## Memberships
 

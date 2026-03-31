@@ -1440,6 +1440,62 @@
     max-width: 62ch;
 }
 
+.post-single.type-cv .cv-main p.cv-research-title,
+.post-single.type-cv .cv-teaching-title {
+    margin: 0;
+    color: var(--primary);
+}
+
+.post-single.type-cv .cv-main p.cv-research-title {
+    font-size: 1.06rem;
+    font-weight: 500;
+    line-height: 1.66;
+}
+
+.post-single.type-cv .cv-main p.cv-research-meta {
+    margin: 0.18rem 0 0;
+    color: var(--secondary);
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.82rem;
+    letter-spacing: 0.015em;
+    line-height: 1.38;
+}
+
+.post-single.type-cv .cv-research-meta a {
+    color: inherit;
+}
+
+.post-single.type-cv .cv-research-abstract {
+    margin-top: 0.22rem;
+    color: var(--primary);
+    font-size: 0.94rem;
+    line-height: 1.66;
+}
+
+.post-single.type-cv .cv-research-abstract p,
+.post-single.type-cv .cv-research-abstract li {
+    color: var(--primary);
+}
+
+.post-single.type-cv .cv-teaching-code,
+.post-single.type-cv .cv-teaching-name {
+    color: var(--primary);
+}
+
+.post-single.type-cv .cv-teaching-kind,
+.post-single.type-cv .cv-teaching-tag {
+    color: var(--secondary);
+}
+
+.post-single.type-cv .cv-main p.cv-teaching-detail {
+    margin: 0.2rem 0 0;
+    color: var(--secondary);
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.78rem;
+    letter-spacing: 0.015em;
+    line-height: 1.5;
+}
+
 .post-single.type-cv .cv-row.detail .cv-main > p:first-child {
     font-weight: 500;
     color: var(--primary);

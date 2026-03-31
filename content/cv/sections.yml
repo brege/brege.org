@@ -21,12 +21,10 @@
   class: award
   date_delim: " | "
 "Research Experience":
-  handler: blocks
-  class: research
+  handler: research
   date_delim: " | "
 "Teaching Experience":
-  handler: blocks
-  class: teaching
+  handler: teaching
   date_delim: " | "
 "Memberships":
   handler: rows

@@ -1,0 +1,56 @@
+{{- $dateDelim := " | " -}}
+{{- with .cfg -}}
+  {{- $dateDelim = .date_delim | default " | " -}}
+{{- end -}}
+{{- $blocks := split (replaceRE `\n{2,}` "\f" .body) "\f" -}}
+{{- range $blocks -}}
+  {{- $block := trim . "\r\n\t " -}}
+  {{- with findRESubmatch `(?s)^([^\n]+)\n+([^\n]+)\n+(.*)$` $block 1 -}}
+    {{- $date := index (index . 0) 1 -}}
+    {{- $titleLine := strings.TrimSpace (index (index . 0) 2) -}}
+    {{- $detail := trim (index (index . 0) 3) "\r\n\t " | markdownify | replaceRE `^<p>(.*)</p>\s*$` `$1` -}}
+    {{- $code := "" -}}
+    {{- $kind := "" -}}
+    {{- $name := "" -}}
+    {{- $tag := "" -}}
+    {{- with findRESubmatch `^(.*?)\s+\|\s+(.*)$` $titleLine 1 -}}
+      {{- $titleLine = strings.TrimSpace (index (index . 0) 1) -}}
+      {{- $tag = strings.TrimSpace (index (index . 0) 2) -}}
+    {{- end -}}
+    {{- with findRESubmatch `^\*\*(.+?)\*\*\s+(Lecture|Laboratory),\s+(.*)$` $titleLine 1 -}}
+      {{- $code = strings.TrimSpace (index (index . 0) 1) -}}
+      {{- $kind = strings.TrimSpace (index (index . 0) 2) -}}
+      {{- $name = strings.TrimSpace (index (index . 0) 3) -}}
+    {{- else -}}
+      {{- $name = $titleLine | markdownify | replaceRE `^<p>(.*)</p>\s*$` `$1` -}}
+    {{- end -}}
+    {{- $tagHtml := $tag | markdownify | replaceRE `^<p>(.*)</p>\s*$` `$1` -}}
+    {{- $parts := slice -}}
+    {{- range split $date $dateDelim -}}
+      {{- $part := strings.TrimSpace . -}}
+      {{- if ne $part "" -}}
+        {{- $parts = $parts | append $part -}}
+      {{- end -}}
+    {{- end -}}
+    <article class="cv-row teaching">
+      <div class="cv-years{{ if gt (len $parts) 1 }} is-stack{{ end }}">
+        {{- range $parts -}}
+          <span>{{ . }}</span>
+        {{- end -}}
+      </div>
+      <div class="cv-main">
+        <p class="cv-teaching-title">
+          {{- if $code -}}
+            <span class="cv-teaching-code">{{ $code }}</span>
+            <span class="cv-teaching-kind">{{ $kind }}</span>,
+            <span class="cv-teaching-name">{{ $name }}</span>
+          {{- else -}}
+            {{ $name | safeHTML }}
+          {{- end -}}
+          {{ with $tagHtml }} <span class="cv-teaching-tag">{{ . | safeHTML }}</span>{{ end }}
+        </p>
+        <p class="cv-teaching-detail">{{ $detail | safeHTML }}</p>
+      </div>
+    </article>
+  {{- end -}}
+{{- end -}}

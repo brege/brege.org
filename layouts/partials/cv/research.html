@@ -1,0 +1,36 @@
+{{- $dateDelim := " | " -}}
+{{- with .cfg -}}
+  {{- $dateDelim = .date_delim | default " | " -}}
+{{- end -}}
+{{- $blocks := split (replaceRE `\n{2,}` "\f" .body) "\f" -}}
+{{- range $blocks -}}
+  {{- $block := trim . "\r\n\t " -}}
+  {{- with findRESubmatch `(?s)^([^\n]+)\n+([^\n]+)\n+([^\n]+)\n+(.*)$` $block 1 -}}
+    {{- $date := index (index . 0) 1 -}}
+    {{- $title := (index (index . 0) 2) | markdownify | replaceRE `^<p>(.*)</p>\s*$` `$1` -}}
+    {{- $meta := (index (index . 0) 3) | markdownify | replaceRE `^<p>(.*)</p>\s*$` `$1` -}}
+    {{- $content := trim (index (index . 0) 4) "\r\n\t " | markdownify -}}
+    {{- if not (findRE `^\s*<(p|ol|ul|blockquote)\b` $content) -}}
+      {{- $content = printf "<p>%s</p>" $content -}}
+    {{- end -}}
+    {{- $parts := slice -}}
+    {{- range split $date $dateDelim -}}
+      {{- $part := strings.TrimSpace . -}}
+      {{- if ne $part "" -}}
+        {{- $parts = $parts | append $part -}}
+      {{- end -}}
+    {{- end -}}
+    <article class="cv-row research">
+      <div class="cv-years{{ if gt (len $parts) 1 }} is-stack{{ end }}">
+        {{- range $parts -}}
+          <span>{{ . }}</span>
+        {{- end -}}
+      </div>
+      <div class="cv-main">
+        <p class="cv-research-title">{{ $title | safeHTML }}</p>
+        <p class="cv-research-meta">{{ $meta | safeHTML }}</p>
+        <div class="cv-research-abstract">{{ $content | safeHTML }}</div>
+      </div>
+    </article>
+  {{- end -}}
+{{- end -}}
