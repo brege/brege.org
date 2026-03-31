@@ -21,18 +21,18 @@
       {{- end -}}
       {{- $summary := trim (delimit $summaryLines " ") "\r\n\t " -}}
       <article class="cv-row project">
+        <div class="cv-main">
+          <div class="cv-project-summary">{{- $summary | markdownify -}}</div>
+          {{- if ne $stack "" -}}
+            <div class="cv-project-stack">{{ $stack }}</div>
+          {{- end -}}
+        </div>
         <div class="cv-project-links">
           {{- range $links -}}
             {{- $link := trim . "\r\n\t " -}}
             {{- if ne $link "" -}}
               <span>{{ $link | markdownify }}</span>
             {{- end -}}
-          {{- end -}}
-        </div>
-        <div class="cv-main">
-          <div class="cv-project-summary">{{- $summary | markdownify -}}</div>
-          {{- if ne $stack "" -}}
-            <div class="cv-project-stack">{{ $stack }}</div>
           {{- end -}}
         </div>
       </article>
