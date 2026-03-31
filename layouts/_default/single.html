@@ -42,7 +42,7 @@
 
   {{- if .Content }}
   <div class="post-content">
-    {{- if not (.Param "disableAnchoredHeadings") }}
+    {{- if and (ne .Type "menus") (not (.Param "disableAnchoredHeadings")) }}
     {{- partial "anchored_headings.html" .Content -}}
     {{- else }}{{ .Content }}{{ end }}
   </div>
@@ -190,6 +190,10 @@
     });
   })();
 </script>
+{{- end }}
+
+{{- if .Param "headerNav" }}
+{{- partial "header_nav.html" . -}}
 {{- end }}
 
 {{- end }}{{/* end main */}}

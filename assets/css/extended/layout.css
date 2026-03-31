@@ -1307,7 +1307,7 @@
 .post-single.type-cv .cv-sheet > h2 {
     margin: 2rem 0 0.95rem;
     margin-bottom: 0.95rem;
-    color: var(--secondary);
+    color: var(--primary);
     font-family: "IBM Plex Mono", monospace;
     font-size: 0.75rem;
     font-weight: 500;
@@ -1320,8 +1320,7 @@
 }
 
 .post-single.type-cv .post-content p,
-.post-single.type-cv .post-content li,
-.post-single.type-cv .post-content span {
+.post-single.type-cv .post-content li {
     color: var(--secondary);
     font-size: 1.02rem;
     line-height: 1.66;
@@ -1624,6 +1623,10 @@
     width: 1px;
     height: 1px;
     overflow: hidden;
+}
+
+.post-single.type-cv .cv-sheet[hidden] {
+    display: block;
 }
 
 /* --- category label --- */

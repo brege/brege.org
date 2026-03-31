@@ -22,7 +22,7 @@ cover:
   hiddenInList: false
 jquery: true
 draft: false
-showToc: false
+ShowToc: false
 ---
 
 {{< flavor-network 

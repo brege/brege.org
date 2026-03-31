@@ -8,7 +8,7 @@
 {{- end -}}
 {{- $raw := trim .RawContent "\r\n\t " -}}
 {{- $sections := split $raw "\n## " -}}
-<div class="cv-sheet">
+<div class="cv-sheet" hidden>
   {{- range $i, $section := $sections -}}
     {{- $rawSection := $section -}}
     {{- if gt $i 0 -}}

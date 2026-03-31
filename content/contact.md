@@ -3,7 +3,7 @@ title: Contact
 type: contact
 hideMeta: true
 disableShare: true
-showToc: false
+ShowToc: false
 ---
 
 ### **email**

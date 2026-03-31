@@ -7,7 +7,10 @@ ShowToc: true
 TocOpen: false
 tocStartLevel: 2
 tocEndLevel: 2
+headerNav: true
+navDepth: 3
 ---
+
 
 ## Expertise
 
@@ -15,7 +18,7 @@ tocEndLevel: 2
 
 - **computing** · [data science](https://en.wikipedia.org/wiki/Data_science), [artificial intelligence](https://en.wikipedia.org/wiki/AI), [software engineering](https://en.wikipedia.org/wiki/Software_engineering), [sysadmin](https://en.wikipedia.org/wiki/System_administration), [machine learning](https://en.wikipedia.org/wiki/Machine_learning), [full-stack development](https://en.wikipedia.org/wiki/Solution_stack#Full-stack_developer)
 
-- **culinary arts** · menu profit analysis, from-scratch and seasonal cooking, farm-to-table sourcing, pairing dinners and pop-ups, fermentation and preservation, pedagogical training, documentation systems
+- **culinary arts** · menu profit analysis, from-scratch, seasonal, and farm-to-table cooking, pairing dinners and pop-ups, fermentation and preservation, pedagogical training, documentation systems
 
 ## Selected Work
 
@@ -119,7 +122,7 @@ APS April Meeting, apr 12, 2015, [BAPS.2015.APR.K13.9](https://meetings.aps.org/
 
 2010
 **Polymer quantum mechanics and an approach to minimal length** (Poster)
-[19th International Conference on General Relativity](https://iopscience.iop.org/issue/0264-9381/28/11) and Gravitation (GR19), Mexico City, Mexico, jul 16, 2010
+[19th International Conference on General Relativity](https://iopscience.iop.org/issue/0264-9381/28/11) and [Gravitation (GR19)](https://hyperspace.uni-frankfurt.de/2009/10/23/gr19-first-announcement/), Mexico City, Mexico, jul 16, 2010
 
 2009
 **Symmetry Analysis and the Lane-Emden Equation**
@@ -139,36 +142,28 @@ APS April Meeting, apr 12, 2015, [BAPS.2015.APR.K13.9](https://meetings.aps.org/
 ## Research Experience
 
 May 2013 | to | Sep 2018
-**Black hole-neutron star mergers and accretion disk simulations**
-*[Washington State University](https://physics.wsu.edu), [SXS collaboration](https://black-holes.org)*
-- evolved [black hole](https://en.wikipedia.org/wiki/Black_hole)-[neutron star](https://en.wikipedia.org/wiki/Neutron_star) systems in [SpEC](https://www.black-holes.org/code/SpEC.html) with [adaptive mesh refinement](https://en.wikipedia.org/wiki/Adaptive_mesh_refinement) and [nuclear-theory](https://en.wikipedia.org/wiki/Nucleosynthesis) based [equations of state](https://en.wikipedia.org/wiki/Equation_of_state)
-- implemented a high-order accurate finite difference scheme with boundary closures to solve the [fluid equations](https://en.wikipedia.org/wiki/Computational_fluid_dynamics) of an [accretion disk](https://en.wikipedia.org/wiki/Accretion_disk) on a multipatch grid structure
-- completion of [dissertation](https://hdl.handle.net/2376/111818)
+My [dissertation](https://hdl.handle.net/2376/111818) for my physics PhD consisted of two primary projects around **black hole-neutron star mergers and accretion disk simulations**.
+1. I evolved [black hole](https://en.wikipedia.org/wiki/Black_hole)-[neutron star](https://en.wikipedia.org/wiki/Neutron_star) systems in [SpEC](https://www.black-holes.org/code/SpEC.html) with [adaptive mesh refinement](https://en.wikipedia.org/wiki/Adaptive_mesh_refinement) and [nuclear-theory](https://en.wikipedia.org/wiki/Nucleosynthesis) based [equations of state](https://en.wikipedia.org/wiki/Equation_of_state)
+2. I implemented a high-order accurate finite difference scheme with boundary closures to solve the [fluid equations](https://en.wikipedia.org/wiki/Computational_fluid_dynamics) of an [accretion disk](https://en.wikipedia.org/wiki/Accretion_disk) on a multipatch grid structure.
+- *[Washington State University](https://physics.wsu.edu), [SXS collaboration](https://black-holes.org)*
 
 May 2010 | to | Aug 2010
-**Generalized uncertainty principle and minimal length**
-[*Grand Valley State University*](https://physics.gvsu.edu)
-- determined new connections between [polymer quantum mechanics](https://en.wikipedia.org/wiki/Loop_quantum_gravity) and [minimal length](https://en.wikipedia.org/wiki/Uncertainty_principle)
-- first time presenting [internationally](https://hyperspace.uni-frankfurt.de/2009/10/23/gr19-first-announcement/)
+**Generalized uncertainty principle and minimal length** was a post-baccalaureate project where I determined new connections between [polymer quantum mechanics](https://en.wikipedia.org/wiki/Loop_quantum_gravity) and [minimal length](https://en.wikipedia.org/wiki/Uncertainty_principle).
+- [*Grand Valley State University*](https://physics.gvsu.edu).
 
 Aug 2009 | to | May 2010
-**Motion in two-center gravitational systems**
-[*Grand Valley State University*](https://physics.gvsu.edu)
-- implemented [Gragg extrapolation](https://en.wikipedia.org/wiki/Bulirsch%E2%80%93Stoer_algorithm) to [evolve](https://en.wikipedia.org/wiki/Symplectic_geometry) Hamilton's equations for a [three-body](https://en.wikipedia.org/wiki/Three-body_problem) gravitational system
-- demonstrated the [chaotic](https://en.wikipedia.org/wiki/Chaos_theory) behavior of particle trajectories around generic rotating binary systems
-- completion of physics senior thesis
+**Motion in two-center gravitational systems** was my **physics senior thesis** where I evolved [Hamilton's equations](https://en.wikipedia.org/wiki/Hamiltonian_mechanics) using [Gragg extrapolation](https://en.wikipedia.org/wiki/Bulirsch%E2%80%93Stoer_algorithm) of [chaotic](https://en.wikipedia.org/wiki/Chaos_theory) [particle trajectories](https://en.wikipedia.org/wiki/Symplectic_geometry) around a rotating, binary [three-body](https://en.wikipedia.org/wiki/Three-body_problem) gravitational systems
+[*Grand Valley State University*](https://physics.gvsu.edu).
 
 Aug 2009 | to | Dec 2009
 **Quasicrystals, tilings and diffraction patterns**
-[*Grand Valley State University*](https://math.gvsu.edu)
-- mathematical study of diffraction in [aperiodic tiles](https://en.wikipedia.org/wiki/Penrose_tiling) and [quasicrystals](https://en.wikipedia.org/wiki/Quasicrystal)
-- completion of mathematics senior thesis
+was my **math senior thesis** where I studied diffraction in [aperiodic tiles](https://en.wikipedia.org/wiki/Penrose_tiling) and [quasicrystals](https://en.wikipedia.org/wiki/Quasicrystal).
+[*Grand Valley State University*](https://math.gvsu.edu).
 
 May 2009 | to | Aug 2009
 **Symmetry analysis of differential equations**
-[*University of Central Florida*](https://www.ucf.edu/)
-- determined the underlying [Lie symmetries](https://en.wikipedia.org/wiki/Lie_algebra) of the [Lane-Emden equation](https://en.wikipedia.org/wiki/Lane%E2%80%93Emden_equation)
-- participated in the [UCF](https://www.ucf.edu/) combined math and physics Research Experience for Undergraduates
+was my project for a combined math and physics Research Experience for Undergraduates (REU) at [UCF](https://www.ucf.edu/). I determined the underlying [Lie symmetries](https://en.wikipedia.org/wiki/Lie_algebra) of the [Lane-Emden equation](https://en.wikipedia.org/wiki/Lane%E2%80%93Emden_equation).
+[*University of Central Florida*](https://www.ucf.edu/).
 
 ## Teaching Experience
 

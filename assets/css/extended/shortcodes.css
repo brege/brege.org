@@ -33,14 +33,15 @@
     border-bottom: none;
     padding-bottom: 0;
 }
-.menu-card .anchor,
-.menu-card h1:hover .anchor,
-.menu-card h2:hover .anchor,
-.menu-card h3:hover .anchor,
-.menu-card h4:hover .anchor,
-.menu-card h5:hover .anchor,
-.menu-card h6:hover .anchor {
-    display: none !important;
+.menu-card h2 a,
+.menu-card h3 a {
+    text-decoration: none;
+}
+.menu-card h2 a:hover,
+.menu-card h3 a:hover,
+.menu-card h2 a:active,
+.menu-card h3 a:active {
+    text-decoration: none;
 }
 .menu-card .menu-items {
     font-size: 1rem;
