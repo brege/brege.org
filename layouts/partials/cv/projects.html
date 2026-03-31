@@ -1,0 +1,34 @@
+{{- $githubUser := site.Params.github | default "USER" -}}
+{{- $url := printf "https://raw.githubusercontent.com/%s/%s/main/README.md" $githubUser $githubUser -}}
+{{- with .cfg -}}
+  {{- $url = .url | default $url -}}
+{{- end -}}
+{{- $pattern := `(?s)<!-- cv-projects-start -->\s*(.*?)\s*<!-- cv-projects-end -->` -}}
+
+{{- with try (resources.GetRemote $url) -}}
+  {{- with .Value -}}
+    {{- $readme := .Content -}}
+    {{- with findRESubmatch $pattern $readme 1 -}}
+      {{- $block := trim (index (index . 0) 1) "\r\n\t " -}}
+      {{- $sections := split $block "\n## " -}}
+      <div class="cv-projects">
+        {{- range $i, $section := $sections -}}
+          {{- $raw := $section -}}
+          {{- if gt $i 0 -}}
+            {{- $raw = printf "## %s" $section -}}
+          {{- end -}}
+          {{- with findRESubmatch `(?s)^##\s+([^\n]+)\n+(.*)$` $raw 1 -}}
+            {{- $title := index (index . 0) 1 -}}
+            {{- $body := trim (index (index . 0) 2) "\r\n\t " -}}
+            <div class="cv-subsection">
+              <h4>{{ $title }}</h4>
+              <div class="cv-subsection-body">
+                {{- $body | markdownify -}}
+              </div>
+            </div>
+          {{- end -}}
+        {{- end -}}
+      </div>
+    {{- end -}}
+  {{- end -}}
+{{- end -}}

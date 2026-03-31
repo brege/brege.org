@@ -1,0 +1,24 @@
+{{- $page := . -}}
+{{- $sectionsCfg := dict -}}
+{{/* Load the per-section render map from the CV page bundle. */}}
+{{- with .Resources.GetMatch "sections.yml" -}}
+  {{- $sectionsCfg = . | transform.Unmarshal -}}
+{{- else -}}
+  {{- errorf "missing sections.yml for %s" $page.File.Path -}}
+{{- end -}}
+{{- $raw := trim .RawContent "\r\n\t " -}}
+{{- $sections := split $raw "\n## " -}}
+<div class="cv-sheet">
+  {{- range $i, $section := $sections -}}
+    {{- $rawSection := $section -}}
+    {{- if gt $i 0 -}}
+      {{- $rawSection = printf "## %s" $section -}}
+    {{- end -}}
+    {{- with findRESubmatch `(?s)^##\s+([^\n]+)\n+(.*)$` $rawSection 1 -}}
+      {{- $title := trim (index (index . 0) 1) "\r\n\t " -}}
+      {{- $body := trim (index (index . 0) 2) "\r\n\t " -}}
+      {{- $cfg := index $sectionsCfg $title -}}
+      {{- partial "cv/section.html" (dict "page" $ "title" $title "body" $body "cfg" $cfg) -}}
+    {{- end -}}
+  {{- end -}}
+</div>

@@ -1,0 +1,14 @@
+{{- $class := "" -}}
+{{- $dateDelim := " | " -}}
+{{- with .cfg -}}
+  {{- $class = .class | default "" -}}
+  {{- $dateDelim = .date_delim | default " | " -}}
+{{- end -}}
+{{- range findRESubmatch `(?m)^- ([^,\n]+),\s*(.+)$` .body -}}
+  {{- partial "cv/row.html" (dict
+    "class" $class
+    "date" (index . 1)
+    "date_delim" $dateDelim
+    "content" ((index . 2) | markdownify)
+  ) -}}
+{{- end -}}

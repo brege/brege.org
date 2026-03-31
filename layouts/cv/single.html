@@ -1,0 +1,55 @@
+{{- define "main" }}
+
+{{- $note := site.Params.homeInfoParams.Note | default "data scientist / chef / astrophysicist" -}}
+{{- $noteItems := slice -}}
+{{- range split $note "/" }}
+  {{- $part := strings.TrimSpace . -}}
+  {{- if ne $part "" -}}
+    {{- $noteItems = $noteItems | append (dict "name" $part) -}}
+  {{- end -}}
+{{- end -}}
+
+<article class="post-single type-cv section-{{ default "root" .Section }}">
+  <header class="post-header">
+    {{ partial "breadcrumbs.html" . }}
+    <div class="cv-hero entry-header">
+      {{- partial "balanced_sequence.html" (dict
+        "class" "home-signal-note"
+        "tag" "p"
+        "align" "left"
+        "items" $noteItems
+      ) }}
+      <h1>{{ .Title }}</h1>
+    </div>
+    {{- if .Description }}
+    <div class="post-description">
+      {{ .Description }}
+    </div>
+    {{- end }}
+    {{- if not (.Param "hideMeta") }}
+    {{- partial "single_meta.html" . -}}
+    {{- end }}
+  </header>
+
+  {{- $showToc := .Param "ShowToc" }}
+  {{- if $showToc }}
+  <div class="toc-anchor">
+    <div class="toc-margin-wrap">
+      {{- partial "toc.html" . }}
+    </div>
+  </div>
+  <div class="toc-preamble">
+    {{- partial "toc.html" . }}
+  </div>
+  {{- end }}
+
+  <div class="post-content cv-content">
+    {{- if not (.Param "disableAnchoredHeadings") }}
+    {{- partial "anchored_headings.html" (partial "cv.html" .) -}}
+    {{- else -}}
+    {{ partial "cv.html" . }}
+    {{- end }}
+  </div>
+</article>
+
+{{- end }}

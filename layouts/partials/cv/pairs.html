@@ -1,0 +1,6 @@
+{{- range findRESubmatch `(?m)^- \*\*([^*]+)\*\* ·\s*(.+)$` .body -}}
+  <div class="cv-pair">
+    <div class="cv-label">{{ index . 1 }}</div>
+    <div class="cv-main">{{ index . 2 | markdownify }}</div>
+  </div>
+{{- end -}}
