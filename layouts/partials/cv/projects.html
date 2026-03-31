@@ -1,34 +1,41 @@
-{{- $githubUser := site.Params.github | default "USER" -}}
-{{- $url := printf "https://raw.githubusercontent.com/%s/%s/main/README.md" $githubUser $githubUser -}}
-{{- with .cfg -}}
-  {{- $url = .url | default $url -}}
-{{- end -}}
-{{- $pattern := `(?s)<!-- cv-projects-start -->\s*(.*?)\s*<!-- cv-projects-end -->` -}}
-
-{{- with try (resources.GetRemote $url) -}}
-  {{- with .Value -}}
-    {{- $readme := .Content -}}
-    {{- with findRESubmatch $pattern $readme 1 -}}
-      {{- $block := trim (index (index . 0) 1) "\r\n\t " -}}
-      {{- $sections := split $block "\n## " -}}
-      <div class="cv-projects">
-        {{- range $i, $section := $sections -}}
-          {{- $raw := $section -}}
-          {{- if gt $i 0 -}}
-            {{- $raw = printf "## %s" $section -}}
+{{/* Collapse blank-line runs so each application record is one block with summary lines, a stack line, and optional rail links. */}}
+{{- $blocks := split (replaceRE `\n{2,}` "\f" .body) "\f" -}}
+<div class="cv-project-list">
+  {{- range $blocks -}}
+    {{- $block := trim . "\r\n\t " -}}
+    {{- if ne $block "" -}}
+      {{- $lines := split $block "\n" -}}
+      {{- if eq (len $lines) 1 -}}
+        <p class="cv-project-note">{{ $block | markdownify }}</p>
+        {{- continue -}}
+      {{- end -}}
+      {{- $stack := "" -}}
+      {{- $links := slice -}}
+      {{- $summaryLines := $lines -}}
+      {{- if gt (len $lines) 1 -}}
+        {{- $stack = trim (index $lines 1) "\r\n\t " -}}
+        {{- $summaryLines = first 1 $lines -}}
+      {{- end -}}
+      {{- if gt (len $lines) 2 -}}
+        {{- $links = after 2 $lines -}}
+      {{- end -}}
+      {{- $summary := trim (delimit $summaryLines " ") "\r\n\t " -}}
+      <article class="cv-row project">
+        <div class="cv-project-links">
+          {{- range $links -}}
+            {{- $link := trim . "\r\n\t " -}}
+            {{- if ne $link "" -}}
+              <span>{{ $link | markdownify }}</span>
+            {{- end -}}
           {{- end -}}
-          {{- with findRESubmatch `(?s)^##\s+([^\n]+)\n+(.*)$` $raw 1 -}}
-            {{- $title := index (index . 0) 1 -}}
-            {{- $body := trim (index (index . 0) 2) "\r\n\t " -}}
-            <div class="cv-subsection">
-              <h4>{{ $title }}</h4>
-              <div class="cv-subsection-body">
-                {{- $body | markdownify -}}
-              </div>
-            </div>
+        </div>
+        <div class="cv-main">
+          <div class="cv-project-summary">{{- $summary | markdownify -}}</div>
+          {{- if ne $stack "" -}}
+            <div class="cv-project-stack">{{ $stack }}</div>
           {{- end -}}
-        {{- end -}}
-      </div>
+        </div>
+      </article>
     {{- end -}}
   {{- end -}}
-{{- end -}}
+</div>

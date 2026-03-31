@@ -6,7 +6,7 @@
 "Professional":
   handler: rows
   class: compact
-"Projects":
+"Selected Work":
   handler: projects
 "Technologies":
   handler: pairs

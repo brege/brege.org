@@ -1343,8 +1343,7 @@
 }
 
 .post-single.type-cv .cv-pair,
-.post-single.type-cv .cv-row,
-.post-single.type-cv .cv-subsection {
+.post-single.type-cv .cv-row {
     display: grid;
     grid-template-columns: 7rem minmax(0, 1fr);
     gap: 1rem;
@@ -1360,11 +1359,7 @@
     margin-top: 0.55rem;
 }
 
-.post-single.type-cv .cv-subsection {
-    padding: 0.4rem 0 0.55rem;
-}
-
-.post-single.type-cv .cv-subsection + .cv-subsection,
+.post-single.type-cv .cv-row.project + .cv-row.project,
 .post-single.type-cv .cv-row.research + .cv-row.research,
 .post-single.type-cv .cv-row.award + .cv-row.award,
 .post-single.type-cv .cv-row.teaching + .cv-row.teaching {
@@ -1374,23 +1369,18 @@
 }
 
 .post-single.type-cv .cv-label,
-.post-single.type-cv .cv-years,
-.post-single.type-cv .cv-subsection h4 {
+.post-single.type-cv .cv-years {
     color: var(--secondary);
     font-family: "GraphikWeb", -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", Meiryo, sans-serif;
-    font-size: 0.78rem;
+    font-size: 0.84rem;
     letter-spacing: 0.04em;
     line-height: 1.32;
 }
 
-.post-single.type-cv .cv-label,
-.post-single.type-cv .cv-subsection h4 {
-    padding-top: 0;
+.post-single.type-cv .cv-label {
+    padding-top: 0.14rem;
+    text-align: right;
     text-transform: none;
-}
-
-.post-single.type-cv .cv-subsection h4 {
-    text-transform: lowercase;
 }
 
 .post-single.type-cv .cv-years {
@@ -1406,10 +1396,6 @@
     display: block;
     color: inherit;
     white-space: nowrap;
-}
-
-.post-single.type-cv .cv-subsection h4 {
-    margin: 0;
 }
 
 .post-single.type-cv .cv-main {
@@ -1456,22 +1442,75 @@
     color: var(--primary);
 }
 
-.post-single.type-cv .cv-projects {
+.post-single.type-cv .cv-project-list {
     display: grid;
+    gap: 0;
 }
 
-.post-single.type-cv .cv-subsection-body {
-    min-width: 0;
+.post-single.type-cv .cv-row.project .cv-main {
+    max-width: 62ch;
 }
 
-.post-single.type-cv .cv-subsection-body > ul {
+.post-single.type-cv .cv-project-note {
+    margin: 0.9rem 0 0;
+    width: 100%;
+    max-width: none;
+    padding-left: 0;
+    color: var(--secondary);
+}
+
+.post-single.type-cv .cv-project-summary {
+    color: var(--primary);
+}
+
+.post-single.type-cv .cv-project-links,
+.post-single.type-cv .cv-project-summary p,
+.post-single.type-cv .cv-project-stack {
     margin: 0;
-    padding: 0;
-    list-style: none;
 }
 
-.post-single.type-cv .cv-subsection-body li + li {
-    margin-top: 0.16rem;
+.post-single.type-cv .cv-project-links {
+    padding-top: 0.1rem;
+    text-align: right;
+}
+
+.post-single.type-cv .cv-project-links span {
+    display: block;
+    white-space: nowrap;
+}
+
+.post-single.type-cv .cv-project-links a {
+    color: var(--secondary);
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.03em;
+    text-transform: none;
+}
+
+.post-single.type-cv .cv-project-links a:hover {
+    color: var(--accent);
+}
+
+.post-single.type-cv .cv-project-summary strong {
+    font-weight: 500;
+}
+
+.post-single.type-cv .cv-project-summary a {
+    color: var(--primary);
+}
+
+.post-single.type-cv .cv-project-summary strong a {
+    color: var(--primary);
+}
+
+.post-single.type-cv .cv-project-stack {
+    margin-top: 0.2rem;
+    color: var(--secondary);
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.03em;
+    line-height: 1.5;
+    text-transform: lowercase;
 }
 
 .post-single.type-cv .cv-sheet > p,
@@ -1492,10 +1531,17 @@
     }
 
     .post-single.type-cv .cv-pair,
-    .post-single.type-cv .cv-row,
-    .post-single.type-cv .cv-subsection {
+    .post-single.type-cv .cv-row {
         grid-template-columns: 1fr;
         gap: 0.2rem;
+    }
+
+    .post-single.type-cv .cv-project-list {
+        padding-left: 0;
+    }
+
+    .post-single.type-cv .cv-project-note {
+        padding-left: 0;
     }
 
     .post-single.type-cv .cv-years {
@@ -1503,7 +1549,17 @@
         text-align: left;
     }
 
-    .post-single.type-cv .cv-subsection + .cv-subsection {
+    .post-single.type-cv .cv-label {
+        padding-top: 0;
+        text-align: left;
+    }
+
+    .post-single.type-cv .cv-project-links {
+        padding-top: 0;
+        text-align: left;
+    }
+
+    .post-single.type-cv .cv-row.project + .cv-row.project {
         margin-top: 0.8rem;
     }
 }

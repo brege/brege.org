@@ -3,25 +3,54 @@ title: Wyatt Brege
 date: 2023-01-01
 type: cv
 math: true
-disableShare: true
 ShowToc: true
+TocOpen: false
 tocStartLevel: 2
 tocEndLevel: 2
 ---
 
 ## Expertise
 
-- **advanced physics and mathematics** · [mechanics](https://en.wikipedia.org/wiki/Hamiltonian_mechanics), [general relativity](https://en.wikipedia.org/wiki/General_relativity), [fluid dynamics](https://en.wikipedia.org/wiki/Fluid_dynamics), [finite volume](https://en.wikipedia.org/wiki/Finite_element_method), [numerical methods](https://en.wikipedia.org/wiki/Numerical_analysis)
-- **technical computing proficiencies** · [data science](https://en.wikipedia.org/wiki/Data_science), [artificial intelligence](https://en.wikipedia.org/wiki/AI), [software engineering](https://en.wikipedia.org/wiki/Software_engineering), [sysadmin](https://en.wikipedia.org/wiki/System_administration), [machine learning](https://en.wikipedia.org/wiki/Machine_learning), [full-stack](https://en.wikipedia.org/wiki/Full_stack)
-- **software applications** · [oshea](https://github.com/brege/oshea), [the flavor network](https://flavorpair.me), [monitorat](https://monitorat.brege.org), [aoife](https://aoife.brege.org)
-- **culinary arts** · pairing dinners, farmer's market pop-ups, foundational cooking, fermentation, seafood, game, organic produce, CSA, nutritional and dietary needs, local vendors, preservation, north american, european
+- **physics and mathematics** · [mechanics](https://en.wikipedia.org/wiki/Hamiltonian_mechanics), [general relativity](https://en.wikipedia.org/wiki/General_relativity), [fluid dynamics](https://en.wikipedia.org/wiki/Fluid_dynamics), [finite volume](https://en.wikipedia.org/wiki/Finite_element_method), [numerical methods](https://en.wikipedia.org/wiki/Numerical_analysis), [differential equations](https://en.wikipedia.org/wiki/Differential_equation)
 
-## Education
+- **computing** · [data science](https://en.wikipedia.org/wiki/Data_science), [artificial intelligence](https://en.wikipedia.org/wiki/AI), [software engineering](https://en.wikipedia.org/wiki/Software_engineering), [sysadmin](https://en.wikipedia.org/wiki/System_administration), [machine learning](https://en.wikipedia.org/wiki/Machine_learning), [full-stack development](https://en.wikipedia.org/wiki/Full_stack)
 
-- 2017, **PhD**, *Washington State University*, Physics
-- 2010, **BSc**, *Grand Valley State University*, Mathematics
-- 2010, **BSc**, *Grand Valley State University*, Physics
-- 2007, **ASc**, *Grand Rapids Community College*
+- **culinary arts** · menu profit analysis, from-scratch and seasonal cooking, farm-to-table sourcing, pairing dinners and pop-ups, fermentation and preservation, pedagogical training, documentation systems
+
+## Selected Work
+
+[**monitorat**](https://monitorat.brege.org) is a federated, continuous dashboard and documentation framework for Linux homelabs with themeable, extensible widgets and packaged distribution.
+python, flask, javascript, html, css, yaml, docker, systemd, widgets, csv, homelab, pypi
+[Demo](https://monitorat.brege.org)
+[Source](https://github.com/brege/monitorat)
+[PyPI](https://pypi.org/project/monitorat/)
+[Docker](https://hub.docker.com/r/brege/monitorat)
+
+[**oshea**](https://github.com/brege/oshea) is a Node.js Markdown-to-PDF document framework with an extensible plugin system, Claude Code Skills, YAML workflows, and multi-level QA.
+node.js, yargs, puppeteer, markdown-it, js-yaml, ajv, plugins, archetypes, docs, recipes, books, cover letters
+[Source](https://github.com/brege/oshea)
+[npm](https://www.npmjs.com/package/oshea)
+[Docs](https://github.com/brege/oshea/tree/main/docs)
+[Plugins](https://github.com/brege/oshea-plugins)
+[Agents](https://github.com/brege/oshea/blob/main/docs/guides/claude-skills.md)
+
+[**brūki**](https://github.com/brege/bruki) is a self-hosted screenshot labeling and retrieval system with CLIP embeddings, OCR, clustering, and a Flask review UI.
+python, flask, sqlite, pandas, numpy, pillow, pytesseract, pydantic, pytorch, clip, umap, hdbscan
+[Source](https://github.com/brege/bruki)
+[Notebooks](https://github.com/brege/bruki/tree/main/notebooks)
+
+[**the-flavor-network**](https://flavorpair.me) is an interactive flavor-pairing and recipe-discovery tool built from well-respected culinary texts and a large recipe corpus using weighted Jaccard similarity, a Flask API, and network graphs.
+hugo, papermod, javascript, vis.js, fuse.js, flask, sqlite, uwsgi, nginx, systemd, recipes, data science
+[Website](https://flavorpair.me)
+[Core](https://github.com/brege/flavor-project)
+[Source](https://github.com/brege/the-flavor-network)
+
+[**aoife**](https://aoife.brege.org) is a mixed-media poster matrix engine integrating a dozen APIs for collage building, cover-art search, and artwork discovery.
+react, typescript, vite, flask, python, websocket, zustand, tmdb, openlibrary, musicbrainz, cypress, biome
+[Demo](https://aoife.brege.org)
+[Source](https://github.com/brege/aoife)
+
+See [github.com/brege](https://github.com/brege) for a complete list of software projects.
 
 ## Professional
 
@@ -33,15 +62,22 @@ tocEndLevel: 2
 - 2010-2017, **Teaching Assistant**, *Washington State Univ*, Pullman, WA
 - 2005-2007, **Sous Chef**, *One Trick Pony*, Grand Rapids, MI
 
-## Projects
+## Education
+
+- 2017, **PhD**, *Washington State University*, Physics
+- 2010, **BSc**, *Grand Valley State University*, Mathematics
+- 2010, **BSc**, *Grand Valley State University*, Physics
+- 2007, **ASc**, *Grand Rapids Community College*
 
 ## Technologies
 
 - **supercomputers and high performance computing** · [**SpEC**](https://www.black-holes.org/code/SpEC.html), [mpi](https://en.wikipedia.org/wiki/Message_Passing_Interface), [spark](https://spark.apache.org/), [stampede](https://www.tacc.utexas.edu/systems/stampede2), [xsede](http://www.xsede.org/), [calcul](https://www.calculquebec.ca/), [cacr.caltech](https://www.hpc.caltech.edu/)
-- **programming languages and frameworks** · [**node.js**](https://en.wikipedia.org/wiki/Node.js), [**python**](https://en.wikipedia.org/wiki/Python_(programming_language)), [c++](https://en.wikipedia.org/wiki/C%2B%2B), [git](https://en.wikipedia.org/wiki/Git), [javascript](https://en.wikipedia.org/wiki/JavaScript), [php](https://en.wikipedia.org/wiki/PHP), [bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)), [**react**](https://en.wikipedia.org/wiki/React_(JavaScript_library)), [**flask**](https://en.wikipedia.org/wiki/Flask_(web_framework)), [sqlite](https://en.wikipedia.org/wiki/SQLite), [hugo](https://en.wikipedia.org/wiki/Hugo_(software)), [d3.js](https://en.wikipedia.org/wiki/D3.js), [chart.js](https://en.wikipedia.org/wiki/Chart.js), [vis.js](https://visjs.org)
-- **analysis and numerical tools** · [scikit-learn](https://en.wikipedia.org/wiki/Scikit-learn), [pandas](https://en.wikipedia.org/wiki/Pandas_(software)), [networkx](https://en.wikipedia.org/wiki/NetworkX), [tensorflow](https://en.wikipedia.org/wiki/TensorFlow), [pytorch](https://en.wikipedia.org/wiki/PyTorch), [numpy](https://en.wikipedia.org/wiki/NumPy), [matplotlib](https://en.wikipedia.org/wiki/Matplotlib), [jupyter](https://en.wikipedia.org/wiki/Project_Jupyter#Jupyter_Notebook), [sage](https://en.wikipedia.org/wiki/Sage_(mathematics_software)), [fortran](https://en.wikipedia.org/wiki/Fortran), [octave](https://en.wikipedia.org/wiki/GNU_Octave), [matlab](https://en.wikipedia.org/wiki/MATLAB), [latex](https://en.wikipedia.org/wiki/LaTeX), [gnuplot](https://en.wikipedia.org/wiki/Gnuplot), [paraview](https://en.wikipedia.org/wiki/ParaView), [seaborn](https://en.wikipedia.org/wiki/Seaborn)
-- **testing, QA, and linting** · [pytest](https://en.wikipedia.org/wiki/Pytest), [mocha](https://en.wikipedia.org/wiki/Mocha_(JavaScript_framework)), [biome](https://en.wikipedia.org/wiki/Biome), [ruff](https://en.wikipedia.org/wiki/Ruff_(software)), [integration](https://en.wikipedia.org/wiki/Integration_testing), [end-to-end](https://en.wikipedia.org/wiki/System_testing), [life-cycle](https://en.wikipedia.org/wiki/Lifecycle_(software_development)), [YAML](https://en.wikipedia.org/wiki/YAML) workflows
-- **packaging** · [npm](https://en.wikipedia.org/wiki/Npm), [pypi](https://en.wikipedia.org/wiki/Pypi), [docker](https://en.wikipedia.org/wiki/Docker_(software)), [podman](https://en.wikipedia.org/wiki/Podman), [AMO](https://en.wikipedia.org/wiki/Mozilla_Add-on_SDK)
+- **programming languages and runtimes** · [**node.js**](https://en.wikipedia.org/wiki/Node.js), [**python**](https://en.wikipedia.org/wiki/Python_(programming_language)), [typescript](https://en.wikipedia.org/wiki/TypeScript), [c++](https://en.wikipedia.org/wiki/C%2B%2B), [git](https://en.wikipedia.org/wiki/Git), [javascript](https://en.wikipedia.org/wiki/JavaScript), [php](https://en.wikipedia.org/wiki/PHP), [bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell))
+- **application and visualization frameworks** · [**react**](https://en.wikipedia.org/wiki/React_(JavaScript_library)), [**flask**](https://en.wikipedia.org/wiki/Flask_(web_framework)), [sqlite](https://en.wikipedia.org/wiki/SQLite), [hugo](https://en.wikipedia.org/wiki/Hugo_(software)), [vite](https://en.wikipedia.org/wiki/Vite_(software)), [markdown-it](https://github.com/markdown-it/markdown-it), [d3.js](https://en.wikipedia.org/wiki/D3.js), [chart.js](https://en.wikipedia.org/wiki/Chart.js), [vis.js](https://visjs.org), [fuse.js](https://www.fusejs.io/)
+- **data science and machine learning** · [scikit-learn](https://en.wikipedia.org/wiki/Scikit-learn), [pandas](https://en.wikipedia.org/wiki/Pandas_(software)), [networkx](https://en.wikipedia.org/wiki/NetworkX), [tensorflow](https://en.wikipedia.org/wiki/TensorFlow), [pytorch](https://en.wikipedia.org/wiki/PyTorch), [numpy](https://en.wikipedia.org/wiki/NumPy), [matplotlib](https://en.wikipedia.org/wiki/Matplotlib), [jupyter](https://en.wikipedia.org/wiki/Project_Jupyter#Jupyter_Notebook), [seaborn](https://en.wikipedia.org/wiki/Seaborn), [clip](https://github.com/openai/CLIP), [umap](https://umap-learn.readthedocs.io/), [hdbscan](https://hdbscan.readthedocs.io/)
+- **scientific and numerical tools** · [sage](https://en.wikipedia.org/wiki/Sage_(mathematics_software)), [fortran](https://en.wikipedia.org/wiki/Fortran), [octave](https://en.wikipedia.org/wiki/GNU_Octave), [matlab](https://en.wikipedia.org/wiki/MATLAB), [latex](https://en.wikipedia.org/wiki/LaTeX), [gnuplot](https://en.wikipedia.org/wiki/Gnuplot), [paraview](https://en.wikipedia.org/wiki/ParaView), [pydantic](https://docs.pydantic.dev/latest/)
+- **validation, QA, and automation** · [pytest](https://en.wikipedia.org/wiki/Pytest), [mocha](https://en.wikipedia.org/wiki/Mocha_(JavaScript_framework)), [cypress](https://en.wikipedia.org/wiki/Cypress_(software)), [biome](https://en.wikipedia.org/wiki/Biome), [ruff](https://en.wikipedia.org/wiki/Ruff_(software)), [integration](https://en.wikipedia.org/wiki/Integration_testing), [end-to-end](https://en.wikipedia.org/wiki/System_testing), [life-cycle](https://en.wikipedia.org/wiki/Lifecycle_(software_development)), [puppeteer](https://pptr.dev/), [ajv](https://ajv.js.org/), [yaml](https://en.wikipedia.org/wiki/YAML)
+- **source, packaging, and distribution** · [github](https://github.com/brege), [npm](https://en.wikipedia.org/wiki/Npm), [pypi](https://en.wikipedia.org/wiki/Pypi), [docker](https://en.wikipedia.org/wiki/Docker_(software)), [podman](https://en.wikipedia.org/wiki/Podman), [nginx](https://en.wikipedia.org/wiki/Nginx), [systemd](https://en.wikipedia.org/wiki/Systemd), [uwsgi](https://en.wikipedia.org/wiki/UWSGI), [websocket](https://en.wikipedia.org/wiki/WebSocket), [zustand](https://github.com/pmndrs/zustand), [pytesseract](https://github.com/madmaze/pytesseract), [addons.mozilla.org](https://en.wikipedia.org/wiki/Mozilla_Add-on_SDK)
 
 ## Publications
 
