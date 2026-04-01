@@ -1195,7 +1195,7 @@
     border-top: 1px solid var(--border);
     color: var(--secondary);
     font-family: "IBM Plex Mono", monospace;
-    font-size: 0.75rem;
+    font-size: 1rem;
     font-weight: 500;
     letter-spacing: 0.16em;
     text-transform: uppercase;
@@ -1238,7 +1238,7 @@
 .post-single.type-contact .post-content table td {
     padding: 0.28rem 0;
     border: none;
-    vertical-align: top;
+    vertical-align: baseline;
 }
 
 .post-single.type-contact .post-content table td:first-child {
@@ -1298,6 +1298,8 @@
 .post-single.type-cv .home-signal-note {
     margin: 0 0 0.75rem;
     text-align: left;
+    font-size: 0.82rem;
+    letter-spacing: 0.15em;
 }
 
 .post-single.type-cv .post-content {
@@ -1309,9 +1311,9 @@
     margin-bottom: 0.95rem;
     color: var(--primary);
     font-family: "IBM Plex Mono", monospace;
-    font-size: 0.75rem;
+    font-size: 1rem;
     font-weight: 500;
-    letter-spacing: 0.16em;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
 }
 
@@ -1490,10 +1492,8 @@
 .post-single.type-cv .cv-main p.cv-teaching-detail {
     margin: 0.2rem 0 0;
     color: var(--secondary);
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 0.78rem;
-    letter-spacing: 0.015em;
-    line-height: 1.5;
+    font-size: 0.94rem;
+    line-height: 1.66;
 }
 
 .post-single.type-cv .cv-row.detail .cv-main > p:first-child {

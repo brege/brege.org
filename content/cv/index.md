@@ -22,14 +22,14 @@ navDepth: 3
 
 ## Selected Work
 
-[**monitorat**](https://monitorat.brege.org) is a federated, continuous dashboard and documentation framework for Linux homelabs with themeable, extensible widgets and packaged distribution.
+[**monitorat**](https://monitorat.brege.org) is a federated, continuous dashboard and documentation framework for Linux homelabs with a themeable and extensible widget system.
 python, flask, javascript, html, css, yaml, docker, systemd, widgets, csv, homelab, pypi
 [Demo](https://monitorat.brege.org)
 [Source](https://github.com/brege/monitorat)
 [PyPI](https://pypi.org/project/monitorat/)
 [Docker](https://hub.docker.com/r/brege/monitorat)
 
-[**oshea**](https://github.com/brege/oshea) is a Node.js Markdown-to-PDF document framework with an extensible plugin system, Claude Code Skills, YAML workflows, and multi-level QA.
+[**oshea**](https://github.com/brege/oshea) is a Node.js Markdown-to-PDF document plugin framework featuring archetyping, Claude Code Skills, YAML workflows, and multi-level QA suite.
 node.js, yargs, puppeteer, markdown-it, js-yaml, ajv, plugins, archetypes, docs, recipes, books, cover letters
 [Source](https://github.com/brege/oshea)
 [npm](https://www.npmjs.com/package/oshea)
@@ -37,12 +37,12 @@ node.js, yargs, puppeteer, markdown-it, js-yaml, ajv, plugins, archetypes, docs,
 [Plugins](https://github.com/brege/oshea-plugins)
 [Agents](https://github.com/brege/oshea/blob/main/docs/guides/claude-skills.md)
 
-[**brūki**](https://github.com/brege/bruki) is a self-hosted screenshot labeling and retrieval system with CLIP embeddings, OCR, clustering, and a Flask review UI.
+[**brūki**](https://github.com/brege/bruki) is a self-hosted screenshot labeling and retrieval system app with advanced OCR, ML (CLIP), and VLM image processing.
 python, flask, sqlite, pandas, numpy, pillow, pytesseract, pydantic, pytorch, clip, umap, hdbscan
 [Source](https://github.com/brege/bruki)
 [Notebooks](https://github.com/brege/bruki/tree/main/notebooks)
 
-[**the-flavor-network**](https://flavorpair.me) is an interactive flavor-pairing and recipe-discovery tool built from well-respected culinary texts and a large recipe corpus using weighted Jaccard similarity, a Flask API, and network graphs.
+[**the-flavor-network**](https://flavorpair.me) is an interactive flavor-pairing and recipe-discovery tool built from well-respected culinary texts, a large recipe corpus, and featuring network graphs built on a weighted Jaccard similarity algorithm
 hugo, papermod, javascript, vis.js, fuse.js, flask, sqlite, uwsgi, nginx, systemd, recipes, data science
 [Website](https://flavorpair.me)
 [Core](https://github.com/brege/flavor-project)
@@ -144,14 +144,13 @@ APS April Meeting, apr 12, 2015, [BAPS.2015.APR.K13.9](https://meetings.aps.org/
 May 2013 | to | Sep 2018
 **Black hole-neutron star mergers and accretion disk simulations**
 [Physics Dissertation](https://hdl.handle.net/2376/111818), [Washington State University](https://physics.wsu.edu), [SXS collaboration](https://black-holes.org)
-My doctoral research consisted of two primary projects: one in compact binary mergers and accretion disks, and another in a high-order accurate [finite volume](https://en.wikipedia.org/wiki/Finite_volume) implementation.
-1. I evolved [black hole](https://en.wikipedia.org/wiki/Black_hole)-[neutron star](https://en.wikipedia.org/wiki/Neutron_star) systems in [SpEC](https://www.black-holes.org/code/SpEC.html) with [adaptive mesh refinement](https://en.wikipedia.org/wiki/Adaptive_mesh_refinement) and [nuclear-theory](https://en.wikipedia.org/wiki/Nucleosynthesis) based [equations of state](https://en.wikipedia.org/wiki/Equation_of_state)
+1. I evolved [black hole](https://en.wikipedia.org/wiki/Black_hole)-[neutron star](https://en.wikipedia.org/wiki/Neutron_star) systems in [SpEC](https://www.black-holes.org/code/SpEC.html) with [adaptive mesh refinement](https://en.wikipedia.org/wiki/Adaptive_mesh_refinement) and [nuclear-theory](https://en.wikipedia.org/wiki/Nucleosynthesis) based [equations of state](https://en.wikipedia.org/wiki/Equation_of_state).
 2. I implemented a shock-capturing, energy stable, multiblock algorithm, [ESWENO](https://arc.aiaa.org/doi/abs/10.2514/6.2012-2837), into [SpEC](https://www.black-holes.org/code/SpEC.html) to solve the [fluid equations](https://en.wikipedia.org/wiki/Computational_fluid_dynamics) of an [accretion disk](https://en.wikipedia.org/wiki/Accretion_disk) on a multipatch grid structure.
 
 May 2010 | to | Aug 2010
 **Generalized uncertainty principle**
-[Post-Baccalaureate Project](https://physics.gvsu.edu), [Grand Valley State University](https://physics.gvsu.edu)
-I determined new connections between [polymer quantum mechanics](https://en.wikipedia.org/wiki/Loop_quantum_gravity) and [minimal length](https://en.wikipedia.org/wiki/Uncertainty_principle).
+[Post-baccalaureate Research](https://physics.gvsu.edu), [Grand Valley State University](https://physics.gvsu.edu)
+I explored numerous algebras connecting [polymer quantum mechanics](https://en.wikipedia.org/wiki/Loop_quantum_gravity) and [minimal length](https://en.wikipedia.org/wiki/Uncertainty_principle).
 
 Aug 2009 | to | May 2010
 **Motion in two-center gravitational systems**
@@ -172,16 +171,16 @@ I determined the underlying [Lie symmetries](https://en.wikipedia.org/wiki/Lie_a
 ## Teaching Experience
 
 S-2011
-**PHYS 320** Lecture, [Hamiltonian Mechanics](https://en.wikipedia.org/wiki/Hamiltonian_mechanics) | GAANN 2010 fellowship
-**junior-level physics majors**, **multi-week lecture series**, [hamiltonian mechanics](https://en.wikipedia.org/wiki/Hamiltonian_mechanics), [lagrangians](https://en.wikipedia.org/wiki/Lagrangian_mechanics), [canonical coordinates](https://en.wikipedia.org/wiki/Canonical_coordinates), [phase space](https://en.wikipedia.org/wiki/Phase_space), [poisson bracket](https://en.wikipedia.org/wiki/Poisson_bracket) 
+**PHYS 320** Lecture, Hamiltonian Mechanics | GAANN 2010 fellowship
+junior-level physics majors, multi-week lecture series, [hamiltonian mechanics](https://en.wikipedia.org/wiki/Hamiltonian_mechanics), [lagrangians](https://en.wikipedia.org/wiki/Lagrangian_mechanics), [canonical coordinates](https://en.wikipedia.org/wiki/Canonical_coordinates), [phase space](https://en.wikipedia.org/wiki/Phase_space), [poisson bracket](https://en.wikipedia.org/wiki/Poisson_bracket) 
 
 S-2012 | F-2010
 **ASTR 135** Laboratory, Astronomy
-**non-science majors**, [astronomy](https://en.wikipedia.org/wiki/Astronomy), [solar system](https://en.wikipedia.org/wiki/Solar_System), [stars](https://en.wikipedia.org/wiki/Star), [galaxies](https://en.wikipedia.org/wiki/Galaxy), [cosmology](https://en.wikipedia.org/wiki/Cosmology), [history of astronomy](https://en.wikipedia.org/wiki/History_of_astronomy)
+non-science majors, [astronomy](https://en.wikipedia.org/wiki/Astronomy), [solar system](https://en.wikipedia.org/wiki/Solar_System), [stars](https://en.wikipedia.org/wiki/Star), [galaxies](https://en.wikipedia.org/wiki/Galaxy), [cosmology](https://en.wikipedia.org/wiki/Cosmology), [history of astronomy](https://en.wikipedia.org/wiki/History_of_astronomy)
 
 X-2017 | F-2014 | F-2012 | F-2011
 **PHYS 101** Laboratory, General Physics I
-**algebra-based**, [measurement uncertainty](https://en.wikipedia.org/wiki/Measurement_uncertainty), [mechanics](https://en.wikipedia.org/wiki/Mechanics), [pendulum](https://en.wikipedia.org/wiki/Pendulum), [springs](https://en.wikipedia.org/wiki/Spring_(device)), [work and energy](https://en.wikipedia.org/wiki/Work_(physics)), [impulse and momentum](https://en.wikipedia.org/wiki/Momentum), [ballistics](https://en.wikipedia.org/wiki/Ballistics), [buoyancy](https://en.wikipedia.org/wiki/Buoyancy), [vibrations](https://en.wikipedia.org/wiki/Vibration), [temperature](https://en.wikipedia.org/wiki/Temperature), [heat](https://en.wikipedia.org/wiki/Heat)
+algebra-based, [uncertainty analysis](https://en.wikipedia.org/wiki/Measurement_uncertainty), [mechanics](https://en.wikipedia.org/wiki/Mechanics), [pendulum](https://en.wikipedia.org/wiki/Pendulum), [springs](https://en.wikipedia.org/wiki/Spring_(device)), [work and energy](https://en.wikipedia.org/wiki/Work_(physics)), [impulse and momentum](https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion#Newton's_third_law), [ballistics](https://en.wikipedia.org/wiki/Ballistics), [buoyancy](https://en.wikipedia.org/wiki/Buoyancy), [vibrations](https://en.wikipedia.org/wiki/Vibration), [temperature](https://en.wikipedia.org/wiki/Temperature), [heat](https://en.wikipedia.org/wiki/Heat)
 
 S-2012
 **PHYS 101** Lecture, General Physics I | GAANN 2011 fellowship
@@ -189,15 +188,15 @@ S-2012
 
 S-2013
 **PHYS 102** Laboratory, General Physics II
-**algebra-based**, [measurement uncertainty](https://en.wikipedia.org/wiki/Measurement_uncertainty), [electric field](https://en.wikipedia.org/wiki/Electric_field), [magnetic field](https://en.wikipedia.org/wiki/Magnetic_field), [Ohm's law](https://en.wikipedia.org/wiki/Ohm%27s_law), [electric circuits](https://en.wikipedia.org/wiki/Electrical_network), [electromagnetic induction](https://en.wikipedia.org/wiki/Electromagnetic_induction), [reflection](https://en.wikipedia.org/wiki/Reflection_(physics)) and [refraction](https://en.wikipedia.org/wiki/Refraction), [lenses](https://en.wikipedia.org/wiki/Lens_(optics))
+algebra-based, [uncertainty analysis](https://en.wikipedia.org/wiki/Measurement_uncertainty), [electric and magnetic fields](https://en.wikipedia.org/wiki/Electromagnetic_field), [ohm's law](https://en.wikipedia.org/wiki/Ohm%27s_law), [circuits](https://en.wikipedia.org/wiki/Electrical_network), [induction](https://en.wikipedia.org/wiki/Electromagnetic_induction), [reflection and refraction](https://en.wikipedia.org/wiki/Refraction), [lenses](https://en.wikipedia.org/wiki/Lens_(optics))
 
 X-2012 | S-2011
 **PHYS 201** Laboratory, Physics for Scientists and Engineers I
-**calculus-based**, [propagation of uncertainty](https://en.wikipedia.org/wiki/Propagation_of_uncertainty), [mechanics](https://en.wikipedia.org/wiki/Mechanics), [Newton's laws](https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion), [friction](https://en.wikipedia.org/wiki/Friction), [pendulum](https://en.wikipedia.org/wiki/Pendulum), [impulse and momentum](https://en.wikipedia.org/wiki/Momentum), [work and energy](https://en.wikipedia.org/wiki/Work_(physics)), [ballistics](https://en.wikipedia.org/wiki/Ballistics), [rotational dynamics](https://en.wikipedia.org/wiki/Rotational_dynamics), [buoyancy](https://en.wikipedia.org/wiki/Buoyancy), [harmonics](https://en.wikipedia.org/wiki/Harmonic_oscillator), [engine cycles](https://en.wikipedia.org/wiki/Carnot_heat_engine)
+calculus-based, [error propagation](https://en.wikipedia.org/wiki/Propagation_of_uncertainty), [mechanics](https://en.wikipedia.org/wiki/Mechanics), [Newton's laws](https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion), [friction](https://en.wikipedia.org/wiki/Friction), [pendulum](https://en.wikipedia.org/wiki/Pendulum), [impulse and momentum](https://en.wikipedia.org/wiki/Momentum), [work and energy](https://en.wikipedia.org/wiki/Work_(physics)), [ballistics](https://en.wikipedia.org/wiki/Ballistics), [rotational dynamics](https://en.wikipedia.org/wiki/Rotational_dynamics), [buoyancy](https://en.wikipedia.org/wiki/Buoyancy), [harmonics](https://en.wikipedia.org/wiki/Harmonic_oscillator), [engine cycles](https://en.wikipedia.org/wiki/Carnot_heat_engine)
 
 F-2012
 **PHYS 202** Laboratory, Physics for Scientists and Engineers II
-**calculus-based**, [propagation of uncertainty](https://en.wikipedia.org/wiki/Propagation_of_uncertainty), [electric field](https://en.wikipedia.org/wiki/Electric_field), [magnetic field](https://en.wikipedia.org/wiki/Magnetic_field), [RC circuit](https://en.wikipedia.org/wiki/RC_circuit) and [AC circuit](https://en.wikipedia.org/wiki/AC_circuit), [electromagnetic induction](https://en.wikipedia.org/wiki/Electromagnetic_induction), [transformers](https://en.wikipedia.org/wiki/Transformer), [interference](https://en.wikipedia.org/wiki/Wave_interference), [thin lenses](https://en.wikipedia.org/wiki/Lens_(optics))
+calculus-based, [error propagation](https://en.wikipedia.org/wiki/Propagation_of_uncertainty), [electric and magnetic fields](https://en.wikipedia.org/wiki/Electromagnetic_field), [RC and AC circuits](https://en.wikipedia.org/wiki/AC_circuit), [induction](https://en.wikipedia.org/wiki/Electromagnetic_induction), [transformers](https://en.wikipedia.org/wiki/Transformer), [interference](https://en.wikipedia.org/wiki/Wave_interference), [thin lenses](https://en.wikipedia.org/wiki/Lens_(optics))
 
 ## Memberships
 
