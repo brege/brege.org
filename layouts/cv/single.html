@@ -48,6 +48,9 @@
     <div class="cv-reader-shadow">
       {{- .RawContent | markdownify -}}
     </div>
+    {{- with .Resources.GetMatch "preamble.md" -}}
+      <div class="cv-preamble">{{ .Content }}</div>
+    {{- end -}}
     {{- if not (.Param "disableAnchoredHeadings") }}
     {{- partial "anchored_headings.html" (partial "cv.html" .) -}}
     {{- else -}}

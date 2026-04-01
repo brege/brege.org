@@ -1306,6 +1306,12 @@
     margin-top: 0;
 }
 
+.post-single.type-cv .cv-preamble {
+    margin-bottom: 1.5rem;
+    color: var(--secondary);
+    font-size: 0.88rem;
+}
+
 .post-single.type-cv .cv-sheet > h2 {
     margin: 2rem 0 0.95rem;
     margin-bottom: 0.95rem;
