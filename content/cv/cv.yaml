@@ -1,0 +1,635 @@
+sections:
+
+  - title: Expertise
+    handler: pairs
+    items:
+      - label: physics and mathematics
+        entries:
+          - name: mechanics
+            url: https://en.wikipedia.org/wiki/Hamiltonian_mechanics
+          - name: general relativity
+            url: https://en.wikipedia.org/wiki/General_relativity
+          - name: fluid dynamics
+            url: https://en.wikipedia.org/wiki/Fluid_dynamics
+          - name: finite volume
+            url: https://en.wikipedia.org/wiki/Finite_element_method
+          - name: numerical methods
+            url: https://en.wikipedia.org/wiki/Numerical_analysis
+          - name: differential equations
+            url: https://en.wikipedia.org/wiki/Differential_equation
+
+      - label: computing
+        entries:
+          - name: data science
+            url: https://en.wikipedia.org/wiki/Data_science
+          - name: artificial intelligence
+            url: https://en.wikipedia.org/wiki/AI
+          - name: software engineering
+            url: https://en.wikipedia.org/wiki/Software_engineering
+          - name: sysadmin
+            url: https://en.wikipedia.org/wiki/System_administration
+          - name: machine learning
+            url: https://en.wikipedia.org/wiki/Machine_learning
+          - name: full-stack development
+            url: https://en.wikipedia.org/wiki/Solution_stack#Full-stack_developer
+
+      - label: culinary arts
+        entries:
+          - name: menu profit analysis
+          - name: from-scratch, seasonal, and farm-to-table cooking
+          - name: pairing dinners and pop-ups
+          - name: fermentation and preservation
+          - name: pedagogical training
+          - name: documentation systems
+
+  - title: Selected Work
+    handler: projects
+    items:
+      - name: monitorat
+        url: https://monitorat.brege.org
+        summary: >-
+          is a federated, continuous dashboard and documentation framework
+          for Linux homelabs with a themeable and extensible widget system.
+        stack: python, flask, javascript, html, css, yaml, docker, systemd, widgets, csv, homelab, pypi
+        links:
+          - label: Demo
+            url: https://monitorat.brege.org
+          - label: Source
+            url: https://github.com/brege/monitorat
+          - label: PyPI
+            url: https://pypi.org/project/monitorat/
+          - label: Docker
+            url: https://hub.docker.com/r/brege/monitorat
+
+      - name: oshea
+        url: https://github.com/brege/oshea
+        summary: >-
+          is a Node.js Markdown-to-PDF document plugin framework featuring
+          archetyping, Claude Code Skills, YAML workflows, and multi-level QA suite.
+        stack: node.js, yargs, puppeteer, markdown-it, js-yaml, ajv, plugins, archetypes, docs, recipes, books, cover letters
+        links:
+          - label: Source
+            url: https://github.com/brege/oshea
+          - label: npm
+            url: https://www.npmjs.com/package/oshea
+          - label: Docs
+            url: https://github.com/brege/oshea/tree/main/docs
+          - label: Plugins
+            url: https://github.com/brege/oshea-plugins
+          - label: Agents
+            url: https://github.com/brege/oshea/blob/main/docs/guides/claude-skills.md
+
+      - name: "br\u016Bki"
+        url: https://github.com/brege/bruki
+        summary: >-
+          is a self-hosted screenshot tagger, sorter, and retrieval app using
+          machine learning via OCR, CLIP, and VLM image processing.
+        stack: python, flask, sqlite, pandas, numpy, pillow, pytesseract, pydantic, pytorch, clip, umap, hdbscan
+        links:
+          - label: Source
+            url: https://github.com/brege/bruki
+          - label: Notebooks
+            url: https://github.com/brege/bruki/tree/main/notebooks
+
+      - name: the-flavor-network
+        url: https://flavorpair.me
+        summary: >-
+          is an interactive flavor-pairing and recipe-discovery tool built from
+          well-respected culinary texts, a large recipe corpus, and featuring
+          network graphs built on a weighted Jaccard similarity algorithm.
+        stack: hugo, papermod, javascript, vis.js, fuse.js, flask, sqlite, uwsgi, nginx, systemd, recipes, data science
+        links:
+          - label: Website
+            url: https://flavorpair.me
+          - label: Core
+            url: https://github.com/brege/flavor-project
+          - label: Source
+            url: https://github.com/brege/the-flavor-network
+
+      - name: aoife
+        url: https://aoife.brege.org
+        summary: >-
+          is a mixed-media poster matrix engine integrating a dozen APIs for
+          collage building, cover-art search, and artwork discovery.
+        stack: react, typescript, vite, flask, python, websocket, zustand, tmdb, openlibrary, musicbrainz, cypress, biome
+        links:
+          - label: Demo
+            url: https://aoife.brege.org
+          - label: Source
+            url: https://github.com/brege/aoife
+
+    note: "See [github.com/brege](https://github.com/brege) for a complete list of software projects."
+
+  - title: Professional
+    handler: rows
+    class: compact
+    items:
+      - date: "2023"
+        content: "**Data Science Fellowship**, *The Data Incubator*, San Francisco, CA"
+      - date: "2020-2022"
+        content: "**Restaurant Consulting**, CA, MI"
+      - date: "2019-2020"
+        content: "**Executive Chef**, *Slanted Tree*, Fairfield, CA"
+      - date: "2017-2019"
+        content: "**Executive Chef**, *Dawson's*, Dixon, CA"
+      - date: "2013-2017"
+        content: "**Research Assistant**, *Washington State Univ*, Pullman, WA"
+      - date: "2010-2017"
+        content: "**Teaching Assistant**, *Washington State Univ*, Pullman, WA"
+      - date: "2005-2007"
+        content: "**Sous Chef**, *One Trick Pony*, Grand Rapids, MI"
+
+  - title: Education
+    handler: rows
+    class: compact
+    items:
+      - date: "2017"
+        content: "**PhD**, *Washington State University*, Physics"
+      - date: "2010"
+        content: "**BSc**, *Grand Valley State University*, Mathematics"
+      - date: "2010"
+        content: "**BSc**, *Grand Valley State University*, Physics"
+      - date: "2007"
+        content: "**ASc**, *Grand Rapids Community College*"
+
+  - title: Technologies
+    handler: pairs
+    items:
+      - label: supercomputers and high performance computing
+        entries:
+          - name: SpEC
+            url: https://www.black-holes.org/code/SpEC.html
+            primary: true
+          - name: mpi
+            url: https://en.wikipedia.org/wiki/Message_Passing_Interface
+          - name: spark
+            url: https://spark.apache.org/
+          - name: stampede
+            url: https://www.tacc.utexas.edu/systems/stampede2
+          - name: xsede
+            url: http://www.xsede.org/
+          - name: calcul
+            url: https://www.calculquebec.ca/
+          - name: cacr.caltech
+            url: https://www.hpc.caltech.edu/
+
+      - label: programming languages and runtimes
+        entries:
+          - name: node.js
+            url: https://en.wikipedia.org/wiki/Node.js
+            primary: true
+          - name: python
+            url: https://en.wikipedia.org/wiki/Python_(programming_language)
+            primary: true
+          - name: typescript
+            url: https://en.wikipedia.org/wiki/TypeScript
+          - name: c++
+            url: https://en.wikipedia.org/wiki/C%2B%2B
+          - name: git
+            url: https://en.wikipedia.org/wiki/Git
+          - name: javascript
+            url: https://en.wikipedia.org/wiki/JavaScript
+          - name: php
+            url: https://en.wikipedia.org/wiki/PHP
+          - name: bash
+            url: https://en.wikipedia.org/wiki/Bash_(Unix_shell)
+
+      - label: application and visualization frameworks
+        entries:
+          - name: react
+            url: https://en.wikipedia.org/wiki/React_(JavaScript_library)
+            primary: true
+          - name: flask
+            url: https://en.wikipedia.org/wiki/Flask_(web_framework)
+            primary: true
+          - name: sqlite
+            url: https://en.wikipedia.org/wiki/SQLite
+          - name: hugo
+            url: https://en.wikipedia.org/wiki/Hugo_(software)
+          - name: vite
+            url: https://en.wikipedia.org/wiki/Vite_(software)
+          - name: markdown-it
+            url: https://github.com/markdown-it/markdown-it
+          - name: d3.js
+            url: https://en.wikipedia.org/wiki/D3.js
+          - name: chart.js
+            url: https://en.wikipedia.org/wiki/Chart.js
+          - name: vis.js
+            url: https://visjs.org
+          - name: fuse.js
+            url: https://www.fusejs.io/
+
+      - label: data science and machine learning
+        entries:
+          - name: scikit-learn
+            url: https://en.wikipedia.org/wiki/Scikit-learn
+          - name: pandas
+            url: https://en.wikipedia.org/wiki/Pandas_(software)
+          - name: networkx
+            url: https://en.wikipedia.org/wiki/NetworkX
+          - name: tensorflow
+            url: https://en.wikipedia.org/wiki/TensorFlow
+          - name: pytorch
+            url: https://en.wikipedia.org/wiki/PyTorch
+          - name: numpy
+            url: https://en.wikipedia.org/wiki/NumPy
+          - name: matplotlib
+            url: https://en.wikipedia.org/wiki/Matplotlib
+          - name: jupyter
+            url: https://en.wikipedia.org/wiki/Project_Jupyter#Jupyter_Notebook
+          - name: seaborn
+            url: https://en.wikipedia.org/wiki/Seaborn
+          - name: clip
+            url: https://github.com/openai/CLIP
+          - name: umap
+            url: https://umap-learn.readthedocs.io/
+          - name: hdbscan
+            url: https://hdbscan.readthedocs.io/
+
+      - label: scientific and numerical tools
+        entries:
+          - name: sage
+            url: https://en.wikipedia.org/wiki/Sage_(mathematics_software)
+          - name: fortran
+            url: https://en.wikipedia.org/wiki/Fortran
+          - name: octave
+            url: https://en.wikipedia.org/wiki/GNU_Octave
+          - name: matlab
+            url: https://en.wikipedia.org/wiki/MATLAB
+          - name: latex
+            url: https://en.wikipedia.org/wiki/LaTeX
+          - name: gnuplot
+            url: https://en.wikipedia.org/wiki/Gnuplot
+          - name: paraview
+            url: https://en.wikipedia.org/wiki/ParaView
+          - name: pydantic
+            url: https://docs.pydantic.dev/latest/
+
+      - label: validation, QA, and automation
+        entries:
+          - name: pytest
+            url: https://en.wikipedia.org/wiki/Pytest
+          - name: mocha
+            url: https://en.wikipedia.org/wiki/Mocha_(JavaScript_framework)
+          - name: cypress
+            url: https://en.wikipedia.org/wiki/Cypress_(software)
+          - name: biome
+            url: https://en.wikipedia.org/wiki/Biome
+          - name: ruff
+            url: https://en.wikipedia.org/wiki/Ruff_(software)
+          - name: integration
+            url: https://en.wikipedia.org/wiki/Integration_testing
+          - name: end-to-end
+            url: https://en.wikipedia.org/wiki/System_testing
+          - name: life-cycle
+            url: https://en.wikipedia.org/wiki/Lifecycle_(software_development)
+          - name: puppeteer
+            url: https://pptr.dev/
+          - name: ajv
+            url: https://ajv.js.org/
+          - name: yaml
+            url: https://en.wikipedia.org/wiki/YAML
+
+      - label: source, packaging, and distribution
+        entries:
+          - name: github
+            url: https://github.com/brege
+          - name: npm
+            url: https://en.wikipedia.org/wiki/Npm
+          - name: pypi
+            url: https://en.wikipedia.org/wiki/Pypi
+          - name: docker
+            url: https://en.wikipedia.org/wiki/Docker_(software)
+          - name: podman
+            url: https://en.wikipedia.org/wiki/Podman
+          - name: nginx
+            url: https://en.wikipedia.org/wiki/Nginx
+          - name: systemd
+            url: https://en.wikipedia.org/wiki/Systemd
+          - name: uwsgi
+            url: https://en.wikipedia.org/wiki/UWSGI
+          - name: websocket
+            url: https://en.wikipedia.org/wiki/WebSocket
+          - name: zustand
+            url: https://github.com/pmndrs/zustand
+          - name: pytesseract
+            url: https://github.com/madmaze/pytesseract
+          - name: addons.mozilla.org
+            url: https://en.wikipedia.org/wiki/Mozilla_Add-on_SDK
+
+  - title: Publications
+    handler: detail
+    class: detail
+    items:
+      - date: "2019"
+        content: |-
+          **Systematic effects from black hole-neutron star waveform model uncertainties on the neutron star equation of state**
+
+          Chakravarti, K., Gupta, A., Bose, S., Duez, M.D., Caro, J., **Brege, W.**, Foucart, F., Ghosh, S., Kyutoku, K., Lackey, B.D. and Shibata, M.
+
+          [Physical Review D. 99(2), 024049](https://links.aps.org/doi/10.1103/PhysRevD.99.024049), jan 31, 2019
+
+          *preprint*: [arXiv:1809.04349](https://arxiv.org/abs/1809.04349)
+
+      - date: "2018"
+        content: |-
+          **Black hole-neutron star mergers using a survey of finite-temperature equations of state**
+
+          **Brege, W.**, Duez, M.D., Deaton, M.B., Foucart, F., Caro, J., Hemberger, D.A., Kidder, L.E., O'Connor, E., Pfeiffer, H.P., Scheel, M.A.
+
+          [Physical Review D, 98(6), 063009](https://link.aps.org/doi/10.1103/PhysRevD.98.063009), sep 12, 2018
+
+          *preprint*: [arXiv:1804.09823](https://arxiv.org/abs/1804.09823)
+
+      - date: "2016"
+        content: |-
+          **Dynamical ejecta from precessing neutron star-black hole mergers with a hot, nuclear-theory based equation of state**
+
+          Foucart, F., Desai, D., **Brege, W.**, Duez, M.D., Kasen, D., Hemberger, D.A., Kidder, L.E., Pfeiffer, H.P., Scheel, M.A.
+
+          [Classical and Quantum Gravity 34(4) 044002](https://dx.doi.org/10.1088/1361-6382/aa573b), nov 3, 2016
+
+          *preprint*: [arXiv:1611.01159](https://arxiv.org/abs/1611.01159)
+
+  - title: Contributed Talks
+    handler: detail
+    class: detail
+    items:
+      - date: "2023"
+        content: |-
+          **The Flavor Network**
+
+          Specially selected for [The Data Incubator's](https://thedataincubator.com/) Capstone Showcase, nov 9, 2023
+
+      - date: "2016"
+        content: |-
+          **Equation of state survey of black hole-neutron star mergers**
+
+          APS April Meeting, apr 16, 2016, [BAPS.2016.APR.C14.3](https://meetings.aps.org/Meeting/APR16/Session/C14.3)
+
+      - date: "2015"
+        content: |-
+          **A high order accurate finite difference scheme with boundary closures for astrophysical simulations**
+
+          Northwest APS Meeting, may 16, 2015, [BAPS.2015.NWS.E6.6](https://meetings.aps.org/Meeting/NWS15/Session/E6.6)
+
+      - date: "2015"
+        content: |-
+          **A stable high-order multipatch method for black hole accretion simulations**
+
+          APS April Meeting, apr 12, 2015, [BAPS.2015.APR.K13.9](https://meetings.aps.org/Meeting/APR15/Session/K13.9)
+
+      - date: "2010"
+        content: |-
+          **Polymer quantum mechanics and an approach to minimal length** (Poster)
+
+          [19th International Conference on General Relativity](https://iopscience.iop.org/issue/0264-9381/28/11) and [Gravitation (GR19)](https://hyperspace.uni-frankfurt.de/2009/10/23/gr19-first-announcement/), Mexico City, Mexico, jul 16, 2010
+
+      - date: "2009"
+        content: |-
+          **Symmetry Analysis and the Lane-Emden Equation**
+
+          2009 Undergraduate Symposium at [Argonne National Labs](https://www.anl.gov/), Argonne, IL, nov 13, 2009
+
+      - date: "2009"
+        content: |-
+          **Symmetry Analysis of the Lane-Emden Equation**
+
+          [MathFest 2009](https://www.maa.org/meetings/mathfest-archive), Portland, OR, aug 7, 2009
+
+  - title: Awards
+    handler: rows
+    class: award
+    items:
+      - date: "2017 | 2016 | 2015"
+        content: "[NASA](https://nasa.gov) [Space Grant](https://www.waspacegrant.org/)"
+      - date: "2011-2012 | 2010-2011"
+        content: "[Graduate Assistance in Areas of National Need (GAANN)](https://www2.ed.gov/programs/gaann/index.html) fellowship"
+      - date: "2009-2010"
+        content: "[Science, Mathematics, And Research for Transformation (SMART)](https://www.smartscholarship.org/smart) scholarship"
+      - date: "2009"
+        content: "[Outstanding Student Achievement Award](https://www.gvsu.edu/math/scholarships-and-awards-9.htm), GVSU Mathematics Department"
+
+  - title: Research Experience
+    handler: research
+    items:
+      - date: "May 2013 | to | Sep 2018"
+        title: "Black hole-neutron star mergers and accretion disk simulations"
+        meta: "[Physics Dissertation](https://hdl.handle.net/2376/111818), [Washington State University](https://physics.wsu.edu), [SXS collaboration](https://black-holes.org)"
+        content:
+          - >-
+            I evolved [black hole](https://en.wikipedia.org/wiki/Black_hole)-[neutron star](https://en.wikipedia.org/wiki/Neutron_star) systems
+            in [SpEC](https://www.black-holes.org/code/SpEC.html) with [adaptive mesh refinement](https://en.wikipedia.org/wiki/Adaptive_mesh_refinement)
+            and [nuclear-theory](https://en.wikipedia.org/wiki/Nucleosynthesis) based [equations of state](https://en.wikipedia.org/wiki/Equation_of_state).
+          - >-
+            I implemented a shock-capturing, energy stable, multiblock algorithm,
+            [ESWENO](https://arc.aiaa.org/doi/abs/10.2514/6.2012-2837), into [SpEC](https://www.black-holes.org/code/SpEC.html) to solve the
+            [fluid equations](https://en.wikipedia.org/wiki/Computational_fluid_dynamics) of an
+            [accretion disk](https://en.wikipedia.org/wiki/Accretion_disk) on a multipatch grid structure.
+
+      - date: "May 2010 | to | Aug 2010"
+        title: "Generalized uncertainty principle"
+        meta: "[Post-baccalaureate Research](https://physics.gvsu.edu), [Grand Valley State University](https://physics.gvsu.edu)"
+        content:
+          - >-
+            I explored numerous algebras connecting [polymer quantum mechanics](https://en.wikipedia.org/wiki/Loop_quantum_gravity)
+            and [minimal length](https://en.wikipedia.org/wiki/Uncertainty_principle).
+
+      - date: "Aug 2009 | to | May 2010"
+        title: "Motion in two-center gravitational systems"
+        meta: "[Physics Senior Thesis](https://physics.gvsu.edu), [Grand Valley State University](https://physics.gvsu.edu)"
+        content:
+          - >-
+            A [three-body problem](https://en.wikipedia.org/wiki/Three-body_problem) where I evolved
+            [Hamilton's equations](https://en.wikipedia.org/wiki/Hamiltonian_mechanics) using
+            [Gragg extrapolation](https://en.wikipedia.org/wiki/Bulirsch%E2%80%93Stoer_algorithm) to model
+            [chaotic](https://en.wikipedia.org/wiki/Chaos_theory) [particle trajectories](https://en.wikipedia.org/wiki/Symplectic_geometry)
+            around rotating binary gravitational systems and derived a non-obvious
+            [integral of motion](https://en.wikipedia.org/wiki/Constant_of_motion#Integral_of_motion).
+
+      - date: "Aug 2009 | to | Dec 2009"
+        title: "Quasicrystals, tilings and diffraction patterns"
+        meta: "[Mathematics Senior Thesis](https://www.gvsu.edu/math/), [Grand Valley State University](https://math.gvsu.edu)"
+        content:
+          - >-
+            I studied diffraction patterns of [aperiodic tiles](https://en.wikipedia.org/wiki/Penrose_tiling),
+            [quasicrystals](https://en.wikipedia.org/wiki/Quasicrystal), and
+            [Golden](https://en.wikipedia.org/wiki/Golden_ratio) and [Silver](https://en.wikipedia.org/wiki/Silver_ratio) ratios.
+
+      - date: "May 2009 | to | Aug 2009"
+        title: "Symmetry analysis of differential equations"
+        meta: "[Research Experience for Undergraduates](https://www.ucf.edu/), [University of Central Florida](https://www.ucf.edu/)"
+        content:
+          - >-
+            I determined the underlying [Lie symmetries](https://en.wikipedia.org/wiki/Lie_algebra) of the
+            [Lane-Emden equation](https://en.wikipedia.org/wiki/Lane%E2%80%93Emden_equation) for generalized polytropic stars.
+
+  - title: Teaching Experience
+    handler: teaching
+    items:
+      - date: "S-2011"
+        code: PHYS 320
+        kind: Lecture
+        name: Hamiltonian Mechanics
+        tag: GAANN 2010 fellowship
+        detail:
+          - name: junior-level physics majors, multi-week lecture series
+          - name: hamiltonian mechanics
+            url: https://en.wikipedia.org/wiki/Hamiltonian_mechanics
+          - name: lagrangians
+            url: https://en.wikipedia.org/wiki/Lagrangian_mechanics
+          - name: canonical coordinates
+            url: https://en.wikipedia.org/wiki/Canonical_coordinates
+          - name: phase space
+            url: https://en.wikipedia.org/wiki/Phase_space
+          - name: poisson bracket
+            url: https://en.wikipedia.org/wiki/Poisson_bracket
+
+      - date: "S-2012 | F-2010"
+        code: ASTR 135
+        kind: Laboratory
+        name: Astronomy
+        detail:
+          - name: non-science majors
+          - name: astronomy
+            url: https://en.wikipedia.org/wiki/Astronomy
+          - name: solar system
+            url: https://en.wikipedia.org/wiki/Solar_System
+          - name: stars
+            url: https://en.wikipedia.org/wiki/Star
+          - name: galaxies
+            url: https://en.wikipedia.org/wiki/Galaxy
+          - name: cosmology
+            url: https://en.wikipedia.org/wiki/Cosmology
+          - name: history of astronomy
+            url: https://en.wikipedia.org/wiki/History_of_astronomy
+
+      - date: "X-2017 | F-2014 | F-2012 | F-2011"
+        code: PHYS 101
+        kind: Laboratory
+        name: General Physics I
+        detail:
+          - name: algebra-based
+          - name: uncertainty analysis
+            url: https://en.wikipedia.org/wiki/Measurement_uncertainty
+          - name: mechanics
+            url: https://en.wikipedia.org/wiki/Mechanics
+          - name: pendulum
+            url: https://en.wikipedia.org/wiki/Pendulum
+          - name: springs
+            url: https://en.wikipedia.org/wiki/Spring_(device)
+          - name: work and energy
+            url: https://en.wikipedia.org/wiki/Work_(physics)
+          - name: impulse and momentum
+            url: https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion#Newton's_third_law
+          - name: ballistics
+            url: https://en.wikipedia.org/wiki/Ballistics
+          - name: buoyancy
+            url: https://en.wikipedia.org/wiki/Buoyancy
+          - name: vibrations
+            url: https://en.wikipedia.org/wiki/Vibration
+          - name: temperature
+            url: https://en.wikipedia.org/wiki/Temperature
+          - name: heat
+            url: https://en.wikipedia.org/wiki/Heat
+
+      - date: "S-2012"
+        code: PHYS 101
+        kind: Lecture
+        name: General Physics I
+        tag: GAANN 2011 fellowship
+        detail:
+          - name: engine cycles
+            url: https://en.wikipedia.org/wiki/Carnot_heat_engine
+          - name: thermodynamics
+            url: https://en.wikipedia.org/wiki/Thermodynamics#Laws_of_thermodynamics
+
+      - date: "S-2013"
+        code: PHYS 102
+        kind: Laboratory
+        name: General Physics II
+        detail:
+          - name: algebra-based
+          - name: uncertainty analysis
+            url: https://en.wikipedia.org/wiki/Measurement_uncertainty
+          - name: electric and magnetic fields
+            url: https://en.wikipedia.org/wiki/Electromagnetic_field
+          - name: ohm's law
+            url: https://en.wikipedia.org/wiki/Ohm%27s_law
+          - name: circuits
+            url: https://en.wikipedia.org/wiki/Electrical_network
+          - name: induction
+            url: https://en.wikipedia.org/wiki/Electromagnetic_induction
+          - name: reflection and refraction
+            url: https://en.wikipedia.org/wiki/Refraction
+          - name: lenses
+            url: https://en.wikipedia.org/wiki/Lens_(optics)
+
+      - date: "X-2012 | S-2011"
+        code: PHYS 201
+        kind: Laboratory
+        name: Physics for Scientists and Engineers I
+        detail:
+          - name: calculus-based
+          - name: error propagation
+            url: https://en.wikipedia.org/wiki/Propagation_of_uncertainty
+          - name: mechanics
+            url: https://en.wikipedia.org/wiki/Mechanics
+          - name: Newton's laws
+            url: https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion
+          - name: friction
+            url: https://en.wikipedia.org/wiki/Friction
+          - name: pendulum
+            url: https://en.wikipedia.org/wiki/Pendulum
+          - name: impulse and momentum
+            url: https://en.wikipedia.org/wiki/Momentum
+          - name: work and energy
+            url: https://en.wikipedia.org/wiki/Work_(physics)
+          - name: ballistics
+            url: https://en.wikipedia.org/wiki/Ballistics
+          - name: rotational dynamics
+            url: https://en.wikipedia.org/wiki/Rotational_dynamics
+          - name: buoyancy
+            url: https://en.wikipedia.org/wiki/Buoyancy
+          - name: harmonics
+            url: https://en.wikipedia.org/wiki/Harmonic_oscillator
+          - name: engine cycles
+            url: https://en.wikipedia.org/wiki/Carnot_heat_engine
+
+      - date: "F-2012"
+        code: PHYS 202
+        kind: Laboratory
+        name: Physics for Scientists and Engineers II
+        detail:
+          - name: calculus-based
+          - name: error propagation
+            url: https://en.wikipedia.org/wiki/Propagation_of_uncertainty
+          - name: electric and magnetic fields
+            url: https://en.wikipedia.org/wiki/Electromagnetic_field
+          - name: RC and AC circuits
+            url: https://en.wikipedia.org/wiki/AC_circuit
+          - name: induction
+            url: https://en.wikipedia.org/wiki/Electromagnetic_induction
+          - name: transformers
+            url: https://en.wikipedia.org/wiki/Transformer
+          - name: interference
+            url: https://en.wikipedia.org/wiki/Wave_interference
+          - name: thin lenses
+            url: https://en.wikipedia.org/wiki/Lens_(optics)
+
+  - title: Memberships
+    handler: rows
+    class: compact
+    items:
+      - date: c. 2013
+        content: "[SXS Collaboration](https://github.com/sxs-collaboration)"
+      - date: c. 2009
+        content: "[American Physical Society](https://www.aps.org/)"
+      - date: c. 2009
+        content: "[Mathematical Association of America](https://www.maa.org/)"
+      - date: c. 2010
+        content: "[Omicron Delta Kappa](https://odk.org/)"
+      - date: c. 2009
+        content: "[Society of Physics Students](https://www.sigmapisigma.org/sigmapisigma) (SPS)"
+      - date: c. 2009
+        content: "[Pi Mu Epsilon](https://pme-math.org/) (Iota chapter)"

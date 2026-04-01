@@ -54,3 +54,20 @@ mkdir -p themes/hugo-papermod
 git clone git@github.com:adityatelange/hugo-PaperMod.git themes/hugo-papermod/
 ```
 Check: `hugo server`
+
+### CV
+
+The main configuration of my cv is in `content/cv/cv.yaml`. A Markdown version of this is created so:
+
+1. hugo/papermod can accurately count words through `.Content`
+2. the `cv.md` becomes easier to copy and paste from
+3. works with external Markdown editors
+
+To create the `cv.md` file:
+```bash
+make cv
+```
+
+## License
+
+[MIT](LICENSE)

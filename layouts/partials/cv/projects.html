@@ -1,41 +1,20 @@
-{{/* Collapse blank-line runs so each application record is one block with summary lines, a stack line, and optional rail links. */}}
-{{- $blocks := split (replaceRE `\n{2,}` "\f" .body) "\f" -}}
 <div class="cv-project-list">
-  {{- range $blocks -}}
-    {{- $block := trim . "\r\n\t " -}}
-    {{- if ne $block "" -}}
-      {{- $lines := split $block "\n" -}}
-      {{- if eq (len $lines) 1 -}}
-        <p class="cv-project-note">{{ $block | markdownify }}</p>
-        {{- continue -}}
-      {{- end -}}
-      {{- $stack := "" -}}
-      {{- $links := slice -}}
-      {{- $summaryLines := $lines -}}
-      {{- if gt (len $lines) 1 -}}
-        {{- $stack = trim (index $lines 1) "\r\n\t " -}}
-        {{- $summaryLines = first 1 $lines -}}
-      {{- end -}}
-      {{- if gt (len $lines) 2 -}}
-        {{- $links = after 2 $lines -}}
-      {{- end -}}
-      {{- $summary := trim (delimit $summaryLines " ") "\r\n\t " -}}
-      <article class="cv-row project">
-        <div class="cv-main">
-          <div class="cv-project-summary">{{- $summary | markdownify -}}</div>
-          {{- if ne $stack "" -}}
-            <div class="cv-project-stack">{{ $stack }}</div>
-          {{- end -}}
-        </div>
-        <div class="cv-project-links">
-          {{- range $links -}}
-            {{- $link := trim . "\r\n\t " -}}
-            {{- if ne $link "" -}}
-              <span>{{ $link | markdownify }}</span>
-            {{- end -}}
-          {{- end -}}
-        </div>
-      </article>
-    {{- end -}}
+  {{- range .items -}}
+    <article class="cv-row project">
+      <div class="cv-main">
+        <div class="cv-project-summary"><p><a href="{{ .url }}"><strong>{{ .name }}</strong></a> {{ .summary }}</p></div>
+        {{- with .stack -}}
+          <div class="cv-project-stack">{{ . }}</div>
+        {{- end -}}
+      </div>
+      <div class="cv-project-links">
+        {{- range .links -}}
+          <span><a href="{{ .url }}">{{ .label }}</a></span>
+        {{- end -}}
+      </div>
+    </article>
+  {{- end -}}
+  {{- with .note -}}
+    <p class="cv-project-note">{{ . | markdownify }}</p>
   {{- end -}}
 </div>

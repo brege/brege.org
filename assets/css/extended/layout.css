@@ -1532,6 +1532,7 @@
 }
 
 .post-single.type-cv .cv-project-summary p {
+    color: var(--primary);
     line-height: 1.45;
 }
 

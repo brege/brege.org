@@ -1,10 +1,4 @@
 {{- printf "## %s" .title | markdownify -}}
-{{- $handler := "" -}}
-{{- with .cfg -}}
-  {{- $handler = .handler -}}
-{{- end -}}
-{{- if $handler -}}
-  {{- partial (printf "cv/%s.html" $handler) . -}}
-{{- else -}}
-  {{- .body | markdownify -}}
+{{- with .handler -}}
+  {{- partial (printf "cv/%s.html" .) $ -}}
 {{- end -}}

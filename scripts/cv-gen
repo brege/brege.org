@@ -1,0 +1,171 @@
+#!/usr/bin/env python3
+"""Generate content/cv/index.md from content/cv/cv.yaml."""
+
+import sys
+from pathlib import Path
+
+import yaml
+
+FRONT_MATTER = """\
+---
+title: Wyatt Brege
+date: 2023-01-01
+type: cv
+math: true
+ShowToc: true
+TocOpen: false
+tocStartLevel: 2
+tocEndLevel: 2
+headerNav: true
+navDepth: 3
+---"""
+
+ROOT = Path(__file__).resolve().parent.parent
+YAML_PATH = ROOT / "content" / "cv" / "cv.yaml"
+MD_PATH = ROOT / "content" / "cv" / "index.md"
+
+
+def fmt_entry(e):
+    name = e["name"]
+    url = e.get("url")
+    primary = e.get("primary", False)
+    if url:
+        text = f"[{name}]({url})"
+    else:
+        text = name
+    if primary:
+        if url:
+            text = f"[**{name}**]({url})"
+        else:
+            text = f"**{name}**"
+    return text
+
+
+def render_pairs(section):
+    lines = []
+    for item in section["items"]:
+        lines.append(f"- **{item['label']}**")
+        for e in item["entries"]:
+            lines.append(f"  {fmt_entry(e)}")
+        lines.append("")
+    return "\n".join(lines).rstrip()
+
+
+def render_projects(section):
+    lines = []
+    for item in section["items"]:
+        name = item["name"]
+        url = item["url"]
+        summary = item["summary"]
+        lines.append(f"[**{name}**]({url}) {summary}")
+
+        if stack := item.get("stack"):
+            lines.append(stack)
+
+        for link in item.get("links", []):
+            lines.append(f"[{link['label']}]({link['url']})")
+
+        lines.append("")
+
+    if note := section.get("note"):
+        lines.append(note)
+        lines.append("")
+
+    return "\n".join(lines).rstrip()
+
+
+def render_rows(section):
+    lines = []
+    for item in section["items"]:
+        lines.append(f"- {item['date']}, {item['content']}")
+    return "\n".join(lines)
+
+
+def render_detail(section):
+    blocks = []
+    for item in section["items"]:
+        # collapse internal blank lines so title and venue sit together
+        lines = [ln for ln in item["content"].splitlines() if ln.strip()]
+        blocks.append("\n".join(lines))
+    return "\n\n".join(blocks)
+
+
+def render_research(section):
+    blocks = []
+    for item in section["items"]:
+        parts = [item["date"]]
+        parts.append(f"**{item['title']}**")
+        parts.append(item["meta"])
+
+        content = item.get("content")
+        if content:
+            if isinstance(content, list) and len(content) > 1:
+                for i, c in enumerate(content, 1):
+                    parts.append(f"{i}. {c}")
+            elif isinstance(content, list):
+                parts.append(content[0])
+            else:
+                parts.append(content)
+
+        blocks.append("\n".join(parts))
+    return "\n\n".join(blocks)
+
+
+def render_teaching(section):
+    blocks = []
+    for item in section["items"]:
+        date = item["date"]
+        code = item.get("code", "")
+        kind = item.get("kind", "")
+        name = item.get("name", "")
+        tag = item.get("tag")
+
+        title = f"**{code}** {kind}, {name}" if code else name
+        if tag:
+            title += f" | {tag}"
+
+        detail_lines = []
+        for d in item.get("detail", []):
+            if d.get("url"):
+                detail_lines.append(f"  [{d['name']}]({d['url']})")
+            else:
+                detail_lines.append(f"  {d['name']}")
+        detail = "\n".join(detail_lines)
+
+        blocks.append(f"{date}\n{title}\n{detail}")
+    return "\n\n".join(blocks)
+
+
+HANDLERS = {
+    "pairs": render_pairs,
+    "projects": render_projects,
+    "rows": render_rows,
+    "detail": render_detail,
+    "research": render_research,
+    "teaching": render_teaching,
+}
+
+
+def main():
+    data = yaml.safe_load(YAML_PATH.read_text())
+
+    parts = [FRONT_MATTER, ""]
+    for section in data["sections"]:
+        parts.append("")
+        parts.append(f"## {section['title']}")
+        parts.append("")
+
+        handler = section.get("handler")
+        if handler and handler in HANDLERS:
+            parts.append(HANDLERS[handler](section))
+        parts.append("")
+
+    output = "\n".join(parts).rstrip() + "\n"
+    MD_PATH.write_text(output)
+
+    word_count = len(output.split())
+    print(f"cv: {MD_PATH.relative_to(ROOT)} ({word_count} words)")
+
+
+if __name__ == "__main__":
+    main()
