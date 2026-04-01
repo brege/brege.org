@@ -11,6 +11,9 @@ ignoreFiles = ['(?:^|/)README\.md$']
 theme = "hugo-papermod"
 title = "brege.org"
 
+[frontmatter]
+  lastmod = ["lastmod", ":fileModTime"]
+
 [outputs]
   home = [ "HTML", "RSS", "JSON" ]
 

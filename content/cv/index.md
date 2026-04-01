@@ -37,12 +37,12 @@ node.js, yargs, puppeteer, markdown-it, js-yaml, ajv, plugins, archetypes, docs,
 [Plugins](https://github.com/brege/oshea-plugins)
 [Agents](https://github.com/brege/oshea/blob/main/docs/guides/claude-skills.md)
 
-[**brūki**](https://github.com/brege/bruki) is a self-hosted screenshot labeling and retrieval system app with advanced OCR, ML (CLIP), and VLM image processing.
+[**brūki**](https://github.com/brege/bruki) is a self-hosted screenshot tagger, sorter, and retrieval app using machine learning via OCR, CLIP, and VLM image processing.
 python, flask, sqlite, pandas, numpy, pillow, pytesseract, pydantic, pytorch, clip, umap, hdbscan
 [Source](https://github.com/brege/bruki)
 [Notebooks](https://github.com/brege/bruki/tree/main/notebooks)
 
-[**the-flavor-network**](https://flavorpair.me) is an interactive flavor-pairing and recipe-discovery tool built from well-respected culinary texts, a large recipe corpus, and featuring network graphs built on a weighted Jaccard similarity algorithm
+[**the-flavor-network**](https://flavorpair.me) is an interactive flavor-pairing and recipe-discovery tool built from well-respected culinary texts, a large recipe corpus, and featuring network graphs built on a weighted Jaccard similarity algorithm.
 hugo, papermod, javascript, vis.js, fuse.js, flask, sqlite, uwsgi, nginx, systemd, recipes, data science
 [Website](https://flavorpair.me)
 [Core](https://github.com/brege/flavor-project)
