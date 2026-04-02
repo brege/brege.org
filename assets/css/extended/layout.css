@@ -1307,7 +1307,7 @@
 }
 
 .post-single.type-cv .cv-preamble {
-    margin-bottom: 1.5rem;
+    margin-bottom: var(--content-gap);
     color: var(--secondary);
     font-size: 0.88rem;
 }
@@ -1330,7 +1330,6 @@
 .post-single.type-cv .post-content p,
 .post-single.type-cv .post-content li {
     color: var(--secondary);
-    font-size: 1.02rem;
     line-height: 1.66;
 }
 
@@ -1379,7 +1378,7 @@
 .post-single.type-cv .cv-years {
     color: var(--secondary);
     font-family: "GraphikWeb", -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", Meiryo, sans-serif;
-    font-size: 0.84rem;
+    font-size: .93rem;
     letter-spacing: 0.04em;
     line-height: 1.32;
 }
@@ -1474,9 +1473,9 @@
 }
 
 .post-single.type-cv .cv-research-abstract {
-    margin-top: 0.22rem;
+    margin-top: 0.52rem;
     color: var(--primary);
-    font-size: 0.94rem;
+    font-size: 1rem;
     line-height: 1.66;
 }
 
@@ -1498,7 +1497,7 @@
 .post-single.type-cv .cv-main p.cv-teaching-detail {
     margin: 0.2rem 0 0;
     color: var(--secondary);
-    font-size: 0.94rem;
+    font-size: 0.96rem;
     line-height: 1.66;
 }
 

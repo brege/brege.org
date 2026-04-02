@@ -41,6 +41,9 @@
       {{- $abstractHtml = . | markdownify -}}
     {{- end -}}
   {{- end -}}
+  {{- if and (ne $abstractHtml "") (not (findRE `^\s*<(p|ol|ul|div|blockquote)\b` $abstractHtml)) -}}
+    {{- $abstractHtml = printf "<p>%s</p>" $abstractHtml -}}
+  {{- end -}}
   <article class="cv-row research">
     <div class="cv-years{{ if gt (len $parts) 1 }} is-stack{{ end }}">
       {{- range $parts -}}
