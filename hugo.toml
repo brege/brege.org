@@ -19,7 +19,12 @@ title = "brege.org"
 
 [params]
   author = "Wyatt Brege"
-  color = 'linen'
+  # linen, rose-pine, rose-pine-moon, catppuccin-frappe,
+  # catppuccin-macchiato, catppuccin-mocha, nord,
+  # gruvbox, everforest, sepia
+  #color = 'sepia'
+  colorLight = 'sepia'
+  colorDark = 'nord'
   env = 'production'
   twitter = ''
   github = 'brege'
@@ -27,7 +32,6 @@ title = "brege.org"
   mastodon = 'brege@mastodon.social'
   matrix = '@brege:matrix.org'
   signal = '@brege.01'
-
   avatar = 'wyatt@brege.org'
   name = 'Wyatt Brege'
   bio = 'gastrophysicist'

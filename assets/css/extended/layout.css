@@ -1279,6 +1279,8 @@
 
 .post-single.type-cv .post-header {
     margin-bottom: 1.25rem;
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid color-mix(in srgb, var(--border) 88%, transparent);
 }
 
 .post-single.type-cv .cv-hero {
@@ -1321,6 +1323,8 @@
     font-weight: 500;
     letter-spacing: 0.14em;
     text-transform: uppercase;
+    border-bottom: 1px solid color-mix(in srgb, var(--border) 82%, transparent);
+    padding-bottom: 0.35rem;
 }
 
 .post-single.type-cv .cv-sheet > h2:first-child {
@@ -1371,7 +1375,7 @@
 .post-single.type-cv .cv-row.teaching + .cv-row.teaching {
     margin-top: 0.75rem;
     padding-top: 0.8rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    border-top: 1px solid color-mix(in srgb, var(--border) 78%, transparent);
 }
 
 .post-single.type-cv .cv-label,
@@ -1602,6 +1606,12 @@
 .post-single.type-cv .cv-sheet > p + ul,
 .post-single.type-cv .cv-sheet > ul + p {
     margin-top: 0.55rem;
+}
+
+.post-single.type-cv .post-footer {
+    margin-top: 1rem;
+    padding-top: 0.85rem;
+    border-top: 1px solid color-mix(in srgb, var(--border) 85%, transparent);
 }
 
 @media (max-width: 700px) {
