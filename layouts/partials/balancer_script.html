@@ -33,14 +33,28 @@
             });
         }
 
-        function balanceWrap(container) {
-            resetBalancedWrap(container);
-            if (container.getClientRects().length === 0 || container.clientWidth === 0) return;
-
-            var items = Array.prototype.filter.call(container.children, function (item) {
+        function getVisibleItems(container) {
+            return Array.prototype.filter.call(container.children, function (item) {
                 return window.getComputedStyle(item).display !== "none";
             });
-            if (items.length < 2) return;
+        }
+
+        function syncContainerSeparators(container) {
+            syncSeparators(getVisibleItems(container));
+        }
+
+        function balanceWrap(container) {
+            resetBalancedWrap(container);
+            if (container.getClientRects().length === 0 || container.clientWidth === 0) {
+                syncContainerSeparators(container);
+                return;
+            }
+
+            var items = getVisibleItems(container);
+            if (items.length < 2) {
+                syncSeparators(items);
+                return;
+            }
 
             var style = window.getComputedStyle(container);
             var colGap = parseFloat(style.columnGap || style.gap || "0");
@@ -49,7 +63,10 @@
                 return sum + item.getBoundingClientRect().width;
             }, 0) + colGap * (items.length - 1);
 
-            if (total <= available) return;
+            if (total <= available) {
+                syncSeparators(items);
+                return;
+            }
 
             for (var rows = Math.max(2, Math.ceil(total / available)); rows <= items.length; rows++) {
                 var cols = Math.ceil(items.length / rows);
@@ -99,12 +116,17 @@
 
         function balanceAll() {
             var menuOpen = menu && nav && isMobile() && nav.classList.contains("menu-open");
-            Array.prototype.forEach.call(document.querySelectorAll(".balanced-wrap"), function (container) {
-                if (container.id === "menu" && !menuOpen) {
-                    resetBalancedWrap(container);
+            Array.prototype.forEach.call(document.querySelectorAll(".balanced-wrap, .balanced-sequence"), function (container) {
+                if (container.classList.contains("balanced-wrap")) {
+                    if (container.id === "menu" && !menuOpen) {
+                        resetBalancedWrap(container);
+                        syncContainerSeparators(container);
+                        return;
+                    }
+                    balanceWrap(container);
                     return;
                 }
-                balanceWrap(container);
+                syncContainerSeparators(container);
             });
         }
 

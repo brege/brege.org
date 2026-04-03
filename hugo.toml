@@ -106,9 +106,6 @@ title = "brege.org"
   name = 'google scholar'
   url = 'https://scholar.google.com/citations?user=WsjvDuQAAAAJ'
 [[params.homeInfoParams.markers]]
-  name = 'arXiv.org'
-  url = 'https://arxiv.org/search/?searchtype=author&query=Brege,W'
-[[params.homeInfoParams.markers]]
   name = "farmer's market menus"
   url = '/recipes/menus'
 
