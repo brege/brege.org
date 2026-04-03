@@ -22,8 +22,8 @@ title = "brege.org"
   # linen, rose-pine, rose-pine-moon, catppuccin-frappe,
   # catppuccin-macchiato, catppuccin-mocha, nord,
   # gruvbox, everforest, sepia
-  #color = 'sepia'
-  colorLight = 'sepia'
+  #color = 'linen'
+  colorLight = 'linen'
   colorDark = 'nord'
   env = 'production'
   twitter = ''
@@ -155,7 +155,7 @@ title = "brege.org"
     [markup.goldmark.renderer]
       unsafe = true
   [markup.highlight]
-    noClasses = true
+    noClasses = false
   [markup.tableOfContents]
     ordered = true
     startLevel = 1
