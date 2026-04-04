@@ -1057,33 +1057,55 @@
     border-bottom: 2px solid currentColor;
 }
 
-#menu li {
-    display: flex;
-    align-items: center;
-}
-
-#menu svg {
-    display: block;
-}
-
-#menu a {
-    display: flex;
-    align-items: center;
-}
-
 #menu a {
     font-family: "IBM Plex Mono", monospace;
     font-size: 0.88rem;
     letter-spacing: 0.02em;
 }
 
-#menu button#theme-toggle {
-    margin: 0;
-    font-size: inherit;
+.nav {
+    justify-content: flex-start;
 }
 
-#menu > li:last-child {
-    margin-inline-start: var(--gap);
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+    margin: auto var(--gap);
+}
+
+.nav-actions a,
+.nav-actions button {
+    display: flex;
+    align-items: center;
+}
+
+.nav-actions svg {
+    display: block;
+}
+
+button#theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+    padding: 0;
+    font-size: inherit;
+    margin: 0;
+}
+
+@media (min-width: 701px) {
+    #menu {
+        order: 2;
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    .nav-actions {
+        order: 3;
+        margin-left: var(--gap);
+        margin-right: var(--gap);
+    }
 }
 
 /* --- view toggle buttons --- */
@@ -1774,11 +1796,17 @@
         margin-right: 0;
     }
 
+    .nav-actions {
+        margin-left: auto;
+        margin-right: 0;
+        gap: calc(var(--gap) / 2);
+    }
+
     .mobile-menu-summary {
         display: inline-flex;
         align-items: center;
         gap: 0.2rem;
-        margin: auto var(--gap) auto auto;
+        margin: auto var(--gap) auto 0;
     }
 
     #menu {

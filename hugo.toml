@@ -164,7 +164,7 @@ title = "brege.org"
     identifier = "search"
     name = "search"
     url = "/search"
-    weight = 50
+    weight = 5
   [[menu.main]]
     identifier = "about"
     name = "about"
