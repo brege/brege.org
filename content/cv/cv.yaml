@@ -12,8 +12,6 @@ sections:
             url: https://en.wikipedia.org/wiki/AI
           - name: software engineering
             url: https://en.wikipedia.org/wiki/Software_engineering
-          - name: sysadmin
-            url: https://en.wikipedia.org/wiki/System_administration
           - name: machine learning
             url: https://en.wikipedia.org/wiki/Machine_learning
           - name: full-stack development
@@ -27,21 +25,19 @@ sections:
             url: https://en.wikipedia.org/wiki/General_relativity
           - name: fluid dynamics
             url: https://en.wikipedia.org/wiki/Fluid_dynamics
-          - name: finite volume
-            url: https://en.wikipedia.org/wiki/Finite_element_method
           - name: numerical methods
             url: https://en.wikipedia.org/wiki/Numerical_analysis
-          - name: differential equations
-            url: https://en.wikipedia.org/wiki/Differential_equation
       
       - label: culinary arts
         entries:
-          - name: menu profit analysis
-          - name: from-scratch, seasonal, and farm-to-table cooking
+          - name: menu profit analysis and documentation systems
+            url: /consulting
+          - name: from-scratch, seasonal & farm-to-table cooking
+            url: /recipes
           - name: pairing dinners and pop-ups
-          - name: fermentation and preservation
-          - name: pedagogical training
-          - name: documentation systems
+            url: /recipes/menus
+          - name: pedagogical training and leadership
+            url: /consulting
 
   - title: Selected Work
     handler: projects
