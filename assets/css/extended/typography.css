@@ -155,6 +155,9 @@ body {
 }
 
 .home-info .entry-header h1 {
+    width: fit-content;
+    max-width: 100%;
+    margin-inline: auto;
     font-weight: 400 !important;
     font-synthesis-weight: none;
     font-size: clamp(3.84rem, 9.6vw, 6.96rem);

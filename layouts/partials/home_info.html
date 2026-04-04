@@ -15,7 +15,7 @@
           "align" "center"
           "items" $noteItems
         ) }}
-        <h1>{{ .Title | markdownify }}</h1>
+        <h1 class="home-signal-title">{{ .Title | markdownify }}</h1>
     </header>
     <div class="entry-content">
         {{ .Content | markdownify }}
@@ -24,5 +24,23 @@
     <footer class="entry-footer home-info-footer">
         {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
     </footer>
+    <div class="home-signal-rule" aria-hidden="true"></div>
 </article>
+<script>
+    (function () {
+        function syncHomeSignalRule() {
+            var signal = document.querySelector(".home-signal");
+            var title = signal && signal.querySelector(".home-signal-title");
+            if (!signal || !title) return;
+            signal.style.setProperty("--home-signal-rule-width", title.getBoundingClientRect().width + "px");
+        }
+
+        syncHomeSignalRule();
+        window.addEventListener("load", syncHomeSignalRule);
+        window.addEventListener("resize", syncHomeSignalRule);
+        if (document.fonts && document.fonts.ready) {
+            document.fonts.ready.then(syncHomeSignalRule);
+        }
+    })();
+</script>
 {{- end -}}
