@@ -861,6 +861,7 @@
     display: inline-flex;
     align-items: center;
     gap: 0.55rem;
+    font-family: "GraphikWeb", -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", Meiryo, sans-serif;
     font-size: 0.8em;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -901,7 +902,16 @@
 .post-single .toc details[open] .toc-mark-open {
     display: block;
 }
-.post-single .toc summary .details { font-weight: 500; }
+.post-single .toc summary .details {
+    display: inline-flex;
+    align-items: center;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    letter-spacing: inherit;
+    line-height: 1;
+    text-transform: inherit;
+}
 .post-single .toc .inner {
     border-left: 2px solid var(--border);
     padding-left: 1rem;
@@ -1799,14 +1809,14 @@ button#theme-toggle {
     .nav-actions {
         margin-left: auto;
         margin-right: 0;
-        gap: calc(var(--gap) / 2);
+        gap: var(--gap);
     }
 
     .mobile-menu-summary {
         display: inline-flex;
         align-items: center;
-        gap: 0.2rem;
-        margin: auto var(--gap) auto 0;
+        gap: 0.5rem;
+        margin: auto var(--gap) auto var(--gap);
     }
 
     #menu {

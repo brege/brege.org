@@ -1,8 +1,7 @@
-{{- $kind := .Get "kind" | default "tip" -}}
-{{- $label := .Get "label" | default (strings.ToUpper $kind) -}}
-<div class="admon admon-{{ $kind }}">
-  <div class="admon-head">
-    <span class="admon-icon" aria-hidden="true">
+{{- $label := .Get "label" | default "TIP" -}}
+<div class="kbd-tip">
+  <div class="kbd-tip-head">
+    <span class="kbd-tip-icon" aria-hidden="true">
       <svg viewBox="0 0 24 24">
         <g>
           <g>
@@ -25,9 +24,9 @@
         </g>
       </svg>
     </span>
-    <span class="admon-label">{{ $label }}</span>
+    <span class="kbd-tip-label">{{ $label }}</span>
   </div>
-  <div class="admon-body">
+  <div class="kbd-tip-body">
     {{- .Inner | markdownify -}}
   </div>
 </div>

@@ -425,29 +425,30 @@
     box-shadow: none !important;
 }
 
-/* --- admonition (admon.html shortcode) --- */
+/* --- keyboard tip (kbd-tip.html shortcode) --- */
 .post-single.type-cv .cv-preamble {
     margin-bottom: var(--content-gap);
     color: var(--secondary);
     font-size: 0.88rem;
 }
 
-.post-single.type-cv .cv-preamble .admon {
+.post-single.type-cv .cv-preamble .kbd-tip {
     display: flex;
     align-items: center;
     gap: 0.55rem;
     margin: 0;
 }
 
-.post-single.type-cv .cv-preamble .admon-head {
+.post-single.type-cv .cv-preamble .kbd-tip-head {
     display: inline-flex;
     align-items: center;
-    gap: 0.35rem;
+    gap: 0.55rem;
 }
 
-.post-single.type-cv .cv-preamble .admon-label {
+.post-single.type-cv .cv-preamble .kbd-tip-label {
     display: inline-flex;
     align-items: center;
+    font-family: "GraphikWeb", -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", Meiryo, sans-serif;
     color: var(--secondary);
     font-size: 0.8em;
     font-weight: 500;
@@ -456,7 +457,7 @@
     line-height: 1;
 }
 
-.post-single.type-cv .cv-preamble .admon-icon {
+.post-single.type-cv .cv-preamble .kbd-tip-icon {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -466,13 +467,13 @@
     flex: 0 0 auto;
 }
 
-.post-single.type-cv .cv-preamble .admon-icon svg {
+.post-single.type-cv .cv-preamble .kbd-tip-icon svg {
     width: 100%;
     height: 100%;
     fill: currentColor;
 }
 
-.post-single.type-cv .cv-preamble .admon-body {
+.post-single.type-cv .cv-preamble .kbd-tip-body {
     display: flex;
     align-items: center;
     color: var(--secondary);
@@ -480,7 +481,7 @@
     line-height: 1;
 }
 
-.post-single.type-cv .cv-preamble .admon-body p {
+.post-single.type-cv .cv-preamble .kbd-tip-body p {
     display: inline;
     margin: 0;
 }
