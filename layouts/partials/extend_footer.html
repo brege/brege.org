@@ -14,7 +14,7 @@
           (dict "name" "Hugo" "url" "https://gohugo.io/" "rel" "noopener noreferrer" "target" "_blank")
           (dict "name" "Gastrophysics" "url" "https://github.com/brege/gastrophysics/" "rel" "noopener" "target" "_blank")
         -}}
-        {{- partial "balanced_sequence.html" (dict
+        {{- partial "util/balanced_sequence.html" (dict
           "id" "site-footer-tools"
           "class" "site-footer-tools"
           "tag" "div"
@@ -23,4 +23,4 @@
         ) }}
     </div>
 </footer>
-{{ partial "balancer_script.html" . }}
+{{ partial "util/balancer_script.html" . }}
