@@ -8,7 +8,7 @@ enableInlineShortcodes = true
 enableEmoji = true
 ignoreFiles = ['(?:^|/)README\.md$']
 
-theme = "hugo-papermod"
+theme = "gastrophysics"
 title = "brege.org"
 
 [frontmatter]

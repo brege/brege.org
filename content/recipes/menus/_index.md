@@ -52,4 +52,4 @@ The upper-right numerical stamp refers to week-of-year.
 
 ## Menu Archive
 
-{{< menu-list section="menus" >}}
+{{< menu-list section="recipes/menus" >}}
