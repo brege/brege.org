@@ -55,6 +55,8 @@ title = "brege.org"
   disableAnchorHeadings = false
 
   mainSections = ['post']
+  homePageSize = 6
+  postPageSize = 20
 
 [params.heroCards]
   defaultView = 'expanded'
@@ -223,9 +225,8 @@ series = "series"
   [services.x]
     disableInlineCSS = true
 
-
 [pagination]
-  pagerSize = 6
+  pagerSize = 20
 
 [caches]
   [caches.getresource]
