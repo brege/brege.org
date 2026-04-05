@@ -228,6 +228,10 @@ sections:
             url: https://en.wikipedia.org/wiki/TensorFlow
           - name: pytorch
             url: https://en.wikipedia.org/wiki/PyTorch
+          - name: transformers
+            url: https://huggingface.co/docs/transformers/index
+          - name: open-clip
+            url: https://github.com/mlfoundations/open_clip
           - name: numpy
             url: https://en.wikipedia.org/wiki/NumPy
           - name: matplotlib
@@ -242,6 +246,8 @@ sections:
             url: https://umap-learn.readthedocs.io/
           - name: hdbscan
             url: https://hdbscan.readthedocs.io/
+          - name: pytesseract
+            url: https://github.com/madmaze/pytesseract
 
       - label: scientific and numerical tools
         entries:
@@ -259,10 +265,8 @@ sections:
             url: https://en.wikipedia.org/wiki/Gnuplot
           - name: paraview
             url: https://en.wikipedia.org/wiki/ParaView
-          - name: pydantic
-            url: https://docs.pydantic.dev/latest/
 
-      - label: validation, QA, and automation
+      - label: validation, QA, and schemas
         entries:
           - name: pytest
             url: https://en.wikipedia.org/wiki/Pytest
@@ -274,18 +278,16 @@ sections:
             url: https://en.wikipedia.org/wiki/Biome
           - name: ruff
             url: https://en.wikipedia.org/wiki/Ruff_(software)
-          - name: integration
-            url: https://en.wikipedia.org/wiki/Integration_testing
-          - name: end-to-end
-            url: https://en.wikipedia.org/wiki/System_testing
-          - name: life-cycle
-            url: https://en.wikipedia.org/wiki/Lifecycle_(software_development)
           - name: puppeteer
             url: https://pptr.dev/
           - name: ajv
             url: https://ajv.js.org/
-          - name: yaml
-            url: https://en.wikipedia.org/wiki/YAML
+          - name: pydantic
+            url: https://docs.pydantic.dev/latest/
+          - name: websocket
+            url: https://en.wikipedia.org/wiki/WebSocket
+          - name: zustand
+            url: https://github.com/pmndrs/zustand
 
       - label: source, packaging, and distribution
         entries:
@@ -305,12 +307,6 @@ sections:
             url: https://en.wikipedia.org/wiki/Systemd
           - name: uwsgi
             url: https://en.wikipedia.org/wiki/UWSGI
-          - name: websocket
-            url: https://en.wikipedia.org/wiki/WebSocket
-          - name: zustand
-            url: https://github.com/pmndrs/zustand
-          - name: pytesseract
-            url: https://github.com/madmaze/pytesseract
           - name: addons.mozilla.org
             url: https://en.wikipedia.org/wiki/Mozilla_Add-on_SDK
 
