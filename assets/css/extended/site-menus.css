@@ -1,0 +1,217 @@
+.menu-view-toggle,
+.menu-sort-toggle {
+    display: flex;
+    flex: 0 0 auto;
+}
+.menu-view-toggle button,
+.menu-sort-toggle button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    color: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.15s;
+}
+.menu-view-toggle button:hover,
+.menu-sort-toggle button:hover {
+    color: var(--primary);
+}
+.menu-view-toggle svg,
+.menu-sort-toggle svg {
+    display: block;
+    width: 16px;
+    height: 16px;
+}
+.menu-sort-toggle svg {
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+}
+.menu-view-toggle .icon-compact {
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 2;
+}
+.menu-view-toggle .icon-expanded {
+    fill: currentColor;
+    stroke: none;
+}
+.menu-sort-toggle[data-menu-sort="asc"] .icon-asc,
+.menu-sort-toggle[data-menu-sort="desc"] .icon-desc,
+.menu-view-toggle[data-menu-view="compact"] .icon-compact,
+.menu-view-toggle[data-menu-view="expanded"] .icon-expanded {
+    display: none;
+}
+
+.menu-archive-shortcode {
+    margin: 0.75rem 0 1.6rem;
+}
+
+.menus-section-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 32px auto 24px;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.post-content .menus-section-head h2 {
+    margin: 0;
+    padding: 0;
+    border-bottom: none;
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.menu-archive-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu-archive-item {
+    border-bottom: 1px solid var(--border);
+}
+
+.menu-archive-compact {
+    display: block;
+    padding: 0.38rem 0 0.5rem;
+    color: inherit;
+    box-shadow: none !important;
+}
+.menu-archive-compact:hover,
+.menu-archive-compact:active {
+    box-shadow: none !important;
+}
+
+.menu-archive-title {
+    display: block;
+    font-family: var(--font-serif-main);
+    font-size: 1.28rem;
+    line-height: 1.08;
+    color: var(--primary);
+}
+
+.menu-archive-preview {
+    display: block;
+    margin-top: 0.14rem;
+    color: var(--secondary);
+    font-size: 0.96rem;
+    line-height: 1.45;
+}
+
+.menus-page .menu-archive-expanded {
+    display: none;
+}
+.menus-page[data-menu-view="compact"] .menu-archive-compact {
+    display: block;
+}
+.menus-page[data-menu-view="expanded"] .menu-archive-list {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+.menus-page[data-menu-view="expanded"] .menu-archive-item {
+    border-bottom: none;
+}
+.menus-page[data-menu-view="expanded"] .menu-archive-compact {
+    display: none;
+}
+.menus-page[data-menu-view="expanded"] .menu-archive-expanded {
+    display: block;
+}
+
+.this-weeks-menus {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+.season-menu {
+    display: block;
+    padding: 1rem 0 1.1rem;
+    border-top: 2px solid var(--border);
+    color: inherit;
+    text-decoration: none;
+    transition: border-color 0.15s ease, color 0.15s ease;
+    box-shadow: none !important;
+}
+.season-menu:hover {
+    border-color: var(--primary);
+    box-shadow: none !important;
+}
+.season-menu-topline {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 0.35rem;
+}
+.season-menu-date {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--secondary);
+    padding-top: 0.2rem;
+}
+.season-menu-stamp {
+    font-family: var(--font-serif-display);
+    font-size: 2.15rem;
+    line-height: 0.9;
+    color: var(--primary);
+    flex: 0 0 auto;
+    justify-self: end;
+}
+.season-menu-title {
+    margin-bottom: 0.35rem;
+    font-family: var(--font-serif-display);
+    font-size: 1.66rem;
+    font-weight: 300;
+    line-height: 1.1;
+    color: var(--primary);
+}
+.season-menu-items {
+    color: var(--secondary);
+    font-size: 1.13rem;
+    line-height: 1.65;
+}
+.season-menu-items span {
+    display: block;
+}
+.this-weeks-menus .season-menu.hidden-by-js {
+    display: none;
+}
+.post-content .season-menu,
+.post-content .season-menu:hover,
+.post-content .season-menu:active {
+    box-shadow: none !important;
+}
+
+@media (max-width: 700px) {
+    .menus-section-head {
+        gap: 0.75rem;
+    }
+
+    .menu-archive-title {
+        font-size: 1.18rem;
+    }
+
+    .menu-archive-preview {
+        font-size: 0.9rem;
+    }
+
+    .season-menu-topline {
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 0.5rem;
+    }
+
+    .season-menu-stamp {
+        font-size: 1.9rem;
+    }
+}
