@@ -21,10 +21,10 @@ title = "brege.org"
   author = "Wyatt Brege"
   # linen, rose-pine, rose-pine-moon, catppuccin-frappe,
   # catppuccin-macchiato, catppuccin-mocha, nord,
-  # gruvbox, everforest, sepia
+  # gruvbox, everforest, sepia, nordic-linen
   #color = 'linen'
-  colorLight = 'linen'
-  colorDark = 'nord'
+  colorLight = 'nordic-linen'
+  colorDark = 'nordic-linen'
   env = 'production'
   twitter = ''
   github = 'brege'
