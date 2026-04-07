@@ -6,7 +6,7 @@ date: 2025-04-20
 sort_by: title
 order: asc
 ShowToc: true
-
+ShowRssButtonInSectionTermList: false
 ---
 
 A collection of professional, heirloom, and personal recipes and select farmer-focused tasting menus.
