@@ -1,0 +1,34 @@
+---
+type: menus
+
+ShowTOC: false
+date: '2019-02-07'
+draft: false
+title: 2019-02-07 Farmer's Market Menu
+aliases:
+  - /recipes/menus/2019-02-07-farmers-market-menu/
+---
+
+## Farm\-to\-table Menu
+
+### My Montréal
+
+dark rum, triple sec, fernet, lime
+
+### Ahi Poke Salad
+
+baby romain, wonton chips, avocado, swiss chard,
+watermelon radish, tobiko, sriracha aioli
+
+### Pan Roasted Lamb
+
+braised cabbage, shredded celeriac, leeks,
+fingerling potatoes, apple lamb jus
+
+### Lemon Bars
+
+blueberries, mint pesto
+
+
+*We gladly acknowledge Eatwell Farm for*
+*delivering their amazing CSA box to our door\!*

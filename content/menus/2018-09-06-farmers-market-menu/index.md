@@ -1,0 +1,32 @@
+---
+type: menus
+
+ShowTOC: false
+date: '2018-09-06'
+draft: false
+title: 2018-09-06 Farmer's Market Menu
+aliases:
+  - /recipes/menus/2018-09-06-farmers-market-menu/
+---
+
+### Bourbon Pear Wallop
+
+Buffalo Trace, asian pear, lemon, honey, ginger beer
+
+### Melon Salad
+
+tuscan, sweet & sour and indian melons,
+arugula, burrata cheese, prosciutto,
+toasted almonds, cranberry vinaigrette
+
+### Roasted Chicken & Spaghetti Squash
+
+sweet peppers, zucchini, heirloom tomato ragout
+
+### Cast Iron Clafoutis
+
+pistachio, dried cherries, bourbon plum glaze, ice cream
+
+
+Chavez Farms, Lloyd’s Produce, Ahmad Farms,
+Vue Family Farms, Heritage Pantry, Pure Honey

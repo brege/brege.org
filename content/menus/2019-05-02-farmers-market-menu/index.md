@@ -1,0 +1,29 @@
+---
+type: menus
+
+ShowTOC: false
+date: '2019-05-02'
+draft: false
+title: 2019-05-02 Farmer's Market Menu
+aliases:
+  - /recipes/menus/2019-05-02-farmers-market-menu/
+---
+
+## Farmer’s Market Menu
+
+### Pasta Salad
+
+cavatappi pasta, spring green mix, watermelon radish,
+cherry tomatoes, aged white cheddar, italian dressing
+
+*add chicken / add shrimp*
+
+### Pork Chop Schnitzel
+
+panko bread crumb, swiss chard, green garlic,
+cauliflower puree, lemon beurre blanc
+
+### Strawberry Cheesecake Tart
+
+
+*Proudly supporting community supported agriculture from Eatwell Farm*

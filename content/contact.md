@@ -26,7 +26,7 @@ spam is out of control. if you've tried to reach me by phone and gotten the assi
 | type | details |
 | --- | --- |
 | signal | [@brege.01](https://signal.me/#eu/0qONLHRq0LrobBU7QIEfqomo1LJ9425RBq5IzydUPCa3hLGuq61AzLhY4Xjvt0e8) |
-| mastodon | [**@mastodon.social@brege**](https://mastodon.social/@brege) |
+| mastodon | [**@brege@mastodon.social**](https://mastodon.social/@brege) |
 | matrix | [@brege:matrix.org](https://matrix.to/#/@brege:matrix.org) |
 
 ---

@@ -1,0 +1,29 @@
+---
+type: menus
+
+ShowTOC: false
+date: '2019-05-17'
+draft: false
+title: 2019-05-17 Farmer's Market Menu
+aliases:
+  - /recipes/menus/2019-05-17-farmers-market-menu/
+---
+
+## Weekend Specials
+
+### Buffalo Chicken Nachos
+
+pepper jack cream sauce, cherry tomatoes,
+pickled jalapeno, sour cream
+
+### Keto Steelhead Trout
+
+avocado, cherry tomatoes, yellow cauliflower,
+asparagus, lemon tarragon bearnaise
+
+### Chocolate Cupcakes \(2\)
+
+strawberry cream cheese frosting
+
+
+*Fresh produce provided by our friends at Eatwell Farm*

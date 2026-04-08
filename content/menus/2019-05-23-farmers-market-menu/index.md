@@ -1,0 +1,29 @@
+---
+type: menus
+
+ShowTOC: false
+date: '2019-05-23'
+draft: false
+title: 2019-05-23 Farmer's Market Menu
+aliases:
+  - /recipes/menus/2019-05-23-farmers-market-menu/
+---
+
+## Farmer’s Market Menu
+
+### Rocket Spinach Dip
+
+feta and cream cheese, cheddar/jack cheese,
+green garlic butter, flat bread, tortilla chips
+
+### Shrimp & Grits
+
+fried white cheddar polenta, collard greens,
+russian kale, chive, sriracha aioli
+
+### Birthday Cake
+
+funfetti, local cherries
+
+
+*Fresh produce provided by our friends at Eatwell Farm*

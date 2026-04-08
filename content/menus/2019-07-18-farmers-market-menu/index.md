@@ -1,0 +1,31 @@
+---
+type: menus
+
+ShowTOC: false
+date: '2019-07-18'
+draft: false
+title: 2019-07-18 Farmer's Market Menu
+aliases:
+  - /recipes/menus/2019-07-18-farmers-market-menu/
+---
+
+## Farmer’s Market Menu
+
+### Watermelon Salad
+
+feta cheese, red onion, watermelon radish,
+cucumber, basil, balsamic honey dressing
+
+### Roasted Zucchini and Tomato Pasta
+
+linguini, garlic, parmesan, flat leaf parsley
+
+*add chicken / add shrimp*
+
+### Summer Fruit Cobbler
+
+blueberry plum compote, dinosaur cookie,
+whipped cream
+
+
+*Fresh produce provided by our friends at Eatwell Farm*

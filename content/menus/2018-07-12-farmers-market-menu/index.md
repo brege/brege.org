@@ -1,0 +1,29 @@
+---
+type: menus
+
+ShowTOC: false
+date: '2018-07-12'
+draft: false
+title: 2018-07-12 Farmer's Market Menu
+aliases:
+  - /recipes/menus/2018-07-12-farmers-market-menu/
+---
+
+## Farmer’s Market Menu
+
+### Heirloom Tomato Salad
+
+burrata cheese, basil aioli, balsamic glaze
+
+### Grilled Salmon & Vegetable Succotash
+
+patty pan & summer squash, zucchini,
+cherry tomatoes, shishito pepper, corn,
+chimichurri sauce
+
+### Blackberry & Strawberry Tart
+
+whipped cream, local honey
+
+
+Toledo Farms, LLoyd’s Farms, Free Spirit Farms

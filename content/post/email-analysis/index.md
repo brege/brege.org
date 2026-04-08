@@ -1,6 +1,6 @@
 ---
 title: '20 years of email'
-summary: 'Making my case that satisfaction surveys are the new email cancer'
+summary: 'Making my case that satisfaction surveys are the new email cancer.'
 tags:
   - email
   - thunderbird

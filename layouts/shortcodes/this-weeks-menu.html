@@ -1,6 +1,6 @@
 {{- $tolerance := .Get "plus-minus-days" | default "5" | int -}}
 
-{{- $menus := site.GetPage "recipes/menus" }}
+{{- $menus := site.GetPage "menus" }}
 
 {{/* Output all menus initially. JS will hide those outside the date tolerance. */}}
 <div class="this-weeks-menus" data-tolerance="{{ $tolerance }}">
