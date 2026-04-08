@@ -1,5 +1,5 @@
 ---
-title: Wyatt Brege
+title: "Wyatt Brege"
 date: 2023-01-01
 type: cv
 math: true
@@ -9,34 +9,31 @@ tocStartLevel: 2
 tocEndLevel: 2
 headerNav: true
 navDepth: 3
+outputs:
+  - HTML
+  - CVMarkdown
 ---
 
-
 ## Expertise
-
-- **physics and mathematics**
-  [mechanics](https://en.wikipedia.org/wiki/Hamiltonian_mechanics)
-  [general relativity](https://en.wikipedia.org/wiki/General_relativity)
-  [fluid dynamics](https://en.wikipedia.org/wiki/Fluid_dynamics)
-  [finite volume](https://en.wikipedia.org/wiki/Finite_element_method)
-  [numerical methods](https://en.wikipedia.org/wiki/Numerical_analysis)
-  [differential equations](https://en.wikipedia.org/wiki/Differential_equation)
 
 - **computing**
   [data science](https://en.wikipedia.org/wiki/Data_science)
   [artificial intelligence](https://en.wikipedia.org/wiki/AI)
   [software engineering](https://en.wikipedia.org/wiki/Software_engineering)
-  [sysadmin](https://en.wikipedia.org/wiki/System_administration)
   [machine learning](https://en.wikipedia.org/wiki/Machine_learning)
   [full-stack development](https://en.wikipedia.org/wiki/Solution_stack#Full-stack_developer)
 
+- **physics & mathematics**
+  [mechanics](https://en.wikipedia.org/wiki/Hamiltonian_mechanics)
+  [general relativity](https://en.wikipedia.org/wiki/General_relativity)
+  [fluid dynamics](https://en.wikipedia.org/wiki/Fluid_dynamics)
+  [numerical methods](https://en.wikipedia.org/wiki/Numerical_analysis)
+
 - **culinary arts**
-  menu profit analysis
-  from-scratch, seasonal, and farm-to-table cooking
-  pairing dinners and pop-ups
-  fermentation and preservation
-  pedagogical training
-  documentation systems
+  [menu profit analysis and documentation systems](/consulting)
+  [from-scratch, seasonal & farm-to-table cooking](/recipes)
+  [pairing dinners and pop-ups](/recipes/menus)
+  [pedagogical training and leadership](/consulting)
 
 
 ## Selected Work
@@ -133,6 +130,8 @@ See [github.com/brege](https://github.com/brege) for a complete list of software
   [networkx](https://en.wikipedia.org/wiki/NetworkX)
   [tensorflow](https://en.wikipedia.org/wiki/TensorFlow)
   [pytorch](https://en.wikipedia.org/wiki/PyTorch)
+  [transformers](https://huggingface.co/docs/transformers/index)
+  [open-clip](https://github.com/mlfoundations/open_clip)
   [numpy](https://en.wikipedia.org/wiki/NumPy)
   [matplotlib](https://en.wikipedia.org/wiki/Matplotlib)
   [jupyter](https://en.wikipedia.org/wiki/Project_Jupyter#Jupyter_Notebook)
@@ -140,6 +139,7 @@ See [github.com/brege](https://github.com/brege) for a complete list of software
   [clip](https://github.com/openai/CLIP)
   [umap](https://umap-learn.readthedocs.io/)
   [hdbscan](https://hdbscan.readthedocs.io/)
+  [pytesseract](https://github.com/madmaze/pytesseract)
 
 - **scientific and numerical tools**
   [sage](https://en.wikipedia.org/wiki/Sage_(mathematics_software))
@@ -149,20 +149,18 @@ See [github.com/brege](https://github.com/brege) for a complete list of software
   [latex](https://en.wikipedia.org/wiki/LaTeX)
   [gnuplot](https://en.wikipedia.org/wiki/Gnuplot)
   [paraview](https://en.wikipedia.org/wiki/ParaView)
-  [pydantic](https://docs.pydantic.dev/latest/)
 
-- **validation, QA, and automation**
+- **validation, QA, and schemas**
   [pytest](https://en.wikipedia.org/wiki/Pytest)
   [mocha](https://en.wikipedia.org/wiki/Mocha_(JavaScript_framework))
   [cypress](https://en.wikipedia.org/wiki/Cypress_(software))
   [biome](https://en.wikipedia.org/wiki/Biome)
   [ruff](https://en.wikipedia.org/wiki/Ruff_(software))
-  [integration](https://en.wikipedia.org/wiki/Integration_testing)
-  [end-to-end](https://en.wikipedia.org/wiki/System_testing)
-  [life-cycle](https://en.wikipedia.org/wiki/Lifecycle_(software_development))
   [puppeteer](https://pptr.dev/)
   [ajv](https://ajv.js.org/)
-  [yaml](https://en.wikipedia.org/wiki/YAML)
+  [pydantic](https://docs.pydantic.dev/latest/)
+  [websocket](https://en.wikipedia.org/wiki/WebSocket)
+  [zustand](https://github.com/pmndrs/zustand)
 
 - **source, packaging, and distribution**
   [github](https://github.com/brege)
@@ -173,9 +171,6 @@ See [github.com/brege](https://github.com/brege) for a complete list of software
   [nginx](https://en.wikipedia.org/wiki/Nginx)
   [systemd](https://en.wikipedia.org/wiki/Systemd)
   [uwsgi](https://en.wikipedia.org/wiki/UWSGI)
-  [websocket](https://en.wikipedia.org/wiki/WebSocket)
-  [zustand](https://github.com/pmndrs/zustand)
-  [pytesseract](https://github.com/madmaze/pytesseract)
   [addons.mozilla.org](https://en.wikipedia.org/wiki/Mozilla_Add-on_SDK)
 
 
@@ -183,42 +178,42 @@ See [github.com/brege](https://github.com/brege) for a complete list of software
 
 **Systematic effects from black hole-neutron star waveform model uncertainties on the neutron star equation of state**
 Chakravarti, K., Gupta, A., Bose, S., Duez, M.D., Caro, J., **Brege, W.**, Foucart, F., Ghosh, S., Kyutoku, K., Lackey, B.D. and Shibata, M.
-[Physical Review D. 99(2), 024049](https://links.aps.org/doi/10.1103/PhysRevD.99.024049), jan 31, 2019
+[Physical Review D. 99(2), 024049](https://links.aps.org/doi/10.1103/PhysRevD.99.024049), Jan 31, 2019
 *preprint*: [arXiv:1809.04349](https://arxiv.org/abs/1809.04349)
 
 **Black hole-neutron star mergers using a survey of finite-temperature equations of state**
 **Brege, W.**, Duez, M.D., Deaton, M.B., Foucart, F., Caro, J., Hemberger, D.A., Kidder, L.E., O'Connor, E., Pfeiffer, H.P., Scheel, M.A.
-[Physical Review D, 98(6), 063009](https://link.aps.org/doi/10.1103/PhysRevD.98.063009), sep 12, 2018
+[Physical Review D, 98(6), 063009](https://link.aps.org/doi/10.1103/PhysRevD.98.063009), Sep 12, 2018
 *preprint*: [arXiv:1804.09823](https://arxiv.org/abs/1804.09823)
 
 **Dynamical ejecta from precessing neutron star-black hole mergers with a hot, nuclear-theory based equation of state**
 Foucart, F., Desai, D., **Brege, W.**, Duez, M.D., Kasen, D., Hemberger, D.A., Kidder, L.E., Pfeiffer, H.P., Scheel, M.A.
-[Classical and Quantum Gravity 34(4) 044002](https://dx.doi.org/10.1088/1361-6382/aa573b), nov 3, 2016
+[Classical and Quantum Gravity 34(4) 044002](https://dx.doi.org/10.1088/1361-6382/aa573b), Nov 3, 2016
 *preprint*: [arXiv:1611.01159](https://arxiv.org/abs/1611.01159)
 
 
 ## Contributed Talks
 
 **The Flavor Network**
-Specially selected for [The Data Incubator's](https://thedataincubator.com/) Capstone Showcase, nov 9, 2023
+Specially selected for [The Data Incubator's](https://thedataincubator.com/) Capstone Showcase, Nov 9, 2023
 
 **Equation of state survey of black hole-neutron star mergers**
-APS April Meeting, apr 16, 2016, [BAPS.2016.APR.C14.3](https://meetings.aps.org/Meeting/APR16/Session/C14.3)
+APS April Meeting, Apr 16, 2016, [BAPS.2016.APR.C14.3](https://meetings.aps.org/Meeting/APR16/Session/C14.3)
 
 **A high order accurate finite difference scheme with boundary closures for astrophysical simulations**
-Northwest APS Meeting, may 16, 2015, [BAPS.2015.NWS.E6.6](https://meetings.aps.org/Meeting/NWS15/Session/E6.6)
+Northwest APS Meeting, May 16, 2015, [BAPS.2015.NWS.E6.6](https://meetings.aps.org/Meeting/NWS15/Session/E6.6)
 
 **A stable high-order multipatch method for black hole accretion simulations**
-APS April Meeting, apr 12, 2015, [BAPS.2015.APR.K13.9](https://meetings.aps.org/Meeting/APR15/Session/K13.9)
+APS April Meeting, Apr 12, 2015, [BAPS.2015.APR.K13.9](https://meetings.aps.org/Meeting/APR15/Session/K13.9)
 
 **Polymer quantum mechanics and an approach to minimal length** (Poster)
-[19th International Conference on General Relativity](https://iopscience.iop.org/issue/0264-9381/28/11) and [Gravitation (GR19)](https://hyperspace.uni-frankfurt.de/2009/10/23/gr19-first-announcement/), Mexico City, Mexico, jul 16, 2010
+[19th International Conference on General Relativity](https://iopscience.iop.org/issue/0264-9381/28/11) and [Gravitation (GR19)](https://hyperspace.uni-frankfurt.de/2009/10/23/gr19-first-announcement/), Mexico City, Mexico, Jul 16, 2010
 
 **Symmetry Analysis and the Lane-Emden Equation**
 2009 Undergraduate Symposium at [Argonne National Labs](https://www.anl.gov/), Argonne, IL, nov 13, 2009
 
 **Symmetry Analysis of the Lane-Emden Equation**
-[MathFest 2009](https://www.maa.org/meetings/mathfest-archive), Portland, OR, aug 7, 2009
+[MathFest 2009](https://www.maa.org/meetings/mathfest-archive), Portland, OR, Aug 7, 2009
 
 
 ## Awards

@@ -17,6 +17,15 @@ title = "brege.org"
 [outputs]
   home = [ "HTML", "RSS", "JSON" ]
 
+[mediaTypes."text/markdown"]
+  suffixes = [ "md" ]
+
+[outputFormats.CVMarkdown]
+  mediaType = "text/markdown"
+  baseName = "index"
+  isPlainText = true
+  notAlternative = true
+
 [params]
   author = "Wyatt Brege"
   # linen, rose-pine, rose-pine-moon, catppuccin-frappe,

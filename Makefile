@@ -1,7 +1,11 @@
 .PHONY: cv build serve clean
 
 cv:
-	python3 scripts/cv-gen
+	hugo --quiet
+	sed --quiet '1p; 2,/^---$$/p' content/cv/index.md > /tmp/brege-cv.md
+	printf '\n' >> /tmp/brege-cv.md
+	cat public/cv/index.md >> /tmp/brege-cv.md
+	cp /tmp/brege-cv.md content/cv/index.md
 
 build: cv
 	hugo
