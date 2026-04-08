@@ -9,8 +9,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Basil Pesto
 
 **Chef:** Wyatt Brege
@@ -38,4 +36,3 @@ Store in 1 Quart deli container.
 
 It is important to use actual extra virgin olive oil and not pomace or
 salad oil. The bite of the olive is a key flavor component of pesto.
-{{% /recipe %}}

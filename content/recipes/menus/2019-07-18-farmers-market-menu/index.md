@@ -7,8 +7,6 @@ draft: false
 title: 2019-07-18 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ## Farmer’s Market Menu
 
 ### Watermelon Salad
@@ -29,5 +27,3 @@ whipped cream
 
 
 *Fresh produce provided by our friends at Eatwell Farm*
-
-{{% /menu %}}

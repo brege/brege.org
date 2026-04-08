@@ -7,8 +7,6 @@ draft: false
 title: 2019-03-28 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ## Farm\-to\-table Menu
 
 ### Farmer’s Salad
@@ -34,5 +32,3 @@ toasted almonds, whipped cream
 
 
 *Proudly serving community supported agriculture from Eatwell Farm*
-
-{{% /menu %}}

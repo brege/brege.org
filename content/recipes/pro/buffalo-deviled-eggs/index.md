@@ -8,8 +8,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Buffalo Deviled Eggs
 
 **Chef:** Wyatt Brege
@@ -46,4 +44,3 @@ bowl.
 Store in piping bag with excess plastic and string removed.
 
 Garnish with generous bleu cheese crumbs and finely chopped chives.
-{{% /recipe %}}

@@ -7,8 +7,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Fried Chicken Dredge
 
 **Chef:** Wyatt Brege
@@ -29,4 +27,3 @@ ShowTOC: false
 
 Pick the majoram, then combine all ingredients in a medium sized mixing
 bowl.
-{{% /recipe %}}

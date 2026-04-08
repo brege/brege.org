@@ -8,8 +8,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## B.L.T. Deviled Eggs
 
 **Chef:** Wyatt Brege
@@ -55,4 +53,3 @@ lengthwise).
 For the candied bacon, heat 1 cup chopped bacon in a saute pan until its
 fat starts to glisten. Add 1/4 Cup of brown sugar and simmer on low heat
 until the caramel crystallizes the bacon.
-{{% /recipe %}}

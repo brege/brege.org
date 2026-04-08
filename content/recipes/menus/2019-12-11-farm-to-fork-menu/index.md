@@ -7,8 +7,6 @@ draft: false
 title: 2019-12-11 Farm-To-Fork Menu
 ---
 
-{{% menu %}}
-
 ## Farm\-to\-Fork
 
 ### Broccoli Cheddar Soup
@@ -35,5 +33,3 @@ house caramel sauce
 
 
 *Seasonal produce from Eatwell Farm*
-
-{{% /menu %}}

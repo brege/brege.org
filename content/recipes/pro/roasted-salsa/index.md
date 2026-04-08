@@ -11,8 +11,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Roasted Salsa
 
 **Chefs:** Wyatt Brege, Patty Pereira
@@ -36,4 +34,3 @@ Place in salamander until mushy.
 In a 4 Quart container, use the immersion blender to grind the
 vegetables and cilantro to a rough but small chunky consistency.
 Season with salt and pepper.
-{{% /recipe %}}

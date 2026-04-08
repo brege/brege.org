@@ -10,8 +10,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Thousand Island / Awesome Sauce
 
 **Chef:** Wyatt Brege
@@ -28,4 +26,3 @@ ShowTOC: false
 ### Directions 
 
 In a medium mixing bowl combine all ingredients until smooth.
-{{% /recipe %}}

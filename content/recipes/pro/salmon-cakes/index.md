@@ -8,8 +8,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Salmon Cakes
 
 **Chefs:** Wyatt Brege, Matt Andrews
@@ -35,4 +33,3 @@ ounce portions with the 2 1/2 inch circle cutter.
 Bread tops and bottoms of cakes with additional Panko Bread Crumbs.
 
 Carefully place in a Cambro with Patty Papers.
-{{% /recipe %}}

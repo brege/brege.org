@@ -9,8 +9,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Honey Balsamic Vinaigrette
 
 **Chef:** Wyatt Brege
@@ -35,7 +33,3 @@ ShowTOC: false
 
 2.  While the blender is still running at medium speed, slowly trickle
     in canola oil to emulsify
-
-
-
-{{% /recipe %}}

@@ -8,8 +8,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Parsnip Puree
 
 **Chef:** Wyatt Brege
@@ -41,4 +39,3 @@ out bright white.
 You may need to use some additional cream to assist in pureeing. This is
 easiest when the parsnips and cream are still hot. Do not use a Magic
 Bullet with hot parsnips as the pressure can be quite harmful.
-{{% /recipe %}}

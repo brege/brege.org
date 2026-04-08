@@ -11,8 +11,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Chimichurri
 
 **Chef:** Wyatt Brege
@@ -33,4 +31,3 @@ ShowTOC: false
 ### Directions 
 
 Chop the herbs, then mix with remaining ingredients in a mixing bowl.
-{{% /recipe %}}

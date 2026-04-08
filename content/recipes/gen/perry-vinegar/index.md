@@ -12,8 +12,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Perry Vinegar
 
 **Chef:** Wyatt Brege  
@@ -45,6 +43,3 @@ ShowTOC: false
   * add a champagne yeast packet during the cider formation phase
   * add 1-2 Cups of live-culture apple cider vinegar at the vinegar phase
 - I recommend only doing the last two steps if these components are available to you.  They are the laziest but most efficient production boosts.  The second option, adding sugar, is ideal if you're planning on pickling with the vinegar.
-
-{{% /recipe %}}
-

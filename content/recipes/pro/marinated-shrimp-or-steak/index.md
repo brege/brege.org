@@ -7,8 +7,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Marinated Shrimp or Steak
 
 **Chef:** Wyatt Brege
@@ -33,4 +31,3 @@ Massage the shrimp with gloved hands to evenly disperse the seasoning.
 **NB:** this recipe also applies to the steak taco meat. Substitute 1
 Quart of Terres Major scrap from the steak sandwich prep for the bag of
 shrimp.
-{{% /recipe %}}

@@ -11,8 +11,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Tomatillo Salsa
 
 **Chefs:** Wyatt Brege, Victor Sanchez
@@ -36,7 +34,3 @@ ShowTOC: false
     remove the skins and stems
 
 3.  Puree all ingredients in the blender until smooth
-
-
-
-{{% /recipe %}}

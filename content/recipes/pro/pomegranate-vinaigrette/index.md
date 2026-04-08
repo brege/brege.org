@@ -11,8 +11,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Pomegranate Vinaigrette
 
 **Chef:** Wyatt Brege
@@ -40,7 +38,3 @@ ShowTOC: false
 
 2.  While the blender is still running, slowly trickle the canola oil to
     emulsify
-
-
-
-{{% /recipe %}}

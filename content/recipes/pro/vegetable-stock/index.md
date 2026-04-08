@@ -11,8 +11,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Vegetable Stock
 
 **Chefs:** Matt Andrews, Wyatt Brege
@@ -35,4 +33,3 @@ In a large pot, fill 3/4 the way full with water and add the vegetables
 Let boil and set to simmer for 1-2 hours.
 
 Strain via a china cap and 22 Quart container.
-{{% /recipe %}}

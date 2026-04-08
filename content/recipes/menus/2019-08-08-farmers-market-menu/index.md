@@ -7,8 +7,6 @@ draft: false
 title: 2019-08-08 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ## Farmer’s Market Menu
 
 ### Blueberry Lemon Drop
@@ -31,5 +29,3 @@ grape “popsicle”, ice cream, house granola
 
 
 *Fresh produce provided by our friends at Eatwell Farm*
-
-{{% /menu %}}

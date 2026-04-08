@@ -7,8 +7,6 @@ draft: false
 title: 2020-01-21 Farm-To-Fork Menu
 ---
 
-{{% menu %}}
-
 ## Farm\-to\-Fork
 
 ### Four Leaf Salad
@@ -34,5 +32,3 @@ w/ vanilla bean ice cream & house caramel sauce
 
 
 *Seasonal produce from Eatwell Farm*
-
-{{% /menu %}}

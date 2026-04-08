@@ -11,8 +11,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Pickled Sweet Peppers
 
 **Chef:** Wyatt Brege
@@ -41,4 +39,3 @@ Slice the sweet peppers into rings, the ginger into medallions, and rest
 of the produce keep whole and mix into a 12 or 18 Quart container.
 
 Poor the hot pickling liquid over the peppers.
-{{% /recipe %}}

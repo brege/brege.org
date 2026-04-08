@@ -7,8 +7,6 @@ draft: false
 title: 2019-01-10 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ## Farm\-to\-table Menu
 
 ### Jamaican Snow
@@ -32,5 +30,3 @@ whipped cream, candied walnut
 
 *We gladly acknowledge  Eatwell Farm for*
 *delivering their amazing CSA box to our door\!*
-
-{{% /menu %}}

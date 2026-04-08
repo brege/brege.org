@@ -10,8 +10,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Cajun Aioli
 
 **Chef:** Wyatt Brege
@@ -28,4 +26,3 @@ ShowTOC: false
 ### Directions 
 
 In a large mixing bowl, whisk ingredients together.
-{{% /recipe %}}

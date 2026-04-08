@@ -7,8 +7,6 @@ draft: false
 title: 2018-09-13 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ## Farmer’s Market Menu
 
 ### Cucumber Habanero Margarita
@@ -32,5 +30,3 @@ whipped cream, basil mint gelée, toasted almond
 
 Toledo Farms, Lloyd’s Produce, Vue Family Farms,
 Heritage Pantry, Il Fiorello
-
-{{% /menu %}}

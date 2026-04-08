@@ -8,8 +8,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Ranchero Sauce
 
 **Chefs:** Wyatt Brege, Patty Pereira
@@ -33,4 +31,3 @@ ShowTOC: false
 Julienne the peppers and onions. Dice the tomato scraps. In a large
 saute pan, saute onions until tender. Add the peppers and saute until
 soft. Add tomatoes, garlic and seasoning. Cook to reduce.
-{{% /recipe %}}

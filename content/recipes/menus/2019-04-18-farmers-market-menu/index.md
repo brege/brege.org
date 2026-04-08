@@ -7,8 +7,6 @@ draft: false
 title: 2019-04-18 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ## Farmer’s Market Menu
 
 ### Pull\-Apart Bread
@@ -28,5 +26,3 @@ sprinkles, strawberry coulis
 
 
 *Proudly serving community supported agriculture from Eatwell Farm*
-
-{{% /menu %}}

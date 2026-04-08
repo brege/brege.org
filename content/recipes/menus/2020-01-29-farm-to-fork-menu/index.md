@@ -7,8 +7,6 @@ draft: false
 title: 2020-01-29 Farm-To-Fork Menu
 ---
 
-{{% menu %}}
-
 ## Three Course Tasting Menu
 
 ### Asian Salad
@@ -31,5 +29,3 @@ arugula, shaved parmesan, pickled red onion,
 cajun aioli, french roll, w/ fries or coleslaw
 
 *Fort Point Westfalia \- Red Ale*
-
-{{% /menu %}}

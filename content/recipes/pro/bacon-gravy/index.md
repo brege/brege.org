@@ -8,8 +8,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Bacon Gravy / Sausage Gravy
 
 **Chefs:** Ryan Fleener, Wyatt Brege
@@ -35,4 +33,3 @@ Over low heat, bring up to temperature and season.
 ### Notes 
 
 For sausage gravy, simply add one quart of cooked sausage meat.
-{{% /recipe %}}

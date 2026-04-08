@@ -7,8 +7,6 @@ draft: false
 title: 2019-01-31 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ## Farm\-to\-table Menu
 
 ### Baja Mule
@@ -33,5 +31,3 @@ orange snap cookie, basil
 
 *We gladly acknowledge Eatwell Farm for*
 *delivering their amazing CSA box to our door\!*
-
-{{% /menu %}}

@@ -7,8 +7,6 @@ draft: false
 title: 2020-02-12 Farm-To-Fork Menu
 ---
 
-{{% menu %}}
-
 ## Sonoma Springs Farm\-to\-Fork Pairing
 
 ### Buffalo Cauliflower
@@ -38,5 +36,3 @@ Five Mile Ranch, sauteed winter greens, mash potatoes
 
 
 *Seasonal produce provided by our great friends at Eatwell Farm*
-
-{{% /menu %}}

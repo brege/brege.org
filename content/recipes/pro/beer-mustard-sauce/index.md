@@ -8,8 +8,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Beer Mustard Sauce
 
 **Chef:** Wyatt Brege
@@ -26,7 +24,3 @@ ShowTOC: false
 ### Directions
 
 1.  In a large mixing bowl, combine all ingredients and whisk
-
-
-
-{{% /recipe %}}

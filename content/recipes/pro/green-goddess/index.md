@@ -9,8 +9,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Green Goddess
 
 **Chefs:** Matt Andrews, Wyatt Brege
@@ -31,4 +29,3 @@ ShowTOC: false
 Add all ingredients to a 4 Quart Container.
 Blend with immersion blender until the mayonnaise turns green.
 Season.
-{{% /recipe %}}

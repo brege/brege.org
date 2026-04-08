@@ -8,8 +8,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Southwest Deviled Eggs
 
 **Chef:** Wyatt Brege
@@ -46,4 +44,3 @@ the food processor for 20 seconds.
 In a mixing bowl, fold remaining ingredients together with the yolk
 mixture.
 Store in piping bag with excess plastic and string removed.
-{{% /recipe %}}

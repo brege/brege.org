@@ -9,8 +9,6 @@ date: 2024-02-14
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Greek Yogurt
 
 **Chef:** Wyatt Brege  
@@ -37,8 +35,3 @@ ShowTOC: false
 ### Notes
 
 - The whey water can be reduced to less the 1/4 of its original volume (from about 1 Quart to 3/4 Cup) into a spreadable caramel called **myost** in Skandinavian countries.  You can also use it in homemade bread, reheating chili or soup, marinading chicken for fried chicken, or as a starter for lacto-fermented vegetables.  Quite sour, this is not suitable for protein shakes.
-
-
-
-{{% /recipe %}}
-

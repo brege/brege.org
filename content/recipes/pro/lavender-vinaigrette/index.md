@@ -9,8 +9,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Lavender Vinaigrette
 
 **Chef:** Wyatt Brege
@@ -36,7 +34,3 @@ ShowTOC: false
 
 2.  While the blender is still running, slowly trickle the olive oil to
     emulsify
-
-
-
-{{% /recipe %}}

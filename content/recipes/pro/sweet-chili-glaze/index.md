@@ -9,8 +9,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Sweet Chili Glaze
 
 **Chefs:** Wyatt Brege, Ryan Fleener
@@ -27,4 +25,3 @@ ShowTOC: false
 
 Whisk ingredients in a large saute pan.
 Place pan on low heat and reduce sauce by a third.
-{{% /recipe %}}

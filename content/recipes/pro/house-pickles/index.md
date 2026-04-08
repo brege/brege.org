@@ -11,8 +11,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## House Pickles
 
 **Chefs:** Ryan Fleener, Wyatt Brege
@@ -46,4 +44,3 @@ Poor the pickling juices through the Chinois into the 22 Quart bucket
 until an inch or so shy of the rim.
 
 Let cool and refrigerate.
-{{% /recipe %}}

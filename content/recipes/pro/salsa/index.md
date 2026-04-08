@@ -11,8 +11,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Salsa, Chunky
 
 **Chef:** Wyatt Brege
@@ -37,4 +35,3 @@ in the salamander until roasted.
 
 With the garlic and poblano, lightly blend the ingredients until chunky.
 Fold in the onions and roughly chopped cilantro.
-{{% /recipe %}}

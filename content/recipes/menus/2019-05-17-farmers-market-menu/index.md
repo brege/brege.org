@@ -7,8 +7,6 @@ draft: false
 title: 2019-05-17 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ## Weekend Specials
 
 ### Buffalo Chicken Nachos
@@ -27,5 +25,3 @@ strawberry cream cheese frosting
 
 
 *Fresh produce provided by our friends at Eatwell Farm*
-
-{{% /menu %}}

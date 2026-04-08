@@ -7,8 +7,6 @@ draft: false
 title: 2019-05-23 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ## Farmer’s Market Menu
 
 ### Rocket Spinach Dip
@@ -27,5 +25,3 @@ funfetti, local cherries
 
 
 *Fresh produce provided by our friends at Eatwell Farm*
-
-{{% /menu %}}

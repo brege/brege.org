@@ -8,8 +8,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Thai Peanut Sauce
 
 **Chefs:** Wyatt Brege, Hank Gerrero
@@ -28,7 +26,3 @@ ShowTOC: false
 
 1.  In a 6 quart sauce pot on medium heat, bring all ingredients to a
     whisp and whisk
-
-
-
-{{% /recipe %}}

@@ -13,8 +13,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Balsamic Vinaigrette
 
 **Chef:** Wyatt Brege
@@ -36,4 +34,3 @@ immersion blender.
 
 Slowly trickle in the olive oil, keeping the head of the immersion
 blender near the surface to allow the air emulsify with the oil.
-{{% /recipe %}}

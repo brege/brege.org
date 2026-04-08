@@ -7,8 +7,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Chicken Wings
 
 **Chef:** Wyatt Brege
@@ -34,7 +32,3 @@ ShowTOC: false
 
 4.  Toss the partially cooled wings in the remaining two ingredients,
     then let cool
-
-
-
-{{% /recipe %}}

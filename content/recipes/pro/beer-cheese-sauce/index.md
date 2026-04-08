@@ -7,8 +7,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Beer Cheese Sauce
 
 **Chef:** Wyatt Brege
@@ -37,7 +35,3 @@ ShowTOC: false
 4.  Whisk in the last quart of heavy cream
 
 5.  Season, then place the pot in a baine-marie
-
-
-
-{{% /recipe %}}

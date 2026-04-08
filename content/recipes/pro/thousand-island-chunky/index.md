@@ -9,8 +9,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Thousand Island, Classic/Chunky
 
 **Chef:** Wyatt Brege
@@ -28,7 +26,3 @@ ShowTOC: false
 ### Directions
 
 1.  Mix all ingredients in a large mixing bowl with a whisk
-
-
-
-{{% /recipe %}}

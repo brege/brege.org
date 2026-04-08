@@ -10,8 +10,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Honey Dijon Mustard
 
 **Chef:** Wyatt Brege
@@ -28,4 +26,3 @@ ShowTOC: false
 ### Directions 
 
 Mix in a bowl with a whisk.
-{{% /recipe %}}

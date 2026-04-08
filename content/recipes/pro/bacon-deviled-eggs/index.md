@@ -8,8 +8,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Bacon Deviled Eggs
 
 **Chef:** Wyatt Brege
@@ -42,4 +40,3 @@ Carefully organize the egg whites on a toweled half sheet tray.
 With gloves, thoroughly massage the yolks.
 Add remaining ingredients and beat smooth with masher.
 Scoop the mixture into a piping bag and tie.
-{{% /recipe %}}

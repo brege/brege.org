@@ -7,8 +7,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Pulled Pork
 
 **Chef:** Wyatt Brege
@@ -35,7 +33,3 @@ ShowTOC: false
     the seasoning
 
 3.  Braise the pork butt on medium heat for 4-4 ½ hours
-
-
-
-{{% /recipe %}}

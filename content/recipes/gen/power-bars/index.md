@@ -10,8 +10,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Power Bars
 
 **Chef:** Wyatt Brege
@@ -66,4 +64,3 @@ ShowTOC: false
 - **Substitution:** apple sauce ↔ ripe banana ↔ ripe pear
 - **Substitution:** peanut butter ↔ almond butter
 - Never be afraid to adjust oats if the mixture is too wet
-{{% /recipe %}}

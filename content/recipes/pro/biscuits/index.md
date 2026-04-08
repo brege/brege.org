@@ -10,8 +10,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Biscuits
 
 **Chefs:** Wyatt Brege, Patty Pereira
@@ -50,6 +48,3 @@ ShowTOC: false
 
 -   There will be dough scraps from the cutting practice that should be
     combined and rolled out to form more biscuits
-
-
-{{% /recipe %}}

@@ -9,8 +9,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Chipotle-Lime Dressing
 
 **Chef:** Wyatt Brege
@@ -34,7 +32,3 @@ ShowTOC: false
 
 2.  In a large mixing bowl, whisk the puree with the sour cream until
     thoroughly combined
-
-
-
-{{% /recipe %}}

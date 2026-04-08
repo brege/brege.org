@@ -7,8 +7,6 @@ draft: false
 title: 2018-10-11 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ## Farmer’s Market Menu
 
 ### Watermelon Mint Margarita
@@ -33,5 +31,3 @@ frangipane whipped cream
 
 
 Lloyd’s Produce, Vue Family Farm, Pure Honey, Food Tree Field Farm
-
-{{% /menu %}}

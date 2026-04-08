@@ -9,8 +9,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Ahi Tuna Salad
 
 **Chef:** Wyatt Brege
@@ -40,7 +38,3 @@ ShowTOC: false
 
 3.  Mix the flaked tuna with the remaining ingredients in a large mixing
     bowl
-
-
-
-{{% /recipe %}}

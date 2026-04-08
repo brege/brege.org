@@ -8,8 +8,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Beer Sauce
 
 **Chefs:** Ryan Fleener, Wyatt Brege
@@ -25,4 +23,3 @@ ShowTOC: false
 ### Directions 
 
 Add ingredients to a large mixing bowl and whisk.
-{{% /recipe %}}

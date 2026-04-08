@@ -11,8 +11,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Salsa Verde / Tamatillo Salsa
 
 **Chef:** Wyatt Brege
@@ -39,4 +37,3 @@ until smooth.
 At the end, lightly add the cumin to desired taste. (You do not want it
 to be powerful like chili or ranchero sauce, but subtle for a little
 extra depth.)
-{{% /recipe %}}

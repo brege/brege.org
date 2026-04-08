@@ -11,8 +11,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Ginger Sesame Vinaigrette
 
 **Chef:** Wyatt Brege
@@ -41,6 +39,3 @@ ShowTOC: false
 ### Notes
 
 1.  Optionally, a few limes can be squeezed into the dressing
-
-
-{{% /recipe %}}

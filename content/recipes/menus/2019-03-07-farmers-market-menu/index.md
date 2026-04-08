@@ -7,8 +7,6 @@ draft: false
 title: 2019-03-07 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ## Farm\-to\-table Menu
 
 Farmer’s Salad
@@ -34,5 +32,3 @@ spiced dried fruit, amaretto
 
 
 *Proudly serving fresh ingredients from Eatwell Farm*
-
-{{% /menu %}}

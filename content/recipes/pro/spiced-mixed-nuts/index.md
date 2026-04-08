@@ -8,8 +8,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Spiced Mixed Nuts
 
 **Chefs:** Wyatt Brege, Patty Pereira
@@ -41,6 +39,3 @@ ShowTOC: false
 
 1.  In case of no brown sugar, substitute 1 Cup brown sugar for 1 Cup
     cane sugar with 1 Tbsp molasses
-
-
-{{% /recipe %}}

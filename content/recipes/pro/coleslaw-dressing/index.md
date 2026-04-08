@@ -9,8 +9,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Coleslaw Dressing
 
 **Chef:** Wyatt Brege
@@ -34,7 +32,3 @@ ShowTOC: false
 
 2.  Combine the sauce with approximately 5 lb shredded green cabbage and
     2.5 lb shredded red cabbage then mix
-
-
-
-{{% /recipe %}}

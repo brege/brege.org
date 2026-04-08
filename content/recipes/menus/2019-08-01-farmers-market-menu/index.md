@@ -7,8 +7,6 @@ draft: false
 title: 2019-08-01 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ## Farmer’s Market Menu
 
 ### Basil Pesto Pasta
@@ -29,5 +27,3 @@ blueberry whipped cream, pumpkin seed brittle
 
 
 *Fresh produce provided by our friends at Eatwell Farm*
-
-{{% /menu %}}

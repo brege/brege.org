@@ -7,8 +7,6 @@ draft: false
 title: 2018-08-22 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ## Farmer’s Market Menu
 
 ### Grape Salad
@@ -29,5 +27,3 @@ seasonal fruit, crème anglaise
 
 R\. Schletewitz Farms, Lloyd’s Produce,
 Vue Family Farm, Heritage Pantry
-
-{{% /menu %}}

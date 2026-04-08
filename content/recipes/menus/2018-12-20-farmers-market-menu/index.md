@@ -7,8 +7,6 @@ draft: false
 title: 2018-12-20 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ## Farm\-to\-table Menu
 
 ### The Revolver
@@ -34,5 +32,3 @@ orange caramel sauce, mandarin, ice cream
 
 *We gladly acknowledge Eatwell Farm for delivering their amazing*
 *CSA box to our door\-\-enjoy the break next week, Lorraine *et al*\!*
-
-{{% /menu %}}

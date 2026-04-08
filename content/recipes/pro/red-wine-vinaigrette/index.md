@@ -12,8 +12,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Red Wine Vinaigrette
 
 **Chef:** Wyatt Brege
@@ -39,4 +37,3 @@ Blitz with the immersion blender, then slowly trickle in the oil to
 emulsify.
 
 Store in 5-Cup squeeze bottles.
-{{% /recipe %}}

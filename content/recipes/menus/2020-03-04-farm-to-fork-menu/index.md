@@ -7,8 +7,6 @@ draft: false
 title: 2020-03-04 Farm-To-Fork Menu
 ---
 
-{{% menu %}}
-
 ## Farm\-to\-Fork
 
 ### BLT Devilled Eggs
@@ -33,5 +31,3 @@ green garlic, red bell pepper, fennel, zinfandel cream sauce
 
 
 *Seasonal produce provided by our great friends at Eatwell Farm*
-
-{{% /menu %}}

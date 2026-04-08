@@ -7,8 +7,6 @@ draft: false
 title: 2018-06-21 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ## Farmer’s Market Menu
 
 ### Wild Berry Crostini \(2\)
@@ -28,5 +26,3 @@ mascarpone whipped cream, balsamic glaze
 
 Free Spirit Farms, Achmed’s Farms,
 Toledo Farms, LLoyd’s Farms, Chavez Farms
-
-{{% /menu %}}

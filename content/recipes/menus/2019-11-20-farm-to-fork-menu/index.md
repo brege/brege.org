@@ -7,8 +7,6 @@ draft: false
 title: 2019-11-20 Farm-To-Fork Menu
 ---
 
-{{% menu %}}
-
 ## Farm\-to\-Fork
 
 ### Tempura Autumn Vegetables
@@ -31,5 +29,3 @@ Tito’s vodka, rosemary, peppercorn, lemon
 
 
 *Seasonal produce from Eatwell Farm*
-
-{{% /menu %}}

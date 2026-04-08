@@ -7,8 +7,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Crab Cakes
 
 **Chef:** Wyatt Brege
@@ -34,7 +32,3 @@ ShowTOC: false
     overwork the crab claw meat
 
 2.  Form into 2 ½ oz patties with a 3 inch circle cutter
-
-
-
-{{% /recipe %}}

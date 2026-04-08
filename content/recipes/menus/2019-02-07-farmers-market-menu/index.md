@@ -7,8 +7,6 @@ draft: false
 title: 2019-02-07 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ## Farm\-to\-table Menu
 
 ### My Montréal
@@ -32,5 +30,3 @@ blueberries, mint pesto
 
 *We gladly acknowledge Eatwell Farm for*
 *delivering their amazing CSA box to our door\!*
-
-{{% /menu %}}

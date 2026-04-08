@@ -8,8 +8,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Caesar Dressing
 
 **Chef:** Wyatt Brege
@@ -48,4 +46,3 @@ this recipe.
 
 If the mixture is too thick when cold, add water or lemon juice to
 bottle and shake vigorously to thin it.
-{{% /recipe %}}

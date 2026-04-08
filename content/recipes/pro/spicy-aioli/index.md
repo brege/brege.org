@@ -8,8 +8,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Spicy Aioli
 
 **Chef:** Wyatt Brege
@@ -27,4 +25,3 @@ ShowTOC: false
 
 In a large mixing bowl add all ingredients and whisk until blended
 smooth.
-{{% /recipe %}}

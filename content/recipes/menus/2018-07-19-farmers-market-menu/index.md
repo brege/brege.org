@@ -7,8 +7,6 @@ draft: false
 title: 2018-07-19 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ## Farmer’s Market Menu
 
 ### Melon  Salad
@@ -27,5 +25,3 @@ pluots, apricots, whipped cream
 
 
 LLoyd’s Farms, Chavez Farms, Vue Family Farm, R\. Schletewitz Farms
-
-{{% /menu %}}

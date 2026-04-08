@@ -7,8 +7,6 @@ draft: false
 title: 2019-05-09 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ## Farmer’s Market Menu
 
 ### Beet Salad
@@ -29,5 +27,3 @@ lemon balm cream cheese frosting
 
 
 *Fresh produce provided by our friends at Eatwell Farm*
-
-{{% /menu %}}

@@ -7,8 +7,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Chicken Salad
 
 **Chef:** Wyatt Brege
@@ -34,7 +32,3 @@ ShowTOC: false
 
 3.  Dice the chicken in ½" sized pieces and combine with the remaining
     ingredients in a large mixing bowl
-
-
-
-{{% /recipe %}}

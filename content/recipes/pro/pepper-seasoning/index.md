@@ -7,8 +7,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Pepper Seasoning
 
 **Chef:** Wyatt Brege
@@ -24,4 +22,3 @@ ShowTOC: false
 ### Directions 
 
 Combine in a mixing bowl and store in two 1 Quart containers.
-{{% /recipe %}}

@@ -7,8 +7,6 @@ draft: false
 title: 2020-02-05 Farm-To-Fork Menu
 ---
 
-{{% menu %}}
-
 ## Farm\-to\-Fork
 
 ### Brassicas Salad
@@ -35,5 +33,3 @@ w/ vanilla bean ice cream
 
 
 *Seasonal produce provided by our great friends at Eatwell Farm*
-
-{{% /menu %}}

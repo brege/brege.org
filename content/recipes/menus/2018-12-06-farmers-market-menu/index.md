@@ -7,8 +7,6 @@ draft: false
 title: 2018-12-06 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ## Farm\-to\-table Menu
 
 ### Kringle Cream Cocktail
@@ -35,5 +33,3 @@ caramel\-walnut sauce, mint whipped cream
 *we gladly acknowledge Eatwell Farm for delivering their*
 *amazing CSA share box to our door and the Barn & Pantry for*
 *providing the cacao cajun sausages*
-
-{{% /menu %}}

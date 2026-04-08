@@ -8,8 +8,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## French Toast Soak
 
 **Chefs:** Wyatt Brege, Patty Pereira
@@ -39,6 +37,3 @@ ShowTOC: false
 -   Use the thick cut Pullman brioche bread, if out thick cut sourdough
     is an alternative. Do not use other bread bases such as gluten free
     or sprouted grains
-
-
-{{% /recipe %}}

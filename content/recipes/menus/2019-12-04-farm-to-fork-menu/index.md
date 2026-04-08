@@ -7,8 +7,6 @@ draft: false
 title: 2019-12-04 Farm-To-Fork Menu
 ---
 
-{{% menu %}}
-
 ## Farm-To-Fork Menu
 
 ### Giant Rocket Salad
@@ -34,5 +32,3 @@ Gold Label Reserve, rosemary, honey, lemon
 
 
 *Seasonal produce from Eatwell Farm*
-
-{{% /menu %}}

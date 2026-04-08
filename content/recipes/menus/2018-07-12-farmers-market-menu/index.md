@@ -7,8 +7,6 @@ draft: false
 title: 2018-07-12 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ## Farmer’s Market Menu
 
 ### Heirloom Tomato Salad
@@ -27,5 +25,3 @@ whipped cream, local honey
 
 
 Toledo Farms, LLoyd’s Farms, Free Spirit Farms
-
-{{% /menu %}}

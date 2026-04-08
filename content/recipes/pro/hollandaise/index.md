@@ -9,8 +9,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Hollandaise
 
 **Chefs:** Matt Andrews, Wyatt Brege
@@ -35,4 +33,3 @@ break.
 If too thick add a small amount of hot water.
 
 Once the hollandaise has formed, season with Old Bay.
-{{% /recipe %}}

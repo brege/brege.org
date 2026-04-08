@@ -9,8 +9,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Roasted Corn
 
 **Chef:** Wyatt Brege
@@ -32,4 +30,3 @@ Cut corn kernels off of ears.
 In a mixing bowl, combine all ingredients.
 Oil a 1/2 sheet tray.
 Cook in salamander until lightly roasted.
-{{% /recipe %}}

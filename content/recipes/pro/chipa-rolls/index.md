@@ -8,8 +8,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Chipa Rolls
 
 **Chef:** Wyatt Brege
@@ -44,4 +42,3 @@ Bake in preheated oven until golden brown, 10 to 15 minutes.
 
 To make self rising flour, for every one cup AP Flour, ad 1/2 tsp Baking
 Powder and 1/2 tsp Salt.
-{{% /recipe %}}

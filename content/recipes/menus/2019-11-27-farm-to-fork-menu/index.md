@@ -7,8 +7,6 @@ draft: false
 title: 2019-11-27 Farm-To-Fork Menu
 ---
 
-{{% menu %}}
-
 ## Farm\-to\-Fork
 
 ### Wild Caught Crab Cakes
@@ -30,5 +28,3 @@ layers of pumpkin, pecan and apple pie
 
 
 *Seasonal produce from Eatwell Farm*
-
-{{% /menu %}}

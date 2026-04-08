@@ -9,8 +9,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Garlic Herb Butter
 
 **Chef:** Wyatt Brege
@@ -36,4 +34,3 @@ herbs and seasoning at medium high speed until all ingredients are
 smoothly combined.
 
 Scoop the contents onto plastic wrap and roll into a tight log.
-{{% /recipe %}}

@@ -7,8 +7,6 @@ draft: false
 title: 2018-05-03 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ## Farmer's Market Menu
 
 ### Mixed Green Salad
@@ -25,5 +23,3 @@ bell pepper, market fresh egg
 
 fava bean puree, fingerling potatoes,
 green beans, cherry port sauce
-
-{{% /menu %}}

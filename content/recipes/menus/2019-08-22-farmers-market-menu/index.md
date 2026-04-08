@@ -7,8 +7,6 @@ draft: false
 title: 2019-08-22 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ## Farmer’s Market Menu
 
 ### Homemade Tater Tots
@@ -32,5 +30,3 @@ with ice cream
 
 
 *Fresh produce provided by our friends at Eatwell Farm*
-
-{{% /menu %}}

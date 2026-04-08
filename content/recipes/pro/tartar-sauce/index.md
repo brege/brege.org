@@ -7,8 +7,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Tartar Sauce
 
 **Chef:** Wyatt Brege
@@ -31,7 +29,3 @@ ShowTOC: false
 ### Directions
 
 1.  Mix all ingredients in a large mixing bowl with a whisk
-
-
-
-{{% /recipe %}}

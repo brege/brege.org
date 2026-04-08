@@ -9,8 +9,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Cajun Roasted Red Pepper Sauce
 
 **Chef:** Wyatt Brege
@@ -37,4 +35,3 @@ Place the roasted red pepper flesh in the blender with the stock and
 Cajun seasoning, then puree for 60 seconds.
 
 Store in 1 Quart deli containers and/or large squeeze bottles.
-{{% /recipe %}}

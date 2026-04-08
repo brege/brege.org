@@ -7,8 +7,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## House Chili
 
 **Chefs:** Wyatt Brege, Viktor Sanchez
@@ -52,4 +50,3 @@ Season with salt and fine black pepper.
 Chili is a great soup for using up ingredients left over from tacos like
 ground beef, diced tomatoes and onions, over-ripened tomatoes, black
 beans nearing volatility and other cuts of neutrally cooked beef.
-{{% /recipe %}}

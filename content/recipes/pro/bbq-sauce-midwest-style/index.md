@@ -8,8 +8,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## BBQ Sauce (midwest style)
 
 **Chefs:** Ginger Brege, Wyatt Brege
@@ -26,4 +24,3 @@ ShowTOC: false
 ### Directions 
 
 Mix in a mixing bowl with a whisk until blended and smooth.
-{{% /recipe %}}

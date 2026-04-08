@@ -7,8 +7,6 @@ draft: false
 title: 2019-07-11 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ## Farmer’s Market Menu
 
 ### Garden Tomato Salad
@@ -29,5 +27,3 @@ crème anglaise, strawberry plum sauce
 
 
 *Fresh produce provided by our friends at Eatwell Farm*
-
-{{% /menu %}}

@@ -7,8 +7,6 @@ draft: false
 title: 2018-09-06 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ### Bourbon Pear Wallop
 
 Buffalo Trace, asian pear, lemon, honey, ginger beer
@@ -30,5 +28,3 @@ pistachio, dried cherries, bourbon plum glaze, ice cream
 
 Chavez Farms, Lloyd’s Produce, Ahmad Farms,
 Vue Family Farms, Heritage Pantry, Pure Honey
-
-{{% /menu %}}

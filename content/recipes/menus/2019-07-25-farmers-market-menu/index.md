@@ -7,8 +7,6 @@ draft: false
 title: 2019-07-25 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ## Farmer’s Market Menu
 
 ### Watermelon Gazpacho
@@ -32,5 +30,3 @@ peach, plum, nectarine, mint
 
 
 *Fresh produce provided by our friends at Eatwell Farm*
-
-{{% /menu %}}

@@ -7,8 +7,6 @@ draft: false
 title: 2019-06-20 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ## Farmer’s Market Menu
 
 ### Lavender Gimlet
@@ -32,5 +30,3 @@ maple bourbon drizzle, ice cream
 
 
 *Fresh produce provided by our friends at Eatwell Farm*
-
-{{% /menu %}}

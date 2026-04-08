@@ -7,8 +7,6 @@ draft: false
 title: 2020-02-19 Farm-To-Fork Menu
 ---
 
-{{% menu %}}
-
 ## Farm\-to\-Fork
 
 ### Butternut Squash Soup
@@ -31,5 +29,3 @@ fennel, tangelo\-bourbon glaze
 
 
 *Seasonal produce provided by our great friends at Eatwell Farm*
-
-{{% /menu %}}

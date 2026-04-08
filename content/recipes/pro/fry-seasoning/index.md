@@ -9,8 +9,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Fry Seasoning
 
 **Chef:** Wyatt Brege
@@ -32,4 +30,3 @@ ShowTOC: false
 
 Thoroughly combine ingredients in a medium sized mixing bowl.
 Store in a two 1 Quart containers.
-{{% /recipe %}}

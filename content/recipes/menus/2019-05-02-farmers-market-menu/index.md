@@ -7,8 +7,6 @@ draft: false
 title: 2019-05-02 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ## Farmer’s Market Menu
 
 ### Pasta Salad
@@ -27,5 +25,3 @@ cauliflower puree, lemon beurre blanc
 
 
 *Proudly supporting community supported agriculture from Eatwell Farm*
-
-{{% /menu %}}

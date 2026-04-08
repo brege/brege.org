@@ -7,8 +7,6 @@ draft: false
 title: 2019-04-04 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ## Farmer’s Market Menu
 
 ### Strawberry Fennel Salad
@@ -29,5 +27,3 @@ whipped cream, local walnuts
 
 
 *Proudly serving community supported agriculture from Eatwell Farm*
-
-{{% /menu %}}

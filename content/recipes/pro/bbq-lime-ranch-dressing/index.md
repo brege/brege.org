@@ -8,8 +8,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## BBQ Lime Ranch Dressing
 
 **Chefs:** Matt Andrews, Wyatt Brege
@@ -32,4 +30,3 @@ ShowTOC: false
 
 In a medium sized mixing bowl, blend all ingredients together with the
 immersion blender. Store in 4 Quart container.
-{{% /recipe %}}

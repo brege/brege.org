@@ -8,8 +8,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Garlic Aioli
 
 **Chef:** Wyatt Brege
@@ -27,4 +25,3 @@ ShowTOC: false
 
 In the Ninja blender attachment, add all ingredients and use the
 \"Smoothie\" setting to full cycle.
-{{% /recipe %}}

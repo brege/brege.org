@@ -8,8 +8,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Bleu Cheese Dressing
 
 **Chef:** Wyatt Brege
@@ -39,4 +37,3 @@ Store in squeeze bottle or deli container.
 
 Be sure to check the consistency of the dressing so that any large
 clumps don\'t impede the nozzle of the squirt bottle.
-{{% /recipe %}}

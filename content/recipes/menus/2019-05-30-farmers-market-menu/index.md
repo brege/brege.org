@@ -7,8 +7,6 @@ draft: false
 title: 2019-05-30 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ## Farmer’s Market Menu
 
 ### Buttermilk Fried Chicken Salad
@@ -28,5 +26,3 @@ cream cheese, honey pecan dipping sauce
 
 
 *Fresh produce provided by our friends at Eatwell Farm*
-
-{{% /menu %}}

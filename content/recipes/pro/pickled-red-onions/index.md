@@ -11,8 +11,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Pickled Red Onions
 
 **Chefs:** Ryan Fleener, Wyatt Brege
@@ -38,4 +36,3 @@ Add all other ingredients to a large stock pot.
 Bring to a boil and strain the brine from the mixture with a chinois
 into onions.
 Let cool to room temperature.
-{{% /recipe %}}

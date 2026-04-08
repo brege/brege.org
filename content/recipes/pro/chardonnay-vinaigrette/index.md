@@ -12,8 +12,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Chardonnay Vinaigrette
 
 **Chef:** Wyatt Brege
@@ -46,4 +44,3 @@ Store in a 5-Cup squeeze bottle.
 
 Please don\'t use expensive chardonnay like Berryessa Gap\--ask the
 bartender for the house chardonnay.
-{{% /recipe %}}

@@ -7,8 +7,6 @@ draft: false
 title: 2018-08-09 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ## Farmer’s Market Menu
 
 ### Heirloom Tomato Salad
@@ -27,5 +25,3 @@ ricotta, apricot jam, whipped cream
 
 R\. Schletewitz Farms, Toledo Farms,
 Vue Family Farm, Free Spirit Farm
-
-{{% /menu %}}

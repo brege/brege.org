@@ -12,8 +12,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Pickled Daikon and Carrot
 
 **Chef:** Wyatt Brege
@@ -41,4 +39,3 @@ Place the produce in a 4 Quart container.
 In a 4 Quart sauce pot, add the vinegar, peppercorn, salt and sugar and
 bring to a boil.
 Using a chinois, poor the pickling liquid over the other ingredients.
-{{% /recipe %}}

@@ -12,8 +12,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Lemon Vinaigrette
 
 **Chef:** Wyatt Brege
@@ -36,4 +34,3 @@ with the immersion blender.
 Slowly trickle in the olive oil while emulsifying.
 
 Season.
-{{% /recipe %}}

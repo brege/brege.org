@@ -7,8 +7,6 @@ draft: false
 title: 2018-08-30 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ### Dixonville Stone Blossom
 
 Tito’s, peach, local honey, lemon, champagne float
@@ -34,5 +32,3 @@ peaches and ice cream
 R\. Schletewitz Farms, Lloyd’s Produce, Pure Honey,
 
 Toledo Farms, Heritage Pantry
-
-{{% /menu %}}

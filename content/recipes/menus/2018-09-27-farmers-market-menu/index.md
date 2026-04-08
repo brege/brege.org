@@ -7,8 +7,6 @@ draft: false
 title: 2018-09-27 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ## Farmer’s Market Menu
 
 ### Strawberry Fields Mojito
@@ -32,5 +30,3 @@ pistachio\-graham crumble
 
 Vue Family Farms, Lloyd’s Produce, Pure Honey,
 Food Tree Field Farm, V&M Farms
-
-{{% /menu %}}

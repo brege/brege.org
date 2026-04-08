@@ -8,8 +8,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Boneless Beef Short Ribs
 
 **Chef:** Wyatt Brege
@@ -44,4 +42,3 @@ and 1 gallon vegetable stock and reduce by half. Puree this goulash in
 the Ninja blender attachment (the connective tissue binds up the blade
 on the immersion blender), then sieve through the chinois. Discard the
 puree and slowly reduce the liquid to a demi glase.
-{{% /recipe %}}

@@ -7,8 +7,6 @@ draft: false
 title: 2018-07-26 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ### Watermelon  Salad
 
 lemon cucumbers, feta cheese, red onion, mint,
@@ -28,5 +26,3 @@ cherry tomatoes, corn, basil pesto
 
 LLoyd’s Farms, Chavez Farms, Toledo Farms, Vue Family Farm,
 Free Tree Field Farm, Davis Noodle City
-
-{{% /menu %}}

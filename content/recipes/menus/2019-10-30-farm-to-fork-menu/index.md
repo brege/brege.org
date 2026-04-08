@@ -7,8 +7,6 @@ draft: false
 title: 2019-10-30 Farm-To-Fork Menu
 ---
 
-{{% menu %}}
-
 ## Farm\-to\-Fork
 
 ### Bulgogi Beef Skewers
@@ -31,5 +29,3 @@ pomegranate, compari, orange juice
 
 
 *Seasonal produce from Eatwell Farm*
-
-{{% /menu %}}

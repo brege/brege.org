@@ -7,8 +7,6 @@ draft: false
 title: 2018-10-04 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ## Farmer’s Market Menu
 
 ### Autumn Spiked Cider
@@ -32,5 +30,3 @@ pistachio whipped cream
 
 Lloyd’s Produce, R Schletewitz, Pure Honey,
 Food Tree Field Farm, Heritage Pantry, Ratzlaff Ranch
-
-{{% /menu %}}

@@ -7,8 +7,6 @@ draft: false
 title: 2020-01-09 Farm-To-Fork Menu
 ---
 
-{{% menu %}}
-
 ## Special Features
 
 ### Citrus Salad
@@ -32,5 +30,3 @@ w/ housemade crème anglaise
 
 
 *Seasonal produce from Eatwell Farm*
-
-{{% /menu %}}

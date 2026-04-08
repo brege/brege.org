@@ -7,8 +7,6 @@ draft: false
 title: 2019-05-16 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ## Farmer’s Market Menu
 
 ### Asian Salad
@@ -29,5 +27,3 @@ strawberry cream cheese frosting
 
 
 *Fresh produce provided by our friends at Eatwell Farm*
-
-{{% /menu %}}

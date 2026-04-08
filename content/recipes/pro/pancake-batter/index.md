@@ -9,8 +9,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Pancake Batter
 
 **Chefs:** Wyatt Brege, Patty Periera
@@ -38,6 +36,3 @@ ShowTOC: false
 
 -   Cane sugar can be used in substitute of coconut sugar if out;
     powdered sugar is not a substitute
-
-
-{{% /recipe %}}

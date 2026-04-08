@@ -10,8 +10,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Pesto Aioli
 
 **Chef:** Wyatt Brege
@@ -35,7 +33,3 @@ ShowTOC: false
 
 2.  Whisk the pesto with the mayonnaise in a large mixing bowl until
     thoroughly combined
-
-
-
-{{% /recipe %}}

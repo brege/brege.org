@@ -12,8 +12,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Champagne Vinaigrette
 
 **Chef:** Wyatt Brege
@@ -45,4 +43,3 @@ Store in a 5-Cup squeeze bottle.
 ### Notes 
 
 Please ask the bartender for the house champagne used in the mimosas.
-{{% /recipe %}}

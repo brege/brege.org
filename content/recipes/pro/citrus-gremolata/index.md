@@ -11,8 +11,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Citrus Gremolata
 
 **Chef:** Wyatt Brege
@@ -27,4 +25,3 @@ ShowTOC: false
 -   1/4 Cup Chopped Garlic
 -   2 ea Lemons (zest and juice)
 -   tt Salt and Pepper
-{{% /recipe %}}

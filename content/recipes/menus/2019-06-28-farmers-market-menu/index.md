@@ -7,8 +7,6 @@ draft: false
 title: 2019-06-28 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ## Farmer’s Market Menu
 
 ### Pull\-apart Bread
@@ -26,5 +24,3 @@ cherry, plum, apricot, lavender whipped cream
 
 
 *Fresh produce provided by our friends at Eatwell Farm*
-
-{{% /menu %}}

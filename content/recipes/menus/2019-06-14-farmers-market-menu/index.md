@@ -7,8 +7,6 @@ draft: false
 title: 2019-06-14 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ## Farmer’s Market Menu
 
 ### James and the Giant Peach
@@ -33,5 +31,3 @@ fresh berries, strawberry gelee
 
 
 *Fresh produce provided by our friends at Eatwell Farm*
-
-{{% /menu %}}

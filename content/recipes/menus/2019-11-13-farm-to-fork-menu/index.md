@@ -7,8 +7,6 @@ draft: false
 title: 2019-11-13 Farm-To-Fork Menu
 ---
 
-{{% menu %}}
-
 ## Farm\-to\-Fork
 
 ### Tempura Autumn Vegetables
@@ -29,5 +27,3 @@ rum, coconut milk, cointreau, rosemary, cranberry
 
 
 *Seasonal produce from Eatwell Farm*
-
-{{% /menu %}}

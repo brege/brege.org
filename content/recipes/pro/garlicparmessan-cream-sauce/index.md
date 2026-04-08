@@ -10,8 +10,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Garlic-Parmessan Cream Sauce
 
 **Chefs:** Matt Andrews, Wyatt Brege
@@ -48,4 +46,3 @@ into a puree with a blender and ladle, food processor, or an immersion
 blender. You may need to use some of the oil to assist in pureeing. This
 is easiest when the garlic is still hot. Do not use a Magic Bullet with
 hot garlic confit as the pressure can be quite harmful.
-{{% /recipe %}}

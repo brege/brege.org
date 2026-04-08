@@ -7,8 +7,6 @@ draft: false
 title: 2019-02-28 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ## Farm\-to\-table Menu
 
 ### Avocado Toast
@@ -34,5 +32,3 @@ vanilla ice cream
 
 
 *Eatwell Farm, Heritage Pantry, Il Fiorello*
-
-{{% /menu %}}

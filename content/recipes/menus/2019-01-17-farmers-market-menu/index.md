@@ -7,8 +7,6 @@ draft: false
 title: 2019-01-17 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ## Farm\-to\-table Menu
 
 ### Asian Salad
@@ -35,5 +33,3 @@ meringue, basil gelee, navel orange
 
 *We gladly acknowledge Eatwell Farm for*
 *delivering their amazing CSA box to our door\!*
-
-{{% /menu %}}

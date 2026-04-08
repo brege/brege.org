@@ -9,8 +9,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Sriracha Aioli
 
 **Chef:** Wyatt Brege
@@ -27,4 +25,3 @@ ShowTOC: false
 
 In a large mixing bowl add all ingredients and whisk until blended
 smooth.
-{{% /recipe %}}

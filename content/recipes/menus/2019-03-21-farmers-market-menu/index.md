@@ -7,8 +7,6 @@ draft: false
 title: 2019-03-21 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ## Farm\-to\-table Menu
 
 ### Pasta Salad
@@ -29,5 +27,3 @@ oreo crumb, whipped cream
 
 
 *Proudly serving fresh ingredients from Eatwell Farm*
-
-{{% /menu %}}

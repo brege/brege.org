@@ -11,8 +11,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Fresh Marinara
 
 **Chef:** Wyatt Brege
@@ -46,4 +44,3 @@ Store in 1-Quart deli containers.
 
 Marinara (for the mozzarella sticks) should be stored hot in the *baine
 marie*.
-{{% /recipe %}}

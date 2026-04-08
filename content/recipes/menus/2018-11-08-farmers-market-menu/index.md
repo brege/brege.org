@@ -7,8 +7,6 @@ draft: false
 title: 2018-11-08 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ## Farm\-to\-table Menu
 
 ### Acorn & Pomegranate Rocket Salad
@@ -30,5 +28,3 @@ bourbon\-star anise gastrique
 
 *we gladly acknowledge Eatwell Farm for delivering their*
 *amazing CSA share box to our door and inspiring our menu*
-
-{{% /menu %}}

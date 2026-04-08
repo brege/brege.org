@@ -7,8 +7,6 @@ draft: false
 title: 2018-11-15 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ## Farm\-to\-table Menu
 
 ### The Gold Rush
@@ -34,5 +32,3 @@ macadamia, chocolate\-coconut whipped cream
 
 *we gladly acknowledge Eatwell Farm for delivering their*
 *amazing CSA share box to our door and inspiring our menu*
-
-{{% /menu %}}

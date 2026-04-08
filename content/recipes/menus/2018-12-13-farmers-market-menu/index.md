@@ -7,8 +7,6 @@ draft: false
 title: 2018-12-13 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ## Farm\-to\-table Menu
 
 ### The Pepper Rose
@@ -34,5 +32,3 @@ cream cheese frosting, walnut
 
 *we gladly acknowledge Eatwell Farm for delivering their*
 *amazing CSA share box to our door*
-
-{{% /menu %}}

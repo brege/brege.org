@@ -9,8 +9,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Cilantro-Lime Vinaigrette
 
 **Chefs:** Wyatt Brege, Matt Andrews
@@ -34,4 +32,3 @@ Blend the rest of the ingredients in a container with the immersion
 blender.
 Slowly pour in oil to the mixture to emulsify.
 Season with salt and black pepper.
-{{% /recipe %}}

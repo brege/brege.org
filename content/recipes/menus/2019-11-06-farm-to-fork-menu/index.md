@@ -7,8 +7,6 @@ draft: false
 title: 2019-11-06 Farm-To-Fork Menu
 ---
 
-{{% menu %}}
-
 ## Farm\-to\-Fork
 
 ### Buttermilk Fried Chicken \(3\)
@@ -32,5 +30,3 @@ Tito’s vodka, lime, ginger beer
 
 
 *Seasonal produce from Eatwell Farm*
-
-{{% /menu %}}

@@ -8,8 +8,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Avocado Deviled Egg
 
 **Chef:** Wyatt Brege
@@ -44,4 +42,3 @@ Combine half of the yolks and the remaining ingredients in the food
 processor for 10-20 seconds. Store the other half of yolks in a small
 deli for the next batch.
 Scoop the mixture into a piping bag and tie.
-{{% /recipe %}}

@@ -7,8 +7,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Flour Dredge
 
 **Chef:** Wyatt Brege
@@ -23,4 +21,3 @@ ShowTOC: false
 -   2 tsp Paprika
 -   2 tsp Chili Powder
 -   2 tsp Fine Black Pepper
-{{% /recipe %}}

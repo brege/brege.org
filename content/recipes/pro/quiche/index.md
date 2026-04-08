@@ -7,8 +7,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Quiche
 
 **Chef:** Patty Pereira
@@ -53,6 +51,3 @@ ShowTOC: false
     mixture, e.g. asparagus, goat cheese, prosciutto, salami, pitted
     olives, tomatoes, bell peppers, wilted greens, pre cooked winter
     squash..get creative!
-
-
-{{% /recipe %}}

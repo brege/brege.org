@@ -8,8 +8,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Mac n Cheese Sauce
 
 **Chef:** Wyatt Brege
@@ -35,4 +33,3 @@ Add 1/3 of cream and bring up to heat.
 Add the cheeses.
 Add remaining 1/3 of cream and bring up to temperature.
 Season with salt and pepper and place in a Baine-Marie insert.
-{{% /recipe %}}

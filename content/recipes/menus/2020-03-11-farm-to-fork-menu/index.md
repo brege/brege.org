@@ -7,8 +7,6 @@ draft: false
 title: 2020-03-11 Farm-To-Fork Menu
 ---
 
-{{% menu %}}
-
 ## Farm\-to\-Fork
 
 ### Spring Salad
@@ -30,5 +28,3 @@ swiss chard, collard greens, farro grain, american chili glaze
 
 
 *Seasonal produce provided by our great friends at Eatwell Farm*
-
-{{% /menu %}}

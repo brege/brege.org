@@ -7,8 +7,6 @@ draft: false
 title: 2018-09-20 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ### Plum Drop
 
 Tito’s vodka, blackjack plum, lemon, Cointreau, local honey
@@ -32,5 +30,3 @@ almond crust, raspberry coulis
 
 Vue Family Farms, Lloyd’s Produce, Pure Honey,
 Heritage Pantry, Il Fiorello
-
-{{% /menu %}}

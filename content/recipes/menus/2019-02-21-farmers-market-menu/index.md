@@ -7,8 +7,6 @@ draft: false
 title: 2019-02-21 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ## Farm\-to\-table Menu
 
 ### Broccoli Soup
@@ -32,5 +30,3 @@ oreo crumble, candied walnut
 
 *We gladly acknowledge Eatwell Farm for*
 *delivering their amazing CSA box to our door\!*
-
-{{% /menu %}}

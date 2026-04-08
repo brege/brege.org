@@ -10,8 +10,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Sauerkraut
 
 **Chef:** Wyatt Brege
@@ -68,4 +66,3 @@ salinity) to the existing brine to keep kraut submerged.
 
 The hotel pan with water is a way of moderating fluctuations in
 temperature of the kraut between day and night.
-{{% /recipe %}}

@@ -7,8 +7,6 @@ draft: false
 title: 2019-12-18 Farm-To-Fork Menu
 ---
 
-{{% menu %}}
-
 ## Farm\-to\-Fork
 
 ### Broccoli Arugula Salad
@@ -32,5 +30,3 @@ Whistlepig Piggyback Rye, hand picked orange
 
 
 *Seasonal produce from Eatwell Farm*
-
-{{% /menu %}}

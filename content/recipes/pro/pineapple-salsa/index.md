@@ -11,8 +11,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Pineapple Salsa
 
 **Chef:** Wyatt Brege
@@ -33,7 +31,3 @@ ShowTOC: false
 
 1.  Small dice all the produce, then mix in a medium sized mixing bowl
     until thoroughly combined
-
-
-
-{{% /recipe %}}

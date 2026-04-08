@@ -9,8 +9,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Bourbon BBQ Sauce
 
 **Chef:** Wyatt Brege
@@ -31,4 +29,3 @@ ShowTOC: false
 
 On low heat, combine all ingredients in a 6 quart sauce pot and stir.
 Let cool and store in a 4 quart container.
-{{% /recipe %}}

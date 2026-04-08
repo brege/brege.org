@@ -11,8 +11,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Green Onion Gremolata
 
 **Chef:** Wyatt Brege
@@ -32,4 +30,3 @@ ShowTOC: false
 ### Directions 
 
 Puree all ingredients in a food processor until smooth.
-{{% /recipe %}}

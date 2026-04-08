@@ -7,8 +7,6 @@ draft: false
 title: 2019-08-15 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ## Farmer’s Market Menu
 
 ### Plum Salad
@@ -29,5 +27,3 @@ lemon cookie, fig brûlée, candied walnut
 
 
 *Fresh produce provided by our friends at Eatwell Farm*
-
-{{% /menu %}}

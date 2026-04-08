@@ -10,8 +10,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Ranch Dressing
 
 **Chef:** Wyatt Brege
@@ -35,4 +33,3 @@ ShowTOC: false
 Whisk wet ingredients in a large mixing bowl until thoroughly combined.
 Remove dill fronds from main stem and chop them.
 Add dry ingredients and dill to wet mixture and whisk thoroughly.
-{{% /recipe %}}

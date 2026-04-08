@@ -10,8 +10,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Cajun Seasoning
 
 **Chefs:** Viktor Sanchez, Wyatt Brege
@@ -34,4 +32,3 @@ ShowTOC: false
 ### Directions 
 
 In a medium sized mixing bowl, add all ingredients and thoroughly mix.
-{{% /recipe %}}

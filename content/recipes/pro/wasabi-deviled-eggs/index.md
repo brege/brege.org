@@ -9,8 +9,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Wasabi Deviled Eggs
 
 **Chefs:** Matt Andrews, Wyatt Brege
@@ -48,4 +46,3 @@ If starting from dry wasabi powder, incrementally reconstitute the
 powder in a clean bowl with cold water until you can form a soft cube
 with your fingers from the paste. Place in container removing any air
 pockets and cover the surface with lemon juice to prevent browning.
-{{% /recipe %}}

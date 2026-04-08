@@ -9,8 +9,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Tomato Jam
 
 **Chef:** Wyatt Brege
@@ -41,4 +39,3 @@ Cool in a 200 hotel pan in the fridge, then store in deli containers.
 You can can this recipe but you will need a pressure canner due to the
 increased risk of botulism in tomato canning. In our use we simply store
 the jam fresh.
-{{% /recipe %}}

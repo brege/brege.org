@@ -8,8 +8,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Asian Brown Sauce
 
 **Chef:** Wyatt Brege
@@ -35,4 +33,3 @@ Peel and grate the ginger.
 
 In a 4 Quart container, add all ingredients and blend with the immersion
 blender.
-{{% /recipe %}}

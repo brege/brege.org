@@ -8,8 +8,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Candied Walnuts
 
 **Chef:** Wyatt Brege
@@ -33,7 +31,3 @@ ShowTOC: false
 
 2.  Transfer to an oiled sheet tray. When the Walnuts have cooled, break
     them apart by hand and store in an appropriate container.
-
-
-
-{{% /recipe %}}

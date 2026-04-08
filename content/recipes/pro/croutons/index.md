@@ -8,8 +8,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Croutons
 
 **Chefs:** Patty Pereira, Wyatt Brege
@@ -37,4 +35,3 @@ Bake in a 350 degree F oven for 20 minutes.
 
 Be sure to rotate and alternate sheet trays in the oven so the croutons
 cook evenly.
-{{% /recipe %}}

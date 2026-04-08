@@ -11,8 +11,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## House Pickle Chips
 
 **Chef:** Wyatt Brege
@@ -48,6 +46,3 @@ ShowTOC: false
 
 2.  For the **fried pickles**, cut the cucumbers into spears, about
     eight spears per cucumber
-
-
-{{% /recipe %}}

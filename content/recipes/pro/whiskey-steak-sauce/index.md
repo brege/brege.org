@@ -8,8 +8,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Whiskey Steak Sauce
 
 **Chef:** Ryan Fleener
@@ -34,4 +32,3 @@ ShowTOC: false
 
 In a large Rondeau, add all ingredients and whisk thoroughly. Place over
 a simmer for 1 hour, or until cooked down to light paste consistency.
-{{% /recipe %}}

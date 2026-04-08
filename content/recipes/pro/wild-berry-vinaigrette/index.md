@@ -11,8 +11,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Wild Berry Vinaigrette
 
 **Chef:** Wyatt Brege
@@ -40,4 +38,3 @@ emulsify.
 
 Strain the mixture with a chinois, then store in squeeze bottle and/or
 deli containers.
-{{% /recipe %}}

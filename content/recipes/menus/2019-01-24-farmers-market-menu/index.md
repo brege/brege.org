@@ -7,8 +7,6 @@ draft: false
 title: 2019-01-24 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ## Farm\-to\-table Menu
 
 ### Pomelo Cello Margarita
@@ -33,5 +31,3 @@ oats, local walnut, lemon and raisins
 
 *We gladly acknowledge Eatwell Farm for*
 *delivering their amazing CSA box to our door\!*
-
-{{% /menu %}}

@@ -7,8 +7,6 @@ draft: false
 title: 2020-02-26 Farm-To-Fork Menu
 ---
 
-{{% menu %}}
-
 ## Farm\-to\-Fork
 
 ### Tangelo Salad
@@ -30,5 +28,3 @@ spring onion, cilantro, tequila lime sauce
 
 
 *Seasonal produce provided by our great friends at Eatwell Farm*
-
-{{% /menu %}}

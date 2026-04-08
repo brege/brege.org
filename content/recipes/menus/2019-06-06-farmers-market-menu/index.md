@@ -7,8 +7,6 @@ draft: false
 title: 2019-06-06 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ## Farmer’s Market Menu
 
 ### Farmer’s Salad
@@ -29,5 +27,3 @@ dried fruit amaretto, walnut, strawberry coulis
 
 
 *Fresh produce provided by our friends at Eatwell Farm*
-
-{{% /menu %}}

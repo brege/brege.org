@@ -8,8 +8,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## French Toast Batter
 
 **Chef:** Wyatt Brege
@@ -28,4 +26,3 @@ ShowTOC: false
 ### Directions 
 
 In a large mixing bowl, whisk all ingredients together.
-{{% /recipe %}}

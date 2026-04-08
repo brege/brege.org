@@ -7,8 +7,6 @@ draft: false
 title: 2019-04-11 Farmer's Market Menu
 ---
 
-{{% menu %}}
-
 ## Farmer’s Market Menu
 
 ### Avocado Toast
@@ -31,5 +29,3 @@ local raisins, walnuts and mandarin orange
 
 
 *Proudly serving community supported agriculture from Eatwell Farm*
-
-{{% /menu %}}

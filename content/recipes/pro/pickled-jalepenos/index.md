@@ -11,8 +11,6 @@ draft: false
 ShowTOC: false
 ---
 
-{{% recipe %}}
-
 ## Pickled Jalepenos
 
 **Chef:** Wyatt Brege
@@ -43,4 +41,3 @@ setting. Wear gloves and do not touch your face. If you do not wear
 gloves, treat hands with 1) cold water and soap, 2) lemon juice, 3)
 olive oil. If burning continues, try soaking your hands in milk or
 applying topical cooling cream such as Cortisone.
-{{% /recipe %}}
