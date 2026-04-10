@@ -141,11 +141,11 @@ sections:
     class: compact
     items:
       - date: "2017"
-        content: "**PhD**, *Washington State University*, Physics"
+        content: "**PhD**, *Washington State University*, ***Physics***"
       - date: "2010"
-        content: "**BSc**, *Grand Valley State University*, Mathematics"
+        content: "**BSc**, *Grand Valley State University*, ***Mathematics***"
       - date: "2010"
-        content: "**BSc**, *Grand Valley State University*, Physics"
+        content: "**BSc**, *Grand Valley State University*, ***Physics***"
       - date: "2007"
         content: "**ASc**, *Grand Rapids Community College*"
 
