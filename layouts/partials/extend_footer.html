@@ -7,16 +7,30 @@
             &copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ site.Title }}</a>
             {{- end }}
         </div>
-        {{- with site.Params.sitefooter.items }}
-            {{- partial "util/balanced_sequence.html" (dict
-              "id" "site-footer-tools"
-              "class" "site-footer-tools"
-              "link_class" "secondary-action"
-              "tag" "div"
-              "align" "center"
-              "items" .
-            ) }}
-        {{- end }}
+        <div class="balanced-sequence balance-center balanced-wrap site-footer-tools" id="site-footer-tools">
+            {{- with site.Params.sitefooter.items }}
+                {{- range $i, $item := . }}
+                <span>
+                    {{- if gt $i 0 }}<span class="sep" aria-hidden="true">/</span>{{ end -}}
+                    <a href="{{ $item.url }}"
+                        class="secondary-action"
+                        {{- with $item.rel }} rel="{{ . }}"{{ end -}}
+                        {{- with $item.target }} target="{{ . }}"{{ end -}}>
+                        {{- $item.name -}}
+                    </a>
+                </span>
+                {{- end }}
+            {{- end }}
+            {{- with site.Params.sitefooter.toggle.label }}
+            <span>
+                <span class="sep" aria-hidden="true">/</span>
+                {{- partial "palette_band_text_toggle.html" (dict
+                  "label" .
+                  "class" "site-footer-palette-toggle"
+                ) }}
+            </span>
+            {{- end }}
+        </div>
     </div>
 </footer>
 {{ partial "util/balancer_script.html" . }}

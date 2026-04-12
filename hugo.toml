@@ -167,6 +167,8 @@ title = "brege.org"
   url = 'https://linkedin.com/in/wyatt-brege/'
 
 [params.sitefooter]
+[params.sitefooter.toggle]
+  label = 'Palettes'
 [[params.sitefooter.items]]
   name = 'Debian'
   url = 'https://www.debian.org/'
