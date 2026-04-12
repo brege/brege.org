@@ -67,6 +67,11 @@ title = "brege.org"
   homePageSize = 6
   postPageSize = 20
 
+  [params.paletteBand]
+    enabled = true
+    defaultVisible = true
+    showToggle = true
+
 [params.heroCards]
   defaultView = 'expanded'
 
@@ -160,6 +165,33 @@ title = "brege.org"
 [[params.socialIcons]]
   name = 'linkedin'
   url = 'https://linkedin.com/in/wyatt-brege/'
+
+[params.sitefooter]
+[[params.sitefooter.items]]
+  name = 'Debian'
+  url = 'https://www.debian.org/'
+  rel = 'noopener noreferrer'
+  target = '_blank'
+[[params.sitefooter.items]]
+  name = 'NGINX'
+  url = 'https://www.nginx.com/'
+  rel = 'noopener noreferrer'
+  target = '_blank'
+[[params.sitefooter.items]]
+  name = "Let's Encrypt"
+  url = 'https://letsencrypt.org/'
+  rel = 'noopener noreferrer'
+  target = '_blank'
+[[params.sitefooter.items]]
+  name = 'Hugo'
+  url = 'https://gohugo.io/'
+  rel = 'noopener noreferrer'
+  target = '_blank'
+[[params.sitefooter.items]]
+  name = 'Gastrophysics'
+  url = 'https://github.com/brege/gastrophysics/'
+  rel = 'noopener'
+  target = '_blank'
 
 # needed to  render raw HTML (e.g. <sub>, <sup>, <kbd>, <mark>)
 [markup]

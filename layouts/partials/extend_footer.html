@@ -7,21 +7,16 @@
             &copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ site.Title }}</a>
             {{- end }}
         </div>
-        {{- $footerItems := slice
-          (dict "name" "Debian" "url" "https://www.debian.org/" "rel" "noopener noreferrer" "target" "_blank")
-          (dict "name" "NGINX" "url" "https://www.nginx.com/" "rel" "noopener noreferrer" "target" "_blank")
-          (dict "name" "Let's Encrypt" "url" "https://letsencrypt.org/" "rel" "noopener noreferrer" "target" "_blank")
-          (dict "name" "Hugo" "url" "https://gohugo.io/" "rel" "noopener noreferrer" "target" "_blank")
-          (dict "name" "Gastrophysics" "url" "https://github.com/brege/gastrophysics/" "rel" "noopener" "target" "_blank")
-        -}}
-        {{- partial "util/balanced_sequence.html" (dict
-          "id" "site-footer-tools"
-          "class" "site-footer-tools"
-          "link_class" "secondary-action"
-          "tag" "div"
-          "align" "center"
-          "items" $footerItems
-        ) }}
+        {{- with site.Params.sitefooter.items }}
+            {{- partial "util/balanced_sequence.html" (dict
+              "id" "site-footer-tools"
+              "class" "site-footer-tools"
+              "link_class" "secondary-action"
+              "tag" "div"
+              "align" "center"
+              "items" .
+            ) }}
+        {{- end }}
     </div>
 </footer>
 {{ partial "util/balancer_script.html" . }}
