@@ -70,7 +70,8 @@ title = "brege.org"
   [params.paletteBand]
     enabled = true
     defaultVisible = true
-    showToggle = true
+    showToggle = false
+    position = 'aboveFooter'
 
 [params.heroCards]
   defaultView = 'expanded'
