@@ -69,7 +69,7 @@ title = "brege.org"
 
   [params.paletteBand]
     enabled = true
-    defaultVisible = true
+    defaultVisible = false
     showToggle = false
     position = 'aboveFooter'
 
