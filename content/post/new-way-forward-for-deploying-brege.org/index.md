@@ -4,6 +4,7 @@ title = "New way forward for deploying brege.org"
 tags = ["hugo", "rsync", "deployment", "publishing", "digitalocean"]
 categories = ["software"]
 series = ["building brege.org"]
+series_order = 3
 math = false
 aliases = [
         "/post/new-way-forward-for-deploying-brege/",

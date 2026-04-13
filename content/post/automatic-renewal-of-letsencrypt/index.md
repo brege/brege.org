@@ -5,6 +5,7 @@ title = "Automatic renewal of Let's Encrypt Certificates"
 tags = ["lets-encrypt", "certbot", "systemd", "https", "certificate-renewal"]
 categories = ["software"]
 series = ["web hardening"]
+series_order = 1
 +++
 
 Let's Encrypt certificates need to be renewed every three months.

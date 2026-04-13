@@ -54,6 +54,7 @@ title = "brege.org"
   ShowFullTextinRSS = true
   ShowRssButtonInSectionTermList = true
   hideFooter = true
+  seriesOpened = false
 
   showRelatedPosts = true
   TocOpen = true

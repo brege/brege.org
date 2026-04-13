@@ -15,6 +15,7 @@ categories:
   - culinary
 series:
   - network graphs in hugo
+series_order: 4
 date: 2023-01-04T04:04:49-05:00
 cover:
   image: 'cover.png'

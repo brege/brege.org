@@ -5,6 +5,7 @@ title = "Building brege.org"
 tags = ["hugo", "nginx", "lets-encrypt", "deployment", "digitalocean", "static-site"]
 categories = ["software"]
 series = ["building brege.org"]
+series_order = 1
 
 [header]
 image = ""

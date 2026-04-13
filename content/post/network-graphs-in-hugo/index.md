@@ -13,6 +13,7 @@ categories:
   - data-science
 series:
   - network graphs in hugo
+series_order: 1
 date: 2022-12-09T23:02:42-05:00
 draft: false
 cover:
@@ -50,7 +51,6 @@ Note that The JSON data and CSS is added inline here to make the scope of this t
         {{</* toy-network nodesPath="data/nodes.json" edgesPath="data/edges.json" scriptPath="js/toy-network.js" */>}}
         ```
 This will provide the simple network graph above.
-
 
 
 

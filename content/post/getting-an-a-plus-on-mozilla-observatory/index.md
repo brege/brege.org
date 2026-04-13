@@ -3,6 +3,7 @@ title = "Getting an A+ on Mozilla's HTTP Observatory"
 tags = ["nginx", "mozilla-observatory", "https", "hsts", "security-headers", "csp"]
 categories = ["software"]
 series = ["web hardening"]
+series_order = 2
 date = 2017-01-09T18:29:50-05:00
 math = true
 draft = false
@@ -34,4 +35,3 @@ After some trial & error and searching around, I came up with the following to b
 Now I am receiving an "**A+**" from the observatory!
 
 I also went to [Google's submission page](https://hstspreload.org/) to have your site put on the [HSTS](https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security) preloaded list, so that all users of Google Chrome access your site through HTTPS by default.
-

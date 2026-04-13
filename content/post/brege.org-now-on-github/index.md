@@ -5,6 +5,7 @@ title = "brege.org now on GitHub"
 tags = ["github", "site-source", "hugo"]
 categories = ["software"]
 series = ["building brege.org"]
+series_order = 2
 
 [header]
 +++

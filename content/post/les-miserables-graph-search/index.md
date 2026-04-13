@@ -14,6 +14,7 @@ categories:
   - data-science
 series:
   - network graphs in hugo
+series_order: 3
 date: 2022-12-24T05:30:47-05:00
 draft: false
 cover:

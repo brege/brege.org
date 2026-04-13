@@ -13,6 +13,7 @@ categories:
   - data-science
 series:
   - personal data explorations
+series_order: 2
 date: 2026-02-11T16:09:29-05:00
 draft: false
 aliases: 
