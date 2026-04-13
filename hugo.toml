@@ -99,24 +99,16 @@ title = "brege.org"
 [params.homeInfoParams]
   Title = 'Wyatt Brege'
   FeedTitle = 'Articles'
-  Content = """
-  I simulated
-  [black-hole neutron-star mergers](https://black-holes.org)
-  for my 
-  [physics PhD](https://hdl.handle.net/2376/111818)
-  at
-  [WSU](https://physics.wsu.edu/).
-  I'm also a 
-  [professional chef](/recipes)
-  with a love for seafood, sauces, soups and organic produce.
-  A lifelong believer in 
-  [free software](https://www.gnu.org/philosophy/free-sw.en.html),
-  I build apps and tools across
-  [AI](https://github.com/brege#agents),
-  [data science](/categories/data-science/),
-  and [Linux](https://github.com/brege#apps).
-
-  """
+  Content = '/hero'
+[[params.homeInfoParams.roles]]
+  name = 'data scientist'
+  url = '/categories/data-science/'
+[[params.homeInfoParams.roles]]
+  name = 'chef'
+  url = '/recipes'
+[[params.homeInfoParams.roles]]
+  name = 'astrophysicist'
+  url = 'https://black-holes.org'
 [[params.homeInfoParams.markers]]
   name = 'my bio'
   url = '/about'
