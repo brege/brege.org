@@ -28,11 +28,9 @@ ShowToc: false
 TocOpen: false
 ---
 
-This project part of a series of data exploration projects around my personal computer usage.
+This project is [part of a series of data exploration projects](/series/personal-data-explorations) around my personal computer usage.
 
 GitHub link: [github.com/brege/image-activity](https://github.com/brege/image-activity)
-
-This is related to my email classification project: [github.com/brege/sanoma](https://github.com/brege/sanoma) (work in progress).
 
 ## Overview
 
