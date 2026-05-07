@@ -1,6 +1,6 @@
 baseURL = "https://brege.org"
 copyright = "Copyright (c) 2016-2026 Wyatt Brege"
-languageCode = "en"
+locale = "en"
 defaultContentLanguage = "en"
 enableRobotsTXT = false
 enableInlineShortcodes = true
