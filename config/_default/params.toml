@@ -1,0 +1,169 @@
+author = "Wyatt Brege"
+# linen, rose-pine, rose-pine-moon, catppuccin-frappe,
+# catppuccin-macchiato, catppuccin-mocha, nord,
+# gruvbox, everforest, sepia, nordic-linen
+#color = 'linen'
+colorLight = 'nordic-linen'
+colorDark = 'nordic-linen'
+env = 'production'
+twitter = ''
+github = 'brege'
+instagram = ''
+mastodon = 'brege@mastodon.social'
+matrix = '@brege:matrix.org'
+signal = '@brege.01'
+avatar = 'wyatt@brege.org'
+name = 'Wyatt Brege'
+bio = 'gastrophysicist'
+description = 'Wyatt Brege publishes essays, recipes, data science projects, software notes, and career context spanning astrophysics, cooking, and applied machine learning.'
+
+ShowPostNavLinks = true
+ShowCodeCopyButtons = true
+ShowShareButtons = true
+ShowReadingTime = false
+ShowWordCount = true
+ShowBreadCrumbs = true
+ShowFullTextinRSS = true
+ShowRssButtonInSectionTermList = true
+hideFooter = true
+seriesOpened = false
+
+showRelatedPosts = true
+TocOpen = true
+ShowToc = true
+
+defaultTheme = 'auto'
+disableScrollToTop = true
+disableAnchorHeadings = false
+
+mainSections = ['post']
+homePageSize = 6
+postPageSize = 20
+
+[paletteBand]
+  enabled = true
+  defaultVisible = false
+  showToggle = false
+  position = 'aboveFooter'
+
+[heroCards]
+  defaultView = 'expanded'
+
+[heroCards.compact]
+  summary = true
+
+[heroCards.expanded]
+  summary = true
+
+[postCards]
+  defaultView = 'compact'
+
+[postCards.compact]
+  summary = true
+
+[postCards.expanded]
+  summary = true
+
+[editPost]
+  URL = "https://github.com/brege/brege.org/tree/master/content"
+  Text = "edit"
+  appendFilePath = true
+
+[homeInfoParams]
+  Title = 'Wyatt Brege'
+  FeedTitle = 'Articles'
+  Content = '/hero'
+
+[[homeInfoParams.roles]]
+  name = 'data scientist'
+  url = '/categories/data-science/'
+[[homeInfoParams.roles]]
+  name = 'chef'
+  url = '/recipes'
+[[homeInfoParams.roles]]
+  name = 'astrophysicist'
+  url = 'https://black-holes.org'
+
+[[homeInfoParams.markers]]
+  name = 'my bio'
+  url = '/about'
+[[homeInfoParams.markers]]
+  name = 'my CV'
+  url = '/cv'
+[[homeInfoParams.markers]]
+  name = 'google scholar'
+  url = 'https://scholar.google.com/citations?user=WsjvDuQAAAAJ'
+[[homeInfoParams.markers]]
+  name = "farmer's market menus"
+  url = '/recipes/menus'
+
+[profileMode]
+  enabled = false
+  title = "Wyatt Brege"
+  subtitle = 'Gastrophysicist'
+  imageUrl = "/img/portrait.png"
+  imageTitle = ''
+  imageWidth = 120
+  imageHeight = 120
+
+[[profileMode.buttons]]
+  name = 'Recent'
+  url = '/post'
+[[profileMode.buttons]]
+  name = 'Bio'
+  url = '/about'
+[[profileMode.buttons]]
+  name = 'Resume'
+  url = '/cv'
+
+[[socialIcons]]
+  name = 'email'
+  url = 'mailto:wyatt@brege.org'
+[[socialIcons]]
+  name = 'github'
+  url = 'https://github.com/brege'
+[[socialIcons]]
+  name = 'mastodon'
+  url = 'https://mastodon.social/@brege'
+[[socialIcons]]
+  name = 'signal'
+  url = 'https://signal.me/#eu/0qONLHRq0LrobBU7QIEfqomo1LJ9425RBq5IzydUPCa3hLGuq61AzLhY4Xjvt0e8'
+[[socialIcons]]
+  name = 'matrix'
+  url = 'https://matrix.to/#/@brege:matrix.org'
+[[socialIcons]]
+  name = 'linkedin'
+  url = 'https://linkedin.com/in/wyatt-brege/'
+
+[sitefooter]
+[sitefooter.toggle]
+  label = 'Palettes'
+
+[[sitefooter.items]]
+  name = 'Debian'
+  url = 'https://www.debian.org/'
+  rel = 'noopener noreferrer'
+  target = '_blank'
+[[sitefooter.items]]
+  name = 'NGINX'
+  url = 'https://www.nginx.com/'
+  rel = 'noopener noreferrer'
+  target = '_blank'
+[[sitefooter.items]]
+  name = "Let's Encrypt"
+  url = 'https://letsencrypt.org/'
+  rel = 'noopener noreferrer'
+  target = '_blank'
+[[sitefooter.items]]
+  name = 'Hugo'
+  url = 'https://gohugo.io/'
+  rel = 'noopener noreferrer'
+  target = '_blank'
+[[sitefooter.items]]
+  name = 'Gastrophysics'
+  url = 'https://github.com/brege/gastrophysics/'
+  rel = 'noopener'
+  target = '_blank'
+[[sitefooter.items]]
+  name = 'llms.txt'
+  url = '/llms.txt'
