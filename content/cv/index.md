@@ -30,10 +30,10 @@ outputs:
   [numerical methods](https://en.wikipedia.org/wiki/Numerical_analysis)
 
 - **culinary arts**
-  [menu profit analysis and documentation systems](/consulting)
+  menu profit analysis and documentation systems
   [from-scratch, seasonal & farm-to-table cooking](/recipes)
   [pairing dinners and pop-ups](/recipes/menus)
-  [pedagogical training and leadership](/consulting)
+  pedagogical training and leadership
 
 
 ## Selected Work
@@ -85,9 +85,9 @@ See [github.com/brege](https://github.com/brege) for a complete list of software
 
 ## Education
 
-- 2017, **PhD**, *Washington State University*, Physics
-- 2010, **BSc**, *Grand Valley State University*, Mathematics
-- 2010, **BSc**, *Grand Valley State University*, Physics
+- 2017, **PhD**, *Washington State University*, ***Physics***
+- 2010, **BSc**, *Grand Valley State University*, ***Mathematics***
+- 2010, **BSc**, *Grand Valley State University*, ***Physics***
 - 2007, **ASc**, *Grand Rapids Community College*
 
 
