@@ -15,7 +15,7 @@ signal = '@brege.01'
 avatar = 'wyatt@brege.org'
 name = 'Wyatt Brege'
 bio = 'gastrophysicist'
-description = 'Wyatt Brege publishes essays, recipes, data science projects, software notes, and career context spanning astrophysics, cooking, and applied machine learning.'
+description = "Wyatt Brege's personal website"
 
 ShowPostNavLinks = true
 ShowCodeCopyButtons = true

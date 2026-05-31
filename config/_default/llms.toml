@@ -1,5 +1,5 @@
 [params.llms]
-  summary = 'Wyatt Brege publishes essays, recipes, data science projects, software notes, and career context spanning astrophysics, cooking, and applied machine learning.'
+  summary = 'Wyatt Brege publishes essays, recipes, data science projects, and software.'
 
 [[params.llms.sections]]
   title = 'Profile'
@@ -25,27 +25,7 @@
     title = 'Posts'
     url = '/post/'
     pageRef = 'post'
-    description = 'Article archive covering data science, software, food, health, and site operations.'
-  [[params.llms.sections.links]]
-    title = 'What is Pesto?'
-    url = '/post/what-is-pesto/'
-    pageRef = 'post/what-is-pesto'
-    description = 'A culinary taxonomy of pesto and related green sauces.'
-  [[params.llms.sections.links]]
-    title = 'The Flavor Network'
-    url = '/post/the-flavor-network/'
-    pageRef = 'post/the-flavor-network'
-    description = 'Flavor pairing and recipe discovery using weighted ingredient similarity.'
-  [[params.llms.sections.links]]
-    title = 'Image Activity'
-    url = '/post/image-activity/'
-    pageRef = 'post/image-activity'
-    description = 'A data exploration of personal camera, screenshot, and image activity.'
-  [[params.llms.sections.links]]
-    title = 'Email Analysis'
-    url = '/post/email-analysis/'
-    pageRef = 'post/email-analysis'
-    description = 'A personal email history analysis focused on spam, surveys, and message value.'
+    description = 'Article archive covering data science, software, food, fitness, and devops.'
 
 [[params.llms.sections]]
   title = 'Cooking'
@@ -59,11 +39,6 @@
     url = '/menus/'
     pageRef = 'menus'
     description = 'Farmer-focused tasting menus from restaurant work.'
-  [[params.llms.sections.links]]
-    title = 'Protein Calculator'
-    url = '/post/protein-calculator/'
-    pageRef = 'post/protein-calculator'
-    description = 'A food data calculator for daily protein requirements.'
 
 [[params.llms.sections]]
   title = 'Machine-readable'
