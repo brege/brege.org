@@ -1,6 +1,14 @@
 ---
 title: Posts
 cms_exclude: true
+outputs:
+  - HTML
+  - RSS
+  - PageMarkdown
+cascade:
+  outputs:
+    - HTML
+    - PageMarkdown
 
 # View.
 #   1 = List

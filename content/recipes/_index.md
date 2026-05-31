@@ -7,6 +7,14 @@ sort_by: title
 order: asc
 ShowToc: true
 ShowRssButtonInSectionTermList: false
+outputs:
+  - HTML
+  - RSS
+  - PageMarkdown
+cascade:
+  outputs:
+    - HTML
+    - PageMarkdown
 ---
 
 A collection of professional, heirloom, and personal recipes and select farmer-focused tasting menus.

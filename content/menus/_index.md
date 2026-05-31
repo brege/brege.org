@@ -7,6 +7,14 @@ ShowBreadcrumbs: true
 type: menus
 aliases:
   - /recipes/menus/
+outputs:
+  - HTML
+  - RSS
+  - PageMarkdown
+cascade:
+  outputs:
+    - HTML
+    - PageMarkdown
 ---
 
 An archive of the tasting menus / farmer's market / farm-to-fork / CSA popup menus I did for *Dawson's* and *The Slanted Tree*.

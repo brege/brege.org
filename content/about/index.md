@@ -8,6 +8,9 @@ math: true
 date: 2023-01-01
 ShowWordCount: true
 disableShare: true
+outputs:
+  - HTML
+  - PageMarkdown
 ---
 
 I simulated black holes-neutron star mergers for the [SXS](https://black-holes.org) collaboration as a graduate student at [Washington State University](https://physics.wsu.edu).  These simulations involved using advanced numerical algorithms with the [Spectral Einstein Code](https://www.black-holes.org/code/SpEC.html) on high performance computing clusters using hundreds of CPU cores.
@@ -61,5 +64,4 @@ Yet, it is enough for me to remain hopeful, that these modes of culinary structu
 <br/> </details>
 
 [[ **my resumé** ](/cv)]
-
 

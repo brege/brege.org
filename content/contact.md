@@ -4,6 +4,9 @@ type: contact
 hideMeta: true
 disableShare: true
 ShowToc: false
+outputs:
+  - HTML
+  - PageMarkdown
 ---
 
 ### **email**

@@ -24,7 +24,17 @@ title = "brege.org"
   mediaType = "text/markdown"
   baseName = "index"
   isPlainText = true
-  notAlternative = true
+  notAlternative = false
+  rel = "alternate"
+  ugly = true
+
+[outputFormats.PageMarkdown]
+  mediaType = "text/markdown"
+  baseName = "index"
+  isPlainText = true
+  notAlternative = false
+  rel = "alternate"
+  ugly = true
 
 [outputFormats.LLMS]
   mediaType = "text/plain"
