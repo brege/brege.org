@@ -167,3 +167,60 @@ postPageSize = 20
 [[sitefooter.items]]
   name = 'llms.txt'
   url = '/llms.txt'
+
+[llms]
+  summary = 'Wyatt Brege publishes essays, recipes, data science projects, and software.'
+
+[[llms.sections]]
+  title = 'Profile'
+  [[llms.sections.links]]
+    title = 'About'
+    url = '/about/'
+    pageRef = 'about'
+    description = 'Biographical context for Wyatt Brege, including physics, cooking, data science, and software work.'
+  [[llms.sections.links]]
+    title = 'CV'
+    url = '/cv/'
+    pageRef = 'cv'
+    description = 'Career summary, selected projects, publications, talks, awards, and teaching experience.'
+  [[llms.sections.links]]
+    title = 'Contact'
+    url = '/contact/'
+    pageRef = 'contact'
+    description = 'Preferred contact channels and public identity links.'
+
+[[llms.sections]]
+  title = 'Writing'
+  [[llms.sections.links]]
+    title = 'Posts'
+    url = '/post/'
+    pageRef = 'post'
+    description = 'Article archive covering data science, software, food, fitness, and devops.'
+
+[[llms.sections]]
+  title = 'Cooking'
+  [[llms.sections.links]]
+    title = 'Recipes'
+    url = '/recipes/'
+    pageRef = 'recipes'
+    description = 'Professional, heirloom, and personal recipes.'
+  [[llms.sections.links]]
+    title = 'Tasting Menus'
+    url = '/menus/'
+    pageRef = 'menus'
+    description = 'Farmer-focused tasting menus from restaurant work.'
+
+[[llms.sections]]
+  title = 'Machine-readable'
+  [[llms.sections.links]]
+    title = 'Sitemap'
+    url = '/sitemap.xml'
+    description = 'XML sitemap for canonical crawl targets.'
+  [[llms.sections.links]]
+    title = 'RSS'
+    url = '/index.xml'
+    description = 'Full-text RSS feed for recent public content.'
+  [[llms.sections.links]]
+    title = 'Search JSON'
+    url = '/index.json'
+    description = 'Plain text search index with titles, summaries, URLs, and page content.'
