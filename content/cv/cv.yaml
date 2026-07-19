@@ -10,6 +10,8 @@ sections:
             url: https://en.wikipedia.org/wiki/Data_science
           - name: artificial intelligence
             url: https://en.wikipedia.org/wiki/AI
+          - name: generative AI
+            url: https://en.wikipedia.org/wiki/Generative_artificial_intelligence
           - name: software engineering
             url: https://en.wikipedia.org/wiki/Software_engineering
           - name: machine learning
@@ -40,6 +42,20 @@ sections:
   - title: Selected Work
     handler: projects
     items:
+      - name: ghrm
+        url: https://github.com/brege/ghrm
+        summary: >-
+          is a fast, offline, local HTTP server with GitHub-flavored Markdown
+          and repository browsing, featuring instant path and content search,
+          live reload, a gist textarea, and file explorer.
+        stack: rust, axum, tokio, htmx, typescript, vite, lit, comrak, askama, crates.io, offline
+        links:
+          - label: Crate
+            url: https://crates.io/crates/ghrm
+          - label: Source
+            url: https://github.com/brege/ghrm
+          - label: Binaries
+            url: https://github.com/brege/ghrm/releases
       - name: monitorat
         url: https://monitorat.brege.org
         summary: >-
@@ -119,6 +135,8 @@ sections:
     handler: rows
     class: compact
     items:
+      - date: "2026-"
+        content: "**Data Scientist (GenAI)**, Full-time[,](mailto:wyatt@brege.org) Remote"
       - date: "2023"
         content: "**Data Science Fellowship**, *The Data Incubator*, San Francisco, CA"
       - date: "2020-2022"
@@ -175,6 +193,9 @@ sections:
             primary: true
           - name: python
             url: https://en.wikipedia.org/wiki/Python_(programming_language)
+            primary: true
+          - name: rust
+            url: https://en.wikipedia.org/wiki/Rust_(programming_language)
             primary: true
           - name: typescript
             url: https://en.wikipedia.org/wiki/TypeScript
@@ -246,6 +267,16 @@ sections:
             url: https://hdbscan.readthedocs.io/
           - name: pytesseract
             url: https://github.com/madmaze/pytesseract
+          - name: large language models
+            url: https://en.wikipedia.org/wiki/Large_language_model
+          - name: retrieval-augmented generation
+            url: https://en.wikipedia.org/wiki/Retrieval-augmented_generation
+          - name: embeddings
+            url: https://en.wikipedia.org/wiki/Embedding_(machine_learning)
+          - name: vector search
+            url: https://en.wikipedia.org/wiki/Vector_database
+          - name: mcp
+            url: https://en.wikipedia.org/wiki/Model_Context_Protocol
 
       - label: scientific and numerical tools
         entries:
